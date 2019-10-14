@@ -1,7 +1,7 @@
 import abjad
 import calliope
 
-from z_texture_block import TexturePhraseBlock
+from imaginary.libraries.z_texture_block import TexturePhraseBlock
 
 
 class T10_Hold(calliope.Factory, TexturePhraseBlock):

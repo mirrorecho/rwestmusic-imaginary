@@ -1,7 +1,7 @@
 import abjad
 import calliope
 
-from imaginary.libraries import settings
+from imaginary.libraries import _settings as settings
 
 
 class ImaginaryScore(calliope.Score):
@@ -99,84 +99,84 @@ class ImaginaryScore(calliope.Score):
 # ==================================================================
 # ==================================================================
 
-    class Orchestra(calliope.StaffGroup):
+    # class Orchestra(calliope.StaffGroup):
 
-        class Winds(calliope.StaffGroup):
-            class Flute1(calliope.Staff):
-                instrument=abjad.Flute(
-                    name="Flute 1", short_name="fl.1")
+    #     class Winds(calliope.StaffGroup):
+    #         class Flute1(calliope.Staff):
+    #             instrument=abjad.Flute(
+    #                 name="Flute 1", short_name="fl.1")
 
-            class Flute2(calliope.Staff):
-                instrument=abjad.Flute(
-                    name="Flute 2", short_name="fl.2")
+    #         class Flute2(calliope.Staff):
+    #             instrument=abjad.Flute(
+    #                 name="Flute 2", short_name="fl.2")
 
-            class Oboe1(calliope.Staff):
-                instrument=abjad.Oboe(
-                    name="Oboe 1", short_name="ob.1")
+    #         class Oboe1(calliope.Staff):
+    #             instrument=abjad.Oboe(
+    #                 name="Oboe 1", short_name="ob.1")
 
-            class Oboe2(calliope.Staff):
-                instrument=abjad.Oboe(
-                    name="Oboe 2", short_name="ob.2")
+    #         class Oboe2(calliope.Staff):
+    #             instrument=abjad.Oboe(
+    #                 name="Oboe 2", short_name="ob.2")
 
-            class Clarinet1(calliope.Staff):
-                instrument=abjad.ClarinetInBFlat(
-                    name="Clarinet in B♭ 1", short_name="cl.1")
+    #         class Clarinet1(calliope.Staff):
+    #             instrument=abjad.ClarinetInBFlat(
+    #                 name="Clarinet in B♭ 1", short_name="cl.1")
 
-            class Clarinet2(calliope.Staff):
-                instrument=abjad.ClarinetInBFlat(
-                    name="Clarinet in B♭ 2", short_name="cl.2")
+    #         class Clarinet2(calliope.Staff):
+    #             instrument=abjad.ClarinetInBFlat(
+    #                 name="Clarinet in B♭ 2", short_name="cl.2")
 
-            class Bassoon(calliope.Staff):
-                instrument=abjad.Bassoon(
-                    name="Bassoon", short_name="bsn.")
+    #         class Bassoon(calliope.Staff):
+    #             instrument=abjad.Bassoon(
+    #                 name="Bassoon", short_name="bsn.")
         
-        class Brass(calliope.StaffGroup):
-            class Horn(calliope.Staff):
-                instrument=abjad.FrenchHorn(
-                    name="Horn in F", short_name="hn.")
+    #     class Brass(calliope.StaffGroup):
+    #         class Horn(calliope.Staff):
+    #             instrument=abjad.FrenchHorn(
+    #                 name="Horn in F", short_name="hn.")
 
-            class Trumpet(calliope.Staff):
-                instrument=abjad.Trumpet(
-                    name="Trumpet in C", short_name="tpt.")
+    #         class Trumpet(calliope.Staff):
+    #             instrument=abjad.Trumpet(
+    #                 name="Trumpet in C", short_name="tpt.")
 
-            class Trombone(calliope.Staff):
-                instrument=abjad.TenorTrombone(
-                    name="Trombone", short_name="tbn.")
+    #         class Trombone(calliope.Staff):
+    #             instrument=abjad.TenorTrombone(
+    #                 name="Trombone", short_name="tbn.")
 
-        class Percussion(calliope.RhythmicStaff): pass
+    #     class Percussion(calliope.RhythmicStaff): pass
 
-        class Harp(calliope.Harp): pass
-            # instrument=abjad.Piano(
-            #     name="Bass", short_name="vc.")
-            # clef="bass"
+    #     class Harp(calliope.Harp): pass
+    #         # instrument=abjad.Piano(
+    #         #     name="Bass", short_name="vc.")
+    #         # clef="bass"
 
-        class Piano(calliope.Piano): pass
-            # instrument=abjad.Piano(
-            #     name="Bass", short_name="vc.")
-            # clef="bass"
+    #     class Piano(calliope.Piano): pass
+    #         # instrument=abjad.Piano(
+    #         #     name="Bass", short_name="vc.")
+    #         # clef="bass"
 
-        class Strings(calliope.StaffGroup):
-            class ViolinI(calliope.Staff):
-                instrument=abjad.Violin(
-                    name="Violin 1", short_name="vln.I")
+    #     class Strings(calliope.StaffGroup):
+    #         class ViolinI(calliope.Staff):
+    #             instrument=abjad.Violin(
+    #                 name="Violin 1", short_name="vln.I")
 
-            class ViolinII(calliope.Staff):
-                instrument=abjad.Violin(
-                    name="Violin 2", short_name="vln.II")
+    #         class ViolinII(calliope.Staff):
+    #             instrument=abjad.Violin(
+    #                 name="Violin 2", short_name="vln.II")
 
-            class Viola(calliope.Staff):
-                instrument=abjad.Viola(
-                    name="Viola", short_name="vla.")
+    #         class Viola(calliope.Staff):
+    #             instrument=abjad.Viola(
+    #                 name="Viola", short_name="vla.")
 
-            class Cello(calliope.Staff):
-                instrument=abjad.Cello(
-                    name="Cello", short_name="vc.")
-                clef="bass"
+    #         class Cello(calliope.Staff):
+    #             instrument=abjad.Cello(
+    #                 name="Cello", short_name="vc.")
+    #             clef="bass"
 
-            class Bass(calliope.Staff):
-                instrument=abjad.Contrabass(
-                    name="Bass", short_name="cb.")
-                clef="bass"
+    #         class Bass(calliope.Staff):
+    #             instrument=abjad.Contrabass(
+    #                 name="Bass", short_name="cb.")
+    #             clef="bass"
 
 # ==================================================================
 # ==================================================================

@@ -1,7 +1,7 @@
 import abjad
 import calliope
 
-from z_rhythm_block import RhythmCellBlock, RhythmLineBlock
+from imaginary.libraries.z_rhythm_block import RhythmCellBlock, RhythmLineBlock
 
 
 R5_ANGULAR_CELL_BLOCK = RhythmCellBlock(

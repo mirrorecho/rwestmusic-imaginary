@@ -1,7 +1,7 @@
 import abjad
 import calliope
 
-from m00_home import M00_HomeLine, M00_HomeUpLine
+# from imaginary.libraries.m00_home import M00_HomeLine, M00_HomeUpLine
 
 class M01_CounterCell(calliope.Cell):
     init_rhythm = (0.5, 3.5, 1, 0.5, 2.5,)
