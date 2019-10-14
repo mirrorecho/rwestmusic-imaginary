@@ -44,6 +44,16 @@ class M02_BassLine(calliope.Line):
 
 BASS_LINE = M02_BassLine().transformed(calliope.Transpose(interval=-12))
 
+BASS_LINE_1_FLAT = BASS_LINE()
+for e in BASS_LINE_1_FLAT.note_events:
+    if e.pitch % 12 == 9:
+        e.pitch += -1
+
+BASS_LINE_2_FLAT = BASS_LINE_1_FLAT()
+for e in BASS_LINE_2_FLAT.note_events:
+    if e.pitch % 12 == 2:
+        e.pitch += -1
+
 calliope.illustrate(calliope.Staff(BASS_LINE, clef="bass"))
 
 

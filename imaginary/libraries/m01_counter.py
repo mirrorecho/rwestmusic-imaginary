@@ -23,24 +23,25 @@ class M01_CounterLine(calliope.Line):
         init_rhythm = (-1, 1, 0.5, 5.5)
         init_pitches = (None, 7, 9, 12)
 
-# TO DO: this is nasty!!!!!!!!
-COUNTER_LINE = calliope.Segment(
-        M01_CounterLine().transformed(calliope.Transpose(interval=0)),
-        M01_CounterLine().transformed(
+COUNTER_LINE = M01_CounterLine()
+
+COUNTER_LINE_2 = M01_CounterLine().transformed(
             calliope.TransposeWithinScale(steps=2),
             calliope.Transpose(interval=5)
-            ),
-        )
-fix_cell_c = COUNTER_LINE.lines[1].cells["cell_c"]
+            )
+# TO DO: this is nasty!!!!!!!!
+fix_cell_c = COUNTER_LINE_2.cells["cell_c"]
 fix_cell_c.clear()
 fix_cell_c.rhythm=(-1, 1, 1, 1, 1, 1, 1, 1)
 fix_cell_c.pitches=(None, 9, 9, 5, 5, 5, 9, 4)
 
-fix_cell_d = COUNTER_LINE.lines[1].cells["cell_d"]
+fix_cell_d = COUNTER_LINE_2.cells["cell_d"]
 fix_cell_d.clear()
 fix_cell_d.rhythm=(-8,)
 fix_cell_d.rhythm=(-1, 1, 1, 1, 1, 1, 1, 1)
 fix_cell_d.pitches=(None, 4, 5, 10, 9, 5, 10, 9)
+
+COUNTER_LINE.extend(COUNTER_LINE_2)
 
 
 calliope.illustrate(COUNTER_LINE)

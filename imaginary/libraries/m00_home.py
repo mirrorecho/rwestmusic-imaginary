@@ -72,9 +72,9 @@ HOME_LINE = M00_HomeLine(name="home_line")
 HOME_LINE.extend( M00_HomeUpLine() )
 
 HOME_U_LINE = M00_HomeUpLine(name="home_up_line")
-HOME_U_LINE.extend( M00_HomeLine().transformed(calliope.Transpose(5)) )
+HOME_U_LINE.extend( M00_HomeLine().transformed(calliope.Transpose(interval=5)) )
 
-HOME_D_LINE = M00_HomeUpLine(name="home_down_up_line").transformed(calliope.Transpose(-5))
+HOME_D_LINE = M00_HomeUpLine(name="home_down_up_line").transformed(calliope.Transpose(interval=-5))
 HOME_D_LINE.extend( M00_HomeLine() )
 
 calliope.illustrate(HOME_D_LINE)
