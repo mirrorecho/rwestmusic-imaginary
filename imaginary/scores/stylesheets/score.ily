@@ -49,7 +49,6 @@
         \override BarNumber #'break-visibility = #'#(#f #t #t)
         \override BarNumber #'font-size = #1.2
         \override BarNumber  #'stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
-        
         \override RehearsalMark #'font-size = #6
 
     }

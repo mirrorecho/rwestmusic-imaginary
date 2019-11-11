@@ -34,11 +34,12 @@ class ImaginaryScore(calliope.Score):
             class BariSax(calliope.Staff):
                 instrument=abjad.BaritoneSaxophone(
                     name="Baritone Saxophone", short_name="bsax.")
+                clef="bass"
 
             class Bassoon(calliope.Staff):
                 instrument=abjad.Bassoon(
                     name="Bassoon", short_name="bsn.")
-
+                clef="bass"
 
         class Brass(calliope.StaffGroup):
             class Horn(calliope.Staff):
@@ -52,7 +53,7 @@ class ImaginaryScore(calliope.Score):
             class Trombone(calliope.Staff):
                 instrument=abjad.TenorTrombone(
                     name="Tenor Trombone", short_name="tbn.")
-
+                clef="bass"
 
         class Percussion(calliope.StaffGroup):
 
@@ -87,12 +88,12 @@ class ImaginaryScore(calliope.Score):
 
             class Cello1(calliope.Staff):
                 instrument=abjad.Cello(
-                    name="Cello", short_name="vc.1")
+                    name="Cello 1", short_name="vc.1")
                 clef="bass"
 
             class Cello2(calliope.Staff):
                 instrument=abjad.Cello(
-                    name="Cello", short_name="vc.2")
+                    name="Cello 2", short_name="vc.2")
                 clef="bass"
 
 

@@ -57,9 +57,11 @@ SHORT_SCORE.segments["s3"].extend(RIFF_BLOCK[0]())
 SHORT_SCORE.segments["s4"].extend(RIFF_BLOCK[1]())
 
 
+BAND_SCORE.segments["guitar"].extend(SHORT_SCORE.segments["s3"]())
+
 
 for segment in SCORE.segments:
     if len(segment) == 0:
         segment.append(calliope.Event(beats=0-BEATS))
 
-calliope.illustrate(SHORT_SCORE, as_midi=True)
+calliope.illustrate(BAND_SCORE, as_midi=True)

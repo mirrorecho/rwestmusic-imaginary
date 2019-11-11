@@ -1,14 +1,14 @@
-#(set-default-paper-size "tabloid" 'portrait)
-#(set-global-staff-size 20)
+#(set-default-paper-size "letter" 'portrait)
+#(set-global-staff-size 24)
 
 \header {
-    composer = "Randall West"
+    % composer = "Randall West"
     % tagline = ##f
     title = \markup {
         \column {
             \center-align {
-                \fontsize #6 {
-                    "Please Listen Closely as Our Options Have Changed"
+                \fontsize #4 {
+                    "..."
                 }
             }
         }
@@ -19,7 +19,7 @@
   #(set! paper-alist (cons '("10x13" . (cons (* 10 in) (* 13 in))) paper-alist))
 
   \paper {
-    #(set-paper-size "10x13")
+    % #(set-paper-size "10x13")
     system-system-spacing #'basic-distance = #12
     system-system-spacing #'padding = #9
 
@@ -50,13 +50,13 @@
     }
     \context {
         \Staff
-        \remove Instrument_name_engraver
+        % \remove Instrument_name_engraver
         \override Hairpin #'minimum-length = #6
         \override MultiMeasureRest.expand-limit = #1
     }
     \context {
         \RhythmicStaff
-        \remove Instrument_name_engraver
+        % \remove Instrument_name_engraver
         \override Hairpin #'minimum-length = #6
         \override MultiMeasureRest.expand-limit = #1
     }

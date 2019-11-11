@@ -1,15 +1,15 @@
 import calliope
 
-from m00_home import HOME_LINE, HOME_U_LINE, HOME_D_LINE
-from m01_counter import COUNTER_LINE
-from m02_bass import BASS_LINE, BASS_LINE_1_FLAT, BASS_LINE_2_FLAT
+from imaginary.libraries.m00_home import HOME_LINE, HOME_U_LINE, HOME_D_LINE
+from imaginary.libraries.m01_counter import COUNTER_LINE
+from imaginary.libraries.m02_bass import BASS_LINE, BASS_LINE_1_FLAT, BASS_LINE_2_FLAT
 
 # TO DO: AVOID import *
-from r03_intricate import * 
-from r04_pounding import *
-from r05_angular import *
-from r06_beat import *
-from t09_riff import *
+from imaginary.libraries.r03_intricate import * 
+from imaginary.libraries.r04_pounding import *
+from imaginary.libraries.r05_angular import *
+from imaginary.libraries.r06_beat import *
+from imaginary.libraries.t09_riff import *
 
 
 def move_segment(line, respell=None):
@@ -42,11 +42,10 @@ MOVE = calliope.SegmentBlock(
     move_segment(texture_riff[0], respell="flats"),
     )
 
-for e in MOVE.select[0,1,2,3].note_events:
-    e.pitch = (e.pitch, e.pitch+12)
+# for e in MOVE.select[0,1,2,3].note_events:
+#     e.pitch = (e.pitch, e.pitch+12)
 
-for e in MOVE.events:
-    e.beats = e.beats / 2
+calliope.ScaleRhythm(scale=1/2)(MOVE)
 
 
 rhythm_intricate_a = R3_INTRACATE_CELL_BLOCK_A.to_rhythm_line_block(20)
@@ -82,8 +81,8 @@ rhythm_beat_c = R6_BEAT_CELL_BLOCK_C.to_rhythm_line_block(10)
 MOVE.append(rhythm_beat_c[0]())
 MOVE.append(rhythm_beat_c[1]())
 
-score = MOVE.to_score()
+# score = MOVE.to_score()
 # score.staves[1].clef="bass"
-score.staves[3].clef="bass"
+# score.staves[3].clef="bass"
 
-calliope.illustrate(score, as_midi=True)
+# calliope.illustrate(score, as_midi=True)
