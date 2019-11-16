@@ -5,16 +5,16 @@ class M02_BassLine(calliope.Line):
     class PhraseAB(calliope.Phrase):
         class CellA(calliope.Cell):
             init_rhythm = (-0.5, 1.5, 2, 1.5, 2.5)
-            init_pitches = (None, -5, -3, -3, -5)
+            init_pitches = ("R", -5, -3, -3, -5)
 
         class CellB(calliope.Cell):
             init_rhythm = (-0.5, 3.5, 4)
-            init_pitches = (None, 0, -5)
+            init_pitches = ("R", 0, -5)
 
     class PhraseCD(calliope.Phrase):
         class CellC(calliope.Cell):
             init_rhythm = (2, 2, -0.5, 1.5, 1, 2)
-            init_pitches = (2, 0, None, 2, 0, -5)
+            init_pitches = (2, 0, "R", 2, 0, -5)
 
         class CellD(calliope.Cell):
             init_rhythm = (4, 3)
@@ -23,11 +23,11 @@ class M02_BassLine(calliope.Line):
     class PhraseEF(calliope.Phrase):
         class CellE(calliope.Cell):
             init_rhythm = (-0.5, 3.5, 1, 3)
-            init_pitches = (None, 0, -7, -5)
+            init_pitches = ("R", 0, -7, -5)
         
         class CellF(calliope.Cell):
             init_rhythm = (-0.5, 3.5, 1.5, 2.5)
-            init_pitches = (None, 0, -7, -5)
+            init_pitches = ("R", 0, -7, -5)
 
     class PhraseGH(calliope.Phrase):
         class CellG(calliope.Cell):
@@ -45,7 +45,7 @@ class M02_BassLine(calliope.Line):
 
         class CellJ(calliope.Cell):
             init_rhythm = (-0.5, 1.5, 2, 1.5, 2.5)
-            init_pitches = (None, 0, -5, -7, -5)
+            init_pitches = ("R", 0, -5, -7, -5)
 
 
 BASS_LINE = M02_BassLine().transformed(calliope.Transpose(interval=-12))

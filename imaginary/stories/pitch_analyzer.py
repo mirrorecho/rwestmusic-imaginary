@@ -43,12 +43,9 @@ class PitchAnalyzer(calliope.CalliopeBase):
                     #     new_pitch_set = set((e.pitch,))
                     # for ts in self.ticks_pitches[ticks_counter:ticks_counter+my_ticks]:
                     #     ts |= new_pitch_set
-                    if isinstance(e.pitch, (list, tuple)):
-                        new_pitch_list = e.pitch
-                    else:
-                        new_pitch_list = [e.pitch]
+
                     for ts in self.ticks_pitches[ticks_counter:ticks_counter+my_ticks]:
-                        ts.extend(new_pitch_list)
+                        ts.extend(e.pitch_numbers)
                 ticks_counter += my_ticks
 
 

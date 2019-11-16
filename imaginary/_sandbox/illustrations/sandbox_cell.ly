@@ -12,132 +12,170 @@
 \score {
     {
         bf8
+        -\accent
         [
         c'8
+        -\accent
         ]
         ef'8
+        -\accent
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         f'8
+        -\accent
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         bf8
+        -\accent
         [
         c'8
+        -\accent
         ]
         ef'8
+        -\accent
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         f'8
+        -\accent
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
         r8
         [
         c'8
+        -\accent
         ]
     }
 }

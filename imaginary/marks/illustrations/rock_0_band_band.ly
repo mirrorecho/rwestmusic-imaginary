@@ -100,6 +100,7 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Bsax. }
+                        \clef "bass"
                         R1 * 20
                     }
                 }
@@ -115,6 +116,7 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
+                        \clef "bass"
                         R1 * 20
                     }
                 }
@@ -163,6 +165,7 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Tenor Trombone" }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
+                        \clef "bass"
                         R1 * 20
                     }
                 }
@@ -592,7 +595,7 @@
                 {
                     {
                         \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { Cello }
+                        \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
                         \clef "bass"
                         R1 * 20
@@ -608,7 +611,7 @@
                 {
                     {
                         \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { Cello }
+                        \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \clef "bass"
                         R1 * 20

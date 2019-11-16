@@ -81,8 +81,8 @@ rhythm_beat_c = R6_BEAT_CELL_BLOCK_C.to_rhythm_line_block(10)
 MOVE.append(rhythm_beat_c[0]())
 MOVE.append(rhythm_beat_c[1]())
 
-# score = MOVE.to_score()
-# score.staves[1].clef="bass"
-# score.staves[3].clef="bass"
+score = MOVE.to_score()
+score.staves[1].clef="bass"
+score.staves[3].clef="bass"
 
-# calliope.illustrate(score, as_midi=True)
+calliope.illustrate(score, as_midi=True)

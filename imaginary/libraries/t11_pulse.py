@@ -55,19 +55,19 @@ class T11_Pulse(calliope.Factory, TexturePhraseBlock):
 
         return phrase_list
 
-# TEST_BLOCK = calliope.SegmentBlock(
-#     calliope.Segment(HOME_LINE),
-#     calliope.Segment(HOME_U_LINE),
-#     calliope.Segment(T9_RIFF.to_line_block(8)[0]),
-#     calliope.Segment(T9_RIFF.to_line_block(8)[1]),
-#     )
+TEST_BLOCK = calliope.SegmentBlock(
+    calliope.Segment(HOME_LINE),
+    calliope.Segment(HOME_U_LINE),
+    calliope.Segment(T9_RIFF.to_line_block(8)[0]),
+    calliope.Segment(T9_RIFF.to_line_block(8)[1]),
+    )
 
-# pa = PitchAnalyzer(TEST_BLOCK)
+pa = PitchAnalyzer(TEST_BLOCK)
 
-# T11_PULSE = T11_Pulse(pitch_analizer=pa)
+T11_PULSE = T11_Pulse(pitch_analizer=pa)
 
 # # calliope.illustrate(TEST_BLOCK.to_score(name="test"))
-# calliope.illustrate(T11_PULSE.to_score())
+calliope.illustrate(TEST_BLOCK.to_score())
 
 
 

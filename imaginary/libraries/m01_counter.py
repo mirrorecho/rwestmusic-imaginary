@@ -17,31 +17,35 @@ class M01_CounterLine(calliope.Line):
         init_pitches = (5, 4, 4, 9, 7)
 
     class CellC(M01_CounterCellC):
-        init_pitches = (None, 5, 4, 2, None, 9, 7, 5, None)
+        init_pitches = ("R", 5, 4, 2, "R", 9, 7, 5, "R")
 
     class CellD(M01_CounterCell):
         init_rhythm = (-1, 1, 0.5, 5.5)
-        init_pitches = (None, 7, 9, 12)
+        init_pitches = ("R", 7, 9, 12)
 
-COUNTER_LINE = M01_CounterLine()
+COUNTER_LINE_1 = M01_CounterLine()
 
 COUNTER_LINE_2 = M01_CounterLine().transformed(
             calliope.TransposeWithinScale(steps=2),
             calliope.Transpose(interval=5)
             )
+
 # TO DO: this is nasty!!!!!!!!
 fix_cell_c = COUNTER_LINE_2.cells["cell_c"]
 fix_cell_c.clear()
 fix_cell_c.rhythm=(-1, 1, 1, 1, 1, 1, 1, 1)
-fix_cell_c.pitches=(None, 9, 9, 5, 5, 5, 9, 4)
+fix_cell_c.pitches=("R", 9, 9, 5, 5, 5, 9, 4)
 
 fix_cell_d = COUNTER_LINE_2.cells["cell_d"]
 fix_cell_d.clear()
 fix_cell_d.rhythm=(-8,)
 fix_cell_d.rhythm=(-1, 1, 1, 1, 1, 1, 1, 1)
-fix_cell_d.pitches=(None, 4, 5, 10, 9, 5, 10, 9)
+fix_cell_d.pitches=("R", 4, 5, 10, 9, 5, 10, 9)
 
-COUNTER_LINE.extend(COUNTER_LINE_2)
+COUNTER_LINE = M01_CounterLine()
+COUNTER_LINE.extend(COUNTER_LINE_2())
+
+# COUNTER_LINE.extend(COUNTER_LINE_2)
 
 
 calliope.illustrate(COUNTER_LINE)

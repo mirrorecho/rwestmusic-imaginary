@@ -11,18 +11,18 @@ class M00_HomeLine(calliope.Line):
     class PhraseA(calliope.Phrase):
         class CellA1(calliope.Cell):
             init_rhythm=(2, 4, -2)
-            init_pitches=(-3, 0, None)
+            init_pitches=(-3, 0, "R")
             cell_label="A"
 
         class CellA2(calliope.Cell):
             init_rhythm=(2, 1, 3)
-            init_pitches=(-3, 0, 2, None)
+            init_pitches=(-3, 0, 2, "R")
             cell_label="A"
 
     class PhraseB(calliope.Phrase):
         class CellB(calliope.Cell):
             init_rhythm=(-2, 2, 1, 1, 1, 3)
-            init_pitches=(None, -3, 5, 4, 0, 2)
+            init_pitches=("R", -3, 5, 4, 0, 2)
 
         class CellA3(calliope.Cell):
             init_rhythm=(2, 4)
@@ -49,13 +49,13 @@ class M00_HomeUpLine(calliope.Line):
             cell_label="A"
         class CellA2(calliope.Cell):
             init_rhythm=(2, 2, 1, 1, -1)
-            init_pitches=(5, -3, 2, 5, None)
+            init_pitches=(5, -3, 2, 5, "R")
             cell_label="A"
 
     class PhraseB(calliope.Phrase):
         class CellB(calliope.Cell):
             init_rhythm=(1, 1, 1, 2, 2, -1)
-            init_pitches=(2, 5, 9, 2, 12, None)        
+            init_pitches=(2, 5, 9, 2, 12, "R")        
 
         class CellA3(calliope.Cell):
             init_rhythm=(1, 4, 1, 1)
@@ -77,7 +77,7 @@ HOME_U_LINE.extend( M00_HomeLine().transformed(calliope.Transpose(interval=5)) )
 HOME_D_LINE = M00_HomeUpLine(name="home_down_up_line").transformed(calliope.Transpose(interval=-5))
 HOME_D_LINE.extend( M00_HomeLine() )
 
-calliope.illustrate(HOME_D_LINE)
+calliope.illustrate(HOME_LINE)
 
 
 
