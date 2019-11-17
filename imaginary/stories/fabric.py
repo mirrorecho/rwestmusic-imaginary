@@ -16,47 +16,66 @@ class FabricFactory(calliope.FromSelectableFactory):
     bookend_beats = (0, 0)
     wrap_in = calliope.Segment 
     assign_pitches_from_selectable = True
+
+    fabric_staves = ()
     only_staves = ()
     mask_staves = ()
 
+    def weave(self, staff, index=0, **kwargs):
+        pass
+
+    # EXAMPLE
+    # def _staves__ooa_flute(self, staff, index=0):
+    #     return self.weave(staff, index)
+
     def fabricate(self, machine, *args, **kwargs):
-        used_staves = []
+        # these are the staves with content defined in functions:
+        def_staves = [attr_name[9:] for attr_name in dir(self) if attr_name[:9] == "_staves__"]
+        
+        if self.only_staves:
+            used_staves = self.only_staves
+        else:
+            used_staves = self.fabric_staves
+            # add in any def_staves not already included
+            used_staves += tuple(set(def_staves) - set(used_staves))
 
-        for attr_name in dir(self):
-            if attr_name[:9] == "_staves__":
-                my_staff_name = attr_name[9:]
-                my_staff = self.staves[my_staff_name]
+        if self.mask_staves:
+            used_staves = [s for s in used_staves if s not in self.mask_staves]
 
-                if (not self.only_staves or my_staff_name in self.only_staves) and my_staff_name not in self.mask_staves:
-                    my_machine = getattr(self,attr_name)(my_staff)
+        for i, staff_name in enumerate(used_staves):
+            my_staff = self.staves[staff_name]
 
-                    if self.tag_events:
-                        for n, t in self.tag_events.items():
-                            print(n,t,my_machine.events[n])
-                            my_machine.events[n].tag(*t)
+            if staff_name in def_staves:
+                my_machine = getattr(self,"_staves__" + staff_name)(my_staff, i)
+            else:
+                my_machine = self.weave(my_staff, i)
 
-                    if self.tag_all_note_events:
-                        my_machine.note_events.tag(*self.tag_all_note_events)
+            if self.tag_events:
+                for n, t in self.tag_events.items():
+                    print(n,t,my_machine.events[n])
+                    my_machine.events[n].tag(*t)
 
-                    if self.wrap_in is not None:
-                        my_bubble = self.wrap_in()
-                        my_staff.append(my_bubble)
-                    else:
-                        my_bubble = my_staff
+            if self.tag_all_note_events:
+                my_machine.note_events.tag(*self.tag_all_note_events)
 
-                    if self.bookend_beats[0]:
-                        my_bubble.append(calliope.Event(beats=0-self.bookend_beats[0]))
-                    
-                    my_bubble.append(my_machine)
+            if self.wrap_in is not None:
+                my_bubble = self.wrap_in()
+                my_staff.append(my_bubble)
+            else:
+                my_bubble = my_staff
 
-                    if self.bookend_beats[1]:
-                        my_bubble.append(calliope.Event(beats=0-self.bookend_beats[1]))
+            if self.bookend_beats[0]:
+                my_bubble.append(calliope.Event(beats=0-self.bookend_beats[0]))
+            
+            my_bubble.append(my_machine)
 
-                    used_staves.append(my_staff)
+            if self.bookend_beats[1]:
+                my_bubble.append(calliope.Event(beats=0-self.bookend_beats[1]))
+
 
         if self.remove_empty_staves == True:
             for staff in self.staves:
-                if staff not in used_staves:
+                if staff.name not in used_staves:
                     staff.parent.remove(staff)
 
         if self.assign_pitches_from_selectable:

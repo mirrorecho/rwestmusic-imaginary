@@ -97,6 +97,7 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Bass Guitar" }
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
+                        \clef "bass"
                         f'8
                         [
                         g'8
@@ -150,7 +151,7 @@
             >>
             \context StaffGroup = "ooa_strings"
             <<
-                \context Staff = "ooa_cello1"
+                \context Staff = "ooa_violin1"
                 \with
                 {
                     \consists Horizontal_bracket_engraver
@@ -158,9 +159,8 @@
                 {
                     {
                         \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { "Cello 1" }
-                        \set Staff.shortInstrumentName = \markup { Vc.1 }
-                        \clef "bass"
+                        \set Staff.instrumentName = \markup { "Violin 1" }
+                        \set Staff.shortInstrumentName = \markup { Vln.1 }
                         b'8
                         [
                         c''8
@@ -211,6 +211,127 @@
                         ]
                     }
                 }
+                \context Staff = "ooa_violin2"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Violin 2" }
+                        \set Staff.shortInstrumentName = \markup { Vln.2 }
+                        c'8
+                        [
+                        d'8
+                        ]
+                        e'8
+                        [
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        e'8
+                        [
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        e'8
+                        [
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        e'8
+                        [
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                    }
+                }
+                \context Staff = "ooa_cello1"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Cello 1" }
+                        \set Staff.shortInstrumentName = \markup { Vc.1 }
+                        \clef "bass"
+                        f'8
+                        [
+                        g'8
+                        ]
+                        a'8
+                        [
+                        f'8
+                        ]
+                        g'8
+                        [
+                        a'8
+                        ]
+                        f'8
+                        [
+                        g'8
+                        ]
+                        a'8
+                        [
+                        f'8
+                        ]
+                        g'8
+                        [
+                        a'8
+                        ]
+                        f'8
+                        [
+                        g'8
+                        ]
+                        a'8
+                        [
+                        f'8
+                        ]
+                        g'8
+                        [
+                        a'8
+                        ]
+                        f'8
+                        [
+                        g'8
+                        ]
+                        a'8
+                        [
+                        f'8
+                        ]
+                        g'8
+                        [
+                        a'8
+                        ]
+                    }
+                }
                 \context Staff = "ooa_cello2"
                 \with
                 {
@@ -222,53 +343,53 @@
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \clef "bass"
-                        c'8
+                        b'8
                         [
-                        d'8
+                        c''8
                         ]
-                        e'8
+                        b'8
                         [
-                        c'8
+                        c''8
                         ]
-                        d'8
+                        b'8
                         [
-                        e'8
+                        c''8
                         ]
-                        c'8
+                        b'8
                         [
-                        d'8
+                        c''8
                         ]
-                        e'8
+                        b'8
                         [
-                        c'8
+                        c''8
                         ]
-                        d'8
+                        b'8
                         [
-                        e'8
+                        c''8
                         ]
-                        c'8
+                        b'8
                         [
-                        d'8
+                        c''8
                         ]
-                        e'8
+                        b'8
                         [
-                        c'8
+                        c''8
                         ]
-                        d'8
+                        b'8
                         [
-                        e'8
+                        c''8
                         ]
-                        c'8
+                        b'8
                         [
-                        d'8
+                        c''8
                         ]
-                        e'8
+                        b'8
                         [
-                        c'8
+                        c''8
                         ]
-                        d'8
+                        b'8
                         [
-                        e'8
+                        c''8
                         ]
                     }
                 }
@@ -291,9 +412,6 @@
             \context StaffGroup = "cco_strings"
             <<
             >>
-        >>
-        \context StaffGroup = "short_score"
-        <<
         >>
     >>
 }

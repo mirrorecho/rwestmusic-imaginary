@@ -1,80 +1,58 @@
 import abjad, calliope
 
+# some mixins to define commonly used instrument groups...
 
 class OoaStringsFabric(object):
-
-    def _staves__ooa_violin1(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_violin2(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_cello1(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_cello2(self, staff):
-        return self.fabric_helper()
-
+    fabric_staves = (
+        "ooa_violin1", 
+        "ooa_violin2", 
+        "ooa_cello1", 
+        "ooa_cello2",
+        )
 
 class CcoStringsFabric(object):
+    fabric_staves = (
+        "cco_violin_i", 
+        "cco_violin_ii", 
+        "cco_viola", 
+        "cco_cello",
+        "cco_bass",
+        )
 
-    def _staves__cco_violin_i(self, staff):
-        return self.fabric_helper()
-
-    def _staves__cco_violin_ii(self, staff):
-        return self.fabric_helper()
-
-    def _staves__cco_viola(self, staff):
-        return self.fabric_helper()
-
-    def _staves__cco_cello(self, staff):
-        return self.fabric_helper()
-
-    def _staves__cco_bass(self, staff):
-        return self.fabric_helper()
-
-
-class StringsFabric(OoaStringsFabric, CcoStringsFabric): pass
+class StringsFabric(object): 
+    fabric_staves = OoaStringsFabric.fabric_staves + CcoStringsFabric.fabric_staves
 
 class HornsFabric(object):
-    def _staves__cco_horn(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_horn(self, staff):
-        return self.fabric_helper()
-
+    fabric_staves = (
+        "cco_horn", 
+        "ooa_horn", 
+        )
 
 class TrumpetsFabric(object):
-    def _staves__cco_trumpet(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_trumpet(self, staff):
-        return self.fabric_helper()
-
+    fabric_staves = (
+        "cco_trumpet", 
+        "ooa_trumpet", 
+        )
 
 class TrombonesFabric(object):
-    def _staves__cco_trombone(self, staff):
-        return self.fabric_helper()
+    fabric_staves = (
+        "cco_trombone", 
+        "ooa_trombone", 
+        )
 
-    def _staves__ooa_trombone(self, staff):
-        return self.fabric_helper()
+class StrongBrassFabric(object): 
+    fabric_staves = TrumpetsFabric.fabric_staves + TrombonesFabric.fabric_staves
 
+class BrassFabric(object): 
+    fabric_staves = HornsFabric.fabric_staves + StrongBrassFabric.fabric_staves
 
-class StrongBrassFabric(TrumpetsFabric, TrombonesFabric): pass
+class SaxFabric(object):
+    fabric_staves = (
+        "ooa_alto_sax1", 
+        "ooa_alto_sax2", 
+        "ooa_tenor_sax", 
+        "ooa_bari_sax",
+        )
 
-
-class BrassFabric(TrumpetsFabric, TrombonesFabric, HornsFabric): pass
-
-
-class SaxFragment(object):
-    def _staves__ooa_alto_sax1(self, staff):
-        return self.fabric_helper()
-    
-    def _staves__ooa_alto_sax2(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_tenor_sax(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_bari_sax(self, staff):
-        return self.fabric_helper()
+class RockStrings(object):
+    fabric_staves = ("ooa_guitar",) + OoaStringsFabric.fabric_staves + ("ooa_bass_guitar",)

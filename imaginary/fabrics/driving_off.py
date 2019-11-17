@@ -8,7 +8,7 @@ class DrivingOff(ImaginaryFabric):
     initial_dynamic = "mp"
     driving_dynamic = "f"
 
-    def fabric_helper(self):
+    def weave(self, staff, index=0, **kwargs):
         my_phrase = calliope.Phrase(
             calliope.Cell(
                 rhythm=(-0.5, 0.5, 0.5, 0.5, -0.5)
@@ -31,12 +31,11 @@ class DrivingOff(ImaginaryFabric):
         return my_phrase
 
 
-class StrongBrassDrivingOff(instrument_groups.StrongBrassFabric, 
-    DrivingOff): pass
+class StrongBrassDrivingOff(instrument_groups.StrongBrassFabric, DrivingOff): 
+    fabric_staves = ("ooa_trumpet", "cco_trumpet", "ooa_trombone", "cco_trombone")
 
 
-
-class SaxDrivingOff(instrument_groups.SaxFragment,  DrivingOff): pass
+class SaxDrivingOff(instrument_groups.SaxFabric,  DrivingOff): pass
 
 
 

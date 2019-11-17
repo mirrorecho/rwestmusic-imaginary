@@ -6,23 +6,15 @@ class Melody(ImaginaryFabric):
     slur_cells = True
     assign_pitches_from_selectable = False
 
-    def fabric_helper(self, melody_index):
-        my_machine = self.selectable.get_cyclic(melody_index)()
+    def weave(self, staff, index=0, **kwargs):
+        my_machine = self.selectable.get_cyclic(index)()
         if self.slur_cells == True:
             calliope.SlurCells()(my_machine)
         return my_machine
 
 
 class CcoHighStringsMelody(Melody):
-
-    def _staves__cco_violin_i(self, staff):
-        return self.fabric_helper(0)
-
-    def _staves__cco_violin_ii(self, staff):
-        return self.fabric_helper(1)
-
-    def _staves__cco_viola(self, staff):
-        return self.fabric_helper(2)
+    fabric_staves = ("cco_violin_i", "cco_violin_ii", "cco_viola")
 
 
 if __name__ == "__main__":

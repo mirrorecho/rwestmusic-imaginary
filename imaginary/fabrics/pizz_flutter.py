@@ -26,35 +26,36 @@ class PizzFlutter(ImaginaryFabric):
 
         return my_cell
 
+    # TO DO: refactor to cut out a lot of this ... 
 
-    def _staves__ooa_flute(self, staff):
+    def _staves__ooa_flute(self, staff, index=0):
         return self.flutter_helper()
 
-    def _staves__cco_flute1(self, staff):
+    def _staves__cco_flute1(self, staff, index=0):
         return self.flutter_helper()
 
-    def _staves__cco_flute2(self, staff):
+    def _staves__cco_flute2(self, staff, index=0):
         return self.flutter_helper()
 
-    def _staves__harp1(self, staff):
+    def _staves__harp1(self, staff, index=0):
         return self.pizz_helper(pizz_indicator=False)
 
-    def _staves__harp2(self, staff):
+    def _staves__harp2(self, staff, index=0):
         return self.pizz_helper(pizz_indicator=False)
 
-    def _staves__cco_violin_i(self, staff):
+    def _staves__cco_violin_i(self, staff, index=0):
         return self.pizz_helper()
 
-    def _staves__cco_violin_ii(self, staff):
+    def _staves__cco_violin_ii(self, staff, index=0):
         return self.pizz_helper()
 
-    def _staves__cco_viola(self, staff):
+    def _staves__cco_viola(self, staff, index=0):
         return self.pizz_helper()
 
-    def _staves__cco_cello(self, staff):
+    def _staves__cco_cello(self, staff, index=0):
         return self.pizz_helper()
 
-    def _staves__cco_bass(self, staff):
+    def _staves__cco_bass(self, staff, index=0):
         return self.pizz_helper()
 
 if __name__ == "__main__":

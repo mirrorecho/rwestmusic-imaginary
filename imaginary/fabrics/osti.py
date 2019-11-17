@@ -7,7 +7,7 @@ class Osti(ImaginaryFabric):
     osti_cell_length = 6
     osti_cell_count = 4
 
-    def fabric_helper(self):
+    def weave(self, staff, index=0, **kwargs):
         my_phrase = calliope.Phrase(
             *[
             calliope.Cell(rhythm = [self.osti_pulse_duration]*self.osti_cell_length)
@@ -19,21 +19,7 @@ class Osti(ImaginaryFabric):
 
 
 
-class RockOsti(Osti):
-    def _staves__ooa_guitar(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_cello1(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_cello2(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_guitar(self, staff):
-        return self.fabric_helper()
-
-    def _staves__ooa_bass_guitar(self, staff):
-        return self.fabric_helper()
+class RockOsti(instrument_groups.RockStrings, Osti): pass
 
 
 if __name__ == "__main__":

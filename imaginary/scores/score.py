@@ -75,6 +75,7 @@ class ImaginaryScore(calliope.Score):
             class OoaBassGuitar(calliope.Staff):
                 instrument=abjad.Guitar(
                     name="Bass Guitar", short_name="bgtr.")
+                clef="bass"
 
 
         class OoaStrings(calliope.StaffGroup):
@@ -221,8 +222,10 @@ class ImaginaryScore(calliope.Score):
     #         instrument=abjad.Piano(
     #             name="S 11", short_name="s.11")
 
-    def fill_rests(self, beats=None):
+    def fill_rests(self, beats=None, fill_to=None):
         staves_beats = [sum([m.beats for m in s]) for s in self.staves]
+        if fill_to:
+            beats = beats or sum([m.beats for m in self.staves[fill_to]]) 
         beats = beats or max(staves_beats)
         for staff, staff_beats in zip(self.staves, staves_beats):
             if staff_beats < beats:

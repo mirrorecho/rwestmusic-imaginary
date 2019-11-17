@@ -6,7 +6,7 @@ class Pulse(ImaginaryFabric):
     pulse_duration = 0.5
     pulse_beats = 4
 
-    def fabric_helper(self):
+    def weave(self, staff, index=0, **kwargs):
         my_phrase = calliope.Phrase(
             rhythm = [self.pulse_duration for i in range(int(self.pulse_beats/self.pulse_duration))]
             )

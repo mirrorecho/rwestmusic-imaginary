@@ -15,11 +15,10 @@ class StaggeredSwell(ImaginaryFabric):
             (1,0)
         )
 
-
-    def fabric_helper(self, swell_index):
+    def weave(self, staff, index=0, **kwargs):
         my_rhythm = []
-        my_stagger = self.swell_staggers[swell_index % len(self.swell_staggers)]
-        my_split_ratio = self.swell_split_ratios[swell_index % len(self.swell_split_ratios)]
+        my_stagger = self.swell_staggers[index % len(self.swell_staggers)]
+        my_split_ratio = self.swell_split_ratios[index % len(self.swell_split_ratios)]
         if my_stagger[0] > 0:
             my_rhythm.append(0-my_stagger[0])
 
@@ -45,21 +44,11 @@ class StaggeredSwell(ImaginaryFabric):
             my_cell.note_events[1].tag("\\>")
             # my_cell.events[-1].tag("!<>\\pp") 
 
-
-
         return my_cell
 
 
 class CcoHighStringsSwell(StaggeredSwell):
-    def _staves__cco_violin_i(self, staff):
-        return self.fabric_helper(0)
-
-    def _staves__cco_violin_ii(self, staff):
-        return self.fabric_helper(1)
-
-    def _staves__cco_viola(self, staff):
-        return self.fabric_helper(2)
-
+    fabric_staves = ("cco_violin_i", "cco_violin_ii", "cco_viola")
 
 
 if __name__ == "__main__":

@@ -84,6 +84,37 @@
             >>
             \context PianoStaff = "cco_harp"
             <<
+                \context Staff = "harp1"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Harp }
+                        \set Staff.shortInstrumentName = \markup { Hp. }
+                        c'4
+                        r4
+                        r2
+                    }
+                }
+                \context Staff = "harp2"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Harp }
+                        \set Staff.shortInstrumentName = \markup { Hp. }
+                        \clef "bass"
+                        f'4
+                        r4
+                        r2
+                    }
+                }
             >>
             \context PianoStaff = "cco_piano"
             <<
@@ -100,7 +131,7 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
-                        c'4
+                        b'4
                         r4
                         r2
                     }
@@ -115,7 +146,7 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
-                        f'4
+                        c'4
                         r4
                         r2
                     }
@@ -130,7 +161,7 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
-                        b'4
+                        f'4
                         r4
                         r2
                     }
@@ -146,7 +177,7 @@
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \clef "bass"
-                        c'4
+                        b'4
                         r4
                         r2
                     }
@@ -162,15 +193,12 @@
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \clef "bass"
-                        f'4
+                        c'4
                         r4
                         r2
                     }
                 }
             >>
-        >>
-        \context StaffGroup = "short_score"
-        <<
         >>
     >>
 }

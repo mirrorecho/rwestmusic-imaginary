@@ -132,8 +132,5 @@
                 }
             >>
         >>
-        \context StaffGroup = "short_score"
-        <<
-        >>
     >>
 }

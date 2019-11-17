@@ -40,8 +40,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -64,8 +64,8 @@
                         d'8
                         [
                         e'8
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ~
                         ]
                         e'4
@@ -93,8 +93,8 @@
                         [
                         f'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -117,8 +117,8 @@
                         g'8
                         [
                         a'8
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ~
                         ]
                         a'4
@@ -146,8 +146,8 @@
                         [
                         c''8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -170,8 +170,8 @@
                         c''8
                         [
                         b'8
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ~
                         ]
                         b'4
@@ -200,8 +200,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -224,8 +224,8 @@
                         d'8
                         [
                         e'8
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ~
                         ]
                         e'4
@@ -262,9 +262,6 @@
             \context StaffGroup = "cco_strings"
             <<
             >>
-        >>
-        \context StaffGroup = "short_score"
-        <<
         >>
     >>
 }
