@@ -5,7 +5,7 @@ from imaginary.fabrics import instrument_groups
 class Osti(ImaginaryFabric):
     osti_pulse_duration = 0.5
     osti_cell_length = 6
-    osti_cell_count = 4
+    osti_cell_count = 2
 
     def weave(self, staff, index=0, **kwargs):
         my_phrase = calliope.Phrase(
@@ -19,7 +19,7 @@ class Osti(ImaginaryFabric):
 
 
 
-class RockOsti(instrument_groups.RockStrings, Osti): pass
+class RockStringsOsti(instrument_groups.RockStrings, Osti): pass
 
 
 if __name__ == "__main__":

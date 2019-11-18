@@ -1,20 +1,76 @@
-import abjad
-import calliope
+import abjad, calliope
 
 from imaginary.scores import score
-from imaginary.stories.arrange_from import ArrangeFrom
+from imaginary.fabrics import (instrument_groups, hits, lick, melody, osti, pad, 
+    pizz_flutter, pulse, staggered_swell, swell_hit)
+import rock
 
-from imaginary.libraries.m00_home import HOME_LINE, HOME_U_LINE, HOME_D_LINE
-from imaginary.libraries.m01_counter import COUNTER_LINE
-from imaginary.libraries.m02_bass import BASS_LINE, BASS_LINE_1_FLAT, BASS_LINE_2_FLAT
+# SHOULD AVERAGE 20 bars
+# TEMPO = 160+ !!!!!!
 
-# TO DO: AVOID import *
-from imaginary.libraries.r03_intricate import * 
-from imaginary.libraries.r04_pounding import *
-from imaginary.libraries.r05_angular import *
-from imaginary.libraries.r06_beat import *
-from imaginary.libraries.t09_riff import *
+s = score.ImaginaryScore()
 
+# TO DO: add ranges
+# =======================================================
+rock_osti = rock.RockOsti(
+        rock.get_osti_phrase_block(),
+        fabric_staves = ("ooa_guitar", "ooa_mallets"),
+        )
+calliope.StackPitches(
+    intervals=((0,5),(-7,5),)
+    )( rock_osti.staves["ooa_mallets"] )
+
+s.extend_from(
+    *[rock_osti() for i in range(8)]
+    )
+
+s.fill_rests(beats=2*4)
+
+# =======================================================
+s.extend_from(
+    swell_hit.SwellHit(fabric_staves=("cco_oboe1", "cco_oboe2"),)
+    )
+s.fill_rests(beats=3*4)
+
+# =======================================================
+
+s.extend_from(
+    hits.Hits(
+        fabric_staves = instrument_groups.get_instruments("strings"),
+        hits_spacing = (12, 6, 2, 4),
+        hit_duration = 1,
+        tag_events = {0:("pizz.",)}
+        ),
+    )
+
+s.extend_from(
+    rock.Lick8(fabric_staves=("ooa_bass_guitar",)),
+    )
+s.fill_rests(beats=5*4)
+
+s.extend_from(
+    swell_hit.SwellHit(fabric_staves=("cco_oboe1", "cco_oboe2"),)
+    )
+
+s.fill_rests(beats=6*4)
+
+# =======================================================
+
+s.extend_from(
+    rock.FluteDoves(),
+    rock.FluteDoves(),
+    rock.FluteDoves(),
+    )
+
+s.fill_rests(beats=8*4)
+s.extend_from(
+    rock.Lick8(fabric_staves=("ooa_bass_guitar",),
+        lick_count=4,
+        ),
+    )
+
+s.fill_rests()
+s.illustrate_me()
 
 # class GuitarArranger(ArrangeFrom):
 #     to_staves = (
@@ -27,41 +83,41 @@ from imaginary.libraries.t09_riff import *
 
 
 
-# TEMPO = 160 !!!!!!
 
-BEATS = 4 * 20
 
-SCORE = score.ImaginaryScore()
+# BEATS = 4 * 20
 
-BAND_SCORE = SCORE.select["band"]
-SHORT_SCORE = SCORE.select["short_score"]
+# SCORE = score.ImaginaryScore()
 
-for s in SCORE.staves:
-    s.append(calliope.Segment(name=s.name))
+# BAND_SCORE = SCORE.select["band"]
+# SHORT_SCORE = SCORE.select["short_score"]
+
+# for s in SCORE.staves:
+#     s.append(calliope.Segment(name=s.name))
     
-RIFF_BLOCK = T9_RIFF.to_line_block(10)
+# RIFF_BLOCK = T9_RIFF.to_line_block(10)
 
-ANGULAR_BLOCK = R5_ANGULAR_CELL_BLOCK.to_rhythm_line_block(2).transformed(
-    calliope.ScaleRhythm(scale=2)
-    )
+# ANGULAR_BLOCK = R5_ANGULAR_CELL_BLOCK.to_rhythm_line_block(2).transformed(
+#     calliope.ScaleRhythm(scale=2)
+#     )
 
-SHORT_SCORE.segments["s0"].append(calliope.Event(beats=-16))
-SHORT_SCORE.segments["s0"].append(ANGULAR_BLOCK[0]())
+# SHORT_SCORE.segments["s0"].append(calliope.Event(beats=-16))
+# SHORT_SCORE.segments["s0"].append(ANGULAR_BLOCK[0]())
 
-rhythm_intricate_block = R3_INTRACATE_CELL_BLOCK_B2.to_rhythm_line_block(4).transformed(
-    calliope.ScaleRhythm(scale=2)
-    )
-SHORT_SCORE.segments["s1"].append(rhythm_intricate_block[2]())
+# rhythm_intricate_block = R3_INTRACATE_CELL_BLOCK_B2.to_rhythm_line_block(4).transformed(
+#     calliope.ScaleRhythm(scale=2)
+#     )
+# SHORT_SCORE.segments["s1"].append(rhythm_intricate_block[2]())
 
-SHORT_SCORE.segments["s3"].extend(RIFF_BLOCK[0]())
-SHORT_SCORE.segments["s4"].extend(RIFF_BLOCK[1]())
-
-
-BAND_SCORE.segments["guitar"].extend(SHORT_SCORE.segments["s3"]())
+# SHORT_SCORE.segments["s3"].extend(RIFF_BLOCK[0]())
+# SHORT_SCORE.segments["s4"].extend(RIFF_BLOCK[1]())
 
 
-for segment in SCORE.segments:
-    if len(segment) == 0:
-        segment.append(calliope.Event(beats=0-BEATS))
+# BAND_SCORE.segments["guitar"].extend(SHORT_SCORE.segments["s3"]())
 
-calliope.illustrate(BAND_SCORE, as_midi=True)
+
+# for segment in SCORE.segments:
+#     if len(segment) == 0:
+#         segment.append(calliope.Event(beats=0-BEATS))
+
+# calliope.illustrate(BAND_SCORE, as_midi=True)

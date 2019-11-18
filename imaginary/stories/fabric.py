@@ -40,7 +40,9 @@ class FabricFactory(calliope.FromSelectableFactory):
             used_staves += tuple(set(def_staves) - set(used_staves))
 
         if self.mask_staves:
-            used_staves = [s for s in used_staves if s not in self.mask_staves]
+            used_staves = tuple([s for s in used_staves if s not in self.mask_staves])
+
+        setattr(self, "used_staves", used_staves)
 
         for i, staff_name in enumerate(used_staves):
             my_staff = self.staves[staff_name]
@@ -72,34 +74,32 @@ class FabricFactory(calliope.FromSelectableFactory):
             if self.bookend_beats[1]:
                 my_bubble.append(calliope.Event(beats=0-self.bookend_beats[1]))
 
+            if self.assign_pitches_from_selectable:
+                self.assign_pitches(my_staff, my_machine, i)
 
         if self.remove_empty_staves == True:
             for staff in self.staves:
                 if staff.name not in used_staves:
                     staff.parent.remove(staff)
 
-        if self.assign_pitches_from_selectable:
-            self.assign_pitches()
 
 
-    def assign_pitches(self):
+    def assign_pitches(self, staff, machine, index):
         # TO DO... should bookend move pitches forward or not?
 
         if self.selectable is not None:
-            for i, staff in enumerate(self.staves):
-                machine = staff[0]
                 
-                block_pitches = self.selectable[i % len(self.selectable)].pitches
+            block_pitches = self.selectable[index % len(self.selectable)].pitches
 
-                # TO DO... assign based on pitch analyzer!
-                for j,e in enumerate(machine.events):
-                    if not e.skip_or_rest:
-                        if j < len(block_pitches):
-                            e.pitch = block_pitches[j]
-               
-                if my_range := getattr(self.ranges, staff.name, None):
-                    # print(my_range)
-                    calliope.SmartRange(smart_range=my_range)(machine)
+            # TO DO... assign based on pitch analyzer!
+            for j,e in enumerate(machine.events):
+                if not e.skip_or_rest:
+                    if j < len(block_pitches):
+                        e.pitch = block_pitches[j]
+           
+            if my_range := getattr(self.ranges, staff.name, None):
+                # print(my_range)
+                calliope.SmartRange(smart_range=my_range)(machine)
 
 
     # TO DO: consider this:

@@ -56,3 +56,23 @@ class SaxFabric(object):
 
 class RockStrings(object):
     fabric_staves = ("ooa_guitar",) + OoaStringsFabric.fabric_staves + ("ooa_bass_guitar",)
+
+def get_instruments(*args):
+    my_instruments = []
+    for group_name in args:
+        if group_name in ("strings", "ooa_strings"):
+            my_instruments.extend([
+                "ooa_violin1", 
+                "ooa_violin2", 
+                "ooa_cello1", 
+                "ooa_cello2",
+                ])
+        if group_name in ("strings", "cco_strings"):
+            my_instruments.extend([
+                "cco_violin_i", 
+                "cco_violin_ii", 
+                "cco_viola", 
+                "cco_cello",
+                "cco_bass",
+                ])
+    return tuple(my_instruments)
