@@ -12,8 +12,8 @@ s = score.ImaginaryScore()
 
 # TO DO: add ranges
 # =======================================================
-rock_osti = rock.RockOsti(
-        rock.get_osti_phrase_block(),
+rock_osti = melody.Melody(
+        rock.OstiLineBlock(),
         fabric_staves = ("ooa_guitar", "ooa_mallets"),
         )
 calliope.StackPitches(
@@ -70,7 +70,7 @@ s.extend_from(
     )
 
 s.fill_rests()
-s.illustrate_me()
+calliope.illustrate(s)
 
 # class GuitarArranger(ArrangeFrom):
 #     to_staves = (

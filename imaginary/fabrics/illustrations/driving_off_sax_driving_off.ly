@@ -40,8 +40,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -64,8 +64,8 @@
                         d'8
                         [
                         e'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         e'4
@@ -93,8 +93,8 @@
                         [
                         f'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -117,8 +117,8 @@
                         g'8
                         [
                         a'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         a'4
@@ -146,8 +146,8 @@
                         [
                         c''8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -170,8 +170,8 @@
                         c''8
                         [
                         b'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         b'4
@@ -200,8 +200,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -224,8 +224,8 @@
                         d'8
                         [
                         e'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         e'4

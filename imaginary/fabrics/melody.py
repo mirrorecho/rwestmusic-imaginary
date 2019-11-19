@@ -2,8 +2,9 @@ import abjad, calliope
 from imaginary.stories.fabric import ImaginaryFabric
 from imaginary.fabrics import instrument_groups
 
+# TO DO... not the best name... (this is really for ANY simple copy)
 class Melody(ImaginaryFabric):
-    slur_cells = True
+    slur_cells = False
     assign_pitches_from_selectable = False
 
     def weave(self, staff, index=0, **kwargs):

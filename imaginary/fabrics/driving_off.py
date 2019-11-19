@@ -4,24 +4,30 @@ from imaginary.fabrics import instrument_groups
 
 class DrivingOff(ImaginaryFabric):
     off_count = 4
+    drive_in_beats = 2 # must be at least 1
     end_downbeat = False
     initial_dynamic = "mp"
     driving_dynamic = "f"
 
     def weave(self, staff, index=0, **kwargs):
-        my_phrase = calliope.Phrase(
-            calliope.Cell(
-                rhythm=(-0.5, 0.5, 0.5, 0.5, -0.5)
-                ),
-            calliope.Cell(
-                rhythm=(1,)*(self.off_count-1) + (1.5,)
-                )
+            
+        drive_in_cell = calliope.Cell(
+            rhythm=(-0.5,) + (0.5, 0.5,)*(self.drive_in_beats-1) + (0.5,)
             )
-        my_phrase.events[1].tag(self.initial_dynamic, "\\<")
-        my_phrase.events[1,2].tag("-")
-        my_phrase.events[3].tag(self.driving_dynamic, ">", ".")
-        my_phrase.events[-1].tag(">")
-        my_phrase.cells[1].note_events.tag("-")
+        off_cell = calliope.Cell(
+            rhythm =(-0.5,) + (1,)*(self.off_count-1) + (1.5,)
+            )
+
+        if self.drive_in_beats > 1:
+            drive_in_cell.events[1].tag(self.initial_dynamic, "\\<")
+            drive_in_cell.events[-1].tag(self.driving_dynamic, ">", ".")
+        drive_in_cell.events[1:-1].tag("-")
+        drive_in_cell.events[-1].tag(">", ".")
+       
+        off_cell.events[-1].tag(">")
+        off_cell.note_events.tag("-")
+
+        my_phrase = calliope.Phrase(drive_in_cell, off_cell)
 
         if self.end_downbeat == True:
             end_cell = calliope.Cell(rhythm=(1,))

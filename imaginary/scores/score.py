@@ -248,7 +248,7 @@ class ImaginaryScore(calliope.Score):
 if __name__ == "__main__":
     score = ImaginaryScore()
     for staff in score.staves:
-        staff.append(calliope.Cell(rhythm=(-4,)))
+        staff.append(calliope.Cell(rhythm=(-4,)*100))
     calliope.illustrate(score)
 
 

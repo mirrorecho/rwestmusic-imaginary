@@ -60,12 +60,45 @@ class RockStrings(object):
 def get_instruments(*args):
     my_instruments = []
     for group_name in args:
+        if group_name in ("winds", "ooa_winds"):
+            my_instruments.extend([
+                "ooa_flute", 
+                "ooa_clarinet", 
+                "ooa_bassoon", 
+                ])
+        if group_name in ("sax",):
+            my_instruments.extend([
+                "ooa_alto_sax1", 
+                "ooa_alto_sax2",
+                "ooa_tenor_sax",
+                "ooa_bari_sax",
+                ])
+        if group_name in ("brass", "ooa_brass"):
+            my_instruments.extend([
+                "ooa_horn", 
+                "ooa_trumpet", 
+                "ooa_trombone", 
+                ])
         if group_name in ("strings", "ooa_strings"):
             my_instruments.extend([
                 "ooa_violin1", 
                 "ooa_violin2", 
                 "ooa_cello1", 
                 "ooa_cello2",
+                ])
+        if group_name in ("winds", "cco_winds"):
+            my_instruments.extend([
+                "cco_flute1", 
+                "cco_flute2", 
+                "cco_clarinet1", 
+                "cco_clarinet2", 
+                "cco_bassoon", 
+                ])
+        if group_name in ("brass", "cco_brass"):
+            my_instruments.extend([
+                "cco_horn", 
+                "cco_trumpet", 
+                "cco_trombone", 
                 ])
         if group_name in ("strings", "cco_strings"):
             my_instruments.extend([

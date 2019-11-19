@@ -59,7 +59,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -104,7 +104,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -149,7 +149,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -194,7 +194,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -239,7 +239,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -285,7 +285,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -331,7 +331,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -379,7 +379,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -424,7 +424,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -470,7 +470,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -511,9 +511,6 @@
                         [
                         <g' g''>8
                         ]
-                    }
-                    {
-                        \accidentalStyle modern-cautionary
                         <e' a'>8
                         [
                         <bf bf'>8
@@ -565,9 +562,6 @@
                         [
                         <g' g''>8
                         ]
-                    }
-                    {
-                        \accidentalStyle modern-cautionary
                         <e' a'>8
                         [
                         <bf bf'>8
@@ -619,9 +613,6 @@
                         [
                         <g' g''>8
                         ]
-                    }
-                    {
-                        \accidentalStyle modern-cautionary
                         <e' a'>8
                         [
                         <bf bf'>8
@@ -673,9 +664,210 @@
                         [
                         <g' g''>8
                         ]
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <e' a'>8
+                        [
+                        <bf bf'>8
+                        ]
+                        <g' c''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <a' a''>8
+                        ]
+                        <b' e''>8
+                        [
+                        <b' b''>8
+                        ]
+                        <c'' f''>8
+                        [
+                        <c'' c'''>8
+                        ]
+                        <a'' d'''>8
+                        [
+                        <g' g''>8
+                        ]
                         <e' a'>8
                         [
                         <bf bf'>8
@@ -743,7 +935,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -760,218 +952,410 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
                         ]
-                    }
-                    {
-                        \accidentalStyle modern-cautionary
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
                         ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
                         ]
-                    }
-                    {
-                        \accidentalStyle modern-cautionary
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
                         ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
                         ]
-                    }
-                    {
-                        \accidentalStyle modern-cautionary
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
                         ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
+                        ]
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
                         ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        a8
+                        <a>8
                         [
-                        bf8
+                        <bf>8
                         ]
-                        c'8
+                        <c'>8
                         [
-                        d'8
+                        <d'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        a'8
+                        <a'>8
                         ]
-                        e'8
+                        <e'>8
                         [
-                        b'8
+                        <b'>8
                         ]
-                        f'8
+                        <f'>8
                         [
-                        c''8
+                        <c''>8
                         ]
-                        d''8
+                        <d''>8
                         [
-                        g'8
+                        <g'>8
+                        ]
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
+                        ]
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
+                        ]
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
+                        ]
+                        <a>8
+                        [
+                        <bf>8
+                        ]
+                        <c'>8
+                        [
+                        <d'>8
+                        ]
+                        <f'>8
+                        [
+                        <a'>8
+                        ]
+                        <e'>8
+                        [
+                        <b'>8
+                        ]
+                        <f'>8
+                        [
+                        <c''>8
+                        ]
+                        <d''>8
+                        [
+                        <g'>8
                         ]
                     }
                 }
@@ -1071,6 +1455,12 @@
                         c'4
                         c'4
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 12
+                        }
+                    }
                 }
             >>
             \context StaffGroup = "ooa_strings"
@@ -1121,7 +1511,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -1171,7 +1561,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -1222,7 +1612,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -1273,7 +1663,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -1401,6 +1791,12 @@
                         [
                         r8
                         ]
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 12
+                        }
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -1531,6 +1927,12 @@
                         c'8
                         ]
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 12
+                        }
+                    }
                 }
                 \context Staff = "cco_oboe1"
                 \with
@@ -1589,7 +1991,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1650,7 +2052,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1695,7 +2097,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1740,7 +2142,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1785,7 +2187,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1833,7 +2235,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1878,7 +2280,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1923,7 +2325,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -1968,7 +2370,7 @@
                 {
                     {
                         \accidentalStyle modern-cautionary
-                        R1 * 4
+                        R1 * 16
                     }
                 }
             }
@@ -2015,7 +2417,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -2061,7 +2463,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -2109,7 +2511,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -2155,7 +2557,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 16
                         }
                     }
                 }
@@ -2208,7 +2610,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -2258,7 +2660,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -2308,7 +2710,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -2359,7 +2761,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
@@ -2410,7 +2812,7 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 3
+                            R1 * 15
                         }
                     }
                 }
