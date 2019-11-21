@@ -33,10 +33,41 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        c'1
+                        :32
+                        ^ \markup { f.t. }
+                        ~
+                        c'4
+                        :32
+                        ~
+                        c'8
+                        :32
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -54,10 +85,22 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_alto_sax1"
@@ -106,8 +149,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -142,8 +185,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -182,8 +225,56 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        c'4
+                        -\staccato
+                        -\accent
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -193,8 +284,10 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_alto_sax2"
@@ -243,8 +336,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -279,8 +372,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -319,8 +412,56 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        c'4
+                        -\staccato
+                        -\accent
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -330,8 +471,10 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -380,8 +523,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -416,8 +559,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -456,8 +599,56 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        c'4
+                        -\staccato
+                        -\accent
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -467,8 +658,10 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -518,8 +711,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -554,8 +747,8 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -594,8 +787,56 @@
                         c'8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        c'4
+                        -\staccato
+                        -\accent
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -605,8 +846,10 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -625,10 +868,22 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
@@ -659,7 +914,120 @@
                         \f
                         -\staccato
                         r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        c'1
+                        \p
+                        ~
+                        \<
+                        c'2
+                        c'4
+                        \f
+                        -\staccato
                         r4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r2
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -687,7 +1055,131 @@
                         \f
                         -\staccato
                         r4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
                         r4
+                        c'4
+                        :32
+                        ^ \markup { f.t. }
+                        ~
+                        c'2
+                        :32
+                        {
+                            R1 * 1
+                        }
+                        r4
+                        r8
+                        [
+                        c'8
+                        :32
+                        ~
+                        ]
+                        c'2
+                        :32
+                        ~
+                        c'2
+                        :32
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r2
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -716,7 +1208,120 @@
                         \f
                         -\staccato
                         r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        c'1
+                        \p
+                        ~
+                        \<
+                        c'2
+                        c'4
+                        \f
+                        -\staccato
                         r4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r2
                     }
                 }
             >>
@@ -737,10 +1342,22 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -758,10 +1375,22 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
@@ -782,10 +1411,22 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_bass_guitar"
@@ -804,10 +1445,22 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
@@ -828,10 +1481,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -849,10 +1538,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -871,10 +1596,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -893,10 +1654,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
@@ -916,14 +1713,208 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Flute 1" }
                             \set Staff.shortInstrumentName = \markup { Fl.1 }
-                            R1 * 6
+                            R1 * 1
+                        }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ^ \markup { "NOTE: dovetail osti" }
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        c'1
+                        :32
+                        ^ \markup { f.t. }
+                        ~
+                        c'4
+                        :32
+                        ~
+                        c'8
+                        :32
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ^ \markup { "NOTE: dovetail osti" }
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        {
+                            R1 * 1
                         }
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -937,14 +1928,213 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Flute 2" }
                             \set Staff.shortInstrumentName = \markup { Fl.2 }
-                            R1 * 6
+                            R1 * 1
                         }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ^ \markup { "NOTE: dovetail osti" }
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        c'1
+                        :32
+                        ^ \markup { f.t. }
+                        ~
+                        c'4
+                        :32
+                        ~
+                        c'8
+                        :32
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ^ \markup { "NOTE: dovetail osti" }
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
                     }
                 }
                 \context Staff = "cco_oboe1"
@@ -958,14 +2148,194 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
-                            R1 * 6
+                            R1 * 1
                         }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        r8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -979,14 +2349,176 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
-                            R1 * 6
+                            R1 * 1
                         }
+                        r2
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
+                        r2
                         r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -1000,14 +2532,194 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
-                            R1 * 6
+                            R1 * 1
                         }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        r8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r4
+                        r8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -1021,14 +2733,176 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
-                            R1 * 6
+                            R1 * 1
                         }
+                        r2
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
+                        r2
                         r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        r8
+                        ]
+                        r4
+                        c'8
+                        [
+                        c'8
+                        ]
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -1046,10 +2920,22 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
-                        r1
-                        r1
-                        r4
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
@@ -1080,7 +2966,120 @@
                         \f
                         -\staccato
                         r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        c'1
+                        \p
+                        ~
+                        \<
+                        c'2
+                        c'4
+                        \f
+                        -\staccato
                         r4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r2
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -1108,7 +3107,131 @@
                         \f
                         -\staccato
                         r4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
                         r4
+                        c'4
+                        :32
+                        ^ \markup { f.t. }
+                        ~
+                        c'2
+                        :32
+                        {
+                            R1 * 1
+                        }
+                        r4
+                        r8
+                        [
+                        c'8
+                        :32
+                        ~
+                        ]
+                        c'2
+                        :32
+                        ~
+                        c'2
+                        :32
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r2
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -1136,7 +3259,120 @@
                         \f
                         -\staccato
                         r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        c'1
+                        \p
+                        ~
+                        \<
+                        c'2
+                        c'4
+                        \f
+                        -\staccato
                         r4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                        r8
+                        [
+                        c'8
+                        \mp
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        c'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        -\accent
+                        ~
+                        ]
+                        c'4
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r2
                     }
                 }
             >>
@@ -1154,10 +3390,22 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
-                    r1
-                    r1
-                    r4
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 2
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 4
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -1177,10 +3425,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "harp2"
@@ -1199,10 +3483,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
@@ -1223,10 +3543,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "piano2"
@@ -1245,10 +3601,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
@@ -1269,10 +3661,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "cco_violin_ii"
@@ -1290,10 +3718,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "cco_viola"
@@ -1311,10 +3775,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "cco_cello"
@@ -1333,10 +3833,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
                 \context Staff = "cco_bass"
@@ -1355,10 +3891,46 @@
                         }
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        r1
-                        r1
                         r4
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r2
+                        c'8
+                        -\accent
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        r4
+                        r8
+                        [
+                        c'8
+                        -\accent
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
                     }
                 }
             >>
