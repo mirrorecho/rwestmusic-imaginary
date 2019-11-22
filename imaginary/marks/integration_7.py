@@ -41,7 +41,16 @@ counter_winds2 = melody.Melody(
         ),
     fabric_staves = ("ooa_flute", "ooa_clarinet", 
         "cco_flute1", "cco_flute2",
-        "cco_clarinet1", "cco_clarinet2")
+        "cco_clarinet1", "cco_clarinet2"),
+    )
+
+end_counter = melody.Melody(
+    calliope.LineBlock(
+        calliope.Line(*COUNTER_LINE_2()[-2:]),
+        ),
+    fabric_staves = instrument_groups.get_instruments("sax",) +
+        ("ooa_bassoon", "cco_oboe1", "cco_oboe2", "cco_bassoon",),
+    mask_staves = ("ooa_bari_sax",)
     )
 
 strings_pulse1 = pulse.Pulse(
@@ -65,11 +74,31 @@ cell_bass_line = melody.Melody(
     fabric_staves = ("cco_cello",),
     )
 
+end_bass_line = melody.Melody(
+    calliope.LineBlock(
+        calliope.Line(*BASS_LINE()[-2:-1]),
+        ),
+    fabric_staves = ("ooa_bari_sax", "cco_bass",),
+    )
+
+driving_sax = driving_off.DrivingOff(
+    fabric_staves = instrument_groups.get_instruments("sax",),
+    bookend_beats = (0,1),
+    )
+
+end_brass_pulse = pulse.Pulse(
+    fabric_staves = instrument_groups.get_instruments("brass"),
+    pulse_beats = 15,
+    pulse_duration = 1,
+    bookend_beats=(1,0),
+    )
 
 s.extend_from(
     counter_winds1,
     strings_pulse1,
     cell_bass_line,
+    driving_sax(),
+    driving_sax(),
     )
 s.fill_rests(fill_to="cco_flute1")
 
@@ -78,10 +107,17 @@ s.fill_rests(fill_to="cco_flute1")
 
 s.extend_from(
     counter_winds2,
-    strings_pulse2
+    strings_pulse2,
+    driving_sax(),
+    driving_sax(),
+    )
+s.fill_rests(fill_to="ooa_alto_sax1")
+s.extend_from(
+    end_brass_pulse,
+    end_bass_line,
+    end_counter,
     )
 s.fill_rests()
-
 
 calliope.illustrate(s)
 

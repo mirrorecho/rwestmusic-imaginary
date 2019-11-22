@@ -47,6 +47,12 @@
                             R1 * 6
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_clarinet"
                 \with
@@ -59,6 +65,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -77,6 +89,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_alto_sax2"
                 \with
@@ -92,6 +110,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_tenor_sax"
                 \with
@@ -104,6 +128,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Tsax. }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -123,6 +153,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_bassoon"
                 \with
@@ -136,6 +172,12 @@
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
                             \clef "bass"
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -157,6 +199,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_trumpet"
                 \with
@@ -169,6 +217,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -185,6 +239,12 @@
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
                             \clef "bass"
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -206,6 +266,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_drum_set"
                 \with
@@ -218,6 +284,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Drum Set" }
                             \set Staff.shortInstrumentName = \markup { Drum. }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -239,6 +311,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_bass_guitar"
                 \with
@@ -252,6 +330,12 @@
                             \set Staff.instrumentName = \markup { "Bass Guitar" }
                             \set Staff.shortInstrumentName = \markup { Bgtr. }
                             \clef "bass"
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -273,6 +357,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_violin2"
                 \with
@@ -285,6 +375,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.2 }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -304,6 +400,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "ooa_cello2"
                 \with
@@ -317,6 +419,12 @@
                             \set Staff.instrumentName = \markup { "Cello 2" }
                             \set Staff.shortInstrumentName = \markup { Vc.2 }
                             \clef "bass"
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -356,6 +464,12 @@
                             R1 * 6
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "cco_flute2"
                 \with
@@ -386,6 +500,12 @@
                             R1 * 6
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "cco_oboe1"
                 \with
@@ -398,6 +518,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -416,6 +542,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "cco_clarinet1"
                 \with
@@ -429,6 +561,40 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
                             R1 * 8
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        c'8
+                        [
+                        b8
+                        ~
+                        ]
+                        b4
+                        ~
+                        b2
+                        f'4
+                        e'8
+                        [
+                        r8
+                        ]
+                        r2
+                        f'8
+                        [
+                        e'8
+                        ~
+                        ]
+                        e'4
+                        ~
+                        e'2
+                        e'4
+                        a'8
+                        [
+                        r8
+                        ]
+                        r2
+                        {
+                            R1 * 4
                         }
                     }
                 }
@@ -446,6 +612,40 @@
                             R1 * 8
                         }
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        c'8
+                        [
+                        b8
+                        ~
+                        ]
+                        b4
+                        ~
+                        b2
+                        f'4
+                        e'8
+                        [
+                        r8
+                        ]
+                        r2
+                        f'8
+                        [
+                        e'8
+                        ~
+                        ]
+                        e'4
+                        ~
+                        e'2
+                        e'4
+                        a'8
+                        [
+                        r8
+                        ]
+                        r2
+                        {
+                            R1 * 4
+                        }
+                    }
                 }
                 \context Staff = "cco_bassoon"
                 \with
@@ -458,6 +658,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -479,6 +685,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
                 \context Staff = "cco_trumpet"
                 \with
@@ -491,6 +703,12 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
                             R1 * 8
                         }
                     }
@@ -509,6 +727,12 @@
                             R1 * 8
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
                 }
             >>
             \context RhythmicStaff = "cco_percussion"
@@ -521,6 +745,12 @@
                     {
                         \accidentalStyle modern-cautionary
                         \clef "percussion"
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
                         R1 * 8
                     }
                 }
@@ -666,6 +896,137 @@
                         <c' ef' g'>8
                         ]
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                    }
                 }
                 \context Staff = "harp2"
                 \with
@@ -678,6 +1039,137 @@
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \clef "bass"
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
                         <c' ef' g'>8
                         [
                         c'8
@@ -950,6 +1442,137 @@
                         <c' ef' g'>8
                         ]
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                        c'8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        c'8
+                        [
+                        <c' ef' g'>8
+                        ]
+                    }
                 }
                 \context Staff = "piano2"
                 \with
@@ -962,6 +1585,137 @@
                         \set Staff.instrumentName = \markup { Piano }
                         \set Staff.shortInstrumentName = \markup { Pf. }
                         \clef "bass"
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                        <c' ef' g'>8
+                        [
+                        c'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
                         <c' ef' g'>8
                         [
                         c'8
@@ -1120,6 +1874,67 @@
                             R1 * 6
                         }
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        c'8
+                        [
+                        b8
+                        ~
+                        ]
+                        b4
+                        ~
+                        b2
+                        f'4
+                        e'8
+                        [
+                        a8
+                        ~
+                        ]
+                        a2
+                        f'8
+                        [
+                        e'8
+                        ~
+                        ]
+                        e'4
+                        ~
+                        e'2
+                        e'4
+                        a'8
+                        [
+                        g'8
+                        ~
+                        ]
+                        g'2
+                        r2
+                        r8
+                        [
+                        f'8
+                        ]
+                        e'8
+                        [
+                        d'8
+                        ]
+                        r8
+                        [
+                        a'8
+                        ]
+                        g'8
+                        [
+                        f'8
+                        ]
+                        r2
+                        r4
+                        g'4
+                        a'8
+                        [
+                        c''8
+                        ~
+                        ]
+                        c''4
+                        ~
+                        c''1
+                    }
                 }
                 \context Staff = "cco_violin_ii"
                 \with
@@ -1146,6 +1961,67 @@
                             R1 * 6
                         }
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        c'8
+                        [
+                        b8
+                        ~
+                        ]
+                        b4
+                        ~
+                        b2
+                        f'4
+                        e'8
+                        [
+                        a8
+                        ~
+                        ]
+                        a2
+                        f'8
+                        [
+                        e'8
+                        ~
+                        ]
+                        e'4
+                        ~
+                        e'2
+                        e'4
+                        a'8
+                        [
+                        g'8
+                        ~
+                        ]
+                        g'2
+                        r2
+                        r8
+                        [
+                        f'8
+                        ]
+                        e'8
+                        [
+                        d'8
+                        ]
+                        r8
+                        [
+                        a'8
+                        ]
+                        g'8
+                        [
+                        f'8
+                        ]
+                        r2
+                        r4
+                        g'4
+                        a'8
+                        [
+                        c''8
+                        ~
+                        ]
+                        c''4
+                        ~
+                        c''1
+                    }
                 }
                 \context Staff = "cco_viola"
                 \with
@@ -1171,6 +2047,67 @@
                             \accidentalStyle modern-cautionary
                             R1 * 6
                         }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        c'8
+                        [
+                        b8
+                        ~
+                        ]
+                        b4
+                        ~
+                        b2
+                        f'4
+                        e'8
+                        [
+                        a8
+                        ~
+                        ]
+                        a2
+                        f'8
+                        [
+                        e'8
+                        ~
+                        ]
+                        e'4
+                        ~
+                        e'2
+                        e'4
+                        a'8
+                        [
+                        g'8
+                        ~
+                        ]
+                        g'2
+                        r2
+                        r8
+                        [
+                        f'8
+                        ]
+                        e'8
+                        [
+                        d'8
+                        ]
+                        r8
+                        [
+                        a'8
+                        ]
+                        g'8
+                        [
+                        f'8
+                        ]
+                        r2
+                        r4
+                        g'4
+                        a'8
+                        [
+                        c''8
+                        ~
+                        ]
+                        c''4
+                        ~
+                        c''1
                     }
                 }
                 \context Staff = "cco_cello"
@@ -1199,6 +2136,17 @@
                             R1 * 6
                         }
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        c'1
+                        c'1
+                        c'1
+                        c'1
+                        c'1
+                        c'1
+                        c'1
+                        c'1
+                    }
                 }
                 \context Staff = "cco_bass"
                 \with
@@ -1224,6 +2172,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
                         }
                     }
                 }

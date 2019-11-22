@@ -40,6 +40,34 @@ my_harp = sus_piano.SusPiano1(
         (0, 2,),
         )
     )
+strings_counter = melody.Melody(
+    calliope.LineBlock(
+        COUNTER_LINE_1(),
+        ),
+    fabric_staves = ("cco_violin_i", "cco_violin_ii", "cco_viola",)
+    )
+
+counter_line_broken = COUNTER_LINE_1()
+print(counter_line_broken)
+counter_line_broken.transformed(calliope.Poke(
+    selection=counter_line_broken.note_events[0,1, 2,3,5,6,7,8]
+    ))
+
+# TO DO: continue this shaping
+winds_counter_broken = melody.Melody(
+    calliope.LineBlock(
+        counter_line_broken,
+        ),
+    fabric_staves = ("cco_clarinet1","cco_clarinet2")
+    )
+
+
+# TO DO: need pitches:
+cello_pad = pad.Pad(
+    fabric_staves = ("cco_cello",),
+    pad_durations = (4,)*8
+    )
+
 
 pop_fizz1 = pizz_flutter.PizzFlutter(
     pizz_flutter_initial = True,
@@ -66,8 +94,13 @@ s.fill_rests()
 # =======================================================
 # bars 9-16
 
-# s.extend_from(
-#     )
-# s.fill_rests()
+s.extend_from(
+    my_harp(),
+    my_piano(),
+    strings_counter,
+    winds_counter_broken,
+    cello_pad,
+    )
+s.fill_rests()
 
 calliope.illustrate(s)
