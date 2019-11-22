@@ -477,8 +477,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -542,8 +542,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -612,8 +612,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -658,8 +658,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -708,8 +708,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -770,8 +770,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -836,8 +836,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -901,8 +901,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -971,8 +971,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1017,8 +1017,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1067,8 +1067,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1129,8 +1129,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1195,8 +1195,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1260,8 +1260,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1330,8 +1330,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1376,8 +1376,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1426,8 +1426,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1488,8 +1488,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1555,8 +1555,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1620,8 +1620,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1690,8 +1690,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1736,8 +1736,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1786,8 +1786,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1848,8 +1848,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2121,8 +2121,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2186,8 +2186,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2364,8 +2364,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2429,8 +2429,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2608,8 +2608,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2673,8 +2673,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -5705,8 +5705,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -5770,8 +5770,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -5948,8 +5948,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -6013,8 +6013,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -6191,8 +6191,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -6256,8 +6256,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [

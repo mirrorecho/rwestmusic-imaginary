@@ -8,7 +8,9 @@ class Pulse(ImaginaryFabric):
 
     def weave(self, staff, index=0, **kwargs):
         my_phrase = calliope.Phrase(
+            calliope.Cell(
             rhythm = [self.pulse_duration for i in range(int(self.pulse_beats/self.pulse_duration))]
+            )
             )
 
         return my_phrase

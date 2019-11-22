@@ -11,12 +11,12 @@
         \column {
             \center-align {
                 \fontsize #3 {
-                    "Imaginary Animal Radio"
+                    "..."
                 }
             }
         }
     }
-    tagline = "Copyright 2019 Randall West."
+    tagline = "..."
 }
 
   % #(set! paper-alist (cons '("10x13" . (cons (* 10 in) (* 13 in))) paper-alist))
