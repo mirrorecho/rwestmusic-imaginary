@@ -153,7 +153,6 @@ class AbstractPitchRangeSeq(calliope.CalliopeBase):
         for tr in sorted_tr:
             my_index = math.floor(tr * (length-1))
             my_traj = my_index-last_index
-            print(my_traj)
             if my_traj > 0:
                 my_abstract = self.time_ratio_abstracts[tr]
                 my_range = my_abstract.get_range(min_bottom, max_top)

@@ -116,6 +116,7 @@ swell_end = swell_hit.SwellHit(
     mask_staves = bass_line.fabric_staves + (
         "piano1", "piano2", "harp1", "harp2", "ooa_guitar", 
         "ooa_bass_guitar", "cco_percussion", "ooa_drumset" )
+        + instrument_groups.get_instruments("short_score")
     )
 
 

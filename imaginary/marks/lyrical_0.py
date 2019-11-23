@@ -60,7 +60,7 @@ s.extend_from(swell2, swell2)
 s.fill_rests(beats=36)
 
 s.extend_from(intro2_pad)
-s.fill_rests(beats=48)
+s.fill_rests(beats=48, include_short_score=True)
 
 calliope.illustrate(s)
 

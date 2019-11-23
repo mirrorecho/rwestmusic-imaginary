@@ -1123,7 +1123,6 @@
                         \accidentalStyle modern-cautionary
                         a'8
                         [
-                        (
                         g'8
                         ~
                         ]
@@ -1137,27 +1136,22 @@
                         ~
                         ]
                         f'2
-                        )
                         r4
                         a'4
-                        (
                         a'4
                         f'4
                         f'4
                         f'4
                         a'4
                         e'4
-                        )
                         r4
                         e'4
-                        (
                         f'4
                         bf'4
                         a'4
                         f'4
                         bf'4
                         a'4
-                        )
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -1212,7 +1206,6 @@
                         \accidentalStyle modern-cautionary
                         c'8
                         [
-                        (
                         b8
                         ~
                         ]
@@ -1226,13 +1219,11 @@
                         ~
                         ]
                         a2
-                        )
                         r2
                         r8
                         [
                         f'8
                         ]
-                        (
                         e'8
                         [
                         d'8
@@ -1245,11 +1236,9 @@
                         [
                         f'8
                         ]
-                        )
                         r2
                         r4
                         g'4
-                        (
                         a'8
                         [
                         c''8
@@ -1258,7 +1247,6 @@
                         c''4
                         ~
                         c''1
-                        )
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -1636,7 +1624,7 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
                         c'4
-                        \f
+                        \pp
                         c'4
                         ~
                         c'2
@@ -1701,7 +1689,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
                         c'4
-                        \f
+                        \pp
                         c'4
                         ~
                         c'2
@@ -1766,7 +1754,7 @@
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         c'4
-                        \f
+                        \pp
                         c'4
                         ~
                         c'2
@@ -1832,7 +1820,7 @@
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \clef "bass"
                         c'4
-                        \f
+                        \pp
                         c'4
                         ~
                         c'2
@@ -1898,7 +1886,7 @@
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \clef "bass"
                         c'4
-                        \f
+                        \pp
                         c'4
                         ~
                         c'2
@@ -1953,6 +1941,129 @@
                     }
                 }
             >>
+        >>
+        \context StaffGroup = "short_score"
+        <<
+            \context Staff = "melody_line"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Melody Line" }
+                        \set Staff.shortInstrumentName = \markup { Mel. }
+                        R1 * 12
+                    }
+                }
+            }
+            \context Staff = "counter_line"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Counter Line" }
+                        \set Staff.shortInstrumentName = \markup { Count. }
+                        R1 * 12
+                    }
+                }
+            }
+            \context Staff = "bass_line"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Bass LIne" }
+                        \set Staff.shortInstrumentName = \markup { Bass. }
+                        R1 * 12
+                    }
+                }
+            }
+            \context Staff = "osti"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Osti }
+                        \set Staff.shortInstrumentName = \markup { Ost. }
+                        R1 * 12
+                    }
+                }
+            }
+            \context Staff = "chords"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Chords }
+                        \set Staff.shortInstrumentName = \markup { Chrd. }
+                        R1 * 12
+                    }
+                }
+            }
+            \context Staff = "high_drones"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "High Drones" }
+                        \set Staff.shortInstrumentName = \markup { H.drn. }
+                        R1 * 12
+                    }
+                }
+            }
+            \context Staff = "mid_drones"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Mid Drones" }
+                        \set Staff.shortInstrumentName = \markup { M.drn. }
+                        R1 * 12
+                    }
+                }
+            }
+            \context Staff = "bass_drones"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Bass Drones" }
+                        \set Staff.shortInstrumentName = \markup { B.drn. }
+                        R1 * 12
+                    }
+                }
+            }
         >>
     >>
 }

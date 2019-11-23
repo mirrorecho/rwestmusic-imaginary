@@ -183,51 +183,50 @@ class ImaginaryScore(calliope.Score):
 # ==================================================================
 # ==================================================================
 
+    class ShortScore(calliope.StaffGroup):
+        class MelodyLine(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Melody Line", short_name="mel.")
+        class CounterLine(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Counter Line", short_name="count.")
+        class BassLine(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Bass LIne", short_name="bass.")
+        class Osti(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Osti", short_name="ost.")
+        class Chords(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Chords", short_name="chrd.")
+        class HighDrones(calliope.Staff):
+            instrument=abjad.Piano(
+                name="High Drones", short_name="h.drn.")
+        class MidDrones(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Mid Drones", short_name="m.drn.")
+        class BassDrones(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Bass Drones", short_name="b.drn.")
+        # class HighRhythm(calliope.RhythmicStaff):
+        #     instrument=abjad.Instrument(
+        #         name="High Rhythm", short_name="h.rhm.")
+        # class BassRhythm(calliope.RhythmicStaff):
+        #     instrument=abjad.Instrument(
+        #         name="Bass Rhythm", short_name="b.rhm.")
 
-    # class ShortScore(calliope.StaffGroup):
-    #     class S0(calliope.RhythmicStaff):
-    #         instrument=abjad.Instrument(
-    #             name="S 0", short_name="s.0")
-    #     class S1(calliope.RhythmicStaff):
-    #         instrument=abjad.Instrument(
-    #             name="S 1", short_name="s.1")
-    #     class S2(calliope.RhythmicStaff):
-    #         instrument=abjad.Instrument(
-    #             name="S 2", short_name="s.2")
-    #     class S3(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 3", short_name="s.3")
-    #     class S4(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 4", short_name="s.4")
-    #     class S5(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 5", short_name="s.5")
-    #     class S6(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 6", short_name="s.6")
-    #     class S7(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 7", short_name="s.7")
-    #     class S8(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 8", short_name="s.8")
-    #     class S9(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 9", short_name="s.9")
-    #     class S10(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 10", short_name="s.10")
-    #     class S11(calliope.Staff):
-    #         instrument=abjad.Piano(
-    #             name="S 11", short_name="s.11")
+    def fill_rests(self, beats=None, fill_to=None, include_short_score=False, **kwargs):
+        if include_short_score:
+            my_staves = list(self.staves)
+        else:
+            short_staves = list(self.staff_groups["short_score"].staves)
+            my_staves = [s for s in self.staves if s not in short_staves]
 
-    def fill_rests(self, beats=None, fill_to=None):
-        staves_beats = [sum([m.beats for m in s]) for s in self.staves]
+        staves_beats = [sum([m.beats for m in s]) for s in my_staves]
         if fill_to:
-            beats = beats or sum([m.beats for m in self.staves[fill_to]]) 
+            beats = beats or sum([m.beats for m in my_staves[fill_to]]) 
         beats = beats or max(staves_beats)
-        for staff, staff_beats in zip(self.staves, staves_beats):
+        for staff, staff_beats in zip(my_staves, staves_beats):
             if staff_beats < beats:
                 staff.append( calliope.Segment(rhythm=(staff_beats-beats,)) )
        
@@ -243,7 +242,7 @@ class ImaginaryScore(calliope.Score):
                         st.extend( other_st() )
 
         if kwargs.get("fill_rests", False):
-            self.fill_rests(beats=kwargs.get("fill_rests_beats", None))
+            self.fill_rests(beats=kwargs.get("fill_rests_beats", None), **kwargs)
 
 if __name__ == "__main__":
     score = ImaginaryScore()

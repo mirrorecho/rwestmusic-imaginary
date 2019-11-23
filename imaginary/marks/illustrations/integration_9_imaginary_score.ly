@@ -5686,5 +5686,176 @@
                 }
             >>
         >>
+        \context StaffGroup = "short_score"
+        <<
+            \context Staff = "melody_line"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Melody Line" }
+                        \set Staff.shortInstrumentName = \markup { Mel. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+            \context Staff = "counter_line"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Counter Line" }
+                        \set Staff.shortInstrumentName = \markup { Count. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+            \context Staff = "bass_line"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Bass LIne" }
+                        \set Staff.shortInstrumentName = \markup { Bass. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+            \context Staff = "osti"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Osti }
+                        \set Staff.shortInstrumentName = \markup { Ost. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+            \context Staff = "chords"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Chords }
+                        \set Staff.shortInstrumentName = \markup { Chrd. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+            \context Staff = "high_drones"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "High Drones" }
+                        \set Staff.shortInstrumentName = \markup { H.drn. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+            \context Staff = "mid_drones"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Mid Drones" }
+                        \set Staff.shortInstrumentName = \markup { M.drn. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+            \context Staff = "bass_drones"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Bass Drones" }
+                        \set Staff.shortInstrumentName = \markup { B.drn. }
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+            }
+        >>
     >>
 }

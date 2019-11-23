@@ -108,4 +108,21 @@ def get_instruments(*args):
                 "cco_cello",
                 "cco_bass",
                 ])
+        if group_name == "short_score":
+            my_instruments.extend([
+                "melody_line",
+                "counter_line",
+                "bass_line",
+                "osti",
+                "chords",
+                "high_drones",
+                "mid_drones",
+                "bass_drones",
+                ])
     return tuple(my_instruments)
+
+if __name__ == "__main__":
+    from imaginary.scores.score import ImaginaryScore
+    for s in ImaginaryScore().staves:
+        print('"' + s.name + '",')
+
