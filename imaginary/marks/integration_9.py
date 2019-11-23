@@ -70,7 +70,8 @@ osti1 = ditto.Ditto(osti_lb,
     )
 
 osti1_accents = hit_cells.HitCells(osti_lb,
-    fabric_staves = instrument_groups.get_instruments("sax")
+    fabric_staves = instrument_groups.get_instruments("sax"),
+    mask_staves = ("ooa_bari_sax"),
     )
 
 # TO DO: move to lyrical section
@@ -94,14 +95,39 @@ melody_accents = melody.Melody(melody_lb,
     fabric_staves = ("ooa_horn", "cco_horn"),
     )
 
+# TO DO... move this into integration
+driving_sax = driving_off.DrivingOff(
+    fabric_staves = instrument_groups.get_instruments("sax",),
+    mask_staves = ("ooa_bari_sax"),
+    bookend_beats = (0,1),
+    )
+
+bass_line = melody.Melody(
+    calliope.LineBlock(
+        calliope.Line(*BASS_LINE()),
+        ),
+    fabric_staves = ("ooa_trombone", "ooa_bass_guitar", "ooa_bari_sax", "cco_trombone", ),
+    )
+
+swell_end = swell_hit.SwellHit(
+    swell_duration=6,
+    bookend_beats=(10,0),
+    fabric_staves = [s.name for s in s.staves],
+    mask_staves = bass_line.fabric_staves + (
+        "piano1", "piano2", "harp1", "harp2", "ooa_guitar", 
+        "ooa_bass_guitar", "cco_percussion", "ooa_drumset" )
+    )
+
+
 s.extend_from(
     counter_winds(),
     strings_pulse1(),
     strings_low_pulse1,
     osti1,
-    osti1_accents,
+    driving_sax,
     my_melody,
     melody_accents,
+    bass_line,
     )
 s.extend_from(
     strings_swell1(),
@@ -116,9 +142,17 @@ s.fill_rests(fill_to="cco_violin_i")
 
 s.extend_from(
     counter_winds(),
+    osti1,
+    osti1_accents,
     strings_pulse1(),
     strings_low_pulse1(),
+    # swell_end,
     )
-s.fill_rests()
+s.fill_rests(fill_to="ooa_flute")
+
+s.extend_from(
+    swell_end,
+    )
+# s.fill_rests()
 
 calliope.illustrate(s)

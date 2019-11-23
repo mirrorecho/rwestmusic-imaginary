@@ -32,7 +32,8 @@ melody_lb = calliope.LineBlock(
         )
 
 my_low_melody = melody.Melody(melody_lb,
-    fabric_staves = ("cco_viola", "cco_cello"),
+    fabric_staves = ("ooa_bari_sax", "ooa_cello1", "ooa_cello2",
+        "cco_viola", "cco_cello", ),
     )
 
 off_strings = pulse_on_off_beat.PulseOnOffBeat(
@@ -50,10 +51,37 @@ tenor_sax_half_counter = melody.Melody(
     fabric_staves = ("ooa_tenor_sax",)
     )
 
+lb1 = rock.OstiLineBlock(
+            phrase_count=4,
+            slur_cells = True,
+            )
+sax_guitar_osti = ditto.Ditto(lb1,
+    fabric_staves = ("ooa_alto_sax1", "ooa_alto_sax2", "ooa_guitar")
+    )
+
+# TO DO: copy pitches from osti
+winds_doves = dovetail.Dovetail(
+    dove_event_count = 6,
+    dovetail_duration = 10*4,
+    fabric_staves = ("cco_flute1", "cco_flute2",
+        "cco_oboe1", "cco_oboe2", 
+        "cco_clarinet1", "cco_clarinet2")
+    )
+
+bassoon_swell = swell_hit.SwellHit(
+    swell_duration = 3,
+    hit_rest = 
+    )
+
 s.extend_from(
     my_low_melody,
     off_strings,
+    sax_guitar_osti,
     )
+s.fill_rests(fill_to="ooa_alto_sax1")
+s.extend_from(winds_doves)
+
+
 s.fill_rests(fill_to="cco_violin_i")
 
 # =======================================================

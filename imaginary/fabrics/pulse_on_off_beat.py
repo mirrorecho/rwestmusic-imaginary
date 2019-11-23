@@ -22,11 +22,12 @@ class PulseOnOffBeat(ImaginaryFabric):
             beats_remaining = pb - cell_on.beats
             cell_off_rhythm = []
 
-            while beats_remaining > pb - (1.5*self.pulse_duration):
+            while beats_remaining > 1.5*self.pulse_duration:
                 cell_off_rhythm.append(self.pulse_duration)
                 beats_remaining -= self.pulse_duration
 
             cell_off_rhythm.append(1.5*self.pulse_duration)
+            cell_off = calliope.Cell(rhythm=cell_off_rhythm)
 
             my_line.append(calliope.Phrase(cell_on, cell_off))
 
@@ -42,5 +43,7 @@ if __name__ == "__main__":
             calliope.Cell(rhythm=(1,)*24, pitches=(11,12)*12),
             ),
         fabric_staves = ("cco_violin_i", "cco_violin_ii",),
+        # pulse_duration=2,
+        # phrase_beats = (8,)
         )
     calliope.illustrate(s)

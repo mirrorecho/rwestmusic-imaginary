@@ -12,7 +12,7 @@ class SwellHit(ImaginaryFabric):
     def weave(self, staff, index=0, **kwargs):
         my_rhythm = [self.swell_duration, self.hit_duration]
         if self.hit_rest:
-            my_rhythm.append(self.hit_rest)
+            my_rhythm.append(0-self.hit_rest)
         my_cell = calliope.Phrase(
             calliope.Cell(rhythm=my_rhythm)
             )

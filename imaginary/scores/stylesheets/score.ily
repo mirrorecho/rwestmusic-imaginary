@@ -1,7 +1,7 @@
 #(set-default-paper-size "tabloid" 'portrait)
 
 % THIS CAUSES ERRORS ONLY SOMETOMES... WHY????!!!!!!!
-#(set-global-staff-size 12.9)
+#(set-global-staff-size 12)
 
 \header {
     composer = "Randall West"

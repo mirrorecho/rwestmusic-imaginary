@@ -70,7 +70,8 @@ osti1 = ditto.Ditto(osti_lb,
     )
 
 osti1_accents = hit_cells.HitCells(osti_lb,
-    fabric_staves = instrument_groups.get_instruments("sax")
+    fabric_staves = instrument_groups.get_instruments("sax"),
+    mask_staves = ("ooa_bari_sax"),
     )
 
 # TO DO: move to lyrical section
@@ -94,14 +95,31 @@ melody_accents = melody.Melody(melody_lb,
     fabric_staves = ("ooa_horn", "cco_horn"),
     )
 
+# TO DO... move this into integration
+driving_sax = driving_off.DrivingOff(
+    fabric_staves = instrument_groups.get_instruments("sax",),
+    mask_staves = ("ooa_bari_sax"),
+    bookend_beats = (0,1),
+    )
+
+bass_line = melody.Melody(
+    calliope.LineBlock(
+        calliope.Line(*BASS_LINE()[:-1]),
+        ),
+    fabric_staves = ("ooa_trombone", "ooa_bass_guitar", "ooa_bari_sax", "cco_trombone", ),
+    )
+
+
+
 s.extend_from(
     counter_winds(),
     strings_pulse1(),
     strings_low_pulse1,
     osti1,
-    osti1_accents,
+    driving_sax,
     my_melody,
     melody_accents,
+    bass_line,
     )
 s.extend_from(
     strings_swell1(),
@@ -116,6 +134,8 @@ s.fill_rests(fill_to="cco_violin_i")
 
 s.extend_from(
     counter_winds(),
+    osti1,
+    osti1_accents,
     strings_pulse1(),
     strings_low_pulse1(),
     )
