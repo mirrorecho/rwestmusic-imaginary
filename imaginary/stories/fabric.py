@@ -30,6 +30,8 @@ class FabricFactory(calliope.FromSelectableFactory):
 
     def fabricate(self, machine, *args, **kwargs):
         # these are the staves with content defined in functions:
+        self.ranges = self.ranges or {}
+
         def_staves = [attr_name[9:] for attr_name in dir(self) if attr_name[:9] == "_staves__"]
         
         if self.only_staves:
@@ -77,6 +79,10 @@ class FabricFactory(calliope.FromSelectableFactory):
             if self.assign_pitches_from_selectable:
                 self.assign_pitches(my_staff, my_machine, i)
 
+            if my_ranges := self.ranges.get(my_staff.name, None):
+                print(my_ranges)
+                calliope.SmartRanges(smart_ranges=my_ranges)(machine)
+
         if self.remove_empty_staves == True:
             for staff in self.staves:
                 if staff.name not in used_staves:
@@ -96,10 +102,7 @@ class FabricFactory(calliope.FromSelectableFactory):
                 if not e.skip_or_rest:
                     if j < len(block_pitches):
                         e.pitch = block_pitches[j]
-           
-            if my_range := getattr(self.ranges, staff.name, None):
-                # print(my_range)
-                calliope.SmartRange(smart_range=my_range)(machine)
+        
 
 
     # TO DO: consider this:
@@ -109,3 +112,7 @@ class FabricFactory(calliope.FromSelectableFactory):
 
 class ImaginaryFabric(FabricFactory, score.ImaginaryScore):
     pass
+
+
+
+
