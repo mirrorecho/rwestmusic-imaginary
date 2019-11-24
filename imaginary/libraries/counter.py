@@ -1,54 +1,53 @@
-import abjad
-import calliope
+import abjad, calliope
+from imaginary.stories.library_material import LibraryMaterial
 
 # from imaginary.libraries.m00_home import M00_HomeLine, M00_HomeUpLine
 
-class M01_CounterCell(calliope.Cell):
+class CounterCell(LibraryMaterial, calliope.Cell):
     init_rhythm = (0.5, 3.5, 1, 0.5, 2.5,)
 
-class M01_CounterCellC(calliope.Cell):
+class CounterCellC(LibraryMaterial, calliope.Cell):
     init_rhythm = (-2.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -2)
 
-class M01_CounterLine(calliope.Line):
-    class CellA(M01_CounterCell):
+class CounterLineA(LibraryMaterial, calliope.Line):
+    class CellA(CounterCell):
         init_pitches = (0, -1, 5, 4, -3)
 
-    class CellB(M01_CounterCell):
+    class CellB(CounterCell):
         init_pitches = (5, 4, 4, 9, 7)
 
-    class CellC(M01_CounterCellC):
+    class CellC(CounterCellC):
         init_pitches = ("R", 5, 4, 2, "R", 9, 7, 5, "R")
 
-    class CellD(M01_CounterCell):
+    class CellD(CounterCell):
         init_rhythm = (-1, 1, 0.5, 5.5)
         init_pitches = ("R", 7, 9, 12)
 
-COUNTER_LINE_1 = M01_CounterLine()
 
-COUNTER_LINE_2 = M01_CounterLine().transformed(
+
+LINE_A = CounterLineA()
+
+LINE_B = CounterLineA().transformed(
             calliope.TransposeWithinScale(steps=2),
             calliope.Transpose(interval=5)
             )
 
 # TO DO: this is nasty!!!!!!!!
-fix_cell_c = COUNTER_LINE_2.cells["cell_c"]
+fix_cell_c = LINE_B.cells["cell_c"]
 fix_cell_c.clear()
 fix_cell_c.rhythm=(-1, 1, 1, 1, 1, 1, 1, 1)
 fix_cell_c.pitches=("R", 9, 9, 5, 5, 5, 9, 4)
 
-fix_cell_d = COUNTER_LINE_2.cells["cell_d"]
+fix_cell_d = LINE_B.cells["cell_d"]
 fix_cell_d.clear()
-fix_cell_d.rhythm=(-8,)
 fix_cell_d.rhythm=(-1, 1, 1, 1, 1, 1, 1, 1)
 fix_cell_d.pitches=("R", 4, 5, 10, 9, 5, 10, 9)
 
-COUNTER_LINE = M01_CounterLine()
-COUNTER_LINE.extend(COUNTER_LINE_2())
-
-# COUNTER_LINE.extend(COUNTER_LINE_2)
+LINE_A_B = CounterLineA()
+LINE_A_B.extend(LINE_B())
 
 
-calliope.illustrate(COUNTER_LINE)
+calliope.illustrate(LINE_A_B)
 
 
 

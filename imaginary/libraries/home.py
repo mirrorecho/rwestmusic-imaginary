@@ -1,30 +1,30 @@
 import abjad
 import calliope
+from imaginary.stories.library_material import LibraryMaterial
 
-class M00_HomeLine(calliope.Line):
+class HomeA(LibraryMaterial, calliope.Line):
 
-
-    class PickupRest(calliope.Event):
+    class PickupRest(LibraryMaterial, calliope.Event):
         init_rest = True
         init_beats = -2
 
-    class PhraseA(calliope.Phrase):
-        class CellA1(calliope.Cell):
+    class PhraseA(LibraryMaterial, calliope.Phrase):
+        class CellA1(LibraryMaterial, calliope.Cell):
             init_rhythm=(2, 4, -2)
             init_pitches=(-3, 0, "R")
             cell_label="A"
 
-        class CellA2(calliope.Cell):
+        class CellA2(LibraryMaterial, calliope.Cell):
             init_rhythm=(2, 1, 3)
             init_pitches=(-3, 0, 2, "R")
             cell_label="A"
 
-    class PhraseB(calliope.Phrase):
-        class CellB(calliope.Cell):
+    class PhraseB(LibraryMaterial, calliope.Phrase):
+        class CellB(LibraryMaterial, calliope.Cell):
             init_rhythm=(-2, 2, 1, 1, 1, 3)
             init_pitches=("R", -3, 5, 4, 0, 2)
 
-        class CellA3(calliope.Cell):
+        class CellA3(LibraryMaterial, calliope.Cell):
             init_rhythm=(2, 4)
             init_pitches=(-3, 0)
             cell_label="A"
@@ -35,30 +35,31 @@ class M00_HomeLine(calliope.Line):
     #     for n in self.nodes:
     #         setattr(n, "material_name", "m00")
 
-class M00_HomeUpLine(calliope.Line):
+class HomeB(LibraryMaterial, calliope.Line):
     """moves things up a perfect fourth"""
 
-    class PickupRest(calliope.Event):
+    class PickupRest(LibraryMaterial, calliope.Event):
         init_rest = True
         init_beats = -1
 
-    class PhraseA(calliope.Phrase):
-        class CellA1(calliope.Cell):
+    class PhraseA(LibraryMaterial, calliope.Phrase):
+        class CellA1(LibraryMaterial, calliope.Cell):
             init_rhythm=(1, 2, 2, 2, 2)
             init_pitches=(2, 5, -3, 0, -3)
             cell_label="A"
-        class CellA2(calliope.Cell):
-            init_rhythm=(2, 2, 1, 1, -1)
-            init_pitches=(5, -3, 2, 5, "R")
+        class CellA2(LibraryMaterial, calliope.Cell):
+            init_rhythm=(1, 1, 2, 2, -1)
+            init_pitches=(5, 4, 2, 5, "R")
             cell_label="A"
 
-    class PhraseB(calliope.Phrase):
-        class CellB(calliope.Cell):
+    class PhraseB(LibraryMaterial, calliope.Phrase):
+        class CellB(LibraryMaterial, calliope.Cell):
             init_rhythm=(1, 1, 1, 2, 2, -1)
             init_pitches=(2, 5, 9, 2, 12, "R")        
 
-        class CellA3(calliope.Cell):
-            init_rhythm=(1, 4, 1, 1)
+        class CellA3(LibraryMaterial, calliope.Cell):
+            # init_rhythm=(1, 4, 1, 1)
+            init_rhythm=(1, 2, 2, 2)
             init_pitches=(12, 5, 2, 5)
             cell_label="A"
 
@@ -67,17 +68,20 @@ class M00_HomeUpLine(calliope.Line):
     #     for n in self.nodes:
     #         setattr(n, "material_name", "m00")
 
+HOME_A_B = HomeA().ext( HomeB() )
 
-HOME_LINE = M00_HomeLine(name="home_line")
-HOME_LINE.extend( M00_HomeUpLine() )
+HOME_B_UP4A = HomeB().ext( HomeA().t(5) )
 
-HOME_U_LINE = M00_HomeUpLine(name="home_up_line")
-HOME_U_LINE.extend( M00_HomeLine().transformed(calliope.Transpose(interval=5)) )
+HOME_A_B_FAST = HOME_A_B().scale(0.5)
+HOME_B_UP4A_FAST = HOME_B_UP4A().scale(0.5)
 
-HOME_D_LINE = M00_HomeUpLine(name="home_down_up_line").transformed(calliope.Transpose(interval=-5))
-HOME_D_LINE.extend( M00_HomeLine() )
+if __name__ == '__main__':
+    test_block = calliope.SegmentBlock(
+        HOME_A_B_FAST.move_t(),
+        HOME_B_UP4A_FAST.move_t(),
+        )
 
-calliope.illustrate(HOME_LINE)
+    calliope.illustrate(test_block.to_score(), as_midi=True)
 
 
 

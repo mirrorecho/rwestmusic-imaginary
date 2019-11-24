@@ -3,7 +3,6 @@ import calliope
 
 class PitchAnalyzer(calliope.CalliopeBase):
 
-    selectable_is_block = False
     ticks_pitches = ((),)
 
     rows = None

@@ -1,7 +1,8 @@
 import abjad
 import calliope
+from imaginary.stories.library_material import LibraryMaterial
 
-class M02_BassLine(calliope.Line):
+class BassLine(LibraryMaterial, calliope.Line):
     class PhraseAB(calliope.Phrase):
         class CellA(calliope.Cell):
             init_rhythm = (-0.5, 1.5, 2, 1.5, 2.5)
@@ -47,20 +48,24 @@ class M02_BassLine(calliope.Line):
             init_rhythm = (-0.5, 1.5, 2, 1.5, 2.5)
             init_pitches = ("R", 0, -5, -7, -5)
 
+    # TO DO... maybe this should move to Library Material...
+    def cut_last(self, phrases=1):
+        return type(self)(self()[:0-phrases])
 
-BASS_LINE = M02_BassLine().transformed(calliope.Transpose(interval=-12))
 
-BASS_LINE_1_FLAT = BASS_LINE()
-for e in BASS_LINE_1_FLAT.note_events:
+LINE = BassLine().transformed(calliope.Transpose(interval=-12))
+
+LINE_1_FLAT = LINE()
+for e in LINE_1_FLAT.note_events:
     if e.pitch % 12 == 9:
         e.pitch += -1
 
-BASS_LINE_2_FLAT = BASS_LINE_1_FLAT()
-for e in BASS_LINE_2_FLAT.note_events:
+LINE_2_FLAT = LINE_1_FLAT()
+for e in LINE_2_FLAT.note_events:
     if e.pitch % 12 == 2:
         e.pitch += -1
 
-calliope.illustrate(calliope.Staff(BASS_LINE, clef="bass"))
+calliope.illustrate(calliope.Staff(LINE, clef="bass"))
 
 
 # l5_aflat = l5()

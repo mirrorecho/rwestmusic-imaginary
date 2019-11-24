@@ -184,18 +184,22 @@ class ImaginaryScore(calliope.Score):
 # ==================================================================
 
     class ShortScore(calliope.StaffGroup):
-        class MelodyLine(calliope.Staff):
+        class MelodyLine1(calliope.Staff):
             instrument=abjad.Piano(
-                name="Melody Line", short_name="mel.")
+                name="Melody Line 1", short_name="mel.1")
+        class MelodyLine2(calliope.Staff):
+            instrument=abjad.Piano(
+                name="Melody Line 2", short_name="mel.2")
         class CounterLine(calliope.Staff):
             instrument=abjad.Piano(
                 name="Counter Line", short_name="count.")
         class BassLine(calliope.Staff):
             instrument=abjad.Piano(
-                name="Bass LIne", short_name="bass.")
-        class Osti(calliope.Staff):
+                name="Bass Line", short_name="bass.")
+            clef="bass"
+        class Riff(calliope.Staff):
             instrument=abjad.Piano(
-                name="Osti", short_name="ost.")
+                name="Riff", short_name="riff.")
         class Chords(calliope.Staff):
             instrument=abjad.Piano(
                 name="Chords", short_name="chrd.")
@@ -208,6 +212,7 @@ class ImaginaryScore(calliope.Score):
         class BassDrones(calliope.Staff):
             instrument=abjad.Piano(
                 name="Bass Drones", short_name="b.drn.")
+            clef="bass"
         # class HighRhythm(calliope.RhythmicStaff):
         #     instrument=abjad.Instrument(
         #         name="High Rhythm", short_name="h.rhm.")

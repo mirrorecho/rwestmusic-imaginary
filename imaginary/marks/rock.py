@@ -8,50 +8,9 @@ from imaginary.stories.fabric import ImaginaryFabric
 from imaginary.fabrics import (instrument_groups, 
     dovetail, driving_off, hit_cells, 
     hits, lick, melody, osti, pad, 
-    pizz_flutter, pulse, staggered_swell, swell_hit)
+    pizz_flutter, pulse, staggered_swell, swell_hit)  
 
-OSTI_PITCHES_1 = (-3, -2, 0, 2, 5, 9)
-OSTI_PITCHES_2 = (4, 11, 5, 12, 14, 7)
-
-OSTI_PITCHES = OSTI_PITCHES_1 + OSTI_PITCHES_2
-
-class OstiPhrase(calliope.Phrase):
-    class OstiCell1(calliope.Cell):
-        init_pitches = OSTI_PITCHES_1
-        init_rhythm = (0.5,)*len(OSTI_PITCHES_1)
-
-    class OstiCell2(calliope.Cell):
-        init_pitches = OSTI_PITCHES_2
-        init_rhythm = (0.5,)*len(OSTI_PITCHES_2)    
-
-    def cut(self, 
-        crop=(0,0), 
-        pop=(), 
-        mask=(), 
-        poke=()
-        ):
-        # TO DO: this would be a great general calliope Transform!
-        if crop[0] > 0:
-            self.events[:crop[0]].remove()
-        if crop[1] > 0:
-            self.events[0-crop[1]:].remove()
-        
-        if pop:
-            self.events[pop].remove()
-
-        if mask:
-            self.events[mask].setattrs(rest=True)
-
-        if poke:
-            self.events.exclude(*poke).setattrs(rest=True)
-
-        # TO DO ... should be replaced with a general calliope method to remove 
-        # empty nodes from a tree:
-        for c in list(self.cells):
-            if len(c) == 0:
-                self.remove(c)
-
-
+# TO DO: used?
 class RockOsti(osti.Osti): 
     assign_pitches_from_selectable = False
 
@@ -98,31 +57,9 @@ class Flutter(ImaginaryFabric):
             my_cell.note_events[0].tag("f.t.")
         return my_cell
 
-class OstiLineBlock(calliope.LineBlock, calliope.Factory):
-    branch_type = calliope.Line
-    phrase_count = 2
-    cuts = () # set to an iterable of dictionaris with cut kwargs
-    stack_pitches = (
-        ((0,),),
-        ((7,),),
-        )
-    slur_cells = False
 
-    def get_branches_kwargs(self, *args, **kwargs):
-        return [
-            dict(intervals=sp) for sp in self.stack_pitches
-        ]
-    
-    def get_branch(self, *args, **kwargs):
-        my_line = calliope.Line(*[
-            OstiPhrase() for i in range(self.phrase_count)
-            ]).transformed( calliope.StackPitches(intervals=kwargs["intervals"]) )
 
-        for i, c in enumerate(self.cuts):
-            my_line[i].cut(**c)
-        if self.slur_cells:
-            calliope.SlurCells()(my_line)
-        return my_line
+
 
 # lb = OstiLineBlock(
 #     phrase_count=3,
