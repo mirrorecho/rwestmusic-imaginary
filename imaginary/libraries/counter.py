@@ -10,18 +10,20 @@ class CounterCellC(LibraryMaterial, calliope.Cell):
     init_rhythm = (-2.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -2)
 
 class CounterLineA(LibraryMaterial, calliope.Line):
-    class CellA(CounterCell):
-        init_pitches = (0, -1, 5, 4, -3)
+    class PhraseA(LibraryMaterial, calliope.Phrase):
+        class CellA(CounterCell):
+            init_pitches = (0, -1, 5, 4, -3)
 
-    class CellB(CounterCell):
-        init_pitches = (5, 4, 4, 9, 7)
+        class CellB(CounterCell):
+            init_pitches = (5, 4, 4, 9, 7)
 
-    class CellC(CounterCellC):
-        init_pitches = ("R", 5, 4, 2, "R", 9, 7, 5, "R")
+    class PhraseB(LibraryMaterial, calliope.Phrase):
+        class CellC(CounterCellC):
+            init_pitches = ("R", 5, 4, 2, "R", 9, 7, 5, "R")
 
-    class CellD(CounterCell):
-        init_rhythm = (-1, 1, 0.5, 5.5)
-        init_pitches = ("R", 7, 9, 12)
+        class CellD(CounterCell):
+            init_rhythm = (-1, 1, 0.5, 5.5)
+            init_pitches = ("R", 7, 9, 12)
 
 
 

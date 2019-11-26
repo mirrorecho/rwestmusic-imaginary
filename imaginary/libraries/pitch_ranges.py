@@ -12,7 +12,7 @@ from imaginary.scores.score import ImaginaryScore
 #             max_range.stop_pitch.number - 4,
 #             )
 #         print("    " + s.name, " = ", 
-#             "((%s, %s),)" % (
+#             "(%s, %s)," % (
 #                 my_range.start_pitch.number, 
 #                 my_range.stop_pitch.number),
 #             "#", instrument.__class__.__name__, 
@@ -20,45 +20,46 @@ from imaginary.scores.score import ImaginaryScore
 #             "span:", my_range.stop_pitch.number-my_range.start_pitch.number)
  
 MAX_RANGES = dict(
-    ooa_flute  =  ((0, 34),), # Flute [C4, Bb6] span: 34
-    ooa_clarinet  =  ((-10, 30),), # ClarinetInBFlat [D3, F#6] span: 40
-    ooa_alto_sax1  =  ((-11, 17),), # AltoSaxophone [C#3, F5] span: 28
-    ooa_alto_sax2  =  ((-11, 17),), # AltoSaxophone [C#3, F5] span: 28
-    ooa_tenor_sax  =  ((-16, 12),), # TenorSaxophone [Ab2, C5] span: 28
-    ooa_bari_sax  =  ((-24, 4),), # BaritoneSaxophone [C2, E4] span: 28
-    ooa_bassoon  =  ((-26, 11),), # Bassoon [Bb1, B4] span: 37
-    ooa_horn  =  ((-25, 13),), # FrenchHorn [B1, C#5] span: 38
-    ooa_trumpet  =  ((-6, 22),), # Trumpet [F#3, Bb5] span: 28
-    ooa_trombone  =  ((-20, 11),), # TenorTrombone [E2, B4] span: 31
-    ooa_mallets  =  ((-7, 25),), # Vibraphone [F3, C#6] span: 32
-    ooa_drum_set  =  ((-39, 44),), # Instrument [A0, Ab7] span: 83
-    ooa_guitar  =  ((-20, 12),), # Guitar [E2, C5] span: 32
-    ooa_bass_guitar  =  ((-20, 12),), # Guitar [E2, C5] span: 32
-    ooa_violin1  =  ((-5, 39),), # Violin [G3, Eb7] span: 44
-    ooa_violin2  =  ((-5, 39),), # Violin [G3, Eb7] span: 44
-    ooa_cello1  =  ((-24, 15),), # Cello [C2, Eb5] span: 39
-    ooa_cello2  =  ((-24, 15),), # Cello [C2, Eb5] span: 39
+    # BAND
+    ooa_flute  =  (0, 34), # Flute [C4, Bb6] span: 34
+    ooa_clarinet  =  (-10, 30), # ClarinetInBFlat [D3, F#6] span: 40
+    ooa_alto_sax1  =  (-11, 17), # AltoSaxophone [C#3, F5] span: 28
+    ooa_alto_sax2  =  (-11, 17), # AltoSaxophone [C#3, F5] span: 28
+    ooa_tenor_sax  =  (-16, 12), # TenorSaxophone [Ab2, C5] span: 28
+    ooa_bari_sax  =  (-24, 4), # BaritoneSaxophone [C2, E4] span: 28
+    ooa_bassoon  =  (-26, 11), # Bassoon [Bb1, B4] span: 37
+    ooa_horn  =  (-25, 13), # FrenchHorn [B1, C#5] span: 38
+    ooa_trumpet  =  (-6, 22), # Trumpet [F#3, Bb5] span: 28
+    ooa_trombone  =  (-20, 11), # TenorTrombone [E2, B4] span: 31
+    ooa_mallets  =  (-7, 25), # Vibraphone [F3, C#6] span: 32
+    ooa_drum_set  =  (-39, 44), # Instrument [A0, Ab7] span: 83
+    ooa_guitar  =  (-20, 12), # Guitar [E2, C5] span: 32
+    ooa_bass_guitar  =  (-20, 12), # Guitar [E2, C5] span: 32
+    ooa_violin1  =  (-5, 39), # Violin [G3, Eb7] span: 44
+    ooa_violin2  =  (-5, 39), # Violin [G3, Eb7] span: 44
+    ooa_cello1  =  (-24, 15), # Cello [C2, Eb5] span: 39
+    ooa_cello2  =  (-24, 15), # Cello [C2, Eb5] span: 39
     
     # ORCHESTRA
-    cco_flute1  =  ((0, 34),), # Flute [C4, Bb6] span: 34
-    cco_flute2  =  ((0, 34),), # Flute [C4, Bb6] span: 34
-    cco_oboe1  =  ((-2, 29),), # Oboe [Bb3, F6] span: 31
-    cco_oboe2  =  ((-2, 29),), # Oboe [Bb3, F6] span: 31
-    cco_clarinet1  =  ((-10, 30),), # ClarinetInBFlat [D3, F#6] span: 40
-    cco_clarinet2  =  ((-10, 30),), # ClarinetInBFlat [D3, F#6] span: 40
-    cco_bassoon  =  ((-26, 11),), # Bassoon [Bb1, B4] span: 37
-    cco_horn  =  ((-25, 13),), # FrenchHorn [B1, C#5] span: 38
-    cco_trumpet  =  ((-6, 22),), # Trumpet [F#3, Bb5] span: 28
-    cco_trombone  =  ((-20, 11),), # TenorTrombone [E2, B4] span: 31
-    harp1  =  ((-37, 40),), # Harp [B0, E7] span: 77
-    harp2  =  ((-37, 40),), # Harp [B0, E7] span: 77
-    piano1  =  ((-39, 44),), # Piano [A0, Ab7] span: 83
-    piano2  =  ((-39, 44),), # Piano [A0, Ab7] span: 83
-    cco_violin_i  =  ((-5, 39),), # Violin [G3, Eb7] span: 44
-    cco_violin_ii  =  ((-5, 39),), # Violin [G3, Eb7] span: 44
-    cco_viola  =  ((-12, 22),), # Viola [C3, Bb5] span: 34
-    cco_cello  =  ((-24, 16),), # Cello [C2, Eb5] span: 39
-    cco_bass  =  ((-36, 3),), # Contrabass [C1, Eb4] span: 39
+    cco_flute1  =  (0, 34), # Flute [C4, Bb6] span: 34
+    cco_flute2  =  (0, 34), # Flute [C4, Bb6] span: 34
+    cco_oboe1  =  (-2, 29), # Oboe [Bb3, F6] span: 31
+    cco_oboe2  =  (-2, 29), # Oboe [Bb3, F6] span: 31
+    cco_clarinet1  =  (-10, 30), # ClarinetInBFlat [D3, F#6] span: 40
+    cco_clarinet2  =  (-10, 30), # ClarinetInBFlat [D3, F#6] span: 40
+    cco_bassoon  =  (-26, 11), # Bassoon [Bb1, B4] span: 37
+    cco_horn  =  (-25, 13), # FrenchHorn [B1, C#5] span: 38
+    cco_trumpet  =  (-6, 22), # Trumpet [F#3, Bb5] span: 28
+    cco_trombone  =  (-20, 11), # TenorTrombone [E2, B4] span: 31
+    harp1  =  (-37, 40), # Harp [B0, E7] span: 77
+    harp2  =  (-37, 40), # Harp [B0, E7] span: 77
+    piano1  =  (-39, 44), # Piano [A0, Ab7] span: 83
+    piano2  =  (-39, 44), # Piano [A0, Ab7] span: 83
+    cco_violin_i  =  (-5, 39), # Violin [G3, Eb7] span: 44
+    cco_violin_ii  =  (-5, 39), # Violin [G3, Eb7] span: 44
+    cco_viola  =  (-12, 22), # Viola [C3, Bb5] span: 34
+    cco_cello  =  (-24, 15), # Cello [C2, Eb5] span: 39
+    cco_bass  =  (-36, 3), # Contrabass [C1, Eb4] span: 39
     )
 
 class AbstractPitchRange(calliope.CalliopeBase):
@@ -132,8 +133,25 @@ class AbstractPitchRangeSeq(calliope.CalliopeBase):
         self.time_ratio_abstracts = time_ratio_abstracts or {}
         super().__init__(*args, **kwargs)
 
+    def add(self, time_ratio, **kwargs):
+        abstract = AbstractPitchRange(**kwargs)
+        self.time_ratio_abstracts[time_ratio] = abstract
+        return self
+
+    def add_constant(self, **kwargs):
+        abstract = AbstractPitchRange(**kwargs)
+        self.time_ratio_abstracts[0] = abstract
+        self.time_ratio_abstracts[1] = abstract
+        return self
+
     def add_abstract(self, time_ratio, abstract):
         self.time_ratio_abstracts[time_ratio] = abstract
+        return self
+
+    def add_constant_abstract(self, abstract):
+        self.time_ratio_abstracts[0] = abstract
+        self.time_ratio_abstracts[1] = abstract
+        return self
 
     def get_ranges(self, min_bottom, max_top, length=None):
         length = length or self.length
@@ -166,76 +184,93 @@ class AbstractPitchRangeSeq(calliope.CalliopeBase):
                 last_range = my_range
                 last_index = my_index
 
-
         return my_ranges
 
 
+class PitchRanges(calliope.CalliopeBase):
+    default = None
+    length = None
 
-apr0 = AbstractPitchRange(
-    from_bottom=0,
+    def __init__(self, default=None, max_ranges=None, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self.max_ranges = max_ranges or MAX_RANGES
+
+        if default:
+            self.default = default
+        else:
+            self.default = AbstractPitchRangeSeq()
+            self.default.add(0)
+            self.default.add(1)
+
+    def get_ranges(self, name, length=None):
+        length = length or self.length
+        my_abstract_seq = getattr(self, name, self.default)
+        return my_abstract_seq.get_ranges(*self.max_ranges[name], length)
+
+
+MID_RANGE = AbstractPitchRange(
+    ratio_mid = 0.4,
+    spread = 18
     )
-apr1 = AbstractPitchRange(
-    from_top=4,
-    spread=16,
+
+BOTTOM_RANGE = AbstractPitchRange(
+    from_bottom = 0,
+    spread = 18
     )
 
-aprs = AbstractPitchRangeSeq({
-    0:apr0,
-    0.5:apr1,
-    1:apr0,
-    })
+TOP_RANGE = AbstractPitchRange(
+    ratio_top=0.95,
+    spread = 18
+    )
 
 
-for r in aprs.get_ranges(*MAX_RANGES["cco_cello"][0], 7):
-    print(r)
-    
+MID_SEQ = AbstractPitchRangeSeq().add_constant_abstract(MID_RANGE)
+BOTTOM_SEQ = AbstractPitchRangeSeq().add_constant_abstract(BOTTOM_RANGE)
+TOP_SEQ = AbstractPitchRangeSeq().add_constant_abstract(TOP_RANGE)
+
+LOW_TO_HIGH_SEQ = AbstractPitchRangeSeq().add_abstract(
+    0, 
+    BOTTOM_RANGE,
+    ).add_abstract(
+    1, 
+    TOP_RANGE,
+    )
+HIGH_TO_LOW_SEQ = AbstractPitchRangeSeq().add_abstract(
+    0, 
+    TOP_RANGE,
+    ).add_abstract(
+    1, 
+    BOTTOM_RANGE,
+    )
+HILL_UP_SEQ = AbstractPitchRangeSeq().add_abstract(
+    0, 
+    BOTTOM_RANGE,
+    ).add_abstract(
+    0.5, 
+    TOP_RANGE,
+    ).add_abstract(
+    1, 
+    BOTTOM_RANGE,
+    )
+HILL_DOWN_SEQ = AbstractPitchRangeSeq().add_abstract(
+    0, 
+    TOP_RANGE,
+    ).add_abstract(
+    0.5, 
+    BOTTOM_RANGE,
+    ).add_abstract(
+    1, 
+    TOP_RANGE,
+    )
 
 
+# pr = PitchRanges(
+#     default = AbstractPitchRangeSeq().add_constant(from_bottom=12, spread=16)
+#     )
 
+# print(pr.get_ranges("cco_violin_i",7))
 
-
-
-# class PitchRangeSeq(calliope.CalliopeBase):
-
-#     def __init__(name=None, *args, **kwargs):
-#         super().__init__(*args, **kwargs)
-
-#     def __get__(self, index):
-#         return
-
-
-
-# def get_bottom_range(max_bottom, from_bottom, spread):
-#     my_bottom = bottom_point + from_bottom
-#     return ((my_bottom, my_bottom+spread),)
-
-# def get_top_range(max_top, from_top, spread):
-#     my_top = top_point - from_top
-#     return ((my_top-spread, my_top),)
-
-# def from_bottom(names=None, from_bottoms=(0,), spreads=(16,)):
-#     names = names or MAX_RANGES.keys()
-#     return {
-#         name: 
-#         get_bottom_range(MAX_RANGES[name][0][0], from_bottoms[i % len(from_bottoms)], spreads[% len(spreads)])
-#         for i, name in enumerate(names)
-#     }
-
-# def from_top(names=None, from_tops=(0,), spreads=(16,)):
-#     names = names or MAX_RANGES.keys()
-#     return {
-#         name: 
-#         get_top_range(MAX_RANGES[name][0][1], from_tops[i % len(from_tops)], spreads[% len(spreads)])
-#         for i, name in enumerate(names)
-#     }
-
-# def from_point(names=None, point_ratios=0.5, spread=16):
-#     names = names or MAX_RANGES.keys()
-#     return {
-#         name: 
-#         get_top_range(MAX_RANGES[name][0][1], from_tops[i % len(from_tops)], spreads[% len(spreads)])
-#         for i, name in enumerate(names)
-#     }
 
 
 

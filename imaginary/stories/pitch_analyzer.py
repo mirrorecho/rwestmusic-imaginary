@@ -33,7 +33,9 @@ class PitchAnalyzer(calliope.CalliopeBase):
 
         for row in self.rows:
             ticks_counter = 0
+
             for e in row.events:
+
                 my_ticks = e.ticks
                 if e.pitch is not None:
                     # if isinstance(e.pitch, (list, tuple)):
@@ -45,6 +47,7 @@ class PitchAnalyzer(calliope.CalliopeBase):
 
                     for ts in self.ticks_pitches[ticks_counter:ticks_counter+my_ticks]:
                         ts.extend(e.pitch_numbers)
+
                 ticks_counter += my_ticks
 
 

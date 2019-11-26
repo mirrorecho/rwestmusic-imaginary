@@ -1,5 +1,6 @@
 import abjad, calliope
 from imaginary.scores import score
+from imaginary.libraries import pitch_ranges
 
 class FabricFactory(calliope.FromSelectableFactory):
     """
@@ -16,6 +17,9 @@ class FabricFactory(calliope.FromSelectableFactory):
     bookend_beats = (0, 0)
     wrap_in = calliope.Segment 
     assign_pitches_from_selectable = True
+    selectable_start_beat = 0
+    # selectable_staves_map = {sdfs:sdfsdfs
+    #     }
 
     fabric_staves = ()
     only_staves = ()
@@ -28,10 +32,13 @@ class FabricFactory(calliope.FromSelectableFactory):
     # def _staves__ooa_flute(self, staff, index=0):
     #     return self.weave(staff, index)
 
-    def fabricate(self, machine, *args, **kwargs):
-        # these are the staves with content defined in functions:
-        self.ranges = self.ranges or {}
+    def get_pitch_ranges(self, *args, **kwargs):
+        return pitch_ranges.PitchRanges()
 
+    def fabricate(self, machine, *args, **kwargs):
+        self.ranges = self.ranges or self.get_pitch_ranges(*args, **kwargs)
+        
+        # these are the staves with content defined in functions:
         def_staves = [attr_name[9:] for attr_name in dir(self) if attr_name[:9] == "_staves__"]
         
         if self.only_staves:
@@ -77,10 +84,9 @@ class FabricFactory(calliope.FromSelectableFactory):
                 my_bubble.append(calliope.Event(beats=0-self.bookend_beats[1]))
 
             if self.assign_pitches_from_selectable:
-                self.assign_pitches(my_staff, my_machine, i)
+                self.assign_pitches(my_staff, my_bubble, i)
 
             if my_ranges := self.ranges.get(my_staff.name, None):
-                print(my_ranges)
                 calliope.SmartRanges(smart_ranges=my_ranges)(machine)
 
         if self.remove_empty_staves == True:
@@ -88,10 +94,14 @@ class FabricFactory(calliope.FromSelectableFactory):
                 if staff.name not in used_staves:
                     staff.parent.remove(staff)
 
-
+    def assign_pitch(self, staff, machine, row_index, event, beats_before, my_range):
+        pitches_at = self.selectable.pitches_at(
+            self.selectable_start_beat + beats_before
+            )
 
     def assign_pitches(self, staff, machine, index):
         # TO DO... should bookend move pitches forward or not?
+        # (YES THEY SHOULD... need to double check this)
 
         if self.selectable is not None:
                 

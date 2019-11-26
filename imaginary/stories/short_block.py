@@ -23,16 +23,20 @@ class ShortBlock(calliope.SegmentBlock):
 
     class BassDrones(calliope.Segment): pass
 
+    # TO DO... this adds extra...
+    def reset(self):
+        self.pitch_analyzer = PitchAnalyzer(self)        
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.pitch_analyzer = PitchAnalyzer(self)
+        self.reset()
 
     def ext(self, other):
         """
         extends each segment from another ShortBlock instance
         """
         self.warn("ext not implemented yet")
+        self.reset()
         return self
 
     def ext_segments(self, **kwargs):
@@ -41,6 +45,7 @@ class ShortBlock(calliope.SegmentBlock):
                 iterable() if isinstance(iterable, calliope.Segment)
                 else [i() for i in iterable]
                 )
+        self.reset()
         return self
 
     def annotate(self, **kwargs):
@@ -64,6 +69,9 @@ class ShortBlock(calliope.SegmentBlock):
                 my_staff.parent.remove(my_staff)
 
         return score
+
+    def pitches_at(self, beats):
+        return self.pitch_analyzer.pitches_at(beats)
 
     def fill_rests(self, beats=None, fill_to=None, **kwargs):
         segs = list(self.segments)

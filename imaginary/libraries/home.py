@@ -4,11 +4,11 @@ from imaginary.stories.library_material import LibraryMaterial
 
 class HomeA(LibraryMaterial, calliope.Line):
 
-    class PickupRest(LibraryMaterial, calliope.Event):
-        init_rest = True
-        init_beats = -2
-
     class PhraseA(LibraryMaterial, calliope.Phrase):
+        class PickupRest(LibraryMaterial, calliope.Event):
+            init_rest = True
+            init_beats = -2
+
         class CellA1(LibraryMaterial, calliope.Cell):
             init_rhythm=(2, 4, -2)
             init_pitches=(-3, 0, "R")
@@ -38,11 +38,11 @@ class HomeA(LibraryMaterial, calliope.Line):
 class HomeB(LibraryMaterial, calliope.Line):
     """moves things up a perfect fourth"""
 
-    class PickupRest(LibraryMaterial, calliope.Event):
-        init_rest = True
-        init_beats = -1
-
     class PhraseA(LibraryMaterial, calliope.Phrase):
+        class PickupRest(LibraryMaterial, calliope.Event):
+            init_rest = True
+            init_beats = -1
+        
         class CellA1(LibraryMaterial, calliope.Cell):
             init_rhythm=(1, 2, 2, 2, 2)
             init_pitches=(2, 5, -3, 0, -3)
