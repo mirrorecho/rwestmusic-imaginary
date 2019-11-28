@@ -21,11 +21,13 @@ class PitchAnalyzer(calliope.CalliopeBase):
 
         self.rows = []
         self.set_rows(selectable)
+        num_ticks = max( [r.ticks for r in self.rows] )
 
-        num_ticks = sum( [t.ticks for t in self.rows[0].logical_ties] )
-        # self.ticks_pitches = [
-        #     set() for t in range(num_ticks)
-        # ]
+        self.rows = list(selectable)
+        # num_ticks = self.selectable[2].ticks
+        # for row in selectable:
+        #     print(row)
+        # print(num_ticks)
 
         self.ticks_pitches = [
             [] for t in range(num_ticks)
@@ -61,5 +63,8 @@ class PitchAnalyzer(calliope.CalliopeBase):
 
         #     )
 
+    def pitches_at_ticks(self, ticks):
+        return sorted(self.ticks_pitches[ticks])
+
     def pitches_at(self, beats):
-        return sorted(self.ticks_pitches[int(beats * calliope.MACHINE_TICKS_PER_BEAT)])
+        return int(beats * calliope.MACHINE_TICKS_PER_BEAT)

@@ -1,11 +1,13 @@
 import abjad, calliope
-from imaginary.stories.library_material import LibraryMaterial
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
+    )
 
-class DroneCell(LibraryMaterial, calliope.Cell): pass
+class DroneCell(ImaginaryCell): pass
 
-class DronePhrase(LibraryMaterial, calliope.Phrase): pass
+class DronePhrase(ImaginaryPhrase): pass
 
-class DroneLine(LibraryMaterial, calliope.Line, calliope.Factory):
+class DroneLine(ImaginaryLine, calliope.Factory):
     branch_type = DronePhrase
     twig_type = DroneCell # TO DO: consider this for all factories
     phrase_count = 4

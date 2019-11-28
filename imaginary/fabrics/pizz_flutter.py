@@ -5,6 +5,31 @@ from imaginary.fabrics import instrument_groups
 class PizzFlutter(ImaginaryFabric):
     pizz_flutter_initial = False # if True then will add pizz and f.t. indications
     pizz_flutter_beats = 4
+    fabric_staves = (
+                "ooa_violin1", 
+                "ooa_violin2", 
+                "ooa_cello1", 
+                "ooa_cello2",
+                "cco_violin_i", 
+                "cco_violin_ii", 
+                "cco_viola", 
+                "cco_cello",
+                "cco_bass",
+                "ooa_flute", 
+                "cco_flute1", 
+                "cco_flute2",
+                "harp1",
+                "harp2",
+                )
+
+    def weave(self, staff, index=0, **kwargs):
+        if staff.name in instrument_groups.get_instruments("strings"):
+            return self.pizz_helper(pizz_indicator=True)
+        elif staff.name in ("harp1", "harp2"):
+            return self.pizz_helper(pizz_indicator=False)
+        elif staff.name in instrument_groups.get_instruments("flutes"):
+            return self.flutter_helper()
+
 
     def pizz_helper(self, pizz_indicator=True):
         my_cell = calliope.Cell(
@@ -26,44 +51,8 @@ class PizzFlutter(ImaginaryFabric):
 
         return my_cell
 
-    # TO DO: refactor to cut out a lot of this ... 
-
-    def _staves__ooa_flute(self, staff, index=0):
-        return self.flutter_helper()
-
-    def _staves__cco_flute1(self, staff, index=0):
-        return self.flutter_helper()
-
-    def _staves__cco_flute2(self, staff, index=0):
-        return self.flutter_helper()
-
-    def _staves__harp1(self, staff, index=0):
-        return self.pizz_helper(pizz_indicator=False)
-
-    def _staves__harp2(self, staff, index=0):
-        return self.pizz_helper(pizz_indicator=False)
-
-    def _staves__cco_violin_i(self, staff, index=0):
-        return self.pizz_helper()
-
-    def _staves__cco_violin_ii(self, staff, index=0):
-        return self.pizz_helper()
-
-    def _staves__cco_viola(self, staff, index=0):
-        return self.pizz_helper()
-
-    def _staves__cco_cello(self, staff, index=0):
-        return self.pizz_helper()
-
-    def _staves__cco_bass(self, staff, index=0):
-        return self.pizz_helper()
 
 if __name__ == "__main__":
     s = PizzFlutter(
-        calliope.CellBlock(
-            calliope.Cell(rhythm=(1,)*24, pitches=(0,2,4)*8),
-            calliope.Cell(rhythm=(1,)*24, pitches=(5,7,9)*8),
-            calliope.Cell(rhythm=(1,)*24, pitches=(11,12)*12),
-            )
         )
     calliope.illustrate(s)

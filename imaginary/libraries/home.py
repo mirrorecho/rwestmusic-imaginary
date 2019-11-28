@@ -1,89 +1,97 @@
 import abjad
 import calliope
-from imaginary.stories.library_material import LibraryMaterial
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
+    )
 
-class HomeA(LibraryMaterial, calliope.Line):
+class HomeA(ImaginaryLine):
 
-    class PhraseA(LibraryMaterial, calliope.Phrase):
-        class PickupRest(LibraryMaterial, calliope.Event):
+    class PhraseA(ImaginaryPhrase):
+        class PickupRest(calliope.Event):
             init_rest = True
             init_beats = -2
 
-        class CellA1(LibraryMaterial, calliope.Cell):
+        class CellA1(ImaginaryCell):
             init_rhythm=(2, 4, -2)
             init_pitches=(-3, 0, "R")
             cell_label="A"
 
-        class CellA2(LibraryMaterial, calliope.Cell):
+        class CellA2(ImaginaryCell):
             init_rhythm=(2, 1, 3)
             init_pitches=(-3, 0, 2, "R")
             cell_label="A"
 
-    class PhraseB(LibraryMaterial, calliope.Phrase):
-        class CellB(LibraryMaterial, calliope.Cell):
+    class PhraseB(ImaginaryPhrase):
+        class CellB(ImaginaryCell):
             init_rhythm=(-2, 2, 1, 1, 1, 3)
             init_pitches=("R", -3, 5, 4, 0, 2)
 
-        class CellA3(LibraryMaterial, calliope.Cell):
+        class CellA3(ImaginaryCell):
             init_rhythm=(2, 4)
             init_pitches=(-3, 0)
             cell_label="A"
 
-    # TO DO: CONSIDER.. use something like this for all material?
-    # def __init__(self, *args, **kwargs):
-    #     super().__init__(*args, **kwargs)
-    #     for n in self.nodes:
-    #         setattr(n, "material_name", "m00")
 
-class HomeB(LibraryMaterial, calliope.Line):
-    """moves things up a perfect fourth"""
+class HomeB(ImaginaryLine):
+    """moves towards things up a perfect fourth"""
 
-    class PhraseA(LibraryMaterial, calliope.Phrase):
-        class PickupRest(LibraryMaterial, calliope.Event):
+    class PhraseA(ImaginaryPhrase):
+        class PickupRest(calliope.Event):
             init_rest = True
             init_beats = -1
         
-        class CellA1(LibraryMaterial, calliope.Cell):
+        class CellA1(ImaginaryCell):
             init_rhythm=(1, 2, 2, 2, 2)
             init_pitches=(2, 5, -3, 0, -3)
             cell_label="A"
-        class CellA2(LibraryMaterial, calliope.Cell):
+        class CellA2(ImaginaryCell):
             init_rhythm=(1, 1, 2, 2, -1)
             init_pitches=(5, 4, 2, 5, "R")
             cell_label="A"
 
-    class PhraseB(LibraryMaterial, calliope.Phrase):
-        class CellB(LibraryMaterial, calliope.Cell):
+    class PhraseB(ImaginaryPhrase):
+        class CellB(ImaginaryCell):
             init_rhythm=(1, 1, 1, 2, 2, -1)
             init_pitches=(2, 5, 9, 2, 12, "R")        
 
-        class CellA3(LibraryMaterial, calliope.Cell):
+        class CellA3(ImaginaryCell):
             # init_rhythm=(1, 4, 1, 1)
             init_rhythm=(1, 2, 2, 2)
             init_pitches=(12, 5, 2, 5)
             cell_label="A"
 
-    # def __init__(self, *args, **kwargs):
-    #     super().__init__(*args, **kwargs)
-    #     for n in self.nodes:
-    #         setattr(n, "material_name", "m00")
+_HOME_A = HomeA()
+_HOME_B = HomeB()
 
-HOME_A_B = HomeA().ext( HomeB() )
+def home_a(**kwargs):
+    return _HOME_A(**kwargs)
 
-HOME_B_UP4A = HomeB().ext( HomeA().t(5) )
+def home_b(**kwargs):
+    return _HOME_B(**kwargs)
 
-HOME_A_B_FAST = HOME_A_B().scale(0.5)
-HOME_B_UP4A_FAST = HOME_B_UP4A().scale(0.5)
+# some common combos:
+def home_a_b():
+    return _HOME_A().ext( _HOME_B() )
+
+def home_b_aup4():
+    return _HOME_B().ext( _HOME_A().t(5) )
+
 
 if __name__ == '__main__':
+    # pass
     test_block = calliope.SegmentBlock(
-        HOME_A_B_FAST.move_t(),
-        HOME_B_UP4A_FAST.move_t(),
+        home_a_b().sc(0.5).move_t(),
+        home_b_aup4().sc(0.5).move_t(),
         )
-
+    # test_block.segments[1].cells[0].insert(0, calliope.Event(beats=0-24))
     calliope.illustrate(test_block.to_score(), as_midi=True)
 
+# h = HOME_A_B_FAST.crop(1,1).move_t()
+# print(HOME_A_B_FAST().poke((0,1,),"events"))
+# HOME_A_B_FAST().crop(1,1,"events").poke((0,1,2,),"events")
+# HOME_A_B_FAST().crop(0,1,"events").poke((0,1,2,),"events").move_t()
 
+# calliope.illustrate(HOME_A_B_FAST().crop(1,1,"events"))
 
 
 

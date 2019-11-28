@@ -94,6 +94,18 @@ def get_instruments(*args):
                 "cco_clarinet2", 
                 "cco_bassoon", 
                 ])
+        if group_name == "flutes":
+            my_instruments.extend([
+                "ooa_flute", 
+                "cco_flute1", 
+                "cco_flute2", 
+                ])
+        if group_name == "clarinets":
+            my_instruments.extend([
+                "ooa_clarinet", 
+                "cco_clarinet1", 
+                "cco_clarinet2", 
+                ])
         if group_name in ("brass", "cco_brass"):
             my_instruments.extend([
                 "cco_horn", 

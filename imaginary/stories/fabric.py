@@ -1,6 +1,10 @@
 import abjad, calliope
 from imaginary.scores import score
 from imaginary.libraries import pitch_ranges
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
+    )
+
 
 class FabricFactory(calliope.FromSelectableFactory):
     """
@@ -15,7 +19,7 @@ class FabricFactory(calliope.FromSelectableFactory):
     tag_events = None # a dictionary of indices/names and tags for each event
     tag_all_note_events = () # an interable of tags to be added to all events
     bookend_beats = (0, 0)
-    wrap_in = calliope.Segment 
+    wrap_in = ImaginarySegment
     assign_pitches_from_selectable = True
     selectable_start_beat = 0
     # selectable_staves_map = {sdfs:sdfsdfs
@@ -63,7 +67,7 @@ class FabricFactory(calliope.FromSelectableFactory):
 
             if self.tag_events:
                 for n, t in self.tag_events.items():
-                    print(n,t,my_machine.events[n])
+                    # print(n,t,my_machine.events[n])
                     my_machine.events[n].tag(*t)
 
             if self.tag_all_note_events:
@@ -71,53 +75,101 @@ class FabricFactory(calliope.FromSelectableFactory):
 
             if self.wrap_in is not None:
                 my_bubble = self.wrap_in()
-                my_staff.append(my_bubble)
+                my_bubble.append(my_machine)
             else:
-                my_bubble = my_staff
+                # TO DO... adding this direcly to staff is funky
+                my_bubble = my_machine
 
             if self.bookend_beats[0]:
-                my_bubble.append(calliope.Event(beats=0-self.bookend_beats[0]))
-            
-            my_bubble.append(my_machine)
+                my_bubble.insert(0,calliope.Event(beats=0-self.bookend_beats[0]))
 
             if self.bookend_beats[1]:
                 my_bubble.append(calliope.Event(beats=0-self.bookend_beats[1]))
 
-            if self.assign_pitches_from_selectable:
-                self.assign_pitches(my_staff, my_bubble, i)
-
-            if my_ranges := self.ranges.get(my_staff.name, None):
-                calliope.SmartRanges(smart_ranges=my_ranges)(machine)
+            my_staff.append(my_bubble)
 
         if self.remove_empty_staves == True:
             for staff in self.staves:
                 if staff.name not in used_staves:
                     staff.parent.remove(staff)
 
-    def assign_pitch(self, staff, machine, row_index, event, beats_before, my_range):
-        pitches_at = self.selectable.pitches_at(
-            self.selectable_start_beat + beats_before
-            )
+        if self.assign_pitches_from_selectable:
+            self.assign_pitches()
 
-    def assign_pitches(self, staff, machine, index):
+            # TO DO ... re-enable this:
+            # if my_ranges := self.ranges.get(my_staff.name, None):
+            #     calliope.SmartRanges(smart_ranges=my_ranges)(machine)
+
+    def assign_pitches(self):
         # TO DO... should bookend move pitches forward or not?
         # (YES THEY SHOULD... need to double check this)
 
         if self.selectable is not None:
-                
-            block_pitches = self.selectable[index % len(self.selectable)].pitches
+            # TO DO... create sub-block if so specified
+            if not self.selectable.is_simultaneous:
+                self.warn("attempting to assign pitches from non-block... unexpected results may occur")
+
+            events_dict = {}
+            staves_ranges = {}
+
+            for staff in self.staves:
+
+                ticks_counter = 0
+
+                row_note_event_len = len(staff.note_events)
+
+                # TO DO: get REAL row ranges
+                # row_ranges = ((12,24), (0,12))
+                row_ranges = self.ranges.get_ranges(staff.name, row_note_event_len)
+                staves_ranges[staff.name] = row_ranges
+
+                note_index = 0
+                for e in staff.events:
+
+                    if not e.rest:
+                        my_tuple = ( e, 
+                            staff.name,
+                            row_ranges[note_index % len(row_ranges)],
+
+                            )
+                        
+                        if ticks_counter in events_dict:
+                            events_dict[ticks_counter].append(my_tuple)
+                        else:
+                            events_dict[ticks_counter] = [my_tuple]
+
+                    ticks_counter += e.ticks
+                    note_index += 1           
+
+            for t, tl in sorted(events_dict.items()):
+
+                sorted_tl = sorted(tl, key=lambda x: (x[2][1]+x[2][0])/2 )
+                my_ticks = self.selectable_start_beat*calliope.MACHINE_TICKS_PER_BEAT + t
+                # print(my_ticks, my_ticks/calliope.MACHINE_TICKS_PER_BEAT)
+                selectable_pitches = self.selectable.pitch_analyzer.pitches_at_ticks(my_ticks)
+                if len(selectable_pitches) > 0:
+                    for i, tu in enumerate(sorted_tl):
+                        fabric_event = tu[0]
+                        fabric_event.pitch = selectable_pitches[ round((i+1)/len(tl) * (len(selectable_pitches)-1))]
+                else:
+                    self.warn("attempting to set to pitches but no pitches at this beat in the selectable")
+
+            for staff in self.staves:
+                calliope.SmartRanges(smart_ranges=staves_ranges[staff.name]
+                    )(staff)
+
+                # print(t)
+                # for tu in sorted_tl:
+                #     print(tu[1],tu[2],tu[0].pitch, selectable_pitches)
+
+            # block_pitches = self.selectable[index % len(self.selectable)].pitches
 
             # TO DO... assign based on pitch analyzer!
-            for j,e in enumerate(machine.events):
-                if not e.skip_or_rest:
-                    if j < len(block_pitches):
-                        e.pitch = block_pitches[j]
+            # for j,e in enumerate(machine.events):
+            #     if not e.skip_or_rest:
+            #         if j < len(block_pitches):
+            #             e.pitch = block_pitches[j]
         
-
-
-    # TO DO: consider this:
-    # def _staves__default(self):
-    #     return None
 
 
 class ImaginaryFabric(FabricFactory, score.ImaginaryScore):

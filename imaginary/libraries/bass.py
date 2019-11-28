@@ -1,71 +1,84 @@
 import abjad
 import calliope
-from imaginary.stories.library_material import LibraryMaterial
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
+    )
 
-class BassLine(LibraryMaterial, calliope.Line):
-    class PhraseAB(calliope.Phrase):
-        class CellA(calliope.Cell):
+# TO DO: this bass line is not lovely!
+class BassLine(ImaginaryLine):
+    class PhraseAB(ImaginaryPhrase):
+        class CellA(ImaginaryCell):
             init_rhythm = (-0.5, 1.5, 2, 1.5, 2.5)
             init_pitches = ("R", -5, -3, -3, -5)
 
-        class CellB(calliope.Cell):
+        class CellB(ImaginaryCell):
             init_rhythm = (-0.5, 3.5, 4)
             init_pitches = ("R", 0, -5)
 
-    class PhraseCD(calliope.Phrase):
-        class CellC(calliope.Cell):
+    class PhraseCD(ImaginaryPhrase):
+        class CellC(ImaginaryCell):
             init_rhythm = (2, 2, -0.5, 1.5, 1, 2)
             init_pitches = (2, 0, "R", 2, 0, -5)
 
-        class CellD(calliope.Cell):
+        class CellD(ImaginaryCell):
             init_rhythm = (4, 3)
             init_pitches = (-7, -5)
 
-    class PhraseEF(calliope.Phrase):
-        class CellE(calliope.Cell):
+    class PhraseEF(ImaginaryPhrase):
+        class CellE(ImaginaryCell):
             init_rhythm = (-0.5, 3.5, 1, 3)
             init_pitches = ("R", 0, -7, -5)
         
-        class CellF(calliope.Cell):
+        class CellF(ImaginaryCell):
             init_rhythm = (-0.5, 3.5, 1.5, 2.5)
             init_pitches = ("R", 0, -7, -5)
 
-    class PhraseGH(calliope.Phrase):
-        class CellG(calliope.Cell):
+    class PhraseGH(ImaginaryPhrase):
+        class CellG(ImaginaryCell):
             init_rhythm = (2, 2, 2, 2)
             init_pitches = (-5, -3, -2, 0)
 
-        class CellH(calliope.Cell):
+        class CellH(ImaginaryCell):
             init_rhythm = (2, 1, 1, 2, 2)
             init_pitches = (-5, -3, -2, 0, -5)
 
-    class PhraseIJ(calliope.Phrase):
-        class CellI(calliope.Cell):
+    class PhraseIJ(ImaginaryPhrase):
+        class CellI(ImaginaryCell):
             init_rhythm = (3, 1, 1.5, 2.5)
             init_pitches = (0, -5, -7, -2)
 
-        class CellJ(calliope.Cell):
+        class CellJ(ImaginaryCell):
             init_rhythm = (-0.5, 1.5, 2, 1.5, 2.5)
             init_pitches = ("R", 0, -5, -7, -5)
 
-    # TO DO... maybe this should move to Library Material...
-    def cut_last(self, phrases=1):
-        return type(self)(self()[:0-phrases])
+    def flat1(self):
+        for e in self.note_events:
+            if e.pitch % 12 == 9:
+                e.pitch += -1
+        return self
 
+    def flat2(self):
+        for e in self.flat1().note_events:
+            if e.pitch % 12 == 2:
+                e.pitch += -1
+        return self
 
-LINE = BassLine().transformed(calliope.Transpose(interval=-12))
+_BASS_LINE = BassLine().transformed(calliope.Transpose(interval=-12))
 
-LINE_1_FLAT = LINE()
-for e in LINE_1_FLAT.note_events:
-    if e.pitch % 12 == 9:
-        e.pitch += -1
+def bass_line(**kwargs):
+    return _BASS_LINE(**kwargs)
 
-LINE_2_FLAT = LINE_1_FLAT()
-for e in LINE_2_FLAT.note_events:
-    if e.pitch % 12 == 2:
-        e.pitch += -1
+def bass_short(**kwargs):
+    return _BASS_LINE(**kwargs).pop_from("phrases",2,4)
 
-calliope.illustrate(calliope.Staff(LINE, clef="bass"))
+# TO DO: are these used?
+def bass_flat1(**kwargs):
+    return _BASS_LINE(**kwargs).flat1()
+
+def bass_flat2(**kwargs):
+    return _BASS_LINE(**kwargs).flat2()
+
+calliope.illustrate(calliope.Staff(_BASS_LINE, clef="bass"))
 
 
 # l5_aflat = l5()
@@ -100,17 +113,3 @@ calliope.illustrate(calliope.Staff(LINE, clef="bass"))
 # # for e in s.segments[2].note_events:
 # #     e.pitch = (e.pitch, e.pitch+12)
 
-
-# calliope.SlurCells()(s)
-# calliope.Label(attrs=("name",))(s.cells)
-
-# for ss in s:
-#     ss.respell = "flats"
-
-# score = s.to_score()
-
-
-# score.staves[-1].clef="bass"
-# # score.staves[-2].clef="bass"
-
-# calliope.illustrate(score, as_midi=True)

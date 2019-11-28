@@ -2,16 +2,22 @@ import abjad, calliope
 from imaginary.stories.fabric import ImaginaryFabric
 from imaginary.fabrics import instrument_groups
 
-# TO DO... not the best name... (this is really for ANY simple copy)
 class Melody(ImaginaryFabric):
     slur_cells = False
     assign_pitches_from_selectable = False
+    phrase_tree = () # an iterable of iterables of event selections
 
     def weave(self, staff, index=0, **kwargs):
-        my_machine = self.selectable.get_cyclic(index)()
+        if self.phrase_tree:
+            my_phrases = [
+            calliope.Phrase(*[calliope.Cell(*[e() for e in c]) for c in p])
+            for p in self.phrase_tree]
+        else:
+            my_phrases = [p() for p in self.selectable.get_cyclic(index).phrases]
+        my_line = calliope.Line(*my_phrases)
         if self.slur_cells == True:
-            calliope.SlurCells()(my_machine)
-        return my_machine
+            calliope.SlurCells()(my_line)
+        return my_line
 
 
 class CcoHighStringsMelody(Melody):
@@ -19,12 +25,10 @@ class CcoHighStringsMelody(Melody):
 
 
 if __name__ == "__main__":
-    from imaginary.libraries import m00_home, m01_counter, m02_bass
+    from imaginary.libraries.home import HOME_A_B_FAST
     s = CcoHighStringsMelody(
         calliope.LineBlock(
-            m00_home.HOME_U_LINE(),
-            m01_counter.COUNTER_LINE(),
-            m02_bass.BASS_LINE(),
+            home.HOME_A_B_FAST(),
             )
         )
     calliope.illustrate(s)

@@ -51,8 +51,8 @@ MAX_RANGES = dict(
     cco_horn  =  (-25, 13), # FrenchHorn [B1, C#5] span: 38
     cco_trumpet  =  (-6, 22), # Trumpet [F#3, Bb5] span: 28
     cco_trombone  =  (-20, 11), # TenorTrombone [E2, B4] span: 31
-    harp1  =  (-37, 40), # Harp [B0, E7] span: 77
-    harp2  =  (-37, 40), # Harp [B0, E7] span: 77
+    harp1  =  (-2, 40), # Harp [B0, E7] span: 77
+    harp2  =  (-37, 4), # Harp [B0, E7] span: 77
     piano1  =  (-39, 44), # Piano [A0, Ab7] span: 83
     piano2  =  (-39, 44), # Piano [A0, Ab7] span: 83
     cco_violin_i  =  (-5, 39), # Violin [G3, Eb7] span: 44
@@ -62,7 +62,7 @@ MAX_RANGES = dict(
     cco_bass  =  (-36, 3), # Contrabass [C1, Eb4] span: 39
     )
 
-class AbstractPitchRange(calliope.CalliopeBase):
+class RangeFrame(calliope.CalliopeBase):
     from_bottom = None
     from_mid = None
     from_top = None
@@ -125,7 +125,7 @@ class AbstractPitchRange(calliope.CalliopeBase):
 
         return (bottom, top)
 
-class AbstractPitchRangeSeq(calliope.CalliopeBase):
+class RangeSeq(calliope.CalliopeBase):
     length = 2
     time_ratio_abstracts = None
 
@@ -134,12 +134,12 @@ class AbstractPitchRangeSeq(calliope.CalliopeBase):
         super().__init__(*args, **kwargs)
 
     def add(self, time_ratio, **kwargs):
-        abstract = AbstractPitchRange(**kwargs)
+        abstract = RangeFrame(**kwargs)
         self.time_ratio_abstracts[time_ratio] = abstract
         return self
 
     def add_constant(self, **kwargs):
-        abstract = AbstractPitchRange(**kwargs)
+        abstract = RangeFrame(**kwargs)
         self.time_ratio_abstracts[0] = abstract
         self.time_ratio_abstracts[1] = abstract
         return self
@@ -199,7 +199,7 @@ class PitchRanges(calliope.CalliopeBase):
         if default:
             self.default = default
         else:
-            self.default = AbstractPitchRangeSeq()
+            self.default = RangeSeq()
             self.default.add(0)
             self.default.add(1)
 
@@ -209,41 +209,43 @@ class PitchRanges(calliope.CalliopeBase):
         return my_abstract_seq.get_ranges(*self.max_ranges[name], length)
 
 
-MID_RANGE = AbstractPitchRange(
+MID_RANGE = RangeFrame(
     ratio_mid = 0.4,
     spread = 18
     )
 
-BOTTOM_RANGE = AbstractPitchRange(
+BOTTOM_RANGE = RangeFrame(
     from_bottom = 0,
     spread = 18
     )
 
-TOP_RANGE = AbstractPitchRange(
+TOP_RANGE = RangeFrame(
     ratio_top=0.95,
     spread = 18
     )
 
+def constant_seq(**kwargs):
+    return RangeSeq().add_constant(**kwargs)
 
-MID_SEQ = AbstractPitchRangeSeq().add_constant_abstract(MID_RANGE)
-BOTTOM_SEQ = AbstractPitchRangeSeq().add_constant_abstract(BOTTOM_RANGE)
-TOP_SEQ = AbstractPitchRangeSeq().add_constant_abstract(TOP_RANGE)
+MID_SEQ = RangeSeq().add_constant_abstract(MID_RANGE)
+BOTTOM_SEQ = RangeSeq().add_constant_abstract(BOTTOM_RANGE)
+TOP_SEQ = RangeSeq().add_constant_abstract(TOP_RANGE)
 
-LOW_TO_HIGH_SEQ = AbstractPitchRangeSeq().add_abstract(
+LOW_TO_HIGH_SEQ = RangeSeq().add_abstract(
     0, 
     BOTTOM_RANGE,
     ).add_abstract(
     1, 
     TOP_RANGE,
     )
-HIGH_TO_LOW_SEQ = AbstractPitchRangeSeq().add_abstract(
+HIGH_TO_LOW_SEQ = RangeSeq().add_abstract(
     0, 
     TOP_RANGE,
     ).add_abstract(
     1, 
     BOTTOM_RANGE,
     )
-HILL_UP_SEQ = AbstractPitchRangeSeq().add_abstract(
+HILL_UP_SEQ = RangeSeq().add_abstract(
     0, 
     BOTTOM_RANGE,
     ).add_abstract(
@@ -253,7 +255,7 @@ HILL_UP_SEQ = AbstractPitchRangeSeq().add_abstract(
     1, 
     BOTTOM_RANGE,
     )
-HILL_DOWN_SEQ = AbstractPitchRangeSeq().add_abstract(
+HILL_DOWN_SEQ = RangeSeq().add_abstract(
     0, 
     TOP_RANGE,
     ).add_abstract(
@@ -266,7 +268,7 @@ HILL_DOWN_SEQ = AbstractPitchRangeSeq().add_abstract(
 
 
 # pr = PitchRanges(
-#     default = AbstractPitchRangeSeq().add_constant(from_bottom=12, spread=16)
+#     default = RangeSeq().add_constant(from_bottom=12, spread=16)
 #     )
 
 # print(pr.get_ranges("cco_violin_i",7))

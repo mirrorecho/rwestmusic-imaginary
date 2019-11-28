@@ -18,20 +18,6 @@
         <<
             \context StaffGroup = "ooa_winds"
             <<
-                \context Staff = "ooa_flute"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { Flute }
-                        \set Staff.shortInstrumentName = \markup { Fl. }
-                        c'1
-                        :32
-                    }
-                }
             >>
             \context StaffGroup = "ooa_brass"
             <<
@@ -54,9 +40,17 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
+                        b''4
+                        d'4
+                        ~
+                        d'2
+                        a'2
+                        ~
+                        a'4
                         c'4
-                        r4
-                        r2
+                        ~
+                        c'2
+                        g'2
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -69,9 +63,17 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
-                        c'4
-                        r4
-                        r2
+                        b''4
+                        b''4
+                        ~
+                        b''2
+                        b''2
+                        ~
+                        b''4
+                        b''4
+                        ~
+                        b''2
+                        b''2
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -85,9 +87,17 @@
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
                         \clef "bass"
-                        c'4
-                        r4
-                        r2
+                        a,4
+                        a,4
+                        ~
+                        a,2
+                        a,2
+                        ~
+                        a,4
+                        a,4
+                        ~
+                        a,2
+                        a,2
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -101,9 +111,17 @@
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \clef "bass"
-                        c'4
-                        r4
-                        r2
+                        a,4
+                        a,4
+                        ~
+                        a,2
+                        a,2
+                        ~
+                        a,4
+                        a,4
+                        ~
+                        a,2
+                        a,2
                     }
                 }
             >>
@@ -112,71 +130,12 @@
         <<
             \context StaffGroup = "cco_winds"
             <<
-                \context Staff = "cco_flute1"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { "Flute 1" }
-                        \set Staff.shortInstrumentName = \markup { Fl.1 }
-                        c'1
-                        :32
-                    }
-                }
-                \context Staff = "cco_flute2"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { "Flute 2" }
-                        \set Staff.shortInstrumentName = \markup { Fl.2 }
-                        c'1
-                        :32
-                    }
-                }
             >>
             \context StaffGroup = "cco_brass"
             <<
             >>
             \context PianoStaff = "cco_harp"
             <<
-                \context Staff = "harp1"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { Harp }
-                        \set Staff.shortInstrumentName = \markup { Hp. }
-                        c'4
-                        r4
-                        r2
-                    }
-                }
-                \context Staff = "harp2"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \accidentalStyle modern-cautionary
-                        \set Staff.instrumentName = \markup { Harp }
-                        \set Staff.shortInstrumentName = \markup { Hp. }
-                        \clef "bass"
-                        c'4
-                        r4
-                        r2
-                    }
-                }
             >>
             \context PianoStaff = "cco_piano"
             <<
@@ -193,9 +152,17 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
-                        c'4
-                        r4
-                        r2
+                        fs'''4
+                        fs'''4
+                        ~
+                        fs'''2
+                        fs'''2
+                        ~
+                        fs'''4
+                        fs'''4
+                        ~
+                        fs'''2
+                        fs'''2
                     }
                 }
                 \context Staff = "cco_violin_ii"
@@ -208,9 +175,17 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
-                        c'4
-                        r4
-                        r2
+                        fs'''4
+                        fs'''4
+                        ~
+                        fs'''2
+                        fs'''2
+                        ~
+                        fs'''4
+                        fs'''4
+                        ~
+                        fs'''2
+                        fs'''2
                     }
                 }
                 \context Staff = "cco_viola"
@@ -223,9 +198,17 @@
                         \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
+                        e'4
+                        d'4
+                        ~
+                        d'2
+                        a'2
+                        ~
+                        a'4
                         c'4
-                        r4
-                        r2
+                        ~
+                        c'2
+                        g'2
                     }
                 }
                 \context Staff = "cco_cello"
@@ -239,9 +222,17 @@
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \clef "bass"
-                        c'4
-                        r4
-                        r2
+                        e'4
+                        a,4
+                        ~
+                        a,2
+                        b,2
+                        ~
+                        b,4
+                        a,4
+                        ~
+                        a,2
+                        d2
                     }
                 }
                 \context Staff = "cco_bass"
@@ -255,9 +246,17 @@
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \clef "bass"
-                        c'4
-                        r4
-                        r2
+                        e,4
+                        e,4
+                        ~
+                        e,2
+                        e,2
+                        ~
+                        e,4
+                        e,4
+                        ~
+                        e,2
+                        e,2
                     }
                 }
             >>

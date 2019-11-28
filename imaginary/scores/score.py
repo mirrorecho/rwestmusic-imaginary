@@ -229,7 +229,7 @@ class ImaginaryScore(calliope.Score):
 
         staves_beats = [sum([m.beats for m in s]) for s in my_staves]
         if fill_to:
-            beats = beats or sum([m.beats for m in my_staves[fill_to]]) 
+            beats = beats or sum([m.beats for m in self.staves[fill_to]]) 
         beats = beats or max(staves_beats)
         for staff, staff_beats in zip(my_staves, staves_beats):
             if staff_beats < beats:
@@ -241,9 +241,9 @@ class ImaginaryScore(calliope.Score):
             for other_score in args:
                 if other_st_select := other_score.staves(st.name):
                     other_st = other_st_select[0]
-                    if kwargs.get("extend_last_machine", False):
+                    if kwargs.get("extend_last_machine", False) and len(st)>0:
                         st[-1].extend( other_st[0]() )
-                    else:    
+                    else:   
                         st.extend( other_st() )
 
         if kwargs.get("fill_rests", False):

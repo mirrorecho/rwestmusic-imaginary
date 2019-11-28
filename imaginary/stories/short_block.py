@@ -2,26 +2,27 @@ import abjad, calliope
 
 from imaginary.scores.short_score import ImaginaryShortScore
 from imaginary.stories.pitch_analyzer import PitchAnalyzer
+from imaginary.stories.library_material import ImaginarySegment
 
 class ShortBlock(calliope.SegmentBlock):
 
-    class MelodyLine1(calliope.Segment): pass
+    class MelodyLine1(ImaginarySegment): pass
 
-    class MelodyLine2(calliope.Segment): pass
+    class MelodyLine2(ImaginarySegment): pass
 
-    class CounterLine(calliope.Segment): pass
+    class CounterLine(ImaginarySegment): pass
 
-    class BassLine(calliope.Segment): pass
+    class BassLine(ImaginarySegment): pass
 
-    class Riff(calliope.Segment): pass
+    class Riff(ImaginarySegment): pass
 
-    class Chords(calliope.Segment): pass
+    class Chords(ImaginarySegment): pass
 
-    class HighDrones(calliope.Segment): pass
+    class HighDrones(ImaginarySegment): pass
 
-    class MidDrones(calliope.Segment): pass
+    class MidDrones(ImaginarySegment): pass
 
-    class BassDrones(calliope.Segment): pass
+    class BassDrones(ImaginarySegment): pass
 
     # TO DO... this adds extra...
     def reset(self):
@@ -31,15 +32,19 @@ class ShortBlock(calliope.SegmentBlock):
         super().__init__(*args, **kwargs)
         self.reset()
 
-    def ext(self, other):
+    def extend_from(self, other):
         """
         extends each segment from another ShortBlock instance
         """
-        self.warn("ext not implemented yet")
+        for seg in self:
+            seg.extend(other[seg.name]())
         self.reset()
         return self
 
     def ext_segments(self, **kwargs):
+        """
+        extends each named kwargs segments by iterables
+        """
         for name, iterable in kwargs.items():
             self.segments[name].extend(
                 iterable() if isinstance(iterable, calliope.Segment)
@@ -48,13 +53,19 @@ class ShortBlock(calliope.SegmentBlock):
         self.reset()
         return self
 
+    def with_only(self, *args):
+        """
+        creates a copy of self with only the segments named in args included
+        """
+        my_block = self()
+        for seg in list(my_block):
+            if seg.name not in args:
+                my_block.remove(seg)
+        return my_block
+
     def annotate(self, **kwargs):
-        if kwargs.get("slur_cells", False):
-            self.transformed(calliope.SlurCells())
-        if label := kwargs.get("label", None):
-            for seg in self.segments:
-                for l in label:
-                    calliope.Label()(getattr(seg, l))
+        for seg in self.segments:
+            seg.annotate(**kwargs)
         return self
 
     def to_score(self, score=None, remove_empty_staves=True):
@@ -85,4 +96,10 @@ class ShortBlock(calliope.SegmentBlock):
         for seg, seg_beats in zip(segs, segs_beats):
             if seg_beats < beats:
                 seg.append( calliope.Cell(rhythm=(seg_beats-beats,)) )
+
+
+_SHORT_BLOCK = ShortBlock()
+
+def get_block(**kwargs):
+    return _SHORT_BLOCK(**kwargs)
 
