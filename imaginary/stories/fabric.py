@@ -14,7 +14,6 @@ class FabricFactory(calliope.FromSelectableFactory):
     dynamics, etc.) ... but no new pitch class content
     """
     masks = False
-    remove_empty_staves = True
     ranges = None
     tag_events = None # a dictionary of indices/names and tags for each event
     tag_all_note_events = () # an interable of tags to be added to all events
@@ -22,6 +21,7 @@ class FabricFactory(calliope.FromSelectableFactory):
     wrap_in = ImaginarySegment
     assign_pitches_from_selectable = True
     selectable_start_beat = 0
+    remove_empty_staves = True
     # selectable_staves_map = {sdfs:sdfsdfs
     #     }
 
@@ -35,9 +35,6 @@ class FabricFactory(calliope.FromSelectableFactory):
     # EXAMPLE
     # def _staves__ooa_flute(self, staff, index=0):
     #     return self.weave(staff, index)
-
-    def get_pitch_ranges(self, *args, **kwargs):
-        return pitch_ranges.PitchRanges()
 
     def fabricate(self, machine, *args, **kwargs):
         self.ranges = self.ranges or self.get_pitch_ranges(*args, **kwargs)
@@ -88,10 +85,9 @@ class FabricFactory(calliope.FromSelectableFactory):
 
             my_staff.append(my_bubble)
 
-        if self.remove_empty_staves == True:
-            for staff in self.staves:
-                if staff.name not in used_staves:
-                    staff.parent.remove(staff)
+
+        if self.remove_empty_staves:
+            self.remove_empty(rests_count=True)
 
         if self.assign_pitches_from_selectable:
             self.assign_pitches()
@@ -99,64 +95,6 @@ class FabricFactory(calliope.FromSelectableFactory):
             # TO DO ... re-enable this:
             # if my_ranges := self.ranges.get(my_staff.name, None):
             #     calliope.SmartRanges(smart_ranges=my_ranges)(machine)
-
-    def assign_pitches(self):
-        # TO DO... should bookend move pitches forward or not?
-        # (YES THEY SHOULD... need to double check this)
-
-        if self.selectable is not None:
-            # TO DO... create sub-block if so specified
-            if not self.selectable.is_simultaneous:
-                self.warn("attempting to assign pitches from non-block... unexpected results may occur")
-
-            events_dict = {}
-            staves_ranges = {}
-
-            for staff in self.staves:
-
-                ticks_counter = 0
-
-                row_note_event_len = len(staff.note_events)
-
-                # TO DO: get REAL row ranges
-                # row_ranges = ((12,24), (0,12))
-                row_ranges = self.ranges.get_ranges(staff.name, row_note_event_len)
-                staves_ranges[staff.name] = row_ranges
-
-                note_index = 0
-                for e in staff.events:
-
-                    if not e.rest:
-                        my_tuple = ( e, 
-                            staff.name,
-                            row_ranges[note_index % len(row_ranges)],
-
-                            )
-                        
-                        if ticks_counter in events_dict:
-                            events_dict[ticks_counter].append(my_tuple)
-                        else:
-                            events_dict[ticks_counter] = [my_tuple]
-
-                    ticks_counter += e.ticks
-                    note_index += 1           
-
-            for t, tl in sorted(events_dict.items()):
-
-                sorted_tl = sorted(tl, key=lambda x: (x[2][1]+x[2][0])/2 )
-                my_ticks = self.selectable_start_beat*calliope.MACHINE_TICKS_PER_BEAT + t
-                # print(my_ticks, my_ticks/calliope.MACHINE_TICKS_PER_BEAT)
-                selectable_pitches = self.selectable.pitch_analyzer.pitches_at_ticks(my_ticks)
-                if len(selectable_pitches) > 0:
-                    for i, tu in enumerate(sorted_tl):
-                        fabric_event = tu[0]
-                        fabric_event.pitch = selectable_pitches[ round((i+1)/len(tl) * (len(selectable_pitches)-1))]
-                else:
-                    self.warn("attempting to set to pitches but no pitches at this beat in the selectable")
-
-            for staff in self.staves:
-                calliope.SmartRanges(smart_ranges=staves_ranges[staff.name]
-                    )(staff)
 
                 # print(t)
                 # for tu in sorted_tl:

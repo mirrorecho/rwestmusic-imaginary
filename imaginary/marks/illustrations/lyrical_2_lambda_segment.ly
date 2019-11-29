@@ -24,11 +24,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Flute }
-                        \set Staff.shortInstrumentName = \markup { Fl. }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_clarinet"
                 \with
@@ -36,11 +31,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Clarinet in B♭" }
-                        \set Staff.shortInstrumentName = \markup { Cl. }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_alto_sax1"
                 \with
@@ -48,11 +38,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
-                        \set Staff.shortInstrumentName = \markup { Asax.1 }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_alto_sax2"
                 \with
@@ -60,11 +45,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
-                        \set Staff.shortInstrumentName = \markup { Asax.2 }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_tenor_sax"
                 \with
@@ -72,11 +52,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Tenor Saxophone" }
-                        \set Staff.shortInstrumentName = \markup { Tsax. }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_bari_sax"
                 \with
@@ -84,12 +59,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Baritone Saxophone" }
-                        \set Staff.shortInstrumentName = \markup { Bsax. }
-                        \clef "bass"
-                        r1
-                    }
                 }
                 \context Staff = "ooa_bassoon"
                 \with
@@ -97,12 +66,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Bassoon }
-                        \set Staff.shortInstrumentName = \markup { Bsn. }
-                        \clef "bass"
-                        r1
-                    }
                 }
             >>
             \context StaffGroup = "ooa_brass"
@@ -113,11 +76,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Horn in F" }
-                        \set Staff.shortInstrumentName = \markup { Hn. }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_trumpet"
                 \with
@@ -125,11 +83,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Trumpet in C" }
-                        \set Staff.shortInstrumentName = \markup { Tpt. }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_trombone"
                 \with
@@ -137,12 +90,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Tenor Trombone" }
-                        \set Staff.shortInstrumentName = \markup { Tbn. }
-                        \clef "bass"
-                        r1
-                    }
                 }
             >>
             \context StaffGroup = "ooa_percussion"
@@ -153,11 +100,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Vibraphone }
-                        \set Staff.shortInstrumentName = \markup { Vib. }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_drum_set"
                 \with
@@ -165,11 +107,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Drum Set" }
-                        \set Staff.shortInstrumentName = \markup { Drum. }
-                        r1
-                    }
                 }
             >>
             \context StaffGroup = "ooa_guitars"
@@ -180,11 +117,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Guitar }
-                        \set Staff.shortInstrumentName = \markup { Gtr. }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_bass_guitar"
                 \with
@@ -192,12 +124,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Bass Guitar" }
-                        \set Staff.shortInstrumentName = \markup { Bgtr. }
-                        \clef "bass"
-                        r1
-                    }
                 }
             >>
             \context StaffGroup = "ooa_strings"
@@ -208,11 +134,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Violin 1" }
-                        \set Staff.shortInstrumentName = \markup { Vln.1 }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_violin2"
                 \with
@@ -220,11 +141,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Violin 2" }
-                        \set Staff.shortInstrumentName = \markup { Vln.2 }
-                        r1
-                    }
                 }
                 \context Staff = "ooa_cello1"
                 \with
@@ -232,12 +148,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Cello 1" }
-                        \set Staff.shortInstrumentName = \markup { Vc.1 }
-                        \clef "bass"
-                        r1
-                    }
                 }
                 \context Staff = "ooa_cello2"
                 \with
@@ -245,12 +155,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Cello 2" }
-                        \set Staff.shortInstrumentName = \markup { Vc.2 }
-                        \clef "bass"
-                        r1
-                    }
                 }
             >>
         >>
@@ -264,11 +168,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Flute 1" }
-                        \set Staff.shortInstrumentName = \markup { Fl.1 }
-                        r1
-                    }
                 }
                 \context Staff = "cco_flute2"
                 \with
@@ -276,11 +175,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Flute 2" }
-                        \set Staff.shortInstrumentName = \markup { Fl.2 }
-                        r1
-                    }
                 }
                 \context Staff = "cco_oboe1"
                 \with
@@ -288,11 +182,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Oboe 1" }
-                        \set Staff.shortInstrumentName = \markup { Ob.1 }
-                        r1
-                    }
                 }
                 \context Staff = "cco_oboe2"
                 \with
@@ -300,11 +189,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Oboe 2" }
-                        \set Staff.shortInstrumentName = \markup { Ob.2 }
-                        r1
-                    }
                 }
                 \context Staff = "cco_clarinet1"
                 \with
@@ -312,11 +196,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
-                        \set Staff.shortInstrumentName = \markup { Cl.1 }
-                        r1
-                    }
                 }
                 \context Staff = "cco_clarinet2"
                 \with
@@ -324,11 +203,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
-                        \set Staff.shortInstrumentName = \markup { Cl.2 }
-                        r1
-                    }
                 }
                 \context Staff = "cco_bassoon"
                 \with
@@ -336,11 +210,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Bassoon }
-                        \set Staff.shortInstrumentName = \markup { Bsn. }
-                        r1
-                    }
                 }
             >>
             \context StaffGroup = "cco_brass"
@@ -351,11 +220,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Horn in F" }
-                        \set Staff.shortInstrumentName = \markup { Hn. }
-                        r1
-                    }
                 }
                 \context Staff = "cco_trumpet"
                 \with
@@ -363,11 +227,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Trumpet in C" }
-                        \set Staff.shortInstrumentName = \markup { Tpt. }
-                        r1
-                    }
                 }
                 \context Staff = "cco_trombone"
                 \with
@@ -375,11 +234,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Trombone }
-                        \set Staff.shortInstrumentName = \markup { Tbn. }
-                        r1
-                    }
                 }
             >>
             \context RhythmicStaff = "cco_percussion"
@@ -388,10 +242,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \clef "percussion"
-                    r1
-                }
             }
             \context PianoStaff = "cco_harp"
             <<
@@ -401,11 +251,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Harp }
-                        \set Staff.shortInstrumentName = \markup { Hp. }
-                        r1
-                    }
                 }
                 \context Staff = "harp2"
                 \with
@@ -413,12 +258,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Harp }
-                        \set Staff.shortInstrumentName = \markup { Hp. }
-                        \clef "bass"
-                        r1
-                    }
                 }
             >>
             \context PianoStaff = "cco_piano"
@@ -429,11 +268,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Piano }
-                        \set Staff.shortInstrumentName = \markup { Pf. }
-                        r1
-                    }
                 }
                 \context Staff = "piano2"
                 \with
@@ -441,12 +275,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Piano }
-                        \set Staff.shortInstrumentName = \markup { Pf. }
-                        \clef "bass"
-                        r1
-                    }
                 }
             >>
             \context StaffGroup = "cco_strings"
@@ -458,9 +286,18 @@
                 }
                 {
                     {
+                        \accidentalStyle modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
-                        r1
+                        r4
+                        <g' d''>4
+                        (
+                        <bf' f''>4
+                        <d'' a''>4
+                        <g' d''>2
+                        <f'' c'''>2
+                        )
+                        r2
                     }
                 }
                 \context Staff = "cco_violin_ii"
@@ -469,11 +306,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { "Violin 2" }
-                        \set Staff.shortInstrumentName = \markup { Vln.II }
-                        r1
-                    }
                 }
                 \context Staff = "cco_viola"
                 \with
@@ -481,11 +313,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Viola }
-                        \set Staff.shortInstrumentName = \markup { Vla. }
-                        r1
-                    }
                 }
                 \context Staff = "cco_cello"
                 \with
@@ -493,12 +320,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Cello }
-                        \set Staff.shortInstrumentName = \markup { Vc. }
-                        \clef "bass"
-                        r1
-                    }
                 }
                 \context Staff = "cco_bass"
                 \with
@@ -506,12 +327,6 @@
                     \consists Horizontal_bracket_engraver
                 }
                 {
-                    {
-                        \set Staff.instrumentName = \markup { Bass }
-                        \set Staff.shortInstrumentName = \markup { Cb. }
-                        \clef "bass"
-                        r1
-                    }
                 }
             >>
         >>
@@ -523,11 +338,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { "Melody Line 1" }
-                    \set Staff.shortInstrumentName = \markup { Mel.1 }
-                    r1
-                }
             }
             \context Staff = "melody_line2"
             \with
@@ -535,11 +345,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { "Melody Line 2" }
-                    \set Staff.shortInstrumentName = \markup { Mel.2 }
-                    r1
-                }
             }
             \context Staff = "counter_line"
             \with
@@ -547,11 +352,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { "Counter Line" }
-                    \set Staff.shortInstrumentName = \markup { Count. }
-                    r1
-                }
             }
             \context Staff = "bass_line"
             \with
@@ -559,12 +359,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { "Bass Line" }
-                    \set Staff.shortInstrumentName = \markup { Bass. }
-                    \clef "bass"
-                    r1
-                }
             }
             \context Staff = "riff"
             \with
@@ -572,11 +366,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { Riff }
-                    \set Staff.shortInstrumentName = \markup { Riff. }
-                    r1
-                }
             }
             \context Staff = "chords"
             \with
@@ -584,11 +373,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { Chords }
-                    \set Staff.shortInstrumentName = \markup { Chrd. }
-                    r1
-                }
             }
             \context Staff = "high_drones"
             \with
@@ -596,11 +380,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { "High Drones" }
-                    \set Staff.shortInstrumentName = \markup { H.drn. }
-                    r1
-                }
             }
             \context Staff = "mid_drones"
             \with
@@ -608,11 +387,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { "Mid Drones" }
-                    \set Staff.shortInstrumentName = \markup { M.drn. }
-                    r1
-                }
             }
             \context Staff = "bass_drones"
             \with
@@ -620,12 +394,6 @@
                 \consists Horizontal_bracket_engraver
             }
             {
-                {
-                    \set Staff.instrumentName = \markup { "Bass Drones" }
-                    \set Staff.shortInstrumentName = \markup { B.drn. }
-                    \clef "bass"
-                    r1
-                }
             }
         >>
     >>

@@ -259,10 +259,76 @@
                         }
                     }
                     {
+                        \accidentalStyle modern-cautionary
+                        a'2
+                        :32
+                        c''4
+                        :32
+                        g'4
+                        :32
+                        ~
+                        g'4
+                        :32
+                        c''4
+                        :32
+                        ~
+                        c''4
+                        :32
+                        c''4
+                        :32
+                        a'2
+                        :32
+                        a'2
+                        :32
+                    }
+                    {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 4
+                            R1 * 1
                         }
+                        d''2
+                        :32
+                        e'4
+                        :32
+                        e'4
+                        :32
+                        ~
+                        e'4
+                        :32
+                        a'4
+                        :32
+                        ~
+                        a'4
+                        :32
+                        g'4
+                        :32
+                        d'2
+                        :32
+                        c'2
+                        :32
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        a'2
+                        :32
+                        c''4
+                        :32
+                        g'4
+                        :32
+                        ~
+                        g'4
+                        :32
+                        g'4
+                        :32
+                        ~
+                        g'4
+                        :32
+                        d'4
+                        :32
+                        c'2
+                        :32
+                        d'2
+                        :32
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -1166,31 +1232,53 @@
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        f''4
+                        r4
+                        c''4
+                        c''4
+                        a'4
+                        a'4
+                        a'4
+                        c''4
+                        g'4
+                        r4
+                        g'4
+                        a'4
+                        d''4
+                        c''4
+                        a'4
+                        d''4
+                        c''4
+                        f''8
+                        [
+                        e''8
+                        ~
+                        ]
                         e''4
                         ~
                         e''2
-                        e''2
-                        ~
                         e''4
-                        g''4
+                        a''8
+                        [
+                        g''8
                         ~
+                        ]
                         g''2
-                        c''2
-                    }
-                    {
-                        \accidentalStyle modern-cautionary
-                        f''4
-                        e''4
-                        ~
-                        e''2
-                        e''2
-                        ~
-                        e''4
-                        g''4
-                        ~
-                        g''2
-                        c''2
+                        r4
+                        c''4
+                        c''4
+                        a'4
+                        a'4
+                        a'4
+                        c''4
+                        g'4
+                        r4
+                        g'4
+                        a'4
+                        d''4
+                        c''4
+                        a'4
+                        d''4
+                        c''4
                     }
                 }
                 \context Staff = "cco_violin_ii"
@@ -1214,31 +1302,48 @@
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        e''4
-                        e''4
-                        ~
                         e''2
-                        e''2
+                        e''4
+                        e''4
                         ~
                         e''4
                         e''4
                         ~
+                        e''4
+                        e''4
                         e''2
                         e''2
                     }
                     {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        a''2
+                        a''4
+                        a''4
+                        ~
+                        a''4
+                        a''4
+                        ~
+                        a''4
+                        a''4
+                        a''2
+                        a''2
+                    }
+                    {
                         \accidentalStyle modern-cautionary
-                        e''4
-                        e''4
+                        a''2
+                        a''4
+                        a''4
                         ~
-                        e''2
-                        e''2
+                        a''4
+                        a''4
                         ~
-                        e''4
-                        e''4
-                        ~
-                        e''2
-                        e''2
+                        a''4
+                        a''4
+                        a''2
+                        a''2
                     }
                 }
                 \context Staff = "cco_viola"
@@ -1262,31 +1367,48 @@
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        a4
-                        c'4
+                        a'2
+                        a'4
+                        a'4
                         ~
-                        c'2
-                        e'2
+                        a'4
+                        a'4
                         ~
+                        a'4
+                        g'4
+                        d'2
+                        f'2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        f'2
+                        f'4
+                        f'4
+                        ~
+                        f'4
+                        f'4
+                        ~
+                        f'4
                         e'4
-                        c'4
-                        ~
-                        c'2
+                        d'2
                         a2
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        a4
-                        c'4
-                        ~
-                        c'2
                         e'2
+                        e'4
+                        e'4
                         ~
                         e'4
-                        c'4
+                        e'4
                         ~
-                        c'2
-                        a2
+                        e'4
+                        g'4
+                        a'2
+                        e'2
                     }
                 }
                 \context Staff = "cco_cello"
@@ -1311,29 +1433,46 @@
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        d4
-                        d4
-                        ~
                         d2
+                        d4
+                        d4
+                        ~
+                        d4
+                        d4
+                        ~
+                        d4
+                        d4
+                        a,2
                         d2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        d2
+                        d4
+                        d4
                         ~
                         d4
                         d4
                         ~
+                        d4
+                        d4
                         d2
                         d2
                     }
                     {
                         \accidentalStyle modern-cautionary
-                        d4
-                        d4
-                        ~
                         d2
-                        d2
+                        d4
+                        d4
                         ~
                         d4
                         d4
                         ~
+                        d4
+                        d4
                         d2
                         d2
                     }
@@ -1493,8 +1632,8 @@
                     \set Staff.instrumentName = \markup { "Counter Line" }
                     \set Staff.shortInstrumentName = \markup { Count. }
                     f''8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     e''8
@@ -1530,8 +1669,8 @@
                     g'4
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     g'4
                     (
                     a'4
@@ -1545,8 +1684,8 @@
                     c''4
                     )
                     f''8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     (
                     e''8
@@ -1723,8 +1862,8 @@
                     \set Staff.instrumentName = \markup { "High Drones" }
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     <a'' e'''>1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     (
                     <a'' e'''>2
                     ~
@@ -1805,8 +1944,8 @@
                     \set Staff.shortInstrumentName = \markup { B.drn. }
                     \clef "bass"
                     <f, d>1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     <g, d>1
                     ^ \markup { p.1 }
                     ^ \markup { c.1 }
@@ -1823,23 +1962,23 @@
                     ^ \markup { c.5 }
                     ^ \markup { p.5 }
                     <f, d>1
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     <g, d>1
                     ^ \markup { c.7 }
                     ^ \markup { p.7 }
                     <f, d>1
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     <g, d>1
-                    ^ \markup { c.9 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.9 }
                     <f, d>1
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     <g, d>1
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                 }
             }
         >>

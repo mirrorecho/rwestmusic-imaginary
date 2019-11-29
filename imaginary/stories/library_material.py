@@ -48,8 +48,9 @@ class LibraryMaterial(object):
         self.extend(other())
         return self
 
-    def crop_chords(self, index=None, above=None):
-        return self.transformed(calliope.CropChords(index=index, above=above))
+    def crop_chords(self, indices=(None,), above=(None,)):
+        return self.transformed(calliope.CropChords(indices=indices, above=above))
+
 
     def crop(self, select_attr="select", crop_start=0, crop_end=0):
         """
@@ -77,6 +78,8 @@ class LibraryMaterial(object):
             parent.remove_if_empty()
         return self
 
+    # TO DO: this implementation of with_only will leave behind
+    # nodes that are NOT of the select_attr type
     def with_only(self, select_attr="select", *args):
         nodes = list(getattr(self, select_attr).exclude(*args))
         for node in nodes:
@@ -166,6 +169,9 @@ class LibraryMaterial(object):
             for l in label:
                 calliope.Label()(getattr(self, l))
         return self
+
+    def smart_ranges(self, ranges=( (0,12), ) ):
+        return self.transformed( calliope.SmartRanges(smart_ranges=ranges) )
 
 
 class ImaginarySegment(LibraryMaterial, calliope.Segment): pass

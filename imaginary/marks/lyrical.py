@@ -13,7 +13,7 @@ def get_sb0():
 
     sb.ext_segments(
         counter_line = [my_counter],
-        bass_line = bass.LINE().ts(1).crop("phrases",0,2),
+        bass_line = bass.bass_line().ts(1).crop("phrases",0,2),
         high_drones = [drone.DroneLine(
             line_pitches=( (23,30), (23,24), ),
             phrase_count = 3,
@@ -43,16 +43,16 @@ def get_sb1():
 
     counter_end = counter.counter_a_bmod().crop("phrases", 5).ts(2)
     
-    bass_scramble = bass.LINE().scramble("cells", 8,9,7,0,1,7).ts(-2).t(5)
+    bass_scramble = bass.bass_line().scramble("cells", 8,9,7,0,1,7).ts(-2).t(5)
     # bass_scramble.cells[0].ts(-4)
     # bass_scramble.cells[1].ts(-4)
     bass_scramble.cells[1].rhythm = (-1, 1, 2, 1.5, 2.5)
     bass_scramble.cells[4].rhythm = (-1, 3, 4)
     bass_scramble.stack_p( ((0,7,),), )
 
-    # bass_line_begin = bass.LINE().with_only("cells",0,1).ts(2)
-    # bass_cell_5 = bass.LINE().crop("cells",5, 2).ts(2)
-    # bass_cell7 = bass.LINE().with_only("cells",7).ts(2)
+    # bass_line_begin = bass.bass_line().with_only("cells",0,1).ts(2)
+    # bass_cell_5 = bass.bass_line().crop("cells",5, 2).ts(2)
+    # bass_cell7 = bass.bass_line().with_only("cells",7).ts(2)
 
     high_drones = drone.DroneLine(
             # line_pitches=( (-22,-15), (-24,-8), ),
@@ -124,9 +124,9 @@ def get_sb3():
     melody_line2_ba = home.home_b_aup4().sc(0.5).t(15)
 
     my_counter = counter.counter_a_bmod().t(15).sc(0.5)
-    bass_line_pre = bass.LINE(
+    bass_line_pre = bass.bass_line(
         ).t(10).with_only("phrases",4).sc(0.5).stack_p( ((0,-12),) )
-    bass_line = bass.LINE(
+    bass_line = bass.bass_line(
         ).t(15).crop("phrases",0,1).sc(0.5).stack_p( ((0,-12),) )
 
     high_drones1 = drone.DroneLine(
@@ -188,19 +188,6 @@ def get_sb3():
     sb.fill_rests()
     return sb
 
-if __name__ == '__main__':
-    sb = short_block.get_block()
-    sb.extend_from(get_sb0())
-    sb.extend_from(get_sb1())
-    sb.extend_from(get_sb2())
-    sb.extend_from(get_sb3())
-    sb.annotate(
-        slur_cells=True,
-        label = ("phrases", "cells",),
-        ).fill_rests()
-    # print(sb0.pitch_analyzer.pitches_at(34))
-    calliope.illustrate(sb.to_score(), as_midi=True)
-
 
 class IntroStringsPad(pad.CcoStringsPad):
     fabric_staves = instrument_groups.get_instruments("cco_strings")
@@ -217,6 +204,43 @@ class CcoWindsSwell(staggered_swell.StaggeredSwell):
             (2,0),
         )
     fabric_staves = ("cco_clarinet1", "cco_clarinet2", "cco_oboe1", "cco_oboe2")
+
+class SaxSwell(staggered_swell.StaggeredSwell):
+    fabric_staves = ("ooa_alto_sax1", "ooa_alto_sax2", "ooa_tenor_sax", "ooa_bari_sax")
+    swell_staggers = (
+                (0,1),
+                (0.5,0.5),
+                (1,0),
+                (2,0),
+            )
+    low_dynamic = "pp"
+    swell_dynamic = "mp"
+
+def get_full_score():
+    # importing here to avoid circular import
+    from imaginary.marks import (lyrical_0, lyrical_1, lyrical_2, lyrical_3,)
+    return lyrical_0.s.extend_from(
+        lyrical_1.s
+        ).extend_from(
+        lyrical_2.s
+        ).extend_from(
+        lyrical_3.s
+        )    
+
+if __name__ == '__main__':
+    my_score = get_full_score()
+    my_score.illustrate_me(as_midi=True)
+    # sb = short_block.get_block()
+    # sb.extend_from(get_sb0())
+    # sb.extend_from(get_sb1())
+    # sb.extend_from(get_sb2())
+    # sb.extend_from(get_sb3())
+    # sb.annotate(
+    #     slur_cells=True,
+    #     label = ("phrases", "cells",),
+    #     ).fill_rests()
+    # # print(sb0.pitch_analyzer.pitches_at(34))
+    # calliope.illustrate(sb.to_score(), as_midi=True)
 
 
 # sb = calliope.SegmentBlock(
@@ -255,11 +279,6 @@ class CcoWindsSwell(staggered_swell.StaggeredSwell):
 #     pad_durations = (1,3,3,3,2,)
 
 
-
-
-
-# class SaxSwell(staggered_swell.StaggeredSwell):
-#     fabric_staves = ("ooa_alto_sax1", "ooa_alto_sax2", "ooa_tenor_sax", "ooa_bari_sax")
 
 # def get_bass_line_block():
 #     LYRICAL_BASS_LINE = BASS_LINE()

@@ -1,4 +1,4 @@
-import math, abjad, calliope, imaginary
+import math, abjad, calliope
 
 from imaginary.scores.score import ImaginaryScore
 
@@ -203,6 +203,11 @@ class PitchRanges(calliope.CalliopeBase):
             self.default.add(0)
             self.default.add(1)
 
+    # TO DO... consider something like this as a standard calliope base method
+    def add(self, **kwargs):
+        for n, v in kwargs.items():
+            setattr(self, n, v)
+
     def get_ranges(self, name, length=None):
         length = length or self.length
         my_abstract_seq = getattr(self, name, self.default)
@@ -266,6 +271,11 @@ HILL_DOWN_SEQ = RangeSeq().add_abstract(
     TOP_RANGE,
     )
 
+# TO DO.. if kwargs
+def get_ranges(**kwargs):
+    return PitchRanges(
+        default = RangeSeq().add_constant(**kwargs)
+        )
 
 # pr = PitchRanges(
 #     default = RangeSeq().add_constant(from_bottom=12, spread=16)

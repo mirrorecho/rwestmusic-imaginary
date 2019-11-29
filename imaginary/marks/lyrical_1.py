@@ -14,10 +14,10 @@ import lyrical
 
 s = score.ImaginaryScore()
 sb1 = lyrical.get_sb1()
-sb1().annotate(
-    slur_cells=True,
-    label=("phrases", "cells")
-    ).to_score(s)
+# sb1().annotate(
+#     slur_cells=True,
+#     label=("phrases", "cells")
+#     ).to_score(s)
 
 # =======================================================
 # TO DO... adjust ranges:
@@ -56,31 +56,41 @@ bass_melody  = lambda_segment.LambdaSegment(
     sb1.with_only("bass_line"),
     fabric_staves = ("ooa_bass_guitar",  "cco_bass"),
     # tag_events = {0:("p", "normal")},
-    func = lambda x: x.crop("cells",1).crop_chords(0)
+    func = lambda x: x.crop("cells",1).crop_chords((0,))
     )
-s.extend_from(
-    bass_melody,
-    )
+s.extend_from(bass_melody)
 
 # # =======================================================
+# counter to violin i
+counter_violin = lambda_segment.LambdaSegment(
+    sb1.with_only("counter_line"),
+    func = lambda x: x.crop("phrases",1),
+    fabric_staves = ("cco_violin_i",),
+    )
+s.extend_from(counter_violin)
 
-s.extend_from(
-    lyrical.IntroStringsPad(
+# # =======================================================
+#  string padding:
+# TO DO: vary up the ranges
+pad_durations = (2,1,2,2,1,2,2) # based on 3 + 5 + 4
+bookend_beats = (None, (4,0), None,)
+start_offset = (8, 8, 12)
+s.extend_from(*[
+    lyrical.Intro2Pad(
         sb1,
-        mask_staves=("cco_bass",),
+        mask_staves=("cco_bass","cco_violin_i"),
+        pad_durations = pad_durations,
         ranges=pitch_ranges.PitchRanges(pitch_ranges.MID_SEQ),
+        selectable_start_beat = start_offset[i] + sum(pad_durations)*i,
+        bookend_beats = bookend_beats[i]
         )
-    )
-s.extend_from(
-    lyrical.IntroStringsPad(
-        sb1,
-        mask_staves=("cco_bass",),
-        ranges=pitch_ranges.PitchRanges(pitch_ranges.MID_SEQ),
-        )
-    )
+    for i in range(3)])
 
 s.fill_rests(beats=24)
 
+
+# # =======================================================
+# more winds swells:
 # TO DO: vary these up!
 s.extend_from( 
     lyrical.CcoWindsSwell(),
@@ -90,16 +100,7 @@ s.extend_from(
     )
 
 # # =======================================================
-
-# s.extend_from(
-#     melody.Melody( 
-#         lyrical.get_wisps_line_block(),
-#         fabric_staves = instrument_groups.OoaStringsFabric.fabric_staves,
-#         )
-#     )
-
-
-
+# TO DO MAYBE: re-add these pulses?
 # s.extend_from(
 #     lyrical.CcoStringPulses(
 #         pulse_beats=16,
@@ -108,7 +109,7 @@ s.extend_from(
 #     )
 
 # # =======================================================
-
+# TO DO MAYBE: re-add these pulses?
 # s.extend_from(
 #     lyrical.CcoStringPulses(
 #         pulse_duration=0.5,
@@ -117,12 +118,10 @@ s.extend_from(
 #         )
 #     )
 
-# # s.extend_from(lyrical.OOA_STRING_WISPS)
-
-# # fragments of counter melody?
+# TO DO MAYBE: add more fragments of counter melody?
 # # =======================================================
 
-# s.fill_rests()
+s.fill_rests()
 
 calliope.illustrate(s)
 

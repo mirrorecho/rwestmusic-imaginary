@@ -15,7 +15,6 @@ class LambdaSegment(ImaginaryFabric):
         if not isinstance(my_machine, ImaginarySegment):
             my_machine = ImaginarySegment(my_machine)
         my_machine = self.func(my_machine)
-        print(my_machine.phrases)
         return my_machine
 
 if __name__ == "__main__":

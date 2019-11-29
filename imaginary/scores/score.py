@@ -7,7 +7,6 @@ from imaginary.libraries import _settings as settings
 class ImaginaryScore(calliope.Score):
     stylesheets=(settings.IMAGINARY_PATH + "/scores/stylesheets/score.ily",)
 
-
     class Band(calliope.StaffGroup):
 
         class OoaWinds(calliope.StaffGroup):
@@ -220,6 +219,11 @@ class ImaginaryScore(calliope.Score):
         #     instrument=abjad.Instrument(
         #         name="Bass Rhythm", short_name="b.rhm.")
 
+    def get_pitch_ranges(self, *args, **kwargs):
+        # (importing here to avoid cirular import)
+        from imaginary.libraries import pitch_ranges
+        return pitch_ranges.PitchRanges()
+
     def fill_rests(self, beats=None, fill_to=None, include_short_score=False, **kwargs):
         if include_short_score:
             my_staves = list(self.staves)
@@ -235,6 +239,12 @@ class ImaginaryScore(calliope.Score):
             if staff_beats < beats:
                 staff.append( calliope.Segment(rhythm=(staff_beats-beats,)) )
        
+    # TO DO: move this would be helpful for any selectable in calliope!
+    def remove_empty(self, rests_count=False):
+        for staff in self.staves:
+            if len(staff)==0 or ( not rests_count and sum([n.ticks for n in staff.note_events]) == 0): 
+                staff.parent.remove(staff)
+        return self
 
     def extend_from(self, *args, **kwargs):
         for st in self.staves:
@@ -248,11 +258,80 @@ class ImaginaryScore(calliope.Score):
 
         if kwargs.get("fill_rests", False):
             self.fill_rests(beats=kwargs.get("fill_rests_beats", None), **kwargs)
+        return self
+
+    def assign_pitches(self, 
+        selectable=None, 
+        selectable_start_beat = None,
+        for_only=None,
+        ranges = None,
+        # TO DO... add start beat and end beat
+        ):
+
+        staves = self.staves[for_only] if for_only else self.staves
+        ranges = ranges or getattr(self, "ranges", self.get_pitch_ranges())
+        if selectable_start_beat is None:
+            selectable_start_beat = getattr(self, "selectable_start_beat", 0)
+
+        if (selectable:= selectable or self.selectable) is not None:
+            # TO DO... create sub-block if so specified
+            if not selectable.is_simultaneous:
+                self.warn("attempting to assign pitches from non-block... unexpected results may occur")
+
+            events_dict = {}
+            staves_ranges = {}
+
+            for staff in staves:
+
+                ticks_counter = 0
+
+                row_note_event_len = len(staff.note_events)
+
+                # TO DO: get REAL row ranges
+                # row_ranges = ((12,24), (0,12))
+                row_ranges = ranges.get_ranges(staff.name, row_note_event_len)
+                staves_ranges[staff.name] = row_ranges
+
+                note_index = 0
+                for e in staff.events:
+
+                    if not e.rest:
+                        my_tuple = ( e, 
+                            staff.name,
+                            row_ranges[note_index % len(row_ranges)],
+
+                            )
+                        
+                        if ticks_counter in events_dict:
+                            events_dict[ticks_counter].append(my_tuple)
+                        else:
+                            events_dict[ticks_counter] = [my_tuple]
+
+                    ticks_counter += e.ticks
+                    note_index += 1           
+
+            for t, tl in sorted(events_dict.items()):
+
+                sorted_tl = sorted(tl, key=lambda x: (x[2][1]+x[2][0])/2 )
+                my_ticks = selectable_start_beat*calliope.MACHINE_TICKS_PER_BEAT + t
+                # print(my_ticks, my_ticks/calliope.MACHINE_TICKS_PER_BEAT)
+                selectable_pitches = selectable.pitch_analyzer.pitches_at_ticks(my_ticks)
+                if len(selectable_pitches) > 0:
+                    for i, tu in enumerate(sorted_tl):
+                        fabric_event = tu[0]
+                        fabric_event.pitch = selectable_pitches[ round((i+1)/len(tl) * (len(selectable_pitches)-1))]
+                else:
+                    self.warn("attempting to set to pitches but no pitches at this beat in the selectable")
+
+            for staff in staves:
+                calliope.SmartRanges(smart_ranges=staves_ranges[staff.name]
+                    )(staff)
+
 
 if __name__ == "__main__":
     score = ImaginaryScore()
     for staff in score.staves:
-        staff.append(calliope.Cell(rhythm=(-4,)*100))
+        staff.append(calliope.Cell(rhythm=(-4,)))
     calliope.illustrate(score)
 
 

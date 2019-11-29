@@ -7,18 +7,14 @@ from imaginary.stories.library_material import (
 class HomeA(ImaginaryLine):
 
     class PhraseA(ImaginaryPhrase):
-        class PickupRest(calliope.Event):
-            init_rest = True
-            init_beats = -2
-
         class CellA1(ImaginaryCell):
-            init_rhythm=(2, 4, -2)
-            init_pitches=(-3, 0, "R")
+            init_rhythm=(-2, 2, 4,)
+            init_pitches=("R", -3, 0,)
             cell_label="A"
 
         class CellA2(ImaginaryCell):
-            init_rhythm=(2, 1, 3)
-            init_pitches=(-3, 0, 2, "R")
+            init_rhythm=(-2, 2, 1, 3)
+            init_pitches=( "R", -3, 0, 2, "R")
             cell_label="A"
 
     class PhraseB(ImaginaryPhrase):
@@ -35,29 +31,25 @@ class HomeA(ImaginaryLine):
 class HomeB(ImaginaryLine):
     """moves towards things up a perfect fourth"""
 
-    class PhraseA(ImaginaryPhrase):
-        class PickupRest(calliope.Event):
-            init_rest = True
-            init_beats = -1
-        
+    class PhraseA(ImaginaryPhrase):        
         class CellA1(ImaginaryCell):
-            init_rhythm=(1, 2, 2, 2, 2)
-            init_pitches=(2, 5, -3, 0, -3)
+            init_rhythm=(-1, 1, 2, 2, 2, 2)
+            init_pitches=("R", 2, 5, -3, 0, -3)
             cell_label="A"
         class CellA2(ImaginaryCell):
-            init_rhythm=(1, 1, 2, 2, -1)
-            init_pitches=(5, 4, 2, 5, "R")
+            init_rhythm=(1, 1, 3, 1,) # TO DO MAYBE: (1, 1, 2, 2,) ... was original
+            init_pitches=(5, 4, 2, 5,)
             cell_label="A"
 
     class PhraseB(ImaginaryPhrase):
         class CellB(ImaginaryCell):
-            init_rhythm=(1, 1, 1, 2, 2, -1)
-            init_pitches=(2, 5, 9, 2, 12, "R")        
+            init_rhythm=(-1, 1, 1, 1, 2, 2,)
+            init_pitches=("R", 2, 5, 9, 2, 12,)        
 
         class CellA3(ImaginaryCell):
             # init_rhythm=(1, 4, 1, 1)
-            init_rhythm=(1, 2, 2, 2)
-            init_pitches=(12, 5, 2, 5)
+            init_rhythm=(-1, 1, 2, 2, 2)
+            init_pitches=("R", 12, 5, 2, 5)
             cell_label="A"
 
 _HOME_A = HomeA()
@@ -80,8 +72,8 @@ def home_b_aup4():
 if __name__ == '__main__':
     # pass
     test_block = calliope.SegmentBlock(
-        home_a_b().sc(0.5).move_t(),
-        home_b_aup4().sc(0.5).move_t(),
+        home_a_b().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
+        home_b_aup4().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
         )
     # test_block.segments[1].cells[0].insert(0, calliope.Event(beats=0-24))
     calliope.illustrate(test_block.to_score(), as_midi=True)
