@@ -137,6 +137,13 @@ class LibraryMaterial(object):
                 new_scale=new_scale)
             )
 
+    def mul(self, times=2, wrap_in=None):
+        my_mul = wrap_in(self) if wrap_in else self
+        my_copy = my_mul()
+        for i in range(times-1):
+            my_mul.ext(my_copy())
+        return my_mul
+
     def move_t(self, times=1, interval=None, max_octaves=None, wrap_in=None):
         """
         repeats the material (within a wrapper machine),
@@ -160,6 +167,24 @@ class LibraryMaterial(object):
 
     def slur_cells(self):
         self.transformed(calliope.SlurCells())
+        return self
+
+    def bookend_pad(self, beats_before=0, beats_after=0): 
+        # TO DO: DRY
+        if beats_before:
+            rest_event = calliope.Event(beats=0-beats_before)
+            first_parent  = self.events[0].parent
+            if first_grandparent := first_parent.parent:
+                first_grandparent.insert(0, type(first_parent)(rest_event))
+            else:
+                first_parent.insert(0, rest_event)
+        if beats_after:
+            last_parent  = self.events[-1].parent
+            rest_event = calliope.Event(beats=0-beats_after)
+            if last_grandparent := last_parent.parent:
+                last_grandparent.append(type(last_parent)(rest_event))
+            else:
+                last_parent.append(rest_event)
         return self
 
     def annotate(self, **kwargs):

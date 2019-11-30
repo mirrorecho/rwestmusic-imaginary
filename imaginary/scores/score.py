@@ -183,41 +183,69 @@ class ImaginaryScore(calliope.Score):
 # ==================================================================
 
     class ShortScore(calliope.StaffGroup):
+        
+        class HighRhythm(calliope.RhythmicStaff):
+            instrument=abjad.Instrument(
+                name="High Rhythm", short_name="h.rhm.")
+            midi_instrument = "agogo"
+
+        class MidRhythm(calliope.RhythmicStaff):
+            instrument=abjad.Instrument(
+                name="Mid Rhythm", short_name="m.rhm.")
+            midi_instrument = "melodic tom"
+
+        class BassRhythm(calliope.RhythmicStaff):
+            instrument=abjad.Instrument(
+                name="Bass Rhythm", short_name="b.rhm.")
+            midi_instrument = "taiko drum"
+
         class MelodyLine1(calliope.Staff):
             instrument=abjad.Piano(
                 name="Melody Line 1", short_name="mel.1")
+            midi_instrument = "misc1"
+
         class MelodyLine2(calliope.Staff):
             instrument=abjad.Piano(
                 name="Melody Line 2", short_name="mel.2")
+            midi_instrument = "misc2"
+
         class CounterLine(calliope.Staff):
             instrument=abjad.Piano(
                 name="Counter Line", short_name="count.")
+            midi_instrument = "misc3"
+
         class BassLine(calliope.Staff):
             instrument=abjad.Piano(
                 name="Bass Line", short_name="bass.")
             clef="bass"
+            midi_instrument = "misc4"
+
         class Riff(calliope.Staff):
             instrument=abjad.Piano(
                 name="Riff", short_name="riff.")
+            midi_instrument = "misc5"
+
         class Chords(calliope.Staff):
             instrument=abjad.Piano(
                 name="Chords", short_name="chrd.")
+            midi_instrument = "misc6"
+
         class HighDrones(calliope.Staff):
             instrument=abjad.Piano(
                 name="High Drones", short_name="h.drn.")
+            midi_instrument = "misc7"
+
         class MidDrones(calliope.Staff):
             instrument=abjad.Piano(
                 name="Mid Drones", short_name="m.drn.")
+            midi_instrument = "misc8"
+
         class BassDrones(calliope.Staff):
             instrument=abjad.Piano(
                 name="Bass Drones", short_name="b.drn.")
             clef="bass"
-        # class HighRhythm(calliope.RhythmicStaff):
-        #     instrument=abjad.Instrument(
-        #         name="High Rhythm", short_name="h.rhm.")
-        # class BassRhythm(calliope.RhythmicStaff):
-        #     instrument=abjad.Instrument(
-        #         name="Bass Rhythm", short_name="b.rhm.")
+            midi_instrument = "misc9"
+
 
     def get_pitch_ranges(self, *args, **kwargs):
         # (importing here to avoid cirular import)

@@ -2,7 +2,7 @@ import abjad, calliope
 from imaginary.stories.library_material import LibraryMaterial
 
 RIFF_PITCHES_1 = (-3, -2, 0, 2, 5, 9)
-RIFF_PITCHES_2 = (4, 11, 5, 12, 14, 7)
+RIFF_PITCHES_2 = (4, 11, 5, 12, 14, 16) # TO DO NOTE: sometimes could end in 18! (F#)
 
 RIFF_PITCHES = RIFF_PITCHES_1 + RIFF_PITCHES_2
 

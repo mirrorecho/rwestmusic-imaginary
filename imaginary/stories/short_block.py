@@ -6,6 +6,12 @@ from imaginary.stories.library_material import ImaginarySegment
 
 class ShortBlock(calliope.SegmentBlock):
 
+    class HighRhythm(ImaginarySegment): pass
+
+    class MidRhythm(ImaginarySegment): pass
+
+    class BassRhythm(ImaginarySegment): pass
+
     class MelodyLine1(ImaginarySegment): pass
 
     class MelodyLine2(ImaginarySegment): pass
@@ -68,8 +74,8 @@ class ShortBlock(calliope.SegmentBlock):
             seg.annotate(**kwargs)
         return self
 
-    def to_score(self, score=None, remove_empty_staves=True):
-        score = score or ImaginaryShortScore()
+    def to_score(self, score=None, remove_empty_staves=True, **kwargs):
+        score = score(**kwargs) if score else ImaginaryShortScore(**kwargs)
 
         for seg in self.segments:
             my_staff = score.staves[seg.name]
