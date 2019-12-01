@@ -4,7 +4,7 @@
   #(set-paper-size "legal long")
 }
 
-#(set-global-staff-size 24)
+#(set-global-staff-size 20)
 
 
 
@@ -64,7 +64,6 @@
         \RhythmicStaff
         % \remove Instrument_name_engraver
         \override Hairpin #'minimum-length = #6
-    }
     }
 }
 

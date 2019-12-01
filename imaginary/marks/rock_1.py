@@ -15,6 +15,7 @@ s = score.ImaginaryScore()
 # =======================================================
 # bars 1 through 6
 
+# TO DO... move this cropping to rock 2 ... 
 lb1 = rock.OstiLineBlock(
             phrase_count=5,
             cuts = (

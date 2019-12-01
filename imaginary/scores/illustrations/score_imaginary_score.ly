@@ -517,6 +517,48 @@
         >>
         \context StaffGroup = "short_score"
         <<
+            \context RhythmicStaff = "high_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    \set Staff.instrumentName = \markup { "High Rhythm" }
+                    \set Staff.shortInstrumentName = \markup { H.rhm. }
+                    \set Staff.midiInstrument = #"agogo" 
+                    \clef "percussion"
+                    r1
+                }
+            }
+            \context RhythmicStaff = "mid_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    \set Staff.instrumentName = \markup { "Mid Rhythm" }
+                    \set Staff.shortInstrumentName = \markup { M.rhm. }
+                    \set Staff.midiInstrument = #"melodic tom" 
+                    \clef "percussion"
+                    r1
+                }
+            }
+            \context RhythmicStaff = "bass_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    \set Staff.instrumentName = \markup { "Bass Rhythm" }
+                    \set Staff.shortInstrumentName = \markup { B.rhm. }
+                    \set Staff.midiInstrument = #"taiko drum" 
+                    \clef "percussion"
+                    r1
+                }
+            }
             \context Staff = "melody_line1"
             \with
             {
@@ -526,6 +568,7 @@
                 {
                     \set Staff.instrumentName = \markup { "Melody Line 1" }
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
+                    \set Staff.midiInstrument = #"misc1" 
                     r1
                 }
             }
@@ -538,6 +581,7 @@
                 {
                     \set Staff.instrumentName = \markup { "Melody Line 2" }
                     \set Staff.shortInstrumentName = \markup { Mel.2 }
+                    \set Staff.midiInstrument = #"misc2" 
                     r1
                 }
             }
@@ -550,6 +594,7 @@
                 {
                     \set Staff.instrumentName = \markup { "Counter Line" }
                     \set Staff.shortInstrumentName = \markup { Count. }
+                    \set Staff.midiInstrument = #"misc3" 
                     r1
                 }
             }
@@ -562,6 +607,7 @@
                 {
                     \set Staff.instrumentName = \markup { "Bass Line" }
                     \set Staff.shortInstrumentName = \markup { Bass. }
+                    \set Staff.midiInstrument = #"electric bass (finger)" 
                     \clef "bass"
                     r1
                 }
@@ -575,6 +621,7 @@
                 {
                     \set Staff.instrumentName = \markup { Riff }
                     \set Staff.shortInstrumentName = \markup { Riff. }
+                    \set Staff.midiInstrument = #"electric guitar (clean)" 
                     r1
                 }
             }
@@ -587,6 +634,7 @@
                 {
                     \set Staff.instrumentName = \markup { Chords }
                     \set Staff.shortInstrumentName = \markup { Chrd. }
+                    \set Staff.midiInstrument = #"french horn" 
                     r1
                 }
             }
@@ -599,6 +647,7 @@
                 {
                     \set Staff.instrumentName = \markup { "High Drones" }
                     \set Staff.shortInstrumentName = \markup { H.drn. }
+                    \set Staff.midiInstrument = #"piccolo" 
                     r1
                 }
             }
@@ -611,6 +660,7 @@
                 {
                     \set Staff.instrumentName = \markup { "Mid Drones" }
                     \set Staff.shortInstrumentName = \markup { M.drn. }
+                    \set Staff.midiInstrument = #"string ensemble 2" 
                     r1
                 }
             }
@@ -623,6 +673,7 @@
                 {
                     \set Staff.instrumentName = \markup { "Bass Drones" }
                     \set Staff.shortInstrumentName = \markup { B.drn. }
+                    \set Staff.midiInstrument = #"contrabass" 
                     \clef "bass"
                     r1
                 }

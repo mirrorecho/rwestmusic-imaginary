@@ -218,33 +218,33 @@ class ImaginaryScore(calliope.Score):
             instrument=abjad.Piano(
                 name="Bass Line", short_name="bass.")
             clef="bass"
-            midi_instrument = "misc4"
+            midi_instrument = "electric bass (finger)"
 
         class Riff(calliope.Staff):
             instrument=abjad.Piano(
                 name="Riff", short_name="riff.")
-            midi_instrument = "misc5"
+            midi_instrument = "electric guitar (clean)"
 
         class Chords(calliope.Staff):
             instrument=abjad.Piano(
                 name="Chords", short_name="chrd.")
-            midi_instrument = "misc6"
+            midi_instrument = "french horn"
 
         class HighDrones(calliope.Staff):
             instrument=abjad.Piano(
                 name="High Drones", short_name="h.drn.")
-            midi_instrument = "misc7"
+            midi_instrument = "piccolo"
 
         class MidDrones(calliope.Staff):
             instrument=abjad.Piano(
                 name="Mid Drones", short_name="m.drn.")
-            midi_instrument = "misc8"
+            midi_instrument = "string ensemble 2"
 
         class BassDrones(calliope.Staff):
             instrument=abjad.Piano(
                 name="Bass Drones", short_name="b.drn.")
             clef="bass"
-            midi_instrument = "misc9"
+            midi_instrument = "fretless bass"
 
 
     def get_pitch_ranges(self, *args, **kwargs):
