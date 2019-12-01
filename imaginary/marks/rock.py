@@ -20,6 +20,13 @@ high_rhythm = ImaginaryPhrase(
     )
 high_rhythm.note_events.setattrs(pitch=12)
 
+OFF_RHYTHM = ImaginaryPhrase(
+    ImaginaryCell(rhythm=(-0.5,0.5)*4),
+    )
+OFF_RHYTHM_SLOW = ImaginaryPhrase(
+    ImaginaryCell(rhythm=(-1,1)*2),
+    )
+
 mid_rhythm = ImaginaryPhrase(
     ImaginaryCell(rhythm=(0.25,0.25, 0.5, -0.5, 0.5, -1, 0.25,0.25, 0.5)),
     ImaginaryCell(rhythm=(-1, 0.5, 0.5, -0.5, 0.5, 1,)),
@@ -31,8 +38,29 @@ bass_rhythm = ImaginaryPhrase(
 
 # RIFF MATERIAL:
 def riffs(phrase_count=1, **kwargs):
-    # args are dictionaries with the possible params (defaults below)
     return riff.RiffLine(phrase_count=phrase_count, **kwargs)
+
+def make_riffs(line_material, phrase_count=1, **kwargs):
+    my_pitches = [p.pitches for p in line_material.phrases]
+
+    my_riff = ImaginaryLine(
+        calliope.Phrase(*[
+            calliope.Cell(
+                pitches=p,
+                rhythm=(0.5,)*len(p)
+                )
+            for p in my_pitches],
+            **kwargs
+            )
+        ).mul(phrase_count)
+
+    # round up to nearest measure!
+    pulse_roundup = 8 - (int(my_riff.beats*2) % 8)
+    if pulse_roundup > 0:
+        my_riff.cells[-1].rhythm += (-0.5,)*pulse_roundup
+
+    return my_riff
+
 
 RIFF1_4 = riffs().crop("events",0,8)
 RIFF1_6 = riffs().crop("cells",0,1)
@@ -42,28 +70,50 @@ RIFF2_6 = riffs().crop("cells",1,0)
 
 RIFF_WIGGLE = RIFF2_4A().ext(RIFF2_4A().crop("events",0,1)) 
 
+HOME_RIFF = make_riffs(home.home_a())
+HOME_RIFF_B = make_riffs(home.home_b())
+COUNTER_RIFF_B = make_riffs(counter.counter_b().pop_from("cells",4))
+
+calliope.illustrate(COUNTER_RIFF_B, as_midi=True, open_midi=True)
+
+
 # STACKED PITCHES:
 ST_UP_I =  ( (0,12),(0,7),(0,7),(0,5), )
 ST_DN_I = ( (0,-12),(0,-5),(0,-5),(0,-7), )
 ST_7UP = ( (0,7,), )
 ST_7DN = ( (0,-7,), )
 
+ST_UP_II = ( (0,12),(0,7),(0,12),(0,7),(0,-5), )
+
 # TO DO.... make a t method that slowly moves up fifths!
 
 # FUNCTION TO GET HITS FOR CERTAIN CELLS
 def hits(riff_material, chord_exclude=(), poke=()):
     for cell in riff_material.cells:
-        cell_pitches = sorted(cell.pitch_set)
+        cell_pitches = sorted([p for p in cell.pitch_set if p != "R"])
         cell_pitches = [c for i, c in enumerate(cell_pitches) if i not in chord_exclude]
-        cell_rhythm = (1, cell.beats-1)
+        if cell.beats > 1:
+            cell_rhythm = (1, cell.beats-1)
+            cell_pitches = (cell_pitches, "R")
+        else:
+            cell_rhythm = (cell.beats,)
+            cell_pitches = (cell_pitches,)
         cell.clear()
         cell.rhythm = cell_rhythm
-        cell.pitches = (cell_pitches, "R")
+        cell.pitches = cell_pitches
     riff_material.poke("cells", *poke)
     return riff_material
 
 def crazy_minor(riff_material, poke=()): 
     return riff_material.poke("cells", *poke).t(-12).stack_p(((0,3,7),),)
+
+def bass_drones(phrase_count=1, bass_pitches=(-12,), phrase_rhythm=((3,),), **kwargs):
+    return drone.DroneLine2(
+        phrase_count = phrase_count,
+        line_pitches=[ ((p, p+7),) for p in bass_pitches],
+        phrase_rhythm = phrase_rhythm,
+        **kwargs,
+        )
 
 # FUNCTIONS TO GET SHORT SCORE BLOCKS:
 def get_sb0():
@@ -85,10 +135,7 @@ def get_sb0():
             RIFF_WIGGLE().bookend_pad(drum_intro_beats).bookend_pad(19,1).t(19), 
             RIFF_WIGGLE().bookend_pad(4,2).t(17), 
             ],
-        bass_drones = [drone.DroneLine(
-            line_pitches=( (-15,-8),(-17,-10),),
-            phrase_rhythm = (3,),
-            phrase_count = 8,
+        bass_drones = [bass_drones(8, bass_pitches=(-15, -17), 
             ).bookend_pad(drum_intro_beats+36)],
         )
 
@@ -101,7 +148,7 @@ def get_sb0():
             ).bookend_pad(drum_intro_beats),
         chords = hits(
             sb.segments["riff"]().crop("cells",1), 
-            poke=(0,3,5,7,10,13,12,14,19),
+            poke=(0, 3, 5, 7, 10, 13, 12, 14, 19),
         ).bookend_pad(drum_intro_beats),
         ) 
 
@@ -151,46 +198,15 @@ def get_sb1():
                 phrase_count = 4,
                 ),],
         bass_drones = [
-            drone.DroneLine(
-                line_pitches=( (-22,-15),(-24,-17),),
-                phrase_rhythm = (3,),
-                phrase_count = 7,
-                ),
-            drone.DroneLine(
-                line_pitches=( (-24,-17),),
-                phrase_rhythm = (2,2,3,3,3),
-                phrase_count = 1,
-                ),
-            drone.DroneLine(
-                line_pitches=( (-22,-15),),
-                phrase_rhythm = (2,),
-                phrase_count = 1,
-                ),
-            drone.DroneLine(
-                line_pitches=( (-24,-17),(-22,-15), ),
-                phrase_rhythm = (3,),
-                phrase_count = 4,
-                ),
-            drone.DroneLine(
-                line_pitches=( (-22,-15), ),
-                phrase_rhythm = (2,),
-                phrase_count = 6,
-                respell = "sharps"
-                ),
-            drone.DroneLine(
-                line_pitches=( (-22,-15), (-23,-16), ),
-                phrase_rhythm = (2,),
-                phrase_count = 2,
-                respell = "sharps"
-                ),
-            drone.DroneLine(
-                line_pitches=( (-23,-16),(-21,-14), ),
-                phrase_rhythm = (3,),
-                phrase_count = 4,
-                respell = "sharps"
-                ),
+            bass_drones(7, (-22, -24), phrase_rhythm=[(3,)] ),
+            bass_drones(2, (-24,), phrase_rhythm=[(2,2),(3,3,3)] ),
+            bass_drones(5, (-22, -24), phrase_rhythm=[(2,)]+[(3,)]*4 ),
+            bass_drones(6, (-22,), phrase_rhythm=[(2,)], respell="sharps"),
+            bass_drones(2, (-22, -23), phrase_rhythm=[(2,)], respell="sharps"),
+            bass_drones(4, (-23, -21), phrase_rhythm=[(3,)], respell="sharps"),
+            ],
 
-        ],
+        # TO DO: these piano chrods are NICE... continue!
         melody_line2 = [ImaginaryLine(
             chords.get_chord_phrase1().crop("events",0,1).bookend_pad(6,3),
             chords.get_chord_phrase1().bookend_pad(0,2),
@@ -206,8 +222,58 @@ def get_sb1():
             ),
         chords = hits(
             sb.segments["riff"](), 
-            poke=(0,2,6, 17, 24, 25),
+            poke=(0, 2, 6, 17, 24, 25),
             chord_exclude = (2,5,8),
+        ),
+        ) 
+
+    sb.fill_rests()
+
+    return sb
+
+def sb2_riff(t1=-1, t2 = None, **kwargs):
+    t2 = t2 or t1 + 7
+    return [
+        riffs(1,**kwargs).crop("events",0,5).t( t1 ).stack_p( ST_UP_I ).mul(2),
+        riffs(1,**kwargs).crop("events",2).t( t2 ).stack_p( ST_DN_I ),
+        ]
+
+def get_sb2():
+    sb = short_block.get_block().ext_segments(
+        high_rhythm = [OFF_RHYTHM().mul(9, ImaginaryLine)],
+        bass_rhythm = [OFF_RHYTHM_SLOW().mul(9, ImaginaryLine)],
+        riff = sb2_riff(-1, respell="sharps"
+            ) + sb2_riff(6, respell="sharps"
+            ) + sb2_riff(18, 8, respell="sharps") + [
+            riffs(1, respell="flats").crop("events",0,4).pop_from("events",1).t(8).stack_p( ST_UP_II ),
+            riffs(1, respell="flats").crop("events",0,4).pop_from("events",1).t(3).stack_p( ST_UP_II ),
+            riffs(1, respell="flats").crop("events",0,8).t(3),
+            riffs(1, respell="flats").crop("events",0,6).t(3),
+            riffs(1, respell="flats").crop("events",0,6).t(3).pop_from("events",2,3),
+            riffs(1, respell="flats").crop("events",0,10).t(3),
+            riffs(1, respell="flats").crop("events",0,5).t(3),
+            riffs(1,).crop("events",0,5).t(10),
+            riffs(1,).crop("events",2,0).t(10),
+            riffs(1,).crop("events",6,4).t(10),
+            ] + sb2_riff(5),
+        bass_line = [
+            # home_riffs(1, respell="sharps").t( 4 ).stack_p( ST_7UP )
+            HOME_RIFF().t( 4 ).stack_p( ((0,), (0,2,),) ).t(-12).bookend_pad(0,4),
+            HOME_RIFF().t( 6 ).stack_p( ((0,), (0,2,),) ).t(-12).bookend_pad(4,0),
+            HOME_RIFF().t( 6 ).stack_p( ((0,), (0,2,),)).t(-12).bookend_pad(0,4),
+            # HOME_RIFF(respell="flats").t( 6 ).stack_p( ST_7DN ).t(-11),
+        ]
+        )
+
+    sb.ext_segments(
+        melody_line1 = crazy_minor(
+            sb.segments["riff"](),
+            poke=(4,5, 16, 17),
+            ),
+        chords = hits(
+            sb.segments["riff"](), 
+            poke=(0, 6,),
+            # chord_exclude = (2,5,8),
         ),
         ) 
 
@@ -217,25 +283,25 @@ def get_sb1():
 
 if __name__ == '__main__':
     sb = short_block.get_block()
-    # sb.extend_from(get_sb0())
-    sb.extend_from(get_sb1())
-    # sb.extend_from(get_sb2())
-    # sb.extend_from(get_sb3())
-    sb.annotate(
-        slur_cells=True,
-        label = ("cells",),
-        ).fill_rests()
-    # print(sb0.pitch_analyzer.pitches_at(34))
-    s = sb.to_score(midi_tempo=160)
-    s.staves["melody_line1"].midi_instrument = "trumpet"
-    s.staves["melody_line2"].midi_instrument = "electric grand"
-    # s.staves["riff"].midi_instrument = "electric guitar (clean)"
-    s.staves["chords"].midi_instrument = "orchestral harp"
-    calliope.illustrate(s, 
-        as_midi=True,
-        open_midi=True,
-        # open_pdf=False,
-        )
+    # # sb.extend_from(get_sb0())
+    # # sb.extend_from(get_sb1())
+    # # sb.extend_from(get_sb2())
+    # # sb.extend_from(get_sb3())
+    # sb.annotate(
+    #     slur_cells=True,
+    #     label = ("cells",),
+    #     ).fill_rests()
+    # # print(sb0.pitch_analyzer.pitches_at(34))
+    # s = sb.to_score(midi_tempo=160)
+    # s.staves["melody_line1"].midi_instrument = "trumpet"
+    # s.staves["melody_line2"].midi_instrument = "electric grand"
+    # # s.staves["riff"].midi_instrument = "electric guitar (clean)"
+    # s.staves["chords"].midi_instrument = "orchestral harp"
+    # calliope.illustrate(s, 
+    #     as_midi=True,
+    #     open_midi=True,
+    #     # open_pdf=False,
+    #     )
 
 class Lick8(lick.Lick):
     lick_rhythm = (1.5, 1.5, 1)
