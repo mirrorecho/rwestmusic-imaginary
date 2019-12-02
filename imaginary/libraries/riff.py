@@ -7,7 +7,7 @@ RIFF_PITCHES_2 = (4, 11, 5, 12, 14, 16) # TO DO NOTE: sometimes could end in 18!
 RIFF_PITCHES = RIFF_PITCHES_1 + RIFF_PITCHES_2
 
 class RiffPhrase(LibraryMaterial, calliope.Phrase):
-    class RIffCell1(LibraryMaterial, calliope.Cell):
+    class RiffCell1(LibraryMaterial, calliope.Cell):
         init_pitches = RIFF_PITCHES_1
         init_rhythm = (0.5,)*len(RIFF_PITCHES_1)
 
@@ -20,7 +20,6 @@ class RiffLine(LibraryMaterial, calliope.Line, calliope.Factory):
     phrase_count = 2
     cuts = () # set to an iterable of dictionaries with cut kwargs
     stack_pitches = () # e.g. ( (7,), (0,7), )
-    slur_cells = False
 
     def get_branches_kwargs(self, *args, **kwargs):
         return [dict(

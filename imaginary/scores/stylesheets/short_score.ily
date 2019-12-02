@@ -4,7 +4,7 @@
   #(set-paper-size "legal long")
 }
 
-#(set-global-staff-size 20)
+#(set-global-staff-size 18)
 
 
 
