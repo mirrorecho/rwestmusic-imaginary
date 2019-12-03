@@ -70,6 +70,8 @@ def make_riffs(line_material, phrase_count=1, **kwargs):
 
     return my_riff
 
+# TO DO... add these to a dictionary
+# AND TO DO... ADD NAMES, DESCRIPTIONS!
 RIFF1_4 = riffs().crop("events",0,8)
 RIFF1_6 = riffs().crop("cells",0,1)
 RIFF2_4A = riffs().crop("events",6,2)
@@ -78,14 +80,21 @@ RIFF2_6 = riffs().crop("cells",1,0)
 
 RIFF_7 = riffs().crop("events",0,5)
 
+RIFF_8A = riffs().pop_from("events",2,8,10,11)
+RIFF_8B = riffs().pop_from("events",2,8,9,10)
+RIFF_8C = riffs().pop_from("events",3,5,7,11)
+RIFF_8D = riffs().pop_from("events",2,8,9,10)
+
 RIFF_WIGGLE = RIFF2_4A().ext(RIFF2_4A().crop("events",0,1)) 
 
 HOME_RIFF = make_riffs(home.home_a())
 HOME_RIFF_B = make_riffs(home.home_b())
 COUNTER_RIFF_B = make_riffs(counter.counter_b().pop_from("cells",4))
 
-# calliope.illustrate(COUNTER_RIFF_B, as_midi=True, open_midi=True)
+OPENING_END_WIGGLE = RIFF2_6 + RIFF2_4A + RIFF2_6
 
+OPENING_RIFFS = (RIFF1_4 + RIFF1_4 + RIFF1_6 + RIFF1_4 + RIFF1_6 +
+    RIFF2_4B + RIFF2_4B + OPENING_END_WIGGLE)
 
 # STACKED PITCHES:
 ST_UP_I =  ( (0,12),(0,7),(0,7),(0,5), )
@@ -95,6 +104,8 @@ ST_7DN = ( (0,-7,), )
 
 ST_UP_II = ( (0,12),(0,7),(0,12),(0,7),(0,-5), )
 ST_DN_II = ( (0,-12),(0,-5),(0,-12),(0,-5),(0,7), )
+
+ST_4MT = ((-5,0,5),(0,),)
 
 # TO DO.... make a t method that slowly moves up fifths!
 
@@ -118,6 +129,9 @@ def hits(riff_material, chord_exclude=(), poke=()):
 def crazy_minor(riff_material, poke=()): 
     return riff_material.poke("cells", *poke).t(-12).stack_p(((0,3,7),),)
 
+def crazy_major(riff_material, poke=()): 
+    return riff_material.poke("cells", *poke).t(-12).stack_p(((0,4,7),),)
+
 def bass_drones(phrase_count=1, bass_pitches=(-12,), phrase_rhythm=((3,),), **kwargs):
     return drone.DroneLine2(
         phrase_count = phrase_count,
@@ -126,7 +140,37 @@ def bass_drones(phrase_count=1, bass_pitches=(-12,), phrase_rhythm=((3,),), **kw
         **kwargs,
         )
 
+def cell_based_pads(input_row, poke=(), mask=(), scale_steps=(0,)):
+    for i, cell in enumerate(input_row.cells):
+        # input_pitches = [p + my_input_t for p in cell.note_pitch_set]
+        input_pitches = cell.note_pitch_set
+        if len(input_pitches) > 0:
+            input_chord_root = chords.get_diatonic_root(input_pitches)
+            my_scale = calliope.Scale(root=input_chord_root)
+            my_scale_step = scale_steps[i % len(scale_steps)]
+            my_pitch = my_scale[my_scale_step]
+        else:
+            my_pitch = "R"
+        my_beats = cell.beats
+        cell.clear()
+        cell.rhythm = (my_beats,)
+        cell.pitches = (my_pitch,)
+    if poke:
+        input_row.poke("cells", *poke)
+    if mask:
+        input_row.mask("cells", *mask)
+    return input_row
+
+# ======================================================================
+# ======================================================================
+
 # FUNCTIONS TO GET SHORT SCORE BLOCKS:
+
+# ======================================================================
+# SECTION 0
+# ======================================================================
+
+
 def get_sb0():
     drum_intro_beats = 64
 
@@ -135,10 +179,7 @@ def get_sb0():
         mid_rhythm = [mid_rhythm().mul(4+8, ImaginaryLine).bookend_pad(32)],
         bass_rhythm = [bass_rhythm().mul(8+8, ImaginaryLine)],
         riff = [
-            RIFF1_4().bookend_pad(drum_intro_beats), RIFF1_4, 
-            RIFF1_6, RIFF1_4, RIFF1_6,
-            RIFF2_4B, RIFF2_4B,
-            RIFF2_6, RIFF2_4A, RIFF2_6,
+            OPENING_RIFFS().bookend_pad(drum_intro_beats), 
             riffs(1),
             riffs(5).t(12),
             ],
@@ -166,6 +207,12 @@ def get_sb0():
     sb.fill_rests()
 
     return sb
+
+
+
+# ======================================================================
+# SECTION 1
+# ======================================================================
 
 def get_sb1():
     sb = short_block.get_block().ext_segments(
@@ -242,6 +289,9 @@ def get_sb1():
 
     return sb
 
+# ======================================================================
+# SECTION 2
+# ======================================================================
 def sb2_riff(t1=-1, t2 = None, **kwargs):
     t2 = t2 or t1 + 7
     return [
@@ -306,50 +356,229 @@ def get_sb2():
     sb.fill_rests()
 
     return sb
-
-SUS_LINE1 = ImaginaryLine(
-    ImaginaryPhrase(
-        chords.SusCell(rhythm=(1,0.5,1,1.5,1,-1),sus=(4,4,5,4,5))
-        ),
-    )
+        
+# ======================================================================
+# SECTION 3
+# ======================================================================
 
 def get_sb3():
     sb = short_block.get_block().ext_segments()
     big_riff = riffs(1).bookend_pad(2,)
     big_riff.events[0].tag("fermata")
     big_riff.ext(big_riff().t(7).stack_p( [(0,3,7)] ) )
+    big_riff_cell_len = len(big_riff.cells)
 
     # TO DO: fix the fermata on the rest measures!
     big_rest = big_riff().mask("cells",1,2,4,5)
     sb.ext_segments(
-        melody_line1 = big_riff,
-        melody_line2 = big_riff,
-        counter_line = big_riff,
-        bass_line = big_riff().t(-24),
-        riff = big_riff,
-        chords = big_rest(),
+        melody_line1 = [big_riff,],
+        melody_line2 = [big_riff,], # TO DO with FABRIC... move ranges down
+        counter_line = [big_riff,],
+        bass_line = [big_riff().t(-24),],
+        riff = [big_riff,],
+        # chords = [big_rest(),],
         )
 
     sb.ext_segments(
-        riff = RIFF_7().t(2).mul(4),
-        melody_line2 = SUS_LINE1().t(7)
+        riff = [
+            RIFF_7().t(2).mul(4),
+            riffs(1).t(2),
+            riffs(1, respell="sharps").t(9
+                ).crop("events",0,4).pop_from("events",1).mul(4),
+            riffs(1, respell="sharps").t(4),
+            RIFF_8A(respell="sharps").t(11),
+            RIFF_8B(respell="sharps").t(6),
+            RIFF_8B(respell="flats").t(1),
+            RIFF_8A(respell="flats").t(8),
+            ]
+        )
+
+    # segments derived from riff:
+    sb.ext_segments(
+        melody_line1 = crazy_minor(
+            sb.segments["riff"]().crop("cells",big_riff_cell_len),
+            poke=([c-big_riff_cell_len for c in (14,15,24,25, 27, 29, 31, 32, 33)]),
+            ),
+        melody_line2 = chords.sus_maker(sb.segments["riff"], 
+            input_start_beat = 16,
+            phrases = {
+                2:chords.RIFF_DICT_A,
+                3:{**chords.RIFF_DICT_B, **{"octave":-1}},
+                4:{**chords.RIFF_DICT_C, **{"octave":-1}},
+                5:{**chords.RIFF_DICT_C, **{"octave":-1}},
+                
+                7:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                8:{**chords.RIFF_DICT_B, **{"octave":0}},
+                9:{**chords.RIFF_DICT_C, **{"octave":0}},
+                10:{**chords.RIFF_DICT_C, **{"octave":0}},
+            }
+            ),
+        chords = hits(
+            sb.segments["riff"](), 
+            poke=(6, 10, 14, 16, 24, 26, 28, 30),
+        ),
         )
 
     sb.fill_rests()
-
     return sb
 
+# ======================================================================
+# SECTION 4
+# ======================================================================
+def straight_bass(input_row, 
+    phrase_count=2, 
+    rhythm_tree=((2,2),(2,2),),
+    input_start_beat = 0,
+    ):
+    
+    beat_counter = input_start_beat
+    bass_line = ImaginaryLine()
+
+    for i in range(phrase_count):
+        bass_phrase = ImaginaryPhrase()
+
+        for cell_r in rhythm_tree:
+            bass_cell = ImaginaryCell()
+
+            for r in cell_r:
+                if r > 0:
+                    input_event = input_row.event_at_beat(beat_counter)
+                    # TO DO... think of being more flexifble to pull either cell/phrase, parent/grandparent
+                    input_node = input_event.parent.parent
+                    input_pitches = input_node.note_pitch_set
+                    my_pitch = chords.get_diatonic_root(input_pitches) - 24
+                else:
+                    my_pitch = "R"
+                bass_cell.append(calliope.Event(beats=r, pitch=my_pitch))
+                beat_counter += abs(r)
+            bass_phrase.append(bass_cell)
+        bass_line.append(bass_phrase)
+    return bass_line                
+
+
+def get_sb4():
+    sb = short_block.get_block().ext_segments()
+
+    sb.ext_segments(
+        riff = [
+            RIFF_8C(respell="flats").t(3).stack_p( ST_4MT ),
+            RIFF_8D(respell="flats").t(3).stack_p( ST_4MT ),
+            RIFF_8C(respell="flats").t(10).stack_p( ST_4MT ),
+            RIFF_8D(respell="flats").t(10).stack_p( ST_4MT ),
+            RIFF_8C(respell="flats").t(5).stack_p( ST_4MT ),
+            RIFF_8D(respell="flats").t(5).stack_p( ST_4MT ),
+            OPENING_RIFFS(),
+            OPENING_END_WIGGLE(),
+            riffs(),
+            riffs().t(7).stack_p( ST_UP_II ),
+            OPENING_END_WIGGLE().t(2),
+            OPENING_END_WIGGLE().t(2),
+            riffs().t(-15).stack_p( ST_7UP ).bookend_pad(4),
+            riffs().t(-8),
+            riffs().t(-1).stack_p( ST_UP_II ),
+            riffs().t(6).stack_p( ST_UP_I ),
+            riffs().t(13).stack_p( ST_UP_I ),
+            riffs().t(8).bookend_pad(6)
+            ],
+        counter_line = [
+            # home_riffs(1, respell="sharps").t( 4 ).stack_p( ST_7UP )
+            HOME_RIFF().stack_p( ((0,12),),).bookend_pad(40,),
+            HOME_RIFF().stack_p( ST_UP_II ),
+            HOME_RIFF().stack_p( ((0,12),),).t(2).bookend_pad(12,),
+            HOME_RIFF_B().stack_p( ((0,12),),).t(2),
+            # HOME_RIFF(respell="flats").t( 6 ).stack_p( ST_7DN ).t(-11),
+            ],
+        high_drones = [
+            drone.DroneLine(
+                line_pitches=( (28,),),
+                phrase_rhythm = (2,1,1),
+                phrase_count = 16,
+                ).bookend_pad(24,0),
+            drone.DroneLine(
+                line_pitches=( (27,),),
+                phrase_rhythm = (0.5,)*8,
+                phrase_count = 4,
+                ),
+            drone.DroneLine(
+                line_pitches=( ( 15,27, ),),
+                phrase_rhythm = (0.5,)*8,
+                phrase_count = 5,
+                ),
+            drone.DroneLine(
+                line_pitches=( (20,),),
+                phrase_rhythm = (0.5,)*8,
+                phrase_count = 4,
+                ),
+            ],
+
+        )
+
+    # segments derived from riff:
+    sb.ext_segments(
+        melody_line1 = crazy_major(
+            sb.segments["riff"](),
+            poke=(25,26,27,28,37, 38, 39, 40, 41,42,43,44,45),
+            ).t(12),
+        mid_drones = cell_based_pads(
+            sb.segments["riff"](),
+            mask=(19,20,21,22,23,24,35),
+            scale_steps = (4,3)
+            ),
+        melody_line2 = chords.sus_maker(sb.segments["riff"], 
+            phrases = {
+                6:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                7:chords.RIFF_DICT_B,
+                8:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                # 9:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                10:chords.RIFF_DICT_B,
+                11:chords.RIFF_DICT_B,
+                21:chords.RIFF_DICT_A,
+                23:chords.RIFF_DICT_B,
+                24:chords.RIFF_DICT_B,
+                # 12:chords.RIFF_DICT_D,
+            }
+            ),
+        bass_line = [
+            straight_bass(sb.segments["riff"], 3,
+                rhythm_tree=((3,1),(1.5,2.5),),
+                input_start_beat=16,
+                ).bookend_pad(16),
+            straight_bass(sb.segments["riff"], 1,
+                rhythm_tree=((3,1),(1.5,2.5),),
+                input_start_beat=72,
+                ).mul(2).bookend_pad(28),
+            ],
+        chords = hits(
+            sb.segments["riff"](), 
+                poke=(0,18,19,25),
+        ),
+        )
+
+    # extras!
+    sb.segments["mid_drones"].cells[45].t(12)
+
+    for p in sb.segments["mid_drones"].phrases[6:]:
+        p.stack_p( ST_7UP )
+
+
+    sb.fill_rests()
+    return sb
+
+# ======================================================================
+# SECTION 5
+# ======================================================================
 
 if __name__ == '__main__':
     sb = short_block.get_block()
-    # sb.extend_from(get_sb0())
-    # sb.extend_from(get_sb1())
-    # sb.extend_from(get_sb2())
+    sb.extend_from(get_sb0())
+    sb.extend_from(get_sb1())
+    sb.extend_from(get_sb2())
     sb.extend_from(get_sb3())
+    sb.extend_from(get_sb4())
 
     sb.annotate(
         slur_cells=True,
-        label = ("cells",),
+        label = ("cells","phrases"),
         ).fill_rests()
     # print(sb0.pitch_analyzer.pitches_at(34))
     s = sb.to_score(midi_tempo=160)
@@ -358,11 +587,9 @@ if __name__ == '__main__':
     # s.staves["riff"].midi_instrument = "electric guitar (clean)"
     s.staves["chords"].midi_instrument = "orchestral harp"
     
-
-
     calliope.illustrate(s, 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )
 

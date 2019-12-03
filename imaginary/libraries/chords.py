@@ -61,6 +61,7 @@ def sus_maker(
     rhythm = (1,1,1,1,),
     input_t = 0,
     truncate_to_input= True,
+    input_start_beat = 0,
     **kwargs
     ):
     
@@ -79,7 +80,7 @@ def sus_maker(
         
         for select_index, di2 in sorted(di.items()):
             input_node = input_select[select_index]
-            input_beats_before = input_node.beats_before(input_row)
+            input_beats_before = input_node.beats_before(input_row) - input_start_beat
             input_beats = input_node.beats
 
             my_input_t = di2.get("input_t", kwargs.get("input_t", input_t))
@@ -92,6 +93,7 @@ def sus_maker(
             my_rhythm = di2.get("rhythm", rhythm)
             my_allowed_thirds = di2.get("allowed_thirds", allowed_thirds)
             my_truncate_to_input = di2.get("truncate_to_input", truncate_to_input)
+            my_octave_t = di2.get("octave", 0) * 12
 
             beat_counter = 0
             i = 0 # counting manually since only indexing note events
@@ -124,7 +126,12 @@ def sus_maker(
 
                     if my_inversion == 2:
                         my_sus += 12
-                    sus_pitches.append(sorted([my_inverted_root, my_sus, my_scale[my_root_offset+4]]))
+
+                    sus_pitches.append(sorted([
+                        my_inverted_root + my_octave_t, 
+                        my_sus + my_octave_t, 
+                        my_scale[my_root_offset+4] + my_octave_t
+                        ]))
                     
                 else:
                     sus_pitches.append("R")

@@ -20,8 +20,8 @@
         {
             {
                 a8
-                ^ \markup { c.0 }
                 ^ \markup { p.0 }
+                ^ \markup { c.0 }
                 [
                 (
                 bf8
@@ -113,8 +113,8 @@
                 ]
                 )
                 a8
-                ^ \markup { c.6 }
                 ^ \markup { p.3 }
+                ^ \markup { c.6 }
                 [
                 (
                 bf8
@@ -144,8 +144,8 @@
                 ]
                 )
                 e'8
-                ^ \markup { c.8 }
                 ^ \markup { p.4 }
+                ^ \markup { c.8 }
                 [
                 (
                 f'8
@@ -175,8 +175,8 @@
                 ]
                 )
                 b8
-                ^ \markup { c.10 }
                 ^ \markup { p.5 }
+                ^ \markup { c.10 }
                 [
                 (
                 c'8
@@ -206,8 +206,8 @@
                 ]
                 )
                 fs'8
-                ^ \markup { c.12 }
                 ^ \markup { p.6 }
+                ^ \markup { c.12 }
                 [
                 (
                 g'8

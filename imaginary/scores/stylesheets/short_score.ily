@@ -1,10 +1,10 @@
-#(set! paper-alist (cons '("legal long" . (cons (* 14 in) (* 8.5 in))) paper-alist))
+#(set! paper-alist (cons '("shortscore" . (cons (* 16.2 in) (* 12.4 in))) paper-alist))
 
 \paper {
-  #(set-paper-size "legal long")
+  #(set-paper-size "shortscore")
 }
 
-#(set-global-staff-size 18)
+#(set-global-staff-size 26.9)
 
 
 
