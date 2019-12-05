@@ -8,75 +8,50 @@ class LibraryMaterial(object):
 
     # TO DO MAYBE: this would be a great general calliope Transform!
     # OR ON ANY MACHINE... ALSO could be replaced by separate methods below...
-    def cut_events(self, 
-        crop=(0,0), 
-        pop=(), 
-        mask=(), 
-        poke=()
-        ):
-        """
-        cuts events from the material by:
-        - cropping (removing first/last)
-        - popping (removing by event indices)
-        - masking (replacing with rests)
-        - poking (keeping only events by indices)
-        (ALTERS original)
-        """
 
-        if crop[0] > 0:
-            self.events[:crop[0]].remove()
-        if crop[1] > 0:
-            self.events[0-crop[1]:].remove()
-        
-        if pop:
-            self.events[pop].remove()
-
-        if mask:
-            self.events[mask].setattrs(rest=True)
-
-        if poke:
-            self.events.exclude(*poke).setattrs(rest=True)
-
-        # TO DO ... should be replaced with a general calliope method to remove 
-        # empty nodes from a tree:
-        for c in list(self.cells):
-            if len(c) == 0:
-                c.parent.remove(c)
-        return self
-
+    # TO DO: replace with + throughout
     def ext(self, other):
         self.extend(other())
+        return self
+
+    # TO DO: maybe this should just be on the selection
+    def remove_nodes(self, *args):
+        for node in args:
+            parent = node.parent
+            parent.remove(node)
+            parent.remove_if_empty()
         return self
 
     def crop_chords(self, indices=(None,), above=(None,)):
         return self.transformed(calliope.CropChords(indices=indices, above=above))
 
+    def only_first(self, select_attr="select", count=1):
+        return self.remove_nodes( *getattr(self, select_attr)[count:] )
+
+    def only_last(self, select_attr="select", count=1):
+        selection = getattr(self, select_attr)
+        return self.remove_nodes( *selection[:len(selection)-count-1] )
+
+    def set_vals(self, **kwargs):
+        for n,v in kwargs:
+            setattr(self, n, v)
+        return self
 
     def crop(self, select_attr="select", crop_start=0, crop_end=0):
         """
         crops start or ending selections from the material
         """
-        nodes = [
-            getattr(self, select_attr)[c] for c in range(crop_start)
-            ] + [
-            getattr(self, select_attr)[-1-c] for c in range(crop_end)
-            ]
-        for node in nodes:
-            parent = node.parent
-            parent.remove(node)
-            parent.remove_if_empty()
+        if crop_start:
+            self.remove_nodes(*getattr(self, select_attr)[:crop_start])
+        if crop_end:
+            self.remove_nodes(*getattr(self, select_attr)[0-crop_end:])
         return self
 
     def pop_from(self, select_attr="select", *args):
         """
         crops start or ending selections from the material
         """
-        nodes = list(getattr(self, select_attr)[args])
-        for node in nodes:
-            parent = node.parent
-            parent.remove(node)
-            parent.remove_if_empty()
-        return self
+        return self.remove_nodes(*getattr(self, select_attr)[args])
 
     # TO DO: this implementation of with_only will leave behind
     # nodes that are NOT of the select_attr type

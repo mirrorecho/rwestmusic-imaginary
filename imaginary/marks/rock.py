@@ -50,18 +50,20 @@ def riffs(phrase_count=1, **kwargs):
     return riff.RiffLine(phrase_count=phrase_count, **kwargs)
 
 def make_riffs(line_material, phrase_count=1, **kwargs):
-    my_pitches = [p.pitches for p in line_material.phrases]
+    # my_pitches = [p.pitches for p in line_material.phrases]
 
-    my_riff = ImaginaryLine(
-        calliope.Phrase(*[
-            calliope.Cell(
-                pitches=p,
-                rhythm=(0.5,)*len(p)
-                )
-            for p in my_pitches],
-            **kwargs
-            )
-        ).mul(phrase_count)
+    # my_riff = ImaginaryLine(
+    #     calliope.Phrase(*[
+    #         calliope.Cell(
+    #             pitches=p,
+    #             rhythm=(0.5,)*len(p)
+    #             )
+    #         for p in my_pitches],
+    #         **kwargs
+    #         )
+    #     ).mul(phrase_count)
+    my_riff = line_material()
+    my_riff.rhythm = (0.5,) * len(my_riff.events)
 
     # round up to nearest measure!
     pulse_roundup = 8 - (int(my_riff.beats*2) % 8)
@@ -169,7 +171,6 @@ def cell_based_pads(input_row, poke=(), mask=(), scale_steps=(0,)):
 # ======================================================================
 # SECTION 0
 # ======================================================================
-
 
 def get_sb0():
     drum_intro_beats = 64

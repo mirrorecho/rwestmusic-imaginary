@@ -14,7 +14,7 @@ from imaginary.fabrics import (instrument_groups,
 from imaginary.marks import rock
 
 
-# SHOULD AVERAGE 20 bars
+# SHOULD AVERAGE 12-16 bars
 # TEMPO = 112+ !!!!!!
 
 s = score.ImaginaryScore()
