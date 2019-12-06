@@ -186,8 +186,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     [
                     d'8
                     ]
@@ -267,8 +267,8 @@
                     f'4
                     )
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     d'8
                     ]
@@ -293,8 +293,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     [
                     d'8
                     ]
@@ -370,8 +370,8 @@
                     f'4
                     )
                     r8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     d'8
                     ]

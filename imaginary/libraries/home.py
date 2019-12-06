@@ -23,7 +23,7 @@ class HomeA(ImaginaryLine):
             init_pitches=("R", -3, 5, 4, 0, 2)
 
         class CellA3(ImaginaryCell):
-            init_rhythm=(2, 4)
+            init_rhythm=(4, 2)
             init_pitches=(-3, 0)
             cell_label="A"
 
@@ -33,23 +33,25 @@ class HomeB(ImaginaryLine):
 
     class PhraseA(ImaginaryPhrase):        
         class CellA1(ImaginaryCell):
-            init_rhythm=(-1, 1, 2, 2, 2, 2)
+            init_rhythm=(-1, 1, 2, 3, 1, 2)
             init_pitches=("R", 2, 5, -3, 0, -3)
             cell_label="A"
         class CellA2(ImaginaryCell):
-            init_rhythm=(1, 1, 3, 1,) # TO DO MAYBE: (1, 1, 2, 2,) ... was original
-            init_pitches=(5, 4, 2, 5,)
+            init_rhythm=(1, 1, 4,) # TO DO MAYBE: (1, 1, 2, 2,) ... was original
+            init_pitches=(5, 4, -3,)
             cell_label="A"
 
     class PhraseB(ImaginaryPhrase):
         class CellB(ImaginaryCell):
             init_rhythm=(-1, 1, 1, 1, 2, 2,)
-            init_pitches=("R", 2, 5, 9, 2, 12,)        
+            init_pitches=("R", 2, 5, 7, 2, 9,)        
 
         class CellA3(ImaginaryCell):
             # init_rhythm=(1, 4, 1, 1)
-            init_rhythm=(-1, 1, 2, 2, 2)
-            init_pitches=("R", 12, 5, 2, 5)
+            # init_rhythm=(-1, 1, 3, 1, 1, 1)
+            # init_pitches=("R", 12, 5, 4, 9, 7)
+            init_rhythm=(-1, 1, 3, 1, -2)
+            init_pitches=("R", 12, 5, 4, "R")
             cell_label="A"
 
 _HOME_A = HomeA()
@@ -68,15 +70,21 @@ def home_a_b():
 def home_b_aup4():
     return _HOME_B().ext( _HOME_A().t(5) )
 
+from imaginary.libraries import counter
+
 
 if __name__ == '__main__':
     # pass
     test_block = calliope.SegmentBlock(
-        home_a_b().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
-        home_b_aup4().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
+        home_a_b().sc(0.5).move_t(2).annotate(label=("cells","phrases")).slur_cells(),
+        home_b_aup4().sc(0.5).move_t(2).annotate(label=("cells","phrases")).slur_cells(),
+        counter.counter_a_bmod().sc(0.5).move_t(4)
         )
     # test_block.segments[1].cells[0].insert(0, calliope.Event(beats=0-24))
-    calliope.illustrate(test_block.to_score(), as_midi=True)
+    calliope.illustrate(test_block.to_score(midi_tempo=116), 
+        as_midi=True,
+        open_midi=True,
+        )
 
 # h = HOME_A_B_FAST.crop(1,1).move_t()
 # print(HOME_A_B_FAST().poke((0,1,),"events"))
