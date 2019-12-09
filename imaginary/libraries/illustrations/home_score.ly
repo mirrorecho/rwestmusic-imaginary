@@ -60,53 +60,58 @@
                 c'2
                 )
                 r8
-                ^ \markup { p.2 }
                 ^ \markup { c.4 }
+                ^ \markup { p.2 }
                 [
                 d'8
                 ]
                 (
                 f'4
                 a4
-                c'4
-                a4
+                ~
+                a8
+                [
+                e'8
+                ]
                 )
-                f'8
+                r4
                 ^ \markup { c.5 }
+                f'8
                 [
                 (
                 e'8
                 ]
-                d'4
+                c'4
                 ~
-                d'8
+                c'8
                 [
-                f'8
+                d'8
                 ]
                 )
                 r8
-                ^ \markup { p.3 }
                 ^ \markup { c.6 }
+                ^ \markup { p.3 }
                 [
                 d'8
                 ]
                 (
-                f'8
-                [
-                a'8
-                ]
+                f'4
                 d'4
-                c''4
+                a'4
                 )
                 r8
                 ^ \markup { c.7 }
                 [
-                c''8
+                g'8
                 ]
                 (
                 f'4
-                d'4
+                ~
                 f'4
+                d'8
+                [
+                f'8
+                ]
                 )
                 r4
                 ^ \markup { p.4 }
@@ -156,20 +161,24 @@
                 (
                 bf'4
                 d'4
-                f'4
-                d'4
+                ~
+                d'8
+                [
+                a'8
+                ]
                 )
-                bf'8
+                r4
                 ^ \markup { c.13 }
+                bf'8
                 [
                 (
                 a'8
                 ]
-                g'4
+                f'4
                 ~
-                g'8
+                f'8
                 [
-                bf'8
+                g'8
                 ]
                 )
                 r8
@@ -179,22 +188,23 @@
                 g'8
                 ]
                 (
-                bf'8
-                [
-                d''8
-                ]
+                bf'4
                 g'4
-                f''4
+                d''4
                 )
                 r8
                 ^ \markup { c.15 }
                 [
-                f''8
+                c''8
                 ]
                 (
                 bf'4
-                g'4
+                ~
                 bf'4
+                g'8
+                [
+                bf'8
+                ]
                 )
             }
         }
@@ -215,20 +225,24 @@
                 (
                 f'4
                 a4
-                c'4
-                a4
+                ~
+                a8
+                [
+                e'8
+                ]
                 )
-                f'8
+                r4
                 ^ \markup { c.1 }
+                f'8
                 [
                 (
                 e'8
                 ]
-                d'4
+                c'4
                 ~
-                d'8
+                c'8
                 [
-                f'8
+                d'8
                 ]
                 )
                 r8
@@ -238,26 +252,27 @@
                 d'8
                 ]
                 (
-                f'8
-                [
-                a'8
-                ]
+                f'4
                 d'4
-                c''4
+                a'4
                 )
                 r8
                 ^ \markup { c.3 }
                 [
-                c''8
+                g'8
                 ]
                 (
                 f'4
-                d'4
+                ~
                 f'4
+                d'8
+                [
+                f'8
+                ]
                 )
                 r4
-                ^ \markup { p.2 }
                 ^ \markup { c.4 }
+                ^ \markup { p.2 }
                 d'4
                 (
                 f'2
@@ -274,8 +289,8 @@
                 g'4
                 )
                 r4
-                ^ \markup { p.3 }
                 ^ \markup { c.6 }
+                ^ \markup { p.3 }
                 d'4
                 (
                 bf'8
@@ -303,20 +318,24 @@
                 (
                 bf'4
                 d'4
-                f'4
-                d'4
+                ~
+                d'8
+                [
+                a'8
+                ]
                 )
-                bf'8
+                r4
                 ^ \markup { c.9 }
+                bf'8
                 [
                 (
                 a'8
                 ]
-                g'4
+                f'4
                 ~
-                g'8
+                f'8
                 [
-                bf'8
+                g'8
                 ]
                 )
                 r8
@@ -326,22 +345,23 @@
                 g'8
                 ]
                 (
-                bf'8
-                [
-                d''8
-                ]
+                bf'4
                 g'4
-                f''4
+                d''4
                 )
                 r8
                 ^ \markup { c.11 }
                 [
-                f''8
+                c''8
                 ]
                 (
                 bf'4
-                g'4
+                ~
                 bf'4
+                g'8
+                [
+                bf'8
+                ]
                 )
                 r4
                 ^ \markup { c.12 }
@@ -385,5 +405,14 @@
             }
         }
     >>
-    \midi {}
+    
+                \midi {
+                    \context {
+                        \Score
+                        midiChannelMapping = #'instrument
+                    }
+                    \tempo 4 = 112
+                }
+                \layout { }                 
+                
 }

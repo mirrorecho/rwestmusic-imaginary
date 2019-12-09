@@ -8,7 +8,7 @@ from imaginary.stories.library_material import (
 class BassLine(ImaginaryLine):
     class PhraseAB(ImaginaryPhrase):
         class CellA(ImaginaryCell):
-            init_rhythm = (-0.5, 1.5, 2, 1.5, 2.5)
+            init_rhythm = (-1, 1, 2, 1.5, 2.5)
             init_pitches = ("R", -5, -3, -3, -5)
 
         class CellB(ImaginaryCell):

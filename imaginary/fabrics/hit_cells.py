@@ -5,6 +5,7 @@ from imaginary.fabrics import instrument_groups
 # TO DO... not the best name... (this is really for ANY simple copy)
 class HitCells(ImaginaryFabric):
     hit_duration = 0.5
+    cell_indices = () # TO DO: implement this
     # assign_pitches_from_selectable = False
 
     def weave(self, staff, index=0, **kwargs):
@@ -16,7 +17,7 @@ class HitCells(ImaginaryFabric):
                 else (self.hit_duration,)
                 )
             for c in self.selectable.get_cyclic(index).cells 
-            if c.beats >= self.hit_duration
+            if c.beats >= self.hit_duration 
         ])
 
         return my_phrase

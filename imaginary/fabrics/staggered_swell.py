@@ -1,6 +1,9 @@
 import abjad, calliope
 from imaginary.stories.fabric import ImaginaryFabric
 from imaginary.fabrics import instrument_groups
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
+    )
 
 class StaggeredSwell(ImaginaryFabric):
     low_dynamic = "pp"
@@ -29,7 +32,7 @@ class StaggeredSwell(ImaginaryFabric):
         if my_stagger[1] > 0:
             my_rhythm.append(0-my_stagger[1])
 
-        my_cell = calliope.Cell(
+        my_cell = ImaginaryCell(
             rhythm = my_rhythm
             )
         
@@ -45,6 +48,20 @@ class StaggeredSwell(ImaginaryFabric):
             # my_cell.events[-1].tag("!<>\\pp") 
 
         return my_cell
+
+class StaggeredSwells(StaggeredSwell):
+    cell_count=2
+    phrase_count=2
+
+    def weave(self, staff, index=0, **kwargs):
+        my_line = super().weave(staff, index, **kwargs
+            ).mul(self.cell_count, wrap_in=ImaginaryPhrase
+            ).mul(self.phrase_count, wrap_in=ImaginaryLine)
+        
+        for c in my_line.cells:
+            c.events[-1].tag("\\!")
+
+        return my_line
 
 
 class CcoHighStringsSwell(StaggeredSwell):

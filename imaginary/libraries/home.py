@@ -33,23 +33,23 @@ class HomeB(ImaginaryLine):
 
     class PhraseA(ImaginaryPhrase):        
         class CellA1(ImaginaryCell):
-            init_rhythm=(-1, 1, 2, 2, 2, 2)
-            init_pitches=("R", 2, 5, -3, 0, -3)
+            init_rhythm=(-1, 1, 2, 3, 1,)
+            init_pitches=("R", 2, 5, -3, 4,)
             cell_label="A"
         class CellA2(ImaginaryCell):
-            init_rhythm=(1, 1, 3, 1,) # TO DO MAYBE: (1, 1, 2, 2,) ... was original
-            init_pitches=(5, 4, 2, 5,)
+            init_rhythm=(-2, 1, 1, 3, 1,) # TO DO MAYBE: (1, 1, 2, 2,) ... was original
+            init_pitches=( "R", 5, 4, 0, 2,)
             cell_label="A"
 
     class PhraseB(ImaginaryPhrase):
         class CellB(ImaginaryCell):
-            init_rhythm=(-1, 1, 1, 1, 2, 2,)
-            init_pitches=("R", 2, 5, 9, 2, 12,)        
+            init_rhythm=(-1, 1, 2, 2, 2,)
+            init_pitches=("R", 2, 5, 2, 9,)        
 
         class CellA3(ImaginaryCell):
             # init_rhythm=(1, 4, 1, 1)
-            init_rhythm=(-1, 1, 2, 2, 2)
-            init_pitches=("R", 12, 5, 2, 5)
+            init_rhythm=(-1, 1, 4, 1, 1)
+            init_pitches=("R", 7, 5, 2, 5)
             cell_label="A"
 
 _HOME_A = HomeA()
@@ -76,7 +76,12 @@ if __name__ == '__main__':
         home_b_aup4().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
         )
     # test_block.segments[1].cells[0].insert(0, calliope.Event(beats=0-24))
-    calliope.illustrate(test_block.to_score(), as_midi=True)
+    calliope.illustrate(test_block.to_score(
+        midi_tempo=112,
+        ), 
+        as_midi=True,
+        open_midi=True,
+        )
 
 # h = HOME_A_B_FAST.crop(1,1).move_t()
 # print(HOME_A_B_FAST().poke((0,1,),"events"))

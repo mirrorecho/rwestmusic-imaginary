@@ -2,7 +2,40 @@ import abjad, calliope
 
 from imaginary.scores.short_score import ImaginaryShortScore
 from imaginary.stories.pitch_analyzer import PitchAnalyzer
-from imaginary.stories.library_material import ImaginarySegment
+from imaginary.stories.library_material import ImaginarySegment, ImaginaryLine, ImaginaryPhrase
+from imaginary.libraries import tally_apps
+
+# TO DO: CONSIDER WHETHER THIS SHOULD BE UNIVERSAL HERE OR NOT
+_GRIDS = {}
+
+# TO DO: move this to calliope
+class ChordSelect(calliope.Transform):
+    index=0
+
+    def transform(self, selectable, **kwargs):
+        for event in selectable.note_events:
+            event.pitch = event.pitch[self.index]
+
+# TO DO: move this to calliope
+class ChordsToBlockBase(calliope.FromSelectableFactory):
+
+    def get_branch(self, node, index, *args, **kwargs):
+        return node(*args, **kwargs).transformed(ChordSelect(index=index))
+
+    def get_branches(self, *args, **kwargs):
+        chord_length = len(self.selectable.note_events[0].pitch)
+
+        return [self.get_branch(self.selectable, i, *args, **kwargs) for i in range(chord_length)]
+
+# TO DO: move this to calliope
+class ChordsToBlock(ChordsToBlockBase, calliope.LineBlock): pass
+
+# TO DO: move this to calliope
+class ChordsToSegmentBlock(ChordsToBlockBase, calliope.SegmentBlock): pass
+
+# TO DO; this extra inheritance is nasty
+class Grid0(calliope.PitchesThroughGrid, calliope.LineBlock): pass
+
 
 class ShortBlock(calliope.SegmentBlock):
 
@@ -36,6 +69,7 @@ class ShortBlock(calliope.SegmentBlock):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.grids = {}
         self.reset()
 
     def extend_from(self, other):
@@ -67,6 +101,7 @@ class ShortBlock(calliope.SegmentBlock):
         for seg in list(my_block):
             if seg.name not in args:
                 my_block.remove(seg)
+        my_block.reset()
         return my_block
 
     def annotate(self, **kwargs):
@@ -102,6 +137,51 @@ class ShortBlock(calliope.SegmentBlock):
         for seg, seg_beats in zip(segs, segs_beats):
             if seg_beats < beats:
                 seg.append( calliope.Cell(rhythm=(seg_beats-beats,)) )
+
+
+    def get_grid_a(self, name,
+        line="melody_line1", 
+        cells=(), 
+        stack = None,
+        smart_range = None,
+        tallies = None,
+        output_directory = None,
+        **kwargs,
+        ):
+        # TO DO: getting directory here not elegant, but needed for directory to
+        # work correctly from terminal... need to fix in calliope base
+        if not output_directory:
+            class Dummy(calliope.CalliopeBase): pass
+            output_directory = Dummy().get_module_info()[0] 
+
+        my_cells = ImaginaryPhrase( *self[line]().cells[cells] )
+
+        if stack:
+            my_cells.stack_p( stack )
+
+        cells_lb = ChordsToBlock(selectable=my_cells)
+
+        if smart_range:
+            for line in cells_lb:
+                line.transformed( calliope.SmartRange(smart_range = smart_range) )
+
+        my_grid = Grid0(cells_lb, 
+                output_directory = output_directory,
+                name=name,
+                tally_apps = tallies or tally_apps.LINE_SMOOTH_TALLY_APPS2,
+                # pitch_ranges = pitch_range_helpers.midhigh_string_ranges()
+                )
+        return my_grid
+
+    # TO DO... consider moving this to imaginary_material or short_block
+    def add_grid(self, name, **kwargs):
+        _GRIDS[name] = self.get_grid_a(
+            name=name,
+            **kwargs,
+            )
+
+    def get_grid(self, name):
+        return _GRIDS[name]
 
 
 _SHORT_BLOCK = ShortBlock()

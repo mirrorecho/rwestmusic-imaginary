@@ -54,16 +54,15 @@
                         ~
                         ]
                         b'2
-                        r2
-                        r8
-                        [
-                        a'8
-                        ]
+                        r4
+                        a'4
+                        ~
+                        a'4
                         g'8
                         [
                         c''8
                         ]
-                        r8
+                        c''8
                         [
                         c''8
                         ]
@@ -74,14 +73,14 @@
                         r2
                         r4
                         b'4
-                        c''8
-                        [
                         e''8
+                        [
+                        c''8
                         ~
                         ]
-                        e''4
+                        c''4
                         ~
-                        e''1
+                        c''1
                         c''8
                         [
                         b'8
@@ -337,15 +336,15 @@
                         ~
                         b2
                         :32
-                        e'2
+                        c'2
                         :32
                         ~
-                        e'4
+                        c'4
                         :32
-                        e'4
+                        c'4
                         :32
                         ~
-                        e'2
+                        c'2
                         :32
                         b2
                         :32
@@ -1557,6 +1556,27 @@
         >>
         \context StaffGroup = "short_score"
         <<
+            \context RhythmicStaff = "high_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+            }
+            \context RhythmicStaff = "mid_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+            }
+            \context RhythmicStaff = "bass_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+            }
             \context Staff = "melody_line1"
             \with
             {
@@ -1622,5 +1642,14 @@
             }
         >>
     >>
-    \midi {}
+    
+                \midi {
+                    \context {
+                        \Score
+                        midiChannelMapping = #'instrument
+                    }
+                    \tempo 4 = 60
+                }
+                \layout { }                 
+                
 }

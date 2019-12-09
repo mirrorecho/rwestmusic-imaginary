@@ -2,7 +2,7 @@ import abjad, calliope
 
 from imaginary.stories import short_block
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
-    riff, chords)
+    riff, chords, tally_apps)
 from imaginary.fabrics import (instrument_groups, 
     dovetail, driving_off, hit_cells, 
     hits, lick, melody, osti, pad, 
@@ -12,6 +12,11 @@ from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
 from imaginary.stories.fabric import ImaginaryFabric
+
+# TO DO: getting directory here not elegant, but needed for directory to
+# work correctly from terminal... need to fix in calliope base
+class Dummy(calliope.CalliopeBase): pass
+output_directory = Dummy().get_module_info()[0] 
 
 # RHYTHMIC MATERIAL:
 high_rhythm = ImaginaryPhrase(
@@ -91,7 +96,8 @@ RIFF_WIGGLE = RIFF2_4A().ext(RIFF2_4A().crop("events",0,1))
 
 HOME_RIFF = make_riffs(home.home_a())
 HOME_RIFF_B = make_riffs(home.home_b())
-COUNTER_RIFF_B = make_riffs(counter.counter_b().pop_from("cells",4))
+# COUNTER_RIFF_B = make_riffs(counter.counter_b().pop_from("cells",4))
+COUNTER_RIFF_B = make_riffs(counter.counter_b())
 
 OPENING_END_WIGGLE = RIFF2_6 + RIFF2_4A + RIFF2_6
 
@@ -108,6 +114,9 @@ ST_UP_II = ( (0,12),(0,7),(0,12),(0,7),(0,-5), )
 ST_DN_II = ( (0,-12),(0,-5),(0,-12),(0,-5),(0,7), )
 
 ST_4MT = ((-5,0,5),(0,),)
+
+
+
 
 # TO DO.... make a t method that slowly moves up fifths!
 
@@ -163,6 +172,7 @@ def cell_based_pads(input_row, poke=(), mask=(), scale_steps=(0,)):
         input_row.mask("cells", *mask)
     return input_row
 
+
 # ======================================================================
 # ======================================================================
 
@@ -207,7 +217,30 @@ def get_sb0():
 
     sb.fill_rests()
 
+    sb.add_grid("rock_g0_c11", 
+        cells=(11,), 
+        smart_range = (0,14),
+        stack = ((0,0),),
+        output_directory = output_directory,
+        )
+    sb.add_grid("rock_g0_c13", 
+        cells=(13,), 
+        smart_range = (0,21),
+        stack = ((0,0,0),),
+        output_directory = output_directory,
+        )
+    sb.add_grid("rock_g0_c21_22", 
+        cells=(21,22), 
+        smart_range = (4,16),
+        stack = ((0,0,0),),
+        output_directory = output_directory,
+        )
     return sb
+
+# calliope.illustrate(
+#     get_sb0().get_grid("rock_g0_c11")#(midi_tempo=112), as_midi=True, open_midi=True,
+#     )
+
 
 
 
@@ -287,6 +320,13 @@ def get_sb1():
         ) 
 
     sb.fill_rests()
+
+    sb.add_grid("rock_g1_c6", 
+        cells=(6,), 
+        smart_range = (6,24),
+        tallies = tally_apps.LINE_SMOOTH_TALLY_APPS_UP,
+        output_directory = output_directory,
+        )
 
     return sb
 
@@ -566,33 +606,35 @@ def get_sb4():
     return sb
 
 # ======================================================================
-# SECTION 5
+# SECTION 5 ?????
 # ======================================================================
 
-if __name__ == '__main__':
-    sb = short_block.get_block()
-    sb.extend_from(get_sb0())
-    sb.extend_from(get_sb1())
-    sb.extend_from(get_sb2())
-    sb.extend_from(get_sb3())
-    sb.extend_from(get_sb4())
 
-    sb.annotate(
-        slur_cells=True,
-        label = ("cells","phrases"),
-        ).fill_rests()
-    # print(sb0.pitch_analyzer.pitches_at(34))
-    s = sb.to_score(midi_tempo=160)
-    s.staves["melody_line1"].midi_instrument = "trumpet"
-    s.staves["melody_line2"].midi_instrument = "electric grand"
-    # s.staves["riff"].midi_instrument = "electric guitar (clean)"
-    s.staves["chords"].midi_instrument = "orchestral harp"
+
+# if __name__ == '__main__':
+#     sb = short_block.get_block()
+#     sb.extend_from(get_sb0())
+#     # sb.extend_from(get_sb1())
+#     # sb.extend_from(get_sb2())
+#     # sb.extend_from(get_sb3())
+#     # sb.extend_from(get_sb4())
+
+#     sb.annotate(
+#         slur_cells=True,
+#         label = ("cells","phrases"),
+#         ).fill_rests()
+#     # print(sb0.pitch_analyzer.pitches_at(34))
+#     s = sb.to_score(midi_tempo=160)
+#     s.staves["melody_line1"].midi_instrument = "trumpet"
+#     s.staves["melody_line2"].midi_instrument = "electric grand"
+#     # s.staves["riff"].midi_instrument = "electric guitar (clean)"
+#     s.staves["chords"].midi_instrument = "orchestral harp"
     
-    calliope.illustrate(s, 
-        as_midi=True,
-        open_midi=True,
-        # open_pdf=False,
-        )
+#     calliope.illustrate(s, 
+#         as_midi=True,
+#         # open_midi=True,
+#         # open_pdf=False,
+#         )
 
 class Lick8(lick.Lick):
     lick_rhythm = (1.5, 1.5, 1)

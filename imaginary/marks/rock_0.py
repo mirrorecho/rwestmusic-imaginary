@@ -1,76 +1,248 @@
 import abjad, calliope
 
 from imaginary.scores import score
-from imaginary.fabrics import (instrument_groups, hits, lick, melody, osti, pad, 
-    pizz_flutter, pulse, staggered_swell, swell_hit)
+from imaginary.fabrics import (instrument_groups, 
+    ditto, dovetail, driving_off, hit_cells, 
+    hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
+    pulse, staggered_swell, swell_hit)
+from imaginary.libraries import pitch_ranges
+from imaginary.stories.fabric import ImaginaryFabric
 import rock
 
 # SHOULD AVERAGE 20 bars
 # TEMPO = 160+ !!!!!!
 
 s = score.ImaginaryScore()
+sb = rock.get_sb0()
+s = sb().annotate(
+    slur_cells=True,
+    label=("phrases", "cells")
+    ).to_score(s)
 
 # TO DO: add ranges
 # =======================================================
-rock_osti = melody.Melody(
-        rock.OstiLineBlock(),
-        fabric_staves = ("ooa_guitar", "ooa_mallets"),
-        )
-calliope.StackPitches(
-    intervals=((0,5),(-7,5),)
-    )( rock_osti.staves["ooa_mallets"] )
-
-s.extend_from(
-    *[rock_osti() for i in range(8)]
+low_drums = lambda_segment.LambdaSegment(
+    sb.with_only("bass_rhythm"),
+    fabric_staves = ("ooa_drum_set",),
+    tag_events = {0:("mp", "FIX PITCHES!")},
+    func = lambda x: x.only_first("cells",8)
     )
 
-s.fill_rests(beats=2*4)
-
-# =======================================================
-s.extend_from(
-    swell_hit.SwellHit(fabric_staves=("cco_oboe1", "cco_oboe2"),)
-    )
-s.fill_rests(beats=3*4)
-
-# =======================================================
-
-s.extend_from(
-    hits.Hits(
-        fabric_staves = instrument_groups.get_instruments("strings"),
-        hits_spacing = (12, 6, 2, 4),
-        hit_duration = 1,
-        tag_events = {0:("pizz.",)}
-        ),
+wood_block = lambda_segment.LambdaSegment(
+    sb.with_only("high_rhythm"),
+    fabric_staves = ("cco_percussion",),
+    tag_events = {0:("mp", "woodblock")},
+    func = lambda x: x,
+    # func = lambda x: x.only_first("cells",8)
     )
 
 s.extend_from(
-    rock.Lick8(fabric_staves=("ooa_bass_guitar",)),
-    )
-s.fill_rests(beats=5*4)
-
-s.extend_from(
-    swell_hit.SwellHit(fabric_staves=("cco_oboe1", "cco_oboe2"),)
-    )
-
-s.fill_rests(beats=6*4)
-
-# =======================================================
-
-s.extend_from(
-    rock.FluteDoves(),
-    rock.FluteDoves(),
-    rock.FluteDoves(),
+    low_drums,
+    wood_block,
     )
 
 s.fill_rests(beats=8*4)
+# # =======================================================
+# TO DO: add in drumset part here...
+
+s.fill_rests(beats=16*4)
+# # =======================================================
+guitar = lambda_segment.LambdaSegment(
+    sb.with_only("riff"),
+    fabric_staves = ("ooa_guitar",),
+    tag_events = {0:("mp",)},
+    func = lambda x: x.crop("cells",1),
+    # func = lambda x: x.only_first("cells",8)
+    )
+pizz = lambda_segment.LambdaSegment(
+    sb.with_only("chords"),
+    ranges=pitch_ranges.PitchRanges(pitch_ranges.MID_SEQ),
+    fabric_staves = instrument_groups.get_instruments("strings"),
+    mask_staves = ("cco_bass",),
+    tag_events = {0:("mf", "pizz")},
+    assign_pitches_from_selectable = True,
+    selectable_start_beat = 16*4,
+    func = lambda x: x.crop("cells",1),
+    # func = lambda x: x.crop("cells",1),
+    # func = lambda x: x.only_first("cells",8)
+    )
 s.extend_from(
-    rock.Lick8(fabric_staves=("ooa_bass_guitar",),
-        lick_count=4,
+    guitar,
+    pizz,
+    )
+# # =======================================================
+# TO DO... add in piano and harp sections
+
+
+s.fill_rests(beats=22*4)
+
+# # =======================================================
+# block for cell 11 minor chord cloud
+cloud_11 = sb.get_grid("rock_g0_c11")
+cloud_11[3].t(12)
+wind_block_11 = lambda_segment.LambdaSegment(
+    cloud_11,
+    fabric_staves = (
+        "cco_oboe2",
+        "cco_clarinet1",
+        "cco_flute2",
+        "cco_flute1",
+        "cco_oboe1",
+        "cco_clarinet2",
         ),
+    tag_events = {0:("p", "\\<",), 5:("mf",)},
+    # assign_pitches_from_selectable = True,
+    # selectable_start_beat = 16*4,
+    func = lambda x: x.slur_cells().bookend_pad(0,1),
+    # func = lambda x: x.crop("cells",1),
+    # func = lambda x: x.only_first("cells",8)
+    )
+wind_block_11.phrases.setattrs(respell="flats")
+s.extend_from(
+    wind_block_11,
+    )
+
+s.fill_rests(beats=23*4)
+
+cloud_13 = sb.get_grid("rock_g0_c13")
+cloud_13[0].t(-12)
+cloud_13[1].t(-12)
+cloud_13[4].t(12)
+wind_block_13 = lambda_segment.LambdaSegment(
+    cloud_13,
+    fabric_staves = (
+        "cco_trombone", #0
+        "cco_bassoon", #1
+        "cco_clarinet2", #2  
+        "cco_flute2", #3
+        "cco_flute1", #4
+        "cco_oboe2", #5
+        "cco_oboe1", #6
+        "cco_clarinet1", #7
+        "cco_trumpet", #8 
+        ),
+    tag_events = {1:("p", "\\<",), 6:("mf",)},
+    # assign_pitches_from_selectable = True,
+    # selectable_start_beat = 16*4,
+    # ranges=pitch_ranges.PitchRanges(pitch_ranges.MID_SEQ),
+    func = lambda x: x.slur_cells().bookend_pad(2,3),
+    # func = lambda x: x.crop("cells",1),
+    # func = lambda x: x.only_first("cells",8)
+    )
+wind_block_13.phrases.setattrs(respell="flats")
+wind_block_13.staves["cco_clarinet2","cco_trumpet"].phrases.setattrs(respell="sharps")
+
+s.extend_from(
+    wind_block_13,
+    )
+s.fill_rests(beats=25*4)
+
+
+# TO DO... add swell hits here...
+
+s.fill_rests(beats=23*4)
+# # =======================================================
+bass_drones =  lambda_segment.LambdaSegment(
+    sb.with_only("bass_drones"),
+    selectable_start_beat = (23*4),
+    fabric_staves = (
+        "ooa_bass_guitar",
+        "cco_bass",
+        ),
+    func = lambda x: x.crop("cells",1),
+    tag_events = {0:("mf",)},
+    )
+s.extend_from(
+    bass_drones
+    )
+s.fill_rests(beats=29*4)
+
+# # =======================================================
+
+# TO DO: this cloud is not lovely!
+cloud_21_22 = sb.get_grid("rock_g0_c21_22")
+cloud_21_22[7].t(-12)
+cloud_21_22[8].t(-12)
+# cloud_21_22[4].t(12)
+wind_cloud_21_22 = lambda_segment.LambdaSegment(
+    cloud_21_22,
+    fabric_staves = (
+        "cco_flute1", #0
+        "cco_flute2", #1
+        "cco_oboe1", #2  
+        "cco_oboe2", #3
+        "cco_clarinet1", #4
+        "cco_clarinet2", #5
+        "cco_trumpet", #6
+        "cco_bassoon", #7
+        "cco_trombone", #8 
+        ),
+    tag_events = {1:("mp", "\\<",), 12:("f",)},
+    # selectable_start_beat = 16*4,
+    # ranges=pitch_ranges.PitchRanges(pitch_ranges.MID_SEQ),
+    func = lambda x: x.slur_cells().bookend_pad(2),
+    # func = lambda x: x.crop("cells",1),
+    # func = lambda x: x.only_first("cells",8)
+    )
+wind_cloud_21_22.phrases.setattrs(respell="flats")
+s.extend_from(
+    wind_cloud_21_22,
     )
 
 s.fill_rests()
-calliope.illustrate(s)
+
+# wind_cloud_21_22.staves["cco_clarinet2","cco_trumpet"].phrases.setattrs(respell="sharps")
+
+
+# calliope.StackPitches(
+#     intervals=((0,5),(-7,5),)
+#     )( rock_osti.staves["ooa_mallets"] )
+
+# # =======================================================
+# s.extend_from(
+#     swell_hit.SwellHit(fabric_staves=("cco_oboe1", "cco_oboe2"),)
+#     )
+# s.fill_rests(beats=3*4)
+
+# # =======================================================
+
+# s.extend_from(
+#     hits.Hits(
+#         fabric_staves = instrument_groups.get_instruments("strings"),
+#         hits_spacing = (12, 6, 2, 4),
+#         hit_duration = 1,
+#         tag_events = {0:("pizz.",)}
+#         ),
+#     )
+
+# s.extend_from(
+#     rock.Lick8(fabric_staves=("ooa_bass_guitar",)),
+#     )
+# s.fill_rests(beats=5*4)
+
+# s.extend_from(
+#     swell_hit.SwellHit(fabric_staves=("cco_oboe1", "cco_oboe2"),)
+#     )
+
+# s.fill_rests(beats=6*4)
+
+# # =======================================================
+
+# s.extend_from(
+#     rock.FluteDoves(),
+#     rock.FluteDoves(),
+#     rock.FluteDoves(),
+#     )
+
+# s.fill_rests(beats=8*4)
+# s.extend_from(
+#     rock.Lick8(fabric_staves=("ooa_bass_guitar",),
+#         lick_count=4,
+#         ),
+#     )
+
+# s.fill_rests()
+# calliope.illustrate(s)
 
 # class GuitarArranger(ArrangeFrom):
 #     to_staves = (
@@ -81,7 +253,9 @@ calliope.illustrate(s)
 # TO DO... this stuff should be standard!!!!
 
 
+# # =======================================================
 
+calliope.illustrate(s, as_midi=True)
 
 
 

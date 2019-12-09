@@ -15,7 +15,7 @@ import lyrical
 
 s = score.ImaginaryScore()
 sb0 = lyrical.get_sb0()
-# sb0().annotate(
+# s = sb0().annotate(
 #     slur_cells=True,
 #     label=("phrases", "cells")
 #     ).to_score(s)

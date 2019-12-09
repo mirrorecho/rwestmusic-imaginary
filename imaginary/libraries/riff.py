@@ -50,12 +50,17 @@ class RiffLineBlock(calliope.LineBlock, calliope.Factory):
 
 
 if __name__ == '__main__':
-    rlb = RiffLineBlock(
-        stack_pitches =  (
-            ( (), ((0,12),(0,),), ),
-            ( ((-5,),), ),
-            ),
-        slur_cells = (True, False),
+    rl = RiffLine(midi_tempo=116, phrase_count=8).ts(5).ts(-4).sc(0.5)
+    # rlb = RiffLineBlock(
+    #     stack_pitches =  (
+    #         ( (), ((0,12),(0,),), ),
+    #         ( ((-5,),), ),
+    #         ),
+    #     slur_cells = (True, False),
+    #     )
+    calliope.illustrate(rl, 
+        as_midi=True, 
+        open_midi=True,
+
         )
-    calliope.illustrate(rlb)
 

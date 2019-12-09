@@ -130,6 +130,7 @@ class ImaginaryScore(calliope.Score):
             class CcoBassoon(calliope.Staff):
                 instrument=abjad.Bassoon(
                     name="Bassoon", short_name="bsn.")
+                clef="bass"
         
         class CcoBrass(calliope.StaffGroup):
             class CcoHorn(calliope.Staff):
@@ -143,6 +144,7 @@ class ImaginaryScore(calliope.Score):
             class CcoTrombone(calliope.Staff):
                 instrument=abjad.TenorTrombone(
                     name="Trombone", short_name="tbn.")
+                clef="bass"
 
         class CcoPercussion(calliope.RhythmicStaff): pass
 

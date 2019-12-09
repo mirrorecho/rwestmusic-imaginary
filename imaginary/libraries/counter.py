@@ -9,7 +9,7 @@ class CounterCell2(LibraryMaterial, calliope.Cell):
     init_rhythm = (1, 0.5, 2.5,)
 
 class CounterCellC1(LibraryMaterial, calliope.Cell):
-    init_rhythm = (-2.5, 0.5, 0.5, 0.5,)
+    init_rhythm = (-1, 2, 0.5, 0.5,)
 
 class CounterCellC2(LibraryMaterial, calliope.Cell):
     init_rhythm = (-0.5, 0.5, 0.5, 0.5, -2)
@@ -31,16 +31,16 @@ class CounterLineA(LibraryMaterial, calliope.Line):
         class CellC1(CounterCellC1):
             init_pitches = ("R", 5, 4, 2,)
         class CellC2(CounterCellC2):
-            init_pitches = ("R", 9, 7, 5, "R")
+            init_pitches = (9, 9, 7, 5, "R") # NOTE: first event could also be rest
 
     class PhraseD(LibraryMaterial, calliope.Phrase):
         class CellD1(calliope.Cell):
-            init_rhythm = (-1, 1, 0.5,)
-            init_pitches = ("R", 7, 9,)
+            init_rhythm = (-1, 1)
+            init_pitches = ("R", 7)
     
         class CellD2(calliope.Cell):
-            init_rhythm = (5.5,)
-            init_pitches = (12,)
+            init_rhythm = (0.5, 5.5,)
+            init_pitches = (12,9,)
 
     def as_mod(self, steps=2, scale=None):
         my_mod = self.transformed(
@@ -59,7 +59,7 @@ class CounterStraightCell2(calliope.Cell):
 class CounterLineB(CounterLineA):
     class PhraseC(LibraryMaterial, calliope.Phrase):
         class CellC1(CounterStraightCell1):
-            init_pitches = ("R", 0, 0, -3,)
+            init_pitches = ("R", 5, 0, -3,)
         class CellC2(CounterStraightCell2):
             init_pitches = (-3, -3, 0, -5)
 
