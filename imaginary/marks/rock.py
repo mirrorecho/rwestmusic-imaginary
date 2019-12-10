@@ -328,6 +328,18 @@ def get_sb1():
         output_directory = output_directory,
         )
 
+    sb.add_grid("rock_g1_c23_24", 
+        cells=(23,24), 
+        pitch_ranges = pitch_ranges.HIGH_TO_LOW_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_flute","ooa_clarinet",
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            ),
+        # smart_range = (6,24),
+        # tallies = tally_apps.LINE_SMOOTH_TALLY_APPS_UP,
+        output_directory = output_directory,
+        )
+
     return sb
 
 # ======================================================================

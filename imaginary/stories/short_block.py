@@ -144,6 +144,8 @@ class ShortBlock(calliope.SegmentBlock):
         cells=(), 
         stack = None,
         smart_range = None,
+        pitch_ranges = None,
+        pitch_ranges_instruments = (),
         tallies = None,
         output_directory = None,
         **kwargs,
@@ -169,8 +171,11 @@ class ShortBlock(calliope.SegmentBlock):
                 output_directory = output_directory,
                 name=name,
                 tally_apps = tallies or tally_apps.LINE_SMOOTH_TALLY_APPS2,
-                # pitch_ranges = pitch_range_helpers.midhigh_string_ranges()
                 )
+
+        if pitch_ranges and pitch_ranges_instruments:
+            my_grid.set_ranges_from(pitch_ranges, *pitch_ranges_instruments)
+
         return my_grid
 
     # TO DO... consider moving this to imaginary_material or short_block

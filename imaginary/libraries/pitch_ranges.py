@@ -1,3 +1,6 @@
+import numpy as np
+import pandas as pd
+
 import math, abjad, calliope
 
 from imaginary.scores.score import ImaginaryScore
@@ -62,6 +65,7 @@ MAX_RANGES = dict(
     cco_bass  =  (-36, 3), # Contrabass [C1, Eb4] span: 39
     )
 
+# TO DO: this should all move to calliope
 class RangeFrame(calliope.CalliopeBase):
     from_bottom = None
     from_mid = None
@@ -213,15 +217,22 @@ class PitchRanges(calliope.CalliopeBase):
         my_abstract_seq = getattr(self, name, self.default)
         return my_abstract_seq.get_ranges(*self.max_ranges[name], length)
 
+    def as_data_frame(self, length, *args): 
+        """
+        args are the names of the ranges to include
+        """
+        return pd.DataFrame.from_records([self.get_ranges(name, length) for name in args])
+
+
 
 MID_RANGE = RangeFrame(
-    ratio_mid = 0.4,
-    spread = 18
+    ratio_mid = 0.45,
+    spread = 16
     )
 
 BOTTOM_RANGE = RangeFrame(
     from_bottom = 0,
-    spread = 18
+    spread = 16
     )
 
 TOP_RANGE = RangeFrame(
@@ -276,6 +287,15 @@ def get_ranges(**kwargs):
     return PitchRanges(
         default = RangeSeq().add_constant(**kwargs)
         )
+
+MID_RANGES = PitchRanges(MID_SEQ)
+BOTTOM_RANGES = PitchRanges(BOTTOM_SEQ)
+TOP_RANGES = PitchRanges(TOP_SEQ)
+LOW_TO_HIGH_RANGES = PitchRanges(LOW_TO_HIGH_SEQ)
+HIGH_TO_LOW_RANGES = PitchRanges(HIGH_TO_LOW_SEQ)
+
+
+# print(MID_RANGES.as_data_frame(4,"cco_flute1", "cco_oboe1"))
 
 # pr = PitchRanges(
 #     default = RangeSeq().add_constant(from_bottom=12, spread=16)
