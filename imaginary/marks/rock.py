@@ -250,9 +250,9 @@ def get_sb0():
 
 def get_sb1():
     sb = short_block.get_block().ext_segments(
-        high_rhythm = [high_rhythm().mul(10, ImaginaryLine)],
-        mid_rhythm = [mid_rhythm().mul(7, ImaginaryLine).bookend_pad(24)],
-        bass_rhythm = [bass_rhythm().mul(7, ImaginaryLine).bookend_pad(24)],
+        high_rhythm = [high_rhythm().mul(11, ImaginaryLine)],
+        mid_rhythm = [mid_rhythm().mul(8, ImaginaryLine).bookend_pad(24)],
+        bass_rhythm = [bass_rhythm().mul(8, ImaginaryLine).bookend_pad(24)],
 
         riff = [
             riffs(4).t(  12).stack_p(  ST_DN_I ).crop("events",0,2),
@@ -276,13 +276,13 @@ def get_sb1():
         high_drones = [drone.DroneLine(
                 line_pitches=( (28,),),
                 phrase_rhythm = (2,1,1),
-                phrase_count = 8,
+                phrase_count = 10,
                 ).bookend_pad(48,0),],
         mid_drones = [
             drone.DroneLine(
                 line_pitches=( (2,),),
                 phrase_rhythm = (1,1,2),
-                phrase_count = 10,
+                phrase_count = 12,
                 ).bookend_pad(24,0),
             drone.DroneLine(
                 line_pitches=( (3,),),
@@ -407,6 +407,42 @@ def get_sb2():
         ) 
 
     sb.fill_rests()
+
+    sb.add_grid("rock_g2_c4_5", 
+        cells=(4,5), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGH_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_flute","cco_flute1","cco_flute2",
+            "ooa_clarinet","cco_clarinet1","cco_clarinet2",
+            ),
+        # smart_range = (6,24),
+        tallies = tally_apps.LINE_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
+    sb.add_grid("rock_g2_c16_17", 
+        cells=(16,17), 
+        pitch_ranges = pitch_ranges.HIGH_TO_LOW_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_flute","ooa_clarinet",
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            ),
+        # smart_range = (6,24),
+        tallies = tally_apps.LINE_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
+    sb.add_grid("rock_g2_c26_31", 
+        cells=(26,27,28,29,30,31), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGH_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_flute","ooa_clarinet",
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            ),
+        # smart_range = (6,24),
+        tallies = tally_apps.LINE_REPEATS_OK,
+        output_directory = output_directory,
+    )
 
     return sb
         

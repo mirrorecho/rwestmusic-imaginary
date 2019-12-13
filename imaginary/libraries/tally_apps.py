@@ -30,7 +30,6 @@ LINE_SMOOTH_TALLY_APPS2 = (
     )
 
 
-
 LINE_SMOOTH_TALLY_APPS_UP = (
     calliope.TallyCircleOfFifthsRange(over_range_multiplier=-200), 
     calliope.TallyParallelIntervals(interval_ratings=[(0,-60), (7,-20)]), 
@@ -41,6 +40,20 @@ LINE_SMOOTH_TALLY_APPS_UP = (
             down_rating=0,
             ),
     calliope.TallyRepeatedJumps(),
+    calliope.TallyRepeatedJumps(
+        min_jump=5,
+        over_incremental_multiplier=-12
+        ),
+    )
+
+
+LINE_REPEATS_OK = (
+    calliope.TallyCircleOfFifthsRange(over_range_multiplier=-300), 
+    calliope.TallyParallelIntervals(interval_ratings=[(0,-60), (7,-20)]), 
+    calliope.TallyMelodicIntervals(
+            interval_ratings=[(0, 20), (1,80), (2,110), (3,80), (4,60), (6,-20), (8,-40), (9,-40), (10,-40)], 
+            over_incremental_multiplier=(12,-90),
+            ),
     calliope.TallyRepeatedJumps(
         min_jump=5,
         over_incremental_multiplier=-12

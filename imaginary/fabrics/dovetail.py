@@ -1,5 +1,8 @@
 import abjad, calliope
 from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
+    )
 from imaginary.fabrics import instrument_groups
 
 class Dovetail(ImaginaryFabric):
@@ -44,27 +47,40 @@ class Dovetail(ImaginaryFabric):
             for i in range(final_tail_index):
                 my_rhythm[0-i-1] = 0 - self.event_duration
 
+        my_line = ImaginaryLine()
+        
+        cell_rhythm = []
+        last_rest = None
+        for r in my_rhythm:
+            my_is_rest = r < 0
+            if last_rest is not None and my_is_rest != last_rest:
+                my_line.append(ImaginaryCell(rhythm=cell_rhythm))
+                cell_rhythm = []
+            cell_rhythm.append(r)
+            last_rest = my_is_rest
 
-        my_phrase = calliope.Phrase(rhythm=my_rhythm)
+        if cell_rhythm:
+            my_line.append(ImaginaryCell(rhythm=cell_rhythm))
 
-        return my_phrase
-
+        return my_line
 
 
 
 if __name__ == "__main__":
     s = Dovetail(
-        calliope.CellBlock(
-            calliope.Cell(rhythm=(1,)*24, pitches=(0,2,4)*8),
-            calliope.Cell(rhythm=(1,)*24, pitches=(5,7,9)*8),
-            calliope.Cell(rhythm=(1,)*24, pitches=(11,12)*12),
-            ),
+        # calliope.CellBlock(
+        #     calliope.Cell(rhythm=(1,)*24, pitches=(0,2,4)*8),
+        #     calliope.Cell(rhythm=(1,)*24, pitches=(5,7,9)*8),
+        #     calliope.Cell(rhythm=(1,)*24, pitches=(11,12)*12),
+        #     ),
         fabric_staves = ("cco_flute1", "cco_flute2", "cco_oboe1", "cco_oboe2"),
         dove_count = 4,
         dove_event_count = 4,
         tail_event_count = 1,
-        dovetail_duration = 16,
+        dovetail_duration = 32,
         event_duration = 1,
         offset = 3,
         )
+    for line in s.lines:
+        line.slur_cells()
     calliope.illustrate(s)

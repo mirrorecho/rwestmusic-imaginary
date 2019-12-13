@@ -225,14 +225,19 @@ class PitchRanges(calliope.CalliopeBase):
 
 
 
+BOTTOM_RANGE = RangeFrame(
+    from_bottom = 0,
+    spread = 16
+    )
+
 MID_RANGE = RangeFrame(
     ratio_mid = 0.45,
     spread = 16
     )
 
-BOTTOM_RANGE = RangeFrame(
-    from_bottom = 0,
-    spread = 16
+HIGHER_RANGE = RangeFrame(
+    ratio_top=0.7,
+    spread = 18
     )
 
 TOP_RANGE = RangeFrame(
@@ -293,6 +298,8 @@ BOTTOM_RANGES = PitchRanges(BOTTOM_SEQ)
 TOP_RANGES = PitchRanges(TOP_SEQ)
 LOW_TO_HIGH_RANGES = PitchRanges(LOW_TO_HIGH_SEQ)
 HIGH_TO_LOW_RANGES = PitchRanges(HIGH_TO_LOW_SEQ)
+HILL_UP_RANGES = PitchRanges(HILL_UP_SEQ)
+HILL_DOWN_RANGES = PitchRanges(HILL_DOWN_SEQ)
 
 
 # print(MID_RANGES.as_data_frame(4,"cco_flute1", "cco_oboe1"))

@@ -2,221 +2,382 @@ import abjad, calliope
 
 from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
-    dovetail, driving_off, hit_cells, 
-    hits, lick, melody, osti, pad, 
-    pizz_flutter, pulse, staggered_swell, swell_hit)
+    ditto, dovetail, driving_off, hit_cells, 
+    hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
+    pulse, staggered_swell, swell_hit)
+from imaginary.libraries import pitch_ranges
+from imaginary.stories import short_block
+from imaginary.stories.fabric import ImaginaryFabric
 import rock
+
 
 # SHOULD AVERAGE 20 bars
 # TEMPO = 160+ !!!!!!
 
 s = score.ImaginaryScore()
+sb = rock.get_sb2()
+s = sb().annotate(
+    slur_cells=True,
+    label=("phrases", "cells")
+    ).to_score(s)
+
+
+riffs_block = short_block.ChordsToSegmentBlock(
+    selectable = sb.with_only("riff",).segments[0],
+    sort_chords=True,
+    )
 
 # TO DO: add ranges
 # =======================================================
+
+harp1_riff = lambda_segment.LambdaSegment(
+    sb.with_only("riff",),
+    fabric_staves = (
+        "harp1",
+        ),
+    tag_events = {0:("mf",)},
+    func = lambda x: x,
+    )
+
+# TO DO: model this pattern... already used multiple times!
+poke_harp1 = []
+next_include = False
+for i,e in enumerate(harp1_riff.events):   
+    e_pitch = e.pitch
+    if len(e_pitch)>1 and abs(e_pitch[0]-e_pitch[1])==12:
+        next_include = True
+        poke_harp1.append(i)
+    elif next_include:
+        poke_harp1.append(i)
+        next_include = False
+    else:
+        next_include = False
+harp1_riff.segments[0].poke("events", *poke_harp1)
+
+piano_riff = lambda_segment.LambdaSegment(
+    riffs_block,
+    fabric_staves=("piano1","piano2",),
+    tag_all_note_events = (".",),
+    func = lambda x: x,
+    )
+piano_riff.staves["piano2"].events[0].tag("treble")
+
+pizz = lambda_segment.LambdaSegment(
+    sb.with_only("chords"),
+    ranges=pitch_ranges.LOW_TO_HIGH_RANGES
+    fabric_staves = instrument_groups.get_instruments("cco_strings"),
+    # mask_staves = ("cco_bass",),
+    # tag_events = {0:("mf", "pizz")},
+    assign_pitches_from_selectable = True,
+    func = lambda x: x,
+    # func = lambda x: x.crop("cells",1),
+    # func = lambda x: x.only_first("cells",8)
+    )
+
+
+s.extend_from(
+    harp1_riff,
+    piano_riff,
+    )
+# =======================================================
+
+
 # BARS 1-6
 
-# lb1 = rock.OstiLineBlock(
-#             phrase_count=5,
-#             cuts = (
-#                 dict(crop=(0,5)),
-#                 dict(crop=(0,5)),
-#                 dict(crop=(2,0)),
-#                 ),
-#             slur_cells = True,
-#             )
-# s.extend_from(melody.Melody(
-#         lb1,
-#         fabric_staves = instrument_groups.get_instruments("strings"),
-#         ))
+opening_bass= lambda_segment.LambdaSegment(
+    sb.with_only("bass_line"),
+    assign_pitches_from_selectable = True,
+    # ranges=pitch_ranges.PitchRanges(pitch_ranges.BOTTOM_SEQ),
+    fabric_staves = ("ooa_bassoon", "cco_bassoon", "ooa_bass_guitar", "cco_bass"),
+    # tag_events = {0:("mf", "pizz")},
+    # func = lambda x: x.only_first("cells",7).bookend_pad(0,3),
+    # func = lambda x: x.crop("cells",1),
+    func = lambda x: x,
+    )
+
 
 s.extend_from(
-    driving_off.DrivingOff(
+    opening_bass,
+    )
+
+# # =======================================================
+wind_cloud_4_5 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g2_c4_5"),
+    fabric_staves = (
+            "ooa_flute","cco_flute1","cco_flute2",
+            "ooa_clarinet","cco_clarinet1","cco_clarinet2",
+        ),
+    # tag_events = {0:("mp", "\\<",), 7:("mf",)},
+    # assign_pitches_from_selectable = True,
+    # selectable_start_beat = 16*4,
+    # func = lambda x: x.slur_cells().bookend_pad(2,3),
+    # func = lambda x: x.crop("cells",1),
+    bookend_beats = (7,0),
+    tag_all_note_events = ("-",),
+    tag_events = {0:("mp","\\<"), -1:(".","f")},
+    func = lambda x: x,
+    )
+sax_opening_driving = driving_off.DrivingOff(
+        sb,
+        ranges = pitch_ranges.HIGH_TO_LOW_RANGES,
         fabric_staves = instrument_groups.get_instruments("sax",),
-        bookend_beats = (0,1),
-        )
-    )
-s.extend_from(
-    driving_off.DrivingOff(
-        fabric_staves = instrument_groups.get_instruments("sax",),
-        off_count = 2,
-        bookend_beats = (8,3),
-        )
+        bookend_beats = (6,3),
     )
 
 
 s.extend_from(
-    rock.SyncoDovetail1(
-        fabric_staves=("cco_flute1", "cco_flute2",),
-        tag_events = {0:("NOTE: dovetail osti",)}
-        )
-    )
-s.extend_from(
-    rock.SyncoDovetail1(
-        fabric_staves=("cco_oboe1", "cco_oboe2",),
-        offset = 1,
-        )
-    )
-s.extend_from(
-    rock.SyncoDovetail1(
-        fabric_staves=("cco_clarinet1", "cco_clarinet2",),
-        offset = 1,
-        )
+    wind_cloud_4_5,
+    sax_opening_driving,
     )
 
-s.extend_from(
-    rock.SyncoDovetail2(
-        fabric_staves=("cco_flute1", "cco_flute2",),
-        extend_last_machine = True,
-        )
+s.fill_rests(beats=7*4)
+# # =======================================================
+cloud_16_17 = sb.get_grid("rock_g2_c16_17")
+wind_cloud_16_17 = lambda_segment.LambdaSegment(
+    cloud_16_17,
+    fabric_staves = (
+            "ooa_flute","ooa_clarinet",
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            ),
+    tag_all_note_events = ("-",),
+    tag_events = {1:("mp","\\<"), -1:(".","f")},
+    func = lambda x: x.bookend_pad(3,0),
     )
-s.extend_from(
-    rock.SyncoDovetail2(
-        fabric_staves=("cco_oboe1", "cco_oboe2",),
-        offset = 1,
-        extend_last_machine = True,
-        )
-    )
-s.extend_from(
-    rock.SyncoDovetail2(
-        fabric_staves=("cco_clarinet1", "cco_clarinet2",),
-        offset = 1,
-        extend_last_machine = True,
-        )
-    )
-
-s.fill_rests(fill_to="ooa_alto_sax1")
-# =======================================================
-# BARS 7-8
-s.extend_from(
-    swell_hit.SwellHit(
+brass_midpoint_driving = driving_off.DrivingOff(
+        sb,
+        selectable_start_beat=(7*4),
+        ranges = pitch_ranges.MID_RANGES,
         fabric_staves = instrument_groups.get_instruments("brass",),
-        swell_duration = 6,
-        hit_duration = 1,
-        hit_rest = 1,
-        # bookend_beats = (0,1),
-        )
+        bookend_beats = (2,0),
     )
 
 s.extend_from(
-    driving_off.DrivingOff(
-        fabric_staves = instrument_groups.get_instruments("sax",),
-        drive_in_beats = 3,
-        off_count = 2,
-        end_downbeat = True,
-        # bookend_beats = (0,1),
-        )
-    )
-s.fill_rests()
-
-
-# =======================================================
-# BARS 9-12
-# TO DO: ON BEAT 2
-# add loud piano chord and bartok pizz in string!
-# AND FLTZ? WITH STRAIGHT MUTED TUMPET?
-s.extend_from(
-    hits.Hits(
-        fabric_staves = ("piano1", "piano2", "harp1", "harp2"
-            ) + instrument_groups.get_instruments("strings",),
-        hits_spacing = (3,5.5,2.5),
-        bookend_beats = (1,0),
-        )
-    )
-s.extend_from(
-    driving_off.DrivingOff(
-        fabric_staves = instrument_groups.get_instruments("sax",),
-        bookend_beats = (8,1),
-        off_count = 3,
-        end_downbeat=True,
-        )
-    )
-s.extend_from(
-    rock.Flutter(
-        flutter_rhythm = (-1, 3, -5.5, 4.5, -2),
-        fabric_staves = ("ooa_trumpet", "cco_trumpet")
-        )
-    )
-s.extend_from(
-    rock.Flutter(
-        flutter_rhythm = (-4, 5.5, -2.5),
-        fabric_staves = ("ooa_flute", "cco_flute1", "cco_flute2",)
-        )
-    )
-s.extend_from(
-    swell_hit.SwellHit(
-        fabric_staves = instrument_groups.get_instruments("brass",),
-        mask_staves = ("ooa_trumpet", "cco_trumpet",),
-        swell_duration = 6,
-        hit_duration = 1,
-        hit_rest = 1,
-        bookend_beats = (8,0),
-        )
-    )
-
-s.fill_rests()
-# =======================================================
-# BARS 13-20
-s.extend_from(
-    driving_off.DrivingOff(
-        fabric_staves = instrument_groups.get_instruments("brass",),
-        bookend_beats = (0,1),
-        )
-    )
-s.extend_from(
-    driving_off.DrivingOff(
-        fabric_staves = instrument_groups.get_instruments("brass",),
-        off_count = 4,
-        bookend_beats = (8,3),
-        )
+    wind_cloud_16_17,
+    brass_midpoint_driving,
     )
 
 
-s.extend_from(
-    rock.SyncoDovetail1(
-        fabric_staves=("cco_flute1", "cco_flute2",),
-        bookend_beats = (5.5,2.5),
-        tag_events = {0:("NOTE: dovetail osti",)}
-        )
+s.fill_rests(beats=9*4)
+# # =======================================================
+# BAR 10+
+# # =======================================================
+
+flute_high_swells = staggered_swell.StaggeredSwells(
+    sb.with_only("high_drones"),
+    low_dynamic = "mp",
+    swell_dynamic = "mf",
+    cell_count = 1,
+    phrase_count=5,
+    swell_duration = 8,
+    selectable_start_beat=9*4,
+    # swell_split_ratios = (
+    #     1/2,
+    #     )
+    swell_staggers = (
+            (0,4),
+            (2,2),
+            (3,1),
+            # (0.5,0.5),
+            # (1,0)
+        ),
+    fabric_staves = (
+        "cco_flute1", "cco_flute2", "ooa_flute", 
+        ),
     )
 s.extend_from(
-    rock.SyncoDovetail1(
-        fabric_staves=("cco_oboe1", "cco_oboe2",),
-        bookend_beats = (5.5,2.5),
-        offset = 1,
-        )
-    )
-s.extend_from(
-    rock.SyncoDovetail1(
-        fabric_staves=("cco_clarinet1", "cco_clarinet2",),
-        bookend_beats = (5.5,2.5),
-        offset = 1,
-        )
+    flute_high_swells,
     )
 
-s.extend_from(
-    rock.SyncoDovetail2A(
-        fabric_staves=("cco_flute1", "cco_flute2",),
-        extend_last_machine = True,
-        )
-    )
-s.extend_from(
-    rock.SyncoDovetail2A(
-        fabric_staves=("cco_oboe1", "cco_oboe2",),
-        offset = 1,
-        extend_last_machine = True,
-        )
-    )
-s.extend_from(
-    rock.SyncoDovetail2A(
-        fabric_staves=("cco_clarinet1", "cco_clarinet2",),
-        offset = 1,
-        extend_last_machine = True,
-        )
-    )
+# # =======================================================
+
+s.cells.apply(lambda x:x.auto_respell())
+
+calliope.illustrate(s)
 
 
-s.fill_rests()
+# # TO DO ... consider moving this later
+
+# s.extend_from(
+#     driving_off.DrivingOff(
+#         fabric_staves = instrument_groups.get_instruments("sax",),
+#         off_count = 2,
+#         bookend_beats = (8,3),
+#         )
+#     )
+
+
+# s.extend_from(
+#     rock.SyncoDovetail1(
+#         fabric_staves=("cco_flute1", "cco_flute2",),
+#         tag_events = {0:("NOTE: dovetail osti",)}
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail1(
+#         fabric_staves=("cco_oboe1", "cco_oboe2",),
+#         offset = 1,
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail1(
+#         fabric_staves=("cco_clarinet1", "cco_clarinet2",),
+#         offset = 1,
+#         )
+#     )
+
+# s.extend_from(
+#     rock.SyncoDovetail2(
+#         fabric_staves=("cco_flute1", "cco_flute2",),
+#         extend_last_machine = True,
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail2(
+#         fabric_staves=("cco_oboe1", "cco_oboe2",),
+#         offset = 1,
+#         extend_last_machine = True,
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail2(
+#         fabric_staves=("cco_clarinet1", "cco_clarinet2",),
+#         offset = 1,
+#         extend_last_machine = True,
+#         )
+#     )
+
+# s.fill_rests(fill_to="ooa_alto_sax1")
+# # =======================================================
+# # BARS 7-8
+# s.extend_from(
+#     swell_hit.SwellHit(
+#         fabric_staves = instrument_groups.get_instruments("brass",),
+#         swell_duration = 6,
+#         hit_duration = 1,
+#         hit_rest = 1,
+#         # bookend_beats = (0,1),
+#         )
+#     )
+
+# s.extend_from(
+#     driving_off.DrivingOff(
+#         fabric_staves = instrument_groups.get_instruments("sax",),
+#         drive_in_beats = 3,
+#         off_count = 2,
+#         end_downbeat = True,
+#         # bookend_beats = (0,1),
+#         )
+#     )
+# s.fill_rests()
+
+
+# # =======================================================
+# # BARS 9-12
+# # TO DO: ON BEAT 2
+# # add loud piano chord and bartok pizz in string!
+# # AND FLTZ? WITH STRAIGHT MUTED TUMPET?
+# s.extend_from(
+#     hits.Hits(
+#         fabric_staves = ("piano1", "piano2", "harp1", "harp2"
+#             ) + instrument_groups.get_instruments("strings",),
+#         hits_spacing = (3,5.5,2.5),
+#         bookend_beats = (1,0),
+#         )
+#     )
+# s.extend_from(
+#     driving_off.DrivingOff(
+#         fabric_staves = instrument_groups.get_instruments("sax",),
+#         bookend_beats = (8,1),
+#         off_count = 3,
+#         end_downbeat=True,
+#         )
+#     )
+# s.extend_from(
+#     rock.Flutter(
+#         flutter_rhythm = (-1, 3, -5.5, 4.5, -2),
+#         fabric_staves = ("ooa_trumpet", "cco_trumpet")
+#         )
+#     )
+# s.extend_from(
+#     rock.Flutter(
+#         flutter_rhythm = (-4, 5.5, -2.5),
+#         fabric_staves = ("ooa_flute", "cco_flute1", "cco_flute2",)
+#         )
+#     )
+# s.extend_from(
+#     swell_hit.SwellHit(
+#         fabric_staves = instrument_groups.get_instruments("brass",),
+#         mask_staves = ("ooa_trumpet", "cco_trumpet",),
+#         swell_duration = 6,
+#         hit_duration = 1,
+#         hit_rest = 1,
+#         bookend_beats = (8,0),
+#         )
+#     )
+
+# s.fill_rests()
+# # =======================================================
+# # BARS 13-20
+# s.extend_from(
+#     driving_off.DrivingOff(
+#         fabric_staves = instrument_groups.get_instruments("brass",),
+#         bookend_beats = (0,1),
+#         )
+#     )
+# s.extend_from(
+#     driving_off.DrivingOff(
+#         fabric_staves = instrument_groups.get_instruments("brass",),
+#         off_count = 4,
+#         bookend_beats = (8,3),
+#         )
+#     )
+
+
+# s.extend_from(
+#     rock.SyncoDovetail1(
+#         fabric_staves=("cco_flute1", "cco_flute2",),
+#         bookend_beats = (5.5,2.5),
+#         tag_events = {0:("NOTE: dovetail osti",)}
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail1(
+#         fabric_staves=("cco_oboe1", "cco_oboe2",),
+#         bookend_beats = (5.5,2.5),
+#         offset = 1,
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail1(
+#         fabric_staves=("cco_clarinet1", "cco_clarinet2",),
+#         bookend_beats = (5.5,2.5),
+#         offset = 1,
+#         )
+#     )
+
+# s.extend_from(
+#     rock.SyncoDovetail2A(
+#         fabric_staves=("cco_flute1", "cco_flute2",),
+#         extend_last_machine = True,
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail2A(
+#         fabric_staves=("cco_oboe1", "cco_oboe2",),
+#         offset = 1,
+#         extend_last_machine = True,
+#         )
+#     )
+# s.extend_from(
+#     rock.SyncoDovetail2A(
+#         fabric_staves=("cco_clarinet1", "cco_clarinet2",),
+#         offset = 1,
+#         extend_last_machine = True,
+#         )
+#     )
+
+
+# s.fill_rests()
 
 # =======================================================
 
@@ -227,9 +388,5 @@ s.fill_rests()
 #     )
 # calliope.illustrate(sb_score, as_midi=True)
 
-
-
-
-calliope.illustrate(s)
 
 

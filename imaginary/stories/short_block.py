@@ -11,16 +11,21 @@ _GRIDS = {}
 # TO DO: move this to calliope
 class ChordSelect(calliope.Transform):
     index=0
+    sort_chords=True
 
     def transform(self, selectable, **kwargs):
         for event in selectable.note_events:
-            event.pitch = event.pitch[self.index]
+            if self.sort_chords:
+                event.pitch = list(reversed(sorted(event.pitch)))[self.index]
+            else:
+                event.pitch = event.pitch[self.index]
 
 # TO DO: move this to calliope
 class ChordsToBlockBase(calliope.FromSelectableFactory):
+    sort_chords=False
 
     def get_branch(self, node, index, *args, **kwargs):
-        return node(*args, **kwargs).transformed(ChordSelect(index=index))
+        return node(*args, **kwargs).transformed(ChordSelect(index=index, sort_chords=self.sort_chords))
 
     def get_branches(self, *args, **kwargs):
         chord_length = len(self.selectable.note_events[0].pitch)
