@@ -436,11 +436,12 @@ def get_sb2():
         cells=(26,27,28,29,30,31), 
         pitch_ranges = pitch_ranges.LOW_TO_HIGH_RANGES,
         pitch_ranges_instruments = (
-            "ooa_flute","ooa_clarinet",
+            "ooa_clarinet",
             "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            "ooa_bassoon",
             ),
         # smart_range = (6,24),
-        tallies = tally_apps.LINE_REPEATS_OK,
+        tallies = tally_apps.LINE_REPEATS_PREFER,
         output_directory = output_directory,
     )
 
@@ -452,19 +453,26 @@ def get_sb2():
 
 def get_sb3():
     sb = short_block.get_block().ext_segments()
+    intro_riff = (RIFF1_4().bookend_pad(0,2) + RIFF1_4 + RIFF2_4B +
+        RIFF2_4B().bookend_pad(2,0)
+        # RIFF_8C
+        # RIFF1_4().bookend_pad(2)
+        )
+    intro_riff.events[4,13].tag("fermata")
+
     big_riff = riffs(1).bookend_pad(2,)
     big_riff.events[0].tag("fermata")
     big_riff.ext(big_riff().t(7).stack_p( [(0,3,7)] ) )
-    big_riff_cell_len = len(big_riff.cells)
+    big_riff_cell_len = len(intro_riff.cells) + len(big_riff.cells)
 
     # TO DO: fix the fermata on the rest measures!
-    big_rest = big_riff().mask("cells",1,2,4,5)
+    # big_rest = big_riff().mask("cells",1,2,4,5)
     sb.ext_segments(
-        melody_line1 = [big_riff,],
-        melody_line2 = [big_riff,], # TO DO with FABRIC... move ranges down
-        counter_line = [big_riff,],
-        bass_line = [big_riff().t(-24),],
-        riff = [big_riff,],
+        melody_line1 = [intro_riff, big_riff,],
+        # melody_line2 = [intro_riff, big_riff,], # TO DO with FABRIC... move ranges down
+        counter_line = [intro_riff, big_riff,],
+        bass_line = [intro_riff, big_riff().t(-24),],
+        riff = [intro_riff, big_riff,],
         # chords = [big_rest(),],
         )
 
@@ -479,6 +487,7 @@ def get_sb3():
             RIFF_8B(respell="sharps").t(6),
             RIFF_8B(respell="flats").t(1),
             RIFF_8A(respell="flats").t(8),
+            RIFF_8B(respell="flats").t(15),
             ]
         )
 
@@ -486,25 +495,29 @@ def get_sb3():
     sb.ext_segments(
         melody_line1 = crazy_minor(
             sb.segments["riff"]().crop("cells",big_riff_cell_len),
-            poke=([c-big_riff_cell_len for c in (14,15,24,25, 27, 29, 31, 32, 33)]),
+            poke=([c-big_riff_cell_len for c in (20,21,30,31, 33, 35, 37, 38, 39,40,41)]),
             ),
         melody_line2 = chords.sus_maker(sb.segments["riff"], 
-            input_start_beat = 16,
+            # input_start_beat = 16,
             phrases = {
-                2:chords.RIFF_DICT_A,
-                3:{**chords.RIFF_DICT_B, **{"octave":-1}},
-                4:{**chords.RIFF_DICT_C, **{"octave":-1}},
-                5:{**chords.RIFF_DICT_C, **{"octave":-1}},
+                1:{**chords.RIFF_DICT_B, **{"octave":0,}},
+                2:{**chords.RIFF_DICT_B, **{"octave":0}},
+                3:{**chords.RIFF_DICT_D, **{"octave":0}},
+                4:{**chords.RIFF_DICT_D, **{"octave":1}},
+                6:chords.RIFF_DICT_A,
+                7:{**chords.RIFF_DICT_B, **{"octave":-1}},
+                8:{**chords.RIFF_DICT_C, **{"octave":-1}},
+                9:{**chords.RIFF_DICT_C, **{"octave":-1}},
                 
-                7:{**chords.RIFF_DICT_A, **{"octave": 1}},
-                8:{**chords.RIFF_DICT_B, **{"octave":0}},
-                9:{**chords.RIFF_DICT_C, **{"octave":0}},
-                10:{**chords.RIFF_DICT_C, **{"octave":0}},
+                11:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                12:{**chords.RIFF_DICT_B, **{"octave":0}},
+                13:{**chords.RIFF_DICT_C, **{"octave":0}},
+                14:{**chords.RIFF_DICT_C, **{"octave":0}},
             }
             ),
         chords = hits(
             sb.segments["riff"](), 
-            poke=(6, 10, 14, 16, 24, 26, 28, 30),
+            poke=(12, 16, 20, 22, 30, 32, 34, 36),
         ),
         )
 
@@ -659,30 +672,30 @@ def get_sb4():
 
 
 
-# if __name__ == '__main__':
-#     sb = short_block.get_block()
-#     sb.extend_from(get_sb0())
-#     # sb.extend_from(get_sb1())
-#     # sb.extend_from(get_sb2())
-#     # sb.extend_from(get_sb3())
-#     # sb.extend_from(get_sb4())
+if __name__ == '__main__':
+    sb = short_block.get_block()
+    # sb.extend_from(get_sb0())
+    # sb.extend_from(get_sb1())
+    # sb.extend_from(get_sb2())
+    sb.extend_from(get_sb3())
+    sb.extend_from(get_sb4())
 
-#     sb.annotate(
-#         slur_cells=True,
-#         label = ("cells","phrases"),
-#         ).fill_rests()
-#     # print(sb0.pitch_analyzer.pitches_at(34))
-#     s = sb.to_score(midi_tempo=160)
-#     s.staves["melody_line1"].midi_instrument = "trumpet"
-#     s.staves["melody_line2"].midi_instrument = "electric grand"
-#     # s.staves["riff"].midi_instrument = "electric guitar (clean)"
-#     s.staves["chords"].midi_instrument = "orchestral harp"
+    sb.annotate(
+        slur_cells=True,
+        label = ("cells","phrases"),
+        ).fill_rests()
+    # print(sb0.pitch_analyzer.pitches_at(34))
+    s = sb.to_score(midi_tempo=160)
+    s.staves["melody_line1"].midi_instrument = "trumpet"
+    s.staves["melody_line2"].midi_instrument = "electric grand"
+    # s.staves["riff"].midi_instrument = "electric guitar (clean)"
+    s.staves["chords"].midi_instrument = "orchestral harp"
     
-#     calliope.illustrate(s, 
-#         as_midi=True,
-#         # open_midi=True,
-#         # open_pdf=False,
-#         )
+    calliope.illustrate(s, 
+        as_midi=True,
+        open_midi=True,
+        # open_pdf=False,
+        )
 
 class Lick8(lick.Lick):
     lick_rhythm = (1.5, 1.5, 1)

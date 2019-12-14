@@ -280,6 +280,93 @@
                         -\tenuto
                         ]
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        c'8
+                        \mf
+                        -\tenuto
+                        [
+                        \<
+                        df'8
+                        -\tenuto
+                        ]
+                        ef'8
+                        -\tenuto
+                        [
+                        c'8
+                        -\tenuto
+                        ]
+                        ef'8
+                        -\tenuto
+                        [
+                        c'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        bf'8
+                        -\tenuto
+                        ]
+                        af'8
+                        -\tenuto
+                        [
+                        c''8
+                        -\tenuto
+                        ]
+                        c''8
+                        -\tenuto
+                        [
+                        gf'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        a'8
+                        -\tenuto
+                        ]
+                        df''8
+                        -\tenuto
+                        [
+                        c''8
+                        -\tenuto
+                        ]
+                        bf'8
+                        -\tenuto
+                        [
+                        g''8
+                        -\tenuto
+                        ]
+                        f''8
+                        -\tenuto
+                        [
+                        b''8
+                        -\tenuto
+                        ]
+                        ef''8
+                        -\tenuto
+                        [
+                        bf''8
+                        -\tenuto
+                        ]
+                        ef''8
+                        -\tenuto
+                        [
+                        c''8
+                        \f
+                        -\staccato
+                        -\tenuto
+                        ]
+                    }
                 }
                 \context Staff = "ooa_alto_sax1"
                 \with
@@ -307,8 +394,8 @@
                         [
                         ef'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -384,6 +471,93 @@
                         -\tenuto
                         ]
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        c'8
+                        \mf
+                        -\tenuto
+                        [
+                        \<
+                        af8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        ef'8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        ef'8
+                        -\tenuto
+                        [
+                        af8
+                        -\tenuto
+                        ]
+                        ef'8
+                        -\tenuto
+                        [
+                        ef'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        f'8
+                        -\tenuto
+                        [
+                        ef'8
+                        -\tenuto
+                        ]
+                        gf'8
+                        -\tenuto
+                        [
+                        bf'8
+                        -\tenuto
+                        ]
+                        d''8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        gf'8
+                        -\tenuto
+                        [
+                        ef'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        f'8
+                        \f
+                        -\staccato
+                        -\tenuto
+                        ]
+                    }
                 }
                 \context Staff = "ooa_alto_sax2"
                 \with
@@ -411,8 +585,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -488,6 +662,93 @@
                         -\tenuto
                         ]
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        ef8
+                        \mf
+                        -\tenuto
+                        [
+                        \<
+                        b8
+                        -\tenuto
+                        ]
+                        gf'8
+                        -\tenuto
+                        [
+                        f'8
+                        -\tenuto
+                        ]
+                        gf'8
+                        -\tenuto
+                        [
+                        c'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        bf8
+                        -\tenuto
+                        ]
+                        gf8
+                        -\tenuto
+                        [
+                        bf8
+                        -\tenuto
+                        ]
+                        af'8
+                        -\tenuto
+                        [
+                        gf'8
+                        -\tenuto
+                        ]
+                        f'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        bf8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        f'8
+                        -\tenuto
+                        [
+                        c''8
+                        -\tenuto
+                        ]
+                        df''8
+                        -\tenuto
+                        [
+                        f'8
+                        -\tenuto
+                        ]
+                        c''8
+                        -\tenuto
+                        [
+                        d''8
+                        \f
+                        -\staccato
+                        -\tenuto
+                        ]
+                    }
                 }
                 \context Staff = "ooa_tenor_sax"
                 \with
@@ -515,8 +776,8 @@
                         [
                         b8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -592,6 +853,93 @@
                         -\tenuto
                         ]
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        ef8
+                        \mf
+                        -\tenuto
+                        [
+                        \<
+                        ef8
+                        -\tenuto
+                        ]
+                        gf8
+                        -\tenuto
+                        [
+                        af8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        ef8
+                        -\tenuto
+                        ]
+                        g8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        ef8
+                        -\tenuto
+                        [
+                        f8
+                        -\tenuto
+                        ]
+                        f8
+                        -\tenuto
+                        [
+                        bf8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        c'8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        df'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        a8
+                        -\tenuto
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        gf8
+                        -\tenuto
+                        ]
+                        g8
+                        -\tenuto
+                        [
+                        a8
+                        \f
+                        -\staccato
+                        -\tenuto
+                        ]
+                    }
                 }
                 \context Staff = "ooa_bari_sax"
                 \with
@@ -620,8 +968,8 @@
                         [
                         gf8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -692,6 +1040,93 @@
                         -\tenuto
                         [
                         c'8
+                        \f
+                        -\staccato
+                        -\tenuto
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        g,8
+                        \mf
+                        -\tenuto
+                        [
+                        \<
+                        af,8
+                        -\tenuto
+                        ]
+                        ef8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        b,8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        d8
+                        -\tenuto
+                        ]
+                        b,8
+                        -\tenuto
+                        [
+                        f8
+                        -\tenuto
+                        ]
+                        g,8
+                        -\tenuto
+                        [
+                        ef8
+                        -\tenuto
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        f,8
+                        -\tenuto
+                        ]
+                        f8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        f8
+                        -\tenuto
+                        [
+                        ef8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        f8
+                        -\tenuto
+                        [
+                        bf8
+                        -\tenuto
+                        ]
+                        c'8
+                        -\tenuto
+                        [
+                        e8
                         \f
                         -\staccato
                         -\tenuto
@@ -808,9 +1243,99 @@
                         [
                         r8
                         ]
+                    }
+                    {
                         {
-                            R1 * 11
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
                         }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        r4
+                        g,8
+                        \mf
+                        -\tenuto
+                        [
+                        \<
+                        e,8
+                        -\tenuto
+                        ]
+                        bf,8
+                        -\tenuto
+                        [
+                        ef8
+                        -\tenuto
+                        ]
+                        af,8
+                        -\tenuto
+                        [
+                        ef8
+                        -\tenuto
+                        ]
+                        f8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        bf,8
+                        -\tenuto
+                        [
+                        df8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        bf8
+                        -\tenuto
+                        ]
+                        bf8
+                        -\tenuto
+                        [
+                        a8
+                        -\tenuto
+                        ]
+                        df'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        ef'8
+                        -\tenuto
+                        [
+                        c'8
+                        -\tenuto
+                        ]
+                        a8
+                        -\tenuto
+                        [
+                        a8
+                        -\tenuto
+                        ]
+                        as8
+                        -\tenuto
+                        [
+                        cs'8
+                        -\tenuto
+                        ]
+                        ds'8
+                        -\tenuto
+                        [
+                        a'8
+                        \f
+                        -\staccato
+                        -\tenuto
+                        ]
                     }
                 }
             >>
@@ -845,8 +1370,8 @@
                         [
                         af,8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -874,6 +1399,13 @@
                         ~
                         ]
                         g4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -905,8 +1437,8 @@
                         [
                         f'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -934,6 +1466,13 @@
                         ~
                         ]
                         g'4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -966,8 +1505,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -996,6 +1535,13 @@
                         ]
                         c'4
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
             >>
             \context StaffGroup = "ooa_percussion"
@@ -1020,6 +1566,12 @@
                             R1 * 2
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "ooa_drum_set"
                 \with
@@ -1039,6 +1591,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1063,6 +1621,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1176,8 +1740,17 @@
                         [
                         r8
                         ]
+                    }
+                    {
                         {
-                            R1 * 11
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1204,6 +1777,12 @@
                             R1 * 2
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "ooa_violin2"
                 \with
@@ -1223,6 +1802,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1247,6 +1832,12 @@
                             R1 * 2
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "ooa_cello2"
                 \with
@@ -1267,6 +1858,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1519,6 +2116,12 @@
                             R1 * 2
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "cco_oboe2"
                 \with
@@ -1538,6 +2141,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1603,6 +2212,12 @@
                             R1 * 2
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "cco_clarinet2"
                 \with
@@ -1664,6 +2279,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1777,8 +2398,17 @@
                         [
                         r8
                         ]
+                    }
+                    {
                         {
-                            R1 * 11
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -1814,8 +2444,8 @@
                         [
                         bf8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1843,6 +2473,13 @@
                         ~
                         ]
                         bf4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -1874,8 +2511,8 @@
                         [
                         c''8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1903,6 +2540,13 @@
                         ~
                         ]
                         c''4
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -1935,8 +2579,8 @@
                         [
                         f8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1965,6 +2609,13 @@
                         ]
                         ef4
                     }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
             >>
             \context RhythmicStaff = "cco_percussion"
@@ -1984,6 +2635,12 @@
                     {
                         \accidentalStyle modern-cautionary
                         R1 * 2
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 3
                     }
                 }
             }
@@ -2280,6 +2937,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -3233,16 +3896,48 @@
                 }
                 {
                     {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Violin 1" }
+                        \set Staff.shortInstrumentName = \markup { Vln.I }
+                        af'4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin 1" }
-                            \set Staff.shortInstrumentName = \markup { Vln.I }
-                            R1 * 7
+                            R1 * 2
                         }
-                    }
-                    {
+                        ef'4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
+                            R1 * 5
+                        }
+                        f'4
+                        r4
+                        r4
+                        r8
+                        [
+                        c''8
+                        ]
+                        r2
+                        r4
+                        af'4
+                        {
+                            R1 * 1
+                        }
+                        g''4
+                        r4
+                        c'''4
+                        af''4
+                        {
+                            R1 * 2
+                        }
+                        r2
+                        r4
+                        d'''4
+                        d'''4
+                        r4
+                        r2
+                        {
                             R1 * 2
                         }
                     }
@@ -3254,16 +3949,48 @@
                 }
                 {
                     {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { "Violin 2" }
+                        \set Staff.shortInstrumentName = \markup { Vln.II }
+                        e'4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin 2" }
-                            \set Staff.shortInstrumentName = \markup { Vln.II }
-                            R1 * 7
+                            R1 * 2
                         }
-                    }
-                    {
+                        b4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
+                            R1 * 5
+                        }
+                        bf'4
+                        r4
+                        r4
+                        r8
+                        [
+                        f'8
+                        ]
+                        r2
+                        r4
+                        ef''4
+                        {
+                            R1 * 1
+                        }
+                        c''4
+                        r4
+                        df''4
+                        ef''4
+                        {
+                            R1 * 2
+                        }
+                        r2
+                        r4
+                        e''4
+                        bf''4
+                        r4
+                        r2
+                        {
                             R1 * 2
                         }
                     }
@@ -3275,16 +4002,48 @@
                 }
                 {
                     {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Viola }
+                        \set Staff.shortInstrumentName = \markup { Vla. }
+                        e'4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
-                            \set Staff.instrumentName = \markup { Viola }
-                            \set Staff.shortInstrumentName = \markup { Vla. }
-                            R1 * 7
+                            R1 * 2
                         }
-                    }
-                    {
+                        b4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
+                            R1 * 5
+                        }
+                        df'4
+                        r4
+                        r4
+                        r8
+                        [
+                        af8
+                        ]
+                        r2
+                        r4
+                        f'4
+                        {
+                            R1 * 1
+                        }
+                        df'4
+                        r4
+                        c'4
+                        df'4
+                        {
+                            R1 * 2
+                        }
+                        r2
+                        r4
+                        d'4
+                        bf'4
+                        r4
+                        r2
+                        {
                             R1 * 2
                         }
                     }
@@ -3296,17 +4055,49 @@
                 }
                 {
                     {
+                        \accidentalStyle modern-cautionary
+                        \set Staff.instrumentName = \markup { Cello }
+                        \set Staff.shortInstrumentName = \markup { Vc. }
+                        \clef "bass"
+                        b,4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
-                            \set Staff.instrumentName = \markup { Cello }
-                            \set Staff.shortInstrumentName = \markup { Vc. }
-                            \clef "bass"
-                            R1 * 7
+                            R1 * 2
                         }
-                    }
-                    {
+                        gf,4
+                        r4
+                        r2
                         {
-                            \accidentalStyle modern-cautionary
+                            R1 * 5
+                        }
+                        bf,4
+                        r4
+                        r4
+                        r8
+                        [
+                        f8
+                        ]
+                        r2
+                        r4
+                        ef4
+                        {
+                            R1 * 1
+                        }
+                        c4
+                        r4
+                        af4
+                        af4
+                        {
+                            R1 * 2
+                        }
+                        r2
+                        r4
+                        a4
+                        f'4
+                        r4
+                        r2
+                        {
                             R1 * 2
                         }
                     }
@@ -3421,8 +4212,17 @@
                         [
                         r8
                         ]
+                    }
+                    {
                         {
-                            R1 * 11
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -3463,8 +4263,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     [
                     c''8
                     ]
@@ -3483,8 +4283,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     [
                     c''8
                     ]
@@ -3503,8 +4303,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.3 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.3 }
                     [
                     c''8
                     ]
@@ -3523,8 +4323,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     [
                     c''8
                     ]
@@ -3543,8 +4343,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.5 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.5 }
                     [
                     c''8
                     ]
@@ -3583,8 +4383,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     [
                     c''8
                     ]
@@ -3603,8 +4403,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.8 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.8 }
                     [
                     c''8
                     ]
@@ -3623,8 +4423,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.9 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.9 }
                     [
                     (
                     <c' c''>16
@@ -3645,8 +4445,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     [
                     (
                     <c' c''>16
@@ -3667,8 +4467,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     [
                     (
                     <c' c''>16
@@ -3733,8 +4533,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.14 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.14 }
                     [
                     (
                     <c' c''>16
@@ -3819,40 +4619,40 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.3 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.3 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.5 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.5 }
                     <c c'>4
                     (
                     r4
@@ -3867,16 +4667,16 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.8 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.8 }
                     <c c'>4
                     (
                     r4
@@ -3904,8 +4704,8 @@
                     r2
                     r4
                     <fs, a, cs fs a cs'>8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     (
                     <ds fs gs as b ds'>8
@@ -3936,8 +4736,8 @@
                     r2
                     r4
                     <gs, b, ds gs b ds'>8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     (
                     <f gs as c' cs' f'>8
@@ -4104,8 +4904,8 @@
                     )
                     [
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     ]
                     <cs ds>8
                     [
@@ -4151,8 +4951,8 @@
                     )
                     [
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.3 }
                     ]
                     <ef f>8
                     [
@@ -4255,8 +5055,8 @@
                     ^ \markup { c.1 }
                     [
                     <gs gs'>8
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     ]
                     (
                     <a e'>8
@@ -4274,8 +5074,8 @@
                     ^ \markup { c.3 }
                     ]
                     <gf gf'>8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     (
                     <ef' af'>8
@@ -4320,8 +5120,8 @@
                     ^ \markup { c.7 }
                     [
                     <ds' ds''>8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     ]
                     (
                     <e' b'>8
@@ -4385,8 +5185,8 @@
                     ^ \markup { c.13 }
                     [
                     <ds'' ds'''>8
-                    ^ \markup { c.14 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.14 }
                     ]
                     (
                     <e'' b''>8
@@ -4404,8 +5204,8 @@
                     ^ \markup { c.15 }
                     ]
                     <af af'>8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     (
                     <f' bf'>8
@@ -4452,8 +5252,8 @@
                     )
                     [
                     <c' c''>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ]
                     (
                     <ef' bf'>8
@@ -4473,8 +5273,8 @@
                     ]
                     )
                     <c' c''>8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     (
                     <df' af'>8
@@ -4485,8 +5285,8 @@
                     ]
                     )
                     <c' c''>8
-                    ^ \markup { c.23 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.23 }
                     [
                     (
                     <df' af'>8
@@ -4594,8 +5394,8 @@
                     ]
                     )
                     <d' d''>8
-                    ^ \markup { p.19 }
                     ^ \markup { c.33 }
+                    ^ \markup { p.19 }
                     [
                     (
                     <ef' bf'>8
@@ -4632,8 +5432,8 @@
                     ^ \markup { c.36 }
                     ]
                     <c' c''>8
-                    ^ \markup { c.37 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.37 }
                     [
                     (
                     <a' d''>8
@@ -4695,8 +5495,8 @@
                     r8
                     [
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ~
                     ]
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
@@ -4706,8 +5506,8 @@
                     r4
                     r4
                     <c' df' ef' f' af' c'' ef''>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     {
                         R1 * 1
                     }
@@ -4730,8 +5530,8 @@
                     ^ \markup { p.18 }
                     ^ \markup { c.32 }
                     <d' ef' f' g' bf' c'' d'' a'' bf''>4
-                    ^ \markup { p.19 }
                     ^ \markup { c.33 }
+                    ^ \markup { p.19 }
                     r4
                     r2
                     {
@@ -4759,32 +5559,32 @@
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     (
                     <f'''>2
                     )
@@ -4795,8 +5595,8 @@
                     <f'''>2
                     )
                     <g'' d'''>4
-                    ^ \markup { p.7 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.7 }
                     (
                     <g'' d'''>4
                     <g'' d'''>4
@@ -4811,8 +5611,8 @@
                     <g'' d'''>4
                     )
                     <g'' d'''>4
-                    ^ \markup { c.10 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.10 }
                     (
                     <g'' d'''>4
                     <g'' d'''>4

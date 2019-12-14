@@ -64,12 +64,12 @@ piano_riff.staves["piano2"].events[0].tag("treble")
 
 pizz = lambda_segment.LambdaSegment(
     sb.with_only("chords"),
-    ranges=pitch_ranges.LOW_TO_HIGH_RANGES
+    ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
     fabric_staves = instrument_groups.get_instruments("cco_strings"),
-    # mask_staves = ("cco_bass",),
+    mask_staves = ("cco_bass",),
     # tag_events = {0:("mf", "pizz")},
     assign_pitches_from_selectable = True,
-    func = lambda x: x,
+    func = lambda x: x.transformed(calliope.StandardDurations()),
     # func = lambda x: x.crop("cells",1),
     # func = lambda x: x.only_first("cells",8)
     )
@@ -78,6 +78,7 @@ pizz = lambda_segment.LambdaSegment(
 s.extend_from(
     harp1_riff,
     piano_riff,
+    pizz,
     )
 # =======================================================
 
@@ -92,7 +93,7 @@ opening_bass= lambda_segment.LambdaSegment(
     # tag_events = {0:("mf", "pizz")},
     # func = lambda x: x.only_first("cells",7).bookend_pad(0,3),
     # func = lambda x: x.crop("cells",1),
-    func = lambda x: x,
+    func = lambda x: x.only_first("cells",14),
     )
 
 
@@ -188,10 +189,32 @@ s.extend_from(
     flute_high_swells,
     )
 
+s.fill_rests(beats=12*4)
+# # =======================================================
+cloud_26_31 = sb.get_grid("rock_g2_c26_31")
+wind_cloud_26_31 = lambda_segment.LambdaSegment(
+    cloud_26_31,
+    fabric_staves = (
+            "ooa_clarinet",
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            "ooa_bassoon",
+            ),
+    tag_all_note_events = ("-",),
+    tag_events = {1:("mf","\\<"), -1:(".","f")},
+    func = lambda x: x.bookend_pad(3,0),
+    )
+
+s.extend_from(
+    wind_cloud_26_31,
+    )
+
+
+
 # # =======================================================
 
 s.cells.apply(lambda x:x.auto_respell())
 
+s.fill_rests()
 calliope.illustrate(s)
 
 
