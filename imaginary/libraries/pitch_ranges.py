@@ -236,7 +236,7 @@ MID_RANGE = RangeFrame(
     )
 
 HIGHER_RANGE = RangeFrame(
-    ratio_top=0.7,
+    ratio_top=0.75,
     spread = 18
     )
 
@@ -247,6 +247,12 @@ TOP_RANGE = RangeFrame(
 
 def constant_seq(**kwargs):
     return RangeSeq().add_constant(**kwargs)
+
+# TO DO.. if kwargs
+def get_ranges(**kwargs):
+    return PitchRanges(
+        default = RangeSeq().add_constant(**kwargs)
+        )
 
 MID_SEQ = RangeSeq().add_constant_abstract(MID_RANGE)
 BOTTOM_SEQ = RangeSeq().add_constant_abstract(BOTTOM_RANGE)
@@ -259,9 +265,23 @@ LOW_TO_HIGH_SEQ = RangeSeq().add_abstract(
     1, 
     TOP_RANGE,
     )
+LOW_TO_HIGHISH_SEQ = RangeSeq().add_abstract(
+    0, 
+    BOTTOM_RANGE,
+    ).add_abstract(
+    1, 
+    HIGHER_RANGE,
+    )
 HIGH_TO_LOW_SEQ = RangeSeq().add_abstract(
     0, 
     TOP_RANGE,
+    ).add_abstract(
+    1, 
+    BOTTOM_RANGE,
+    )
+HIGHISH_TO_LOW_SEQ = RangeSeq().add_abstract(
+    0, 
+    HIGHER_RANGE,
     ).add_abstract(
     1, 
     BOTTOM_RANGE,
@@ -287,19 +307,58 @@ HILL_DOWN_SEQ = RangeSeq().add_abstract(
     TOP_RANGE,
     )
 
-# TO DO.. if kwargs
-def get_ranges(**kwargs):
-    return PitchRanges(
-        default = RangeSeq().add_constant(**kwargs)
-        )
+
+MIDDISH_TO_HIGH_SEQ = RangeSeq().add_abstract(
+    0, RangeFrame(
+        ratio_mid = 0.4,
+        spread = 16
+        ),
+    ).add_abstract(
+    1, TOP_RANGE,
+    )
+MIDDISH_TO_LOW_SEQ = RangeSeq().add_abstract(
+    0, RangeFrame(
+        ratio_mid = 0.6,
+        spread = 16
+        ),
+    ).add_abstract(
+    1, BOTTOM_RANGE,
+    )
 
 MID_RANGES = PitchRanges(MID_SEQ)
 BOTTOM_RANGES = PitchRanges(BOTTOM_SEQ)
 TOP_RANGES = PitchRanges(TOP_SEQ)
 LOW_TO_HIGH_RANGES = PitchRanges(LOW_TO_HIGH_SEQ)
+LOW_TO_HIGHISH_RANGES = PitchRanges(LOW_TO_HIGHISH_SEQ)
 HIGH_TO_LOW_RANGES = PitchRanges(HIGH_TO_LOW_SEQ)
+HIGHISH_TO_LOW_RANGES = PitchRanges(HIGH_TO_LOW_SEQ)
 HILL_UP_RANGES = PitchRanges(HILL_UP_SEQ)
 HILL_DOWN_RANGES = PitchRanges(HILL_DOWN_SEQ)
+
+MID_TO_HIGH_RANGES=PitchRanges(MIDDISH_TO_HIGH_SEQ)
+MID_TO_LOW_RANGES=PitchRanges(MIDDISH_TO_LOW_SEQ)
+
+MID_TO_EXTREME_RANGES= PitchRanges(MIDDISH_TO_HIGH_SEQ)
+MID_TO_EXTREME_RANGES.add(
+    ooa_tenor_sax=MIDDISH_TO_LOW_SEQ,
+    ooa_bari_sax=MIDDISH_TO_LOW_SEQ,
+    ooa_bassoon=MIDDISH_TO_LOW_SEQ,
+    ooa_trombone=MIDDISH_TO_LOW_SEQ,
+    ooa_bass_guitar=MIDDISH_TO_LOW_SEQ,
+    ooa_cello1=MIDDISH_TO_LOW_SEQ,
+    ooa_cello2=MIDDISH_TO_LOW_SEQ,
+    cco_bassoon=MIDDISH_TO_LOW_SEQ,
+    cco_trombone=MIDDISH_TO_LOW_SEQ,
+    piano2=MIDDISH_TO_LOW_SEQ,
+    cco_cello=MIDDISH_TO_LOW_SEQ,
+    cco_bass=MIDDISH_TO_LOW_SEQ,
+    )
+
+# print(MID_TO_EXTREME_RANGES.get_ranges("ooa_violin1"))
+# print(MID_TO_EXTREME_RANGES.get_ranges("ooa_cello1"))
+
+
+
 
 
 # print(MID_RANGES.as_data_frame(4,"cco_flute1", "cco_oboe1"))

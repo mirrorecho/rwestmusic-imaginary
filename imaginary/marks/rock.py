@@ -521,7 +521,75 @@ def get_sb3():
         ),
         )
 
+    # EXTRAS!
+    line_2 = sb.segments["melody_line2"]
+    line_2.cells[0].rhythm=(-2,-2)
+    line_2.cells[0].events[1].tag("fermata")
+    line_2.cells[3].events[0].tag("fermata")
+    line_2.cells[4].events[0].tag("fermata")
+    line_2.cells[5].rhythm=(-2,-2, -6)
+    line_2.cells[5].events[1].tag("fermata")
+    print(line_2.cells[0].events[1].rest_can_combine)
+
     sb.fill_rests()
+
+    sb.add_grid("rock_g3_c10_11_sax_strings", 
+        cells=(10,11), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "sax") + ("ooa_violin1","ooa_cello1"),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g3_c10_11_winds_brass", 
+        cells=(10,11), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "ooa_winds","ooa_brass"),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g3_c20_21", 
+        cells=(20,21), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "ooa_winds","sax") + ("ooa_violin1","ooa_cello1"),
+        stack = ((0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g3_c30_31", 
+        cells=(30,31), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = (
+            "cco_flute1","cco_flute2","cco_clarinet1","cco_clarinet2","cco_bassoon",
+            "cco_violin_i","cco_violin_ii","cco_viola","cco_cello"),
+        stack = ((0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g3_c33", 
+        cells=(33,), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "ooa_winds","sax","ooa_brass",
+            ) + ("ooa_violin1","ooa_cello1"),
+        stack = ((0,0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g3_c35", 
+        cells=(35,), 
+        pitch_ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "cco_winds","cco_brass","cco_strings"
+            ),
+        stack = ((0,0,0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
     return sb
 
 # ======================================================================
@@ -659,6 +727,7 @@ def get_sb4():
     # extras!
     sb.segments["mid_drones"].cells[45].t(12)
 
+
     for p in sb.segments["mid_drones"].phrases[6:]:
         p.stack_p( ST_7UP )
 
@@ -678,7 +747,7 @@ if __name__ == '__main__':
     # sb.extend_from(get_sb1())
     # sb.extend_from(get_sb2())
     sb.extend_from(get_sb3())
-    sb.extend_from(get_sb4())
+    # sb.extend_from(get_sb4())
 
     sb.annotate(
         slur_cells=True,
@@ -693,7 +762,7 @@ if __name__ == '__main__':
     
     calliope.illustrate(s, 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         # open_pdf=False,
         )
 

@@ -22,6 +22,7 @@ class FabricFactory(calliope.FromSelectableFactory):
     assign_pitches_from_selectable = True
     selectable_start_beat = 0
     remove_empty_staves = True
+    transposes = None
     # selectable_staves_map = {sdfs:sdfsdfs
     #     }
 
@@ -69,6 +70,9 @@ class FabricFactory(calliope.FromSelectableFactory):
 
             if self.tag_all_note_events:
                 my_machine.note_events.tag(*self.tag_all_note_events)
+
+            if self.transposes and staff_name in self.transposes:
+                my_machine.t(self.transposes[staff_name])
 
             if self.wrap_in is not None:
                 my_bubble = self.wrap_in()
