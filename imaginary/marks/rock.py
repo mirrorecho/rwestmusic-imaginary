@@ -590,6 +590,25 @@ def get_sb3():
         tallies = tally_apps.LINE_SMOOTH_2,
         output_directory = output_directory,
     )
+    sb.add_grid("rock_g3_c37_41_winds", 
+        cells=(37,38,39,40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "flutes","clarinets"),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g3_c38_41_oboes_strings", 
+        cells=(38,39,40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "oboes","cco_strings")[:-1],
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
     return sb
 
 # ======================================================================
@@ -746,8 +765,8 @@ if __name__ == '__main__':
     # sb.extend_from(get_sb0())
     # sb.extend_from(get_sb1())
     # sb.extend_from(get_sb2())
-    sb.extend_from(get_sb3())
-    # sb.extend_from(get_sb4())
+    # sb.extend_from(get_sb3())
+    sb.extend_from(get_sb4())
 
     sb.annotate(
         slur_cells=True,

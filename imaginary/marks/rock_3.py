@@ -208,6 +208,18 @@ ooa_cloud_33 = lambda_segment.LambdaSegment(
 s.extend_from(ooa_cloud_33,)
 s.fill_rests(fill_to="ooa_flute")
 
+lb_cco_cloud_35 = sb.get_grid("rock_g3_c35")
+cco_cloud_35 = lambda_segment.LambdaSegment(
+    lb_cco_cloud_35,
+    fabric_staves = instrument_groups.get_instruments(
+            "cco_winds","cco_brass","cco_strings"
+            ),
+    tag_events = {1:("mf", "\\<", "(",), 2:(")",), -1:("f","-",">")},
+    func = lambda x: x.bookend_pad(2.5),
+    )
+s.extend_from(cco_cloud_35,)
+s.fill_rests(fill_to="cco_flute1")
+
 # piano_lh.staves["piano2"].cells[0].stack_p([ (0,5), ])
 
 # s.fill_rests(beats=12)
