@@ -239,8 +239,8 @@
                         [
                         d'''8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -518,8 +518,8 @@
                         [
                         b'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -797,8 +797,8 @@
                         [
                         b'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -1054,8 +1054,8 @@
                         [
                         d'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -1311,8 +1311,8 @@
                         [
                         gf8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -1559,8 +1559,8 @@
                         [
                         gf8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -1816,8 +1816,8 @@
                         [
                         b,8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -2002,14 +2002,20 @@
                         [
                         gf'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -2141,24 +2147,30 @@
                         r2
                         r8
                         [
-                        gf8
+                        gf'8
                         \mf
                         ]
                         \<
                         (
-                        bf8
+                        bf'8
                         )
                         [
-                        b8
+                        b'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -2301,14 +2313,20 @@
                         [
                         d'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -2383,6 +2401,12 @@
                             R1 * 1
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "ooa_drum_set"
                 \with
@@ -2450,6 +2474,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -2524,6 +2554,12 @@
                             R1 * 1
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "ooa_bass_guitar"
                 \with
@@ -2592,6 +2628,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -2780,8 +2822,8 @@
                         [
                         gf''8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -2974,8 +3016,8 @@
                         [
                         gf''8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -3209,8 +3251,8 @@
                         [
                         d'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -3397,8 +3439,8 @@
                         [
                         d'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -3562,8 +3604,8 @@
                         [
                         f''8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -3728,8 +3770,8 @@
                         [
                         df''8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -3857,8 +3899,8 @@
                         [
                         f'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -3980,8 +4022,8 @@
                         [
                         bf'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -4140,8 +4182,8 @@
                         [
                         bf8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -4306,8 +4348,8 @@
                         [
                         df'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -4473,8 +4515,8 @@
                         [
                         f,8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -4610,9 +4652,15 @@
                         [
                         df8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -4710,9 +4758,15 @@
                         [
                         df'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -4811,9 +4865,15 @@
                         [
                         f,8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
                     }
                 }
             >>
@@ -4882,6 +4942,12 @@
                     {
                         \accidentalStyle modern-cautionary
                         R1 * 1
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 3
                     }
                 }
             }
@@ -4972,6 +5038,12 @@
                             R1 * 1
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
                 \context Staff = "harp2"
                 \with
@@ -5057,6 +5129,12 @@
                         {
                             \accidentalStyle modern-cautionary
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
                         }
                     }
                 }
@@ -5446,6 +5524,12 @@
                             R1 * 1
                         }
                     }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
                 }
             >>
             \context StaffGroup = "cco_strings"
@@ -5581,8 +5665,8 @@
                         [
                         bf'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -5758,8 +5842,8 @@
                         [
                         f'8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -5935,8 +6019,8 @@
                         [
                         bf8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -6113,8 +6197,8 @@
                         [
                         df8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
                     }
                     {
@@ -6254,9 +6338,15 @@
                         [
                         bf,,8
                         \f
-                        -\tenuto
                         -\accent
+                        -\tenuto
                         ]
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
                     }
                 }
             >>
@@ -6359,8 +6449,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -6372,8 +6462,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.3 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.3 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -6387,8 +6477,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -6454,8 +6544,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     r8
                     ]
@@ -6465,8 +6555,8 @@
                     ^ \markup { c.13 }
                     [
                     r8
-                    ^ \markup { p.7 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.7 }
                     ]
                     r2
                     r8
@@ -6485,8 +6575,8 @@
                     ^ \markup { c.17 }
                     [
                     r8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     ]
                     r4
                     r4
@@ -6527,8 +6617,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     r8
                     ]
@@ -6541,8 +6631,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     ]
                     r2
                     r8
@@ -6565,8 +6655,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     r4
                     r4
@@ -6643,8 +6733,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.18 }
                     ^ \markup { c.36 }
+                    ^ \markup { p.18 }
                     [
                     r8
                     ]
@@ -6684,8 +6774,8 @@
                     ]
                     )
                     <c' ds' g'>8
-                    ^ \markup { p.20 }
                     ^ \markup { c.40 }
+                    ^ \markup { p.20 }
                     [
                     (
                     <cs' e' gs'>8
@@ -6944,8 +7034,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -6957,8 +7047,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.3 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.3 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -6972,8 +7062,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -7085,8 +7175,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -7098,8 +7188,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.3 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.3 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -7113,8 +7203,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a,,8
                     ^ \markup { c.7 }
                     [
@@ -7225,8 +7315,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -7238,8 +7328,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.3 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.3 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -7253,8 +7343,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -7320,8 +7410,8 @@
                     ]
                     )
                     b8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     (
                     c'8
@@ -7339,8 +7429,8 @@
                     ^ \markup { c.13 }
                     [
                     b8
-                    ^ \markup { p.7 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.7 }
                     ]
                     (
                     c'8
@@ -7377,8 +7467,8 @@
                     ^ \markup { c.17 }
                     [
                     b8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     ]
                     (
                     c'8
@@ -7427,8 +7517,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     (
                     a'8
@@ -7448,8 +7538,8 @@
                     )
                     [
                     fs'8
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     ]
                     (
                     a'8
@@ -7490,8 +7580,8 @@
                     )
                     [
                     fs'8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     (
                     a'8
@@ -7588,8 +7678,8 @@
                     ]
                     )
                     bf8
-                    ^ \markup { p.18 }
                     ^ \markup { c.36 }
+                    ^ \markup { p.18 }
                     [
                     (
                     b8
@@ -7634,8 +7724,8 @@
                     ]
                     )
                     c''8
-                    ^ \markup { p.20 }
                     ^ \markup { c.40 }
+                    ^ \markup { p.20 }
                     [
                     (
                     df''8
@@ -7681,19 +7771,19 @@
                     ^ \markup { c.2 }
                     r4
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     r4
                     r4
-                    ^ \markup { p.3 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.3 }
                     r4
                     r4
                     ^ \markup { c.5 }
                     r4
                     r4
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     r4
                     r4
                     ^ \markup { c.7 }
@@ -7714,16 +7804,16 @@
                     ^ \markup { c.11 }
                     r2
                     <b c' d' e' g' b'>4
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     r4
                     r4
                     r8
                     ^ \markup { c.13 }
                     [
                     r8
-                    ^ \markup { p.7 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.7 }
                     ]
                     r8
                     [
@@ -7743,8 +7833,8 @@
                     ^ \markup { c.17 }
                     [
                     r8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     ]
                     r8
                     [
@@ -7765,8 +7855,8 @@
                     ^ \markup { c.21 }
                     r2
                     <fs' a' b' d'' fs''>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     r4
                     r8
                     [
@@ -7776,8 +7866,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     ]
                     r8
                     [
@@ -7798,8 +7888,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     r8
                     [
@@ -7843,8 +7933,8 @@
                     r8
                     ]
                     <bf b ef' gf' bf'>4
-                    ^ \markup { p.18 }
                     ^ \markup { c.36 }
+                    ^ \markup { p.18 }
                     r4
                     r8
                     [
@@ -7869,8 +7959,8 @@
                     r8
                     ]
                     r4
-                    ^ \markup { p.20 }
                     ^ \markup { c.40 }
+                    ^ \markup { p.20 }
                     r4
                     r8
                     [
