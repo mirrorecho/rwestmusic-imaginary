@@ -608,6 +608,23 @@ def get_sb3():
         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
         output_directory = output_directory,
     )
+    sb.add_grid("rock_g3_c39_41_bassoons_bari", 
+        cells=(39,40,41), 
+        pitch_ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        pitch_ranges_instruments = ("ooa_bari_sax", "ooa_bassoon", "cco_bassoon"),
+        # (also to include electric celli)
+        # stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g3_c40_41_sax", 
+        cells=(40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = ("ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax"),
+        # stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
 
     return sb
 

@@ -220,9 +220,52 @@ cco_cloud_35 = lambda_segment.LambdaSegment(
 s.extend_from(cco_cloud_35,)
 s.fill_rests(fill_to="cco_flute1")
 
+
+lb_cloud_37_41_winds = sb.get_grid("rock_g3_c37_41_winds")
+cloud_37_41_winds = lambda_segment.LambdaSegment(
+    lb_cloud_37_41_winds,
+    fabric_staves = instrument_groups.get_instruments(
+            "flutes","clarinets"
+            ),
+    tag_events = {1:("p", "\\<",), -1:("f",)},
+    func = lambda x: x.bookend_pad(2.5),
+    )
+lb_cloud_38_41_oboes_strings = sb.get_grid("rock_g3_c38_41_oboes_strings")
+lb_cloud_38_41_oboes_strings = lb_cloud_38_41_oboes_strings + lb_cloud_38_41_oboes_strings.select[:2]
+cloud_38_41_oboes_strings = lambda_segment.LambdaSegment(
+    lb_cloud_38_41_oboes_strings,
+    fabric_staves = instrument_groups.get_instruments(
+            "oboes","cco_strings")[:-1] + ("ooa_violin1", "ooa_violin2"
+        ),
+    tag_events = {1:("p", "\\<",), -1:("f",)},
+    func = lambda x: x.bookend_pad(4),
+    )
+lb_cloud_39_41_bassoons_bari = sb.get_grid("rock_g3_c39_41_bassoons_bari")
+lb_cloud_39_41_bassoons_bari = lb_cloud_39_41_bassoons_bari + lb_cloud_39_41_bassoons_bari.select[-2:]
+cloud_39_41_bassoons_bari = lambda_segment.LambdaSegment(
+    lb_cloud_39_41_bassoons_bari,
+    fabric_staves = ("ooa_bari_sax", "ooa_bassoon", "cco_bassoon",
+        "ooa_cello1","ooa_cello2"),
+    tag_events = {1:("p", "\\<",), -1:("f",)},
+    func = lambda x: x.bookend_pad(6.5),
+    )
+lb_cloud_40_41_sax = sb.get_grid("rock_g3_c40_41_sax")
+cloud_40_41_sax = lambda_segment.LambdaSegment(
+    lb_cloud_40_41_sax,
+    fabric_staves = ("ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax"),
+    tag_events = {1:("mp", "\\<",), -1:("f",)},
+    func = lambda x: x.bookend_pad(8),
+    )
+s.extend_from(
+    cloud_37_41_winds,
+    cloud_38_41_oboes_strings,
+    cloud_39_41_bassoons_bari,
+    cloud_40_41_sax,
+    )
+
 # piano_lh.staves["piano2"].cells[0].stack_p([ (0,5), ])
 
-# s.fill_rests(beats=12)
+s.fill_rests()
 # =======================================================
 s.cells.apply(lambda x:x.auto_respell())
 
