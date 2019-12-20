@@ -22,8 +22,8 @@ class LibraryMaterial(object):
             parent.remove_if_empty()
         return self
 
-    def crop_chords(self, indices=(None,), above=(None,)):
-        return self.transformed(calliope.CropChords(indices=indices, above=above))
+    def crop_chords(self, indices=(None,), above=(None,), below=(None,)):
+        return self.transformed(calliope.CropChords(indices=indices, above=above, below=below))
 
     def only_first(self, select_attr="select", count=1):
         return self.remove_nodes( *getattr(self, select_attr)[count:] )

@@ -680,7 +680,7 @@ def get_sb4():
             OPENING_END_WIGGLE().t(2),
             OPENING_END_WIGGLE().t(2),
             riffs().t(-15).stack_p( ST_7UP ).bookend_pad(4),
-            riffs().t(-8),
+            riffs().t(-8).stack_p( ST_DN_II ),
             riffs().t(-1).stack_p( ST_UP_II ),
             riffs().t(6).stack_p( ST_UP_I ),
             riffs().t(13).stack_p( ST_UP_I ),
@@ -767,8 +767,28 @@ def get_sb4():
     for p in sb.segments["mid_drones"].phrases[6:]:
         p.stack_p( ST_7UP )
 
-
     sb.fill_rests()
+
+    sb.add_grid("rock_g4_c25_26", 
+        cells=(25,26), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = ("ooa_bassoon", "ooa_cello1", "ooa_cello2", "cco_oboe1", "cco_oboe2", "cco_bassoon",),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g4_c27_28", 
+        cells=(27,28), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments("sax", "ooa_strings") + (
+            "ooa_bassoon", "cco_oboe1", "cco_oboe2", "cco_bassoon",
+            ),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+
+
     return sb
 
 # ======================================================================
@@ -798,7 +818,7 @@ if __name__ == '__main__':
     
     calliope.illustrate(s, 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )
 
