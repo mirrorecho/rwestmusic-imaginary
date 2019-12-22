@@ -263,6 +263,29 @@ s.extend_from(cloud_41_43,
     extend_last_machine=True,)
 s.fill_rests(beats=26*4 + 2)
 
+cloud_42_45 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c42_45"),
+    fabric_staves = (
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            "ooa_bassoon","cco_bassoon",),
+    func = lambda x: x,
+    )
+s.extend_from(cloud_42_45, 
+    extend_last_machine=True,)
+s.fill_rests(beats=27*4 + 1)
+
+cloud_43_45 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c43_45"),
+    fabric_staves = (
+            "ooa_flute","ooa_horn","ooa_trumpet",
+            "cco_oboe1","cco_oboe2","cco_trumpet"),
+    func = lambda x: x,
+    )
+s.extend_from(cloud_43_45, 
+    extend_last_machine=True,)
+
+s.fill_rests(beats=30*4)
+
 
 # =======================================================
 

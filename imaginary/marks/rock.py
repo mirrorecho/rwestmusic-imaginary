@@ -849,7 +849,7 @@ def get_sb4():
         cells=(42,43,44,45), 
         pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
         pitch_ranges_instruments = (
-            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax"
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
             "ooa_bassoon","cco_bassoon",
             ),
         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
@@ -857,11 +857,10 @@ def get_sb4():
     )
     sb.add_grid("rock_g4_c43_45",
         cells=(43,44,45), 
-        pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
+        pitch_ranges = pitch_ranges.MID_TO_HIGH_RANGES,
         pitch_ranges_instruments = (
-            "ooa_clarinet", "cco_clarinet1","cco_clarinet2",
-            "ooa_cello1", "ooa_cello2", "cco_cello",
-            ),
+            "ooa_flute","ooa_horn","ooa_trumpet",
+            "cco_oboe1","cco_oboe2","cco_trumpet"),
         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
         output_directory = output_directory,
     )
