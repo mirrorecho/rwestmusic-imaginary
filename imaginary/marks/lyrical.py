@@ -216,31 +216,31 @@ class SaxSwell(staggered_swell.StaggeredSwell):
     low_dynamic = "pp"
     swell_dynamic = "mp"
 
-def get_full_score():
-    # importing here to avoid circular import
-    from imaginary.marks import (lyrical_0, lyrical_1, lyrical_2, lyrical_3,)
-    return lyrical_0.s.extend_from(
-        lyrical_1.s
-        ).extend_from(
-        lyrical_2.s
-        ).extend_from(
-        lyrical_3.s
-        )    
+# def get_full_score():
+#     # importing here to avoid circular import
+#     from imaginary.marks import (lyrical_0, lyrical_1, lyrical_2, lyrical_3,)
+#     return lyrical_0.s.extend_from(
+#         lyrical_1.s
+#         ).extend_from(
+#         lyrical_2.s
+#         ).extend_from(
+#         lyrical_3.s
+#         )    
 
 if __name__ == '__main__':
-    my_score = get_full_score()
-    my_score.illustrate_me(as_midi=True)
-    # sb = short_block.get_block()
+    # my_score = get_full_score()
+    # my_score.illustrate_me(as_midi=True)
+    sb = short_block.get_block()
     # sb.extend_from(get_sb0())
     # sb.extend_from(get_sb1())
-    # sb.extend_from(get_sb2())
+    sb.extend_from(get_sb2())
     # sb.extend_from(get_sb3())
-    # sb.annotate(
-    #     slur_cells=True,
-    #     label = ("phrases", "cells",),
-    #     ).fill_rests()
+    sb.annotate(
+        slur_cells=True,
+        label = ("phrases", "cells",),
+        ).fill_rests()
     # # print(sb0.pitch_analyzer.pitches_at(34))
-    # calliope.illustrate(sb.to_score(), as_midi=True)
+    calliope.illustrate(sb.to_score(), as_midi=True)
 
 
 # sb = calliope.SegmentBlock(

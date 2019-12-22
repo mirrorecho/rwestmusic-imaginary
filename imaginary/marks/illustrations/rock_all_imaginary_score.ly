@@ -175,8 +175,8 @@
                         [
                         c'''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -220,8 +220,8 @@
                         [
                         ef''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -570,7 +570,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -731,8 +749,8 @@
                         [
                         f''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -776,8 +794,8 @@
                         [
                         g8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -863,8 +881,8 @@
                         [
                         c''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -1147,7 +1165,112 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        a'8
+                        [
+                        (
+                        bf'8
+                        ]
+                        c''8
+                        [
+                        d''8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        a'8
+                        ]
+                        a'8
+                        [
+                        bf'8
+                        ]
+                        c''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        e'8
+                        ]
+                        d'8
+                        [
+                        b'8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        g'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -1271,8 +1394,8 @@
                         [
                         ef'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1344,8 +1467,8 @@
                         [
                         as8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -1431,8 +1554,8 @@
                         [
                         f'8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -1693,7 +1816,149 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        a8
+                        [
+                        (
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        a'8
+                        ]
+                        a'8
+                        [
+                        bf'8
+                        ]
+                        c'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        c'8
+                        ]
+                        e'8
+                        [
+                        b8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e'8
+                        [
+                        (
+                        a'8
+                        ]
+                        f'8
+                        [
+                        c'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        a8
+                        ]
+                        g8
+                        [
+                        e'8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        gs'8
+                        [
+                        (
+                        a'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        e'8
+                        ]
+                        )
+                        d'8
+                        [
+                        (
+                        e'8
+                        ]
+                        )
+                        ds'8
+                        [
+                        (
+                        as8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -1817,8 +2082,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -1890,8 +2155,8 @@
                         [
                         g8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -1977,8 +2242,8 @@
                         [
                         d''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -2239,7 +2504,140 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        a8
+                        [
+                        (
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c'8
+                        [
+                        (
+                        d'8
+                        ]
+                        a8
+                        [
+                        bf8
+                        ]
+                        c'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        e'8
+                        [
+                        b8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        g'8
+                        ]
+                        d'8
+                        [
+                        b8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        e'8
+                        [
+                        (
+                        g'8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        a'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        as'8
+                        [
+                        (
+                        fs'8
+                        ]
+                        )
+                        d'8
+                        [
+                        (
+                        b8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        fs'8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -2363,8 +2761,8 @@
                         [
                         b8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2436,8 +2834,8 @@
                         [
                         d8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -2523,8 +2921,8 @@
                         [
                         a8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -2785,7 +3183,141 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        a8
+                        [
+                        (
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c'8
+                        [
+                        (
+                        d'8
+                        ]
+                        f'8
+                        [
+                        a8
+                        ]
+                        f8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e8
+                        [
+                        (
+                        a8
+                        ]
+                        f8
+                        [
+                        c'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        a8
+                        ]
+                        c'8
+                        [
+                        e'8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a8
+                        [
+                        (
+                        c'8
+                        ]
+                        e'8
+                        [
+                        g8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        af8
+                        [
+                        (
+                        c'8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        af8
+                        ]
+                        )
+                        c'8
+                        [
+                        (
+                        af8
+                        ]
+                        )
+                        fs8
+                        [
+                        (
+                        cs8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        fs8
+                        ]
+                        )
+                        a8
+                        [
+                        (
+                        as8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -2910,8 +3442,8 @@
                         [
                         gf8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -2983,8 +3515,8 @@
                         [
                         c'8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -3070,8 +3602,8 @@
                         [
                         e8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -3331,7 +3863,62 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        af,8
+                        [
+                        (
+                        c8
+                        ]
+                        )
+                        g,8
+                        [
+                        (
+                        af,8
+                        ]
+                        )
+                        g,8
+                        [
+                        (
+                        af,8
+                        ]
+                        )
+                        df8
+                        [
+                        (
+                        bf,8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        ef8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -3607,8 +4194,8 @@
                         [
                         a'8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -3868,7 +4455,94 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        a8
+                        [
+                        (
+                        f8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        d8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        a,8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        c8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        e,8
+                        ]
+                        )
+                        gs8
+                        [
+                        (
+                        c8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        a,8
+                        ]
+                        )
+                        d8
+                        [
+                        (
+                        gs,8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        as,8
+                        ]
+                        )
+                        d,8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        cs8
+                        [
+                        (
+                        cs,8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -4057,8 +4731,8 @@
                         [
                         af,8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -4249,7 +4923,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -4354,8 +5046,8 @@
                         [
                         f'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -4567,7 +5259,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 30
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -4673,8 +5383,8 @@
                         [
                         c'8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -4865,7 +5575,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -5297,7 +6025,19 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 29
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -5513,7 +6253,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -5994,7 +6752,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -6893,7 +7669,62 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        b'8
+                        [
+                        (
+                        c''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        g''8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        ef''8
+                        [
+                        (
+                        bf''8
+                        ]
+                        )
+                        c'''8
+                        [
+                        (
+                        a''8
+                        ]
+                        )
+                        e'''8
+                        [
+                        (
+                        ef'''8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -7344,7 +8175,62 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        e''8
+                        [
+                        (
+                        g''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        fs''8
+                        [
+                        (
+                        fs'''8
+                        ]
+                        )
+                        b''8
+                        [
+                        (
+                        a''8
+                        ]
+                        )
+                        cs'''8
+                        [
+                        (
+                        as'''8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -7688,7 +8574,94 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        e'8
+                        [
+                        (
+                        f'8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        d'8
+                        ]
+                        )
+                        a8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        b8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        e,8
+                        ]
+                        )
+                        fs,8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        f'8
+                        ]
+                        )
+                        d'8
+                        [
+                        (
+                        cs'8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        cs8
+                        [
+                        (
+                        fs8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        d8
+                        ]
+                        )
+                        cs8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -7992,7 +8965,94 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        a8
+                        [
+                        (
+                        bf8
+                        ]
+                        )
+                        c'8
+                        [
+                        (
+                        a8
+                        ]
+                        )
+                        f8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        af8
+                        [
+                        (
+                        ef8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        af,8
+                        ]
+                        )
+                        b8
+                        [
+                        (
+                        a8
+                        ]
+                        )
+                        b8
+                        [
+                        (
+                        b8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        b8
+                        ]
+                        )
+                        fs8
+                        [
+                        (
+                        cs8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        fs8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        fs8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -8249,8 +9309,8 @@
                         [
                         cs'''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -8478,7 +9538,77 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                        e'''1
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''4
+                        e'''4
+                        \mf
+                        ~
+                        \>
+                        e'''1
+                        ~
+                        e'''2
+                        r2
+                        \!
+                        e'''1
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''4
+                        e'''4
+                        \mf
+                        ~
+                        \>
+                        e'''1
+                        ~
+                        e'''2
+                        r2
+                        \!
+                        e'''1
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''4
+                        e'''4
+                        \mf
+                        ~
+                        \>
+                        e'''1
+                        ~
+                        e'''2
+                        r2
+                        \!
+                        ef'''1
+                        \mp
+                        ~
+                        \<
+                        ef'''2
+                        ~
+                        ef'''4
+                        ef'''4
+                        \mf
+                        ~
+                        \>
+                        ef'''1
+                        ~
+                        ef'''2
+                        r2
+                        \!
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 13
                         }
                     }
                 }
@@ -8733,8 +9863,8 @@
                         [
                         f'''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -8957,7 +10087,81 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                        r4
+                        e'''4
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''1
+                        e'''1
+                        \mf
+                        ~
+                        \>
+                        e'''2
+                        ~
+                        e'''4
+                        r4
+                        \!
+                        r4
+                        e'''4
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''1
+                        e'''1
+                        \mf
+                        ~
+                        \>
+                        e'''2
+                        ~
+                        e'''4
+                        r4
+                        \!
+                        r4
+                        e'''4
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''1
+                        ds'''1
+                        \mf
+                        ~
+                        \>
+                        ds'''2
+                        ~
+                        ds'''4
+                        r4
+                        \!
+                        r4
+                        ef'''4
+                        \mp
+                        ~
+                        \<
+                        ef'''2
+                        ~
+                        ef'''1
+                        ef'''1
+                        \mf
+                        ~
+                        \>
+                        ef'''2
+                        ~
+                        ef'''4
+                        r4
+                        \!
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 13
                         }
                     }
                 }
@@ -9372,7 +10576,94 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        e'8
+                        [
+                        (
+                        d'8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        fs'8
+                        ]
+                        )
+                        a'8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                        e''8
+                        [
+                        (
+                        fs''8
+                        ]
+                        )
+                        f''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        e'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        fs''8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                        g''8
+                        [
+                        (
+                        d''8
+                        ]
+                        )
+                        cs''8
+                        [
+                        (
+                        fs''8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -9782,7 +11073,94 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        df''8
+                        [
+                        (
+                        bf'8
+                        ]
+                        )
+                        g''8
+                        [
+                        (
+                        gf''8
+                        ]
+                        )
+                        f''8
+                        [
+                        (
+                        df''8
+                        ]
+                        )
+                        af''8
+                        [
+                        (
+                        ef''8
+                        ]
+                        )
+                        c'''8
+                        [
+                        (
+                        c''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        af''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        gs''8
+                        ]
+                        )
+                        as''8
+                        [
+                        (
+                        fs''8
+                        ]
+                        )
+                        b''8
+                        [
+                        (
+                        d''8
+                        ]
+                        )
+                        a'8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -10111,8 +11489,8 @@
                         [
                         bf''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -10299,7 +11677,103 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        r2
+                        a'8
+                        [
+                        (
+                        bf'8
+                        ]
+                        c''8
+                        [
+                        d''8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c''8
+                        [
+                        (
+                        d''8
+                        ]
+                        a'8
+                        [
+                        bf'8
+                        ]
+                        c''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        f'8
+                        ]
+                        e'8
+                        [
+                        c'8
+                        ]
+                        d'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        e'8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -10623,8 +12097,8 @@
                         [
                         af''8
                         \f
-                        -\tenuto
                         -\staccato
+                        -\tenuto
                         ]
                     }
                     {
@@ -10811,7 +12285,104 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 1
+                        }
+                        a'8
+                        [
+                        (
+                        bf'8
+                        ]
+                        c''8
+                        [
+                        d''8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c'8
+                        [
+                        (
+                        d'8
+                        ]
+                        f'8
+                        [
+                        a'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        c''8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d''8
+                        [
+                        (
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        e''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        c''8
+                        ]
+                        e''8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -11215,7 +12786,94 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        \accidentalStyle modern-cautionary
+                        cs'8
+                        [
+                        (
+                        d'8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        a8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        a,8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        fs,8
+                        ]
+                        )
+                        f,8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        fs,8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        f8
+                        ]
+                        )
+                        d8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        cs8
+                        ]
+                        )
+                        g,8
+                        [
+                        (
+                        d8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        fs,8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -11412,8 +13070,8 @@
                         [
                         bf8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -11555,7 +13213,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -11712,8 +13388,8 @@
                         [
                         c''8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -11903,28 +13579,19 @@
                         r1
                         r1
                         r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
-                        r1
                         r4
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
+                        }
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -12081,8 +13748,8 @@
                         [
                         f8
                         \f
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r8
                         [
@@ -12224,7 +13891,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -12870,7 +14555,25 @@
                 {
                     {
                         \accidentalStyle modern-cautionary
-                        R1 * 35
+                        R1 * 6
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 8
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 3
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle modern-cautionary
+                        R1 * 18
                     }
                 }
             }
@@ -13489,7 +15192,19 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 29
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -13684,7 +15399,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -15844,7 +17577,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -16171,7 +17922,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -16529,7 +18298,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -16857,7 +18644,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -17225,7 +19030,25 @@
                     {
                         {
                             \accidentalStyle modern-cautionary
-                            R1 * 35
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 8
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle modern-cautionary
+                            R1 * 18
                         }
                     }
                 }
@@ -17246,8 +19069,8 @@
                     \set Staff.midiInstrument = #"agogo" 
                     \clef "percussion"
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 7
                     }
@@ -17311,8 +19134,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     [
                     c''8
                     ]
@@ -17341,8 +19164,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.7 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.7 }
                     [
                     c''8
                     ]
@@ -17371,8 +19194,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.4 }
                     [
                     c''8
                     ]
@@ -17431,8 +19254,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.6 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.6 }
                     [
                     c''8
                     ]
@@ -17521,8 +19344,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.19 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.19 }
                     [
                     c''8
                     ]
@@ -17614,8 +19437,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     c''8
                     ]
@@ -17704,8 +19527,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     c''8
                     ]
@@ -17734,8 +19557,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     c''8
                     ]
@@ -17764,8 +19587,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     [
                     c''8
                     ]
@@ -17884,8 +19707,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     [
                     c''8
                     ]
@@ -17914,8 +19737,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     [
                     c''8
                     ]
@@ -17947,8 +19770,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     c''8
                     ]
@@ -17987,8 +19810,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     [
                     c''8
                     ]
@@ -18027,8 +19850,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.4 }
                     [
                     c''8
                     ]
@@ -18087,8 +19910,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     [
                     c''8
                     ]
@@ -18127,8 +19950,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.9 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.9 }
                     [
                     (
                     <c' c''>16
@@ -18149,8 +19972,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.10 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.10 }
                     [
                     (
                     <c' c''>16
@@ -18171,8 +19994,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.11 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.11 }
                     [
                     (
                     <c' c''>16
@@ -18237,8 +20060,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.14 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.14 }
                     [
                     (
                     <c' c''>16
@@ -18316,8 +20139,8 @@
                     \set Staff.midiInstrument = #"melodic tom" 
                     \clef "percussion"
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 7
                     }
@@ -18385,8 +20208,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c'16
@@ -18417,8 +20240,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { c.7 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.7 }
                     [
                     (
                     c'16
@@ -18449,8 +20272,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.4 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.4 }
                     [
                     (
                     c'16
@@ -18513,8 +20336,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.6 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.6 }
                     [
                     (
                     c'16
@@ -18609,8 +20432,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { c.19 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.19 }
                     [
                     (
                     c'16
@@ -18708,8 +20531,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 5
                     }
@@ -18777,8 +20600,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c'16
@@ -18809,8 +20632,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { c.7 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.7 }
                     [
                     (
                     c'16
@@ -18841,8 +20664,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.4 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.4 }
                     [
                     (
                     c'16
@@ -18905,8 +20728,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.6 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.6 }
                     [
                     (
                     c'16
@@ -19007,8 +20830,8 @@
                     \set Staff.midiInstrument = #"taiko drum" 
                     \clef "percussion"
                     <c c'>4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     (
                     f4
                     r4
@@ -19052,8 +20875,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     (
                     f4
                     r4
@@ -19067,8 +20890,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     (
                     f4
                     r4
@@ -19082,8 +20905,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     (
                     f4
                     r4
@@ -19142,8 +20965,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     (
                     f4
                     r4
@@ -19157,8 +20980,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     (
                     f4
                     r4
@@ -19172,8 +20995,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     (
                     f4
                     r4
@@ -19187,8 +21010,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     (
                     f4
                     r4
@@ -19217,8 +21040,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     (
                     f4
                     r4
@@ -19250,8 +21073,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 5
                     }
@@ -19285,8 +21108,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     (
                     f4
                     r4
@@ -19300,8 +21123,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.7 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.7 }
                     (
                     f4
                     r4
@@ -19315,8 +21138,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.4 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.4 }
                     (
                     f4
                     r4
@@ -19345,8 +21168,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.6 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.6 }
                     (
                     f4
                     r4
@@ -19378,8 +21201,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     <c c'>4
                     (
                     r4
@@ -19394,8 +21217,8 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     <c c'>4
                     (
                     r4
@@ -19410,8 +21233,8 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.4 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.4 }
                     <c c'>4
                     (
                     r4
@@ -19434,8 +21257,8 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     <c c'>4
                     (
                     r4
@@ -19484,8 +21307,8 @@
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 15
                     }
@@ -19503,23 +21326,23 @@
                     ]
                     r4
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     r8
                     ]
                     r4
                     r4
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     [
                     r8
                     ]
@@ -19547,8 +21370,8 @@
                     r4
                     r4
                     r8
-                    ^ \markup { c.9 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.9 }
                     [
                     r8
                     ]
@@ -19561,8 +21384,8 @@
                     ]
                     r2
                     <a, c e>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.10 }
                     [
                     (
                     <bf, cs f>8
@@ -19605,8 +21428,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { c.15 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.15 }
                     [
                     r8
                     ]
@@ -19619,8 +21442,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.13 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.13 }
                     [
                     r8
                     ]
@@ -19633,8 +21456,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { c.19 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.19 }
                     [
                     r8
                     ]
@@ -19683,8 +21506,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     r8
                     ]
@@ -19725,8 +21548,8 @@
                     ]
                     r2
                     <a, c e a c' e'>8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     (
                     <f af bf c' df' f'>8
@@ -19747,8 +21570,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     r8
                     ]
@@ -19761,8 +21584,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.6 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.6 }
                     [
                     r8
                     ]
@@ -19810,8 +21633,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.10 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.10 }
                     [
                     r8
                     ]
@@ -19824,8 +21647,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.19 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.19 }
                     [
                     r8
                     ]
@@ -19838,8 +21661,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.21 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.21 }
                     [
                     r8
                     ]
@@ -19852,8 +21675,8 @@
                     ]
                     r4
                     <cs' e' gs' gs' b' ds''>8
-                    ^ \markup { p.16 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.16 }
                     [
                     (
                     <d' f' a' a' c'' e''>8
@@ -19890,8 +21713,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { c.27 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.27 }
                     [
                     r8
                     ]
@@ -19912,8 +21735,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     r8
                     ]
@@ -19960,8 +21783,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     r8
                     ]
@@ -19971,8 +21794,8 @@
                     ^ \markup { c.7 }
                     [
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     ]
                     r2
                     r8
@@ -19981,8 +21804,8 @@
                     ^ \markup { c.9 }
                     ]
                     r8
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     [
                     r8
                     ]
@@ -20042,8 +21865,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     [
                     r8
                     ]
@@ -20056,8 +21879,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ]
                     r2
                     r8
@@ -20066,8 +21889,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     r8
                     ]
@@ -20087,8 +21910,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.25 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.25 }
                     [
                     r8
                     ]
@@ -20112,8 +21935,8 @@
                     ^ \markup { c.27 }
                     [
                     <g, bf, d g bf d'>8
-                    ^ \markup { c.28 }
                     ^ \markup { p.16 }
+                    ^ \markup { c.28 }
                     ]
                     (
                     <ef gf af bf b ef'>8
@@ -20164,8 +21987,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { c.33 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.33 }
                     [
                     r8
                     ]
@@ -20201,8 +22024,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -20228,8 +22051,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -20241,8 +22064,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -20354,8 +22177,8 @@
                     ^ \markup { c.17 }
                     [
                     r8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     ]
                     r4
                     r4
@@ -20365,8 +22188,8 @@
                     ^ \markup { c.19 }
                     ]
                     <b, d gf>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     [
                     (
                     <c ef g>8
@@ -20396,8 +22219,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     r8
                     ]
@@ -20410,8 +22233,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     ]
                     r2
                     r8
@@ -20434,8 +22257,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     r4
                     r4
@@ -20476,8 +22299,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.16 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.16 }
                     [
                     r8
                     ]
@@ -20530,8 +22353,8 @@
                     ]
                     )
                     <f gs c'>8
-                    ^ \markup { c.38 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.38 }
                     [
                     (
                     <fs a cs'>8
@@ -20579,8 +22402,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     r8
                     ]
@@ -20618,8 +22441,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     r8
                     ]
@@ -20631,8 +22454,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     r8
                     ]
@@ -20644,8 +22467,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     [
                     r8
                     ]
@@ -20737,8 +22560,8 @@
                     r4
                     r4
                     r8
-                    ^ \markup { p.17 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.17 }
                     [
                     r8
                     ]
@@ -20813,30 +22636,30 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.29 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.29 }
                     [
                     r8
                     ]
                     r4
                     r4
                     r8
-                    ^ \markup { c.30 }
                     ^ \markup { p.22 }
+                    ^ \markup { c.30 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { c.31 }
                     ^ \markup { p.23 }
+                    ^ \markup { c.31 }
                     [
                     r8
                     ]
                     r2
                     r8
-                    ^ \markup { p.24 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.24 }
                     [
                     r8
                     ]
@@ -20857,8 +22680,8 @@
                     ]
                     r2
                     r1
-                    ^ \markup { p.27 }
                     ^ \markup { c.35 }
+                    ^ \markup { p.27 }
                     r8
                     ^ \markup { c.36 }
                     [
@@ -20881,40 +22704,40 @@
                     <cs' f' gs' gs' c'' ds''>8
                     ]
                     )
-                    <cs f gs>8
-                    ^ \markup { c.38 }
+                    <cs, f, gs, cs f gs>8
                     ^ \markup { p.28 }
+                    ^ \markup { c.38 }
                     [
                     (
-                    <d fs a>8
+                    <a, cs d e fs a>8
                     ]
-                    <e gs b>8
+                    <e, gs, b, e gs b>8
                     [
-                    <fs as cs'>8
+                    <cs f fs gs as cs'>8
                     ]
-                    <a cs' e'>8
+                    <a cs' e' e' gs' b'>8
                     [
-                    <cs' f' gs'>8
+                    <cs f gs cs' f' gs'>8
                     ]
                     )
-                    <gs c' ds'>8
+                    <ds g gs as c' ds'>8
                     ^ \markup { c.39 }
                     [
                     (
-                    <ds' g' as'>8
+                    <ds g as ds' g' as'>8
                     ]
-                    <a cs' e'>8
+                    <e gs a b cs' e'>8
                     [
-                    <e' gs' b'>8
+                    <e' gs' b' b' ds'' fs''>8
                     ]
-                    <fs' as' cs''>8
+                    <fs as cs' fs' as' cs''>8
                     [
-                    <gs' c'' ds''>8
+                    <ds' g' gs' as' c'' ds''>8
                     ]
                     )
                     <gs c' ds' gs' c'' ds''>8
-                    ^ \markup { c.40 }
                     ^ \markup { p.29 }
+                    ^ \markup { c.40 }
                     [
                     (
                     <a cs' e' e' gs' b'>8
@@ -21051,8 +22874,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r2
                     r8
                     ^ \markup { c.1 }
@@ -21088,8 +22911,8 @@
                     r2
                     ^ \markup { c.4 }
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     [
                     <d' f' bf' d'' f'' bf''>8
                     ~
@@ -21446,8 +23269,8 @@
                     \set Staff.shortInstrumentName = \markup { Count. }
                     \set Staff.midiInstrument = #"misc3" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 3
                     }
@@ -21487,8 +23310,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     ]
                     r2
                     r4
@@ -21506,8 +23329,8 @@
                     )
                     [
                     a''8
-                    ^ \markup { c.7 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.7 }
                     ]
                     (
                     e'''8
@@ -21544,8 +23367,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -21571,8 +23394,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -21584,8 +23407,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -21674,8 +23497,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 9
                     }
@@ -21725,8 +23548,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     [
                     <a a'>8
                     ]
@@ -21746,8 +23569,8 @@
                     )
                     [
                     r8
-                    ^ \markup { c.7 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.7 }
                     ]
                     <a a'>8
                     [
@@ -21771,8 +23594,8 @@
                     r8
                     ]
                     r1
-                    ^ \markup { p.4 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.4 }
                     {
                         R1 * 2
                     }
@@ -21912,8 +23735,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     <cs>8
                     ]
@@ -21960,8 +23783,8 @@
                     r1
                     ^ \markup { c.4 }
                     r1
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     r8
                     ^ \markup { c.6 }
                     [
@@ -21983,8 +23806,8 @@
                     )
                     [
                     r8
-                    ^ \markup { c.8 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.8 }
                     ]
                     <ef f>8
                     [
@@ -22008,8 +23831,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.4 }
                     [
                     <ef>8
                     ]
@@ -22064,8 +23887,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -22091,8 +23914,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -22104,8 +23927,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -22194,8 +24017,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 3
                     }
@@ -22237,8 +24060,8 @@
                     f,2
                     )
                     f,2
-                    ^ \markup { p.2 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.2 }
                     ~
                     (
                     f,4
@@ -22256,8 +24079,8 @@
                     c,2
                     )
                     r1
-                    ^ \markup { c.7 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.7 }
                     {
                         R1 * 6
                     }
@@ -22280,8 +24103,8 @@
                     d,2
                     )
                     d,2
-                    ^ \markup { p.4 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.4 }
                     ~
                     (
                     d,4
@@ -22317,8 +24140,8 @@
                     \set Staff.shortInstrumentName = \markup { Riff. }
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 15
                     }
@@ -22346,8 +24169,8 @@
                     ]
                     )
                     a8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     bf8
@@ -22362,8 +24185,8 @@
                     ]
                     )
                     a8
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     [
                     (
                     bf8
@@ -22374,8 +24197,8 @@
                     ]
                     )
                     a8
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     [
                     (
                     bf8
@@ -22430,8 +24253,8 @@
                     ]
                     )
                     e'8
-                    ^ \markup { c.9 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.9 }
                     [
                     (
                     b'8
@@ -22458,8 +24281,8 @@
                     ]
                     )
                     a8
-                    ^ \markup { p.10 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.10 }
                     [
                     (
                     bf8
@@ -22520,8 +24343,8 @@
                     ]
                     )
                     a'8
-                    ^ \markup { c.15 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.15 }
                     [
                     (
                     bf'8
@@ -22551,8 +24374,8 @@
                     ]
                     )
                     a'8
-                    ^ \markup { p.13 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.13 }
                     [
                     (
                     bf'8
@@ -22582,8 +24405,8 @@
                     ]
                     )
                     a'8
-                    ^ \markup { c.19 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.19 }
                     [
                     (
                     bf'8
@@ -22649,8 +24472,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     <a a'>8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     <f' bf'>8
@@ -22742,8 +24565,8 @@
                     ]
                     )
                     <a a'>8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     (
                     <f' bf'>8
@@ -22769,8 +24592,8 @@
                     ]
                     )
                     <e' e''>8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     (
                     <fs'' b''>8
@@ -22797,8 +24620,8 @@
                     ]
                     )
                     <e' e''>8
-                    ^ \markup { p.6 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.6 }
                     [
                     (
                     <f' c''>8
@@ -22902,8 +24725,8 @@
                     ]
                     )
                     <fs' fs''>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.10 }
                     [
                     (
                     <g' d''>8
@@ -22926,8 +24749,8 @@
                     ]
                     )
                     <d' d''>8
-                    ^ \markup { c.19 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.19 }
                     [
                     (
                     <e'' a''>8
@@ -22950,8 +24773,8 @@
                     ]
                     )
                     <cs'' gs''>8
-                    ^ \markup { c.21 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.21 }
                     [
                     (
                     <gs'' ds'''>8
@@ -22974,8 +24797,8 @@
                     ]
                     )
                     <cs'' gs''>8
-                    ^ \markup { p.16 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.16 }
                     [
                     (
                     <d'' a''>8
@@ -23029,8 +24852,8 @@
                     ]
                     )
                     <gs' gs''>8
-                    ^ \markup { c.27 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.27 }
                     [
                     (
                     <a' e''>8
@@ -23068,8 +24891,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     <gs gs'>8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     <a e'>8
@@ -23133,8 +24956,8 @@
                     ]
                     )
                     <ds' ds''>8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     (
                     <e' b'>8
@@ -23152,8 +24975,8 @@
                     ^ \markup { c.7 }
                     [
                     <ds' ds''>8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     ]
                     (
                     <e' b'>8
@@ -23171,8 +24994,8 @@
                     ^ \markup { c.9 }
                     ]
                     <df' df''>8
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     [
                     (
                     <bf' ef''>8
@@ -23263,8 +25086,8 @@
                     ]
                     )
                     <f' f''>8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     [
                     (
                     <af' ef''>8
@@ -23284,8 +25107,8 @@
                     )
                     [
                     <c' c''>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ]
                     (
                     <ef' bf'>8
@@ -23305,8 +25128,8 @@
                     ]
                     )
                     <c' c''>8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     (
                     <df' af'>8
@@ -23345,8 +25168,8 @@
                     ]
                     )
                     <c c'>8
-                    ^ \markup { c.25 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.25 }
                     [
                     (
                     <af df'>8
@@ -23372,8 +25195,8 @@
                     ^ \markup { c.27 }
                     [
                     <g g'>8
-                    ^ \markup { c.28 }
                     ^ \markup { p.16 }
+                    ^ \markup { c.28 }
                     ]
                     (
                     <ef' af'>8
@@ -23426,8 +25249,8 @@
                     ]
                     )
                     <d' d''>8
-                    ^ \markup { c.33 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.33 }
                     [
                     (
                     <ef' bf'>8
@@ -23494,8 +25317,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -23521,8 +25344,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     [
                     (
                     c''8
@@ -23534,8 +25357,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     f'8
                     ^ \markup { c.5 }
                     [
@@ -23673,8 +25496,8 @@
                     ^ \markup { c.17 }
                     [
                     b8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     ]
                     (
                     c'8
@@ -23692,8 +25515,8 @@
                     ^ \markup { c.19 }
                     ]
                     b8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     [
                     (
                     c'8
@@ -23723,8 +25546,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     (
                     a'8
@@ -23744,8 +25567,8 @@
                     )
                     [
                     fs'8
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     ]
                     (
                     a'8
@@ -23786,8 +25609,8 @@
                     )
                     [
                     fs'8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     (
                     a'8
@@ -23838,8 +25661,8 @@
                     ]
                     )
                     gs'8
-                    ^ \markup { p.16 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.16 }
                     [
                     (
                     a'8
@@ -23907,8 +25730,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.38 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.38 }
                     [
                     (
                     gf'8
@@ -23956,8 +25779,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     <g c' f'>8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     <df'>8
@@ -24025,8 +25848,8 @@
                     ]
                     )
                     <d' g' c''>8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     (
                     <af'>8
@@ -24048,8 +25871,8 @@
                     ]
                     )
                     <a d' g'>8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     (
                     <ef'>8
@@ -24071,8 +25894,8 @@
                     ]
                     )
                     <a d' g'>8
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     [
                     (
                     <ef'>8
@@ -24246,8 +26069,8 @@
                     ]
                     )
                     e'8
-                    ^ \markup { p.17 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.17 }
                     [
                     (
                     b'8
@@ -24336,8 +26159,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.29 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.29 }
                     [
                     (
                     cs''8
@@ -24352,8 +26175,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.30 }
                     ^ \markup { p.22 }
+                    ^ \markup { c.30 }
                     [
                     (
                     cs''8
@@ -24364,8 +26187,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.31 }
                     ^ \markup { p.23 }
+                    ^ \markup { c.31 }
                     [
                     (
                     cs''8
@@ -24380,8 +26203,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { p.24 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.24 }
                     [
                     (
                     cs''8
@@ -24424,8 +26247,8 @@
                     ]
                     )
                     r1
-                    ^ \markup { p.27 }
                     ^ \markup { c.35 }
+                    ^ \markup { p.27 }
                     <fs, cs>8
                     ^ \markup { c.36 }
                     [
@@ -24456,40 +26279,40 @@
                     <cs' gs'>8
                     ]
                     )
-                    cs8
-                    ^ \markup { c.38 }
+                    <cs, cs>8
                     ^ \markup { p.28 }
+                    ^ \markup { c.38 }
                     [
                     (
-                    d8
+                    <a, d>8
                     ]
-                    e8
+                    <e, e>8
                     [
-                    fs8
+                    <cs fs>8
                     ]
-                    a8
+                    <a e'>8
                     [
-                    cs'8
+                    <cs cs'>8
                     ]
                     )
-                    gs8
+                    <ds gs>8
                     ^ \markup { c.39 }
                     [
                     (
-                    ds'8
+                    <ds ds'>8
                     ]
-                    a8
+                    <e a>8
                     [
-                    e'8
+                    <e' b'>8
                     ]
-                    fs'8
+                    <fs fs'>8
                     [
-                    gs'8
+                    <ds' gs'>8
                     ]
                     )
                     <gs gs'>8
-                    ^ \markup { c.40 }
                     ^ \markup { p.29 }
+                    ^ \markup { c.40 }
                     [
                     (
                     <a e'>8
@@ -24635,8 +26458,8 @@
                     \set Staff.shortInstrumentName = \markup { Chrd. }
                     \set Staff.midiInstrument = #"french horn" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 15
                     }
@@ -24648,17 +26471,17 @@
                     ^ \markup { c.2 }
                     r4
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     r4
                     r4
                     <a bf c' d'>4
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     r4
                     r4
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     r2
                     <f' c'' d'' e''>4
                     ^ \markup { c.6 }
@@ -24674,16 +26497,16 @@
                     r4
                     r4
                     r4
-                    ^ \markup { c.9 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.9 }
                     r4
                     r4
                     ^ \markup { c.10 }
                     ^ \markup { p.9 }
                     r2
                     <a bf c' d' f' a'>4
-                    ^ \markup { p.10 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.10 }
                     r4
                     r4
                     r4
@@ -24698,24 +26521,24 @@
                     ^ \markup { c.14 }
                     r2
                     <a' bf' c'' d'' f'' a''>4
-                    ^ \markup { c.15 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.15 }
                     r4
                     r4
                     r4
                     ^ \markup { c.16 }
                     r2
                     r4
-                    ^ \markup { p.13 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.13 }
                     r4
                     r4
                     r4
                     ^ \markup { c.18 }
                     r2
                     r4
-                    ^ \markup { c.19 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.19 }
                     r4
                     r4
                     <e'' f'' b'' c''' d''' e'''>4
@@ -24735,8 +26558,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     <a f' a' bf' d'' e'' a''>4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r4
                     r4
@@ -24759,24 +26582,24 @@
                     ^ \markup { c.5 }
                     r2
                     <a f' a' bf' d'' e'' a''>4
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     r4
                     r4
                     r4
                     ^ \markup { c.7 }
                     r4
                     r4
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     r4
                     r4
                     ^ \markup { c.9 }
                     ^ \markup { p.5 }
                     r2
                     r4
-                    ^ \markup { p.6 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.6 }
                     r4
                     r4
                     r4
@@ -24803,32 +26626,32 @@
                     ^ \markup { c.16 }
                     r2
                     <fs' g' b' d'' fs''>4
-                    ^ \markup { p.10 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.10 }
                     r4
                     r4
                     ^ \markup { p.11 }
                     ^ \markup { c.18 }
                     r4
                     r4
-                    ^ \markup { c.19 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.19 }
                     r4
                     r4
                     ^ \markup { p.13 }
                     ^ \markup { c.20 }
                     r4
                     r4
-                    ^ \markup { c.21 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.21 }
                     r4
                     r4
                     ^ \markup { c.22 }
                     ^ \markup { p.15 }
                     r4
                     r4
-                    ^ \markup { p.16 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.16 }
                     r4
                     <a'' e''' gs''' b''' ds''''>4
                     ^ \markup { c.24 }
@@ -24843,8 +26666,8 @@
                     ^ \markup { c.26 }
                     r2
                     r4
-                    ^ \markup { c.27 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.27 }
                     r4
                     r4
                     r4
@@ -24859,8 +26682,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     <gs a b cs' e' fs' gs' ds'' e''>4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r4
                     r8
@@ -24888,16 +26711,16 @@
                     ^ \markup { c.5 }
                     r2
                     <ds' e' fs' gs' b' cs'' ds'' as'' b''>4
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     r4
                     r4
                     r8
                     ^ \markup { c.7 }
                     [
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     ]
                     r8
                     [
@@ -24910,8 +26733,8 @@
                     ^ \markup { c.9 }
                     ]
                     r4
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     r4
                     r4
                     ^ \markup { c.11 }
@@ -24946,8 +26769,8 @@
                     ^ \markup { c.17 }
                     r2
                     <f' af' bf' c'' df'' ef'' f'' af'' bf''>4
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     r4
                     r8
                     [
@@ -24957,8 +26780,8 @@
                     r8
                     [
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ~
                     ]
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
@@ -24969,8 +26792,8 @@
                     r4
                     ^ \markup { c.21 }
                     <c' df' ef' f' af' c'' ef''>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     r4
                     r4
                     ^ \markup { p.12 }
@@ -24981,8 +26804,8 @@
                     ^ \markup { p.13 }
                     r4
                     <c af c' df'>4
-                    ^ \markup { c.25 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.25 }
                     <c ef af c' df' ef' f' af' c'' ef''>4
                     ^ \markup { p.15 }
                     ^ \markup { c.26 }
@@ -24991,8 +26814,8 @@
                     ^ \markup { c.27 }
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.16 }
+                    ^ \markup { c.28 }
                     ]
                     r8
                     [
@@ -25016,8 +26839,8 @@
                     ^ \markup { c.32 }
                     ^ \markup { p.18 }
                     <d' ef' f' g' bf' c'' d'' a'' bf''>4
-                    ^ \markup { c.33 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.33 }
                     r4
                     r4
                     r8
@@ -25048,8 +26871,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r4
                     ^ \markup { c.1 }
@@ -25059,12 +26882,12 @@
                     ^ \markup { c.2 }
                     r4
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     r4
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     r4
                     r4
                     ^ \markup { c.5 }
@@ -25121,8 +26944,8 @@
                     ^ \markup { c.17 }
                     [
                     r8
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     ]
                     r8
                     [
@@ -25135,16 +26958,16 @@
                     ^ \markup { c.19 }
                     ]
                     <b c' d' e' g' b'>4
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     r4
                     r4
                     r4
                     ^ \markup { c.21 }
                     r2
                     <fs' a' b' d'' fs''>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     r4
                     r8
                     [
@@ -25154,8 +26977,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     ]
                     r8
                     [
@@ -25176,8 +26999,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     r8
                     [
@@ -25195,8 +27018,8 @@
                     ^ \markup { c.31 }
                     r2
                     <gs' a' cs'' e'' gs''>4
-                    ^ \markup { p.16 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.16 }
                     r4
                     r8
                     [
@@ -25234,8 +27057,8 @@
                     r8
                     ]
                     r4
-                    ^ \markup { c.38 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.38 }
                     r4
                     r8
                     [
@@ -25263,8 +27086,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     <g bf c' df' ef' f' af'>4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r4
                     ^ \markup { c.1 }
@@ -25290,8 +27113,8 @@
                     ^ \markup { c.5 }
                     r4
                     r4
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     r4
                     r8
                     [
@@ -25303,15 +27126,15 @@
                     r8
                     ]
                     r4
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     r4
                     r4
                     ^ \markup { c.9 }
                     r4
                     r4
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     r4
                     r8
                     [
@@ -25370,8 +27193,8 @@
                     r4
                     r4
                     r4
-                    ^ \markup { p.17 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.17 }
                     r4
                     r4
                     ^ \markup { c.24 }
@@ -25394,21 +27217,21 @@
                     ^ \markup { c.28 }
                     r2
                     r4
-                    ^ \markup { c.29 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.29 }
                     r4
                     r4
                     r4
-                    ^ \markup { c.30 }
                     ^ \markup { p.22 }
+                    ^ \markup { c.30 }
                     r4
                     r4
-                    ^ \markup { c.31 }
                     ^ \markup { p.23 }
+                    ^ \markup { c.31 }
                     r2
                     r4
-                    ^ \markup { p.24 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.24 }
                     r4
                     r4
                     r4
@@ -25420,8 +27243,8 @@
                     ^ \markup { c.34 }
                     r2
                     r4
-                    ^ \markup { p.27 }
                     ^ \markup { c.35 }
+                    ^ \markup { p.27 }
                     r4
                     r2
                     r4
@@ -25432,16 +27255,16 @@
                     ^ \markup { c.37 }
                     r2
                     r4
-                    ^ \markup { c.38 }
                     ^ \markup { p.28 }
+                    ^ \markup { c.38 }
                     r4
                     r4
                     r4
                     ^ \markup { c.39 }
                     r2
                     r4
-                    ^ \markup { c.40 }
                     ^ \markup { p.29 }
+                    ^ \markup { c.40 }
                     r4
                     r4
                     r4
@@ -25504,8 +27327,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 11
                     }
@@ -25523,22 +27346,22 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     (
                     <e'''>4
                     <e'''>4
@@ -25565,8 +27388,8 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.9 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.9 }
                     (
                     <e'''>4
                     <e'''>4
@@ -25582,8 +27405,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 8
                     }
@@ -25599,20 +27422,20 @@
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     (
                     <f'''>2
                     )
@@ -25637,8 +27460,8 @@
                     <g'' d'''>4
                     )
                     <g'' d'''>4
-                    ^ \markup { c.9 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.9 }
                     (
                     <g'' d'''>4
                     <g'' d'''>4
@@ -25664,8 +27487,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 5
                     }
@@ -25683,22 +27506,22 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     (
                     <e'''>4
                     <e'''>4
@@ -25725,8 +27548,8 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.9 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.9 }
                     (
                     <e'''>4
                     <e'''>4
@@ -25739,15 +27562,15 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { p.10 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.10 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.12 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.12 }
                     (
                     <e'''>4
                     <e'''>4
@@ -25767,8 +27590,8 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.15 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.15 }
                     (
                     <e'''>4
                     <e'''>4
@@ -25781,8 +27604,8 @@
                     <e'''>4
                     )
                     <ef'''>8
-                    ^ \markup { p.16 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.16 }
                     [
                     (
                     <ef'''>8
@@ -25801,8 +27624,8 @@
                     ]
                     )
                     <ef'''>8
-                    ^ \markup { p.17 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.17 }
                     [
                     (
                     <ef'''>8
@@ -25821,8 +27644,8 @@
                     ]
                     )
                     <ef'''>8
-                    ^ \markup { c.19 }
                     ^ \markup { p.18 }
+                    ^ \markup { c.19 }
                     [
                     (
                     <ef'''>8
@@ -25841,8 +27664,8 @@
                     ]
                     )
                     <ef'''>8
-                    ^ \markup { c.20 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.20 }
                     [
                     (
                     <ef'''>8
@@ -26001,8 +27824,8 @@
                     ]
                     )
                     <af''>8
-                    ^ \markup { p.27 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.27 }
                     [
                     (
                     <af''>8
@@ -26062,8 +27885,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 5
                     }
@@ -26081,22 +27904,22 @@
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     (
                     <d'>4
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     (
                     <d'>4
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     (
                     <d'>4
                     <d'>2
@@ -26123,8 +27946,8 @@
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { c.9 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.9 }
                     (
                     <d'>4
                     <d'>2
@@ -26137,15 +27960,15 @@
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { p.10 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.10 }
                     (
                     <d'>4
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { c.12 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.12 }
                     (
                     <d'>4
                     <d'>2
@@ -26167,8 +27990,8 @@
                     <ef'>4
                     )
                     <ef'>4
-                    ^ \markup { c.15 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.15 }
                     (
                     <ef'>4
                     <ef'>4
@@ -26202,8 +28025,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     ef''2
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     af'2
                     ^ \markup { c.1 }
                     ef''2
@@ -26223,8 +28046,8 @@
                     ef''2
                     ^ \markup { c.5 }
                     bf'2
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     ~
                     bf'8
                     [
@@ -26234,13 +28057,13 @@
                     ]
                     d''4
                     f''2
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     bf'2
                     ^ \markup { c.9 }
                     f''2
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     ~
                     f''8
                     [
@@ -26293,8 +28116,8 @@
                     ^ \markup { p.16 }
                     r4
                     r4
-                    ^ \markup { p.17 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.17 }
                     r4
                     r4
                     ^ \markup { c.24 }
@@ -26319,23 +28142,23 @@
                     ~
                     <d'' a''>2
                     <g' d''>2
-                    ^ \markup { c.29 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.29 }
                     ~
                     <g' d''>4
                     <a' e''>4
-                    ^ \markup { c.30 }
                     ^ \markup { p.22 }
+                    ^ \markup { c.30 }
                     ~
                     <a' e''>4
                     <g' d''>4
-                    ^ \markup { c.31 }
                     ^ \markup { p.23 }
+                    ^ \markup { c.31 }
                     ~
                     <g' d''>2
                     <a' e''>2
-                    ^ \markup { p.24 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.24 }
                     ~
                     <a' e''>4
                     <g' d''>4
@@ -26349,8 +28172,8 @@
                     ~
                     <a' e''>2
                     r1
-                    ^ \markup { p.27 }
                     ^ \markup { c.35 }
+                    ^ \markup { p.27 }
                     <a' e''>2
                     ^ \markup { c.36 }
                     ~
@@ -26360,8 +28183,8 @@
                     ~
                     <d'' a''>2
                     <e'' b''>2
-                    ^ \markup { c.38 }
                     ^ \markup { p.28 }
+                    ^ \markup { c.38 }
                     ~
                     <e'' b''>4
                     <a' e''>4
@@ -26369,8 +28192,8 @@
                     ~
                     <a' e''>2
                     <b' gf''>2
-                    ^ \markup { c.40 }
                     ^ \markup { p.29 }
+                    ^ \markup { c.40 }
                     ~
                     <b' gf''>4
                     <e'' b''>4
@@ -26429,8 +28252,8 @@
                     \set Staff.midiInstrument = #"fretless bass" 
                     \clef "bass"
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 24
                     }
@@ -26444,18 +28267,18 @@
                     ~
                     <g, d>2
                     <a, e>2
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     ~
                     <a, e>4
                     <g, d>4
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     ~
                     <g, d>2
                     <a, e>2
-                    ^ \markup { p.4 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.4 }
                     ~
                     <a, e>4
                     <g, d>4
@@ -26479,8 +28302,8 @@
                 {
                     \accidentalStyle modern-cautionary
                     <d, a,>2
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     ~
                     <d, a,>4
                     <c, g,>4
@@ -26489,8 +28312,8 @@
                     ~
                     <c, g,>2
                     <d, a,>2
-                    ^ \markup { p.2 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     ~
                     <d, a,>4
                     <c, g,>4
@@ -26499,8 +28322,8 @@
                     ~
                     <c, g,>2
                     <d, a,>2
-                    ^ \markup { p.4 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.4 }
                     ~
                     <d, a,>4
                     <c, g,>4
@@ -26514,8 +28337,8 @@
                     ~
                     <d, a,>4
                     <c, g,>4
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     ~
                     (
                     <c, g,>4
@@ -26537,16 +28360,16 @@
                     <c, g,>2
                     )
                     <d, a,>2
-                    ^ \markup { c.9 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.9 }
                     <c, g,>2
-                    ^ \markup { p.10 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.10 }
                     ~
                     <c, g,>4
                     <d, a,>4
-                    ^ \markup { c.11 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.11 }
                     ~
                     <d, a,>2
                     <c, g,>2
@@ -26560,8 +28383,8 @@
                     ~
                     <d, a,>2
                     <d, a,>2
-                    ^ \markup { c.14 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.14 }
                     <d, a,>2
                     ^ \markup { c.15 }
                     ^ \markup { p.15 }
@@ -26569,28 +28392,28 @@
                     ^ \markup { c.16 }
                     ^ \markup { p.16 }
                     <d, a,>2
-                    ^ \markup { p.17 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.17 }
                     <d, a,>2
-                    ^ \markup { c.18 }
                     ^ \markup { p.18 }
+                    ^ \markup { c.18 }
                     <d, a,>2
-                    ^ \markup { c.19 }
                     ^ \markup { p.19 }
+                    ^ \markup { c.19 }
                     <d, a,>2
                     ^ \markup { p.20 }
                     ^ \markup { c.20 }
                     <df, af,>2
-                    ^ \markup { c.21 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.21 }
                     <df, af,>2
-                    ^ \markup { c.22 }
                     ^ \markup { p.22 }
+                    ^ \markup { c.22 }
                     ~
                     <df, af,>4
                     <ef, bf,>4
-                    ^ \markup { p.23 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.23 }
                     ~
                     <ef, bf,>2
                     <df, af,>2

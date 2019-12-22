@@ -787,6 +787,84 @@ def get_sb4():
         tallies = tally_apps.LINE_SMOOTH_2,
         output_directory = output_directory,
     )
+    # -------------------
+    sb.add_grid("rock_g4_c37_39", 
+        cells=(37,38,39), 
+        pitch_ranges = pitch_ranges.LOW_TO_MID_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_clarinet", "ooa_violin1", "ooa_violin2", "cco_clarinet1", "cco_clarinet2", "cco_viola"
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    valley_seq = pitch_ranges.RangeSeq().add_abstract(
+        0, 
+        pitch_ranges.MID_RANGE,
+        ).add_abstract(
+        0.5, 
+        pitch_ranges.BOTTOM_RANGE,
+        ).add_abstract(
+        1, 
+        pitch_ranges.TOP_RANGE,
+        )
+    sb.add_grid("rock_g4_c38_40", 
+        cells=(38,39,40), 
+        pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
+        pitch_ranges_instruments = (
+            "ooa_bari_sax", "ooa_bassoon", "ooa_cello1", "ooa_cello2", "cco_bassoon", "cco_cello"
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g4_c39_41",
+        cells=(39,40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = (
+            "cco_flute1", "cco_flute2", "cco_oboe1", "cco_oboe2", "cco_violin_i", "cco_violin_ii"
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g4_c40_42",
+        cells=(40,41,42), 
+        pitch_ranges = pitch_ranges.MID_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_trombone","ooa_violin1","ooa_violin2",
+            "cco_horn","cco_trombone","cco_viola",
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g4_c41_43",
+        cells=(41,42,43), 
+        pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
+        pitch_ranges_instruments = (
+            "ooa_clarinet", "cco_clarinet1","cco_clarinet2",
+            "ooa_cello1", "ooa_cello2", "cco_cello",
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g4_c42_45",
+        cells=(42,43,44,45), 
+        pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
+        pitch_ranges_instruments = (
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax"
+            "ooa_bassoon","cco_bassoon",
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+    sb.add_grid("rock_g4_c43_45",
+        cells=(43,44,45), 
+        pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
+        pitch_ranges_instruments = (
+            "ooa_clarinet", "cco_clarinet1","cco_clarinet2",
+            "ooa_cello1", "ooa_cello2", "cco_cello",
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
 
 
     return sb

@@ -254,8 +254,10 @@ class ImaginaryScore(calliope.Score):
         from imaginary.libraries import pitch_ranges
         return pitch_ranges.PitchRanges()
 
-    def fill_rests(self, beats=None, fill_to=None, include_short_score=False, **kwargs):
-        if include_short_score:
+    def fill_rests(self, beats=None, fill_to=None, include_short_score=False, only_staves=(), **kwargs):
+        if only_staves:
+            my_staves = list(self.staves[only_staves])
+        elif include_short_score:
             my_staves = list(self.staves)
         else:
             short_staves = list(self.staff_groups["short_score"].staves)

@@ -557,6 +557,7 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            \clef "bass"
                             R1 * 4
                         }
                     }
@@ -623,6 +624,7 @@
                             \accidentalStyle modern-cautionary
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
+                            \clef "bass"
                             R1 * 4
                         }
                     }
@@ -925,14 +927,17 @@
                         ~
                         ]
                         bf''4
-                        r4
-                        r16
+                        r8
                         [
-                        af''16
+                        af''8
+                        ~
+                        ]
+                        af''8
+                        [
                         g''16
                         f''16
                         ]
-                        r16
+                        c'''16
                         [
                         c'''16
                         bf''16
@@ -943,12 +948,12 @@
                         [
                         bf''8
                         ]
-                        c'''16
+                        ef'''16
                         [
-                        ef'''8.
+                        c'''8.
                         ~
                         ]
-                        ef'''2
+                        c'''2
                         c'''16
                         [
                         bf''8.
@@ -977,7 +982,7 @@
                         g'''4
                         r8
                         [
-                        c'''8
+                        f'''8
                         ]
                         c'''8
                         [
@@ -1020,30 +1025,30 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
                         r4
-                        c'4
-                        ef'2
+                        <>4
+                        <>2
                         r4
-                        c'4
-                        ef'8
+                        <>4
+                        <>8
                         [
-                        f'8
+                        <>8
                         ~
                         ]
-                        f'4
+                        <>4
                         r4
-                        c'4
-                        af'8
+                        <>4
+                        <>8
                         [
-                        g'8
+                        <>8
                         ]
-                        ef'8
+                        <>8
                         [
-                        f'8
+                        <>8
                         ~
                         ]
-                        f'4
-                        c'4
-                        ef'2
+                        <>4
+                        <>4
+                        <>2
                     }
                     {
                         \accidentalStyle modern-cautionary
@@ -1053,35 +1058,40 @@
                         ]
                         af''4
                         c''4
-                        ef''4
-                        c''4
+                        ~
+                        c''8
+                        [
+                        g''8
+                        ]
+                        r4
                         af''8
                         [
                         g''8
                         ]
-                        f''4
+                        ef''4
                         ~
-                        f''8
+                        ef''8
                         [
-                        af''8
+                        f''8
                         ]
                         r8
                         [
                         f''8
                         ]
-                        af''8
-                        [
-                        c'''8
-                        ]
+                        af''4
                         f''4
-                        ef'''4
+                        c'''4
                         r8
                         [
-                        ef'''8
+                        bf''8
                         ]
                         af''4
-                        f''4
+                        ~
                         af''4
+                        f''8
+                        [
+                        af''8
+                        ]
                         r4
                         f''4
                         af''2
@@ -1121,39 +1131,44 @@
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         r8
                         [
-                        c'8
+                        <c' g'>8
                         ]
-                        bf4
-                        c'4
-                        bf4
-                        c'4
-                        ef'8
-                        [
-                        g'8
-                        ]
-                        c''4
+                        <bf bf'>4
+                        <c' g'>4
                         ~
-                        c''8
+                        <c' g'>8
                         [
-                        af'8
+                        <d' d''>8
+                        ]
+                        r4
+                        <af' ef''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <ef' bf'>4
+                        ~
+                        <ef' bf'>8
+                        [
+                        <c' c''>8
                         ]
                         r8
                         [
-                        c''8
+                        <f' c''>8
                         ]
-                        af'8
-                        [
-                        g'8
-                        ]
-                        f'4
-                        bf'4
+                        <ef' ef''>4
+                        <f' c''>4
+                        <g' g''>4
                         r8
                         [
-                        ef'8
+                        <bf' f''>8
                         ]
-                        ef'4
-                        f'4
-                        ef'4
+                        <ef' ef''>4
+                        ~
+                        <ef' ef''>4
+                        <f' c''>8
+                        [
+                        <ef' ef''>8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
@@ -1188,35 +1203,40 @@
                         ]
                         af''4
                         c''4
-                        ef''4
-                        c''4
+                        ~
+                        c''8
+                        [
+                        g''8
+                        ]
+                        r4
                         af''8
                         [
                         g''8
                         ]
-                        f''4
+                        ef''4
                         ~
-                        f''8
+                        ef''8
                         [
-                        af''8
+                        f''8
                         ]
                         r8
                         [
                         f''8
                         ]
-                        af''8
-                        [
-                        c'''8
-                        ]
+                        af''4
                         f''4
-                        ef'''4
+                        c'''4
                         r8
                         [
-                        ef'''8
+                        bf''8
                         ]
                         af''4
-                        f''4
+                        ~
                         af''4
+                        f''8
+                        [
+                        af''8
+                        ]
                     }
                 }
                 \context Staff = "cco_cello"
@@ -1232,119 +1252,124 @@
                         \clef "bass"
                         r8
                         [
-                        g8
+                        <c g>8
                         ]
-                        bf4
-                        g4
-                        bf4
-                        g4
-                        ef8
-                        [
-                        d8
-                        ]
-                        c4
+                        <bf, bf>4
+                        <c g>4
                         ~
-                        c8
+                        <c g>8
                         [
-                        ef8
+                        <d d'>8
+                        ]
+                        r4
+                        <af ef'>8
+                        [
+                        <d d'>8
+                        ]
+                        <ef bf>4
+                        ~
+                        <ef bf>8
+                        [
+                        <c c'>8
                         ]
                         r8
                         [
-                        c8
+                        <f c'>8
                         ]
-                        ef8
-                        [
-                        g8
-                        ]
-                        c'4
-                        bf4
+                        <ef ef'>4
+                        <f c'>4
+                        <g g'>4
                         r8
                         [
-                        bf8
+                        <bf f'>8
                         ]
-                        ef4
-                        c4
-                        ef4
+                        <ef ef'>4
+                        ~
+                        <ef ef'>4
+                        <f c'>8
+                        [
+                        <ef ef'>8
+                        ]
                     }
                     {
                         \accidentalStyle modern-cautionary
+                        r8
+                        [
+                        <>8
+                        ]
+                        <>4
+                        <>8.
+                        [
+                        <>16
+                        ~
+                        ]
+                        <>4
                         r16
                         [
-                        bf,8.
-                        ]
-                        c4
-                        c8.
-                        [
-                        bf,16
+                        <>8.
                         ~
                         ]
-                        bf,4
+                        <>4
+                        <>2
+                        <>4
+                        <>4
                         r16
                         [
-                        ef8.
+                        <>8.
+                        ]
+                        <>8
+                        [
+                        <>8
                         ~
                         ]
-                        ef4
-                        bf,2
-                        f4
-                        ef4
+                        <>8
+                        [
+                        <>8
+                        ~
+                        ]
+                        <>4
+                        ~
+                        <>8
+                        [
+                        <>8
+                        ~
+                        ]
+                        <>4
                         r16
                         [
-                        f8.
+                        <>8.
+                        ~
                         ]
-                        ef8
+                        <>4
+                        <>8
                         [
-                        bf,8
+                        <>8
                         ~
                         ]
-                        bf,8
-                        [
-                        af,8
-                        ~
-                        ]
-                        af,4
-                        ~
-                        af,8
-                        [
-                        bf,8
-                        ~
-                        ]
-                        bf,4
+                        <>4
                         r16
                         [
-                        ef8.
+                        <>8.
                         ~
                         ]
-                        ef4
-                        af,8
+                        <>4
+                        <>8.
                         [
-                        bf,8
+                        <>16
                         ~
                         ]
-                        bf,4
-                        r16
+                        <>4
+                        <>4
+                        <>4
+                        <>4
+                        <>4
+                        <>4
+                        <>8
                         [
-                        ef8.
-                        ~
+                        <>8
                         ]
-                        ef4
-                        af,8.
-                        [
-                        bf,16
-                        ~
-                        ]
-                        bf,4
-                        bf,4
-                        c4
-                        cs4
-                        ef4
-                        bf,4
-                        c8
-                        [
-                        cs8
-                        ]
-                        ef4
-                        bf,4
+                        <>4
+                        <>4
                     }
                 }
                 \context Staff = "cco_bass"
@@ -1358,48 +1383,69 @@
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \clef "bass"
-                        g,,2
+                        <>2
                         ~
-                        g,,4
-                        g,,4
-                        g,,2
+                        <>4
+                        <>4
+                        <>2
                         ~
-                        g,,4
-                        g,,4
-                        g,,2
+                        <>4
+                        <>4
+                        <>2
                         ~
-                        g,,4
-                        g,,4
-                        g,,2
-                        af,,2
-                        g,,2
-                        af,,2
-                        g,,2
-                        af,,2
-                        af,,2
+                        <>4
+                        <>4
+                        <>2
+                        <>2
+                        <>2
+                        <>2
+                        <>2
+                        <>2
+                        <>2
                         ~
-                        af,,4
-                        af,,4
-                        af,,2
+                        <>4
+                        <>4
+                        <>2
                         ~
-                        af,,4
-                        af,,4
-                        af,,2
+                        <>4
+                        <>4
+                        <>2
                         ~
-                        af,,4
-                        af,,4
-                        bf,,2
-                        af,,2
-                        bf,,2
-                        af,,2
-                        bf,,2
-                        af,,2
+                        <>4
+                        <>4
+                        <>2
+                        <>2
+                        <>2
+                        <>2
+                        <>2
+                        <>2
                     }
                 }
             >>
         >>
         \context StaffGroup = "short_score"
         <<
+            \context RhythmicStaff = "high_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+            }
+            \context RhythmicStaff = "mid_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+            }
+            \context RhythmicStaff = "bass_rhythm"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+            }
             \context Staff = "melody_line1"
             \with
             {
@@ -1465,5 +1511,14 @@
             }
         >>
     >>
-    \midi {}
+    
+                \midi {
+                    \context {
+                        \Score
+                        midiChannelMapping = #'instrument
+                    }
+                    \tempo 4 = 60
+                }
+                \layout { }                 
+                
 }

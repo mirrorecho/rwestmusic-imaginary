@@ -14,10 +14,10 @@ import lyrical
 
 s = score.ImaginaryScore()
 sb1 = lyrical.get_sb1()
-# sb1().annotate(
-#     slur_cells=True,
-#     label=("phrases", "cells")
-#     ).to_score(s)
+s = sb1().annotate(
+    slur_cells=True,
+    label=("phrases", "cells")
+    ).to_score(s)
 
 # =======================================================
 # TO DO... adjust ranges:

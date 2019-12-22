@@ -16,10 +16,10 @@ import lyrical
 
 s = score.ImaginaryScore()
 sb3 = lyrical.get_sb3()
-# sb3().annotate(
-#     slur_cells=True,
-#     label=("phrases", "cells")
-#     ).to_score(s)
+s = sb3().annotate(
+    slur_cells=True,
+    label=("phrases", "cells")
+    ).to_score(s)
 
 # TO DO: add ranges
 # =======================================================
@@ -59,16 +59,19 @@ viola = lambda_segment.LambdaSegment(
         sb3.with_only("melody_line1",),
         fabric_staves = ("cco_viola",),
         func = lambda x: x.with_only("cells",0,1,2,3
-            ).crop_chords( (0,)
-            ).smart_ranges( ((-4,12),), ),
+            # ).crop_chords( (0,)
+            # ).smart_ranges( ((-4,12),), 
+            ),
         # tag_events = {0:("p", "normal")},
     )
 cello = lambda_segment.LambdaSegment(
         sb3.with_only("melody_line1",),
         fabric_staves = ("cco_cello",),
         func = lambda x: x.with_only("cells",0,1,2,3
-            ).crop_chords( (1,)).t(-12
-            ).smart_ranges( ((-12,0),), ),
+            # ).crop_chords( (1,)
+            ).t(-12
+            # ).smart_ranges( ((-12,0),), 
+            ),
         # tag_events = {0:("p", "normal")},
     )
 

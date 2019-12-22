@@ -100,4 +100,19 @@ LINE_SMOOTH_2_REPEATS_OK = (
         ),
     )
 
+LINE_SMOOTH_2_REPEATS_PREFER = (
+    calliope.TallyCircleOfFifthsRange(over_range_multiplier=-600), 
+    calliope.TallyParallelIntervals(interval_ratings=[(0,-60), (3,40), (4,40), (8,60), (9,60)]), 
+    calliope.TallyMelodicIntervals(
+            interval_ratings=[(0, 200), (1,80), (2,110), (3,80), (4,60), (6,-20), (8,-40), (9,-40), (10,-40)], 
+            over_incremental_multiplier=(12,-200),
+            ),
+    calliope.TallyHarmonicIntervals(
+            interval_ratings=[(1,-90), (5,30), (6,-60), (7,30), (12,20), (15,30), (16,40)], 
+            ),
+    calliope.TallyRepeatedJumps(
+        min_jump=5,
+        over_incremental_multiplier=-12
+        ),
+    )
 

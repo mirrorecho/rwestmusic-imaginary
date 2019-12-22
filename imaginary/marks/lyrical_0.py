@@ -15,10 +15,10 @@ import lyrical
 
 s = score.ImaginaryScore()
 sb0 = lyrical.get_sb0()
-# s = sb0().annotate(
-#     slur_cells=True,
-#     label=("phrases", "cells")
-#     ).to_score(s)
+s = sb0().annotate(
+    slur_cells=True,
+    label=("phrases", "cells")
+    ).to_score(s)
 
 # # =======================================================
 s.extend_from(

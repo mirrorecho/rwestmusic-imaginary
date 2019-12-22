@@ -272,6 +272,13 @@ LOW_TO_HIGHISH_SEQ = RangeSeq().add_abstract(
     1, 
     HIGHER_RANGE,
     )
+LOW_TO_MID_SEQ = RangeSeq().add_abstract(
+    0, 
+    BOTTOM_RANGE,
+    ).add_abstract(
+    1, 
+    MID_RANGE,
+    )
 HIGH_TO_LOW_SEQ = RangeSeq().add_abstract(
     0, 
     TOP_RANGE,
@@ -324,12 +331,25 @@ MIDDISH_TO_LOW_SEQ = RangeSeq().add_abstract(
     ).add_abstract(
     1, BOTTOM_RANGE,
     )
+MID_TO_HIGHISH_SEQ = RangeSeq().add_abstract(
+    0, RangeFrame(
+        ratio_mid = 0.4,
+        spread = 16
+        ),
+    ).add_abstract(
+        1, RangeFrame(
+        ratio_top = 0.85,
+        spread = 18
+        ),
+    )
+
 
 MID_RANGES = PitchRanges(MID_SEQ)
 BOTTOM_RANGES = PitchRanges(BOTTOM_SEQ)
 TOP_RANGES = PitchRanges(TOP_SEQ)
 LOW_TO_HIGH_RANGES = PitchRanges(LOW_TO_HIGH_SEQ)
 LOW_TO_HIGHISH_RANGES = PitchRanges(LOW_TO_HIGHISH_SEQ)
+LOW_TO_MID_RANGES = PitchRanges(LOW_TO_MID_SEQ)
 HIGH_TO_LOW_RANGES = PitchRanges(HIGH_TO_LOW_SEQ)
 HIGHISH_TO_LOW_RANGES = PitchRanges(HIGH_TO_LOW_SEQ)
 HILL_UP_RANGES = PitchRanges(HILL_UP_SEQ)
@@ -337,6 +357,7 @@ HILL_DOWN_RANGES = PitchRanges(HILL_DOWN_SEQ)
 
 MID_TO_HIGH_RANGES=PitchRanges(MIDDISH_TO_HIGH_SEQ)
 MID_TO_LOW_RANGES=PitchRanges(MIDDISH_TO_LOW_SEQ)
+MID_TO_HIGHISH_RANGES = PitchRanges(MID_TO_HIGHISH_SEQ)
 
 MID_TO_EXTREME_RANGES= PitchRanges(MIDDISH_TO_HIGH_SEQ)
 MID_TO_EXTREME_RANGES.add(

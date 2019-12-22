@@ -78,10 +78,37 @@ trumpet_line3 = lambda_segment.LambdaSegment(
     tag_events = {2:("(",),3:(")"), 4:("(",), 5:(")"),},
     ) 
 
+fl_swells = staggered_swell.StaggeredSwells(
+    sb.with_only("high_drones"),
+    low_dynamic = "mp",
+    swell_dynamic = "mf",
+    cell_count = 1,
+    phrase_count=4,
+    swell_duration = 16,
+    selectable_start_beat=6*4,
+    # swell_split_ratios = (
+    #     1/2,
+    #     )
+    swell_staggers = (
+            (0,2),
+            (1,1),
+            # (0.5,0.5),
+            # (1,0)
+        ),
+    fabric_staves = (
+        "cco_flute1", "cco_flute2"
+        ),
+    bookend_beats = (6*4,None)
+    )
+# for c
+
 
 s.extend_from(trumpet_line1, trumpet_line2, trumpet_line3, bass_line,
     piano_chords_rh, piano_chords_lh,
+    fl_swells,
     )
+
+
 # =======================================================
 s.cells.apply(lambda x:x.auto_respell())
 
@@ -135,9 +162,113 @@ for seg in cl_dove_riff.segments:
     seg.slur_cells()
 s.extend_from(cl_dove_riff,)
 
+# TO DO: add counter line here... 
+
+s.fill_rests(beats=14*4)
+# =======================================================
+# BARS 15+
+# =======================================================
+cloud_25_26 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c25_26"),
+    fabric_staves = ("ooa_bassoon", "ooa_cello1", "ooa_cello2", "cco_oboe1", "cco_oboe2", "cco_bassoon",),
+    # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
+    # tag_all_note_events = ("-",),
+    func = lambda x: x,
+    )
+
+for seg in cloud_25_26.segments:
+    for i,n in enumerate(seg.note_events):
+        if i % 2 == 0:
+            n.tag("(")
+        else:
+            n.tag(")")
+s.extend_from(cloud_25_26,)
+s.fill_rests(beats=15.5*4, only_staves=("ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax","ooa_violin1","ooa_violin2"))
+
+cloud_27_28 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c27_28"),
+    fabric_staves = instrument_groups.get_instruments("sax", "ooa_strings") + (
+            "ooa_bassoon", "cco_oboe1", "cco_oboe2", "cco_bassoon",
+            ),
+    # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
+    # tag_all_note_events = ("-",),
+    func = lambda x: x,
+    )
+for seg in cloud_27_28.segments:
+    for i,n in enumerate(seg.note_events):
+        if i % 2 == 0:
+            n.tag("(")
+        else:
+            n.tag(")")
+s.extend_from(cloud_27_28, extend_last_machine=True)
+s.fill_rests(beats=17*4)
+# =======================================================
+
+
+s.fill_rests(beats=22*4)
+# =======================================================
+# BARS 23+
+# =======================================================
+cloud_37_39 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c37_39"),
+    fabric_staves = (
+        "ooa_clarinet", "ooa_violin1", "ooa_violin2", 
+        "cco_clarinet1", "cco_clarinet2", "cco_viola"),
+    # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
+    # tag_all_note_events = ("-",),
+    func = lambda x: x.bookend_pad(3),
+    )
+cloud_38_40 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c38_40"),
+    fabric_staves = (
+        "ooa_bari_sax", "ooa_bassoon", "ooa_cello1", 
+        "ooa_cello2", "cco_bassoon", "cco_cello"),
+    # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
+    # tag_all_note_events = ("-",),
+    func = lambda x: x.bookend_pad(6),
+    )
+cloud_39_41 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c39_41"),
+    fabric_staves = (
+        "cco_flute1", "cco_flute2", "cco_oboe1", "cco_oboe2", 
+        "cco_violin_i", "cco_violin_ii"),
+    # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
+    # tag_all_note_events = ("-",),
+    func = lambda x: x.bookend_pad(9),
+    )
+s.extend_from(cloud_37_39,cloud_38_40,cloud_39_41)
+s.fill_rests(beats=25*4)
+
+cloud_40_42 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c40_42"),
+    fabric_staves = (
+        "ooa_trombone","ooa_violin1","ooa_violin2",
+            "cco_horn","cco_trombone","cco_viola"),
+    # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
+    # tag_all_note_events = ("-",),
+    func = lambda x: x,
+    )
+s.extend_from(cloud_40_42,)
+s.fill_rests(beats=25*4 + 3)
+cloud_41_43 = lambda_segment.LambdaSegment(
+    sb.get_grid("rock_g4_c41_43"),
+    fabric_staves = (
+        "ooa_clarinet", "cco_clarinet1","cco_clarinet2",
+            "ooa_cello1", "ooa_cello2", "cco_cello"),
+    # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
+    # tag_all_note_events = ("-",),
+    func = lambda x: x,
+    )
+s.extend_from(cloud_41_43, 
+    extend_last_machine=True,)
+s.fill_rests(beats=26*4 + 2)
+
+
+# =======================================================
+
 s.cells.apply(lambda x:x.auto_respell())
 
-# s.fill_rests()
+s.fill_rests()
 
 calliope.illustrate(s)
 
