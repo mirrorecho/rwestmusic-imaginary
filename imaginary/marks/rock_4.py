@@ -8,7 +8,8 @@ from imaginary.fabrics import (instrument_groups,
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import short_block
 from imaginary.stories.fabric import ImaginaryFabric
-import rock
+from imaginary.marks import rock
+from imaginary.stories import artics
 
 # SHOULD AVERAGE 20 bars
 # TEMPO = 160+ !!!!!!
@@ -218,6 +219,8 @@ cloud_37_39 = lambda_segment.LambdaSegment(
     # tag_all_note_events = ("-",),
     func = lambda x: x.bookend_pad(3),
     )
+for staff in cloud_37_39.staves:
+    staff.transformed(artics.FuseRepeatedNotes())
 cloud_38_40 = lambda_segment.LambdaSegment(
     sb.get_grid("rock_g4_c38_40"),
     fabric_staves = (
@@ -227,6 +230,9 @@ cloud_38_40 = lambda_segment.LambdaSegment(
     # tag_all_note_events = ("-",),
     func = lambda x: x.bookend_pad(6),
     )
+for staff in cloud_38_40.staves:
+    staff.transformed(artics.FuseRepeatedNotes())
+
 cloud_39_41 = lambda_segment.LambdaSegment(
     sb.get_grid("rock_g4_c39_41"),
     fabric_staves = (
@@ -236,6 +242,9 @@ cloud_39_41 = lambda_segment.LambdaSegment(
     # tag_all_note_events = ("-",),
     func = lambda x: x.bookend_pad(9),
     )
+for staff in cloud_39_41.staves:
+    staff.transformed(artics.FuseRepeatedNotes())
+
 s.extend_from(cloud_37_39,cloud_38_40,cloud_39_41)
 s.fill_rests(beats=25*4)
 
@@ -248,8 +257,11 @@ cloud_40_42 = lambda_segment.LambdaSegment(
     # tag_all_note_events = ("-",),
     func = lambda x: x,
     )
+for staff in cloud_40_42.staves:
+    staff.transformed(artics.FuseRepeatedNotes())
 s.extend_from(cloud_40_42,)
 s.fill_rests(beats=25*4 + 3)
+
 cloud_41_43 = lambda_segment.LambdaSegment(
     sb.get_grid("rock_g4_c41_43"),
     fabric_staves = (
@@ -259,6 +271,8 @@ cloud_41_43 = lambda_segment.LambdaSegment(
     # tag_all_note_events = ("-",),
     func = lambda x: x,
     )
+for staff in cloud_41_43.staves:
+    staff.transformed(artics.FuseRepeatedNotes())
 s.extend_from(cloud_41_43, 
     extend_last_machine=True,)
 s.fill_rests(beats=26*4 + 2)
@@ -270,6 +284,8 @@ cloud_42_45 = lambda_segment.LambdaSegment(
             "ooa_bassoon","cco_bassoon",),
     func = lambda x: x,
     )
+for staff in cloud_42_45.staves:
+    staff.transformed(artics.FuseRepeatedNotes())
 s.extend_from(cloud_42_45, 
     extend_last_machine=True,)
 s.fill_rests(beats=27*4 + 1)
@@ -281,6 +297,8 @@ cloud_43_45 = lambda_segment.LambdaSegment(
             "cco_oboe1","cco_oboe2","cco_trumpet"),
     func = lambda x: x,
     )
+for staff in cloud_43_45.staves:
+    staff.transformed(artics.FuseRepeatedNotes())
 s.extend_from(cloud_43_45, 
     extend_last_machine=True,)
 

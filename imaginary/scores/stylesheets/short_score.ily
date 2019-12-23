@@ -1,12 +1,11 @@
 #(set! paper-alist (cons '("shortscore" . (cons (* 16.2 in) (* 12.4 in))) paper-alist))
 
+
 \paper {
   #(set-paper-size "shortscore")
 }
 
 #(set-global-staff-size 26.9)
-
-
 
 
 

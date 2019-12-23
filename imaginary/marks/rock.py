@@ -876,10 +876,10 @@ def get_sb4():
 
 if __name__ == '__main__':
     sb = short_block.get_block()
-    # sb.extend_from(get_sb0())
-    # sb.extend_from(get_sb1())
-    # sb.extend_from(get_sb2())
-    # sb.extend_from(get_sb3())
+    sb.extend_from(get_sb0())
+    sb.extend_from(get_sb1())
+    sb.extend_from(get_sb2())
+    sb.extend_from(get_sb3())
     sb.extend_from(get_sb4())
 
     sb.annotate(

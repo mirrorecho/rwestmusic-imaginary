@@ -173,6 +173,13 @@ class LibraryMaterial(object):
     def smart_ranges(self, ranges=( (0,12), ) ):
         return self.transformed( calliope.SmartRanges(smart_ranges=ranges) )
 
+    # TO DO: necessary?
+    def ops(self, select_attr="events"):
+        my_ops = getattr(self, select_attr).ops
+        # TO DO: this original_node business is wonky...
+        my_ops.original_node = self
+        return my_ops
+
 
 class ImaginarySegment(LibraryMaterial, calliope.Segment): pass
 
