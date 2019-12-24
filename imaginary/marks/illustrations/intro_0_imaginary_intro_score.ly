@@ -47,8 +47,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -131,8 +131,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -215,8 +215,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -299,8 +299,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -384,8 +384,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -469,8 +469,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -556,8 +556,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -640,8 +640,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -725,8 +725,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -812,8 +812,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -896,8 +896,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -983,8 +983,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1056,22 +1056,25 @@
                         \clef "bass"
                         s4
                         \normalStaff
+                        s8
+                        cs1
+                        \mp
+                        \freePad
+                        s4
+                        \normalStaff
                         s\breve
-                        s2
                         r1
                         s\breve
-                        s2
                         \freeContinue
                         s4
                         \once \hide Rest
                         r4
                         s4
-                        s4
-                        s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
+                        s8
                     }
                     {
                         \numericTimeSignature
@@ -1155,8 +1158,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1240,8 +1243,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1330,8 +1333,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1414,8 +1417,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1498,6 +1501,61 @@
                         s4
                         s4
                         s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s8
+                        r2
+                        \freePad
+                        s4
+                        \normalStaff
+                        \bar ".|:"
+                        s8
+                        fs8
+                        \ppp
+                        ^ \markup { "a 2, 2nd start after 1st" }
+                        \<
+                        (
+                        g8
+                        a8
+                        b8
+                        d'8
+                        fs'8
+                        )
+                        cs'1
+                        \mp
+                        \freeContinue
+                        \bar ":|."
+                        s4
+                        ^ \markup { "repeat (staggered)" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         \freePad
                         \freeRestArrow
                         r4
@@ -1511,40 +1569,42 @@
                         \time 8/1
                         s4
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        fs8
+                        \p
+                        \<
+                        (
+                        g8
+                        a8
+                        )
+                        b1
+                        \mp
+                        \fermata
                         \freeContinue
+                        \bar ":|."
                         s4
+                        ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
                         r4
                         s4
                         s4
                         s4
-                        \freePad
-                        \freeRestArrow
-                        r4
                         s4
-                    }
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
-                        \accidentalStyle neo-modern-cautionary
-                        \time 8/1
                         s4
-                        \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
-                        \freeContinue
                         s4
-                        \once \hide Rest
-                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -1583,8 +1643,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1670,8 +1730,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1754,8 +1814,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1839,8 +1899,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1923,8 +1983,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
                 }
@@ -1996,11 +2056,16 @@
                     \clef "treble"
                     s4
                     \normalStaff
-                    s\breve
-                    s2
+                    s8
+                    <cs' d' g'' af''>4
+                    \ff
+                    -\accent
+                    \freePad
+                    s4
+                    \normalStaff
+                    s1.
                     r1
-                    s\breve
-                    s2
+                    s1.
                     \freeContinue
                     s4
                     \once \hide Rest
@@ -2008,10 +2073,16 @@
                     s4
                     s4
                     s4
-                    \freePad
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
+                    s8
                 }
                 {
                     \numericTimeSignature
@@ -2089,8 +2160,8 @@
                             af''1
                             \pp
                             \fermata
-                            \bar ":|."
                             \freeContinue
+                            \bar ":|."
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2117,8 +2188,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -2188,7 +2259,7 @@
                             \freeContinue
                             \bar ":|."
                             s4
-                            ^ \markup { repeat }
+                            ^ \markup { "repeat, freely" }
                             \once \hide Rest
                             r4
                             s4
@@ -2248,8 +2319,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2375,8 +2446,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2412,16 +2483,41 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s4
+                            s8
                             \normalStaff
-                            s\breve
                             s2
                             r1
-                            s\breve
-                            s2
-                            \freeContinue
+                            \freePad
                             s4
+                            \normalStaff
+                            \bar ".|:"
+                            s8
+                            fs'8
+                            \pp
+                            cs''8
+                            g'8
+                            d''8
+                            (
+                            e''2
+                            )
+                            \freeContinue
+                            \bar ":|."
+                            s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -2459,8 +2555,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2539,8 +2635,54 @@
                             g'1
                             \pp
                             \fermata
-                            \bar ":|."
                             \freeContinue
+                            \bar ":|."
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freeRestArrow
+                            \freePad
+                            r4
+                            s4
+                            s8
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  " 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \normalStaff
+                            \bar ".|:"
+                            s8
+                            g'1
+                            \fermata
+                            \freeContinue
+                            \bar ":|."
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2581,46 +2723,44 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
-                            \freeContinue
-                            s4
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                        }
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \time 8/1
-                            s4
-                            \normalStaff
                             \bar ".|:"
                             s8
-                            r2
-                            ^ \markup { ROCK }
+                            d'8
+                            \pp
+                            \<
+                            g'2
+                            (
+                            fs'8
+                            )
+                            a'4
+                            e''16
+                            [
+                            (
+                            d''8
+                            ]
+                            )
+                            fs''8
+                            [
+                            (
+                            d''8
+                            fs''8
+                            ]
+                            )
+                            d''16
+                            (
+                            cs''4
+                            )
+                            b'16
+                            (
+                            cs''8
+                            \mp
+                            )
                             \freeContinue
                             \bar ":|."
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
                             s4
                             s4
                             s4
@@ -2643,7 +2783,7 @@
                             \freeRestArrow
                             r4
                             s4
-                            s8
+                            s16
                         }
                     }
                     \context Staff = "cco_violin_ii2"
@@ -2674,6 +2814,54 @@
                             s4
                             s4
                             s4
+                            \freeRestArrow
+                            \freePad
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  " 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \normalStaff
+                            \bar ".|:"
+                            s8
+                            d'8
+                            \pp
+                            (
+                            cs'1
+                            )
+                            \freeContinue
+                            \bar ":|."
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             \freePad
                             \freeRestArrow
                             r4
@@ -2687,15 +2875,35 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
+                            \bar ".|:"
+                            s8
+                            ef'1
+                            \fermata
                             \freeContinue
+                            \bar ":|."
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -2703,31 +2911,7 @@
                             \freeRestArrow
                             r4
                             s4
-                        }
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
-                            \freeContinue
-                            s4
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
+                            s8
                         }
                     }
                     \context Staff = "cco_violin_ii3"
@@ -2758,8 +2942,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2796,15 +2980,37 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
+                            \bar ".|:"
+                            s8
+                            fs'8
+                            \pp
+                            cs''8
+                            g'8
+                            d''1
                             \freeContinue
+                            \bar ":|."
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -2842,8 +3048,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2922,8 +3128,8 @@
                             cs1
                             \pp
                             \fermata
-                            \bar ":|."
                             \freeContinue
+                            \bar ":|."
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2950,8 +3156,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -3010,15 +3216,43 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
+                            \bar ".|:"
+                            s8
+                            d''8
+                            \pp
+                            \<
+                            (
+                            c''8
+                            )
+                            e'8
+                            (
+                            c'4
+                            )
+                            g4
+                            fs1
+                            \p
                             \freeContinue
+                            \bar ":|."
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -3062,8 +3296,8 @@
                             e'1
                             \fermata
                             )
-                            \bar ":|."
                             \freeContinue
+                            \bar ":|."
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3080,8 +3314,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3095,19 +3329,26 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            r2
-                            ^ \markup { ROCK }
+                            d''8
+                            \pp
+                            \<
+                            a'8
+                            (
+                            g'8
+                            )
+                            b8
+                            (
+                            g4
+                            )
+                            d4
+                            \p
+                            cs1
                             \freeContinue
                             \bar ":|."
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
                             s4
                             s4
                             s4
@@ -3140,15 +3381,36 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
+                            \bar ".|:"
+                            s8
+                            fs1
+                            \p
+                            \fermata
                             \freeContinue
+                            \bar ":|."
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -3156,6 +3418,7 @@
                             \freeRestArrow
                             r4
                             s4
+                            s8
                         }
                     }
                     \context Staff = "cco_viola3"
@@ -3192,8 +3455,8 @@
                             fs'8
                             )
                             b1
-                            \bar ":|."
                             \freeContinue
+                            \bar ":|."
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3210,8 +3473,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8.
@@ -3274,15 +3537,36 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
+                            \bar ".|:"
+                            s8
+                            b4
+                            d'2
                             \freeContinue
+                            \bar ":|."
                             s4
+                            ^ \markup { "repeat, freely" }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -3290,6 +3574,7 @@
                             \freeRestArrow
                             r4
                             s4
+                            s8
                         }
                     }
                     \context Staff = "cco_viola4"
@@ -3331,8 +3616,8 @@
                             (
                             fs'4
                             )
-                            \bar ":|."
                             \freeContinue
+                            \bar ":|."
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3353,8 +3638,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s16
@@ -3424,15 +3709,42 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
+                            \bar ".|:"
+                            s8
+                            g'16
+                            (
+                            fs'4
+                            )
+                            d'4
+                            g'8
+                            (
+                            fs'4
+                            )
                             \freeContinue
+                            \bar ":|."
                             s4
+                            ^ \markup { "repeat, freely" }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -3440,6 +3752,7 @@
                             \freeRestArrow
                             r4
                             s4
+                            s8.
                         }
                     }
                 >>
@@ -3474,8 +3787,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3543,15 +3856,45 @@
                             \time 8/1
                             s4
                             \normalStaff
-                            s\breve
-                            s2
-                            r1
-                            s\breve
-                            s2
+                            \bar ".|:"
+                            s8
+                            fs2
+                            \pp
+                            \<
+                            \repeat tremolo 8
+                            {
+                            fs32 \( g32 \)
+                            }
+                            g4
+                            \mp
+                            \>
+                            \repeat tremolo 8
+                            {
+                            fs32 \( g32 \)
+                            }
+                            fs4
+                            \!
                             \freeContinue
+                            \bar ":|."
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -3559,6 +3902,7 @@
                             \freeRestArrow
                             r4
                             s4
+                            s8
                         }
                     }
                     \context Staff = "cco_cello2"
@@ -3590,8 +3934,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3711,23 +4055,48 @@
                         \time 8/1
                         \clef "bass"
                         s4
+                        s8
                         \normalStaff
-                        s\breve
-                        s2
+                        s8
                         r1
-                        s\breve
-                        s2
-                        \freeContinue
+                        \fermata
+                        ^ \markup { "wait 8-10''" }
+                        \freePad
                         s4
+                        \freePad
+                        s4
+                        \normalStaff
+                        \bar ".|:"
+                        s8
+                        af1
+                        \pp
+                        \fermata
+                        \freeContinue
+                        \bar ":|."
+                        s4
+                        ^ \markup { repeat }
                         \once \hide Rest
                         r4
                         s4
                         s4
                         s4
-                        \freePad
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
+                        s8
                     }
                     {
                         \numericTimeSignature
@@ -3737,15 +4106,36 @@
                         \time 8/1
                         s4
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        g1
+                        \pp
+                        \fermata
                         \freeContinue
+                        \bar ":|."
                         s4
+                        ^ \markup { repeat }
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -3753,6 +4143,7 @@
                         \freeRestArrow
                         r4
                         s4
+                        s8
                     }
                     {
                         \numericTimeSignature
@@ -3762,15 +4153,36 @@
                         \time 8/1
                         s4
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        fs1
+                        \pp
+                        \fermata
                         \freeContinue
+                        \bar ":|."
                         s4
+                        ^ \markup { repeat }
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -3778,6 +4190,7 @@
                         \freeRestArrow
                         r4
                         s4
+                        s8
                     }
                 }
             >>

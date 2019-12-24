@@ -2,7 +2,7 @@ import math
 import abjad, calliope
 
 from imaginary.stories import short_block
-from imaginary.libraries import home, counter, bass, drone, pitch_ranges
+from imaginary.libraries import home, counter, bass, riff, drone, pitch_ranges
 from imaginary.fabrics import instrument_groups, melody, pad, pizz_flutter, pulse, staggered_swell
 from imaginary.scores.score import ImaginaryScore
 from imaginary.stories.library_material import (
@@ -140,7 +140,7 @@ def hold_cell(pitch, *args):
     return hold_cell
 
 FREE_REST = FreeSegment()
-FREE_REST.machine_arrow(REST_CELL,
+FREE_REST.machine_arrow(REST_CELL(),
     # pad=(8,1), 
     with_repeat=False,
     machine_pad=(10,10)
@@ -153,4 +153,9 @@ def fill_score_empty(score, **kwargs):
             staff.append(FREE_REST(**kwargs))
 
 MID_REST_CELL = ImaginaryCell(rhythm=(-2,))
+
+INTRO_RIFF = riff.RiffPhrase().crop("events",0,5).t(-3).ops("events")(
+    6, beats=4)()
+
+INTRO_RIFF_WIGGLE = riff.RiffPhrase().crop("cells",1).t(2)
 
