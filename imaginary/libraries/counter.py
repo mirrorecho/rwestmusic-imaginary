@@ -34,11 +34,11 @@ class CounterLineA(LibraryMaterial, calliope.Line):
             init_pitches = (9, 9, 7, 5, "R") # NOTE: first event could also be rest
 
     class PhraseD(LibraryMaterial, calliope.Phrase):
-        class CellD1(calliope.Cell):
+        class CellD1(LibraryMaterial, calliope.Cell):
             init_rhythm = (-1, 1)
             init_pitches = ("R", 7)
     
-        class CellD2(calliope.Cell):
+        class CellD2(LibraryMaterial, calliope.Cell):
             init_rhythm = (0.5, 5.5,)
             init_pitches = (12,9,)
 
@@ -49,10 +49,10 @@ class CounterLineA(LibraryMaterial, calliope.Line):
         )
         return my_mod
 
-class CounterStraightCell1(calliope.Cell):
+class CounterStraightCell1(LibraryMaterial, calliope.Cell):
     init_rhythm=(-1, 1, 1, 1,)
 
-class CounterStraightCell2(calliope.Cell):
+class CounterStraightCell2(LibraryMaterial, calliope.Cell):
     init_rhythm=(1, 1, 1, 1,)
 
 

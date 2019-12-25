@@ -72,8 +72,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -97,8 +97,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -156,8 +156,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -181,8 +181,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -240,8 +240,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -265,8 +265,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -324,8 +324,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -349,8 +349,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -409,8 +409,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -434,8 +434,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -494,8 +494,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -519,8 +519,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -581,8 +581,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -606,8 +606,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -665,8 +665,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -690,8 +690,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -750,8 +750,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -775,8 +775,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -837,8 +837,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -862,8 +862,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -921,8 +921,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -946,8 +946,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1008,8 +1008,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1033,8 +1033,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1096,8 +1096,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1121,8 +1121,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1183,8 +1183,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1208,8 +1208,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1225,7 +1225,7 @@
                         \freePad
                         \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Cello 1" }
+                        \set Staff.instrumentName = \markup { "Cello 1,2" }
                         \set Staff.shortInstrumentName = \markup { Vc.1,2 }
                         \time 8/1
                         \clef "bass"
@@ -1268,8 +1268,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1293,8 +1293,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1358,8 +1358,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1383,8 +1383,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1442,8 +1442,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1467,8 +1467,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1534,8 +1534,8 @@
                         )
                         cs'1
                         \mp
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -1556,8 +1556,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1581,8 +1581,8 @@
                         b1
                         \mp
                         \fermata
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -1608,8 +1608,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1668,8 +1668,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1693,8 +1693,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1755,8 +1755,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1780,8 +1780,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1839,8 +1839,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1864,8 +1864,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1924,8 +1924,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1949,8 +1949,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -2008,8 +2008,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
                 }
@@ -2033,8 +2033,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
                 }
@@ -2104,8 +2104,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
                 }
@@ -2129,8 +2129,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
                 }
@@ -2158,10 +2158,10 @@
                             \bar ".|:"
                             s8
                             af''1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2208,8 +2208,8 @@
                             (
                             g''1
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2236,8 +2236,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s16
@@ -2256,10 +2256,10 @@
                             (
                             fs''1
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
-                            ^ \markup { "repeat, freely" }
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
                             s4
@@ -2284,8 +2284,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s16
@@ -2335,10 +2335,10 @@
                             \bar ".|:"
                             s8
                             af''1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2365,8 +2365,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -2383,8 +2383,8 @@
                             s8
                             g''1
                             \fermata
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2411,8 +2411,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -2471,8 +2471,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2500,8 +2500,8 @@
                             (
                             e''2
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2521,8 +2521,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2580,8 +2580,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2605,8 +2605,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2633,10 +2633,10 @@
                             \bar ".|:"
                             s8
                             g'1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2681,8 +2681,8 @@
                             s8
                             g'1
                             \fermata
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2709,8 +2709,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -2755,8 +2755,8 @@
                             cs''8
                             \mp
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2779,8 +2779,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s16
@@ -2834,8 +2834,8 @@
                             (
                             cs'1
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2862,8 +2862,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2877,10 +2877,10 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            ef'1
+                            e'1
                             \fermata
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2907,8 +2907,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -2967,8 +2967,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2987,8 +2987,8 @@
                             cs''8
                             g'8
                             d''1
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3014,8 +3014,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3073,8 +3073,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3098,8 +3098,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3126,10 +3126,10 @@
                             \bar ".|:"
                             s8
                             cs1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3181,8 +3181,8 @@
                             fs1
                             \fermata
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3203,8 +3203,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3222,17 +3222,17 @@
                             \pp
                             \<
                             (
-                            c''8
+                            a'8
                             )
-                            e'8
+                            g'8
                             (
-                            c'4
+                            b8
                             )
                             g4
-                            fs1
+                            d1
                             \p
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3256,10 +3256,11 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
+                            s8
                         }
                     }
                     \context Staff = "cco_viola2"
@@ -3296,8 +3297,8 @@
                             e'1
                             \fermata
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3343,8 +3344,8 @@
                             d4
                             \p
                             cs1
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3367,8 +3368,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -3384,10 +3385,10 @@
                             \bar ".|:"
                             s8
                             fs1
-                            \p
                             \fermata
-                            \freeContinue
+                            \p
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3414,8 +3415,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -3455,8 +3456,8 @@
                             fs'8
                             )
                             b1
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3501,8 +3502,8 @@
                             )
                             b4
                             d'2
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3523,8 +3524,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s16
@@ -3541,8 +3542,8 @@
                             s8
                             b4
                             d'2
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3570,8 +3571,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -3602,8 +3603,8 @@
                             \bar ".|:"
                             s8
                             r4
-                            cs'8
                             \pp
+                            cs'8
                             (
                             d'4
                             )
@@ -3616,8 +3617,8 @@
                             (
                             fs'4
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3656,7 +3657,6 @@
                             s8
                             r4
                             cs'8
-                            \pp
                             (
                             d'4
                             )
@@ -3664,13 +3664,10 @@
                             (
                             fs'4
                             )
-                            d'4
-                            g'8
-                            (
-                            fs'4
-                            )
-                            \freeContinue
+                            d'2
+                            \fermata
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3695,11 +3692,11 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
-                            s16
+                            s8.
                         }
                         {
                             \numericTimeSignature
@@ -3720,8 +3717,8 @@
                             (
                             fs'4
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3748,8 +3745,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8.
@@ -3818,8 +3815,8 @@
                             }
                             cs4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3842,8 +3839,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -3874,8 +3871,8 @@
                             }
                             fs4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3898,8 +3895,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -3950,10 +3947,10 @@
                             \bar ".|:"
                             s8
                             cs'1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3980,8 +3977,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s8
@@ -4006,8 +4003,8 @@
                             (
                             e1
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4031,8 +4028,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                             s16
@@ -4069,10 +4066,10 @@
                         \bar ".|:"
                         s8
                         af1
-                        \pp
                         \fermata
-                        \freeContinue
+                        \pp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -4109,10 +4106,10 @@
                         \bar ".|:"
                         s8
                         g1
-                        \pp
                         \fermata
-                        \freeContinue
+                        \pp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -4139,8 +4136,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                         s8
@@ -4156,10 +4153,10 @@
                         \bar ".|:"
                         s8
                         fs1
-                        \pp
                         \fermata
-                        \freeContinue
+                        \pp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -4186,8 +4183,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                         s8

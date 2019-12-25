@@ -80,7 +80,7 @@ class ImaginaryIntroScore(ImaginaryScore):
 
             class OoaCellos(calliope.Staff):
                 instrument=abjad.Cello(
-                    name="Cello 1", short_name="vc.1,2")
+                    name="Cello 1,2", short_name="vc.1,2")
                 clef="bass"
 
 

@@ -180,6 +180,10 @@ class LibraryMaterial(object):
         my_ops.original_node = self
         return my_ops
 
+    @property
+    def eps(self):
+        return self.ops("events")
+
 
 class ImaginarySegment(LibraryMaterial, calliope.Segment): pass
 
