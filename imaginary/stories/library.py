@@ -28,6 +28,10 @@ class Library(calliope.CalliopeBase):
         else:
             return [self.get(a)(**kwargs) for a in args]
 
+    @property
+    def names(self):
+        return list(self._funcs.keys())
+
     def get(self, arg):
         """ gets a single item """
         if arg not in self._items:
@@ -40,15 +44,47 @@ class Library(calliope.CalliopeBase):
         else:
             return self.get(arg)
 
+    def __setitem__(self, name, value):
+        """
+        adds an item without waiting for lazy evaluation
+        """
+        self._items[name] = value
+        self._funcs[name] = lambda : value # for consistency sake
+
     def reload(self, *args):
+        """
+        reloads items (re-evaluates functions)
+        """
         for n, v in self._funcs.items():
             if (not args or n in args):
                 self._items[arg] = self._funcs[arg]()
 
     def add(self, *args, namespace=None, category=None):
+        """
+        adds functions to be evaluated lazily when got by key from library
+        """
         for func in args:
             my_name = func.__name__ if not namespace else namespace + "_" + func.__name__
             self._funcs[my_name] = func
+
+    # TO DO... test... or delete KISS?!
+    def add_selection_names(self, selection, *args, namespace=None):
+        for my_name in args:
+            if namespace:
+                my_name = namespace + "_" + my_name
+            self._funcs[my_name] = lambda : selection[my_name]
+
+    def set_nodes(self, node, *args, namespace=None):
+        """
+        set child nodes by selection arguments
+        (no lazy evaluation)
+        """
+        for select_attr in args:
+            for n in getattr(node, select_attr):
+                my_name = n.name
+                if namespace:
+                    my_name = namespace + "_" + my_name
+                self[my_name] = n
 
 
 

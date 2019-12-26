@@ -184,6 +184,18 @@ class LibraryMaterial(object):
     def eps(self):
         return self.ops("events")
 
+    def autoname(self, *args, prefix="", add_to_lib=None):
+        for select_attr in args:
+            for i,n in enumerate(getattr(self, select_attr)):
+                name_snakes = [select_attr[:-1], n.slug or str(i)]
+                if prefix:
+                    name_snakes.insert(0, prefix)
+                my_name = "_".join(name_snakes)
+                n.name = my_name
+                if add_to_lib:
+                    add_to_lib[my_name] = n
+        return self
+
 
 class ImaginarySegment(LibraryMaterial, calliope.Segment): pass
 

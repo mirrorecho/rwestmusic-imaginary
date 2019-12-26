@@ -1,47 +1,14 @@
 import abjad, calliope
-from imaginary.stories.library_material import LibraryMaterial
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
+    )
+from imaginary.stories.library import Library
 
+RHYTHM_DOWN = (0.5, 3.5,)
+RHYTHM_MIST = (1, 0.5, 2.5,)
+RHYTHM_STRAIGHT = (1,)*4
 
-class CounterCell1(LibraryMaterial, calliope.Cell):
-    init_rhythm = (0.5, 3.5,)
-
-class CounterCell2(LibraryMaterial, calliope.Cell):
-    init_rhythm = (1, 0.5, 2.5,)
-
-class CounterCellC1(LibraryMaterial, calliope.Cell):
-    init_rhythm = (-1, 2, 0.5, 0.5,)
-
-class CounterCellC2(LibraryMaterial, calliope.Cell):
-    init_rhythm = (-0.5, 0.5, 0.5, 0.5, -2)
-
-class CounterLineA(LibraryMaterial, calliope.Line):
-    class PhraseA(LibraryMaterial, calliope.Phrase):
-        class CellA1(CounterCell1):
-            init_pitches = (0, -1,)
-        class CellA2(CounterCell2):
-            init_pitches = (5, 4, -3)
-
-    class PhraseB(LibraryMaterial, calliope.Phrase):
-        class CellB1(CounterCell1):
-            init_pitches = (5, 4,) 
-        class CellB2(CounterCell2):
-            init_pitches = (4, 9, 7)
-
-    class PhraseC(LibraryMaterial, calliope.Phrase):
-        class CellC1(CounterCellC1):
-            init_pitches = ("R", 5, 4, 2,)
-        class CellC2(CounterCellC2):
-            init_pitches = (9, 9, 7, 5, "R") # NOTE: first event could also be rest
-
-    class PhraseD(LibraryMaterial, calliope.Phrase):
-        class CellD1(LibraryMaterial, calliope.Cell):
-            init_rhythm = (-1, 1)
-            init_pitches = ("R", 7)
-    
-        class CellD2(LibraryMaterial, calliope.Cell):
-            init_rhythm = (0.5, 5.5,)
-            init_pitches = (12,9,)
-
+class CounterLine(ImaginaryLine):
     def as_mod(self, steps=2, scale=None):
         my_mod = self.transformed(
         calliope.TransposeWithinScale(steps=steps, scale=scale),
@@ -49,42 +16,88 @@ class CounterLineA(LibraryMaterial, calliope.Line):
         )
         return my_mod
 
-class CounterStraightCell1(LibraryMaterial, calliope.Cell):
-    init_rhythm=(-1, 1, 1, 1,)
+def counter_line():
+    return CounterLine(
+        ImaginaryPhrase(
+            ImaginaryCell(rhythm=RHYTHM_DOWN, pitches=(0, -1,), 
+                slug="down"),
+            ImaginaryCell(rhythm=RHYTHM_MIST, pitches=(5, 4, -3), 
+                slug="mist"),
+            slug="mistify",),
 
-class CounterStraightCell2(LibraryMaterial, calliope.Cell):
-    init_rhythm=(1, 1, 1, 1,)
+        ImaginaryPhrase(
+            ImaginaryCell(rhythm=RHYTHM_DOWN, pitches=(5, 4,), 
+                slug="down_i"),
+            ImaginaryCell(rhythm=RHYTHM_MIST, pitches=(4, 9, 7), 
+                slug="mist_i"),
+            slug="mistify_i"),
+
+        ImaginaryPhrase(
+            ImaginaryCell(rhythm=(-1, 2, 0.5, 0.5,), pitches=("R", 5, 4, 2,), 
+                slug="fast"),
+            ImaginaryCell(rhythm=(-0.5, 0.5, 0.5, 0.5, -2), pitches=(9, 9, 7, 5, "R"), 
+                slug="fast_i"),
+            slug="fast"),
+
+        ImaginaryPhrase(
+            ImaginaryCell(rhythm=(-1, 1), pitches=("R", 7), 
+                slug="shortend"),
+            ImaginaryCell(rhythm=(0.5, 5.5,), pitches=(12,9,), 
+                slug="longend"),
+            slug="end"),
+        slug="counter").autoname("phrases", "cells", prefix="counter")
+
+def counter_line_i_straight():
+    return CounterLine(
+        ImaginaryPhrase(
+            ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=("R", 5, 0, -3,), 
+                slug="straightup"),
+            ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=(-3, -3, 0, -5), 
+                slug="straight"),
+            slug="straight"),
+
+        ImaginaryPhrase(
+            ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=("R", -5, -3, 2,), 
+                slug="straightup_i"),
+            ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=(0, -3, 2, 0), 
+                slug="straight_i"),
+            slug="straight_i"),
+        slug="counter_i").autoname("phrases", "cells", prefix="counter_i")
+
+def counter_line_i():
+    print("PUKE")
+    return CounterLine(
+        *counter_line().phrases[:2], # first two phrases the same
+        *counter_line_i_straight().phrases,
+        slug="counter_i")
 
 
-class CounterLineB(CounterLineA):
-    class PhraseC(LibraryMaterial, calliope.Phrase):
-        class CellC1(CounterStraightCell1):
-            init_pitches = ("R", 5, 0, -3,)
-        class CellC2(CounterStraightCell2):
-            init_pitches = (-3, -3, 0, -5)
+def counter_line_long_imod():
+    # TO DO MAYBE: should be able to rely on library without re-executing?
+    return counter_line().ext( counter_line_i().as_mod() )
 
-    class PhraseD(LibraryMaterial, calliope.Phrase):
-        class CellD1(CounterStraightCell1):
-            init_pitches = ("R", -5, -3, 2,)
-    
-        class CellD2(CounterStraightCell2):
-            init_pitches = (0, -3, 2, 0)
-
-_COUNTER_A = CounterLineA()
-_COUNTER_B = CounterLineB()
-
-def counter_a(**kwargs):
-    return _COUNTER_A(**kwargs)
-
-def counter_b(**kwargs):
-    return _COUNTER_B(**kwargs)
-
-# combo
-def counter_a_bmod():
-    return _COUNTER_A().ext( _COUNTER_B().as_mod() )
+def to_lib(lib):
+    my_counter_line = counter_line()
+    lib["counter_line"] = my_counter_line
+    lib.set_nodes(my_counter_line, "phrases", "cells")
+    my_counter_line_i_straight = counter_line_i_straight()
+    lib.set_nodes(my_counter_line_i_straight, "phrases", "cells")
+    lib.add(counter_line_i, counter_line_long_imod)
+    # my_line.autoname("phrases", "cells", prefix="counter", add_to_lib=lib)
 
 
-calliope.illustrate(counter_a_bmod())
+if __name__ == '__main__':
+    lib = Library()
+    to_lib(lib)
+    print(lib.names)
+    calliope.illustrate(lib["counter_line_long_imod"])
+
+
+# ========================================================
+# EVEN OLDER JUNK!
+# ========================================================
+
+# calliope.illustrate(counter_a().as_mod())
  
 
 

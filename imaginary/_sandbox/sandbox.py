@@ -1,57 +1,70 @@
 import abjad, calliope
-
-from imaginary.stories import imagine
-
-from imaginary.scores import score
-from imaginary.libraries._pitch_ranges import ImaginaryPitchRanges
-
-from imaginary.fabrics import pulse, pizz_flutter, osti, driving_off
-
-c = calliope.Cell(
-    rhythm=(1,1,2,4)*2,
-    pitches=(0,5,2,7)*2
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
 
-c2 = calliope.Cell(
-    rhythm=(0.5, 0.5)*32,
-    pitches=(4, 0)*32,
+p = ImaginaryPhrase(
+    ImaginaryCell(rhythm=(1,1,-2)*2, pitches=(0,2,"R")*2),
+    ImaginaryCell(slug="down", rhythm=(1,1,2,4), pitches=(0,5,2,7)),
     )
 
-my_transpose = calliope.TransposeWithinScale(
-    new_scale_pitches = (0,2,3,5,7,8,10,12),
-    steps=-1,
-    )
-
-my_overlay = calliope.Overlay(selection=c2)
-
-my_transpose(c)
-my_overlay(c)
-c.note_events.tag(">")
 
 
-cb = calliope.CellBlock(
-        c,
-        c().transformed( calliope.Transpose(interval=-7) ),
-        )
+autoname(p, "cells","events", prefix="counter")
+print(p.events[1].name)
 
-s = driving_off.SaxDrivingOff( cb,
-    ranges = ImaginaryPitchRanges(),
-    off_count=3,
-    end_downbeat=True,
-    # tag_events = {0:("pp",)},
-    # bookend_beats = (3,5)
-    # tag_all_note_events = (".", "-")
-    )
-print(s.staves[0][0])
+# from imaginary.stories import imagine
 
+# from imaginary.scores import score
+# from imaginary.libraries._pitch_ranges import ImaginaryPitchRanges
 
-# s = pizz_flutter.PizzFlutter( cb,
-#     pizz_flutter_initial = True,
-#     ranges = ImaginaryPitchRanges(),
-#     # pulse_tag_all_note_events = (".", "-")
+# from imaginary.fabrics import pulse, pizz_flutter, osti, driving_off
+
+# c = calliope.Cell(
+#     rhythm=(1,1,2,4)*2,
+#     pitches=(0,5,2,7)*2
 #     )
 
-s.illustrate_me()
+# c2 = calliope.Cell(
+#     rhythm=(0.5, 0.5)*32,
+#     pitches=(4, 0)*32,
+#     )
+
+# my_transpose = calliope.TransposeWithinScale(
+#     new_scale_pitches = (0,2,3,5,7,8,10,12),
+#     steps=-1,
+#     )
+
+# my_overlay = calliope.Overlay(selection=c2)
+
+# my_transpose(c)
+# my_overlay(c)
+# c.note_events.tag(">")
+
+
+# cb = calliope.CellBlock(
+#         c,
+#         c().transformed( calliope.Transpose(interval=-7) ),
+#         )
+
+# s = driving_off.SaxDrivingOff( cb,
+#     ranges = ImaginaryPitchRanges(),
+#     off_count=3,
+#     end_downbeat=True,
+#     # tag_events = {0:("pp",)},
+#     # bookend_beats = (3,5)
+#     # tag_all_note_events = (".", "-")
+#     )
+# print(s.staves[0][0])
+
+
+# # s = pizz_flutter.PizzFlutter( cb,
+# #     pizz_flutter_initial = True,
+# #     ranges = ImaginaryPitchRanges(),
+# #     # pulse_tag_all_note_events = (".", "-")
+# #     )
+
+# s.illustrate_me()
 
 
 # class MyCell(calliope.Cell):
