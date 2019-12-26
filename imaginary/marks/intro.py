@@ -9,6 +9,7 @@ from imaginary.stories.library_material import (
     )
 from imaginary.stories import artics, free_segment
 from imaginary.stories import library
+from imaginary.scores.intro_score import ImaginaryIntroScore
 
 def cell_rest4(lib=None):
     """ a 4-beat rest cell """
@@ -66,7 +67,7 @@ def a_phrase_1(lib):
 #     )()
 
 def a_cell_2(lib):
-    my_cell = lib("home_a_phrase_1").cells[0].t(-12)
+    my_cell = lib("intro_a_phrase_1").cells[0].t(-12)
     my_cell.note_events[0].pitch += 12
     return my_cell
 # HOME_AA0
@@ -180,6 +181,14 @@ def get_rock_blocks():
         2,5,8,10,12, ")")(
         12, "mp")()
     return r3s_blocks
+
+def block_to_score(lib, block_name):
+    block = lib(block_name)
+    sc = block.to_score(ImaginaryIntroScore())
+    fill_score_empty(sc, lib,
+        tempo_command = block[0].tempo_command,
+        )
+    return sc
 
 def fill_score_empty(score, lib, **kwargs):
     custom_segment_rest = kwargs.pop("segment_rest", None)

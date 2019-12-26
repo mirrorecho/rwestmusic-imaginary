@@ -4,7 +4,6 @@ import abjad, calliope
 from imaginary.stories import short_block
 from imaginary.libraries import home, counter, bass, riff, drone, pitch_ranges
 from imaginary.fabrics import instrument_groups, melody, pad, pizz_flutter, pulse, staggered_swell
-from imaginary.scores.intro_score import ImaginaryIntroScore
 from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
@@ -16,14 +15,6 @@ WITH_ROCK = True
 
 if WITH_ROCK:
     r3s_blocks = intro.get_rock_blocks()
-
-def block_to_score(lib, block_name):
-    block = lib(block_name)
-    sc = block.to_score(ImaginaryIntroScore())
-    intro.fill_score_empty(sc, lib,
-        tempo_command = block[0].tempo_command,
-        )
-    return sc
 
 # =========================================================================
 # BAR 1
@@ -77,7 +68,7 @@ def block0(lib):
     return b0
 
 def score0(lib):
-    return block_to_score(lib, "intro_block0")
+    return intro.block_to_score(lib, "intro0_block0")
 
 # # =========================================================================
 # # BAR 2
@@ -134,7 +125,7 @@ def block1(lib):
     return b1
 
 def score1(lib):
-    return block_to_score(lib, "intro_block1")
+    return intro.block_to_score(lib, "intro0_block1")
 
 # =========================================================================
 # BAR 3
@@ -199,24 +190,24 @@ def block2(lib):
     return b2
 
 def score2(lib):
-    return block_to_score(lib, "intro_block2")
+    return intro.block_to_score(lib, "intro0_block2")
 
 # # =========================================================================
 # # =========================================================================
 
 def score(lib):
-    sc = lib("intro_score0")
-    sc.extend_from(lib("intro_score1"), lib("intro_score2"),)
+    sc = lib("intro0_score0")
+    sc.extend_from(lib("intro0_score1"), lib("intro0_score2"),)
     return sc
 
 def to_lib(lib):    
     intro.to_lib(lib)
     lib.add(block0, score0, block1, score1, block2, score2, score,
-        namespace="intro")
+        namespace="intro0")
 
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib("intro_score"))
+    calliope.illustrate(lib("intro0_score"))
 
 
