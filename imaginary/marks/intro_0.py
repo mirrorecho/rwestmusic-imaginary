@@ -8,206 +8,215 @@ from imaginary.scores.intro_score import ImaginaryIntroScore
 from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
-from imaginary.stories import artics
+from imaginary.stories import library, artics, free_segment
 from imaginary.marks import intro
 
-
+# TO DO... library implementation in rock modules should make this unnecessary
 WITH_ROCK = True
 
 if WITH_ROCK:
     r3s_blocks = intro.get_rock_blocks()
 
+def block_to_score(lib, block_name):
+    block = lib(block_name)
+    sc = block.to_score(ImaginaryIntroScore())
+    intro.fill_score_empty(sc, lib,
+        tempo_command = block[0].tempo_command,
+        )
+    return sc
+
 # =========================================================================
 # BAR 1
 # =========================================================================
 
-sc0 = ImaginaryIntroScore()
+def block0(lib):
+    b0 = free_segment.AlocFreeSegmentBlock(tempo_command=""" \\note #"4" #UP "= 72 approx | freely | 20'' " """)
 
-block_0 = intro.AlocFreeSegmentBlock(tempo_command=""" \\note #"4" #UP "= 72 approx | freely | 20'' " """)
+    b0["ooa_bass_guitar"].machine(ImaginaryCell(rhythm=(4,), pitches=(-11,)).eps(
+        0,"mp")(),
+        )
 
-block_0["ooa_bass_guitar"].machine(ImaginaryCell(rhythm=(4,), pitches=(-11,)).ops("events")(
-    0,"mp")(),
-    )
-block_0["ooa_bass_guitar"].machine_arrow(intro.REST_CELL(),
-    # pad=(8,1), 
-    with_repeat=False,
-    machine_pad=(8,8)
-    )
+    b0["ooa_bass_guitar"].machine_arrow(lib("cell_rest4"),
+        # pad=(8,1), 
+        with_repeat=False,
+        machine_pad=(8,8)
+        )
 
-block_0["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((1,2,19,20),)).ops("events")(
-    0, ">","ff")(),
-    )
-block_0["cco_harp"].machine_arrow(intro.REST_CELL(),
-    # pad=(8,1), 
-    with_repeat=False,
-    machine_pad=(6,6)
-    )
+    b0["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((1,2,19,20),)).eps(
+        0, ">","ff")(),
+        )
 
-block_0["cco_violin_i1"].machine_arrow(
-    intro.hold_cell(20,"pp",), instruction="repeat")
+    b0["cco_harp"].machine_arrow(lib("cell_rest4"),
+        # pad=(8,1), 
+        with_repeat=False,
+        machine_pad=(6,6)
+        )
 
-block_0["cco_violin_ii1"].machine_arrow(
-    intro.hold_cell(7,"pp",), instruction="repeat")
+    b0["cco_violin_i1"].machine_arrow(intro.hold_cell(20,"pp",), instruction="repeat")
 
-block_0["cco_viola1"].machine_arrow(
-    intro.hold_cell(-11,"pp",), instruction="repeat")
+    b0["cco_violin_ii1"].machine_arrow(intro.hold_cell(7,"pp",), instruction="repeat")
 
-block_0["cco_viola2"].machine(intro.MID_REST_CELL(), pad=(1.5,0))
-block_0["cco_viola2"].machine_arrow(intro.HOME_A().ops("note_events")(
-    0, "pp",)(), instruction="repeat, freely")
+    b0["cco_viola1"].machine_arrow(intro.hold_cell(-11,"pp",), instruction="repeat")
 
-block_0["cco_viola3"].machine(intro.MID_REST_CELL(), pad=(1.5,0))
-block_0["cco_viola3"].machine_arrow(intro.COUNTER_A().ops("note_events")(
-    0, "pp")(), instruction="repeat, freely",)
+    b0["cco_viola2"].machine(lib("cell_rest2"), pad=(1.5,0))
+    b0["cco_viola2"].machine_arrow(lib("intro_a_phrase_0").eps(
+        0, "pp",)(), instruction="repeat, freely")
 
-block_0["cco_viola4"].machine(intro.MID_REST_CELL(), pad=(1.5,0))
-block_0["cco_viola4"].machine_arrow(intro.COUNTER_B().eps(
-    1, "pp")(), instruction="repeat, freely")
+    b0["cco_viola3"].machine(lib("cell_rest2"), pad=(1.5,0))
+    b0["cco_viola3"].machine_arrow(lib("intro_phrase_mistify").eps(
+        0, "pp")(), instruction="repeat, freely",)
 
-block_0["cco_bass"].machine(intro.REST_CELL().ops("events")(
-    0, "fermata", "wait 8-10''")(), pad=(1.5,1))
-block_0["cco_bass"].machine_arrow(
-    intro.hold_cell(-4,"pp",), instruction="repeat")
+    b0["cco_viola4"].machine(lib("cell_rest2"), pad=(1.5,0))
+    b0["cco_viola4"].machine_arrow(lib("intro_phrase_straight_i").eps(
+        1, "pp")(), instruction="repeat, freely")
 
-block_0.to_score(sc0)
+    b0["cco_bass"].machine(lib("cell_rest4").eps(
+        0, "fermata", "wait 8-10''")(), pad=(1.5,1))
+    b0["cco_bass"].machine_arrow(intro.hold_cell(-4,"pp",), instruction="repeat")
 
-intro.fill_score_empty(sc0, 
-    tempo_command = block_0[0].tempo_command,
-    )
+    return b0
 
-# =========================================================================
-# BAR 2
-# =========================================================================
+def score0(lib):
+    return block_to_score(lib, "intro_block0")
 
-sc1 = ImaginaryIntroScore()
-block_1 = intro.AlocFreeSegmentBlock(tempo_command = """ " 20'' " """)
+# # =========================================================================
+# # BAR 2
+# # =========================================================================
 
-block_1["cco_clarinets"].machine(intro.MID_REST_CELL())
-block_1["cco_clarinets"].machine_arrow(intro.INTRO_RIFF().ops("events")(
-    0, "(", "ppp", "\\<", "a 2, 2nd start after 1st")(
-    5, ")")(
-    6, "mp")(), 
-    instruction="repeat (staggered)")
+def block1(lib):
+    b1 = free_segment.AlocFreeSegmentBlock(tempo_command = """ " 20'' " """)
 
-block_1["cco_violin_i1"].machine_arrow(intro.COUNTER_A0().t(18), instruction="repeat")
+    b1["cco_clarinets"].machine(lib("cell_rest2"))
+    b1["cco_clarinets"].machine_arrow(lib("intro_phrase_riff").eps(
+        0, "(", "ppp", "\\<", "a 2, 2nd start after 1st")(
+        5, ")")(
+        6, "mp")(), 
+        instruction="repeat (staggered)")
 
-# same as violin 1 in last measure
-block_1["cco_violin_i2"].machine_arrow(
-    intro.hold_cell(20,"pp",), instruction="repeat")
+    b1["cco_violin_i1"].machine_arrow(lib("counter_cell_down").t(18), instruction="repeat")
 
-block_1["cco_violin_ii1"].machine_arrow(
-    intro.hold_cell(7,), instruction="repeat")
+    # same as violin 1 in last measure
+    b1["cco_violin_i2"].machine_arrow(intro.hold_cell(20,"pp",), instruction="repeat")
 
-block_1["cco_violin_ii2"].machine_arrow(intro.COUNTER_A0().ops("events")(
-    0, "pp", beats=0.5)(),
-    instruction="repeat")
+    b1["cco_violin_ii1"].machine_arrow(intro.hold_cell(7,), instruction="repeat")
 
-block_1["cco_viola1"].machine_arrow(intro.HOME_A().t(-10), instruction="repeat, freely")
-
-# # from bassoon line at end of rock 3
-if WITH_ROCK:
-    block_1["cco_viola2"].machine_arrow(r3s_blocks[0][0]().ops("events")(
-        0, "pp", "\\<")(
-        1,3, "(",)(
-        2,4, ")",)(
-        5, "p")(
-        6, beats=4)(), 
+    b1["cco_violin_ii2"].machine_arrow(lib("counter_cell_down").eps(
+        0, "pp", beats=0.5)(),
         instruction="repeat")
-else:
-    block_1["cco_viola2"].machine_arrow(intro.MID_REST_CELL().ops("events")(0,"ROCK")())
 
-block_1["cco_viola3"].machine_arrow(intro.HOME_AA(), instruction="repeat, freely")
+    b1["cco_viola1"].machine_arrow(lib("intro_a_phrase_0").t(-10), instruction="repeat, freely")
 
-block_1["cco_viola4"].machine_arrow(intro.COUNTER_B().crop("events",0,2).eps(
-    5, "fermata", beats=2)(),
-    instruction="repeat, freely")
+    # # from bassoon line at end of rock 3
+    # TO DO: shouldn't need condition once library implemented in rock
+    if WITH_ROCK:
+        b1["cco_viola2"].machine_arrow(r3s_blocks[0][0]().eps(
+            0, "pp", "\\<")(
+            1,3, "(",)(
+            2,4, ")",)(
+            5, "p")(
+            6, beats=4)(), 
+            instruction="repeat")
+    else:
+        b1["cco_viola2"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
 
-block_1["cco_cello1"].machine_arrow(intro.SHAKE_DOWN(), instruction="repeat")
+    b1["cco_viola3"].machine_arrow(lib("intro_a_phrase_1"), instruction="repeat, freely")
 
-block_1["cco_cello2"].machine_arrow(intro.hold_cell(1,"pp",), instruction="repeat")
+    b1["cco_viola4"].machine_arrow(lib("intro_phrase_straight_i").crop("events",0,2).eps(
+        5, "fermata", beats=2)(),
+        instruction="repeat, freely")
 
-block_1["cco_bass"].machine_arrow(
-    intro.hold_cell(-5,"pp",), instruction="repeat")
+    b1["cco_cello1"].machine_arrow(lib("intro_cell_shake"), instruction="repeat")
 
-block_1.to_score(sc1)
-intro.fill_score_empty(sc1, 
-    tempo_command = block_1[0].tempo_command,
-    )
-sc0.extend_from(sc1)
+    b1["cco_cello2"].machine_arrow(intro.hold_cell(1,"pp",), instruction="repeat")
+
+    b1["cco_bass"].machine_arrow(intro.hold_cell(-5,"pp",), instruction="repeat")
+
+    return b1
+
+def score1(lib):
+    return block_to_score(lib, "intro_block1")
 
 # =========================================================================
 # BAR 3
 # =========================================================================
-sc2 = ImaginaryIntroScore()
-block_2 = intro.AlocFreeSegmentBlock(tempo_command = """ " 20'' " """)
 
-block_2["cco_clarinets"].machine_arrow(intro.INTRO_RIFF().crop("events",0,3).ops("events")(
-    0, "p", "\\<", "(")(
-    2, ")",)(
-    3, "mp", "fermata", beats=4)(),
-    instruction="repeat (staggered)")
+def block2(lib):
+    b2 = free_segment.AlocFreeSegmentBlock(tempo_command = """ " 20'' " """)
 
-block_2["cco_violin_i1"].machine_arrow(intro.COUNTER_A0().t(17), instruction="repeat")
+    b2["cco_clarinets"].machine_arrow(lib("intro_phrase_wiggle").crop("events",0,3).ops("events")(
+        0, "p", "\\<", "(")(
+        2, ")",)(
+        3, "mp", "fermata", beats=4)(),
+        instruction="repeat (staggered)")
 
-block_2["cco_violin_i2"].machine_arrow(
-    intro.hold_cell(19), instruction="repeat")
+    b2["cco_violin_i1"].machine_arrow(lib("counter_cell_down").t(17), instruction="repeat")
 
-block_2["cco_violin_i3"].machine(intro.REST_CELL(), machine_pad=(2,0), pad=(1.5,0))
-block_2["cco_violin_i3"].machine_arrow(intro.INTRO_RIFF_WIGGLE().crop("events",0,1).ops("events")(
-    0, "pp")(
-    3, "(")(
-    4,")", beats=2)(), 
-    instruction="repeat")
+    b2["cco_violin_i2"].machine_arrow(intro.hold_cell(19), instruction="repeat")
 
-if WITH_ROCK:
-    block_2["cco_violin_ii1"].machine_arrow(
-        r3s_blocks[1][0], instruction="repeat")
-else:
-    block_2["cco_violin_ii1"].machine_arrow(intro.MID_REST_CELL().ops("events")(0,"ROCK")())
-
-block_2["cco_violin_ii2"].machine_arrow(
-    intro.hold_cell(4), instruction="repeat")
-
-block_2["cco_violin_ii3"].machine_arrow(intro.INTRO_RIFF_WIGGLE().crop("events",0,2).ops("events")(
-    0, "pp")(
-    3, beats=4)(), 
-    instruction="repeat")
-
-# # from bassoon line at end of rock 3
-if WITH_ROCK:
-    block_2["cco_viola1"].machine_arrow(r3s_blocks[0][0]().crop("events",0,1).eps(
-        0, "pp", "\\<")(
-        0,2, "(",)(
-        1,3, ")",)(
-        5, "p", beats=4)(), 
+    b2["cco_violin_i3"].machine(lib("cell_rest4"), machine_pad=(2,0), pad=(1.5,0))
+    b2["cco_violin_i3"].machine_arrow(lib("intro_phrase_wiggle").crop("events",0,1).ops("events")(
+        0, "pp")(
+        3, "(")(
+        4,")", beats=2)(), 
         instruction="repeat")
-else:
-    block_2["cco_viola1"].machine_arrow(intro.MID_REST_CELL().ops("events")(0,"ROCK")())
 
-block_2["cco_viola2"].machine_arrow(
-    intro.hold_cell(-6,"p",), instruction="repeat")
+    if WITH_ROCK:
+        b2["cco_violin_ii1"].machine_arrow(
+            r3s_blocks[1][0], instruction="repeat")
+    else:
+        b2["cco_violin_ii1"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
 
-block_2["cco_viola3"].machine_arrow(intro.HOME_AA.cells[1](), instruction="repeat, freely")
+    b2["cco_violin_ii2"].machine_arrow(intro.hold_cell(4), instruction="repeat")
 
-block_2["cco_viola4"].machine_arrow(intro.COUNTER_B().crop("events",3), instruction="repeat, freely")
+    b2["cco_violin_ii3"].machine_arrow(lib("intro_phrase_wiggle").crop("events",0,2).ops("events")(
+        0, "pp")(
+        3, beats=4)(), 
+        instruction="repeat")
 
-block_2["cco_cello1"].machine_arrow(intro.SHAKE_DOWN().t(5), instruction="repeat")
+    # # from bassoon line at end of rock 3
+    if WITH_ROCK:
+        b2["cco_viola1"].machine_arrow(r3s_blocks[0][0]().crop("events",0,1).eps(
+            0, "pp", "\\<")(
+            0,2, "(",)(
+            1,3, ")",)(
+            5, "p", beats=4)(), 
+            instruction="repeat")
+    else:
+        b2["cco_viola1"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
 
-block_2["cco_cello2"].machine_arrow(intro.HOME_AA0(), instruction="repeat")
+    b2["cco_viola2"].machine_arrow(intro.hold_cell(-6,"p",), instruction="repeat")
 
-block_2["cco_bass"].machine_arrow(
-    intro.hold_cell(-6,"pp",), instruction="repeat")
+    b2["cco_viola3"].machine_arrow(lib("intro_a_phrase_1").cells[1](), instruction="repeat, freely")
 
-block_2.to_score(sc2)
+    b2["cco_viola4"].machine_arrow(lib("intro_phrase_straight_i").crop("events",3), instruction="repeat, freely")
 
-intro.fill_score_empty(sc2, 
-    tempo_command = block_2[0].tempo_command,
-    )
-sc0.extend_from(sc2)
+    b2["cco_cello1"].machine_arrow(lib("intro_cell_shake").t(5), instruction="repeat")
 
-# =========================================================================
-# =========================================================================
-calliope.illustrate(sc0)
+    b2["cco_cello2"].machine_arrow(lib("intro_a_cell_2"), instruction="repeat")
 
+    b2["cco_bass"].machine_arrow(intro.hold_cell(-6,"pp",), instruction="repeat")
+
+    return b2
+
+def score2(lib):
+    return block_to_score(lib, "intro_block2")
+
+# # =========================================================================
+# # =========================================================================
+
+def score(lib):
+    sc = lib("intro_score0")
+    sc.extend_from(lib("intro_score1"), lib("intro_score2"),)
+    return sc
+
+def to_lib(lib):    
+    intro.to_lib(lib)
+    lib.add(block0, score0, block1, score1, block2, score2, score,
+        namespace="intro")
+
+if __name__ == '__main__':
+    lib = library.Library()
+    to_lib(lib)
+    calliope.illustrate(lib("intro_score"))
 
 

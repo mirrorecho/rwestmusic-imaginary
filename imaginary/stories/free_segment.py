@@ -97,7 +97,7 @@ class FreeSegment(ImaginarySegment):
         else:
             pad_beats = pad[1]
         arrow_cell = self.arrow(arrow_beats, pad_beats, with_repeat, instruction, text_length_on)
-
+        return self
 
 
     def pad_fill(self, with_command=True):

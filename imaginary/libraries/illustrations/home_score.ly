@@ -19,7 +19,7 @@
         }
         {
             {
-                \accidentalStyle modern-cautionary
+                \accidentalStyle neo-modern-cautionary
                 r4
                 ^ \markup { c.0 }
                 ^ \markup { p.0 }
@@ -89,8 +89,8 @@
                 ]
                 )
                 r8
-                ^ \markup { c.6 }
                 ^ \markup { p.3 }
+                ^ \markup { c.6 }
                 [
                 d'8
                 ]
@@ -132,8 +132,8 @@
                 g'4
                 )
                 r4
-                ^ \markup { p.5 }
                 ^ \markup { c.10 }
+                ^ \markup { p.5 }
                 d'4
                 (
                 bf'8
@@ -215,7 +215,7 @@
         }
         {
             {
-                \accidentalStyle modern-cautionary
+                \accidentalStyle neo-modern-cautionary
                 r8
                 ^ \markup { c.0 }
                 ^ \markup { p.0 }
@@ -289,8 +289,8 @@
                 g'4
                 )
                 r4
-                ^ \markup { c.6 }
                 ^ \markup { p.3 }
+                ^ \markup { c.6 }
                 d'4
                 (
                 bf'8
@@ -339,8 +339,8 @@
                 ]
                 )
                 r8
-                ^ \markup { p.5 }
                 ^ \markup { c.10 }
+                ^ \markup { p.5 }
                 [
                 g'8
                 ]

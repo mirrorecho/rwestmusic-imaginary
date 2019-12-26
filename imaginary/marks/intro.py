@@ -10,23 +10,23 @@ from imaginary.stories.library_material import (
 from imaginary.stories import artics, free_segment
 from imaginary.stories import library
 
-def c_rest4():
+def cell_rest4(lib=None):
     """ a 4-beat rest cell """
     return ImaginaryCell(rhythm=(-4,),)
 # REST_CELL = ImaginaryCell(rhythm=(-4,),)
 
-def c_rest2(): 
+def cell_rest2(lib=None): 
     """ a short 2-beat rest cell """
     return ImaginaryCell(rhythm=(-2,),)
 # MID_REST_CELL = ImaginaryCell(rhythm=(-2,))
 
-def c_rest1(): 
+def cell_rest1(lib=None): 
     """ a 1-beat rest cell """
     return ImaginaryCell(rhythm=(-1,),)
 # MID_REST_CELL = ImaginaryCell(rhythm=(-2,))
 
-def s_rest():
-    return free_segment.FreeSegment().machine_arrow(REST_CELL(),
+def segment_rest(lib=None):
+    return free_segment.FreeSegment().machine_arrow(cell_rest4(),
     with_repeat=False,
     machine_pad=(10,10)
     )
@@ -37,8 +37,8 @@ def s_rest():
 #     machine_pad=(10,10)
 #     )
 
-def p_home_a0():
-    my_phrase = home.home_a().phrases[0].sc(0.5).t(2)
+def a_phrase_0(lib):
+    my_phrase = lib("home_a_phrase_0").sc(0.5).t(2)
     my_phrase.rest_events.remove()
     return my_phrase.eps(
         1,4, "fermata", beats=4)(
@@ -51,8 +51,8 @@ def p_home_a0():
 #     3, "(")(
 #     4, ")")()
 
-def p_home_a1():
-    return home.home_a().phrases[1].sc(0.5).t(2).ops("events")(
+def a_phrase_1(lib):
+    return lib("home_a_phrase_1").sc(0.5).t(2).eps(
         2,4, "(")(
         3,5, ")")(
         4, beats=0.25)(
@@ -65,18 +65,14 @@ def p_home_a1():
 #     5, beats=4
 #     )()
 
-def c_home_a00():
-    return home.home_a().phrases[1].sc(0.5).t(2).ops("events")(
-        2,4, "(")(
-        3,5, ")")(
-        4, beats=0.25)(
-        5, beats=4
-        )()
-# HOME_AA0 = HOME_AA.cells[0]().t(-12)
-# HOME_AA0.note_events[0].pitch += 12
+def a_cell_2(lib):
+    my_cell = lib("home_a_phrase_1").cells[0].t(-12)
+    my_cell.note_events[0].pitch += 12
+    return my_cell
+# HOME_AA0
 
-def p_counter_a0():
-    return counter.counter_a(name="counter0").phrases[0].t(2).ops("note_events")(
+def phrase_mistify(lib):
+    return lib("counter_phrase_mistify").t(2).ops("note_events")(
         0, beats=0.25)(
         0,2, "(")(
         1,3, ")")(
@@ -88,17 +84,18 @@ def p_counter_a0():
 #     1,3, ")")(
 #     1,4, beats=4)()
 
-# TO DO: these should just live in counter... 
-def c_counter_a00():
-    return p_counter_a0().cells[0]()
+# # NOTE: comes from "counter_cell_down" in counter lib
+# def c_counter_a00():
+#     return p_counter_a0().cells[0]()
 # COUNTER_A0 = COUNTER_A.cells[0]()
 
-def c_counter_a01():
-    return p_counter_a0().cells[1]()
+# # NOTE: can come from counter lib
+# def c_counter_a01():
+#     return p_counter_a0().cells[1]()
 # COUNTER_A1 = COUNTER_A.cells[1]()
 
-def p_counter_a3():
-    return counter.counter_b().phrases[3].ts(2).t(2).eps(
+def phrase_straight_i(lib):
+    return lib("counter_i_phrase_straight_i").ts(2).t(2).eps(
     1,6, beats=0.5)(
     3, beats=0.25)(
     1,3,6, "(")(
@@ -110,16 +107,16 @@ def p_counter_a3():
 #     1,3,6, "(")(
 #     2,4,7, ")")()
 
-def p_riff():
+def phrase_riff(lib):
     return riff.RiffPhrase().crop("events",0,5).t(-3).eps(6, beats=4)()
 # INTRO_RIFF = riff.RiffPhrase().crop("events",0,5).t(-3).ops("events")(
 #     6, beats=4)()
 
-def p_riff_wiggle():
+def phrase_wiggle(lib):
     return riff.RiffPhrase().crop("cells",1).t(2)
 # INTRO_RIFF_WIGGLE = riff.RiffPhrase().crop("cells",1).t(2)
 
-def c_intro_shake():
+def cell_shake(lib=None):
     return ImaginaryCell(rhythm=(2,2,1,2,1), 
     pitches=( -11, (-11,-10), -10, (-11,-10), -11, )).eps(
         0, "pp", "\\<",)(
@@ -136,10 +133,17 @@ def c_intro_shake():
 #         4, "\\!",)()
 
 def to_lib(lib):
-    lib.add(c_rest4, c_rest2, c_rest1, s_rest, p_home_a1, c_home_a00,
-        p_counter_a0, c_counter_a00, c_counter_a01, p_counter_a3,
-        namespace="intro")
+    if not lib.is_loaded("intro"):
+        home.to_lib(lib)
+        counter.to_lib(lib)
+        # TO DO... include riff
 
+        lib.add(cell_rest4, cell_rest2, cell_rest1)
+
+        lib.add(segment_rest, a_phrase_0, a_phrase_1, a_cell_2, phrase_mistify,
+            phrase_straight_i, phrase_riff, phrase_wiggle, cell_shake,
+            namespace="intro")
+    lib.mark_loaded("intro")
 
 def hold_cell(pitch, *args):
     hold_cell = ImaginaryCell(rhythm=(4,), pitches=(pitch,))
@@ -177,8 +181,15 @@ def get_rock_blocks():
         12, "mp")()
     return r3s_blocks
 
-def fill_score_empty(score, **kwargs):
-    rest_segment = kwargs.pop("rest_segment", None) or FREE_REST()
+def fill_score_empty(score, lib, **kwargs):
+    custom_segment_rest = kwargs.pop("segment_rest", None)
     for staff in score.staves:
         if len(staff) == 0:
-            staff.append(FREE_REST(**kwargs))
+            staff.append(custom_segment_rest or lib("intro_segment_rest"))
+
+if __name__ == '__main__':
+    lib = library.Library()
+    to_lib(lib)
+    lib.print_names()
+
+

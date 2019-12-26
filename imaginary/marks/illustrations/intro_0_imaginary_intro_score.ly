@@ -28,7 +28,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
@@ -47,15 +46,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -72,15 +70,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -97,8 +94,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -112,7 +109,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                         \set Staff.shortInstrumentName = \markup { Cl. }
@@ -131,15 +127,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -156,15 +151,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -181,8 +175,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -196,7 +190,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Alto Saxophone 1,2" }
                         \set Staff.shortInstrumentName = \markup { Asax.1,2 }
@@ -215,15 +208,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -240,15 +232,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -265,8 +256,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -280,7 +271,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Tsax. }
@@ -299,15 +289,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -324,15 +313,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -349,8 +337,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -364,7 +352,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Bsax. }
@@ -384,15 +371,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -409,15 +395,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -434,8 +419,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -449,7 +434,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
@@ -469,15 +453,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -494,15 +477,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -519,8 +501,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -537,7 +519,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Horn in F" }
                         \set Staff.shortInstrumentName = \markup { Hn. }
@@ -556,15 +537,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -581,15 +561,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -606,8 +585,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -621,7 +600,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Trumpet in C" }
                         \set Staff.shortInstrumentName = \markup { Tpt. }
@@ -640,15 +618,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -665,15 +642,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -690,8 +666,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -705,7 +681,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Tenor Trombone" }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
@@ -725,15 +700,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -750,15 +724,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -775,8 +748,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -793,7 +766,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Vibraphone }
                         \set Staff.shortInstrumentName = \markup { Vib. }
@@ -812,15 +784,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -837,15 +808,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -862,8 +832,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -877,7 +847,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Drum Set" }
                         \set Staff.shortInstrumentName = \markup { Drum. }
@@ -896,15 +865,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -921,15 +889,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -946,8 +913,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -964,7 +931,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
@@ -983,15 +949,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1008,15 +973,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1033,8 +997,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1070,8 +1034,8 @@
                         \once \hide Rest
                         r4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         s8
@@ -1079,7 +1043,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1096,15 +1059,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1121,8 +1083,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1139,7 +1101,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1,2" }
                         \set Staff.shortInstrumentName = \markup { Vln.1,2 }
@@ -1158,15 +1119,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1183,15 +1143,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1208,8 +1167,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1223,7 +1182,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Cello 1,2" }
                         \set Staff.shortInstrumentName = \markup { Vc.1,2 }
@@ -1243,15 +1201,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1268,15 +1225,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1293,8 +1249,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1314,7 +1270,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 1,2" }
                         \set Staff.shortInstrumentName = \markup { Fl.1,2 }
@@ -1333,15 +1288,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1358,15 +1312,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1383,8 +1336,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1398,7 +1351,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Oboe 1,2" }
                         \set Staff.shortInstrumentName = \markup { Ob.1,2 }
@@ -1417,15 +1369,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1442,15 +1393,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1467,8 +1417,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1482,7 +1432,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Clarinet in B♭ 1,2" }
                         \set Staff.shortInstrumentName = \markup { Cl.1,2 }
@@ -1501,8 +1450,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1556,8 +1505,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1571,16 +1520,12 @@
                         \normalStaff
                         \bar ".|:"
                         s8
-                        fs8
+                        fs'8
                         \p
-                        \<
                         (
-                        g8
-                        a8
+                        cs''8
+                        g'8
                         )
-                        b1
-                        \mp
-                        \fermata
                         \bar ":|."
                         \freeContinue
                         s4
@@ -1608,8 +1553,12 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
+                        s4
+                        s4
+                        s4
+                        s4
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1623,7 +1572,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
@@ -1643,15 +1591,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1668,15 +1615,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1693,8 +1639,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1711,7 +1657,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Horn in F" }
                         \set Staff.shortInstrumentName = \markup { Hn. }
@@ -1730,15 +1675,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1755,15 +1699,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1780,8 +1723,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1795,7 +1738,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Trumpet in C" }
                         \set Staff.shortInstrumentName = \markup { Tpt. }
@@ -1814,15 +1756,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1839,15 +1780,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1864,8 +1804,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1879,7 +1819,6 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Trombone }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
@@ -1899,15 +1838,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1924,15 +1862,14 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
@@ -1949,8 +1886,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                     }
@@ -1965,7 +1902,6 @@
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     \clef "percussion"
@@ -1983,15 +1919,14 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #3 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s4
@@ -2008,15 +1943,14 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #3 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s4
@@ -2033,8 +1967,8 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
@@ -2078,8 +2012,8 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                     s8
@@ -2087,7 +2021,6 @@
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #3 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s4
@@ -2104,15 +2037,14 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #3 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s4
@@ -2129,8 +2061,8 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
@@ -2158,8 +2090,8 @@
                             \bar ".|:"
                             s8
                             af''1
-                            \fermata
                             \pp
+                            \fermata
                             \bar ":|."
                             \freeContinue
                             s4
@@ -2188,8 +2120,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -2204,10 +2136,8 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            af''16
-                            (
-                            g''1
-                            )
+                            fs''8
+                            f''2..
                             \bar ":|."
                             \freeContinue
                             s4
@@ -2236,11 +2166,11 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
-                            s16
+                            s8
                         }
                         {
                             \numericTimeSignature
@@ -2252,10 +2182,8 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            g''16
-                            (
-                            fs''1
-                            )
+                            f''8
+                            e''2..
                             \bar ":|."
                             \freeContinue
                             s4
@@ -2284,11 +2212,11 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
-                            s16
+                            s8
                         }
                     }
                     \context Staff = "cco_violin_i2"
@@ -2300,7 +2228,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin I 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.I.2 }
@@ -2319,8 +2246,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -2335,8 +2262,8 @@
                             \bar ".|:"
                             s8
                             af''1
-                            \fermata
                             \pp
+                            \fermata
                             \bar ":|."
                             \freeContinue
                             s4
@@ -2365,8 +2292,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -2411,8 +2338,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -2427,7 +2354,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin I 3" }
                             \set Staff.shortInstrumentName = \markup { Vln.I.3 }
@@ -2446,15 +2372,14 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s4
@@ -2471,8 +2396,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -2521,8 +2446,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -2536,7 +2461,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin I 4" }
                             \set Staff.shortInstrumentName = \markup { Vln.I.4 }
@@ -2555,15 +2479,14 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s4
@@ -2580,15 +2503,14 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s4
@@ -2605,8 +2527,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -2633,8 +2555,8 @@
                             \bar ".|:"
                             s8
                             g'1
-                            \fermata
                             \pp
+                            \fermata
                             \bar ":|."
                             \freeContinue
                             s4
@@ -2663,8 +2585,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -2709,8 +2631,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -2779,8 +2701,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s16
@@ -2795,7 +2717,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin II 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.II.2 }
@@ -2814,8 +2735,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -2829,11 +2750,9 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            d'8
+                            c'8
                             \pp
-                            (
-                            cs'1
-                            )
+                            b2..
                             \bar ":|."
                             \freeContinue
                             s4
@@ -2862,10 +2781,11 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
+                            s8
                         }
                         {
                             \numericTimeSignature
@@ -2907,8 +2827,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -2923,7 +2843,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin II 3" }
                             \set Staff.shortInstrumentName = \markup { Vln.II.3 }
@@ -2942,15 +2861,14 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s4
@@ -2967,8 +2885,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -3014,8 +2932,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -3029,7 +2947,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin II 4" }
                             \set Staff.shortInstrumentName = \markup { Vln.II.4 }
@@ -3048,15 +2965,14 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s4
@@ -3073,15 +2989,14 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  " 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s4
@@ -3098,8 +3013,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -3126,8 +3041,8 @@
                             \bar ".|:"
                             s8
                             cs1
-                            \fermata
                             \pp
+                            \fermata
                             \bar ":|."
                             \freeContinue
                             s4
@@ -3156,8 +3071,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3203,8 +3118,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -3256,8 +3171,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3315,8 +3230,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -3368,8 +3283,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3385,8 +3300,8 @@
                             \bar ".|:"
                             s8
                             fs1
-                            \fermata
                             \p
+                            \fermata
                             \bar ":|."
                             \freeContinue
                             s4
@@ -3415,8 +3330,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3474,8 +3389,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8.
@@ -3524,8 +3439,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s16
@@ -3571,8 +3486,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3603,8 +3518,8 @@
                             \bar ".|:"
                             s8
                             r4
-                            \pp
                             cs'8
+                            \pp
                             (
                             d'4
                             )
@@ -3639,8 +3554,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s16
@@ -3692,8 +3607,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8.
@@ -3745,8 +3660,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8.
@@ -3764,7 +3679,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Cello 1" }
                             \set Staff.shortInstrumentName = \markup { Vc.1 }
@@ -3784,8 +3698,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -3839,8 +3753,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3895,8 +3809,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3911,7 +3825,6 @@
                         {
                             \numericTimeSignature
                             \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Cello 2" }
                             \set Staff.shortInstrumentName = \markup { Vc.2 }
@@ -3931,8 +3844,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                         }
@@ -3947,8 +3860,8 @@
                             \bar ".|:"
                             s8
                             cs'1
-                            \fermata
                             \pp
+                            \fermata
                             \bar ":|."
                             \freeContinue
                             s4
@@ -3977,8 +3890,8 @@
                             s4
                             s4
                             s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
                             s8
@@ -3993,16 +3906,12 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            r4
-                            b4
-                            g8
-                            (
-                            fs8
-                            )
-                            d16
-                            (
-                            e1
-                            )
+                            r2
+                            a2
+                            f4
+                            e4
+                            c4
+                            d2.
                             \bar ":|."
                             \freeContinue
                             s4
@@ -4025,14 +3934,11 @@
                             s4
                             s4
                             s4
-                            s4
-                            s4
-                            s4
-                            \freeRestArrow
                             \freePad
+                            \freeRestArrow
                             r4
                             s4
-                            s16
+                            s8
                         }
                     }
                 >>
@@ -4066,8 +3972,8 @@
                         \bar ".|:"
                         s8
                         af1
-                        \fermata
                         \pp
+                        \fermata
                         \bar ":|."
                         \freeContinue
                         s4
@@ -4089,8 +3995,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         s8
@@ -4106,8 +4012,8 @@
                         \bar ".|:"
                         s8
                         g1
-                        \fermata
                         \pp
+                        \fermata
                         \bar ":|."
                         \freeContinue
                         s4
@@ -4136,8 +4042,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         s8
@@ -4153,8 +4059,8 @@
                         \bar ".|:"
                         s8
                         fs1
-                        \fermata
                         \pp
+                        \fermata
                         \bar ":|."
                         \freeContinue
                         s4
@@ -4183,8 +4089,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         s8

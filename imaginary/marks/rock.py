@@ -1,6 +1,6 @@
 import abjad, calliope
 
-from imaginary.stories import short_block
+from imaginary.stories import short_block, library, artics
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords, tally_apps)
 from imaginary.fabrics import (instrument_groups, 
@@ -17,6 +17,11 @@ from imaginary.stories.fabric import ImaginaryFabric
 # work correctly from terminal... need to fix in calliope base
 class Dummy(calliope.CalliopeBase): pass
 output_directory = Dummy().get_module_info()[0] 
+
+# TO DO... move into to_lib method
+lib = library.Library()
+counter.to_lib(lib)
+home.to_lib(lib)
 
 # RHYTHMIC MATERIAL:
 high_rhythm = ImaginaryPhrase(
@@ -97,7 +102,9 @@ RIFF_WIGGLE = RIFF2_4A().ext(RIFF2_4A().crop("events",0,1))
 HOME_RIFF = make_riffs(home.home_a())
 HOME_RIFF_B = make_riffs(home.home_b())
 # COUNTER_RIFF_B = make_riffs(counter.counter_b().pop_from("cells",4))
-COUNTER_RIFF_B = make_riffs(counter.counter_b())
+
+
+COUNTER_RIFF_B = make_riffs(lib("counter_i"))
 
 OPENING_END_WIGGLE = RIFF2_6 + RIFF2_4A + RIFF2_6
 

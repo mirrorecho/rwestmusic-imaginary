@@ -3,6 +3,7 @@ import calliope
 from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
+from imaginary.stories.library import Library
 
 class HomeA(ImaginaryLine):
 
@@ -10,7 +11,7 @@ class HomeA(ImaginaryLine):
         class CellA1(ImaginaryCell):
             init_rhythm=(-2, 2, 4,)
             init_pitches=("R", -3, 0,)
-            cell_label="A"
+            cell_label="A" # TO DO: is this label used?????
 
         class CellA2(ImaginaryCell):
             init_rhythm=(-2, 2, 1, 3)
@@ -50,38 +51,79 @@ class HomeB(ImaginaryLine):
             # init_rhythm=(1, 4, 1, 1)
             init_rhythm=(-1, 1, 4, 1, 1)
             init_pitches=("R", 7, 5, 2, 5)
-            cell_label="A"
+            cell_label="A" 
 
-_HOME_A = HomeA()
-_HOME_B = HomeB()
+def home_a(lib=None):
+    return HomeA().autoname("phrases", "cells", prefix="home_a")
 
-def home_a(**kwargs):
-    return _HOME_A(**kwargs)
+def home_b(lib=None):
+    return HomeB().autoname("phrases", "cells", prefix="home_b")
 
-def home_b(**kwargs):
-    return _HOME_B(**kwargs)
+def home_a_b(lib):
+    return lib("home_a").ext( lib("home_b") )
 
-# some common combos:
-def home_a_b():
-    return _HOME_A().ext( _HOME_B() )
+def home_b_aup4(lib):
+    return lib("home_b").ext( lib("home_a").t(5) )
 
-def home_b_aup4():
-    return _HOME_B().ext( _HOME_A().t(5) )
-
+def to_lib(lib):
+    if not lib.is_loaded("home"):
+        my_home_a = home_a()
+        lib["home_a"] = my_home_a
+        lib.set_nodes(my_home_a, "phrases", "cells")
+        
+        my_home_b = home_b()
+        lib["home_b"] = my_home_b
+        lib.set_nodes(my_home_b, "phrases", "cells")
+        
+        lib.add(home_a_b, home_b_aup4)
+        lib.mark_loaded("home")
 
 if __name__ == '__main__':
-    # pass
+    lib = Library()
+    to_lib(lib)
     test_block = calliope.SegmentBlock(
-        home_a_b().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
-        home_b_aup4().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
+        lib("home_a_b").sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
+        lib("home_b_aup4").sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
         )
     # test_block.segments[1].cells[0].insert(0, calliope.Event(beats=0-24))
     calliope.illustrate(test_block.to_score(
         midi_tempo=112,
         ), 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         )
+
+
+# _HOME_A = HomeA()
+# _HOME_B = HomeB()
+
+# def home_a(**kwargs):
+#     return _HOME_A(**kwargs)
+
+# def home_b(**kwargs):
+#     return _HOME_B(**kwargs)
+
+# # some common combos:
+# def home_a_b():
+#     return _HOME_A().ext( _HOME_B() )
+
+# def home_b_aup4():
+#     return _HOME_B().ext( _HOME_A().t(5) )
+
+
+# if __name__ == '__main__':
+#     # pass
+#     test_block = calliope.SegmentBlock(
+#         home_a_b().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
+#         home_b_aup4().sc(0.5).move_t().annotate(label=("cells","phrases")).slur_cells(),
+#         )
+#     # test_block.segments[1].cells[0].insert(0, calliope.Event(beats=0-24))
+#     calliope.illustrate(test_block.to_score(
+#         midi_tempo=112,
+#         ), 
+#         as_midi=True,
+#         open_midi=True,
+#         )
 
 # h = HOME_A_B_FAST.crop(1,1).move_t()
 # print(HOME_A_B_FAST().poke((0,1,),"events"))

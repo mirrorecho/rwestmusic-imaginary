@@ -16,7 +16,7 @@ class CounterLine(ImaginaryLine):
         )
         return my_mod
 
-def counter_line():
+def counter(lib=None):
     return CounterLine(
         ImaginaryPhrase(
             ImaginaryCell(rhythm=RHYTHM_DOWN, pitches=(0, -1,), 
@@ -47,7 +47,7 @@ def counter_line():
             slug="end"),
         slug="counter").autoname("phrases", "cells", prefix="counter")
 
-def counter_line_i_straight():
+def counter_i_straight(lib=None):
     return CounterLine(
         ImaginaryPhrase(
             ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=("R", 5, 0, -3,), 
@@ -64,31 +64,35 @@ def counter_line_i_straight():
             slug="straight_i"),
         slug="counter_i").autoname("phrases", "cells", prefix="counter_i")
 
-def counter_line_i():
+def counter_i(lib):
     return CounterLine(
-        *counter_line().phrases[:2], # first two phrases the same
-        *counter_line_i_straight().phrases,
+        *lib("counter").phrases[:2], # first two phrases the same
+        *counter_i_straight().phrases,
         slug="counter_i")
 
 
-def counter_line_long_imod():
-    # TO DO MAYBE: should be able to rely on library without re-executing?
-    return counter_line().ext( counter_line_i().as_mod() )
+def counter_long_imod(lib):
+    return lib("counter").ext( lib("counter_i").as_mod() )
 
 def to_lib(lib):
-    my_counter_line = counter_line()
-    lib["counter_line"] = my_counter_line
-    lib.set_nodes(my_counter_line, "phrases", "cells")
-    my_counter_line_i_straight = counter_line_i_straight()
-    lib.set_nodes(my_counter_line_i_straight, "phrases", "cells")
-    lib.add(counter_line_i, counter_line_long_imod)
-    # my_line.autoname("phrases", "cells", prefix="counter", add_to_lib=lib)
+    if not lib.is_loaded("counter"):
+        my_counter = counter()
+        lib["counter"] = my_counter
+        lib.set_nodes(my_counter, "phrases", "cells")
+        
+        my_counter_i_straight = counter_i_straight()
+        lib.set_nodes(my_counter_i_straight, "phrases", "cells")
+        lib["counter_i_straight"] = my_counter_i_straight
+        
+        lib.add(counter_i, counter_long_imod)
+        lib.mark_loaded("counter")
+        # my_line.autoname("phrases", "cells", prefix="counter", add_to_lib=lib)
 
 
 if __name__ == '__main__':
     lib = Library()
     to_lib(lib)
-    calliope.illustrate(lib["counter_line_long_imod"])
+    calliope.illustrate(lib["counter_long_imod"])
 
 
 # ========================================================

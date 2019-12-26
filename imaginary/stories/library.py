@@ -14,11 +14,19 @@ import abjad, calliope
 class Library(calliope.CalliopeBase):
     _funcs = None
     _items = None
+    _loaded = None # a set of names of categories of things that have been loaded
+
+    def is_loaded(self, name):
+        return name in self._loaded
+
+    def mark_loaded(self, name):
+        self._loaded.add(name)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self._funcs = {}
         self._items = {}
+        self._loaded = set()
 
     def __call__(self, *args, **kwargs):
         if len(args)==0:
@@ -32,10 +40,15 @@ class Library(calliope.CalliopeBase):
     def names(self):
         return list(self._funcs.keys())
 
+    def print_names(self, prefix=""):
+        for name in self.names:
+            if name.startswith(prefix):
+                print(name)
+
     def get(self, arg):
         """ gets a single item """
         if arg not in self._items:
-            self._items[arg] = self._funcs[arg]()    
+            self._items[arg] = self._funcs[arg](self)    
         return self._items[arg]
 
     def __getitem__(self, arg):
