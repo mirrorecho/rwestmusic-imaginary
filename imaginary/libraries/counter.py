@@ -65,7 +65,6 @@ def counter_line_i_straight():
         slug="counter_i").autoname("phrases", "cells", prefix="counter_i")
 
 def counter_line_i():
-    print("PUKE")
     return CounterLine(
         *counter_line().phrases[:2], # first two phrases the same
         *counter_line_i_straight().phrases,
@@ -89,7 +88,6 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = Library()
     to_lib(lib)
-    print(lib.names)
     calliope.illustrate(lib["counter_line_long_imod"])
 
 
