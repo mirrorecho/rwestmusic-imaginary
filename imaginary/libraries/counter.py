@@ -59,7 +59,7 @@ def counter_line_i_straight():
         ImaginaryPhrase(
             ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=("R", -5, -3, 2,), 
                 slug="straightup_i"),
-            ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=(0, -3, 2, 0), 
+            ImaginaryCell(rhythm=RHYTHM_STRAIGHT, pitches=(0, -3, 2, 0), # first could also be rest
                 slug="straight_i"),
             slug="straight_i"),
         slug="counter_i").autoname("phrases", "cells", prefix="counter_i")
