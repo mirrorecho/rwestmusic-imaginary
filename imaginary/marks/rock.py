@@ -103,7 +103,7 @@ def riff2_4b(lib): # RIFF2_4B
 def riff2_6(lib): # RIFF2_6
     return lib("riff_line").crop("cells",1,0)
 
-def riff2_7(lib): # RIFF_7
+def riff_7(lib): # RIFF_7
     return lib("riff_line").crop("events",0,5)
 
 def riff_8a(lib): #RIFF_8A
@@ -487,14 +487,479 @@ def grid_g2_c26_31(lib):
         output_directory = output_directory,
     )
 
+# ======================================================================
+# SECTION 3
+# ======================================================================
+
+def block3(lib):
+    b3 = short_block.get_block().ext_segments()
+    intro_riff = (lib("riff1_4").bookend_pad(0,2) + lib("riff1_4") 
+        + lib("riff2_4b") + lib("riff2_4b").bookend_pad(2,0)
+        # lib("riff_8c")
+        # lib("riff1_4").bookend_pad(2)
+        )
+    intro_riff.events[4,13].tag("fermata")
+
+    big_riff = lib("riff_line").bookend_pad(2,)
+    big_riff.events[0].tag("fermata")
+    big_riff.ext(big_riff().t(7).stack_p( [(0,3,7)] ) )
+    big_riff_cell_len = len(intro_riff.cells) + len(big_riff.cells)
+
+    # TO DO: fix the fermata on the rest measures!
+    # big_rest = big_riff().mask("cells",1,2,4,5)
+    b3.ext_segments(
+        melody_line1 = [intro_riff, big_riff,],
+        # melody_line2 = [intro_riff, big_riff,], # TO DO with FABRIC... move ranges down
+        counter_line = [intro_riff, big_riff,],
+        bass_line = [intro_riff, big_riff().t(-24),],
+        riff = [intro_riff, big_riff,],
+        # chords = [big_rest(),],
+        )
+
+    b3.ext_segments(
+        riff = [
+            lib("riff_7").t(2).mul(4),
+            lib("riff_line").t(2),
+            lib("riff_line").t(9).crop("events",0,4).pop_from("events",1).mul(4),
+            lib("riff_line").t(4),
+            lib("riff_8a").t(11),
+            lib("riff_8b").t(6),
+            lib("riff_8b").t(1),
+            lib("riff_8a").t(8),
+            lib("riff_8b").t(15),
+            ]
+        )
+
+    # segments derived from riff:
+    b3.ext_segments(
+        melody_line1 = crazy_minor(
+            b3.segments["riff"]().crop("cells",big_riff_cell_len),
+            poke=([c-big_riff_cell_len for c in (20,21,30,31, 33, 35, 37, 38, 39,40,41)]),
+            ),
+        melody_line2 = chords.sus_maker(b3.segments["riff"], 
+            # input_start_beat = 16,
+            phrases = {
+                1:{**chords.RIFF_DICT_B, **{"octave":0,}},
+                2:{**chords.RIFF_DICT_B, **{"octave":0}},
+                3:{**chords.RIFF_DICT_D, **{"octave":0}},
+                4:{**chords.RIFF_DICT_D, **{"octave":1}},
+                6:chords.RIFF_DICT_A,
+                7:{**chords.RIFF_DICT_B, **{"octave":-1}},
+                8:{**chords.RIFF_DICT_C, **{"octave":-1}},
+                9:{**chords.RIFF_DICT_C, **{"octave":-1}},
+                
+                11:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                12:{**chords.RIFF_DICT_B, **{"octave":0}},
+                13:{**chords.RIFF_DICT_C, **{"octave":0}},
+                14:{**chords.RIFF_DICT_C, **{"octave":0}},
+            }
+            ),
+        chords = hits(
+            b3.segments["riff"](), 
+            poke=(12, 16, 20, 22, 30, 32, 34, 36),
+        ),
+        )
+
+    # EXTRAS!
+    line_2 = b3.segments["melody_line2"]
+    line_2.cells[0].rhythm=(-2,-2)
+    line_2.cells[0].events[1].tag("fermata")
+    line_2.cells[3].events[0].tag("fermata")
+    line_2.cells[4].events[0].tag("fermata")
+    line_2.cells[5].rhythm=(-2,-2, -6)
+    line_2.cells[5].events[1].tag("fermata")
+    print(line_2.cells[0].events[1].rest_can_combine)
+
+    b3.fill_rests()
+    
+    return b3
+
+def grid_g3_c10_11_sax_strings(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c10_11_sax_strings", 
+        cells=(10,11), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "sax") + ("ooa_violin1","ooa_cello1"),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c10_11_winds_brass(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c10_11_winds_brass", 
+        cells=(10,11), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "ooa_winds","ooa_brass"),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c20_21(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c20_21", 
+        cells=(20,21), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "ooa_winds","sax") + ("ooa_violin1","ooa_cello1"),
+        stack = ((0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c30_31(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c30_31", 
+        cells=(30,31), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = (
+            "cco_flute1","cco_flute2","cco_clarinet1","cco_clarinet2","cco_bassoon",
+            "cco_violin_i","cco_violin_ii","cco_viola","cco_cello"),
+        stack = ((0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c33(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c33", 
+        cells=(33,), 
+        pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "ooa_winds","sax","ooa_brass",
+            ) + ("ooa_violin1","ooa_cello1"),
+        stack = ((0,0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c35(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c35", 
+        cells=(35,), 
+        pitch_ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "cco_winds","cco_brass","cco_strings"
+            ),
+        stack = ((0,0,0,0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c37_41_winds(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c37_41_winds", 
+        cells=(37,38,39,40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "flutes","clarinets"),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c38_41_oboes_strings(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c38_41_oboes_strings", 
+        cells=(38,39,40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments(
+            "oboes","cco_strings")[:-1],
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c39_41_bassoons_bari(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c39_41_bassoons_bari", 
+        cells=(39,40,41), 
+        pitch_ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        pitch_ranges_instruments = ("ooa_bari_sax", "ooa_bassoon", "cco_bassoon"),
+        # (also to include electric celli)
+        # stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
+def grid_g3_c40_41_sax(lib):
+    return lib("rock_block3").get_grid_a("rock_g3_c40_41_sax", 
+        cells=(40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = ("ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax"),
+        # stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
+        output_directory = output_directory,
+    )
+
+# ======================================================================
+# SECTION 4
+# ======================================================================
+def straight_bass(input_row, 
+    phrase_count=2, 
+    rhythm_tree=((2,2),(2,2),),
+    input_start_beat = 0,
+    ):
+    
+    beat_counter = input_start_beat
+    bass_line = ImaginaryLine()
+
+    for i in range(phrase_count):
+        bass_phrase = ImaginaryPhrase()
+
+        for cell_r in rhythm_tree:
+            bass_cell = ImaginaryCell()
+
+            for r in cell_r:
+                if r > 0:
+                    input_event = input_row.event_at_beat(beat_counter)
+                    # TO DO... think of being more flexifble to pull either cell/phrase, parent/grandparent
+                    input_node = input_event.parent.parent
+                    input_pitches = input_node.note_pitch_set
+                    my_pitch = chords.get_diatonic_root(input_pitches) - 24
+                else:
+                    my_pitch = "R"
+                bass_cell.append(calliope.Event(beats=r, pitch=my_pitch))
+                beat_counter += abs(r)
+            bass_phrase.append(bass_cell)
+        bass_line.append(bass_phrase)
+    return bass_line                
+
+
+def block4(lib):
+    b4 = short_block.get_block().ext_segments()
+
+    b4.ext_segments(
+        riff = [
+            lib("riff_8c").t(3).stack_p( ST_4MT ),
+            lib("riff_8d").t(3).stack_p( ST_4MT ),
+            lib("riff_8c").t(10).stack_p( ST_4MT ),
+            lib("riff_8d").t(10).stack_p( ST_4MT ),
+            lib("riff_8c").t(5).stack_p( ST_4MT ),
+            lib("riff_8d").t(5).stack_p( ST_4MT ),
+            lib("riffs_opening"),
+            lib("riff_opening_end_wiggle"),
+            lib("riff_line"),
+            lib("riff_line").t(7).stack_p( ST_UP_II ),
+            lib("riff_opening_end_wiggle").t(2),
+            lib("riff_opening_end_wiggle").t(2),
+            lib("riff_line").t(-15).stack_p( ST_7UP ).bookend_pad(4),
+            lib("riff_line").t(-8).stack_p( ST_DN_II ),
+            lib("riff_line").t(-1).stack_p( ST_UP_II ),
+            lib("riff_line").t(6).stack_p( ST_UP_I ),
+            lib("riff_line").t(13).stack_p( ST_UP_I ),
+            lib("riff_line").t(8).bookend_pad(6)
+            ],
+        counter_line = [
+            # home_riffs(1, respell="sharps").t( 4 ).stack_p( ST_7UP )
+            lib("riff_home_a").stack_p( ((0,12),),).bookend_pad(40,),
+            lib("riff_home_a").stack_p( ST_UP_II ),
+            lib("riff_home_a").stack_p( ((0,12),),).t(2).bookend_pad(12,),
+            lib("riff_home_b").stack_p( ((0,12),),).t(2),
+            # HOME_RIFF(respell="flats").t( 6 ).stack_p( ST_7DN ).t(-11),
+            ],
+        high_drones = [
+            drone.DroneLine(
+                line_pitches=( (28,),),
+                phrase_rhythm = (2,1,1),
+                phrase_count = 16,
+                ).bookend_pad(24,0),
+            drone.DroneLine(
+                line_pitches=( (27,),),
+                phrase_rhythm = (0.5,)*8,
+                phrase_count = 4,
+                ),
+            drone.DroneLine(
+                line_pitches=( ( 15,27, ),),
+                phrase_rhythm = (0.5,)*8,
+                phrase_count = 5,
+                ),
+            drone.DroneLine(
+                line_pitches=( (20,),),
+                phrase_rhythm = (0.5,)*8,
+                phrase_count = 4,
+                ),
+            ],
+
+        )
+
+    # segments derived from riff:
+    b4.ext_segments(
+        melody_line1 = crazy_major(
+            b4.segments["riff"](),
+            poke=(25,26,27,28,37, 38, 39, 40, 41,42,43,44,45),
+            ).t(12),
+        mid_drones = cell_based_pads(
+            b4.segments["riff"](),
+            mask=(19,20,21,22,23,24,35),
+            scale_steps = (4,3)
+            ),
+        melody_line2 = chords.sus_maker(b4.segments["riff"], 
+            phrases = {
+                6:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                7:chords.RIFF_DICT_B,
+                8:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                # 9:{**chords.RIFF_DICT_A, **{"octave": 1}},
+                10:chords.RIFF_DICT_B,
+                11:chords.RIFF_DICT_B,
+                21:chords.RIFF_DICT_A,
+                23:chords.RIFF_DICT_B,
+                24:chords.RIFF_DICT_B,
+                # 12:chords.RIFF_DICT_D,
+            }
+            ),
+        bass_line = [
+            straight_bass(b4.segments["riff"], 3,
+                rhythm_tree=((3,1),(1.5,2.5),),
+                input_start_beat=16,
+                ).bookend_pad(16),
+            straight_bass(b4.segments["riff"], 1,
+                rhythm_tree=((3,1),(1.5,2.5),),
+                input_start_beat=72,
+                ).mul(2).bookend_pad(28),
+            ],
+        chords = hits(
+            b4.segments["riff"](), 
+                poke=(0,18,19,25),
+        ),
+        )
+
+    # extras!
+    b4.segments["mid_drones"].cells[45].t(12)
+
+
+    for p in b4.segments["mid_drones"].phrases[6:]:
+        p.stack_p( ST_7UP )
+
+    b4.fill_rests()
+
+    return b4
+
+    # -------------------
+def valley_seq(): 
+    return pitch_ranges.RangeSeq().add_abstract(
+        0, 
+        pitch_ranges.MID_RANGE,
+        ).add_abstract(
+        0.5, 
+        pitch_ranges.BOTTOM_RANGE,
+        ).add_abstract(
+        1, 
+        pitch_ranges.TOP_RANGE,
+        )
+
+def grid_g4_c25_26(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c25_26", 
+        cells=(25,26), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = ("ooa_bassoon", "ooa_cello1", "ooa_cello2", "cco_oboe1", "cco_oboe2", "cco_bassoon",),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c27_28(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c27_28", 
+        cells=(27,28), 
+        pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
+        pitch_ranges_instruments = instrument_groups.get_instruments("sax", "ooa_strings") + (
+            "ooa_bassoon", "cco_oboe1", "cco_oboe2", "cco_bassoon",
+            ),
+        stack = ((0,0,),),
+        tallies = tally_apps.LINE_SMOOTH_2,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c37_39(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c37_39", 
+        cells=(37,38,39), 
+        pitch_ranges = pitch_ranges.LOW_TO_MID_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_clarinet", "ooa_violin1", "ooa_violin2", "cco_clarinet1", "cco_clarinet2", "cco_viola"
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c38_40(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c38_40", 
+        cells=(38,39,40), 
+        pitch_ranges = pitch_ranges.PitchRanges(valley_seq()),
+        pitch_ranges_instruments = (
+            "ooa_bari_sax", "ooa_bassoon", "ooa_cello1", "ooa_cello2", "cco_bassoon", "cco_cello"
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c39_41(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c39_41",
+        cells=(39,40,41), 
+        pitch_ranges = pitch_ranges.MID_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = (
+            "cco_flute1", "cco_flute2", "cco_oboe1", "cco_oboe2", "cco_violin_i", "cco_violin_ii"
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c40_42(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c40_42",
+        cells=(40,41,42), 
+        pitch_ranges = pitch_ranges.MID_TO_HIGHISH_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_trombone","ooa_violin1","ooa_violin2",
+            "cco_horn","cco_trombone","cco_viola",
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c41_43(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c41_43",
+        cells=(41,42,43), 
+        pitch_ranges = pitch_ranges.PitchRanges(valley_seq()),
+        pitch_ranges_instruments = (
+            "ooa_clarinet", "cco_clarinet1","cco_clarinet2",
+            "ooa_cello1", "ooa_cello2", "cco_cello",
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c42_45(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c42_45",
+        cells=(42,43,44,45), 
+        pitch_ranges = pitch_ranges.PitchRanges(valley_seq()),
+        pitch_ranges_instruments = (
+            "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
+            "ooa_bassoon","cco_bassoon",
+            ),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+def grid_g4_c43_45(lib):
+    return lib("rock_block4").get_grid_a("rock_g4_c43_45",
+        cells=(43,44,45), 
+        pitch_ranges = pitch_ranges.MID_TO_HIGH_RANGES,
+        pitch_ranges_instruments = (
+            "ooa_flute","ooa_horn","ooa_trumpet",
+            "cco_oboe1","cco_oboe2","cco_trumpet"),
+        tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
+        output_directory = output_directory,
+    )
+
+
+# ======================================================================
+# SECTION 5 ?????
+# ======================================================================
+
+
 # # ======================================================================
 # # ======================================================================
 
 def score_short(lib):
     b = short_block.get_block()
-    # b.extend_from(lib["rock_block0"])
-    # b.extend_from(lib["rock_block1"])
+    b.extend_from(lib["rock_block0"])
+    b.extend_from(lib["rock_block1"])
     b.extend_from(lib["rock_block2"])
+    b.extend_from(lib["rock_block3"])
+    b.extend_from(lib["rock_block4"])
 
     b.annotate(
         slur_cells=True,
@@ -514,14 +979,14 @@ def to_lib(lib):
         home.to_lib(lib)
         counter.to_lib(lib)
         lib.add(
-            riff_line, riff1_4, riff1_6, riff2_4a, riff2_4b, riff2_6, riff2_7,
+            riff_line, riff1_4, riff1_6, riff2_4a, riff2_4b, riff2_6, riff_7,
             riff_8a, riff_8b, riff_8c, riff_8d, riff_wiggle,
             riff_home_a, riff_home_b, riff_counter_i, riff_opening_end_wiggle, 
             riffs_opening,
             )    
 
         lib.add(high_rhythm, high_rhythm_ii, off_rhythm, off_rhythm_slow, mid_rhythm, bass_rhythm,
-            block0, block1, block2, score_short,
+            block0, block1, block2, block3, block4, score_short,
             namespace="rock")
         lib.mark_loaded("rock")
 
@@ -533,433 +998,6 @@ if __name__ == '__main__':
         # open_midi=True,
         # open_pdf=False,
         )
-
-        
-# # ======================================================================
-# # SECTION 3
-# # ======================================================================
-
-# def get_sb3():
-#     sb = short_block.get_block().ext_segments()
-#     intro_riff = (lib("riff1_4").bookend_pad(0,2) + RIFF1_4 + RIFF2_4B +
-#         lib("riff2_4b").bookend_pad(2,0)
-#         # RIFF_8C
-#         # lib("riff1_4").bookend_pad(2)
-#         )
-#     intro_riff.events[4,13].tag("fermata")
-
-#     big_riff = riffs(1).bookend_pad(2,)
-#     big_riff.events[0].tag("fermata")
-#     big_riff.ext(big_riff().t(7).stack_p( [(0,3,7)] ) )
-#     big_riff_cell_len = len(intro_riff.cells) + len(big_riff.cells)
-
-#     # TO DO: fix the fermata on the rest measures!
-#     # big_rest = big_riff().mask("cells",1,2,4,5)
-#     sb.ext_segments(
-#         melody_line1 = [intro_riff, big_riff,],
-#         # melody_line2 = [intro_riff, big_riff,], # TO DO with FABRIC... move ranges down
-#         counter_line = [intro_riff, big_riff,],
-#         bass_line = [intro_riff, big_riff().t(-24),],
-#         riff = [intro_riff, big_riff,],
-#         # chords = [big_rest(),],
-#         )
-
-#     sb.ext_segments(
-#         riff = [
-#             RIFF_7().t(2).mul(4),
-#             riffs(1).t(2),
-#             riffs(1, respell="sharps").t(9
-#                 ).crop("events",0,4).pop_from("events",1).mul(4),
-#             riffs(1, respell="sharps").t(4),
-#             RIFF_8A(respell="sharps").t(11),
-#             RIFF_8B(respell="sharps").t(6),
-#             RIFF_8B(respell="flats").t(1),
-#             RIFF_8A(respell="flats").t(8),
-#             RIFF_8B(respell="flats").t(15),
-#             ]
-#         )
-
-#     # segments derived from riff:
-#     sb.ext_segments(
-#         melody_line1 = crazy_minor(
-#             sb.segments["riff"]().crop("cells",big_riff_cell_len),
-#             poke=([c-big_riff_cell_len for c in (20,21,30,31, 33, 35, 37, 38, 39,40,41)]),
-#             ),
-#         melody_line2 = chords.sus_maker(sb.segments["riff"], 
-#             # input_start_beat = 16,
-#             phrases = {
-#                 1:{**chords.RIFF_DICT_B, **{"octave":0,}},
-#                 2:{**chords.RIFF_DICT_B, **{"octave":0}},
-#                 3:{**chords.RIFF_DICT_D, **{"octave":0}},
-#                 4:{**chords.RIFF_DICT_D, **{"octave":1}},
-#                 6:chords.RIFF_DICT_A,
-#                 7:{**chords.RIFF_DICT_B, **{"octave":-1}},
-#                 8:{**chords.RIFF_DICT_C, **{"octave":-1}},
-#                 9:{**chords.RIFF_DICT_C, **{"octave":-1}},
-                
-#                 11:{**chords.RIFF_DICT_A, **{"octave": 1}},
-#                 12:{**chords.RIFF_DICT_B, **{"octave":0}},
-#                 13:{**chords.RIFF_DICT_C, **{"octave":0}},
-#                 14:{**chords.RIFF_DICT_C, **{"octave":0}},
-#             }
-#             ),
-#         chords = hits(
-#             sb.segments["riff"](), 
-#             poke=(12, 16, 20, 22, 30, 32, 34, 36),
-#         ),
-#         )
-
-#     # EXTRAS!
-#     line_2 = sb.segments["melody_line2"]
-#     line_2.cells[0].rhythm=(-2,-2)
-#     line_2.cells[0].events[1].tag("fermata")
-#     line_2.cells[3].events[0].tag("fermata")
-#     line_2.cells[4].events[0].tag("fermata")
-#     line_2.cells[5].rhythm=(-2,-2, -6)
-#     line_2.cells[5].events[1].tag("fermata")
-#     print(line_2.cells[0].events[1].rest_can_combine)
-
-#     sb.fill_rests()
-
-#     sb.add_grid("rock_g3_c10_11_sax_strings", 
-#         cells=(10,11), 
-#         pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments(
-#             "sax") + ("ooa_violin1","ooa_cello1"),
-#         stack = ((0,0,),),
-#         tallies = tally_apps.LINE_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c10_11_winds_brass", 
-#         cells=(10,11), 
-#         pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments(
-#             "ooa_winds","ooa_brass"),
-#         stack = ((0,0,),),
-#         tallies = tally_apps.LINE_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c20_21", 
-#         cells=(20,21), 
-#         pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments(
-#             "ooa_winds","sax") + ("ooa_violin1","ooa_cello1"),
-#         stack = ((0,0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c30_31", 
-#         cells=(30,31), 
-#         pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
-#         pitch_ranges_instruments = (
-#             "cco_flute1","cco_flute2","cco_clarinet1","cco_clarinet2","cco_bassoon",
-#             "cco_violin_i","cco_violin_ii","cco_viola","cco_cello"),
-#         stack = ((0,0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c33", 
-#         cells=(33,), 
-#         pitch_ranges = pitch_ranges.LOW_TO_HIGHISH_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments(
-#             "ooa_winds","sax","ooa_brass",
-#             ) + ("ooa_violin1","ooa_cello1"),
-#         stack = ((0,0,0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c35", 
-#         cells=(35,), 
-#         pitch_ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments(
-#             "cco_winds","cco_brass","cco_strings"
-#             ),
-#         stack = ((0,0,0,0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c37_41_winds", 
-#         cells=(37,38,39,40,41), 
-#         pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments(
-#             "flutes","clarinets"),
-#         stack = ((0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c38_41_oboes_strings", 
-#         cells=(38,39,40,41), 
-#         pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments(
-#             "oboes","cco_strings")[:-1],
-#         stack = ((0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c39_41_bassoons_bari", 
-#         cells=(39,40,41), 
-#         pitch_ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
-#         pitch_ranges_instruments = ("ooa_bari_sax", "ooa_bassoon", "cco_bassoon"),
-#         # (also to include electric celli)
-#         # stack = ((0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g3_c40_41_sax", 
-#         cells=(40,41), 
-#         pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
-#         pitch_ranges_instruments = ("ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax"),
-#         # stack = ((0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_OK,
-#         output_directory = output_directory,
-#     )
-
-#     return sb
-
-# # ======================================================================
-# # SECTION 4
-# # ======================================================================
-# def straight_bass(input_row, 
-#     phrase_count=2, 
-#     rhythm_tree=((2,2),(2,2),),
-#     input_start_beat = 0,
-#     ):
-    
-#     beat_counter = input_start_beat
-#     bass_line = ImaginaryLine()
-
-#     for i in range(phrase_count):
-#         bass_phrase = ImaginaryPhrase()
-
-#         for cell_r in rhythm_tree:
-#             bass_cell = ImaginaryCell()
-
-#             for r in cell_r:
-#                 if r > 0:
-#                     input_event = input_row.event_at_beat(beat_counter)
-#                     # TO DO... think of being more flexifble to pull either cell/phrase, parent/grandparent
-#                     input_node = input_event.parent.parent
-#                     input_pitches = input_node.note_pitch_set
-#                     my_pitch = chords.get_diatonic_root(input_pitches) - 24
-#                 else:
-#                     my_pitch = "R"
-#                 bass_cell.append(calliope.Event(beats=r, pitch=my_pitch))
-#                 beat_counter += abs(r)
-#             bass_phrase.append(bass_cell)
-#         bass_line.append(bass_phrase)
-#     return bass_line                
-
-
-# def get_sb4():
-#     sb = short_block.get_block().ext_segments()
-
-#     sb.ext_segments(
-#         riff = [
-#             RIFF_8C(respell="flats").t(3).stack_p( ST_4MT ),
-#             RIFF_8D(respell="flats").t(3).stack_p( ST_4MT ),
-#             RIFF_8C(respell="flats").t(10).stack_p( ST_4MT ),
-#             RIFF_8D(respell="flats").t(10).stack_p( ST_4MT ),
-#             RIFF_8C(respell="flats").t(5).stack_p( ST_4MT ),
-#             RIFF_8D(respell="flats").t(5).stack_p( ST_4MT ),
-#             OPENING_RIFFS(),
-#             OPENING_END_WIGGLE(),
-#             riffs(),
-#             riffs().t(7).stack_p( ST_UP_II ),
-#             OPENING_END_WIGGLE().t(2),
-#             OPENING_END_WIGGLE().t(2),
-#             riffs().t(-15).stack_p( ST_7UP ).bookend_pad(4),
-#             riffs().t(-8).stack_p( ST_DN_II ),
-#             riffs().t(-1).stack_p( ST_UP_II ),
-#             riffs().t(6).stack_p( ST_UP_I ),
-#             riffs().t(13).stack_p( ST_UP_I ),
-#             riffs().t(8).bookend_pad(6)
-#             ],
-#         counter_line = [
-#             # home_riffs(1, respell="sharps").t( 4 ).stack_p( ST_7UP )
-#             HOME_RIFF().stack_p( ((0,12),),).bookend_pad(40,),
-#             HOME_RIFF().stack_p( ST_UP_II ),
-#             HOME_RIFF().stack_p( ((0,12),),).t(2).bookend_pad(12,),
-#             HOME_RIFF_B().stack_p( ((0,12),),).t(2),
-#             # HOME_RIFF(respell="flats").t( 6 ).stack_p( ST_7DN ).t(-11),
-#             ],
-#         high_drones = [
-#             drone.DroneLine(
-#                 line_pitches=( (28,),),
-#                 phrase_rhythm = (2,1,1),
-#                 phrase_count = 16,
-#                 ).bookend_pad(24,0),
-#             drone.DroneLine(
-#                 line_pitches=( (27,),),
-#                 phrase_rhythm = (0.5,)*8,
-#                 phrase_count = 4,
-#                 ),
-#             drone.DroneLine(
-#                 line_pitches=( ( 15,27, ),),
-#                 phrase_rhythm = (0.5,)*8,
-#                 phrase_count = 5,
-#                 ),
-#             drone.DroneLine(
-#                 line_pitches=( (20,),),
-#                 phrase_rhythm = (0.5,)*8,
-#                 phrase_count = 4,
-#                 ),
-#             ],
-
-#         )
-
-#     # segments derived from riff:
-#     sb.ext_segments(
-#         melody_line1 = crazy_major(
-#             sb.segments["riff"](),
-#             poke=(25,26,27,28,37, 38, 39, 40, 41,42,43,44,45),
-#             ).t(12),
-#         mid_drones = cell_based_pads(
-#             sb.segments["riff"](),
-#             mask=(19,20,21,22,23,24,35),
-#             scale_steps = (4,3)
-#             ),
-#         melody_line2 = chords.sus_maker(sb.segments["riff"], 
-#             phrases = {
-#                 6:{**chords.RIFF_DICT_A, **{"octave": 1}},
-#                 7:chords.RIFF_DICT_B,
-#                 8:{**chords.RIFF_DICT_A, **{"octave": 1}},
-#                 # 9:{**chords.RIFF_DICT_A, **{"octave": 1}},
-#                 10:chords.RIFF_DICT_B,
-#                 11:chords.RIFF_DICT_B,
-#                 21:chords.RIFF_DICT_A,
-#                 23:chords.RIFF_DICT_B,
-#                 24:chords.RIFF_DICT_B,
-#                 # 12:chords.RIFF_DICT_D,
-#             }
-#             ),
-#         bass_line = [
-#             straight_bass(sb.segments["riff"], 3,
-#                 rhythm_tree=((3,1),(1.5,2.5),),
-#                 input_start_beat=16,
-#                 ).bookend_pad(16),
-#             straight_bass(sb.segments["riff"], 1,
-#                 rhythm_tree=((3,1),(1.5,2.5),),
-#                 input_start_beat=72,
-#                 ).mul(2).bookend_pad(28),
-#             ],
-#         chords = hits(
-#             sb.segments["riff"](), 
-#                 poke=(0,18,19,25),
-#         ),
-#         )
-
-#     # extras!
-#     sb.segments["mid_drones"].cells[45].t(12)
-
-
-#     for p in sb.segments["mid_drones"].phrases[6:]:
-#         p.stack_p( ST_7UP )
-
-#     sb.fill_rests()
-
-#     sb.add_grid("rock_g4_c25_26", 
-#         cells=(25,26), 
-#         pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
-#         pitch_ranges_instruments = ("ooa_bassoon", "ooa_cello1", "ooa_cello2", "cco_oboe1", "cco_oboe2", "cco_bassoon",),
-#         stack = ((0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g4_c27_28", 
-#         cells=(27,28), 
-#         pitch_ranges = pitch_ranges.MID_TO_EXTREME_RANGES,
-#         pitch_ranges_instruments = instrument_groups.get_instruments("sax", "ooa_strings") + (
-#             "ooa_bassoon", "cco_oboe1", "cco_oboe2", "cco_bassoon",
-#             ),
-#         stack = ((0,0,),),
-#         tallies = tally_apps.LINE_SMOOTH_2,
-#         output_directory = output_directory,
-#     )
-#     # -------------------
-#     sb.add_grid("rock_g4_c37_39", 
-#         cells=(37,38,39), 
-#         pitch_ranges = pitch_ranges.LOW_TO_MID_RANGES,
-#         pitch_ranges_instruments = (
-#             "ooa_clarinet", "ooa_violin1", "ooa_violin2", "cco_clarinet1", "cco_clarinet2", "cco_viola"
-#             ),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     valley_seq = pitch_ranges.RangeSeq().add_abstract(
-#         0, 
-#         pitch_ranges.MID_RANGE,
-#         ).add_abstract(
-#         0.5, 
-#         pitch_ranges.BOTTOM_RANGE,
-#         ).add_abstract(
-#         1, 
-#         pitch_ranges.TOP_RANGE,
-#         )
-#     sb.add_grid("rock_g4_c38_40", 
-#         cells=(38,39,40), 
-#         pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
-#         pitch_ranges_instruments = (
-#             "ooa_bari_sax", "ooa_bassoon", "ooa_cello1", "ooa_cello2", "cco_bassoon", "cco_cello"
-#             ),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g4_c39_41",
-#         cells=(39,40,41), 
-#         pitch_ranges = pitch_ranges.MID_TO_HIGHISH_RANGES,
-#         pitch_ranges_instruments = (
-#             "cco_flute1", "cco_flute2", "cco_oboe1", "cco_oboe2", "cco_violin_i", "cco_violin_ii"
-#             ),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g4_c40_42",
-#         cells=(40,41,42), 
-#         pitch_ranges = pitch_ranges.MID_TO_HIGHISH_RANGES,
-#         pitch_ranges_instruments = (
-#             "ooa_trombone","ooa_violin1","ooa_violin2",
-#             "cco_horn","cco_trombone","cco_viola",
-#             ),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g4_c41_43",
-#         cells=(41,42,43), 
-#         pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
-#         pitch_ranges_instruments = (
-#             "ooa_clarinet", "cco_clarinet1","cco_clarinet2",
-#             "ooa_cello1", "ooa_cello2", "cco_cello",
-#             ),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g4_c42_45",
-#         cells=(42,43,44,45), 
-#         pitch_ranges = pitch_ranges.PitchRanges(valley_seq),
-#         pitch_ranges_instruments = (
-#             "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
-#             "ooa_bassoon","cco_bassoon",
-#             ),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-#     sb.add_grid("rock_g4_c43_45",
-#         cells=(43,44,45), 
-#         pitch_ranges = pitch_ranges.MID_TO_HIGH_RANGES,
-#         pitch_ranges_instruments = (
-#             "ooa_flute","ooa_horn","ooa_trumpet",
-#             "cco_oboe1","cco_oboe2","cco_trumpet"),
-#         tallies = tally_apps.LINE_SMOOTH_2_REPEATS_PREFER,
-#         output_directory = output_directory,
-#     )
-
-
-#     return sb
-
-# # ======================================================================
-# # SECTION 5 ?????
-# # ======================================================================
-
 
 
 # class Lick8(lick.Lick):
