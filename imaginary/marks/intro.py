@@ -11,6 +11,8 @@ from imaginary.stories import artics, free_segment
 from imaginary.stories import library
 from imaginary.scores.intro_score import ImaginaryIntroScore
 
+from imaginary.marks import rock_3
+
 def cell_rest4(lib=None):
     """ a 4-beat rest cell """
     return ImaginaryCell(rhythm=(-4,),)
@@ -79,16 +81,40 @@ def cell_shake(lib=None):
         3, "tremolo:3")(
         4, "\\!",)()
 
+# TO DO: change to use the grid block (as opposed to the final score)
+def rock3_cco_bassoon_c39_41(lib):
+    l = lib["rock_grid_g3_c39_41_bassoons_bari"][2]().transformed(
+        artics.FuseRepeatedNotes()).t(11)
+    return l
+
+
+def rock3_cco_oboe1_c38_41(lib):
+    l = lib["rock_grid_g3_c38_41_oboes_strings"][1].transformed(
+        artics.FuseRepeatedNotes()).t(-6).eps(
+            0,"pp")(
+            1, beats=2)(
+            3, beats=1)(
+            4,9,11, beats=0.25)(
+            4,6,9, "[")(
+            5,8,10, "]")(
+            1,4,6,9,11, "(")(
+            2,5,8,10,12, ")")(
+            12, "mp")()
+    l.cells.setattrs(respell="sharps")
+    return l
+
 def to_lib(lib):
     if not lib.is_loaded("intro"):
         home.to_lib(lib)
         counter.to_lib(lib)
+        rock_3.to_lib(lib)
         # TO DO... include riff
 
         lib.add(cell_rest4, cell_rest2, cell_rest1)
 
         lib.add(segment_rest, a_phrase_0, a_phrase_1, a_cell_2, phrase_mistify,
             phrase_straight_i, phrase_riff, phrase_wiggle, cell_shake,
+            rock3_cco_bassoon_c39_41, rock3_cco_oboe1_c38_41,
             namespace="intro")
     lib.mark_loaded("intro")
 
@@ -97,36 +123,7 @@ def hold_cell(pitch, *args):
     hold_cell.events[0].tag("fermata", *args)
     return hold_cell
 
-#encapsulating all this in a function since it's resource intensive
-# to import rock content
-def get_rock_blocks():
-    from imaginary.marks import rock_3
-    r3s = rock_3.s.staves
-    r3s_blocks = [
-        calliope.LineBlock(
-            *[ImaginaryLine(*selection.copy()) for selection in selections])
-        for selections in [
-            (r3s["cco_bassoon"].cells[-3:],),
-            (r3s["cco_oboe1"].cells[-4:],),
-            # (r4s["ooa_clarinet"].cells[-3:],r4s["cco_clarinet1"].cells[-3:]),
-            ]
-        ]
-    # TO DO: these could be removed if fused in rock section
-    r3s_blocks[0][0].transformed(artics.FuseRepeatedNotes()).t(11)
 
-    r3s_blocks[1][0].transformed(artics.FuseRepeatedNotes()).t(-6)
-    r3s_blocks[1][0].cells.setattrs(respell="sharps")
-    r3s_blocks[1][0].ops("events")(
-        0,"pp")(
-        1, beats=2)(
-        3, beats=1)(
-        4,9,11, beats=0.25)(
-        4,6,9, "[")(
-        5,8,10, "]")(
-        1,4,6,9,11, "(")(
-        2,5,8,10,12, ")")(
-        12, "mp")()
-    return r3s_blocks
 
 def block_to_score(lib, block_name):
     block = lib(block_name)

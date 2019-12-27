@@ -2090,10 +2090,10 @@
                             \bar ".|:"
                             s8
                             af''1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2262,8 +2262,8 @@
                             \bar ".|:"
                             s8
                             af''1
-                            \pp
                             \fermata
+                            \pp
                             \bar ":|."
                             \freeContinue
                             s4
@@ -2555,10 +2555,10 @@
                             \bar ".|:"
                             s8
                             g'1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2647,20 +2647,42 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            r2
-                            ^ \markup { ROCK }
+                            b8
+                            \pp
+                            ds'2
+                            (
+                            b'8
+                            )
+                            as'4
+                            b'16
+                            (
+                            cs''4
+                            )
+                            f''8
+                            [
+                            (
+                            cs''8
+                            as'8
+                            ]
+                            )
+                            b'16
+                            [
+                            (
+                            f'8
+                            ]
+                            )
+                            fs'16
+                            (
+                            gs'4
+                            \mp
+                            )
+                            cs''8
                             \bar ":|."
                             \freeContinue
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
                             s4
                             s4
                             s4
@@ -2682,7 +2704,7 @@
                             \freeRestArrow
                             r4
                             s4
-                            s8
+                            s16
                         }
                     }
                     \context Staff = "cco_violin_ii2"
@@ -3018,10 +3040,10 @@
                             \bar ".|:"
                             s8
                             cs1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3110,18 +3132,25 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            r2
-                            ^ \markup { ROCK }
+                            d''8
+                            \pp
+                            \<
+                            (
+                            a'8
+                            )
+                            g'8
+                            (
+                            b8
+                            )
+                            g4
+                            d1
+                            \p
                             \bar ":|."
                             \freeContinue
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
                             s4
                             s4
                             s4
@@ -3182,8 +3211,8 @@
                             e'1
                             \fermata
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3215,19 +3244,26 @@
                             \normalStaff
                             \bar ".|:"
                             s8
-                            r2
-                            ^ \markup { ROCK }
+                            d''8
+                            \pp
+                            \<
+                            a'8
+                            (
+                            g'8
+                            )
+                            b8
+                            (
+                            g4
+                            )
+                            d4
+                            \p
+                            cs1
                             \bar ":|."
                             \freeContinue
                             s4
+                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
                             s4
                             s4
                             s4
@@ -3334,8 +3370,8 @@
                             fs'8
                             )
                             b1
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3495,8 +3531,8 @@
                             (
                             fs'4
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3823,8 +3859,8 @@
                             \bar ".|:"
                             s8
                             cs'1
-                            \pp
                             \fermata
+                            \pp
                             \bar ":|."
                             \freeContinue
                             s4
@@ -3942,10 +3978,10 @@
                         \bar ".|:"
                         s8
                         af1
-                        \pp
                         \fermata
-                        \freeContinue
+                        \pp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -3982,8 +4018,8 @@
                         \bar ".|:"
                         s8
                         g1
-                        \pp
                         \fermata
+                        \pp
                         \bar ":|."
                         \freeContinue
                         s4
@@ -4029,8 +4065,8 @@
                         \bar ".|:"
                         s8
                         fs1
-                        \pp
                         \fermata
+                        \pp
                         \bar ":|."
                         \freeContinue
                         s4

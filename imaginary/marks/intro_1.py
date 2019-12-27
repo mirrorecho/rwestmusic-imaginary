@@ -11,11 +11,6 @@ from imaginary.stories.library_material import (
 from imaginary.stories import library, artics, free_segment
 from imaginary.marks import intro
 
-WITH_ROCK = False
-
-if WITH_ROCK:
-    r3s_blocks = intro.get_rock_blocks()
-
 # =========================================================================
 # BAR 1
 # =========================================================================
@@ -118,15 +113,11 @@ def block0(lib):
 
     b0["cco_violin_i4"].machine_arrow(lib("intro_a_phrase_1").cells[1](), instruction="repeat, freely")
 
-    if WITH_ROCK:
-        line = r3s_blocks[1][0]()
-        line.cells[1].pop_from("events", 0)
-        line.cells[1:].transformed(calliope.Transpose(interval=-7))
-        line.eps(
-            3, beats=1.5)()
-        b0["cco_violin_ii1"].machine_arrow(line, instruction="repeat")
-    else:
-        b0["cco_violin_ii1"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
+    l_violin_ii1 = lib("intro_rock3_cco_oboe1_c38_41")
+    l_violin_ii1.cells[1].pop_from("events", 0)
+    l_violin_ii1.cells[1:].transformed(calliope.Transpose(interval=-7))
+    l_violin_ii1.eps(3, beats=1.5)()
+    b0["cco_violin_ii1"].machine_arrow(l_violin_ii1, instruction="repeat")
 
     b0["cco_violin_ii2"].machine_arrow(lib("intro_phrase_wiggle").crop("events",0,2).t(-7).eps(
         0, "p")(
@@ -153,16 +144,12 @@ def block0(lib):
         1,4, beats=2)(),
         instruction="repeat, freely")
 
-    # # from bassoon line at end of rock 3
-    if WITH_ROCK:
-        b0["cco_viola2"].machine_arrow(r3s_blocks[0][0]().crop("events",1).t(5).eps(
-            0, "p", "\\<")(
-            0,2, "(",)(
-            1,3, ")",)(
-            5, "mp", beats=4)(), 
-            instruction="repeat")
-    else:
-        b0["cco_viola2"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
+    b0["cco_viola2"].machine_arrow(lib("intro_rock3_cco_bassoon_c39_41").crop("events",1).t(5).eps(
+        0, "p", "\\<")(
+        0,2, "(",)(
+        1,3, ")",)(
+        5, "mp", beats=4)(), 
+        instruction="repeat")
 
     b0["cco_viola3"].machine(lib("cell_rest2"))
     b0["cco_viola3"].machine_arrow(lib("intro_cell_shake").t(17).eps(

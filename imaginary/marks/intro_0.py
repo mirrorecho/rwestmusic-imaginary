@@ -10,12 +10,6 @@ from imaginary.stories.library_material import (
 from imaginary.stories import library, artics, free_segment
 from imaginary.marks import intro
 
-# TO DO... library implementation in rock modules should make this unnecessary
-WITH_ROCK = False
-
-if WITH_ROCK:
-    r3s_blocks = intro.get_rock_blocks()
-
 # =========================================================================
 # BAR 1
 # =========================================================================
@@ -97,18 +91,13 @@ def block1(lib):
 
     b1["cco_viola1"].machine_arrow(lib("intro_a_phrase_0").t(-10), instruction="repeat, freely")
 
-    # # from bassoon line at end of rock 3
-    # TO DO: shouldn't need condition once library implemented in rock
-    if WITH_ROCK:
-        b1["cco_viola2"].machine_arrow(r3s_blocks[0][0]().eps(
-            0, "pp", "\\<")(
-            1,3, "(",)(
-            2,4, ")",)(
-            5, "p")(
-            6, beats=4)(), 
-            instruction="repeat")
-    else:
-        b1["cco_viola2"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
+    b1["cco_viola2"].machine_arrow(lib("intro_rock3_cco_bassoon_c39_41").eps(
+        0, "pp", "\\<")(
+        1,3, "(",)(
+        2,4, ")",)(
+        5, "p")(
+        6, beats=4)(), 
+        instruction="repeat")
 
     b1["cco_viola3"].machine_arrow(lib("intro_a_phrase_1"), instruction="repeat, freely")
 
@@ -151,11 +140,7 @@ def block2(lib):
         4,")", beats=2)(), 
         instruction="repeat")
 
-    if WITH_ROCK:
-        b2["cco_violin_ii1"].machine_arrow(
-            r3s_blocks[1][0], instruction="repeat")
-    else:
-        b2["cco_violin_ii1"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
+    b2["cco_violin_ii1"].machine_arrow(lib("intro_rock3_cco_oboe1_c38_41"), instruction="repeat")
 
     b2["cco_violin_ii2"].machine_arrow(intro.hold_cell(4), instruction="repeat")
 
@@ -164,16 +149,12 @@ def block2(lib):
         3, beats=4)(), 
         instruction="repeat")
 
-    # # from bassoon line at end of rock 3
-    if WITH_ROCK:
-        b2["cco_viola1"].machine_arrow(r3s_blocks[0][0]().crop("events",0,1).eps(
-            0, "pp", "\\<")(
-            0,2, "(",)(
-            1,3, ")",)(
-            5, "p", beats=4)(), 
-            instruction="repeat")
-    else:
-        b2["cco_viola1"].machine_arrow(lib("cell_rest2").eps(0,"ROCK")())
+    b2["cco_viola1"].machine_arrow(lib("intro_rock3_cco_bassoon_c39_41").crop("events",0,1).eps(
+        0, "pp", "\\<")(
+        0,2, "(",)(
+        1,3, ")",)(
+        5, "p", beats=4)(),
+        instruction="repeat")
 
     b2["cco_viola2"].machine_arrow(intro.hold_cell(-6,"p",), instruction="repeat")
 

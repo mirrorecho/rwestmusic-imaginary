@@ -985,7 +985,16 @@ def to_lib(lib):
             riffs_opening,
             )    
 
+        # TO DO: this is nasty! Should use intropection to avoid
         lib.add(high_rhythm, high_rhythm_ii, off_rhythm, off_rhythm_slow, mid_rhythm, bass_rhythm,
+            grid_g0_c11, grid_g0_c13, grid_g0_c21_22,
+            grid_g1_c6, grid_g1_c23_24, grid_g2_c4_5, grid_g2_c16_17, grid_g2_c26_31,
+            grid_g3_c10_11_sax_strings, grid_g3_c10_11_winds_brass, grid_g3_c20_21,
+            grid_g3_c30_31, grid_g3_c33, grid_g3_c35, grid_g3_c37_41_winds,
+            grid_g3_c38_41_oboes_strings, grid_g3_c39_41_bassoons_bari,
+            grid_g3_c40_41_sax, grid_g4_c25_26, grid_g4_c27_28, grid_g4_c37_39,
+            grid_g4_c38_40, grid_g4_c39_41, grid_g4_c40_42, grid_g4_c41_43,
+            grid_g4_c42_45, grid_g4_c43_45,
             block0, block1, block2, block3, block4, score_short,
             namespace="rock")
         lib.mark_loaded("rock")
