@@ -6,7 +6,7 @@ from imaginary.stories.library_material import ImaginarySegment, ImaginaryLine, 
 from imaginary.libraries import tally_apps
 
 # TO DO: CONSIDER WHETHER THIS SHOULD BE UNIVERSAL HERE OR NOT
-_GRIDS = {}
+# _GRIDS = {}
 
 # TO DO: move this to calliope
 class ChordSelect(calliope.Transform):
@@ -143,7 +143,7 @@ class ShortBlock(calliope.SegmentBlock):
             if seg_beats < beats:
                 seg.append( calliope.Cell(rhythm=(seg_beats-beats,)) )
 
-
+    # TO DO: refactor this better into libraries...
     def get_grid_a(self, name,
         line="melody_line1", 
         cells=(), 
@@ -183,15 +183,15 @@ class ShortBlock(calliope.SegmentBlock):
 
         return my_grid
 
-    # TO DO... consider moving this to imaginary_material or short_block
-    def add_grid(self, name, **kwargs):
-        _GRIDS[name] = self.get_grid_a(
-            name=name,
-            **kwargs,
-            )
+    # # TO DO... consider moving this to imaginary_material or short_block
+    # def add_grid(self, name, **kwargs):
+    #     _GRIDS[name] = self.get_grid_a(
+    #         name=name,
+    #         **kwargs,
+    #         )
 
-    def get_grid(self, name):
-        return _GRIDS[name]
+    # def get_grid(self, name):
+    #     return _GRIDS[name]
 
 
 _SHORT_BLOCK = ShortBlock()

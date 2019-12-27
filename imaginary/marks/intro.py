@@ -14,29 +14,20 @@ from imaginary.scores.intro_score import ImaginaryIntroScore
 def cell_rest4(lib=None):
     """ a 4-beat rest cell """
     return ImaginaryCell(rhythm=(-4,),)
-# REST_CELL = ImaginaryCell(rhythm=(-4,),)
 
 def cell_rest2(lib=None): 
     """ a short 2-beat rest cell """
     return ImaginaryCell(rhythm=(-2,),)
-# MID_REST_CELL = ImaginaryCell(rhythm=(-2,))
 
 def cell_rest1(lib=None): 
     """ a 1-beat rest cell """
     return ImaginaryCell(rhythm=(-1,),)
-# MID_REST_CELL = ImaginaryCell(rhythm=(-2,))
 
 def segment_rest(lib=None):
     return free_segment.FreeSegment().machine_arrow(cell_rest4(),
     with_repeat=False,
     machine_pad=(10,10)
     )
-# FREE_REST = free_segment.FreeSegment()
-# FREE_REST.machine_arrow(REST_CELL(),
-#     # pad=(8,1), 
-#     with_repeat=False,
-#     machine_pad=(10,10)
-#     )
 
 def a_phrase_0(lib):
     my_phrase = lib("home_a_phrase_0").sc(0.5).t(2)
@@ -45,12 +36,6 @@ def a_phrase_0(lib):
         1,4, "fermata", beats=4)(
         3, "(")(
         4, ")")()
-# HOME_A = home.home_a().phrases[0].sc(0.5).t(2)
-# HOME_A.rest_events.remove()
-# HOME_A.ops("note_events")(
-#     1,4, "fermata", beats=4)(
-#     3, "(")(
-#     4, ")")()
 
 def a_phrase_1(lib):
     return lib("home_a_phrase_1").sc(0.5).t(2).eps(
@@ -59,18 +44,11 @@ def a_phrase_1(lib):
         4, beats=0.25)(
         5, beats=4
         )()
-# HOME_AA = home.home_a().phrases[1].sc(0.5).t(2).ops("events")(
-#     2,4, "(")(
-#     3,5, ")")(
-#     4, beats=0.25)(
-#     5, beats=4
-#     )()
 
 def a_cell_2(lib):
     my_cell = lib("intro_a_phrase_1").cells[0].t(-12)
     my_cell.note_events[0].pitch += 12
     return my_cell
-# HOME_AA0
 
 def phrase_mistify(lib):
     return lib("counter_phrase_mistify").t(2).ops("note_events")(
@@ -78,22 +56,6 @@ def phrase_mistify(lib):
         0,2, "(")(
         1,3, ")")(
         1,4, beats=4)()
-# COUNTER_A = counter.counter_a(name="counter0").phrases[0].t(2)
-# COUNTER_A.note_events.ops(
-#     0, beats=0.25)(
-#     0,2, "(")(
-#     1,3, ")")(
-#     1,4, beats=4)()
-
-# # NOTE: comes from "counter_cell_down" in counter lib
-# def c_counter_a00():
-#     return p_counter_a0().cells[0]()
-# COUNTER_A0 = COUNTER_A.cells[0]()
-
-# # NOTE: can come from counter lib
-# def c_counter_a01():
-#     return p_counter_a0().cells[1]()
-# COUNTER_A1 = COUNTER_A.cells[1]()
 
 def phrase_straight_i(lib):
     return lib("counter_i_phrase_straight_i").ts(2).t(2).eps(
@@ -101,21 +63,12 @@ def phrase_straight_i(lib):
     3, beats=0.25)(
     1,3,6, "(")(
     2,4,7, ")")()
-# COUNTER_B = counter.counter_b().phrases[3].ts(2).t(2)
-# COUNTER_B.eps(
-#     1,6, beats=0.5)(
-#     3, beats=0.25)(
-#     1,3,6, "(")(
-#     2,4,7, ")")()
 
 def phrase_riff(lib):
     return riff.RiffPhrase().crop("events",0,5).t(-3).eps(6, beats=4)()
-# INTRO_RIFF = riff.RiffPhrase().crop("events",0,5).t(-3).ops("events")(
-#     6, beats=4)()
 
 def phrase_wiggle(lib):
     return riff.RiffPhrase().crop("cells",1).t(2)
-# INTRO_RIFF_WIGGLE = riff.RiffPhrase().crop("cells",1).t(2)
 
 def cell_shake(lib=None):
     return ImaginaryCell(rhythm=(2,2,1,2,1), 
@@ -125,13 +78,6 @@ def cell_shake(lib=None):
         2, "mp", "\\>")(
         3, "tremolo:3")(
         4, "\\!",)()
-# SHAKE_DOWN = ImaginaryCell(rhythm=(2,2,1,2,1), 
-#     pitches=( -11, (-11,-10), -10, (-11,-10), -11, )).ops("events")(
-#         0, "pp", "\\<",)(
-#         1,"tremolo:3")(
-#         2, "mp", "\\>")(
-#         3, "tremolo:3")(
-#         4, "\\!",)()
 
 def to_lib(lib):
     if not lib.is_loaded("intro"):

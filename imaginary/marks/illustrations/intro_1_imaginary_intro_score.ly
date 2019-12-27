@@ -67,8 +67,8 @@
                         \set Staff.shortInstrumentName = \markup { Cl. }
                         \time 8/1
                         s4
-                        \normalStaff
                         \bar ".|:"
+                        \normalStaff
                         s8
                         fs8
                         \p
@@ -80,8 +80,8 @@
                         b1
                         \fermata
                         \mp
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -265,16 +265,16 @@
                         \set Staff.shortInstrumentName = \markup { Hn. }
                         \time 8/1
                         s4
-                        \normalStaff
                         \bar ".|:"
+                        \normalStaff
                         s8
                         b1
                         \pp
                         \<
                         s8
                         \mp
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         \once \hide Rest
                         r4
@@ -594,8 +594,8 @@
                         \set Staff.shortInstrumentName = \markup { Vln.1,2 }
                         \time 8/1
                         s4
-                        \normalStaff
                         \bar ".|:"
+                        \normalStaff
                         s8
                         b8
                         \p
@@ -607,8 +607,8 @@
                         )
                         b'2
                         \fermata
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "both repeat freely, 2nd starting slightly after 1st (staggered)" }
                         \once \hide Rest
@@ -657,16 +657,16 @@
                         \time 8/1
                         \clef "bass"
                         s4
-                        \normalStaff
                         \bar ".|:"
+                        \normalStaff
                         s8
                         \ppp
                         \repeat tremolo 16
                         {
                         b32 \( c'32 \)
                         }
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat hairpin, 1,2 staggered" }
                         \<
@@ -795,8 +795,8 @@
                         \set Staff.shortInstrumentName = \markup { Cl.1,2 }
                         \time 8/1
                         s4
-                        \normalStaff
                         \bar ".|:"
+                        \normalStaff
                         s8
                         fs8
                         \p
@@ -808,8 +808,8 @@
                         b1
                         \fermata
                         \mp
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "(continue repeating, staggered)" }
                         \once \hide Rest
@@ -1076,14 +1076,14 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.1 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             c'''1
                             \fermata
                             \p
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1132,14 +1132,14 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.2 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             fs''1
                             \fermata
                             \p
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1188,14 +1188,14 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.3 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             f''8
                             \p
                             e''2..
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1244,13 +1244,13 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.4 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             b4
                             d'2
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -1303,42 +1303,22 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.1 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
-                            d'8
-                            \pp
-                            \<
-                            g'2
-                            (
-                            fs'8
-                            )
-                            a'4.
-                            (
-                            g'8
-                            )
-                            b'8
-                            [
-                            (
-                            g'8
-                            b'8
-                            ]
-                            )
-                            g'16
-                            (
-                            fs'4
-                            )
-                            e'16
-                            (
-                            fs'8
-                            \mp
-                            )
-                            \freeContinue
+                            r2
+                            ^ \markup { ROCK }
                             \bar ":|."
+                            \freeContinue
                             s4
-                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -1361,6 +1341,7 @@
                             \freeRestArrow
                             r4
                             s4
+                            s8
                         }
                     }
                     \context Staff = "cco_violin_ii2"
@@ -1378,16 +1359,16 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.2 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             b8
                             \p
                             fs'8
                             c'4
                             g'8
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1442,14 +1423,14 @@
                             r4
                             \freePad
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             bf8
                             \p
                             a2..
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1495,8 +1476,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.4 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             b4
                             \p
@@ -1515,8 +1496,8 @@
                             }
                             b4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1569,8 +1550,8 @@
                             r4
                             \freePad
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             b4
                             \mp
@@ -1582,8 +1563,8 @@
                             e'2
                             \fermata
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -1627,28 +1608,21 @@
                             \set Staff.shortInstrumentName = \markup { Vla.2 }
                             \time 8/1
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
-                            d''8
-                            \p
-                            \<
-                            (
-                            c''8
-                            )
-                            e'8
-                            (
-                            c'4
-                            )
-                            g4
-                            fs1
-                            \mp
-                            \freeContinue
+                            r2
+                            ^ \markup { ROCK }
                             \bar ":|."
+                            \freeContinue
                             s4
-                            ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -1672,6 +1646,7 @@
                             \freeRestArrow
                             r4
                             s4
+                            s8
                         }
                     }
                     \context Staff = "cco_viola3"
@@ -1694,8 +1669,8 @@
                             r2
                             \freePad
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             fs'4
                             \p
@@ -1714,8 +1689,8 @@
                             }
                             fs'4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1760,14 +1735,14 @@
                             r4
                             \freePad
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             c1
                             \fermata
                             \p
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -1817,8 +1792,8 @@
                             \time 8/1
                             \clef "bass"
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             f'4
                             \p
@@ -1826,8 +1801,8 @@
                             a2
                             ~
                             a8
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -1877,8 +1852,8 @@
                             \time 8/1
                             \clef "bass"
                             s4
-                            \normalStaff
                             \bar ".|:"
+                            \normalStaff
                             s8
                             b4
                             \p
@@ -1887,8 +1862,8 @@
                             (
                             b2
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -1937,14 +1912,14 @@
                         \time 8/1
                         \clef "bass"
                         s4
-                        \normalStaff
                         \bar ".|:"
+                        \normalStaff
                         s8
                         fs1
                         \fermata
                         \p
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest

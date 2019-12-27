@@ -11,7 +11,7 @@ from imaginary.stories.library_material import (
 from imaginary.stories import library, artics, free_segment
 from imaginary.marks import intro
 
-WITH_ROCK = True
+WITH_ROCK = False
 
 if WITH_ROCK:
     r3s_blocks = intro.get_rock_blocks()

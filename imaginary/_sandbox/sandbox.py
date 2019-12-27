@@ -2,16 +2,91 @@ import abjad, calliope
 from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
+from imaginary.stories import library
 
-p = ImaginaryPhrase(
-    ImaginaryCell(rhythm=(1,1,-2)*2, pitches=(0,2,"R")*2),
-    ImaginaryCell(slug="down", rhythm=(1,1,2,4), pitches=(0,5,2,7)),
-    )
+def test1(times=10000):
+    for i in range(times):
+        my_cell = ImaginaryCell(rhythm=(4,-4,2,2), pitches=(2,"R",0,-1))
+        my_cell.events[0].tag("p")
+    return my_cell
+
+def test2(times=10000):
+    def cell_test(lib):
+        return ImaginaryCell(rhythm=(4,)*4)
+    lib = library.Library()
+    lib.add(cell_test, namespace="testing")
+    
+    for i in range(times):
+        my_cell = lib("testing_cell_test").eps(
+            0, "p", pitch=2)(
+            1, pitch="R")(
+            2, beats=2)(
+            3, beats=2, pitch=-1)()
+    return my_cell
+
+from imaginary.marks import intro_1
+lib = library.Library()
+intro_1.to_lib(lib)
+
+def test3(times=100):
+    for i in range(times):
+        sc = intro_1.block0(lib)
+        print(i)
+    return sc
+
+def test4(times=100):
+    for i in range(times):
+        sc = lib("intro1_block0")
+        print(i)
+    return sc
+
+from copy import deepcopy
+
+class SubItem(object):
+    item = "I AM A SUB ITEM"
+
+    def __init__(self):
+        self._set = set(self.item.split(" "))
+
+class SimpleObject(object):
+    times = 1000
+
+    def __init__(self):
+        self._my_list = []
+        for i in range(self.times):
+            self._my_list.append(SubItem())
+
+    def get_list(self):
+        return self._my_list
+
+def simple_function(times=1000):
+    my_list = []
+    for i in range(times):
+        my_list.append(SubItem())
+    return my_list
 
 
+def test6(times):
+    for i in range(times):
+        obj = SimpleObject()
+    return obj.get_list()
 
-autoname(p, "cells","events", prefix="counter")
-print(p.events[1].name)
+def test7(times):
+    for i in range(times):
+        l = simple_function()
+    return l
+
+def test8(times):
+    simple_obj = SimpleObject()
+    for i in range(times):
+        obj = deepcopy(simple_obj)
+    return obj.get_list()
+
+print(test2())
+
+
+# test4().to_score()
+
 
 # from imaginary.stories import imagine
 
