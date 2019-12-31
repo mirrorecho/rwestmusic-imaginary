@@ -72,20 +72,20 @@ def block1(lib):
     b1 = free_segment.AlocFreeSegmentBlock(tempo_command = """ " 20'' " """)
 
     b1["cco_clarinets"].machine(lib("cell_rest2"))
-    b1["cco_clarinets"].machine_arrow(lib("intro_phrase_riff").eps(
+    b1["cco_clarinets"].machine_arrow(lib("intro_line_riff").eps(
         0, "(", "ppp", "\\<", "a 2, 2nd start after 1st")(
         5, ")")(
         6, "mp")(), 
         instruction="repeat (staggered)")
 
-    b1["cco_violin_i1"].machine_arrow(lib("counter_cell_down").t(18), instruction="repeat")
+    b1["cco_violin_i1"].machine_arrow(lib("intro_cell_down").t(18), instruction="repeat")
 
     # same as violin 1 in last measure
     b1["cco_violin_i2"].machine_arrow(intro.hold_cell(20,"pp",), instruction="repeat")
 
     b1["cco_violin_ii1"].machine_arrow(intro.hold_cell(7,), instruction="repeat")
 
-    b1["cco_violin_ii2"].machine_arrow(lib("counter_cell_down").eps(
+    b1["cco_violin_ii2"].machine_arrow(lib("intro_cell_down").eps(
         0, "pp", beats=0.5)(),
         instruction="repeat")
 
@@ -129,7 +129,7 @@ def block2(lib):
         3, "mp", "fermata", beats=4)(),
         instruction="repeat (staggered)")
 
-    b2["cco_violin_i1"].machine_arrow(lib("counter_cell_down").t(17), instruction="repeat")
+    b2["cco_violin_i1"].machine_arrow(lib("intro_cell_down").t(17), instruction="repeat")
 
     b2["cco_violin_i2"].machine_arrow(intro.hold_cell(19), instruction="repeat")
 
@@ -140,7 +140,9 @@ def block2(lib):
         4,")", beats=2)(), 
         instruction="repeat")
 
-    b2["cco_violin_ii1"].machine_arrow(lib("intro_rock3_cco_oboe1_c38_41"), instruction="repeat")
+    b2["cco_violin_ii1"].machine_arrow(lib("intro_rock3_cco_oboe1_c38_41").eps(
+        )(), 
+        instruction="repeat")
 
     b2["cco_violin_ii2"].machine_arrow(intro.hold_cell(4), instruction="repeat")
 

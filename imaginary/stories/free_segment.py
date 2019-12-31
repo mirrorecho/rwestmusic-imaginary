@@ -43,9 +43,10 @@ class FreeSegment(ImaginarySegment):
         arrow_cell.events[-1].tag("\\freePad", "\\freeRestArrow")
         if instruction:
             arrow_cell[0].tag(instruction)
+            arrow_cell.events[0].tag("\\once \\override TextScript.extra-offset = #'( 1 . 0 )")
             if text_length_on:
-                arrow_cell.events[0].tag(r"\textLengthOn")
-                arrow_cell.events[-1].tag(r"\textLengthOff")
+                arrow_cell.events[0].tag("\\textLengthOn")
+                arrow_cell.events[-1].tag("\\textLengthOff")
         self.append(arrow_cell)
         if pad_beats:
             self.pad(pad_beats, with_command=False)
@@ -54,7 +55,8 @@ class FreeSegment(ImaginarySegment):
     def machine(self, 
         machine,
         pad=(1,0), 
-        machine_pad = (0.5,0),
+        machine_pad = (0.25, 0.25),
+        with_repeat = False,
         ):
         if pad[0]:
             self.pad(pad[0])
@@ -66,27 +68,35 @@ class FreeSegment(ImaginarySegment):
         self.append(machine)
         if pad[1]:
             self.pad(pad[1])
+        if with_repeat:
+            machine.events[0].tag("\\bar \".|:\"")
         return machine
 
     def machine_arrow(self, 
         machine, 
         arrow_beats=None, 
-        pad=(1,1), 
-        machine_pad = (0.5,0),
+        pad=(0.5,0.5), 
+        machine_pad = (0.5, 0),
         text_length_on=False,
         with_repeat=True,
+        with_repeat_end=None,
         instruction="",
         pad_fill=True,
         ):
+
+        with_repeat_end = with_repeat_end or with_repeat
+        machine_pad = (
+            0.75 if with_repeat else machine_pad[0], 
+            0.25 if with_repeat_end else machine_pad[1]
+            )
 
         machine = self.machine(
             machine,
             pad = (pad[0],0),
             machine_pad=machine_pad,
+            with_repeat = with_repeat
             )
 
-        if with_repeat:
-            machine.events[0].tag("\\bar \".|:\"")
         self.append(machine)
 
         beats_remaining = self.metrical_durations_beats - self.beats
@@ -96,7 +106,9 @@ class FreeSegment(ImaginarySegment):
             pad_beats = beats_remaining - arrow_beats
         else:
             pad_beats = pad[1]
-        arrow_cell = self.arrow(arrow_beats, pad_beats, with_repeat, instruction, text_length_on)
+        
+
+        arrow_cell = self.arrow(arrow_beats, pad_beats, with_repeat_end, instruction, text_length_on)
         return self
 
 

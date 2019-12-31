@@ -18,10 +18,6 @@ from imaginary.stories.fabric import ImaginaryFabric
 class Dummy(calliope.CalliopeBase): pass
 output_directory = Dummy().get_module_info()[0] 
 
-# # TO DO... move into to_lib method
-# lib = library.Library()
-# counter.to_lib(lib)
-# home.to_lib(lib)
 
 # RHYTHMIC MATERIAL:
 def high_rhythm(lib=None):
@@ -65,72 +61,6 @@ def bass_rhythm(lib=None):
         ImaginaryCell(rhythm=(1, 1, -1.5, 0.5), pitches=((-12,0),-7, "R", -9,)),
         ImaginaryCell(rhythm=(-2, 1, -1), pitches=("R",(-10,4),"R")),
     )
-
-# RIFF MATERIAL UTILS:
-def riffs(phrase_count=1, **kwargs):
-    return riff.RiffLine(phrase_count=phrase_count, **kwargs)
-
-def make_riffs(line_material, phrase_count=1, **kwargs):
-    # my_pitches = [p.pitches for p in line_material.phrases]
-
-    my_riff = line_material()
-    my_riff.rhythm = (0.5,) * len(my_riff.events)
-
-    # round up to nearest measure!
-    pulse_roundup = 8 - (int(my_riff.beats*2) % 8)
-    if pulse_roundup > 0:
-        my_riff.cells[-1].rhythm += (-0.5,)*pulse_roundup
-
-    return my_riff
-
-def riff_line(lib=None):
-    return riffs(1)
-
-# TO DO... move these to riff module
-# AND TO DO... BETTER NAMES?, DESCRIPTIONS!
-def riff1_4(lib): # RIFF1_4
-    return lib("riff_line").crop("events",0,8)
-
-def riff1_6(lib): # lib("riff1_6") 
-    return lib("riff_line").crop("cells",0,1)
-
-def riff2_4a(lib): # RIFF2_4A
-    return lib("riff_line").crop("events",6,2)
-
-def riff2_4b(lib): # RIFF2_4B
-    return lib("riff_line").crop("events",8,0)
-
-def riff2_6(lib): # RIFF2_6
-    return lib("riff_line").crop("cells",1,0)
-
-def riff_7(lib): # RIFF_7
-    return lib("riff_line").crop("events",0,5)
-
-def riff_8a(lib): #RIFF_8A
-    return lib("riff_line").pop_from("events",2,8,10,11)
-
-def riff_8b(lib): #RIFF_8B
-    return lib("riff_line").pop_from("events",2,8,9,10)
-
-def riff_8c(lib): #RIFF_8C
-    return lib("riff_line").pop_from("events",3,5,7,11)
-
-# TO DO: this is the same as B above!
-def riff_8d(lib): #RIFF_8D
-    return lib("riff_line").pop_from("events",2,8,9,10)
-
-def riff_wiggle(lib): #RIFF_WIGGLE
-    return lib("riff2_4a").ext(lib("riff2_4a").crop("events",0,1)) 
-
-def riff_home_a(lib): #HOME_RIFF
-    return make_riffs(lib("home_a"))
-
-def riff_home_b(lib): #HOME_RIFF_B
-    return make_riffs(lib("home_b"))
-
-def riff_counter_i(lib): #COUNTER_RIFF_B
-    return make_riffs(lib("counter_i"))
-# COUNTER_RIFF_B = make_riffs(counter.counter_b().pop_from("cells",4))
 
 def riff_opening_end_wiggle(lib): #OPENING_END_WIGGLE
     return lib("riff2_6") + lib("riff2_4a") + lib("riff2_6")
@@ -225,11 +155,11 @@ def block0(lib):
         riff = [
             lib("riffs_opening").bookend_pad(drum_intro_beats), 
             lib("riff_line"),
-            riffs(5).t(12),
+            (lib("riff_line") * 5).t(12),
             ],
         counter_line = [
-            lib("riff_wiggle").bookend_pad(drum_intro_beats).bookend_pad(19,1).t(19), 
-            lib("riff_wiggle").bookend_pad(4,2).t(17), 
+            lib("riff_wiggle_2").bookend_pad(drum_intro_beats).bookend_pad(19,1).t(19), 
+            lib("riff_wiggle_2").bookend_pad(4,2).t(17), 
             ],
         bass_drones = [bass_drones(8, bass_pitches=(-15, -17), 
             ).bookend_pad(drum_intro_beats+36)],
@@ -290,12 +220,12 @@ def block1(lib):
         bass_rhythm = [lib("rock_bass_rhythm").mul(8, ImaginaryLine).bookend_pad(24)],
 
         riff = [
-            riffs(4).t(  12).stack_p(  ST_DN_I ).crop("events",0,2),
+            (lib("riff_line")*4).t(12).stack_p(  ST_DN_I ).crop("events",0,2),
             lib("riff2_4a").t(12).stack_p( ST_DN_I ),
             lib("riff1_6").t( 19).stack_p( ST_DN_I ),
-            riffs(1).t(   7).stack_p( ST_UP_I ),
+            lib("riff_line").t(   7).stack_p( ST_UP_I ),
             lib("riff2_4a").t(14).stack_p( ST_7DN ),
-            riffs(2).t(  14).stack_p( ST_DN_I ),
+            (lib("riff_line")*2).t(  14).stack_p( ST_DN_I ),
             lib("riff1_4").t(  9).stack_p( ST_UP_I ),
             lib("riff2_4a").t( 9).stack_p( ST_7DN ),
             lib("riff2_4b").t( 9).stack_p( ST_DN_I ),
@@ -304,8 +234,8 @@ def block1(lib):
             lib("riff1_4").t( 16).stack_p( ST_DN_I ),
             lib("riff1_4").t( 16).stack_p( ST_7UP ),
             lib("riff2_4b").t(16).stack_p( ST_7UP ),
-            riffs().t( 11).stack_p( ST_DN_I ),
-            riffs().t( 11).stack_p( ST_UP_I ),
+            lib("riff_line").t( 11).stack_p( ST_DN_I ),
+            lib("riff_line").t( 11).stack_p( ST_UP_I ),
             ],
 
         high_drones = [drone.DroneLine(
@@ -382,11 +312,11 @@ def grid_g1_c23_24(lib):
 # ======================================================================
 # SECTION 2
 # ======================================================================
-def sb2_riff(t1=-1, t2 = None, **kwargs):
+def sb2_riff(t1=-1, t2 = None):
     t2 = t2 or t1 + 7
     return [
-        riffs(1,**kwargs).crop("events",0,5).t( t1 ).stack_p( ST_UP_I ).mul(2),
-        riffs(1,**kwargs).crop("events",2).t( t2 ).stack_p( ST_DN_I ),
+        lib("riff_line").crop("events",0,5).t( t1 ).stack_p( ST_UP_I ).mul(2),
+        lib("riff_line").crop("events",2).t( t2 ).stack_p( ST_DN_I ),
         ]
 
 def block2(lib):
@@ -396,9 +326,9 @@ def block2(lib):
             lib("rock_high_rhythm_ii").mul(7, ImaginaryLine)
             ],
         bass_rhythm = [lib("rock_off_rhythm_slow").mul(9, ImaginaryLine)],
-        riff = sb2_riff(-1, respell="sharps"
-            ) + sb2_riff(6, respell="sharps"
-            ) + sb2_riff(18, 8, respell="sharps") + [
+        riff = sb2_riff(-1,
+            ) + sb2_riff(6,
+            ) + sb2_riff(18, 8,) + [
             lib("riff_line").crop("events",0,4).pop_from("events",1).t(8).stack_p( ST_UP_II ),
             lib("riff_line").crop("events",0,4).pop_from("events",1).t(3).stack_p( ST_UP_II ),
             lib("riff_line").crop("events",0,8).t(3).stack_p( ST_UP_II ),
@@ -976,14 +906,8 @@ def score_short(lib):
 
 def to_lib(lib):  
     if not lib.is_loaded("rock"):
-        home.to_lib(lib)
-        counter.to_lib(lib)
-        lib.add(
-            riff_line, riff1_4, riff1_6, riff2_4a, riff2_4b, riff2_6, riff_7,
-            riff_8a, riff_8b, riff_8c, riff_8d, riff_wiggle,
-            riff_home_a, riff_home_b, riff_counter_i, riff_opening_end_wiggle, 
-            riffs_opening,
-            )    
+        riff.to_lib(lib)
+        lib.add(riff_opening_end_wiggle, riffs_opening,)    
 
         # TO DO: this is nasty! Should use intropection to avoid
         lib.add(high_rhythm, high_rhythm_ii, off_rhythm, off_rhythm_slow, mid_rhythm, bass_rhythm,

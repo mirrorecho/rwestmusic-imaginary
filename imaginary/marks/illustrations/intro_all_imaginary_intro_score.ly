@@ -123,6 +123,59 @@
                         r4
                         s4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        \ppp
+                        \<
+                        \repeat tremolo 16
+                        {
+                        e''32 \( f''32 \)
+                        }
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        \mp
+                        ^ \markup { "repeat hairpin" }
+                        \>
+                        \once \hide Rest
+                        r4
+                        s4
+                        \ppp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
+                    }
                 }
                 \context Staff = "ooa_clarinet"
                 \with
@@ -222,10 +275,10 @@
                         a8
                         )
                         b1
-                        \mp
                         \fermata
-                        \freeContinue
+                        \mp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -255,6 +308,81 @@
                         \freeRestArrow
                         r4
                         s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        \once \hide Stem
+                        b'4
+                        ^ \markup { "improvise on these pitches" }
+                        \once \hide Stem
+                        c''4
+                        \once \hide Stem
+                        d''4
+                        \once \hide Stem
+                        e''4
+                        \once \hide Stem
+                        f''4
+                        b'16
+                        ^ \markup {
+                            \column
+                                {
+                                    "making use of"
+                                    "this figure"
+                                }
+                            }
+                        (
+                        c''16
+                        d''16
+                        e''16
+                        f''2
+                        \fermata
+                        )
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        \p
+                        ^ \markup {
+                            \column
+                                {
+                                    "freely at first, eventually with"
+                                    "drum set's quarter note pulse"
+                                }
+                            }
+                        \<
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \mf
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
                     }
                 }
                 \context Staff = "ooa_alto_saxes"
@@ -361,6 +489,57 @@
                         r4
                         s4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        \ppp
+                        \<
+                        c''1
+                        \fermata
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        \p
+                        ^ \markup { "repeat, 1,2 staggered" }
+                        \>
+                        \once \hide Rest
+                        r4
+                        s4
+                        \ppp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
+                    }
                 }
                 \context Staff = "ooa_tenor_sax"
                 \with
@@ -374,6 +553,30 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Tsax. }
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
                         \normalStaff
@@ -572,6 +775,30 @@
                         r4
                         s4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
                 }
                 \context Staff = "ooa_bassoon"
                 \with
@@ -587,6 +814,30 @@
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \time 8/1
                         \clef "bass"
+                        s4
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
                         s4
                         \normalStaff
                         s\breve
@@ -769,7 +1020,6 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
-                        \bar ".|:"
                         \normalStaff
                         s8
                         b1
@@ -777,12 +1027,48 @@
                         \<
                         s8
                         \mp
+                        \freePad
+                        s4
+                        \normalStaff
+                        s1..
+                        r1
+                        s1..
                         \freeContinue
-                        \bar ":|."
                         s4
                         \once \hide Rest
                         r4
                         s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        \pp
+                        \<
+                        b1
+                        \fermata
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        \mp
+                        ^ \markup { repeat }
+                        \>
+                        \once \hide Rest
+                        r4
+                        s4
+                        \pp
                         s4
                         s4
                         s4
@@ -808,6 +1094,7 @@
                         \freeRestArrow
                         r4
                         s4
+                        s8
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -952,8 +1239,10 @@
                         e''2
                         \fermata
                         )
+                        \>
                         \freePad
                         s4
+                        \p
                         \normalStaff
                         s8
                         r2
@@ -965,6 +1254,53 @@
                         \freeRestArrow
                         r4
                         s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        e''1
+                        \fermata
+                        \p
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { repeat }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -981,6 +1317,30 @@
                         \set Staff.shortInstrumentName = \markup { Tbn. }
                         \time 8/1
                         \clef "bass"
+                        s4
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
                         s4
                         \normalStaff
                         s\breve
@@ -1168,8 +1528,8 @@
                         r8
                         ^ \markup { "bowed, (motor on)" }
                         c'''1
-                        \mp
                         \fermata
+                        \mp
                         \freePad
                         s4
                         \normalStaff
@@ -1182,6 +1542,35 @@
                         r4
                         s4
                         s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s8
+                        r8
+                        b''2
+                        f'''1
+                        \fermata
+                        \freePad
+                        s4
+                        \normalStaff
+                        s1..
+                        r1
+                        s1..
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
                         s4
                         \freePad
                         \freeRestArrow
@@ -1202,6 +1591,7 @@
                         \set Staff.instrumentName = \markup { "Drum Set" }
                         \set Staff.shortInstrumentName = \markup { Drum. }
                         \time 8/1
+                        \clef "percussion"
                         s4
                         \normalStaff
                         s\breve
@@ -1285,6 +1675,66 @@
                         s4
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s8
+                        r2
+                        \freePad
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        b4
+                        \p
+                        \<
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup {
+                            \column
+                                {
+                                    "soft mallets"
+                                    "repeat, keep pulse constant"
+                                }
+                            }
+                        \once \hide Rest
+                        r4
+                        s4
+                        \mf
+                        \>
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \!
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -1309,6 +1759,30 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s4
                         \normalStaff
@@ -1515,6 +1989,30 @@
                         s4
                         s8
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
                 }
             >>
             \context StaffGroup = "ooa_strings"
@@ -1619,8 +2117,8 @@
                         )
                         b'2
                         \fermata
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "both repeat freely, 2nd starting slightly after 1st (staggered)" }
                         \once \hide Rest
@@ -1651,6 +2149,59 @@
                         r4
                         s4
                         s8
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        b4
+                        \p
+                        (
+                        c'4
+                        )
+                        g'8
+                        (
+                        a'4
+                        )
+                        b'2
+                        \fermata
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { "repeat, freely (staggered)" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
                     }
                 }
                 \context Staff = "ooa_cellos"
@@ -1745,30 +2296,79 @@
                         \normalStaff
                         s8
                         \ppp
+                        \<
                         \repeat tremolo 16
                         {
                         b32 \( c'32 \)
                         }
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
+                        \mp
                         ^ \markup { "repeat hairpin, 1,2 staggered" }
-                        \<
+                        \>
                         \once \hide Rest
                         r4
-                        \mp
-                        \>
+                        s4
+                        \ppp
                         s4
                         s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
                         \ppp
                         \<
-                        s4
+                        \repeat tremolo 16
+                        {
+                        b32 \( c'32 \)
+                        }
+                        \bar ":|."
+                        \freeContinue
                         s4
                         \mp
+                        ^ \markup { "(continue repeating, staggered)" }
                         \>
-                        s4
+                        \once \hide Rest
+                        r4
                         s4
                         \ppp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -1902,6 +2502,67 @@
                         r4
                         s4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        b'16
+                        \ppp
+                        ^ \markup { "a 2, 2nd start after 1st" }
+                        \<
+                        (
+                        c''16
+                        d''16
+                        e''16
+                        g''16
+                        b''16
+                        e''16
+                        b''16
+                        f''16
+                        c'''16
+                        \p
+                        )
+                        r4
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { "repeat, freely (staggered)" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                    }
                 }
                 \context Staff = "cco_oboes"
                 \with
@@ -2007,6 +2668,57 @@
                         r4
                         s4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        \ppp
+                        \<
+                        b'1
+                        \fermata
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        \p
+                        ^ \markup { "repeat, 1,2 staggered" }
+                        \>
+                        \once \hide Rest
+                        r4
+                        s4
+                        \ppp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
+                    }
                 }
                 \context Staff = "cco_clarinets"
                 \with
@@ -2068,8 +2780,8 @@
                         )
                         cs'1
                         \mp
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -2111,8 +2823,8 @@
                         cs''8
                         g'8
                         )
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -2165,10 +2877,10 @@
                         a8
                         )
                         b1
-                        \mp
                         \fermata
-                        \freeContinue
+                        \mp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "(continue repeating, staggered)" }
                         \once \hide Rest
@@ -2198,6 +2910,61 @@
                         \freeRestArrow
                         r4
                         s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        e'8
+                        \p
+                        \<
+                        (
+                        f'8
+                        g'8
+                        a'8
+                        )
+                        c''2
+                        \fermata
+                        \mp
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { "repeat, freely (staggered)" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -2304,6 +3071,55 @@
                         \freeRestArrow
                         r4
                         s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        c16
+                        \p
+                        (
+                        b,1
+                        )
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { repeat }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s16
                     }
                 }
             >>
@@ -2413,6 +3229,57 @@
                         r4
                         s4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        \pp
+                        \<
+                        c'1
+                        \fermata
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        \mp
+                        ^ \markup { repeat }
+                        \>
+                        \once \hide Rest
+                        r4
+                        s4
+                        \pp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
+                    }
                 }
                 \context Staff = "cco_trumpet"
                 \with
@@ -2517,6 +3384,54 @@
                         \freeRestArrow
                         r4
                         s4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \normalStaff
+                        s8
+                        r1
+                        \freePad
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        b'2
+                        \p
+                        ^ \markup { "straight mute" }
+                        c''4
+                        (
+                        b'8
+                        )
+                        e'1
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { "repeat, freely" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -2624,6 +3539,53 @@
                         r4
                         s4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        b4
+                        d'2
+                        \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { "repeat, freely" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
+                    }
                 }
             >>
             \context RhythmicStaff = "cco_percussion"
@@ -2638,6 +3600,30 @@
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     \clef "percussion"
+                    s4
+                    \normalStaff
+                    s\breve
+                    s2
+                    r1
+                    s\breve
+                    s2
+                    \freeContinue
+                    s4
+                    \once \hide Rest
+                    r4
+                    s4
+                    s4
+                    s4
+                    \freePad
+                    \freeRestArrow
+                    r4
+                    s4
+                }
+                {
+                    \numericTimeSignature
+                    \freePad
+                    \accidentalStyle neo-modern-cautionary
+                    \time 8/1
                     s4
                     \normalStaff
                     s\breve
@@ -2859,6 +3845,42 @@
                     s4
                     s8
                 }
+                {
+                    \numericTimeSignature
+                    \freePad
+                    \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                    \accidentalStyle neo-modern-cautionary
+                    \time 8/1
+                    s4
+                    \normalStaff
+                    s8
+                    <e' f' b'' c'''>4
+                    \ff
+                    -\accent
+                    \freePad
+                    s4
+                    \normalStaff
+                    s1.
+                    r1
+                    s1.
+                    \freeContinue
+                    s4
+                    \once \hide Rest
+                    r4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    \freePad
+                    \freeRestArrow
+                    r4
+                    s4
+                    s8
+                }
             }
             \context StaffGroup = "cco_strings"
             <<
@@ -2883,10 +3905,10 @@
                             \normalStaff
                             s8
                             af''1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2929,10 +3951,12 @@
                             \bar ".|:"
                             \normalStaff
                             s8
-                            fs''8
-                            f''2..
-                            \freeContinue
+                            af''16
+                            (
+                            g''1
+                            )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2963,7 +3987,7 @@
                             \freeRestArrow
                             r4
                             s4
-                            s8
+                            s16
                         }
                         {
                             \numericTimeSignature
@@ -2975,10 +3999,59 @@
                             \bar ".|:"
                             \normalStaff
                             s8
-                            f''8
-                            e''2..
-                            \freeContinue
+                            g''16
+                            (
+                            fs''1
+                            )
                             \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            s16
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            c'''1
+                            \fermata
+                            \p
+                            \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3021,11 +4094,11 @@
                             \bar ".|:"
                             \normalStaff
                             s8
-                            c'''1
-                            \p
+                            f'''1
                             \fermata
-                            \freeContinue
+                            \mp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3102,10 +4175,10 @@
                             \normalStaff
                             s8
                             af''1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3150,8 +4223,8 @@
                             s8
                             g''1
                             \fermata
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3195,10 +4268,10 @@
                             \normalStaff
                             s8
                             fs''1
-                            \p
                             \fermata
-                            \freeContinue
+                            \p
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3208,6 +4281,71 @@
                             s4
                             s4
                             s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            s8
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \normalStaff
+                            s8
+                            r4
+                            \freePad
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            f''8
+                            (
+                            e''8
+                            )
+                            f''8
+                            (
+                            g''4
+                            )
+                            b''8
+                            (
+                            g''8
+                            )
+                            e''8
+                            (
+                            f''8
+                            )
+                            b'8
+                            (
+                            c''8
+                            )
+                            d''4
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
                             s4
                             s4
                             s4
@@ -3312,8 +4450,8 @@
                             (
                             e''2
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3348,11 +4486,58 @@
                             \bar ".|:"
                             \normalStaff
                             s8
-                            f''8
+                            g''8
                             \p
-                            e''2..
-                            \freeContinue
+                            (
+                            fs''1
+                            )
                             \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            b''1
+                            \fermata
+                            \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3478,8 +4663,8 @@
                             s8
                             b4
                             d'2
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3513,6 +4698,56 @@
                             s4
                             s8
                         }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \normalStaff
+                            s8
+                            r4
+                            \freePad
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            f''16
+                            (
+                            e''1
+                            )
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            s8.
+                        }
                     }
                 >>
                 \context StaffGroup = "cco_violin_ii"
@@ -3536,10 +4771,10 @@
                             \normalStaff
                             s8
                             g'1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3584,8 +4819,8 @@
                             s8
                             g'1
                             \fermata
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3630,7 +4865,6 @@
                             s8
                             d'8
                             \pp
-                            \<
                             g'2
                             (
                             fs'8
@@ -3658,8 +4892,8 @@
                             cs''8
                             \mp
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3725,12 +4959,66 @@
                             fs'8
                             \mp
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            c'''4
+                            g''8
+                            (
+                            f''8
+                            )
+                            a'8
+                            (
+                            f'4
+                            )
+                            c'4
+                            (
+                            b2
+                            )
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { "repeat, freely" }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -3797,11 +5085,13 @@
                             \bar ".|:"
                             \normalStaff
                             s8
-                            c'8
+                            d'8
                             \pp
-                            b2..
-                            \freeContinue
+                            (
+                            cs'1
+                            )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3832,7 +5122,6 @@
                             \freeRestArrow
                             r4
                             s4
-                            s8
                         }
                         {
                             \numericTimeSignature
@@ -3846,8 +5135,8 @@
                             s8
                             e'1
                             \fermata
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3895,13 +5184,67 @@
                             fs'8
                             c'4
                             g'8
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
                             r4
                             s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            e'8
+                            b'8
+                            f'8
+                            c''2
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup {
+                                \column
+                                    {
+                                        "repeat freely at first, eventually with"
+                                        "drum set's quarter note pulse"
+                                    }
+                                }
+                            \once \hide Rest
+                            r4
                             s4
                             s4
                             s4
@@ -4002,8 +5345,8 @@
                             cs''8
                             g'8
                             d''1
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4049,11 +5392,13 @@
                             \bar ".|:"
                             \normalStaff
                             s8
-                            bf8
+                            c'16
                             \p
-                            a2..
-                            \freeContinue
+                            (
+                            b1
+                            )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4077,11 +5422,58 @@
                             s4
                             s4
                             s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            s8.
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            c'16
+                            (
+                            b1
+                            )
+                            f'4
+                            (
+                            e'8
+                            )
+                            b'1
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { "repeat, freely" }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
                             s4
                             \freePad
                             \freeRestArrow
                             r4
                             s4
+                            s8.
                         }
                     }
                     \context Staff = "cco_violin_ii4"
@@ -4182,8 +5574,8 @@
                             b32 \( c'32 \)
                             }
                             c'2
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -4191,10 +5583,62 @@
                             }
                             b4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            s8
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \normalStaff
+                            s8
+                            r4
+                            \freePad
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            e'8
+                            b'8
+                            f'8
+                            \repeat tremolo 16
+                            {
+                            e'32 \( f'32 \)
+                            }
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { "repeat, freely" }
                             \once \hide Rest
                             r4
                             s4
@@ -4244,10 +5688,10 @@
                             \normalStaff
                             s8
                             cs1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4299,8 +5743,8 @@
                             fs1
                             \fermata
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -4349,8 +5793,8 @@
                             g4
                             d1
                             \p
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4405,12 +5849,63 @@
                             e'2
                             \fermata
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
                             r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            s8
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            c''1
+                            \fermata
+                            \mp
+                            \>
+                            \repeat tremolo 8
+                            {
+                            b'32 \( c''32 \)
+                            }
+                            b'4
+                            \p
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
                             s4
                             s4
                             s4
@@ -4469,8 +5964,8 @@
                             e'1
                             \fermata
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -4516,8 +6011,8 @@
                             d4
                             \p
                             cs1
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4557,10 +6052,10 @@
                             \normalStaff
                             s8
                             fs1
-                            \p
                             \fermata
-                            \freeContinue
+                            \p
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4616,8 +6111,8 @@
                             g4
                             fs1
                             \mp
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -4645,6 +6140,52 @@
                             \freeRestArrow
                             r4
                             s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            b1
+                            \fermata
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            s8
                         }
                     }
                     \context Staff = "cco_viola3"
@@ -4681,8 +6222,8 @@
                             fs'8
                             )
                             b1
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -4727,8 +6268,8 @@
                             )
                             b4
                             d'2
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -4767,8 +6308,8 @@
                             s8
                             b4
                             d'2
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -4825,8 +6366,8 @@
                             fs'32 \( g'32 \)
                             }
                             c''1
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -4834,10 +6375,77 @@
                             }
                             fs'4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            c1
+                            \fermata
+                            \p
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup {
+                                \column
+                                    {
+                                        "repeat, speed up"
+                                        until...
+                                    }
+                                }
+                            \once \hide Rest
+                            r4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                            \freePad
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            c2
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup {
+                                \column
+                                    {
+                                        "...eventually with drum set's"
+                                        "quarter note pulse"
+                                    }
+                                }
                             \once \hide Rest
                             r4
                             s4
@@ -4899,8 +6507,8 @@
                             (
                             fs'4
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -4948,8 +6556,8 @@
                             )
                             d'2
                             \fermata
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -4999,8 +6607,8 @@
                             (
                             fs'4
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -5049,10 +6657,10 @@
                             \normalStaff
                             s8
                             c1
-                            \p
                             \fermata
-                            \freeContinue
+                            \p
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5074,6 +6682,30 @@
                             s4
                             s4
                             s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
                             s4
                             s4
                             s4
@@ -5145,8 +6777,8 @@
                             }
                             cs4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5201,8 +6833,8 @@
                             }
                             fs4
                             \!
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5241,14 +6873,14 @@
                             \bar ".|:"
                             \normalStaff
                             s8
-                            f'4
+                            g'4
                             \p
-                            e'8
-                            a2
-                            ~
-                            a8
-                            \freeContinue
+                            (
+                            fs'8
+                            )
+                            b1
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -5256,6 +6888,55 @@
                             s4
                             s4
                             s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \bar ".|:"
+                            \normalStaff
+                            s8
+                            e8
+                            (
+                            f4
+                            )
+                            b4
+                            g2
+                            c'8
+                            (
+                            b2
+                            )
+                            \bar ":|."
+                            \freeContinue
+                            s4
+                            ^ \markup { "repeat, freely" }
+                            \once \hide Rest
+                            r4
                             s4
                             s4
                             s4
@@ -5326,10 +7007,10 @@
                             \normalStaff
                             s8
                             cs'1
-                            \pp
                             \fermata
-                            \freeContinue
+                            \pp
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5382,8 +7063,8 @@
                             (
                             e1
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5430,8 +7111,8 @@
                             (
                             b2
                             )
-                            \freeContinue
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -5454,6 +7135,30 @@
                             s4
                             s4
                             s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s4
+                        }
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \time 8/1
+                            s4
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
                             s4
                             s4
                             s4
@@ -5494,10 +7199,10 @@
                         \normalStaff
                         s8
                         af1
-                        \pp
                         \fermata
-                        \freeContinue
+                        \pp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -5534,10 +7239,10 @@
                         \normalStaff
                         s8
                         g1
-                        \pp
                         \fermata
-                        \freeContinue
+                        \pp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -5581,10 +7286,10 @@
                         \normalStaff
                         s8
                         fs1
-                        \pp
                         \fermata
-                        \freeContinue
+                        \pp
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -5628,10 +7333,56 @@
                         \normalStaff
                         s8
                         fs1
-                        \p
                         \fermata
-                        \freeContinue
+                        \p
                         \bar ":|."
+                        \freeContinue
+                        s4
+                        ^ \markup { repeat }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s4
+                        s8
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s4
+                        \bar ".|:"
+                        \normalStaff
+                        s8
+                        f1
+                        \fermata
+                        \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest

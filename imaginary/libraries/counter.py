@@ -76,23 +76,17 @@ def counter_long_imod(lib):
 
 def to_lib(lib):
     if not lib.is_loaded("counter"):
-        my_counter = counter()
-        lib["counter"] = my_counter
-        lib.set_nodes(my_counter, "phrases", "cells")
-        
-        my_counter_i_straight = counter_i_straight()
-        lib.set_nodes(my_counter_i_straight, "phrases", "cells")
-        lib["counter_i_straight"] = my_counter_i_straight
-        
-        lib.add(counter_i, counter_long_imod)
+        lib.add(counter, counter_i_straight, counter_i, counter_long_imod)
+        lib.set_nodes(lib["counter"], "phrases", "cells")
+        lib.set_nodes(lib["counter_i_straight"], "phrases", "cells")
         lib.mark_loaded("counter")
-        # my_line.autoname("phrases", "cells", prefix="counter", add_to_lib=lib)
 
 
 if __name__ == '__main__':
     lib = Library()
     to_lib(lib)
-    calliope.illustrate(lib["counter_long_imod"])
+    lib.print_names()
+    # calliope.illustrate(lib["counter_long_imod"])
 
 
 # ========================================================

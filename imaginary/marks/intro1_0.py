@@ -16,28 +16,32 @@ from imaginary.marks import intro
 # =========================================================================
 
 def block0(lib):
-    b0 = free_segment.AlocFreeSegmentBlock(tempo_command=""" \\note #"4" #UP "= 72 approx | freely | 20'' " """)
+    b0 = free_segment.AlocFreeSegmentBlock(tempo_command=""" " 20'' " """)
 
-    clarinets_phrase = lib("intro_phrase_riff").crop("events",0,3).eps(
+    clarinets_phrase = lib("intro_line_riff").crop("events",0,3).eps(
         0, "p", "\\<", "(")(
         2, ")",)(
         3, "mp", "fermata", beats=4)()
 
     b0["ooa_clarinet"].machine_arrow(clarinets_phrase(), instruction="repeat, freely")
 
-    b0["ooa_horn"].machine_arrow(ImaginaryCell(rhythm=(4,), pitches=(-1,)).eps(
+    b0["ooa_horn"].machine(ImaginaryCell(rhythm=(4,), pitches=(-1,)).eps(
         0,"pp", "\\<")(),
-        machine_pad=(0.5, 0.5)
+        machine_pad=(0.5, 0.5),
         )
     b0["ooa_horn"].cells[1].events[2].tag("mp") # tagging skip as cresc. work-around
+    b0["ooa_horn"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
 
     b0["ooa_trumpet"].machine(lib("cell_rest1"), machine_pad=(0,0),)
     b0["ooa_trumpet"].machine(
-        ImaginaryLine(
-                lib("intro_phrase_riff").t(5),
-                lib("intro_phrase_riff").t(12).crop("events",0,1).mask("events", -1),
-                lib("intro_a_phrase_0").t(12).sc(0.5),
-                lib("intro_a_cell_2").t(24),
+        (
+                lib("intro_line_riff").t(5) +
+                lib("intro_line_riff").t(12).crop("events",0,1).mask("events", -1) +
+                lib("intro_a_phrase_0").t(12).sc(0.5) +
+                lib("intro_a_cell_2").t(24)
             ).eps(
                 0, "p", "\\<", "straight mute, freely, solo", beats=2)(
                 1,  beats=1)(
@@ -46,13 +50,14 @@ def block0(lib):
                 7, ")", beats=2)(
                 10, "-", beats=1)(
                 11, "-", beats=1.5)(
-                23, "fermata", beats=2)(
+                23, "fermata", "\\>", beats=2)(
                 0,2,6,8,13, "(")(
                 1,5,7,9,14, ")")(
                 )(), 
             pad=(0.5,0),
         )
     b0["ooa_trumpet"].machine_arrow(lib("cell_rest2"), with_repeat=False)
+    b0["ooa_trumpet"].cells[-4].events[0].tag("p")
 
     b0["ooa_bass_guitar"].machine(ImaginaryCell(rhythm=(4,), pitches=(-12,)).eps(
         0,"mp")(),
@@ -81,18 +86,18 @@ def block0(lib):
         5, "fermata", beats=2)(), 
         instruction="both repeat freely, 2nd starting slightly after 1st (staggered)")
 
-    b0["cco_clarinets"].machine_arrow(clarinets_phrase(),
-        instruction="(continue repeating, staggered)")
-
     b0["ooa_cellos"].machine_arrow(ImaginaryCell(rhythm=(4,), 
         pitches=( (-1,0 ),)).eps(
             0,"tremolo:3")( ),
             instruction="repeat hairpin, 1,2 staggered"
             )
     b0["ooa_cellos"].eps(
-                1,6,10, "ppp")(
-                3,6, "\\<",)(
-                4,8, "mp","\\>",)()
+                1,5, "ppp")(
+                1, "\\<",)(
+                3, "mp","\\>",)()
+
+    b0["cco_clarinets"].machine_arrow(clarinets_phrase(),
+        instruction="(continue repeating, staggered)")
 
     b0["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((-6,6,23,24),)).ops("events")(
         0, ">","ff")(),
@@ -107,7 +112,7 @@ def block0(lib):
 
     b0["cco_violin_i2"].machine_arrow(intro.hold_cell(18,"p",), instruction="repeat")
 
-    b0["cco_violin_i3"].machine_arrow(lib("counter_cell_down").t(17).eps(
+    b0["cco_violin_i3"].machine_arrow(lib("intro_cell_down").t(17).eps(
         0, "p", beats=0.5)(),
         instruction="repeat")
 
@@ -116,7 +121,9 @@ def block0(lib):
     l_violin_ii1 = lib("intro_rock3_cco_oboe1_c38_41")
     l_violin_ii1.cells[1].pop_from("events", 0)
     l_violin_ii1.cells[1:].transformed(calliope.Transpose(interval=-7))
-    l_violin_ii1.eps(3, beats=1.5)()
+    l_violin_ii1.eps(
+        0, "\\<")(
+        3, beats=1.5)()
     b0["cco_violin_ii1"].machine_arrow(l_violin_ii1, instruction="repeat")
 
     b0["cco_violin_ii2"].machine_arrow(lib("intro_phrase_wiggle").crop("events",0,2).t(-7).eps(
@@ -125,7 +132,7 @@ def block0(lib):
         instruction="repeat")
 
     b0["cco_violin_ii3"].machine(lib("cell_rest1"))
-    b0["cco_violin_ii3"].machine_arrow(lib("counter_cell_down").t(-2).eps(
+    b0["cco_violin_ii3"].machine_arrow(lib("intro_cell_down").t(-2).eps(
         0, "p",)(),
         instruction="repeat")
 
@@ -159,10 +166,9 @@ def block0(lib):
         instruction="repeat")
 
     b0["cco_viola4"].machine(lib("cell_rest1"))
-    b0["cco_viola4"].machine_arrow(
-        intro.hold_cell(-12,"p",), instruction="repeat")
+    b0["cco_viola4"].machine_arrow(intro.hold_cell(-12,"p",), instruction="repeat")
 
-    b0["cco_cello1"].machine_arrow(lib("counter_cell_mist").eps(
+    b0["cco_cello1"].machine_arrow(lib("intro_cell_mist").eps(
         0, "p")(),
         instruction="repeat, freely")
 
@@ -171,8 +177,7 @@ def block0(lib):
         1,3, beats=2,)(),
         instruction="repeat, freely")
 
-    b0["cco_bass"].machine_arrow(
-        intro.hold_cell(-6,"p",), instruction="repeat")
+    b0["cco_bass"].machine_arrow(intro.hold_cell(-6,"p",), instruction="repeat")
 
     return b0
 

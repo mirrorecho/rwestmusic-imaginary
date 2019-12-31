@@ -59,6 +59,7 @@ class ImaginaryIntroScore(ImaginaryScore):
             class OoaDrumSet(calliope.Staff):
                 instrument=abjad.Instrument(
                     name="Drum Set", short_name="drum.")
+                clef = "percussion"
 
 
         class OoaGuitars(calliope.StaffGroup):

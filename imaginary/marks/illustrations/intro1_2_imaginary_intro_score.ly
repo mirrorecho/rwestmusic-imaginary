@@ -28,28 +28,52 @@
                     {
                         \numericTimeSignature
                         \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
                         \time 8/1
-                        s4
+                        s8
                         \normalStaff
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        b'1
+                        \fermata
+                        \mf
+                        ^ \markup { "growl tone" }
                         r1
-                        s\breve
-                        s2
+                        \fermata
+                        s16
+                        \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        ^ \markup { "repeat 1 or 2 X" }
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8.
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -61,31 +85,32 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                         \set Staff.shortInstrumentName = \markup { Cl. }
                         \time 8/1
-                        s4
+                        s8
                         \normalStaff
                         \bar ".|:"
                         s8
-                        fs8
+                        a'1
                         \p
-                        \<
-                        (
-                        g8
-                        a8
-                        )
-                        b1
                         \fermata
-                        \mp
-                        \freeContinue
+                        \<
+                        s16
                         \bar ":|."
+                        \once \override Staff.Markup.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
-                        ^ \markup { "repeat, freely" }
+                        \mp
+                        ^ \markup { repeat }
+                        \>
                         \once \hide Rest
                         r4
+                        s4
+                        \p
+                        s4
                         s4
                         s4
                         s4
@@ -110,7 +135,7 @@
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8.
                     }
                 }
                 \context Staff = "ooa_alto_saxes"
@@ -122,21 +147,77 @@
                     {
                         \numericTimeSignature
                         \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Alto Saxophone 1,2" }
                         \set Staff.shortInstrumentName = \markup { Asax.1,2 }
                         \time 8/1
-                        s4
+                        s8
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        \once \hide Stem
+                        e'4
+                        ^ \markup { "both improvise on these pitches" }
+                        \once \hide Stem
+                        f'4
+                        \once \hide Stem
+                        a'4
+                        \once \hide Stem
+                        b'4
+                        \once \hide Stem
+                        c''4
+                        \once \hide Stem
+                        d''4
+                        \once \hide Stem
+                        e''4
+                        e'16
+                        ^ \markup {
+                            \column
+                                {
+                                    "making use of"
+                                    "this figure"
+                                }
+                            }
+                        (
+                        b'16
+                        )
+                        f'16
+                        (
+                        c''16
+                        )
+                        d''16
+                        (
+                        e''16
+                        )
+                        a'2
+                        s16
+                        \bar ":|."
+                        \once \override Staff.Markup.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        ^ \markup {
+                            \column
+                                {
+                                    "freely at first, eventually with"
+                                    "drum set's quarter note pulse"
+                                }
+                            }
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -144,6 +225,7 @@
                         \freeRestArrow
                         r4
                         s4
+                        s16
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -155,21 +237,57 @@
                     {
                         \numericTimeSignature
                         \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Tsax. }
                         \time 8/1
-                        s4
+                        s8
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        r4
+                        b4
+                        \mp
+                        (
+                        d'2
+                        )
+                        r4
+                        a4
+                        (
+                        c'8
+                        d'2
+                        \fermata
+                        )
+                        s16
+                        \bar ":|."
+                        \once \override Staff.Markup.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        ^ \markup {
+                            \column
+                                {
+                                    "repeat, freely at first, eventually with"
+                                    "drum set's quarter note pulse"
+                                }
+                            }
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -177,6 +295,7 @@
                         \freeRestArrow
                         r4
                         s4
+                        s16
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -188,6 +307,7 @@
                     {
                         \numericTimeSignature
                         \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Bsax. }
@@ -195,15 +315,46 @@
                         \clef "bass"
                         s4
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        s16
+                        r4
+                        s16
+                        \freePad
+                        s8
+                        \normalStaff
+                        \bar ".|:"
+                        s8
+                        e1
+                        \p
+                        \fermata
+                        \<
+                        s16
+                        \bar ":|."
+                        \once \override Staff.Markup.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        \mp
+                        ^ \markup { repeat }
+                        \>
                         \once \hide Rest
                         r4
+                        s4
+                        \p
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -211,6 +362,7 @@
                         \freeRestArrow
                         r4
                         s4
+                        s16
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -222,29 +374,58 @@
                     {
                         \numericTimeSignature
                         \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \time 8/1
                         \clef "bass"
-                        s4
+                        s8
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        b,1
+                        \p
+                        \fermata
+                        \<
+                        s16
+                        \bar ":|."
+                        \once \override Staff.Markup.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        \mp
+                        ^ \markup { repeat }
+                        \>
                         \once \hide Rest
                         r4
+                        s4
+                        \p
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8.
                     }
                 }
             >>
@@ -259,22 +440,60 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Horn in F" }
                         \set Staff.shortInstrumentName = \markup { Hn. }
                         \time 8/1
                         s4
                         \normalStaff
-                        \bar ".|:"
-                        s8
-                        b1
-                        \pp
-                        \<
-                        s8
+                        s16
+                        r1
+                        \fermata
+                        s16
+                        \freePad
+                        s4
+                        \normalStaff
+                        s16
+                        b2
                         \mp
+                        ^ \markup {
+                            \column
+                                {
+                                    "enter simultaneously with OOA tpt./hn."
+                                    "match drum set quarter note pulse"
+                                }
+                            }
+                        ~
+                        \<
+                        b4.
+                        r8
+                        g8
+                        \mf
+                        [
+                        a8
+                        ]
+                        (
+                        c'8
+                        )
+                        b8
+                        (
+                        a4
+                        c'8
+                        )
+                        f'8
+                        (
+                        g'4
+                        )
+                        s16
+                        \freePad
+                        s8
+                        \normalStaff
+                        s2
+                        r1
+                        \fermata
+                        s2
                         \freeContinue
-                        \bar ":|."
                         s4
                         \once \hide Rest
                         r4
@@ -282,28 +501,10 @@
                         s4
                         s4
                         s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -315,80 +516,83 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Trumpet in C" }
                         \set Staff.shortInstrumentName = \markup { Tpt. }
                         \time 8/1
                         s4
                         \normalStaff
-                        r4
-                        \freePad
-                        s8
-                        \normalStaff
-                        s8
-                        b2
-                        \p
-                        ^ \markup { "straight mute, freely, solo" }
-                        \<
-                        (
-                        c'4
-                        )
-                        d'8
-                        \mf
-                        (
-                        e'8
-                        g'8
-                        b'16
-                        )
-                        fs'16
-                        (
-                        fs'2
-                        )
-                        g'8
-                        (
-                        a'8
-                        )
-                        b'4
-                        -\tenuto
-                        d''4.
-                        -\tenuto
-                        r8
-                        b'8
-                        (
-                        d''2
+                        s16
+                        r1
                         \fermata
-                        )
-                        b'8
-                        d''16
-                        (
-                        e''2
-                        \fermata
-                        )
-                        r4
-                        b''4
-                        g''8
-                        (
-                        fs''8
-                        )
-                        d''16
-                        (
-                        e''2
-                        \fermata
-                        )
+                        s16
                         \freePad
                         s4
                         \normalStaff
+                        s16
+                        e'4
+                        \mp
+                        ^ \markup {
+                            \column
+                                {
+                                    "enter simultaneously with OOA tpt./tbn."
+                                    "match drum set quarter note pulse"
+                                }
+                            }
+                        \<
+                        (
+                        f'4
+                        )
+                        g'8
+                        (
+                        a'4
+                        )
+                        f'8
+                        (
+                        g'8
+                        \mf
+                        )
+                        [
+                        b'8
+                        ]
+                        (
+                        c''8
+                        )
+                        e'8
+                        (
+                        b4
+                        a8
+                        )
+                        [
+                        e'8
+                        ]
+                        (
+                        a'8
+                        [
+                        b'8
+                        ]
+                        )
+                        s16
+                        \freePad
                         s8
-                        r2
+                        \normalStaff
+                        s2
+                        r1
+                        \fermata
+                        s2
                         \freeContinue
                         s4
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -400,6 +604,7 @@
                     {
                         \numericTimeSignature
                         \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Tenor Trombone" }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
@@ -407,10 +612,49 @@
                         \clef "bass"
                         s4
                         \normalStaff
-                        s\breve
+                        s16
+                        r1
+                        \fermata
+                        s16
+                        \freePad
+                        s4
+                        \normalStaff
+                        s16
+                        g8
+                        \mp
+                        ^ \markup {
+                            \column
+                                {
+                                    "enter simultaneously with OOA hn./tpt."
+                                    "match drum set quarter note pulse"
+                                }
+                            }
+                        \<
+                        (
+                        b8
+                        )
+                        f8
+                        [
+                        (
+                        g8
+                        ]
+                        )
+                        f8
+                        (
+                        e4
+                        )
+                        r8
+                        e1
+                        \mf
+                        ~
+                        e4
+                        s16
+                        \freePad
+                        s8
+                        \normalStaff
                         s2
                         r1
-                        s\breve
+                        \fermata
                         s2
                         \freeContinue
                         s4
@@ -419,10 +663,11 @@
                         s4
                         s4
                         s4
+                        s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8
                     }
                 }
             >>
@@ -437,25 +682,17 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Vibraphone }
                         \set Staff.shortInstrumentName = \markup { Vib. }
                         \time 8/1
-                        s4
-                        \normalStaff
                         s8
-                        r8
-                        ^ \markup { "bowed, (motor on)" }
-                        c'''1
-                        \fermata
-                        \mp
-                        \freePad
-                        s4
                         \normalStaff
-                        s1..
+                        s\breve
+                        s2
                         r1
-                        s1..
+                        s\breve
+                        s2
                         \freeContinue
                         s4
                         \once \hide Rest
@@ -463,10 +700,11 @@
                         s4
                         s4
                         s4
+                        s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -478,28 +716,60 @@
                     {
                         \numericTimeSignature
                         \freePad
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Drum Set" }
                         \set Staff.shortInstrumentName = \markup { Drum. }
                         \time 8/1
-                        s4
+                        \clef "percussion"
+                        s8
                         \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
+                        \bar ".|:"
+                        s8
+                        b4
+                        s16
+                        \bar ":|."
+                        \once \override Staff.Markup.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        \pp
+                        ^ \markup { "cont. repeating consant pulse" }
+                        \<
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        \mf
+                        \>
+                        s4
+                        s4
+                        s4
+                        \pp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8.
                     }
                 }
             >>
@@ -518,7 +788,7 @@
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
                         \time 8/1
-                        s4
+                        s8
                         \normalStaff
                         s\breve
                         s2
@@ -532,10 +802,11 @@
                         s4
                         s4
                         s4
+                        s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
+                        s8
                     }
                 }
                 \context Staff = "ooa_bass_guitar"
@@ -547,32 +818,29 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Bass Guitar" }
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
                         \time 8/1
                         \clef "bass"
-                        s4
-                        \normalStaff
                         s8
-                        c1
-                        \mp
-                        \freePad
-                        s4
                         \normalStaff
                         s\breve
+                        s2
                         r1
                         s\breve
+                        s2
                         \freeContinue
                         s4
                         \once \hide Rest
                         r4
                         s4
+                        s4
+                        s4
+                        s4
                         \freePad
                         \freeRestArrow
                         r4
-                        s4
                         s8
                     }
                 }
@@ -588,7 +856,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
+                        \tempo \markup \fontsize #3 {  " 20'' "  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1,2" }
                         \set Staff.shortInstrumentName = \markup { Vln.1,2 }
@@ -597,1354 +865,57 @@
                         \normalStaff
                         \bar ".|:"
                         s8
-                        b8
-                        \p
-                        fs'8
-                        c'8
-                        g'8
+                        \freePad
+                        s8
+                        \normalStaff
+                        c'16
+                        [
                         (
-                        a'4
+                        d'16
                         )
-                        b'2
-                        \fermata
-                        \freeContinue
-                        \bar ":|."
-                        s4
-                        ^ \markup { "both repeat freely, 2nd starting slightly after 1st (staggered)" }
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                        s8
-                    }
-                }
-                \context Staff = "ooa_cellos"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Cello 1,2" }
-                        \set Staff.shortInstrumentName = \markup { Vc.1,2 }
-                        \time 8/1
-                        \clef "bass"
-                        s4
-                        \normalStaff
-                        \bar ".|:"
-                        s8
-                        \ppp
-                        \repeat tremolo 16
-                        {
-                        b32 \( c'32 \)
-                        }
-                        \freeContinue
-                        \bar ":|."
-                        s4
-                        ^ \markup { "repeat hairpin, 1,2 staggered" }
-                        \<
-                        \once \hide Rest
-                        r4
-                        \mp
-                        \>
-                        s4
-                        s4
-                        \ppp
-                        \<
-                        s4
-                        s4
-                        \mp
-                        \>
-                        s4
-                        s4
-                        \ppp
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                        s8
-                    }
-                }
-            >>
-        >>
-        \context StaffGroup = "orchestra"
-        <<
-            \context StaffGroup = "cco_winds"
-            <<
-                \context Staff = "cco_flutes"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Flute 1,2" }
-                        \set Staff.shortInstrumentName = \markup { Fl.1,2 }
-                        \time 8/1
-                        s4
-                        \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
-                        \freeContinue
-                        s4
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                    }
-                }
-                \context Staff = "cco_oboes"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Oboe 1,2" }
-                        \set Staff.shortInstrumentName = \markup { Ob.1,2 }
-                        \time 8/1
-                        s4
-                        \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
-                        \freeContinue
-                        s4
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                    }
-                }
-                \context Staff = "cco_clarinets"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Clarinet in B♭ 1,2" }
-                        \set Staff.shortInstrumentName = \markup { Cl.1,2 }
-                        \time 8/1
-                        s4
-                        \normalStaff
-                        \bar ".|:"
-                        s8
-                        fs8
-                        \p
-                        \<
+                        f'16
                         (
-                        g8
-                        a8
+                        a'16
+                        ]
                         )
-                        b1
-                        \fermata
-                        \mp
-                        \freeContinue
-                        \bar ":|."
-                        s4
-                        ^ \markup { "(continue repeating, staggered)" }
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
+                        e'16
+                        [
+                        (
+                        b'16
+                        )
+                        f'16
+                        (
+                        c''16
+                        ]
+                        )
                         \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                    }
-                }
-                \context Staff = "cco_bassoon"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { Bassoon }
-                        \set Staff.shortInstrumentName = \markup { Bsn. }
-                        \time 8/1
-                        \clef "bass"
-                        s4
-                        \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
-                        \freeContinue
-                        s4
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                    }
-                }
-            >>
-            \context StaffGroup = "cco_brass"
-            <<
-                \context Staff = "cco_horn"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Horn in F" }
-                        \set Staff.shortInstrumentName = \markup { Hn. }
-                        \time 8/1
-                        s4
-                        \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
-                        \freeContinue
-                        s4
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                    }
-                }
-                \context Staff = "cco_trumpet"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Trumpet in C" }
-                        \set Staff.shortInstrumentName = \markup { Tpt. }
-                        \time 8/1
-                        s4
-                        \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
-                        \freeContinue
-                        s4
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                    }
-                }
-                \context Staff = "cco_trombone"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { Trombone }
-                        \set Staff.shortInstrumentName = \markup { Tbn. }
-                        \time 8/1
-                        \clef "bass"
-                        s4
-                        \normalStaff
-                        s\breve
-                        s2
-                        r1
-                        s\breve
-                        s2
-                        \freeContinue
-                        s4
-                        \once \hide Rest
-                        r4
-                        s4
-                        s4
-                        s4
-                        \freePad
-                        \freeRestArrow
-                        r4
-                        s4
-                    }
-                }
-            >>
-            \context RhythmicStaff = "cco_percussion"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-                {
-                    \numericTimeSignature
-                    \freePad
-                    \accidentalStyle neo-modern-cautionary
-                    \time 8/1
-                    \clef "percussion"
-                    s4
-                    \normalStaff
-                    s\breve
-                    s2
-                    r1
-                    s\breve
-                    s2
-                    \freeContinue
-                    s4
-                    \once \hide Rest
-                    r4
-                    s4
-                    s4
-                    s4
-                    \freePad
-                    \freeRestArrow
-                    r4
-                    s4
-                }
-            }
-            \context Staff = "cco_harp"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-                {
-                    \numericTimeSignature
-                    \freePad
-                    \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                    \accidentalStyle neo-modern-cautionary
-                    \set Staff.instrumentName = \markup { Harp }
-                    \set Staff.shortInstrumentName = \markup { Hp. }
-                    \time 8/1
-                    \clef "treble"
-                    s4
-                    \normalStaff
-                    s8
-                    <fs fs' b'' c'''>4
-                    \ff
-                    -\accent
-                    \freePad
-                    s4
-                    \normalStaff
-                    s1.
-                    r1
-                    s1.
-                    \freeContinue
-                    s4
-                    \once \hide Rest
-                    r4
-                    s4
-                    s4
-                    s4
-                    s4
-                    s4
-                    s4
-                    s4
-                    s4
-                    \freePad
-                    \freeRestArrow
-                    r4
-                    s4
-                    s8
-                }
-            }
-            \context StaffGroup = "cco_strings"
-            <<
-                \context StaffGroup = "cco_violin_i"
-                <<
-                    \context Staff = "cco_violin_i1"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin I 1" }
-                            \set Staff.shortInstrumentName = \markup { Vln.I.1 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            c'''1
-                            \fermata
-                            \p
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8
-                        }
-                    }
-                    \context Staff = "cco_violin_i2"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin I 2" }
-                            \set Staff.shortInstrumentName = \markup { Vln.I.2 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            fs''1
-                            \fermata
-                            \p
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8
-                        }
-                    }
-                    \context Staff = "cco_violin_i3"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin I 3" }
-                            \set Staff.shortInstrumentName = \markup { Vln.I.3 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            f''8
-                            \p
-                            e''2..
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8
-                        }
-                    }
-                    \context Staff = "cco_violin_i4"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin I 4" }
-                            \set Staff.shortInstrumentName = \markup { Vln.I.4 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            b4
-                            d'2
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { "repeat, freely" }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8
-                        }
-                    }
-                >>
-                \context StaffGroup = "cco_violin_ii"
-                <<
-                    \context Staff = "cco_violin_ii1"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin II 1" }
-                            \set Staff.shortInstrumentName = \markup { Vln.II.1 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            b8
-                            \pp
-                            ds'2
-                            (
-                            b'8
-                            )
-                            as'4.
-                            b'16
-                            as'8
-                            [
-                            (
-                            fs'8
-                            ds'8
-                            ]
-                            )
-                            e'16
-                            [
-                            (
-                            as8
-                            ]
-                            )
-                            b16
-                            (
-                            cs'4
-                            \mp
-                            )
-                            fs'8
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8.
-                        }
-                    }
-                    \context Staff = "cco_violin_ii2"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin II 2" }
-                            \set Staff.shortInstrumentName = \markup { Vln.II.2 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            b8
-                            \p
-                            fs'8
-                            c'4
-                            g'8
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                        }
-                    }
-                    \context Staff = "cco_violin_ii3"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin II 3" }
-                            \set Staff.shortInstrumentName = \markup { Vln.II.3 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            s8
-                            r4
-                            \freePad
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            bf8
-                            \p
-                            a2..
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                        }
-                    }
-                    \context Staff = "cco_violin_ii4"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin II 4" }
-                            \set Staff.shortInstrumentName = \markup { Vln.II.4 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            b4
-                            \p
-                            \<
-                            \repeat tremolo 8
-                            {
-                            b32 \( c'32 \)
-                            }
-                            c'2
-                            \fermata
-                            \mp
-                            \>
-                            \repeat tremolo 8
-                            {
-                            b32 \( c'32 \)
-                            }
-                            b4
-                            \!
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8
-                        }
-                    }
-                >>
-                \context StaffGroup = "cco_viola_ii"
-                <<
-                    \context Staff = "cco_viola1"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Viola 1" }
-                            \set Staff.shortInstrumentName = \markup { Vla.1 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            s8
-                            r4
-                            \freePad
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            b4
-                            \mp
-                            d'2
-                            \fermata
-                            b4
-                            d'8
-                            (
-                            e'2
-                            \fermata
-                            )
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { "repeat, freely" }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8
-                        }
-                    }
-                    \context Staff = "cco_viola2"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Viola 2" }
-                            \set Staff.shortInstrumentName = \markup { Vla.2 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            d''8
-                            \p
-                            \<
-                            (
-                            c''8
-                            )
-                            e'8
-                            (
-                            c'4
-                            )
-                            g4
-                            fs1
-                            \mp
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                        }
-                    }
-                    \context Staff = "cco_viola3"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Viola 3" }
-                            \set Staff.shortInstrumentName = \markup { Vla.3 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            s8
-                            r2
-                            \freePad
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            fs'4
-                            \p
-                            \<
-                            \repeat tremolo 4
-                            {
-                            fs'32 \( g'32 \)
-                            }
-                            c''1
-                            \fermata
-                            \mp
-                            \>
-                            \repeat tremolo 8
-                            {
-                            fs'32 \( g'32 \)
-                            }
-                            fs'4
-                            \!
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                        }
-                    }
-                    \context Staff = "cco_viola4"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Viola 4" }
-                            \set Staff.shortInstrumentName = \markup { Vla.4 }
-                            \time 8/1
-                            s4
-                            \normalStaff
-                            s8
-                            r4
-                            \freePad
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            c1
-                            \fermata
-                            \p
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { repeat }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                        }
-                    }
-                >>
-                \context StaffGroup = "cco_cello"
-                <<
-                    \context Staff = "cco_cello1"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Cello 1" }
-                            \set Staff.shortInstrumentName = \markup { Vc.1 }
-                            \time 8/1
-                            \clef "bass"
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            f'4
-                            \p
-                            e'8
-                            a2
-                            ~
-                            a8
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { "repeat, freely" }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                            s8
-                        }
-                    }
-                    \context Staff = "cco_cello2"
-                    \with
-                    {
-                        \consists Horizontal_bracket_engraver
-                    }
-                    {
-                        {
-                            \numericTimeSignature
-                            \freePad
-                            \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Cello 2" }
-                            \set Staff.shortInstrumentName = \markup { Vc.2 }
-                            \time 8/1
-                            \clef "bass"
-                            s4
-                            \normalStaff
-                            \bar ".|:"
-                            s8
-                            b4
-                            \p
-                            g2
-                            c'8
-                            (
-                            b2
-                            )
-                            \freeContinue
-                            \bar ":|."
-                            s4
-                            ^ \markup { "repeat, freely" }
-                            \once \hide Rest
-                            r4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            s4
-                            \freePad
-                            \freeRestArrow
-                            r4
-                            s4
-                        }
-                    }
-                >>
-                \context Staff = "cco_bass"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \numericTimeSignature
-                        \freePad
-                        \tempo \markup \fontsize #3 {  \note #"4" #UP "= 72 approx | freely | 20'' "  }
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { Bass }
-                        \set Staff.shortInstrumentName = \markup { Cb. }
-                        \time 8/1
-                        \clef "bass"
-                        s4
-                        \normalStaff
-                        \bar ".|:"
                         s8
-                        fs1
-                        \fermata
-                        \p
-                        \freeContinue
+                        \normalStaff
+                        s8
+                        b16
+                        [
+                        (
+                        c'16
+                        )
+                        d'16
+                        (
+                        e'16
+                        ]
+                        )
+                        f'16
+                        [
+                        (
+                        a'16
+                        )
+                        e'16
+                        (
+                        b'16
+                        ]
+                        )
+                        s16
                         \bar ":|."
+                        \once \override Staff.Markup.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -1970,11 +941,889 @@
                         s4
                         s4
                         s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8.
+                    }
+                }
+                \context Staff = "ooa_cellos"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Cello 1,2" }
+                        \set Staff.shortInstrumentName = \markup { Vc.1,2 }
+                        \time 8/1
+                        \clef "bass"
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
                         s4
                         \freePad
                         \freeRestArrow
                         r4
+                        s8
+                    }
+                }
+            >>
+        >>
+        \context StaffGroup = "orchestra"
+        <<
+            \context StaffGroup = "cco_winds"
+            <<
+                \context Staff = "cco_flutes"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Flute 1,2" }
+                        \set Staff.shortInstrumentName = \markup { Fl.1,2 }
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
                         s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8
+                    }
+                }
+                \context Staff = "cco_oboes"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Oboe 1,2" }
+                        \set Staff.shortInstrumentName = \markup { Ob.1,2 }
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8
+                    }
+                }
+                \context Staff = "cco_clarinets"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Clarinet in B♭ 1,2" }
+                        \set Staff.shortInstrumentName = \markup { Cl.1,2 }
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8
+                    }
+                }
+                \context Staff = "cco_bassoon"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { Bassoon }
+                        \set Staff.shortInstrumentName = \markup { Bsn. }
+                        \time 8/1
+                        \clef "bass"
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8
+                    }
+                }
+            >>
+            \context StaffGroup = "cco_brass"
+            <<
+                \context Staff = "cco_horn"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Horn in F" }
+                        \set Staff.shortInstrumentName = \markup { Hn. }
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8
+                    }
+                }
+                \context Staff = "cco_trumpet"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Trumpet in C" }
+                        \set Staff.shortInstrumentName = \markup { Tpt. }
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8
+                    }
+                }
+                \context Staff = "cco_trombone"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { Trombone }
+                        \set Staff.shortInstrumentName = \markup { Tbn. }
+                        \time 8/1
+                        \clef "bass"
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
+                        s8
+                    }
+                }
+            >>
+            \context RhythmicStaff = "cco_percussion"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    \numericTimeSignature
+                    \freePad
+                    \accidentalStyle neo-modern-cautionary
+                    \time 8/1
+                    \clef "percussion"
+                    s8
+                    \normalStaff
+                    s\breve
+                    s2
+                    r1
+                    s\breve
+                    s2
+                    \freeContinue
+                    s4
+                    \once \hide Rest
+                    r4
+                    s4
+                    s4
+                    s4
+                    s4
+                    \freePad
+                    \freeRestArrow
+                    r4
+                    s8
+                }
+            }
+            \context Staff = "cco_harp"
+            \with
+            {
+                \consists Horizontal_bracket_engraver
+            }
+            {
+                {
+                    \numericTimeSignature
+                    \freePad
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { Harp }
+                    \set Staff.shortInstrumentName = \markup { Hp. }
+                    \time 8/1
+                    \clef "treble"
+                    s8
+                    \normalStaff
+                    s\breve
+                    s2
+                    r1
+                    s\breve
+                    s2
+                    \freeContinue
+                    s4
+                    \once \hide Rest
+                    r4
+                    s4
+                    s4
+                    s4
+                    s4
+                    \freePad
+                    \freeRestArrow
+                    r4
+                    s8
+                }
+            }
+            \context StaffGroup = "cco_strings"
+            <<
+                \context StaffGroup = "cco_violin_i"
+                <<
+                    \context Staff = "cco_violin_i1"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin I 1" }
+                            \set Staff.shortInstrumentName = \markup { Vln.I.1 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_violin_i2"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin I 2" }
+                            \set Staff.shortInstrumentName = \markup { Vln.I.2 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_violin_i3"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin I 3" }
+                            \set Staff.shortInstrumentName = \markup { Vln.I.3 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_violin_i4"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin I 4" }
+                            \set Staff.shortInstrumentName = \markup { Vln.I.4 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                >>
+                \context StaffGroup = "cco_violin_ii"
+                <<
+                    \context Staff = "cco_violin_ii1"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin II 1" }
+                            \set Staff.shortInstrumentName = \markup { Vln.II.1 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_violin_ii2"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin II 2" }
+                            \set Staff.shortInstrumentName = \markup { Vln.II.2 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_violin_ii3"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin II 3" }
+                            \set Staff.shortInstrumentName = \markup { Vln.II.3 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_violin_ii4"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin II 4" }
+                            \set Staff.shortInstrumentName = \markup { Vln.II.4 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                >>
+                \context StaffGroup = "cco_viola_ii"
+                <<
+                    \context Staff = "cco_viola1"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Viola 1" }
+                            \set Staff.shortInstrumentName = \markup { Vla.1 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_viola2"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Viola 2" }
+                            \set Staff.shortInstrumentName = \markup { Vla.2 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_viola3"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Viola 3" }
+                            \set Staff.shortInstrumentName = \markup { Vla.3 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_viola4"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Viola 4" }
+                            \set Staff.shortInstrumentName = \markup { Vla.4 }
+                            \time 8/1
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                >>
+                \context StaffGroup = "cco_cello"
+                <<
+                    \context Staff = "cco_cello1"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Cello 1" }
+                            \set Staff.shortInstrumentName = \markup { Vc.1 }
+                            \time 8/1
+                            \clef "bass"
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                    \context Staff = "cco_cello2"
+                    \with
+                    {
+                        \consists Horizontal_bracket_engraver
+                    }
+                    {
+                        {
+                            \numericTimeSignature
+                            \freePad
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Cello 2" }
+                            \set Staff.shortInstrumentName = \markup { Vc.2 }
+                            \time 8/1
+                            \clef "bass"
+                            s8
+                            \normalStaff
+                            s\breve
+                            s2
+                            r1
+                            s\breve
+                            s2
+                            \freeContinue
+                            s4
+                            \once \hide Rest
+                            r4
+                            s4
+                            s4
+                            s4
+                            s4
+                            \freePad
+                            \freeRestArrow
+                            r4
+                            s8
+                        }
+                    }
+                >>
+                \context Staff = "cco_bass"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { Bass }
+                        \set Staff.shortInstrumentName = \markup { Cb. }
+                        \time 8/1
+                        \clef "bass"
+                        s8
+                        \normalStaff
+                        s\breve
+                        s2
+                        r1
+                        s\breve
+                        s2
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freePad
+                        \freeRestArrow
+                        r4
                         s8
                     }
                 }

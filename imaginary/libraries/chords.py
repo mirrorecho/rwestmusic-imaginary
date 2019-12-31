@@ -3,6 +3,7 @@ import abjad, calliope, statistics
 from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
+from imaginary.stories import library
 
 # TO DO: consider using accent pattern
 # also TO DO: consider replacing these with auto sus generation (below)
@@ -198,14 +199,15 @@ RIFF_DICT_D = dict(
         input_t = 7,
         )
 
-def get_riff():
+def get_riff(lib):
     from imaginary.libraries import riff
-    return riff.RiffLine(phrase_count=4).ext(
-            riff.RiffLine(phrase_count=1).t(7),
+    riff.to_lib(lib)
+    return (lib("riff_line")*4).ext(
+            lib("riff_line").t(7),
             ).ext(
-            riff.RiffLine(phrase_count=1).t(2),
+            lib("riff_line").t(2),
             ).ext(
-            riff.RiffLine(phrase_count=1).t(9),
+            lib("riff_line").t(9),
             ).annotate(slur_cells=True, label=("cells", "phrases"))
 
 
@@ -216,9 +218,9 @@ def get_up_dict(machine):
         inversions = (2,1,),
         )
 
-
 if __name__ == '__main__':
-    RIFF = get_riff()
+    lib = library.Library()
+    RIFF = get_riff(lib)
     RIFF_CHORDS = sus_maker(RIFF, phrases={
         0: RIFF_DICT_A,
         1: RIFF_DICT_D,
