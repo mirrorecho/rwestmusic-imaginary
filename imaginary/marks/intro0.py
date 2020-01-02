@@ -73,7 +73,7 @@ def block1(lib):
 
     b1["cco_clarinets"].machine(lib("cell_rest2"))
     b1["cco_clarinets"].machine_arrow(lib("intro_line_riff").eps(
-        0, "(", "ppp", "\\<", "a 2, 2nd start after 1st")(
+        0, "(", "ppp", "\\<", "a2, 2nd start after 1st")(
         5, ")")(
         6, "mp")(), 
         instruction="repeat (staggered)")

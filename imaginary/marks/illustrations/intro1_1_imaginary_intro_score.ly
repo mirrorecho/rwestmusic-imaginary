@@ -47,8 +47,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -72,8 +72,8 @@
                         \mp
                         \>
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat hairpin" }
                         \once \hide Rest
@@ -102,8 +102,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -123,8 +123,8 @@
                         \set Staff.shortInstrumentName = \markup { Cl. }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         fs8
                         \p
@@ -134,12 +134,12 @@
                         a8
                         )
                         b1
-                        \mp
                         \fermata
+                        \mp
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -165,8 +165,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -177,8 +177,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         \once \hide Stem
                         b'4
@@ -209,9 +209,9 @@
                         s16
                         \p
                         \<
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup {
                             \column
@@ -242,8 +242,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -276,8 +276,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -298,9 +298,9 @@
                         s16
                         \p
                         \>
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, 1,2 staggered" }
                         \once \hide Rest
@@ -329,8 +329,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -363,8 +363,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -388,8 +388,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -423,8 +423,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -448,8 +448,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -483,8 +483,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -508,8 +508,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -553,8 +553,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -575,9 +575,9 @@
                         s16
                         \mp
                         \>
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -606,8 +606,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -695,8 +695,8 @@
                         \once \hide Rest
                         r4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -707,16 +707,16 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         e''1
-                        \p
                         \fermata
+                        \p
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -744,8 +744,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -779,8 +779,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -804,8 +804,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -833,8 +833,8 @@
                         r8
                         ^ \markup { "bowed, (motor on)" }
                         c'''1
-                        \mp
                         \fermata
+                        \mp
                         s16
                         \freePad
                         s8
@@ -850,8 +850,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -881,8 +881,8 @@
                         r4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -916,8 +916,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -941,9 +941,9 @@
                         \<
                         b4
                         s16
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
-                        \freeContinue
                         s4
                         \mf
                         ^ \markup {
@@ -979,8 +979,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1016,8 +1016,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1041,8 +1041,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1080,8 +1080,8 @@
                         r4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1105,8 +1105,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1129,8 +1129,8 @@
                         \set Staff.shortInstrumentName = \markup { Vln.1,2 }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b8
                         \p
@@ -1144,8 +1144,8 @@
                         \fermata
                         s16
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "both repeat freely, 2nd starting slightly after 1st (staggered)" }
                         \once \hide Rest
@@ -1172,8 +1172,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1184,8 +1184,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b4
                         \p
@@ -1199,9 +1199,9 @@
                         b'2
                         \fermata
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely (staggered)" }
                         \once \hide Rest
@@ -1227,8 +1227,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1249,8 +1249,8 @@
                         \time 8/1
                         \clef "bass"
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         \ppp
                         \<
@@ -1261,9 +1261,9 @@
                         s16
                         \mp
                         \>
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat hairpin, 1,2 staggered" }
                         \once \hide Rest
@@ -1292,8 +1292,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1316,9 +1316,9 @@
                         s16
                         \mp
                         \>
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "(continue repeating, staggered)" }
                         \once \hide Rest
@@ -1347,8 +1347,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1387,8 +1387,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1399,8 +1399,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b'16
                         \ppp
@@ -1420,9 +1420,9 @@
                         )
                         r4
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely (staggered)" }
                         \once \hide Rest
@@ -1450,8 +1450,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1484,8 +1484,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1506,9 +1506,9 @@
                         s16
                         \p
                         \>
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, 1,2 staggered" }
                         \once \hide Rest
@@ -1537,8 +1537,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1558,8 +1558,8 @@
                         \set Staff.shortInstrumentName = \markup { Cl.1,2 }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         fs8
                         \p
@@ -1569,12 +1569,12 @@
                         a8
                         )
                         b1
-                        \mp
                         \fermata
+                        \mp
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "(continue repeating, staggered)" }
                         \once \hide Rest
@@ -1600,8 +1600,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                     }
@@ -1612,8 +1612,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         e'8
                         \p
@@ -1624,12 +1624,12 @@
                         a'8
                         )
                         c''2
-                        \mp
                         \fermata
+                        \mp
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely (staggered)" }
                         \once \hide Rest
@@ -1657,8 +1657,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1692,8 +1692,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1704,8 +1704,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         c16
                         \p
@@ -1713,9 +1713,9 @@
                         b,1
                         )
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -1742,8 +1742,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s4
                         s16
@@ -1780,8 +1780,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1802,9 +1802,9 @@
                         s16
                         \mp
                         \>
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -1833,8 +1833,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1867,8 +1867,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1885,8 +1885,8 @@
                         s16
                         \freePad
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b'2
                         \p
@@ -1897,9 +1897,9 @@
                         )
                         e'1
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -1918,8 +1918,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1953,8 +1953,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -1965,15 +1965,15 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b4
                         d'2
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -2002,8 +2002,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -2036,8 +2036,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s8
                 }
@@ -2061,8 +2061,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s8
                 }
@@ -2108,8 +2108,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
                 }
@@ -2145,8 +2145,8 @@
                     s4
                     s4
                     s4
-                    \freePad
                     \freeRestArrow
+                    \freePad
                     r4
                     s4
                 }
@@ -2170,16 +2170,16 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.1 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c'''1
-                            \p
                             \fermata
+                            \p
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2207,8 +2207,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -2219,16 +2219,16 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             f'''1
-                            \mp
                             \fermata
+                            \mp
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2256,8 +2256,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -2277,16 +2277,16 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.2 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             fs''1
-                            \p
                             \fermata
+                            \p
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2314,8 +2314,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -2332,8 +2332,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             f''8
                             (
@@ -2357,9 +2357,9 @@
                             )
                             d''4
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2382,8 +2382,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -2403,8 +2403,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.3 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             g''8
                             \p
@@ -2412,9 +2412,9 @@
                             fs''1
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2441,8 +2441,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2453,15 +2453,15 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b''1
                             \fermata
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2489,8 +2489,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -2510,15 +2510,15 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.4 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b4
                             d'2
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -2547,8 +2547,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -2565,17 +2565,17 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             f''16
                             (
                             e''1
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2600,8 +2600,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8.
                         }
@@ -2624,8 +2624,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.1 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             d'8
                             \pp
@@ -2655,9 +2655,9 @@
                             \mp
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2680,8 +2680,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2692,8 +2692,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c'''4
                             g''8
@@ -2709,9 +2709,9 @@
                             b2
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -2736,8 +2736,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2757,8 +2757,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.2 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b8
                             \p
@@ -2766,9 +2766,9 @@
                             c'4
                             g'8
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2797,8 +2797,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2809,17 +2809,17 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e'8
                             b'8
                             f'8
                             c''2
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2853,8 +2853,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -2880,8 +2880,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c'16
                             \p
@@ -2889,9 +2889,9 @@
                             b1
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -2916,8 +2916,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8.
                         }
@@ -2928,8 +2928,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c'16
                             (
@@ -2941,9 +2941,9 @@
                             )
                             b'1
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -2965,8 +2965,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8.
                         }
@@ -2986,8 +2986,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.4 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b4
                             \p
@@ -2997,8 +2997,8 @@
                             b32 \( c'32 \)
                             }
                             c'2
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -3007,9 +3007,9 @@
                             b4
                             \!
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3033,8 +3033,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3051,8 +3051,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e'8
                             b'8
@@ -3062,9 +3062,9 @@
                             e'32 \( f'32 \)
                             }
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3088,8 +3088,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3118,8 +3118,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b4
                             \mp
@@ -3132,9 +3132,9 @@
                             \fermata
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3157,8 +3157,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3169,12 +3169,12 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c''1
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -3183,9 +3183,9 @@
                             b'4
                             \p
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3210,8 +3210,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3231,8 +3231,8 @@
                             \set Staff.shortInstrumentName = \markup { Vla.2 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             d''8
                             \p
@@ -3248,9 +3248,9 @@
                             fs1
                             \mp
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3274,8 +3274,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3286,15 +3286,15 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b1
                             \fermata
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3322,8 +3322,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3349,8 +3349,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             fs'4
                             \p
@@ -3360,8 +3360,8 @@
                             fs'32 \( g'32 \)
                             }
                             c''1
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -3370,9 +3370,9 @@
                             fs'4
                             \!
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3391,8 +3391,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3403,16 +3403,16 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c1
-                            \p
                             \fermata
+                            \p
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -3424,19 +3424,19 @@
                             \once \hide Rest
                             r4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c2
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             \bar ":|."
                             s4
                             ^ \markup {
@@ -3463,8 +3463,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3490,16 +3490,16 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c1
-                            \p
                             \fermata
+                            \p
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -3524,8 +3524,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3549,8 +3549,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3574,8 +3574,8 @@
                             \time 8/1
                             \clef "bass"
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             g'4
                             \p
@@ -3584,9 +3584,9 @@
                             )
                             b1
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3612,8 +3612,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3624,8 +3624,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e8
                             (
@@ -3638,9 +3638,9 @@
                             b2
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3665,8 +3665,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3687,8 +3687,8 @@
                             \time 8/1
                             \clef "bass"
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b4
                             \p
@@ -3698,9 +3698,9 @@
                             b2
                             )
                             s16
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \freeContinue
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -3726,8 +3726,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s4
                         }
@@ -3751,8 +3751,8 @@
                             s4
                             s4
                             s4
-                            \freePad
                             \freeRestArrow
+                            \freePad
                             r4
                             s8
                         }
@@ -3774,16 +3774,16 @@
                         \time 8/1
                         \clef "bass"
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         fs1
-                        \p
                         \fermata
+                        \p
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -3811,8 +3811,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }
@@ -3823,15 +3823,15 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         f1
                         \fermata
                         s16
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \freeContinue
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -3859,8 +3859,8 @@
                         s4
                         s4
                         s4
-                        \freePad
                         \freeRestArrow
+                        \freePad
                         r4
                         s8
                     }

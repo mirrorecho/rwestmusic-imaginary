@@ -51,50 +51,46 @@ def block2(lib):
 
     intro.hold_swell_arrow(b2["ooa_bassoon"], -13, instruction="repeat")
 
-    b2["ooa_trumpet"].machine(lib("cell_rest4").eps(0, "fermata")())
-    b2["ooa_trumpet"].machine(lib("intro_rock4_ooa_trumpet_c43_45").eps(
-        0, "mp", "\\<", "markup_column:enter simultaneously with OOA tpt./tbn.|match drum set quarter note pulse")(
-        5, "mf")(
-        0,2,4,6,8,11, "(")(
-        1,3,5,7,10,13, ")",)(
-        5,10,12, "[")(
-        6,11,13, "]")( 
-        ))
-    b2["ooa_trumpet"].machine_arrow(lib("cell_rest4").eps(0, "fermata")(),
-        with_repeat = False,
-        machine_pad=(2,2),
-        )
-
-    horn_trombone_line = lib("intro_rock4_ooa_horn_c43_45").eps(
-        0,2,4,6,8,10,13, "(")(
-        1,3,5,7,9,12,14, ")",)(
-        2,7, "[")(
-        3,8, "]")( 
-        )
-
-    b2["ooa_horn"].machine(lib("cell_rest4").eps(0, "fermata")())
+    b2["ooa_horn"].machine(lib("cell_rest1"), machine_pad=(0.5,0))
     b2["ooa_horn"].machine(
-        (ImaginaryLine(ImaginaryCell(rhythm=(2,1.5,-0.5,), pitches=(-1,-1,"R"))) + 
-        horn_trombone_line().crop("events",7)
+        (ImaginaryLine(ImaginaryCell(rhythm=(2,1.5), pitches=(-1,-1))) + 
+        lib("intro_rock4_ooa_horn_c43_45").crop("events",6)
         ).eps(
-            0, "~", "mp", "\\<", "markup_column:enter simultaneously with OOA tpt./hn.|match drum set quarter note pulse")(
+            0, "~", "mp", "\\<", "markup_column:enter simultaneously with ooa tpt./tbn.|match drum set quarter note pulse")(
             1, "~!")(
-            3, "mf")()
+            3, "mf")(),
+        pad=(0.5,0)
         )
     b2["ooa_horn"].machine_arrow(lib("cell_rest4").eps(0, "fermata")(),
         with_repeat = False,
         machine_pad=(2,2),
         )
 
-    b2["ooa_trombone"].machine(lib("cell_rest4").eps(0, "fermata")())
+    b2["ooa_trumpet"].machine(lib("cell_rest1"), machine_pad=(0.5,0))
+    b2["ooa_trumpet"].machine(lib("intro_rock4_ooa_trumpet_c43_45").eps(
+        0, "mp", "\\<", "markup_column:enter simultaneously with OOA hn./tbn.|match drum set quarter note pulse")(
+        5, "mf")(
+        0,2,4,6,8,11, "(")(
+        1,3,5,7,10,13, ")",)(
+        5,10,12, "[")(
+        6,11,13, "]")( 
+        ),
+        pad=(0.5,0))
+    b2["ooa_trumpet"].machine_arrow(lib("cell_rest4").eps(0, "fermata")(),
+        with_repeat = False,
+        machine_pad=(2,2),
+        )
+
+    b2["ooa_trombone"].machine(lib("cell_rest1"), machine_pad=(0.5,0))
     b2["ooa_trombone"].machine(
-        (horn_trombone_line().crop("events",0,8) +
+        (lib("intro_rock4_ooa_horn_c43_45").crop("events",0,8) +
         ImaginaryLine(ImaginaryCell(
             rhythm=(5,), pitches=(-8,)))
         ).eps(
         0,"mp", "\\<", "markup_column:enter simultaneously with OOA hn./tpt.|match drum set quarter note pulse")(
-        6, pitch="R")(
-        7, "mf")()
+        6, "(")(
+        7, ")", "mf")(),
+        pad=(0.5,0)
         )
     b2["ooa_trombone"].machine_arrow(lib("cell_rest4").eps(0, "fermata")(),
         with_repeat = False,
@@ -103,7 +99,6 @@ def block2(lib):
 
     # TO DO: fragments of osti!
     # b1["ooa_mallets"]
-
     b2["ooa_drum_set"].machine_arrow(
         ImaginaryCell(rhythm=(1,), pitches=(-1,)), 
         instruction="cont. repeating consant pulse")
@@ -112,12 +107,14 @@ def block2(lib):
         7, "mf", "\\>")(
         10, "pp")()
 
+    # TO DO: consider pizz games
     b2["ooa_violins"].machine(ImaginaryCell(
         rhythm=(-0.5,), pitches="S"),
         machine_pad=(0,0),
         with_repeat=True)
     b2["ooa_violins"].machine(
         lib("intro_riff_up_wiggle").eps(
+            0, "markup_column:choose between 1., 2., 3. at random, match drum set quarter note pulse|1.")(
             0,2,4,6, "(")(
             1,3,5,7, ")")(
             0,4,"[")(
@@ -125,27 +122,207 @@ def block2(lib):
         pad=(0.5,0),
         machine_pad=(0,0),
         )
-    b2["ooa_violins"].machine_arrow(
+    b2["ooa_violins"].machine(
         lib("intro_riff_up_wiggle1").eps(
+            0, "2.")(
             0,2,4,6, "(")(
             1,3,5,7, ")")(
             0,4,"[")(
             3,7,"]")(), 
+        )
+    b2["ooa_violins"].machine(
+        ImaginaryCell(rhythm=(2,),pitches=(11,)).eps(
+            0, "3.")(),
+        )
+    b2["ooa_violins"].machine_arrow(ImaginaryCell(
+        rhythm=(-0.25,), pitches="S"),
+        machine_pad=(0,0),
         with_repeat=False,
         with_repeat_end=True,
-        instruction="repeat",
+        instruction="repeat (choosing between 1., 2., 3.)",
         )
 
-    # b1["ooa_cellos"].machine_arrow(ImaginaryCell(rhythm=(4,), 
-    #     pitches=( (-1,0 ),)).eps(
-    #         0,"tremolo:3")( ),
-    #         instruction="(continue repeating, staggered)"
-    #         )
-    # b1["ooa_cellos"].eps(
-    #             1,5, "ppp")(
-    #             1, "\\<",)(
-    #             3, "mp","\\>",)()
+    # TO DO: 
+    b2["ooa_cellos"].machine(ImaginaryCell(rhythm=(1,), 
+        pitches=( (-1,0 ),)).eps(
+            0, "mf", "div., pizz")( ),
+            # instruction="(continue repeating, staggered)"
+            )
+    b2["ooa_cellos"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(8,8),
+        )
 
+    # TO DO: re-think these cells
+    b2["cco_flutes"].machine(ImaginaryCell(
+        rhythm=(-0.5,), pitches="S"),
+        machine_pad=(0,0),
+        with_repeat=True)
+    b2["cco_flutes"].machine(intro.hold_cell(23, "mp").eps(
+            0, "markup_column:a2, both choose between 1., 2., 3. at random|1.")(), 
+        pad=(0.5,0),
+        machine_pad=(0,0),
+        )
+    b2["cco_flutes"].machine(intro.hold_cell(23).eps(
+            0, ":32", "Flt.", "2., ")(), 
+        pad=(0.5,0),
+        machine_pad=(0,0),
+        )
+    b2["cco_flutes"].machine(intro.hold_cell("R").eps(
+            0, "3.")(),
+        )
+    b2["cco_flutes"].machine_arrow(ImaginaryCell(
+        rhythm=(-0.25,), pitches="S"),
+        machine_pad=(0,0),
+        with_repeat=False,
+        with_repeat_end=True,
+        instruction="repeat (choosing between 1., 2., 3.)",
+        )
+
+    b2["cco_oboes"].machine_arrow(lib("intro_riff_winds").eps(
+        0, "markup_column:a2, 2nd start after 1st|match drum set quarter note pulse")(
+        4, pitch=11)(), 
+        instruction="repeat (staggered)")
+
+    intro.hold_swell_arrow(b2["cco_clarinets"], (5,11), instruction="repeat")
+
+    b2["cco_bassoon"].machine(lib("intro_phrase_mistify").t(-14).crop("events",0,1).eps(
+        0, "mp")())
+    intro.hold_swell_arrow(b2["cco_bassoon"], -12, instruction="repeat")
+
+    # TO DO... encapsulate this from above so don't have to repeat
+    b2["cco_horn"].machine(lib("cell_rest4").eps(0, "fermata")())
+    b2["cco_horn"].machine(
+        (ImaginaryLine(ImaginaryCell(rhythm=(4,), pitches=(-1,))) + 
+        lib("intro_rock4_ooa_flute_c43_45").crop("events",8)
+        ).eps(
+            0, "mp", "\\<", "markup_column:enter simultaneously with CCO tpt./hn.|match woodblock eighth note pulse")(
+            1, "mf", "[")(
+            2, "]")(
+            2,4,6, "(")(
+            3,5,7, ")")(),
+        )
+    b2["cco_horn"].machine_arrow(lib("cell_rest4").eps(0, "fermata")(),
+        with_repeat = False,
+        machine_pad=(2,2),
+        )
+
+    b2["cco_trumpet"].machine(lib("cell_rest4").eps(0, "fermata")())
+    b2["cco_trumpet"].machine(lib("intro_rock4_ooa_horn_c43_45").t(12).eps(
+        0, "mp", "\\<", "markup_column:enter simultaneously with CCO hn./tbn.|match woodblock eighth note pulse")(
+        7, "mf")())
+    b2["cco_trumpet"].machine_arrow(lib("cell_rest4").eps(0, "fermata")(),
+        with_repeat = False,
+        machine_pad=(2,2),
+        )
+
+    b2["cco_trombone"].machine(lib("cell_rest4").eps(0, "fermata")())
+    b2["cco_trombone"].machine(
+        (lib("intro_rock4_ooa_flute_c43_45").crop("events",0,7) +
+        ImaginaryLine(ImaginaryCell(
+            rhythm=(5,), pitches=(-8,)))
+        ).eps(
+        0,"mp", "\\<", "markup_column:enter simultaneously with CCO hn./tpt.|match woodblock eighth note pulse")(
+        0,2,4,6, "[")(
+        1,3,5,7, "]")( 
+        8, "mf")()
+        )
+    b2["cco_trombone"].machine_arrow(lib("cell_rest4").eps(0, "fermata")(),
+        with_repeat = False,
+        machine_pad=(2,2),
+        )
+
+    b2["cco_percussion"].machine(lib("cell_rest2"))
+    b2["cco_percussion"].machine_arrow(
+        ImaginaryCell(rhythm=(0.5,0.5,0.5,0.5),), 
+        instruction="markup_column:wood block|repeat, keep pulse constant")
+    b2["cco_percussion"].eps(
+        6, "pp", "\\<")(
+        10, "mf", "\\>")(
+        13, "\\!")()
+
+    b2["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((4,11,17,24),)).ops("events")(
+        0, ">")(),
+        )
+    b2["cco_harp"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    def violins_speed_up(staff_name, pitch, intro_name=None):
+        if intro_name:
+            b2[staff_name].machine(lib(intro_name))
+        b2[staff_name].machine_arrow(ImaginaryCell(rhythm=(2,), pitches=(pitch,)).eps(
+            0,"pp", "\\<")(),
+            pad_fill=False,
+            arrow_beats=4, 
+            instruction="markup_column:repeat, speed up (not|necessary with others) until... ")
+        b2[staff_name].machine_arrow(ImaginaryCell(rhythm=(0.5,0.5,), pitches=(pitch,pitch)).eps(
+            0, "mf")(),
+            instruction="markup_column:...eventually matching woodblock's|eighth note pulse")
+    
+    violins_speed_up("cco_violin_i1", 28)
+    violins_speed_up("cco_violin_i2", 23)
+    violins_speed_up("cco_violin_i3", 23, intro_name="cell_rest1")
+    violins_speed_up("cco_violin_i4", 17, intro_name="cell_rest2")
+
+    violins_speed_up("cco_violin_ii1", 24)
+    violins_speed_up("cco_violin_ii2", 12)
+    violins_speed_up("cco_violin_ii3", 11, intro_name="cell_rest1")
+    violins_speed_up("cco_violin_ii4", 4, intro_name="cell_rest2")
+
+    b2["cco_viola1"].machine(ImaginaryCell(rhythm=(1,), pitches=((11,),)).ops("events")(0, ">")(),)
+    b2["cco_viola1"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    b2["cco_viola2"].machine(ImaginaryCell(rhythm=(1,), pitches=((5,),)).ops("events")(0, ">")(),)
+    b2["cco_viola2"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    b2["cco_viola3"].machine(ImaginaryCell(rhythm=(1,), pitches=((11,),)).ops("events")(0, ">")(),)
+    b2["cco_viola3"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    b2["cco_viola4"].machine(ImaginaryCell(rhythm=(1,), pitches=((5,),)).ops("events")(0, ">")(),)
+    b2["cco_viola4"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    b2["cco_cello1"].machine(ImaginaryCell(rhythm=(1,), pitches=((-12,),)).ops("events")(0, ">")(),)
+    b2["cco_cello1"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    b2["cco_cello2"].machine(ImaginaryCell(rhythm=(1,), pitches=((-13,),)).ops("events")(0, ">")(),)
+    b2["cco_cello2"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    b2["cco_bass"].machine(intro.hold_cell(-8), with_repeat=False)
+    b2["cco_bass"].machine_arrow(lib("cell_rest4"),
+        with_repeat=False,
+        machine_pad=(7,7)
+        )
+
+    # b2["ooa_violins"].machine_arrow(ImaginaryCell(
+    #     rhythm=(-0.25,), pitches="S"),
+    #     machine_pad=(0,0),
+    #     with_repeat=False,
+    #     with_repeat_end=True,
+    #     instruction="repeat (choosing between 1., 2., 3.)",
+    #     )
+
+
+    # TO DO: consider pizz games
     # b1["cco_flutes"].machine_arrow(
     #     lib("intro_line_riff").crop("events",0,1).t(17).sc(0.5).eps(
     #         0, "(", "ppp", "\\<", "(", "a 2, 2nd start after 1st")() + 

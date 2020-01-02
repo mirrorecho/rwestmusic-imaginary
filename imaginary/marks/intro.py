@@ -82,6 +82,12 @@ def riff_up_wiggle(lib):
 def riff_up_wiggle1(lib):
     return (lib("riff1_4").t(2) + lib("riff_line").crop("events",4,4)).sc(0.5)
 
+def riff_winds(lib):
+    return lib("intro_line_riff").crop("events",0,2).t(10).eps(
+        0, "p", "\\<", "(")(
+        3, ")",)(
+        4, "mp", "fermata", beats=2)()
+
 def phrase_wiggle(lib):
     return lib("riff_phrase").crop("cells",1).t(2)
 
@@ -122,9 +128,21 @@ def rock3_cco_oboe2_c38_41(lib):
         0,2,4,6,8, "(")(
         1,3,5,7,9, ")")()
 
+
+def rock4_ooa_flute_c43_45(lib):
+    l = lib["rock_grid_g4_c43_45"][0]().transformed(
+        artics.FuseRepeatedNotes()).t(-25)
+    l.events[-3:].transformed(calliope.Transpose(interval=-12))
+    return l
+
 def rock4_ooa_horn_c43_45(lib):
     l = lib["rock_grid_g4_c43_45"][1]().transformed(
-        artics.FuseRepeatedNotes()).t(2)
+        artics.FuseRepeatedNotes()).t(2).eps(
+        0,2,4,6,8,10,13, "(")(
+        1,3,5,7,9,12,14, ")",)(
+        2,7, "[")(
+        3,8, "]")( 
+        )
     l.events[2:].transformed(calliope.Transpose(interval=-12))
     return l
 
@@ -133,6 +151,7 @@ def rock4_ooa_trumpet_c43_45(lib):
         artics.FuseRepeatedNotes()).t(-1)
     l.events[-6:].transformed(calliope.Transpose(interval=-12))
     return l
+
 
 def to_lib(lib):
     if not lib.is_loaded("intro"):
@@ -147,11 +166,11 @@ def to_lib(lib):
 
         lib.add(segment_rest, a_phrase_0, a_phrase_1, a_cell_2, 
             phrase_mistify, phrase_straight_i, line_riff, phrase_wiggle, 
-            riff_up_wiggle, riff_up_wiggle1,
+            riff_up_wiggle, riff_up_wiggle1, riff_winds,
             cell_shake, cell_down, cell_mist,
             rock3_cco_bassoon_c39_41, rock3_cco_oboe1_c38_41, 
             rock3_cco_oboe2_c38_41, rock4_ooa_trumpet_c43_45,
-            rock4_ooa_horn_c43_45,
+            rock4_ooa_horn_c43_45, rock4_ooa_flute_c43_45, 
             namespace="intro")
     lib.mark_loaded("intro")
 
@@ -195,8 +214,7 @@ if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
     lib.print_names("intro")
-    l = lib("intro_riff_up_wiggle")
-    l.pitches = [(p1,p2) for p1,p2 in zip(l.pitches, lib("intro_riff_up_wiggle1").pitches)]
+    l = lib("intro_rock4_ooa_flute_c43_45")
     calliope.illustrate(l)
 
 

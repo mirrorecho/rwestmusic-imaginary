@@ -20,12 +20,6 @@ def block1(lib):
         pitches=( (16,17 ),)).eps(
             0,"tremolo:3")()
 
-    # TO DO: if only used for clarinets, then no need up here
-    winds_phrase = lib("intro_line_riff").crop("events",0,2).t(10).eps(
-        0, "p", "\\<", "(")(
-        3, ")",)(
-        4, "mp", "fermata", beats=2)()
-
     b1 = free_segment.AlocFreeSegmentBlock(tempo_command=""" " 20'' " """)
 
     b1["ooa_flute"].machine_arrow(shake_ef4(),
@@ -116,7 +110,7 @@ def block1(lib):
             1,5, "ppp", "\\<")(
             3, "p", "\\>")()
 
-    b1["cco_clarinets"].machine_arrow(winds_phrase, 
+    b1["cco_clarinets"].machine_arrow(lib("intro_riff_winds"), 
         instruction="repeat, freely (staggered)")
 
     b1["cco_bassoon"].machine_arrow(lib("intro_cell_down").t(-14).eps(
@@ -138,7 +132,7 @@ def block1(lib):
     b1["cco_trombone"].machine_arrow(lib("intro_a_phrase_1").cells[1](), instruction="repeat, freely")
 
     b1["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((4,5,23,24),)).ops("events")(
-        0, ">","ff")(),
+        0, ">")(),
         )
     b1["cco_harp"].machine_arrow(lib("cell_rest4"),
         # pad=(8,1), 
@@ -166,7 +160,7 @@ def block1(lib):
 
     b1["cco_violin_ii2"].machine_arrow(lib("intro_phrase_wiggle").crop("events",0,2).t(-2).eps(
         3, beats=2)(), 
-        instruction="markup_column:repeat freely at first, eventually with|drum set's quarter note pulse")
+        instruction="markup_column:repeat freely at first, eventually match|drum set's quarter note pulse")
 
     b1["cco_violin_ii3"].machine_arrow(lib("intro_phrase_mistify").t(-2).eps(
         4, pitch=11)(), 
