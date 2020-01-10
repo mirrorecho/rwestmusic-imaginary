@@ -403,8 +403,8 @@
                         [
                         ef'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -601,8 +601,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -799,8 +799,8 @@
                         [
                         b8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -998,8 +998,8 @@
                         [
                         gf8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1414,8 +1414,8 @@
                         [
                         af,8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1487,8 +1487,8 @@
                         [
                         f'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1561,8 +1561,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -2588,8 +2588,8 @@
                         [
                         bf8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -2661,8 +2661,8 @@
                         [
                         c''8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -2735,8 +2735,8 @@
                         [
                         f8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -4423,8 +4423,8 @@
                     \set Staff.midiInstrument = #"agogo" 
                     \clef "percussion"
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     c''8
                     ]
@@ -4443,8 +4443,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.1 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.1 }
                     [
                     c''8
                     ]
@@ -4463,8 +4463,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     [
                     c''8
                     ]
@@ -4523,8 +4523,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.5 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.5 }
                     [
                     c''8
                     ]
@@ -4563,8 +4563,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.7 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.7 }
                     [
                     c''8
                     ]
@@ -4625,8 +4625,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.10 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.10 }
                     [
                     (
                     <c' c''>16
@@ -4647,8 +4647,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     [
                     (
                     <c' c''>16
@@ -4691,8 +4691,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.13 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.13 }
                     [
                     (
                     <c' c''>16
@@ -4735,8 +4735,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.15 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.15 }
                     [
                     (
                     <c' c''>16
@@ -4795,24 +4795,24 @@
                     \set Staff.midiInstrument = #"taiko drum" 
                     \clef "percussion"
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.1 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.1 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     <c c'>4
                     (
                     r4
@@ -4835,8 +4835,8 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.5 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.5 }
                     <c c'>4
                     (
                     r4
@@ -4851,8 +4851,8 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.7 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.7 }
                     <c c'>4
                     (
                     r4
@@ -4885,8 +4885,8 @@
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     r8
                     ]
@@ -4896,8 +4896,8 @@
                     ^ \markup { c.1 }
                     [
                     r8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     ]
                     r2
                     r8
@@ -4906,8 +4906,8 @@
                     ^ \markup { c.3 }
                     ]
                     <fs, a, cs fs a cs'>8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     (
                     <ds fs gs as b ds'>8
@@ -4944,8 +4944,8 @@
                     ^ \markup { c.7 }
                     [
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     ]
                     r2
                     r8
@@ -4967,8 +4967,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     r8
                     ]
@@ -4988,8 +4988,8 @@
                     ^ \markup { c.15 }
                     ]
                     <gs, b, ds gs b ds'>8
-                    ^ \markup { p.8 }
                     ^ \markup { c.16 }
+                    ^ \markup { p.8 }
                     [
                     (
                     <f gs as c' cs' f'>8
@@ -5015,8 +5015,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.9 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.9 }
                     [
                     r8
                     ]
@@ -5029,8 +5029,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.20 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.20 }
                     ]
                     r2
                     r8
@@ -5039,8 +5039,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     [
                     r8
                     ]
@@ -5066,8 +5066,8 @@
                     r8
                     ]
                     <c, ds, g, c ds g>8
-                    ^ \markup { c.26 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.26 }
                     [
                     (
                     <gs, b, cs ds e gs>8
@@ -5085,8 +5085,8 @@
                     ^ \markup { c.27 }
                     [
                     <g, bf, d g bf d'>8
-                    ^ \markup { c.28 }
                     ^ \markup { p.16 }
+                    ^ \markup { c.28 }
                     ]
                     (
                     <ef gf af bf b ef'>8
@@ -5104,8 +5104,8 @@
                     ^ \markup { c.29 }
                     ]
                     <bf df' f' bf' df'' f''>8
-                    ^ \markup { c.30 }
                     ^ \markup { p.17 }
+                    ^ \markup { c.30 }
                     [
                     (
                     <c' ef' g' g' bf' d''>8
@@ -5221,8 +5221,8 @@
                     \set Staff.midiInstrument = #"electric bass (finger)" 
                     \clef "bass"
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     <cs>8
                     ]
@@ -5242,8 +5242,8 @@
                     )
                     [
                     r8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     ]
                     <cs ds>8
                     [
@@ -5317,8 +5317,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.4 }
                     [
                     <ef>8
                     ]
@@ -5338,8 +5338,8 @@
                     )
                     [
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.12 }
                     ]
                     <ef f>8
                     [
@@ -5383,8 +5383,8 @@
                     \set Staff.shortInstrumentName = \markup { Riff. }
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
                     <gs gs'>8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     <a e'>8
@@ -5402,8 +5402,8 @@
                     ^ \markup { c.1 }
                     [
                     <gs gs'>8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     ]
                     (
                     <a e'>8
@@ -5421,8 +5421,8 @@
                     ^ \markup { c.3 }
                     ]
                     <gf gf'>8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     (
                     <ef' af'>8
@@ -5467,8 +5467,8 @@
                     ^ \markup { c.7 }
                     [
                     <ds' ds''>8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     ]
                     (
                     <e' b'>8
@@ -5513,8 +5513,8 @@
                     ]
                     )
                     <ds'' ds'''>8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     (
                     <e'' b''>8
@@ -5551,8 +5551,8 @@
                     ^ \markup { c.15 }
                     ]
                     <af af'>8
-                    ^ \markup { p.8 }
                     ^ \markup { c.16 }
+                    ^ \markup { p.8 }
                     [
                     (
                     <f' bf'>8
@@ -5578,8 +5578,8 @@
                     ]
                     )
                     <f' f''>8
-                    ^ \markup { p.9 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.9 }
                     [
                     (
                     <af' ef''>8
@@ -5599,8 +5599,8 @@
                     )
                     [
                     <c' c''>8
-                    ^ \markup { c.20 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.20 }
                     ]
                     (
                     <ef' bf'>8
@@ -5620,8 +5620,8 @@
                     ]
                     )
                     <c' c''>8
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     [
                     (
                     <df' af'>8
@@ -5668,8 +5668,8 @@
                     ]
                     )
                     <c c'>8
-                    ^ \markup { c.26 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.26 }
                     [
                     (
                     <af df'>8
@@ -5687,8 +5687,8 @@
                     ^ \markup { c.27 }
                     [
                     <g g'>8
-                    ^ \markup { c.28 }
                     ^ \markup { p.16 }
+                    ^ \markup { c.28 }
                     ]
                     (
                     <ef' af'>8
@@ -5706,8 +5706,8 @@
                     ^ \markup { c.29 }
                     ]
                     <bf' bf''>8
-                    ^ \markup { c.30 }
                     ^ \markup { p.17 }
+                    ^ \markup { c.30 }
                     [
                     (
                     <c'' g''>8
@@ -5819,16 +5819,16 @@
                     \set Staff.shortInstrumentName = \markup { Chrd. }
                     \set Staff.midiInstrument = #"french horn" 
                     <gs a b cs' e' fs' gs' ds'' e''>4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r4
                     r8
                     ^ \markup { c.1 }
                     [
                     r8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     ]
                     r8
                     [
@@ -5841,8 +5841,8 @@
                     ^ \markup { c.3 }
                     ]
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     r4
                     r4
                     ^ \markup { c.5 }
@@ -5856,8 +5856,8 @@
                     ^ \markup { c.7 }
                     [
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     ]
                     r8
                     [
@@ -5877,8 +5877,8 @@
                     ^ \markup { c.11 }
                     r2
                     r4
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     r4
                     r4
                     r8
@@ -5899,15 +5899,15 @@
                     ^ \markup { c.15 }
                     ]
                     r4
-                    ^ \markup { p.8 }
                     ^ \markup { c.16 }
+                    ^ \markup { p.8 }
                     r4
                     r4
                     ^ \markup { c.17 }
                     r2
                     <f' af' bf' c'' df'' ef'' f'' af'' bf''>4
-                    ^ \markup { p.9 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.9 }
                     r4
                     r8
                     [
@@ -5917,8 +5917,8 @@
                     r8
                     [
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
-                    ^ \markup { c.20 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.20 }
                     ~
                     ]
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
@@ -5929,8 +5929,8 @@
                     r4
                     ^ \markup { c.21 }
                     <c' df' ef' f' af' c'' ef''>4
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     r4
                     r4
                     ^ \markup { p.12 }
@@ -5944,15 +5944,15 @@
                     ^ \markup { p.14 }
                     ^ \markup { c.25 }
                     <c ef af c' df' ef' f' af' c'' ef''>4
-                    ^ \markup { c.26 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.26 }
                     r2
                     r8
                     ^ \markup { c.27 }
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.16 }
+                    ^ \markup { c.28 }
                     ]
                     r8
                     [
@@ -5965,8 +5965,8 @@
                     ^ \markup { c.29 }
                     ]
                     r4
-                    ^ \markup { c.30 }
                     ^ \markup { p.17 }
+                    ^ \markup { c.30 }
                     r4
                     r4
                     ^ \markup { c.31 }
@@ -6018,8 +6018,8 @@
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     \set Staff.midiInstrument = #"piccolo" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 8
                     }
@@ -6029,20 +6029,20 @@
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { p.3 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.3 }
                     (
                     <f'''>2
                     )

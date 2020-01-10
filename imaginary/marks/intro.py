@@ -100,6 +100,12 @@ def cell_shake(lib=None):
         3, "tremolo:3")(
         4, "\\!",)()
 
+def rock2_ooa_flute_c16_17(lib):
+    return lib["rock_grid_g2_c16_17"]()[0].t(4)
+
+def rock2_ooa_bari_c16_17(lib):
+    return lib["rock_grid_g2_c16_17"]()[5]
+
 # TO DO: change to use the grid block (as opposed to the final score)
 def rock3_cco_bassoon_c39_41(lib):
     l = lib["rock_grid_g3_c39_41_bassoons_bari"][2]().transformed(
@@ -128,6 +134,15 @@ def rock3_cco_oboe2_c38_41(lib):
         0,2,4,6,8, "(")(
         1,3,5,7,9, ")")()
 
+def rock4_ooa_clarinet_c41_43(lib):
+    l = lib["rock_grid_g4_c41_43"][0]().transformed(
+        artics.FuseRepeatedNotes()).t(-1)
+    return l
+
+def rock4_cco_clarinet1_c41_43(lib):
+    l = lib["rock_grid_g4_c41_43"][1]().transformed(
+        artics.FuseRepeatedNotes()).t(-1)
+    return l
 
 def rock4_ooa_flute_c43_45(lib):
     l = lib["rock_grid_g4_c43_45"][0]().transformed(
@@ -168,8 +183,11 @@ def to_lib(lib):
             phrase_mistify, phrase_straight_i, line_riff, phrase_wiggle, 
             riff_up_wiggle, riff_up_wiggle1, riff_winds,
             cell_shake, cell_down, cell_mist,
+            rock2_ooa_flute_c16_17, rock2_ooa_bari_c16_17,
             rock3_cco_bassoon_c39_41, rock3_cco_oboe1_c38_41, 
-            rock3_cco_oboe2_c38_41, rock4_ooa_trumpet_c43_45,
+            rock3_cco_oboe2_c38_41, 
+            rock4_ooa_clarinet_c41_43, rock4_cco_clarinet1_c41_43,
+            rock4_ooa_trumpet_c43_45,
             rock4_ooa_horn_c43_45, rock4_ooa_flute_c43_45, 
             namespace="intro")
     lib.mark_loaded("intro")
@@ -214,7 +232,7 @@ if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
     lib.print_names("intro")
-    l = lib("intro_rock4_ooa_flute_c43_45")
+    l = lib("intro_rock4_cco_clarinet1_c41_43")
     calliope.illustrate(l)
 
 

@@ -12,6 +12,7 @@ from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
 from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories import library
 
 # TO DO: getting directory here not elegant, but needed for directory to
 # work correctly from terminal... need to fix in calliope base
@@ -312,14 +313,16 @@ def grid_g1_c23_24(lib):
 # ======================================================================
 # SECTION 2
 # ======================================================================
-def sb2_riff(t1=-1, t2 = None):
-    t2 = t2 or t1 + 7
-    return [
-        lib("riff_line").crop("events",0,5).t( t1 ).stack_p( ST_UP_I ).mul(2),
-        lib("riff_line").crop("events",2).t( t2 ).stack_p( ST_DN_I ),
-        ]
+
 
 def block2(lib):
+    def sb2_riff(t1=-1, t2 = None):
+        t2 = t2 or t1 + 7
+        return [
+            lib("riff_line").crop("events",0,5).t( t1 ).stack_p( ST_UP_I ).mul(2),
+            lib("riff_line").crop("events",2).t( t2 ).stack_p( ST_DN_I ),
+            ]
+
     b2 = short_block.get_block().ext_segments(
         high_rhythm = [
             lib("rock_off_rhythm").mul(9, ImaginaryLine),
@@ -878,7 +881,8 @@ def grid_g4_c43_45(lib):
 # ======================================================================
 # SECTION 5 ?????
 # ======================================================================
-
+# YES!!!!
+# craziness with descending bass line from Db to F (2 bars each)
 
 # # ======================================================================
 # # ======================================================================

@@ -3,6 +3,7 @@ import calliope
 from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
+from imaginary.stories import library
 
 # TO DO: this bass line is not lovely!
 class BassLine(ImaginaryLine):
@@ -10,10 +11,12 @@ class BassLine(ImaginaryLine):
         class CellA(ImaginaryCell):
             init_rhythm = (-1, 1, 2, 1.5, 2.5)
             init_pitches = ("R", -5, -3, -3, -5)
+            # init_pitches = ("R", 0, -7, -3, -5)
 
         class CellB(ImaginaryCell):
             init_rhythm = (-0.5, 3.5, 4)
             init_pitches = ("R", 0, -5)
+            # init_pitches = ("R", -3, -5)
 
     class PhraseCD(ImaginaryPhrase):
         class CellC(ImaginaryCell):
@@ -63,22 +66,32 @@ class BassLine(ImaginaryLine):
                 e.pitch += -1
         return self
 
-_BASS_LINE = BassLine().transformed(calliope.Transpose(interval=-12))
+def bass_line(lib):
+    return BassLine().transformed(calliope.Transpose(interval=-12))
 
-def bass_line(**kwargs):
-    return _BASS_LINE(**kwargs)
+def bass_trunc(lib):
+    return lib("bass_line").crop("phrases",0,1)
 
-def bass_short(**kwargs):
-    return _BASS_LINE(**kwargs).pop_from("phrases",2,4)
+def bass_short(lib):
+    return lib("bass_line").pop_from("phrases",2,4)
 
 # TO DO: are these used?
-def bass_flat1(**kwargs):
-    return _BASS_LINE(**kwargs).flat1()
+def bass_flat1(lib):
+    return lib("bass_line").flat1()
 
-def bass_flat2(**kwargs):
-    return _BASS_LINE(**kwargs).flat2()
+def bass_flat2(lib):
+    return lib("bass_line").flat2()
 
-calliope.illustrate(calliope.Staff(_BASS_LINE, clef="bass"))
+def to_lib(lib):
+    if not lib.is_loaded("bass"):
+        lib.add(bass_line, bass_trunc, bass_short, bass_flat1, bass_flat2)
+        lib.mark_loaded("bass")
+
+
+if __name__ == '__main__':
+    lib = library.Library()
+    to_lib(lib)
+    calliope.illustrate(calliope.Staff(lib("bass_line"), clef="bass"))
 
 
 # l5_aflat = l5()

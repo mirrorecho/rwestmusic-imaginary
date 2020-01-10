@@ -12,103 +12,34 @@
 \score {
     <<
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
-            }
-            r1
-            ^ \markup { c.1 }
-            {
-                R1 * 3
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
-            }
-            r1
-            ^ \markup { c.1 }
-            {
-                R1 * 3
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
-            }
-            r1
-            ^ \markup { c.1 }
-            {
-                R1 * 3
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
-            }
-            r1
-            ^ \markup { c.1 }
-            {
-                R1 * 3
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
-            r4
-            ^ \markup { c.1 }
-            ^ \markup { p.0 }
-            e'4
-            (
-            g'2
-            )
-            r4
-            ^ \markup { c.2 }
-            e'4
-            (
-            g'8
-            [
-            a'8
-            ~
-            ]
-            a'4
-            )
-            r4
-            ^ \markup { c.3 }
-            ^ \markup { p.1 }
-            e'4
-            (
-            c''8
-            [
-            b'8
-            ]
-            g'8
-            [
-            a'8
-            ~
-            ]
-            a'4
-            )
-            e'4
-            ^ \markup { c.4 }
-            (
-            g'2
-            )
         }
         {
             \accidentalStyle neo-modern-cautionary
@@ -157,8 +88,8 @@
             b'2
             )
             r4
-            ^ \markup { p.2 }
             ^ \markup { c.4 }
+            ^ \markup { p.2 }
             a'4
             ~
             (
@@ -297,8 +228,8 @@
             a,2
             )
             r8
-            ^ \markup { p.2 }
             ^ \markup { c.4 }
+            ^ \markup { p.2 }
             [
             d8
             ~
@@ -333,29 +264,15 @@
             )
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
-            }
-            r1
-            ^ \markup { c.1 }
-            {
-                R1 * 3
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
-            }
-            r1
-            ^ \markup { c.1 }
-            {
-                R1 * 3
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
         }
         {
@@ -391,73 +308,23 @@
             <e''' c''''>1
             )
             <e''' b'''>1
-            ^ \markup { c.5 }
             ^ \markup { p.5 }
+            ^ \markup { c.5 }
             (
             <e''' b'''>1
             )
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            r1
-            ^ \markup { c.0 }
             {
-                R1 * 7
-            }
-            r1
-            ^ \markup { c.1 }
-            {
-                R1 * 3
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
             }
         }
         {
-            \accidentalStyle neo-modern-cautionary
-            <e, a,>1
-            ^ \markup { c.0 }
-            ^ \markup { p.0 }
-            (
-            <e, a,>1
-            )
-            <e, a,>1
-            ^ \markup { c.1 }
-            ^ \markup { p.1 }
-            (
-            <e, a,>1
-            )
-            <e, a,>1
-            ^ \markup { c.2 }
-            ^ \markup { p.2 }
-            (
-            <e, a,>1
-            )
-            <e, a,>1
-            ^ \markup { c.3 }
-            ^ \markup { p.3 }
-            (
-            <e, a,>1
-            )
-            <e, a,>1
-            ^ \markup { c.4 }
-            ^ \markup { p.4 }
-            (
-            <e, a,>1
-            )
-            <e, a,>1
-            ^ \markup { c.5 }
-            ^ \markup { p.5 }
-            (
-            <e, a,>1
-            )
+            {
+                \accidentalStyle neo-modern-cautionary
+                R1 * 12
+            }
         }
     >>
-    
-                \midi {
-                    \context {
-                        \Score
-                        midiChannelMapping = #'instrument
-                    }
-                    \tempo 4 = 60
-                }
-                \layout { }                 
-                
 }

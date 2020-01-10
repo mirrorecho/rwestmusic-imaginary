@@ -6437,8 +6437,8 @@
                     \fermata
                     ^ \markup { c.1 }
                     a8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     [
                     (
                     bf8
@@ -6449,8 +6449,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -6477,8 +6477,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.4 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.4 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -6544,8 +6544,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.6 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.6 }
                     [
                     r8
                     ]
@@ -6555,8 +6555,8 @@
                     ^ \markup { c.13 }
                     [
                     r8
-                    ^ \markup { p.7 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.7 }
                     ]
                     r2
                     r8
@@ -6586,8 +6586,8 @@
                     ^ \markup { c.19 }
                     ]
                     <b, d gf>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     [
                     (
                     <c ef g>8
@@ -6617,8 +6617,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     r8
                     ]
@@ -6641,8 +6641,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { c.26 }
                     ^ \markup { p.13 }
+                    ^ \markup { c.26 }
                     [
                     r8
                     ]
@@ -6655,8 +6655,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     r4
                     r4
@@ -6666,8 +6666,8 @@
                     r8
                     ]
                     <cs e gs>8
-                    ^ \markup { p.15 }
                     ^ \markup { c.30 }
+                    ^ \markup { p.15 }
                     [
                     (
                     <d f a>8
@@ -6715,8 +6715,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.17 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.17 }
                     [
                     r8
                     ]
@@ -7022,8 +7022,8 @@
                     \fermata
                     ^ \markup { c.1 }
                     a8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     [
                     (
                     bf8
@@ -7034,8 +7034,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -7062,8 +7062,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.4 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.4 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -7163,8 +7163,8 @@
                     \fermata
                     ^ \markup { c.1 }
                     a8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     [
                     (
                     bf8
@@ -7175,8 +7175,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -7203,8 +7203,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.4 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.4 }
                     a,,8
                     ^ \markup { c.7 }
                     [
@@ -7303,8 +7303,8 @@
                     \fermata
                     ^ \markup { c.1 }
                     a8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     [
                     (
                     bf8
@@ -7315,8 +7315,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -7343,8 +7343,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { p.4 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.4 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -7410,8 +7410,8 @@
                     ]
                     )
                     b8
-                    ^ \markup { p.6 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.6 }
                     [
                     (
                     c'8
@@ -7429,8 +7429,8 @@
                     ^ \markup { c.13 }
                     [
                     b8
-                    ^ \markup { p.7 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.7 }
                     ]
                     (
                     c'8
@@ -7486,8 +7486,8 @@
                     ^ \markup { c.19 }
                     ]
                     b8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     [
                     (
                     c'8
@@ -7517,8 +7517,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     (
                     a'8
@@ -7559,8 +7559,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.26 }
                     ^ \markup { p.13 }
+                    ^ \markup { c.26 }
                     [
                     (
                     a'8
@@ -7580,8 +7580,8 @@
                     )
                     [
                     fs'8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     (
                     a'8
@@ -7601,8 +7601,8 @@
                     ]
                     )
                     cs'8
-                    ^ \markup { p.15 }
                     ^ \markup { c.30 }
+                    ^ \markup { p.15 }
                     [
                     (
                     d'8
@@ -7655,8 +7655,8 @@
                     ]
                     )
                     ds'8
-                    ^ \markup { p.17 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.17 }
                     [
                     (
                     e'8
@@ -7767,12 +7767,12 @@
                     ^ \markup { c.1 }
                     r4
                     r4
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     r4
                     r4
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     r4
                     r4
                     ^ \markup { c.4 }
@@ -7782,8 +7782,8 @@
                     ^ \markup { c.5 }
                     r4
                     r4
-                    ^ \markup { p.4 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.4 }
                     r4
                     r4
                     ^ \markup { c.7 }
@@ -7804,16 +7804,16 @@
                     ^ \markup { c.11 }
                     r2
                     <b c' d' e' g' b'>4
-                    ^ \markup { p.6 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.6 }
                     r4
                     r4
                     r8
                     ^ \markup { c.13 }
                     [
                     r8
-                    ^ \markup { p.7 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.7 }
                     ]
                     r8
                     [
@@ -7847,16 +7847,16 @@
                     ^ \markup { c.19 }
                     ]
                     <b c' d' e' g' b'>4
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     r4
                     r4
                     r4
                     ^ \markup { c.21 }
                     r2
                     <fs' a' b' d'' fs''>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     r4
                     r8
                     [
@@ -7877,8 +7877,8 @@
                     r4
                     ^ \markup { c.25 }
                     r4
-                    ^ \markup { c.26 }
                     ^ \markup { p.13 }
+                    ^ \markup { c.26 }
                     r4
                     r8
                     [
@@ -7888,8 +7888,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     ]
                     r8
                     [
@@ -7899,8 +7899,8 @@
                     r4
                     ^ \markup { c.29 }
                     <cs' d' e' fs' a' cs''>4
-                    ^ \markup { p.15 }
                     ^ \markup { c.30 }
+                    ^ \markup { p.15 }
                     r4
                     r4
                     r4
@@ -7920,8 +7920,8 @@
                     r8
                     ]
                     <ds' e' gs' b' ds''>4
-                    ^ \markup { p.17 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.17 }
                     r4
                     r8
                     [

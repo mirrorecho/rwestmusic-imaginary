@@ -62,8 +62,17 @@ def home_b(lib=None):
 def home_a_b(lib):
     return lib("home_a").ext( lib("home_b") )
 
+def home_b_a(lib):
+    return lib("home_b").ext( lib("home_a") )
+
+def home_a_bup5(lib):
+    return lib("home_a").ext( lib("home_b").t(7) )
+
 def home_b_aup4(lib):
     return lib("home_b").ext( lib("home_a").t(5) )
+
+def home_b_aup5(lib):
+    return lib("home_b").ext( lib("home_a").t(7) )
 
 def to_lib(lib):
     if not lib.is_loaded("home"):
@@ -75,7 +84,7 @@ def to_lib(lib):
         lib["home_b"] = my_home_b
         lib.set_nodes(my_home_b, "phrases", "cells")
         
-        lib.add(home_a_b, home_b_aup4)
+        lib.add(home_a_b, home_b_a, home_b_aup4, home_b_aup5, home_a_bup5)
         lib.mark_loaded("home")
 
 if __name__ == '__main__':

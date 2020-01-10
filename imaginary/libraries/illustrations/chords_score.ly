@@ -51,8 +51,8 @@
                 ]
                 )
                 a8
-                ^ \markup { c.2 }
                 ^ \markup { p.1 }
+                ^ \markup { c.2 }
                 [
                 (
                 bf8
@@ -82,8 +82,8 @@
                 ]
                 )
                 a8
-                ^ \markup { c.4 }
                 ^ \markup { p.2 }
+                ^ \markup { c.4 }
                 [
                 (
                 bf8
@@ -113,8 +113,8 @@
                 ]
                 )
                 a8
-                ^ \markup { p.3 }
                 ^ \markup { c.6 }
+                ^ \markup { p.3 }
                 [
                 (
                 bf8
@@ -175,8 +175,8 @@
                 ]
                 )
                 b8
-                ^ \markup { c.10 }
                 ^ \markup { p.5 }
+                ^ \markup { c.10 }
                 [
                 (
                 c'8

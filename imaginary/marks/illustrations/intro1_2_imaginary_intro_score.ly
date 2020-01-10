@@ -38,15 +38,15 @@
                         \bar ".|:"
                         s8.
                         b'1
-                        \fermata
                         \mf
+                        \fermata
                         ^ \markup { "growl tone" }
                         r1
                         \fermata
                         s16
                         \bar ":|."
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat 1 or 2 X" }
                         \once \hide Rest
@@ -95,12 +95,12 @@
                         \bar ".|:"
                         s8.
                         a'1
-                        \fermata
                         \p
+                        \fermata
                         \<
                         s16
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
                         \mp
@@ -193,8 +193,8 @@
                         a'2
                         s16
                         \bar ":|."
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup {
                             \column
@@ -260,8 +260,8 @@
                         )
                         s16
                         \bar ":|."
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup {
                             \column
@@ -322,12 +322,12 @@
                         \bar ".|:"
                         s8.
                         e1
-                        \fermata
                         \p
+                        \fermata
                         \<
                         s16
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
                         \mp
@@ -382,12 +382,12 @@
                         \bar ".|:"
                         s8.
                         b,1
-                        \fermata
                         \p
+                        \fermata
                         \<
                         s16
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
                         \mp
@@ -733,8 +733,8 @@
                         b4
                         s16
                         \bar ":|."
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         \pp
                         ^ \markup { "cont. repeating consant pulse" }
@@ -938,8 +938,8 @@
                         s16
                         s16
                         \bar ":|."
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (choosing between 1., 2., 3.)" }
                         \once \hide Rest
@@ -1052,8 +1052,8 @@
                         b''1
                         :32
                         \fermata
-                        ^ \markup { 2., }
                         ^ \markup { Flt. }
+                        ^ \markup { 2., }
                         \freePad
                         s4
                         \normalStaff
@@ -1068,8 +1068,8 @@
                         s16
                         s16
                         \bar ":|."
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (choosing between 1., 2., 3.)" }
                         \once \hide Rest
@@ -1129,8 +1129,8 @@
                         \fermata
                         s16
                         \bar ":|."
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -1183,12 +1183,12 @@
                         \bar ".|:"
                         s8.
                         <f' b'>1
-                        \fermata
                         \p
+                        \fermata
                         \<
                         s16
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
                         \mp
@@ -1260,12 +1260,12 @@
                         \bar ".|:"
                         s8.
                         c1
-                        \fermata
                         \p
+                        \fermata
                         \<
                         s16
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
                         \mp
@@ -1560,6 +1560,14 @@
                     \normalStaff
                     \bar ".|:"
                     s8.
+                    ^ \markup {
+                        \column
+                            {
+                                "wood block"
+                                "faster, NOT with drum set"
+                                "quarter note = 112 approx"
+                            }
+                        }
                     c'8
                     \pp
                     \<
@@ -1570,16 +1578,10 @@
                     \mf
                     \>
                     \bar ":|."
-                    \freeContinue
                     \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \freeContinue
                     s4
-                    ^ \markup {
-                        \column
-                            {
-                                "wood block"
-                                "repeat, keep pulse constant"
-                            }
-                        }
+                    ^ \markup { "repeat, keeping pulse constant" }
                     \once \hide Rest
                     r4
                     s4
@@ -1681,8 +1683,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -1708,8 +1710,8 @@
                             e'''8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -1767,8 +1769,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -1794,8 +1796,8 @@
                             b''8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -1859,8 +1861,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -1886,8 +1888,8 @@
                             b''8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -1948,8 +1950,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -1975,8 +1977,8 @@
                             f''8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2033,8 +2035,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2060,8 +2062,8 @@
                             c'''8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2119,8 +2121,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2146,8 +2148,8 @@
                             c''8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2211,8 +2213,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2238,8 +2240,8 @@
                             b'8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2300,8 +2302,8 @@
                             \<
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -2327,8 +2329,8 @@
                             e'8
                             s16
                             \bar ":|."
-                            \freeContinue
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column

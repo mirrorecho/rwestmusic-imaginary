@@ -10,6 +10,7 @@ from imaginary.stories.library_material import (
 from imaginary.stories import library, artics, free_segment
 from imaginary.marks import intro
 
+# TEMPO = 72
 # =========================================================================
 # BAR 1
 # =========================================================================
