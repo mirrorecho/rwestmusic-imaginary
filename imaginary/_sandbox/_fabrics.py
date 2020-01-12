@@ -51,6 +51,19 @@ x = lambda_segment.LambdaSegment(
         )
 # calliope.illustrate(x)
 # ======================================================================
+# MULTI LAMBDAS COPY
+x = lambda_segment.LambdaSegments(
+        sb.with_only("riff"),
+        fabric_staves = ("ooa_trumpet","cco_trumpet"),
+        funcs = (
+            lambda x: x.eps(
+                )(),
+            lambda x: x.eps(
+                )(),
+                )
+        )
+# calliope.illustrate(x)
+# ======================================================================
 # LAMBDA WITH SMEAR
 x = lambda_segment.LambdaSegment(
         sb.with_only("riff"),

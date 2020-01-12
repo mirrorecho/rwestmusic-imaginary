@@ -9,7 +9,7 @@ from imaginary.fabrics import (instrument_groups,
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
 
-from imaginary.stories import library
+from imaginary.stories import library, artics
 from imaginary.marks import lyrical, rock
 from imaginary.marks import integrate
 
@@ -121,6 +121,14 @@ def score1(lib):
     #             ),
     #         )
     #     )
+    guitars = osti.Osti(
+        sb.with_only("bass_drones"),
+        fabric_staves = ("ooa_bass_guitar","ooa_guitar",),
+        ranges=pitch_ranges.MID_RANGES,
+        osti_pulse_duration = 1,
+        osti_cell_length = 14,
+        osti_cell_count = 4,
+    )
     s.extend_from(
         staggered_swell.StaggeredSwells(
             sb.with_only("high_drones"),
@@ -130,7 +138,8 @@ def score1(lib):
             swell_duration = 8,
             cell_count=2,
             phrase_count=4,
-            )
+            ),
+        guitars,
         )
     s.fill_rests(fill_to="cco_violin_i")
     s.fill_rests()
