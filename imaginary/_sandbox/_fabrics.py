@@ -204,7 +204,15 @@ x = staggered_swell.StaggeredSwell(
     #         (1,0)
     #     ),
     )
+x = staggered_swell.StaggeredSwells(
+    sb,
+    fabric_staves = instrument_groups.get_instruments("cco_winds"),
+    # cell_count=2,
+    # phrase_count=2,
+    )
 # calliope.illustrate(x)
+
+
 # ======================================================================
 # SWELL HIT
 x = swell_hit.SwellHit(

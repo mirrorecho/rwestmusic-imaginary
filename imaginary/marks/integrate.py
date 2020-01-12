@@ -196,9 +196,10 @@ def block0(lib):
 
 
     sb = short_block.get_block().ext_segments(
-        bass_line = [
-             bass_undo, 
-            ],
+        counter_line = [lib("counter").bookend_pad(6*4,0)],
+        melody_line1 = [lib("counter").bookend_pad(6*4,0)],
+        riff = [lib("counter").bookend_pad(5*4,0)],
+        bass_line = [bass_undo,],
         high_drones = [
             drone.DroneLine(
                 line_pitches=(28,),
@@ -484,7 +485,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate_score_short"], 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )
 

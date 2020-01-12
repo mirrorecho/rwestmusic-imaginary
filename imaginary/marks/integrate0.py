@@ -5,7 +5,6 @@ import abjad, calliope
 # from imaginary.libraries.m02_bass import BASS_LINE, BASS_LINE_1_FLAT, BASS_LINE_2_FLAT
 
 from imaginary.scores import score
-from imaginary.stories.fabric import ImaginaryFabric
 from imaginary.fabrics import (instrument_groups, 
     ditto, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
@@ -13,7 +12,7 @@ from imaginary.fabrics import (instrument_groups,
 
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
-from imaginary.stories import library
+from imaginary.stories import library, artics
 from imaginary.marks import rock, integrate
 
 
@@ -45,6 +44,7 @@ from imaginary.marks import rock, integrate
 #         (0, 2,),
 #         )
 #     )
+# TO DO... maybe don't keep this?
 def strings_counter_score(lib):
     return melody.Melody(
         calliope.LineBlock(
@@ -54,6 +54,7 @@ def strings_counter_score(lib):
         fabric_staves = ("cco_violin_i", "cco_violin_ii", "cco_viola",)
         )
 
+# TO DO... maybe don't keep this?
 def counter_broken(lib):
     l = lib("counter")
     l.transformed(calliope.Poke(
@@ -124,21 +125,41 @@ def score0(lib):
         slur_cells=True,
         label=("phrases", "cells")
         ).to_score(s)
-    s.extend_from(
-        # TO DO: re-add harp and piano
-        # my_harp(),
-        # my_piano(),
-        lib("integrate0_strings_counter_score"),
-        lib("integrate0_winds_counter_broken_score"),
-        lib("integrate0_cello_pad_score"),
+    # s.extend_from(
+    #     # TO DO: re-add harp and piano
+    #     # my_harp(),
+    #     # my_piano(),
+    #     # lib("integrate0_strings_counter_score"),
+    #     # lib("integrate0_winds_counter_broken_score"),
+    #     # lib("integrate0_cello_pad_score"),
+    #     )
+
+    s.extend_from(pizz_flutter.PizzFlutter(
+            sb,
+            # ranges=pitch_ranges.MID_RANGES,
+            # selectable_start_beat = 0,
+            pizz_flutter_initial = True, # if True then will add pizz and f.t. indications
+            pizz_flutter_beats = 8,
+            bookend_beats=(0,1),
+            mask_staves = ("cco_bass",)
+            )
+        )
+    s.extend_from(pizz_flutter.PizzFlutter(
+            sb,
+            ranges=pitch_ranges.MID_RANGES,
+            # selectable_start_beat = 0,
+            pizz_flutter_beats = 7,
+            mask_staves = ("cco_bass",)
+            ),
+        extend_last_machine=True
         )
 
     bass_accent_es = (2,5,12,15,28,36)
+    bass_accent_es2 = (1,4,8,14,17)
+
     bassoon_undo = lambda_segment.LambdaSegment(
             sb.with_only("bass_line",),
-            fabric_staves = (
-                "cco_bassoon",
-                ),
+            fabric_staves = ("cco_bassoon",),
             func = lambda x: x.only_first("cells",11).crop_chords(
                 indices=(-1,)).eps(
                 0, "mf")(
@@ -148,16 +169,113 @@ def score0(lib):
                 4,8,10,19,23,25,40,42, ")")(
                 )
             )
+    bassoon_undo2 = lambda_segment.LambdaSegment(
+            sb.with_only("bass_line",),
+            fabric_staves = ("ooa_bassoon",),
+            func = lambda x: x.only_last("cells",5).crop_chords(
+                indices=(-1,)).eps(
+                0,3,10,16, "-")(
+                *bass_accent_es2, ".",">")(
+                6,11, "(")(
+                7,13, ")")(
+                )
+            )
     tenor_highlights = lambda_segment.LambdaSegment(
             sb.with_only("bass_line",),
-            fabric_staves = (
-                "ooa_tenor_sax",
-                ),
+            fabric_staves = ("ooa_tenor_sax",),
             func = lambda x: x.poke("events", *bass_accent_es
                 ).crop_chords(
-                indices=(-1,)).eps(1, "mp")()
+                indices=(-1,)).smear_after(extend_beats=3).eps(
+                2, "p")()
             )
-    s.extend_from(bassoon_undo, tenor_highlights)
+    basson_highlights = lambda_segment.LambdaSegment(
+            sb.with_only("bass_line",),
+            fabric_staves = ("ooa_bassoon",),
+            func = lambda x: x.only_first("cells",11).poke("events", *bass_accent_es
+                ).crop_chords(
+                indices=(-1,)).smear_before(extend_beats=3,rearticulate=True).ops("note_events")(
+                0,2,4,6,8,10, "p","\\<")(
+                1,3,5,7,9,11, "mf", ".")()
+            )    
+    bass_pizz = lambda_segment.LambdaSegment(
+            sb.with_only("bass_line",),
+            fabric_staves = ("cco_bass",),
+            func = lambda x: x.crop_chords(indices=(0,)).t(12).eps(
+                1, "pizz", "mf")()
+            )
+    harp = lambda_segment.LambdaSegments(
+            sb.with_only("riff",),
+            fabric_staves = ("harp1", "harp2"),
+            funcs = (
+                lambda x: x.crop("cells",1).t(12).transformed(
+                    calliope.StandardDurations()).eps(
+                    0, "mf")(),
+                lambda x: x.crop("cells",1).transformed(
+                    calliope.StandardDurations()).t(-12).eps(
+                    )(),
+            ),
+            bookend_beats=(4,0),
+        )
+    guitars = osti.Osti(
+        sb.with_only("bass_drones"),
+        fabric_staves = ("ooa_bass_guitar","ooa_guitar",),
+        ranges=pitch_ranges.MID_RANGES,
+        osti_pulse_duration = 1,
+        osti_cell_length = 14,
+        osti_cell_count = 4,
+    )
+    sax_counter = lambda_segment.LambdaSegment(
+        sb.with_only("melody_line1"),
+        fabric_staves = ("ooa_alto_sax1",),
+        func = lambda x: x.transformed(artics.FuseRepeatedNotes()
+            ).slur_cells().eps(
+            1, "mp")()
+        )
+    s.extend_from(
+        bass_pizz,
+        bassoon_undo, 
+        tenor_highlights, 
+        basson_highlights,
+        bassoon_undo2, 
+        guitars,
+        harp,
+        sax_counter,
+        )
+
+    s.fill_rests(5*4)
+    oboe_swells = staggered_swell.StaggeredSwells(
+        sb.with_only("mid_drones"),
+        fabric_staves = ("cco_oboe1", "cco_oboe2",
+                        "cco_flute1", "cco_flute2"),
+        ranges=pitch_ranges.MID_TO_HIGHISH_RANGES,
+        selectable_start_beat = 5*4,
+        swell_duration = 8,
+        # cell_count=2,
+        # phrase_count=2,
+        )    
+
+    s.extend_from(oboe_swells)
+
+    s.fill_rests(beats=8*4)
+    clarinet_highlights = lambda_segment.LambdaSegments(
+            sb.with_only("bass_line",),
+            fabric_staves = ("cco_clarinet1","cco_clarinet2",),
+            funcs = (
+                lambda x: x.only_last("cells",5).poke("events", *bass_accent_es2
+                    ).crop_chords(
+                    indices=(-1,)).smear_before(
+                        extend_beats=3,rearticulate=True).ops("note_events")(
+                    0,2,4,6,8, "p","\\<")(
+                    1,3,5,7,9, "mf", ".")(),
+                lambda x: x.only_last("cells",5).poke("events", *bass_accent_es2
+                    ).crop_chords(
+                    indices=(-1,)).smear_after(extend_beats=3).eps(
+                    1, "p")()
+                )
+            )
+    s.extend_from(
+        clarinet_highlights,
+        )    
 
 
     s.fill_rests()
