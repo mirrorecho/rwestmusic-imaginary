@@ -184,6 +184,22 @@ class LibraryMaterial(object):
     def eps(self):
         return self.ops("events")
 
+    def smear_before(self, **kwargs):
+        return self.transformed(calliope.SmearBefore(**kwargs))
+
+    def smear_after(self, **kwargs):
+        return self.transformed(calliope.SmearAfter(**kwargs))
+
+    def e_smear_before(self, *args, **kwargs):
+        self.events[args].transformed(
+            calliope.SmearBefore(ancestor=self, **kwargs))
+        return self
+
+    def e_smear_after(self, *args, **kwargs):
+        self.events[args].transformed(
+            calliope.SmearAfter(ancestor=self, **kwargs))
+        return self
+
     def autoname(self, *args, prefix="", add_to_lib=None):
         for select_attr in args:
             for i,n in enumerate(getattr(self, select_attr)):

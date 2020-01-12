@@ -23,8 +23,7 @@ class FabricFactory(calliope.FromSelectableFactory):
     selectable_start_beat = 0
     remove_empty_staves = True
     transposes = None
-    # selectable_staves_map = {sdfs:sdfsdfs
-    #     }
+    pitch_selectable = None
 
     fabric_staves = ()
     only_staves = ()
@@ -94,7 +93,7 @@ class FabricFactory(calliope.FromSelectableFactory):
             self.remove_empty(rests_count=True)
 
         if self.assign_pitches_from_selectable:
-            self.assign_pitches()
+            self.assign_pitches(selectable = self.pitch_selectable)
 
             # TO DO ... re-enable this:
             # if my_ranges := self.ranges.get(my_staff.name, None):

@@ -17,7 +17,7 @@ from imaginary.fabrics import (instrument_groups,
     pizz_flutter, pulse, staggered_swell, swell_hit)
 
 from imaginary.stories import library
-import lyrical, rock
+from imaginary.marks import lyrical, rock
 
 
 # TO DO: still used/helpful?
@@ -103,13 +103,13 @@ def undo_riffs(riff, original):
 
 def opening(lib):
     l = undo_riffs(lib("riff_home_a"), lib("home_a").sc(0.5)).transformed(calliope.StandardDurations())
-    l.slur_cells()
+    # l.slur_cells()
     return l
 
 def opening_b(lib):
     l = undo_riffs(lib("riff_home_b"), lib("home_b").sc(0.5))
     l.transformed(calliope.StandardDurations())
-    l.slur_cells()
+    # l.slur_cells()
     return l
 
 def opening_b_fifths(lib):
@@ -178,26 +178,46 @@ def riff_up_down(lib):
 
 
 def block0(lib):
-    drum_intro_beats = 64
 
     # TO DO... add some fragments from counter B
 
+    bass_undo = lib("integrate_opening").t(-12).bookend_pad(0,5)
+    up_bass_undo = bass_undo().ts(9)
+    for i,e in enumerate(bass_undo.cells[:5].events):
+        if not e.skip_or_rest:
+            e.pitch = [e.pitch, up_bass_undo.events[i].pitch]
+    for c in bass_undo.cells[5:10]:
+        c.ts(1).stack_p( [(-12,0,),] )
+    for c in bass_undo.cells[10:]:
+        c.stack_p( [(-12,0,12),] )
+    bass_undo.cells[4].note_events[-1:].transformed(calliope.Transpose(interval=-12))
+
+    bass_undo.cells[5].note_events[0].pitch = bass_undo.cells[4].note_events[-1].pitch
+
+
     sb = short_block.get_block().ext_segments(
         bass_line = [
-             lib("integrate_opening").t(-12).bookend_pad(0,5).stack_p( [(-12,0,12),] ), #HOME_B.t(-12).transformed(calliope.StandardDurations())
+             bass_undo, 
             ],
-        high_drones = [drone.DroneLine(
+        high_drones = [
+            drone.DroneLine(
                 line_pitches=(28,),
-                phrase_rhythm = (14*4,),
+                phrase_rhythm = (7*4,),
                 phrase_count = 1,
-                )],
+                ),
+            drone.DroneLine(
+                line_pitches=(24,),
+                phrase_rhythm = (7*4,),
+                phrase_count = 1,
+                ),
+        ],
         mid_drones = [drone.DroneLine(
                 line_pitches=(p,),
                 phrase_rhythm = (9,),
                 phrase_count = 1,
                 ) for p in ( (11,16),(16,21),(9,14),(14,19),(19,24),(12,17))],
         bass_drones = [drone.DroneLine(
-                line_pitches=((-8,4), (-10,4), (-12,7), (-14, 7)),
+                line_pitches=((-8,-1), (-10,0), (-12,2), (-14, 5)),
                 phrase_rhythm = (14,),
                 phrase_count = 4,
                 )],
@@ -228,7 +248,7 @@ def block1(lib):
              lib("integrate_opening_b_fifths").t(-7).bookend_pad(4,1.5)
             ],
         high_drones = [drone.DroneLine(
-                line_pitches=(28,),
+                line_pitches=(24,),
                 phrase_rhythm = (17*4,),
                 phrase_count = 1,
                 )],
@@ -422,17 +442,17 @@ def score_short(lib):
     b = short_block.get_block()
     b.extend_from(lib["integrate_block0"])
     b.extend_from(lib["integrate_block1"])
-    b.extend_from(lib["integrate_block2"])
-    b.extend_from(lib["integrate_block3"])
-    b.extend_from(lib["integrate_block4"])
-    b.extend_from(lib["integrate_block5"]) # TO DO: the riff SSUUCCKKSS!!!! here!!!
-    b.extend_from(lib["integrate_block6"])
-    b.extend_from(lib["integrate_block7"])
-    b.extend_from(lib["integrate_block8"])
-    b.extend_from(lib["integrate_block9"])
+    # b.extend_from(lib["integrate_block2"])
+    # b.extend_from(lib["integrate_block3"])
+    # b.extend_from(lib["integrate_block4"])
+    # b.extend_from(lib["integrate_block5"]) # TO DO: the riff SSUUCCKKSS!!!! here!!!
+    # b.extend_from(lib["integrate_block6"])
+    # b.extend_from(lib["integrate_block7"])
+    # b.extend_from(lib["integrate_block8"])
+    # b.extend_from(lib["integrate_block9"])
 
     b.annotate(
-        slur_cells=True,
+        # slur_cells=True,
         label = ("cells","phrases"),
         ).fill_rests()
     # print(sb0.pitch_analyzer.pitches_at(34))
@@ -464,7 +484,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate_score_short"], 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         # open_pdf=False,
         )
 

@@ -8,8 +8,8 @@ from imaginary.scores import score
 from imaginary.stories.fabric import ImaginaryFabric
 from imaginary.fabrics import (instrument_groups, 
     ditto, dovetail, driving_off, hit_cells, 
-    hits, lick, melody, osti, pad, 
-    pizz_flutter, pulse, staggered_swell, sus_piano, swell_hit)
+    hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
+    pulse, staggered_swell, swell_hit)
 
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
@@ -119,6 +119,11 @@ def cello_pad_score(lib):
 
 def score0(lib):
     s = score.ImaginaryScore()
+    sb = lib("integrate_block0")
+    s = sb().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
     s.extend_from(
         # TO DO: re-add harp and piano
         # my_harp(),
@@ -127,6 +132,34 @@ def score0(lib):
         lib("integrate0_winds_counter_broken_score"),
         lib("integrate0_cello_pad_score"),
         )
+
+    bass_accent_es = (2,5,12,15,28,36)
+    bassoon_undo = lambda_segment.LambdaSegment(
+            sb.with_only("bass_line",),
+            fabric_staves = (
+                "cco_bassoon",
+                ),
+            func = lambda x: x.only_first("cells",11).crop_chords(
+                indices=(-1,)).eps(
+                0, "mf")(
+                1,6,11,14,17,21,27,30,31,33,35,38, "-")(
+                *bass_accent_es, ".",">")(
+                3,7,9,18,22,24,39,41, "(")(
+                4,8,10,19,23,25,40,42, ")")(
+                )
+            )
+    tenor_highlights = lambda_segment.LambdaSegment(
+            sb.with_only("bass_line",),
+            fabric_staves = (
+                "ooa_tenor_sax",
+                ),
+            func = lambda x: x.poke("events", *bass_accent_es
+                ).crop_chords(
+                indices=(-1,)).eps(1, "mp")()
+            )
+    s.extend_from(bassoon_undo, tenor_highlights)
+
+
     s.fill_rests()
     return s
 
