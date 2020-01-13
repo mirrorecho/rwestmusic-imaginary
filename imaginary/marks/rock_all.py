@@ -10,6 +10,7 @@ def rock_score(lib):
     sc.extend_from(lib["rock_score2"])
     sc.extend_from(lib["rock_score3"])
     sc.extend_from(lib["rock_score4"])
+    sc.midi_tempo = 160
     return sc
 
 def to_lib(lib):
@@ -23,4 +24,8 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["rock_score"])
+    calliope.illustrate(
+        lib["rock_score"],
+        as_midi=True,
+        # open_midi=True,
+        )

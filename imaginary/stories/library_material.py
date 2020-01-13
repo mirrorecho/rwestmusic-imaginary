@@ -1,5 +1,5 @@
 import abjad, calliope 
-
+from imaginary.stories import artics
 
 # base class for library material with some helpful methods
 class LibraryMaterial(object):
@@ -111,6 +111,10 @@ class LibraryMaterial(object):
                 scale=scale,
                 new_scale=new_scale)
             )
+
+    def fuse(self):
+        self.transformed(artics.FuseRepeatedNotes())
+        return self
 
     def mul(self, times=2, wrap_in=None):
         my_mul = wrap_in(self) if wrap_in else self
@@ -224,3 +228,23 @@ class ImaginaryLine(LibraryMaterial, calliope.Line): pass
 class ImaginaryPhrase(LibraryMaterial, calliope.Phrase): pass
 
 class ImaginaryCell(LibraryMaterial, calliope.Cell): pass
+
+def get_improv_line(
+    instruction="simile",
+    rhythm=(1,1,1,1,),
+    times=4,
+    ):
+    my_line = ImaginaryLine()
+    for i in range(times):
+        my_cell = ImaginaryCell(rhythm=rhythm)
+        if instruction and i==0:
+            my_cell.events[0].tag(instruction)
+        else:
+            my_cell.events[0].tag("(%s)" % (i+1))
+        my_cell.note_events.tag("note_head:0:slash", "\\once \\hide Stem")
+        my_line.append(my_cell)
+    return my_line
+
+
+
+

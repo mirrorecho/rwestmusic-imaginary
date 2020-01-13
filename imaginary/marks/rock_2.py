@@ -17,10 +17,10 @@ from imaginary.marks import rock
 def score2(lib):
     s = score.ImaginaryScore()
     sb = lib("rock_block2")
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
 
 
     riffs_block = short_block.ChordsToSegmentBlock(

@@ -16,10 +16,10 @@ from imaginary.marks import rock
 def score0(lib):
     s = score.ImaginaryScore()
     sb = lib("rock_block0")
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
 
     # TO DO: add ranges
     # =======================================================

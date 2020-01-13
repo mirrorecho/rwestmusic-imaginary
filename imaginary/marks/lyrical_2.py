@@ -18,10 +18,10 @@ from imaginary.marks import lyrical
 def score2(lib):
     s = score.ImaginaryScore()
     sb2 = lib("lyrical_block2")
-    s = sb2().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    # s = sb2().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
 
     # TO DO: add ranges
     # =======================================================

@@ -19,10 +19,10 @@ def score3(lib):
     sb = lib("rock_block3")
     # TO DO: add ranges
     # =======================================================
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
 
     # riffs_block = short_block.ChordsToSegmentBlock(
     #     selectable = sb.with_only("riff",).segments[0],

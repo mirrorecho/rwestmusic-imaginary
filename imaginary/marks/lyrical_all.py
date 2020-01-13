@@ -9,6 +9,7 @@ def lyrical_score(lib):
     sc.extend_from(lib["lyrical_score1"])
     sc.extend_from(lib["lyrical_score2"])
     sc.extend_from(lib["lyrical_score3"])
+    sc.midi_tempo = 96
     return sc
 
 def to_lib(lib):
@@ -21,4 +22,8 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["lyrical_score"])
+    calliope.illustrate(
+        lib["lyrical_score"],
+        as_midi=True,
+        # open_midi=True,
+        )

@@ -9,6 +9,7 @@ def intro_score(lib):
     sc.extend_from(lib["intro1_score0"])
     sc.extend_from(lib["intro1_score1"])
     sc.extend_from(lib["intro1_score2"])
+    sc.midi_tempo=72
     return sc
 
 def to_lib(lib):
@@ -21,4 +22,8 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["intro_score"])
+    calliope.illustrate(
+        lib["intro_score"],
+        as_midi=True,
+        open_midi=True,
+        )

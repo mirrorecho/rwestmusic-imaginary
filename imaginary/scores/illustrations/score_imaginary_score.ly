@@ -5,6 +5,7 @@
 
 \header {
     tagline = ##f
+    composer = \markup { "Randall West" }
 }
 
 \layout {}
@@ -27,6 +28,7 @@
                     {
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
+                        \set Staff.midiInstrument = #"flute" 
                         r1
                     }
                 }
@@ -39,6 +41,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                         \set Staff.shortInstrumentName = \markup { Cl. }
+                        \set Staff.midiInstrument = #"clarinet" 
                         r1
                     }
                 }
@@ -51,6 +54,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                         \set Staff.shortInstrumentName = \markup { Asax.1 }
+                        \set Staff.midiInstrument = #"alto sax" 
                         r1
                     }
                 }
@@ -63,6 +67,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                         \set Staff.shortInstrumentName = \markup { Asax.2 }
+                        \set Staff.midiInstrument = #"alto sax" 
                         r1
                     }
                 }
@@ -75,6 +80,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Tsax. }
+                        \set Staff.midiInstrument = #"alto sax" 
                         r1
                     }
                 }
@@ -87,6 +93,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Bsax. }
+                        \set Staff.midiInstrument = #"alto sax" 
                         \clef "bass"
                         r1
                     }
@@ -100,6 +107,7 @@
                     {
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
+                        \set Staff.midiInstrument = #"bassoon" 
                         \clef "bass"
                         r1
                     }
@@ -116,6 +124,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Horn in F" }
                         \set Staff.shortInstrumentName = \markup { Hn. }
+                        \set Staff.midiInstrument = #"french horn" 
                         r1
                     }
                 }
@@ -128,6 +137,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Trumpet in C" }
                         \set Staff.shortInstrumentName = \markup { Tpt. }
+                        \set Staff.midiInstrument = #"trumpet" 
                         r1
                     }
                 }
@@ -140,6 +150,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Tenor Trombone" }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
+                        \set Staff.midiInstrument = #"trombone" 
                         \clef "bass"
                         r1
                     }
@@ -156,6 +167,7 @@
                     {
                         \set Staff.instrumentName = \markup { Vibraphone }
                         \set Staff.shortInstrumentName = \markup { Vib. }
+                        \set Staff.midiInstrument = #"vibraphone" 
                         r1
                     }
                 }
@@ -168,6 +180,8 @@
                     {
                         \set Staff.instrumentName = \markup { "Drum Set" }
                         \set Staff.shortInstrumentName = \markup { Drum. }
+                        \set Staff.midiInstrument = #"taiko drum" 
+                        \clef "percussion"
                         r1
                     }
                 }
@@ -183,6 +197,7 @@
                     {
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
+                        \set Staff.midiInstrument = #"electric guitar (clean)" 
                         r1
                     }
                 }
@@ -195,6 +210,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Bass Guitar" }
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
+                        \set Staff.midiInstrument = #"electric bass (finger)" 
                         \clef "bass"
                         r1
                     }
@@ -211,6 +227,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
+                        \set Staff.midiInstrument = #"violin" 
                         r1
                     }
                 }
@@ -223,6 +240,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
+                        \set Staff.midiInstrument = #"violin" 
                         r1
                     }
                 }
@@ -235,6 +253,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
+                        \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         r1
                     }
@@ -248,6 +267,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
+                        \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         r1
                     }
@@ -267,6 +287,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
+                        \set Staff.midiInstrument = #"flute" 
                         r1
                     }
                 }
@@ -279,6 +300,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
+                        \set Staff.midiInstrument = #"flute" 
                         r1
                     }
                 }
@@ -291,6 +313,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Oboe 1" }
                         \set Staff.shortInstrumentName = \markup { Ob.1 }
+                        \set Staff.midiInstrument = #"oboe" 
                         r1
                     }
                 }
@@ -303,6 +326,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Oboe 2" }
                         \set Staff.shortInstrumentName = \markup { Ob.2 }
+                        \set Staff.midiInstrument = #"oboe" 
                         r1
                     }
                 }
@@ -315,6 +339,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                         \set Staff.shortInstrumentName = \markup { Cl.1 }
+                        \set Staff.midiInstrument = #"clarinet" 
                         r1
                     }
                 }
@@ -327,6 +352,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                         \set Staff.shortInstrumentName = \markup { Cl.2 }
+                        \set Staff.midiInstrument = #"clarinet" 
                         r1
                     }
                 }
@@ -339,6 +365,8 @@
                     {
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
+                        \set Staff.midiInstrument = #"bassoon" 
+                        \clef "bass"
                         r1
                     }
                 }
@@ -354,6 +382,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Horn in F" }
                         \set Staff.shortInstrumentName = \markup { Hn. }
+                        \set Staff.midiInstrument = #"french horn" 
                         r1
                     }
                 }
@@ -366,6 +395,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Trumpet in C" }
                         \set Staff.shortInstrumentName = \markup { Tpt. }
+                        \set Staff.midiInstrument = #"trumpet" 
                         r1
                     }
                 }
@@ -378,6 +408,8 @@
                     {
                         \set Staff.instrumentName = \markup { Trombone }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
+                        \set Staff.midiInstrument = #"trombone" 
+                        \clef "bass"
                         r1
                     }
                 }
@@ -460,6 +492,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         r1
                     }
                 }
@@ -472,6 +505,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         r1
                     }
                 }
@@ -484,6 +518,7 @@
                     {
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         r1
                     }
                 }
@@ -496,6 +531,7 @@
                     {
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         \clef "bass"
                         r1
                     }
@@ -509,6 +545,7 @@
                     {
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
+                        \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         r1
                     }
@@ -673,7 +710,7 @@
                 {
                     \set Staff.instrumentName = \markup { "Bass Drones" }
                     \set Staff.shortInstrumentName = \markup { B.drn. }
-                    \set Staff.midiInstrument = #"contrabass" 
+                    \set Staff.midiInstrument = #"fretless bass" 
                     \clef "bass"
                     r1
                 }

@@ -5,6 +5,8 @@ from imaginary.fabrics import instrument_groups
 class PizzFlutter(ImaginaryFabric):
     pizz_flutter_initial = False # if True then will add pizz and f.t. indications
     pizz_flutter_beats = 4
+    pizz_dynamic = None
+    flutter_dynamic = None
     fabric_staves = (
                 "ooa_violin1", 
                 "ooa_violin2", 
@@ -37,6 +39,8 @@ class PizzFlutter(ImaginaryFabric):
             )
         if self.pizz_flutter_initial == True and pizz_indicator == True:
             my_cell.events[0].tag("pizz")
+        if self.pizz_dynamic:
+            my_cell.events[0].tag(self.pizz_dynamic)
 
         return my_cell
 
@@ -48,6 +52,8 @@ class PizzFlutter(ImaginaryFabric):
             my_cell.events[0].tag("f.t.", ":32")
         else:
             my_cell.events[0].tag(":32")
+        if self.flutter_dynamic:
+            my_cell.events[0].tag(self.flutter_dynamic)
 
         return my_cell
 
