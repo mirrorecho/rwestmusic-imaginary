@@ -16,7 +16,7 @@ from imaginary.marks import intro
 # =========================================================================
 
 def block0(lib):
-    b0 = free_segment.AlocFreeSegmentBlock(tempo_command=""" \\note #"4" #UP "= 72 approx | freely | 20'' " """)
+    b0 = free_segment.AlocFreeSegmentBlock(tempo_command=""" \\note #"4" #UP "= 72 ca, freely, 20'' " """)
 
     b0["ooa_bass_guitar"].machine(ImaginaryCell(rhythm=(4,), pitches=(-11,)).eps(
         0,"mp")(),

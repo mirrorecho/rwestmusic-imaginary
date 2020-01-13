@@ -27,7 +27,8 @@ def cell_rest1(lib=None):
     return ImaginaryCell(rhythm=(-1,),)
 
 def segment_rest(lib=None):
-    return free_segment.FreeSegment().machine_arrow(cell_rest4(),
+    return free_segment.FreeSegment(
+        ).machine_arrow(cell_rest4(),
     with_repeat=False,
     machine_pad=(10,10)
     )
@@ -214,10 +215,11 @@ def shake_swell_arrow(seg, pitches, start_dynamic="p", end_dynamic="mp", *args, 
             e_count+3, end_dynamic, "\\>")()
 
 
-def block_to_score(lib, block_name):
+def block_to_score(lib, block_name, ):
     block = lib(block_name)
     sc = block.to_score(ImaginaryIntroScore())
     fill_score_empty(sc, lib,
+        # tempo_command=""" \\note #"4" 20'' " """,
         tempo_command = block[0].tempo_command,
         )
     return sc
@@ -226,7 +228,7 @@ def fill_score_empty(score, lib, **kwargs):
     custom_segment_rest = kwargs.pop("segment_rest", None)
     for staff in score.staves:
         if len(staff) == 0:
-            staff.append(custom_segment_rest or lib("intro_segment_rest"))
+            staff.append(custom_segment_rest or lib["intro_segment_rest"](**kwargs))
 
 if __name__ == '__main__':
     lib = library.Library()

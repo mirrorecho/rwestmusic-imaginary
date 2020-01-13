@@ -121,10 +121,12 @@ def cello_pad_score(lib):
 def score0(lib):
     s = score.ImaginaryScore()
     sb = lib("integrate_block0")
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
+    
     # s.extend_from(
     #     # TO DO: re-add harp and piano
     #     # my_harp(),

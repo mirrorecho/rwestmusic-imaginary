@@ -26,10 +26,108 @@ from imaginary.marks import integrate
 def score4(lib):
     s = score.ImaginaryScore()
     sb = lib("integrate_block4")
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
+
+    s.extend_from(
+        pulse_on_off_beat.PulseOnOffBeat(
+            sb,
+            fabric_staves = (
+                "ooa_violin1", "ooa_violin2", 
+                "ooa_cello1", "ooa_cello2",
+                "cco_violin_i", "cco_violin_ii",
+                "cco_viola", "cco_cello",
+                ),
+            phrase_beats = (4,)*16,
+            ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
+        ),
+        )
+
+    guitars = osti.Osti(
+        sb.with_only("bass_drones"),
+        fabric_staves = ("ooa_bass_guitar","ooa_guitar",),
+        ranges=pitch_ranges.BOTTOM_RANGES,
+        osti_pulse_duration = 1,
+        osti_cell_length = 16,
+        osti_cell_count = 4,
+    )
+    trombones = lambda_segment.LambdaSegment(
+        sb.with_only("bass_line"),
+        fabric_staves = ("ooa_trombone","cco_trombone"),
+        func = lambda x: x.eps(
+            )(),
+        # func = lambda x: x.only_first("cells",8)
+        )
+    s.extend_from(guitars, trombones)
+
+    altos1=lambda_segment.LambdaSegments(
+        sb.with_only("counter_line"),
+        fabric_staves = ("ooa_alto_sax2","ooa_alto_sax1"),
+        bookend_beats=(8*4,0),
+        funcs = (
+            lambda x: x.with_only("cells",16,17,18,19).poke("cells",0,2
+                ).smear_after(fill=True, gap_beats=1).slur_cells().eps(
+            0,"f")(),
+            lambda x: x.with_only("cells",16,17,18,19).poke("cells",1,3
+                ).smear_after(fill=True, gap_beats=1).slur_cells().eps(
+            2,"f")(),
+            )
+        )
+    altos2=lambda_segment.LambdaSegments(
+        sb.with_only("melody_line1","melody_line2"),
+        fabric_staves = ("ooa_alto_sax1","ooa_alto_sax2"),
+        funcs = (
+            lambda x: x.with_only("cells",10,11).slur_cells().eps(
+            )(),
+            lambda x: x.with_only("cells",10,11).slur_cells().eps(
+            )(),
+            )
+        )
+    horns_end = lambda_segment.LambdaSegments(
+        sb.with_only("bass_line"),
+        fabric_staves = ("ooa_horn","cco_horn"),
+        bookend_beats=(12*4,0),
+        funcs = (
+            lambda x: x.with_only("cells",12,13,14,15).t(12).eps(
+                0,"f")(
+                0,3,6,"(")(
+                1,5,7,")")(
+                8,9,10,11,12,13,14,15,16,"-")(),
+            lambda x: x.with_only("cells",12,13,14,15).eps(
+                0,"f")(
+                0,3,6,"(")(
+                1,5,7,")")(
+                8,9,10,11,12,13,14,15,16,"-")(),
+                )
+        # func = lambda x: x.only_first("cells",8)
+        )
+    trumpets_end = lambda_segment.LambdaSegments(
+        sb.with_only("melody_line1","melody_line2"),
+        fabric_staves = ("ooa_trumpet","cco_trumpet"),
+        bookend_beats=(14*4,0),
+        funcs = (
+            lambda x: x.with_only("cells",14,15).eps(
+                1,"mf")(),
+            lambda x: x.with_only("cells",14,15).eps(
+                1,"mf")(),
+                ),
+        tag_all_note_events=("-",),
+        # func = lambda x: x.only_first("cells",8)
+        )
+    flutes_end = lambda_segment.LambdaSegment(
+        sb.with_only("counter_line"),
+        fabric_staves = ("ooa_flute","cco_flute1","cco_flute2"),
+        bookend_beats=(14*4,0),
+        func = lambda x: x.with_only("cells",28,29,30,31).eps(
+                1,"f")(),
+        tag_all_note_events=("-",),
+        # func = lambda x: x.only_first("cells",8)
+        )
+    s.extend_from(altos1,altos2,horns_end,trumpets_end,flutes_end)
+
+
 
     # strings_pulse1 = pulse.Pulse(
     #     fabric_staves = (
@@ -128,6 +226,7 @@ def score4(lib):
     #     strings_low_pulse1(),
     #     )
     s.fill_rests()
+    s.midi_tempo=112
     return s
 
 def to_lib(lib):
@@ -139,6 +238,6 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate4_score4"], 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )

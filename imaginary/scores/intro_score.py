@@ -122,8 +122,10 @@ class ImaginaryIntroScore(ImaginaryScore):
                     name="Trombone", short_name="tbn.")
                 clef="bass"
 
-        class CcoPercussion(calliope.RhythmicStaff): pass
-
+        class CcoPercussion(calliope.RhythmicStaff): 
+            instrument=abjad.Instrument(
+                name="Percussion", short_name="perc.")
+            clef="percussion"
 
         class CcoHarp(calliope.Staff):
             instrument=abjad.Harp(
@@ -151,7 +153,7 @@ class ImaginaryIntroScore(ImaginaryScore):
                 class CcoViolinIi4(calliope.Staff):
                     instrument=abjad.Violin(name="Violin II 4", short_name="vln.II.4")
 
-            class CcoViolaIi(calliope.StaffGroup):
+            class CcoViola(calliope.StaffGroup):
                 class CcoViola1(calliope.Staff):
                     instrument=abjad.Viola(name="Viola 1", short_name="vla.1")
                 class CcoViola2(calliope.Staff):

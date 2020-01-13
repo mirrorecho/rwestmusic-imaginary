@@ -200,6 +200,10 @@ class LibraryMaterial(object):
             calliope.SmearAfter(ancestor=self, **kwargs))
         return self
 
+    def tag_all_note_events(self, *args):
+        self.note_events.tag(*args)
+        return self
+
     def autoname(self, *args, prefix="", add_to_lib=None):
         for select_attr in args:
             for i,n in enumerate(getattr(self, select_attr)):

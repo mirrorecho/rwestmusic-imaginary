@@ -28,6 +28,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
+                        \set Staff.midiInstrument = #"flute" 
                         e''1
                         :32
                         ^ \markup { f.t. }
@@ -179,6 +180,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
+                            \set Staff.midiInstrument = #"clarinet" 
                             R1 * 6
                         }
                     }
@@ -248,6 +250,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
+                            \set Staff.midiInstrument = #"alto sax" 
                             R1 * 6
                         }
                     }
@@ -349,6 +352,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
+                            \set Staff.midiInstrument = #"alto sax" 
                             R1 * 6
                         }
                     }
@@ -456,6 +460,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Tsax. }
+                            \set Staff.midiInstrument = #"alto sax" 
                             R1 * 6
                         }
                     }
@@ -557,6 +562,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
+                            \set Staff.midiInstrument = #"alto sax" 
                             \clef "bass"
                             R1 * 6
                         }
@@ -647,6 +653,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            \set Staff.midiInstrument = #"bassoon" 
                             \clef "bass"
                             R1 * 6
                         }
@@ -720,6 +727,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
+                            \set Staff.midiInstrument = #"french horn" 
                             R1 * 6
                         }
                     }
@@ -789,6 +797,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            \set Staff.midiInstrument = #"trumpet" 
                             R1 * 6
                         }
                     }
@@ -858,6 +867,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
+                            \set Staff.midiInstrument = #"trombone" 
                             \clef "bass"
                             R1 * 6
                         }
@@ -931,6 +941,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
+                            \set Staff.midiInstrument = #"vibraphone" 
                             R1 * 6
                         }
                     }
@@ -1172,6 +1183,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Guitar }
                             \set Staff.shortInstrumentName = \markup { Gtr. }
+                            \set Staff.midiInstrument = #"electric guitar (clean)" 
                             R1 * 6
                         }
                     }
@@ -1241,6 +1253,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Bass Guitar" }
                             \set Staff.shortInstrumentName = \markup { Bgtr. }
+                            \set Staff.midiInstrument = #"electric bass (finger)" 
                             \clef "bass"
                             R1 * 6
                         }
@@ -1341,6 +1354,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
+                        \set Staff.midiInstrument = #"violin" 
                         e''4
                         ^ \markup { pizz }
                         r4
@@ -1428,6 +1442,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
+                        \set Staff.midiInstrument = #"violin" 
                         b''4
                         ^ \markup { pizz }
                         r4
@@ -1515,6 +1530,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
+                        \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         a4
                         ^ \markup { pizz }
@@ -1644,6 +1660,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
+                        \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         a4
                         ^ \markup { pizz }
@@ -1779,6 +1796,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
+                        \set Staff.midiInstrument = #"flute" 
                         b''1
                         :32
                         ^ \markup { f.t. }
@@ -1872,6 +1890,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
+                        \set Staff.midiInstrument = #"flute" 
                         b''1
                         :32
                         ^ \markup { f.t. }
@@ -1966,6 +1985,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
+                            \set Staff.midiInstrument = #"oboe" 
                             R1 * 6
                         }
                     }
@@ -2208,6 +2228,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
+                            \set Staff.midiInstrument = #"oboe" 
                             R1 * 6
                         }
                     }
@@ -2329,6 +2350,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
+                            \set Staff.midiInstrument = #"clarinet" 
                             R1 * 6
                         }
                     }
@@ -2515,6 +2537,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
+                            \set Staff.midiInstrument = #"clarinet" 
                             R1 * 6
                         }
                     }
@@ -2671,6 +2694,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            \set Staff.midiInstrument = #"bassoon" 
                             \clef "bass"
                             R1 * 6
                         }
@@ -2744,6 +2768,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
+                            \set Staff.midiInstrument = #"french horn" 
                             R1 * 6
                         }
                     }
@@ -2813,6 +2838,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            \set Staff.midiInstrument = #"trumpet" 
                             R1 * 6
                         }
                     }
@@ -2882,6 +2908,7 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
+                            \set Staff.midiInstrument = #"trombone" 
                             \clef "bass"
                             R1 * 6
                         }
@@ -3477,6 +3504,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         b''4
                         ^ \markup { pizz }
                         r4
@@ -3811,6 +3839,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         fs''4
                         ^ \markup { pizz }
                         r4
@@ -4052,6 +4081,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         e'4
                         ^ \markup { pizz }
                         r4
@@ -4348,6 +4378,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
                         \clef "bass"
                         a4
                         ^ \markup { pizz }
@@ -4633,6 +4664,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
+                        \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         a,4
                         ^ \markup { pizz }
@@ -5057,8 +5089,8 @@
                     <bf' f''>4
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     <g g'>4
                     (
                     <bf bf'>2
@@ -5153,8 +5185,8 @@
                     ]
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     c''4
                     (
                     ef''2
@@ -5264,8 +5296,8 @@
                         R1 * 7
                     }
                     r4
-                    ^ \markup { c.1 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.1 }
                     e'4
                     (
                     g'2
@@ -5282,8 +5314,8 @@
                     a'4
                     )
                     r4
-                    ^ \markup { p.1 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.1 }
                     e'4
                     (
                     c''8
@@ -5415,8 +5447,8 @@
                     <ef' ef''>2
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     f''8
                     ]
@@ -5565,8 +5597,8 @@
                     b'2
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     a'4
                     ~
                     (
@@ -5688,8 +5720,8 @@
                     g'4
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     g'4
                     (
                     a'4
@@ -5802,8 +5834,8 @@
                     a''2
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     g''4
                     (
                     d''4
@@ -5890,8 +5922,8 @@
                     bf''4
                     )
                     r8
-                    ^ \markup { c.6 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.6 }
                     [
                     af''8
                     ~
@@ -5949,8 +5981,8 @@
                     af''4
                     )
                     f'''16
-                    ^ \markup { p.5 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.5 }
                     [
                     (
                     ef'''8.
@@ -5969,8 +6001,8 @@
                     g'''4
                     )
                     r8
-                    ^ \markup { c.14 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.14 }
                     [
                     f'''8
                     ]
@@ -5992,8 +6024,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.16 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.16 }
                     [
                     g''8
                     ]
@@ -6083,8 +6115,8 @@
                     a,2
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     d8
                     ~
@@ -6204,8 +6236,8 @@
                         R1 * 1
                     }
                     <bf, bf>4
-                    ^ \markup { c.1 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.1 }
                     ~
                     (
                     <bf, bf>8
@@ -6234,8 +6266,8 @@
                     <f, f>4
                     )
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.1 }
                     [
                     <bf, bf>8
                     ]
@@ -6259,8 +6291,8 @@
                     <bf, bf>2
                     )
                     <f f'>4
-                    ^ \markup { c.5 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.5 }
                     (
                     <ef ef'>4
                     r16
@@ -6290,8 +6322,8 @@
                     <bf, bf>4
                     )
                     r16
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     [
                     <ef ef'>8.
                     ~
@@ -6321,8 +6353,8 @@
                     <bf, bf>4
                     )
                     <bf, bf>4
-                    ^ \markup { p.4 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.4 }
                     (
                     <c c'>4
                     <cs cs'>4
@@ -6478,14 +6510,14 @@
                     <b'' c'''>1
                     )
                     <b'' fs'''>1
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     (
                     <b'' fs'''>1
                     )
                     <e''' b'''>1
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     (
                     <e''' b'''>1
                     )
@@ -6523,8 +6555,8 @@
                     <a'' e'''>4
                     )
                     <a'' e'''>1
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     (
                     <a'' e'''>2
                     ~
@@ -6532,8 +6564,8 @@
                     <a'' e'''>4
                     )
                     <d''' a'''>1
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     (
                     <d''' a'''>2
                     ~
@@ -6578,16 +6610,16 @@
                     <bf'' a'''>4
                     )
                     <bf'' a'''>2
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     ~
                     (
                     <bf'' a'''>4
                     <bf'' a'''>4
                     )
                     <bf'' a'''>2
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     ~
                     (
                     <bf'' a'''>4
@@ -6608,8 +6640,8 @@
                     <c''' bf'''>4
                     )
                     <c''' bf'''>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     (
                     <c''' bf'''>4
                     <c''' bf'''>4
@@ -6622,32 +6654,32 @@
                     <c''' bf'''>4
                     )
                     <c''' c''''>4
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     (
                     <c''' c''''>4
                     <c''' c''''>4
                     <c''' c''''>4
                     )
                     <c''' c''''>4
-                    ^ \markup { p.9 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.9 }
                     (
                     <c''' c''''>4
                     <c''' c''''>4
                     <c''' c''''>4
                     )
                     <c''' c''''>4
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     (
                     <c''' c''''>4
                     <c''' c''''>4
                     <c''' c''''>4
                     )
                     <c''' c''''>4
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     (
                     <c''' c''''>4
                     <c''' c''''>4
@@ -6683,8 +6715,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     [
                     (
                     <c''' c''''>8
@@ -6696,8 +6728,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     [
                     (
                     <c''' c''''>8
@@ -6735,8 +6767,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     [
                     (
                     <c''' c''''>8
@@ -6756,32 +6788,32 @@
                     <cs''' cs''''>4
                     )
                     <cs''' cs''''>4
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     (
                     <cs''' cs''''>4
                     <cs''' cs''''>4
                     <cs''' cs''''>4
                     )
                     <cs''' cs''''>4
-                    ^ \markup { p.9 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.9 }
                     (
                     <cs''' cs''''>4
                     <cs''' cs''''>4
                     <cs''' cs''''>4
                     )
                     <cs''' cs''''>4
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     (
                     <cs''' cs''''>4
                     <cs''' cs''''>4
                     <cs''' cs''''>4
                     )
                     <cs''' cs''''>4
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     (
                     <cs''' cs''''>4
                     <cs''' cs''''>4
@@ -6871,14 +6903,14 @@
                     <e, a,>1
                     )
                     <e, a,>1
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     (
                     <e, a,>1
                     )
                     <e, a,>1
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     (
                     <e, a,>1
                     )
@@ -6904,11 +6936,11 @@
                     ^ \markup { c.1 }
                     ^ \markup { p.1 }
                     <f, d>1
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     <g, d>1
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     <f, d>1
                     ^ \markup { c.4 }
                     ^ \markup { p.4 }
@@ -6916,23 +6948,23 @@
                     ^ \markup { c.5 }
                     ^ \markup { p.5 }
                     <f, d>1
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     <g, d>1
                     ^ \markup { p.7 }
                     ^ \markup { c.7 }
                     <f, d>1
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     <g, d>1
-                    ^ \markup { p.9 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.9 }
                     <f, d>1
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     <g, d>1
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                 }
                 {
                     \accidentalStyle neo-modern-cautionary
@@ -6949,14 +6981,14 @@
                     <d, g,>2
                     )
                     <c, g,>2
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     (
                     <c, g,>2
                     )
                     <d, g,>2
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     (
                     <d, g,>2
                     )
@@ -6973,8 +7005,8 @@
                     <d, g,>2
                     )
                     <c, g,>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     (
                     <c, g,>2
                     )
@@ -6985,26 +7017,26 @@
                     <d, g,>2
                     )
                     <c, g,>2
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     (
                     <c, g,>2
                     )
                     <d, g,>2
-                    ^ \markup { p.9 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.9 }
                     (
                     <d, g,>2
                     )
                     <c, g,>2
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     (
                     <c, g,>2
                     )
                     <d, g,>2
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     (
                     <d, g,>2
                     )
@@ -7028,16 +7060,16 @@
                     <g,, g,>4
                     )
                     <g,, g,>2
-                    ^ \markup { c.2 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.2 }
                     ~
                     (
                     <g,, g,>4
                     <g,, g,>4
                     )
                     <g,, g,>2
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     <af,, af,>2
                     ^ \markup { c.4 }
                     ^ \markup { p.4 }
@@ -7045,33 +7077,33 @@
                     ^ \markup { c.5 }
                     ^ \markup { p.5 }
                     <af,, af,>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     <g,, g,>2
                     ^ \markup { p.7 }
                     ^ \markup { c.7 }
                     <af,, af,>2
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     <af,, af,>2
-                    ^ \markup { p.9 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.9 }
                     ~
                     (
                     <af,, af,>4
                     <af,, af,>4
                     )
                     <af,, af,>2
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     ~
                     (
                     <af,, af,>4
                     <af,, af,>4
                     )
                     <af,, af,>2
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     ~
                     (
                     <af,, af,>4
@@ -7090,11 +7122,11 @@
                     ^ \markup { c.15 }
                     ^ \markup { p.15 }
                     <bf,, bf,>2
-                    ^ \markup { c.16 }
                     ^ \markup { p.16 }
+                    ^ \markup { c.16 }
                     <af,, af,>2
-                    ^ \markup { c.17 }
                     ^ \markup { p.17 }
+                    ^ \markup { c.17 }
                 }
             }
         >>

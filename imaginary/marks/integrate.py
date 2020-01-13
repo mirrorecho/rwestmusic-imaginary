@@ -316,7 +316,12 @@ def block2(lib):
                 line_pitches=(-9,),
                 phrase_rhythm = (4*10,),
                 phrase_count = 1,
-                ).bookend_pad(4)],
+                ).bookend_pad(4),
+            drone.DroneLine(
+                line_pitches=( (-22,-9), ),
+                phrase_rhythm = (8*4,),
+                phrase_count = 1,
+                ),],
         )
     sb.fill_rests()
     return sb
@@ -328,6 +333,16 @@ def block3(lib):
         melody_line2 = lib("home_b_aup4").t(8).sc(0.5).move_t(),
         counter_line = lib("counter_long_imod").t(8).sc(0.5).move_t(),
         mid_drones = [lib("home_a_b").t(8),],
+        bass_drones = [drone.DroneLine(
+                line_pitches=((-23,-9),),
+                phrase_rhythm = (8*4,),
+                phrase_count = 1,
+                ),
+            drone.DroneLine(
+                line_pitches=( (-21,-11), ),
+                phrase_rhythm = (8*4,),
+                phrase_count = 1,
+                ),],
         )
     sb.fill_rests()
     for ln in sb.lines:
@@ -341,6 +356,16 @@ def block4(lib):
         counter_line = lib("counter_long_imod").t(6).sc(0.5).move_t(),
         bass_line = lib("bass_line").sc(0.5).t(6).move_t().pop_from("cells", 14, 15, 18, 19),
         mid_drones = [lib("home_a_b").t(6),],
+        bass_drones = [drone.DroneLine(
+                line_pitches=((-21,-16,-11),),
+                phrase_rhythm = (8*4,),
+                phrase_count = 1,
+                ),
+            drone.DroneLine(
+                line_pitches=( (-22,-15,-8), ),
+                phrase_rhythm = (8*4,),
+                phrase_count = 1,
+                ),],
         )
     sb.fill_rests()
     for ln in sb.lines:
@@ -361,6 +386,12 @@ def block5(lib):
             lib("integrate_riff_up_down").t(2).bookend_pad(2).mul(2),
             # ImaginaryLine
             # RIFF().t(2).ext(RIFF_REVERSED().ts(1).t(2)).bookend_pad(2).mul(4),
+            ],
+        bass_drones = [ drone.DroneLine(
+                line_pitches=( (-22,-15,-8), ),
+                phrase_rhythm = (16*4,),
+                phrase_count = 1,
+                ),
             ]
         )
     sb.fill_rests()
@@ -383,6 +414,17 @@ def block6(lib):
             lib("integrate_riff_up_down").t(0).bookend_pad(2).mul(2),
             # ImaginaryLine
             # RIFF().t(2).ext(RIFF_REVERSED().ts(1).t(2)).bookend_pad(2).mul(4),
+            ],
+        bass_drones = [ drone.DroneLine(
+                line_pitches=( (-22,-15,-8), ),
+                phrase_rhythm = (8*4,),
+                phrase_count = 1,
+                ),
+            drone.DroneLine(
+                    line_pitches=( (-24,-17,-10), ),
+                    phrase_rhythm = (8*4,),
+                    phrase_count = 1,
+                    ),
             ]
         )
     sb.fill_rests()
@@ -441,14 +483,14 @@ def block9(lib):
 
 def score_short(lib):
     b = short_block.get_block()
-    b.extend_from(lib["integrate_block0"])
-    b.extend_from(lib["integrate_block1"])
+    # b.extend_from(lib["integrate_block0"])
+    # b.extend_from(lib["integrate_block1"])
     # b.extend_from(lib["integrate_block2"])
     # b.extend_from(lib["integrate_block3"])
     # b.extend_from(lib["integrate_block4"])
-    # b.extend_from(lib["integrate_block5"]) # TO DO: the riff SSUUCCKKSS!!!! here!!!
+    # b.extend_from(lib["integrate_block5"]) 
     # b.extend_from(lib["integrate_block6"])
-    # b.extend_from(lib["integrate_block7"])
+    b.extend_from(lib["integrate_block7"])
     # b.extend_from(lib["integrate_block8"])
     # b.extend_from(lib["integrate_block9"])
 

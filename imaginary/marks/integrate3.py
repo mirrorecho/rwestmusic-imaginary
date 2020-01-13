@@ -27,10 +27,11 @@ from imaginary.marks import integrate
 def score3(lib):
     s = score.ImaginaryScore()
     sb = lib("integrate_block3")
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
 
     counter_me = lambda_segment.LambdaSegments(
         sb.with_only("counter_line"),

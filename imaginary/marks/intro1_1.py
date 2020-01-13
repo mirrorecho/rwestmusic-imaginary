@@ -26,14 +26,14 @@ def block1(lib):
             instruction="repeat hairpin"
             )
     b1["ooa_flute"].eps(
-                1,5, "ppp")(
+                1,6, "ppp")(
                 1, "\\<",)(
                 3, "mp","\\>",)()
 
     b1["ooa_clarinet"].machine_arrow(ImaginaryCell(
             rhythm=(1,1,1,1,1, 0.25,0.25,0.25,0.25,2), 
             pitches=(11,12,14,16,17,11,12,14,16,17)).eps(
-            0, "improvise on these pitches")(
+            0, "markup_column:improvise on|these pitches")(
             0,1,2,3,4, "\\once \\hide Stem")(
             5, "(", "markup_column:making use of|this figure")(
             9, ")", "fermata")(),

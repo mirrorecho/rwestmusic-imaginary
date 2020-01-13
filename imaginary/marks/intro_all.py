@@ -1,6 +1,6 @@
 import abjad, calliope 
 from imaginary.stories import library
-import intro0, intro1_0, intro1_1, intro1_2
+from imaginary.marks import intro0, intro1_0, intro1_1, intro1_2
 
 def intro_score(lib):
     # referring to items in the library (as opposed to calling by name)
@@ -11,12 +11,14 @@ def intro_score(lib):
     sc.extend_from(lib["intro1_score2"])
     return sc
 
-if __name__ == '__main__':
-    lib = library.Library()
+def to_lib(lib):
     intro0.to_lib(lib)
     intro1_0.to_lib(lib)
     intro1_1.to_lib(lib)
     intro1_2.to_lib(lib)
-    calliope.illustrate(
-        intro_score(lib)
-        )
+    lib.add(intro_score)
+
+if __name__ == '__main__':
+    lib = library.Library()
+    to_lib(lib)
+    calliope.illustrate(lib["intro_score"])

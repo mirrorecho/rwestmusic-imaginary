@@ -26,56 +26,57 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Flute }
                             \set Staff.shortInstrumentName = \markup { Fl. }
+                            \set Staff.midiInstrument = #"flute" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mp
@@ -99,18 +100,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         b''8
                         \mp
                         [
@@ -133,13 +134,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -181,12 +182,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef''8
@@ -225,7 +226,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         f'''4
@@ -298,7 +299,7 @@
                         \!
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -314,7 +315,7 @@
                         \fermata
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -339,7 +340,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f''8
@@ -355,7 +356,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a'8
@@ -393,7 +394,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -433,13 +434,13 @@
                         [
                         fs'''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -485,18 +486,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -516,12 +517,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -569,26 +570,88 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        c''8
+                        [
+                        f''8
+                        ]
+                        gf''8
+                        [
+                        df''8
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        ]
+                        f''8
+                        [
+                        gf''8
+                        ]
+                        c'''8
+                        [
+                        af''8
+                        ]
+                        bf''8
+                        [
+                        c'''8
+                        ~
+                        ]
+                        c'''4
+                        gf'''8
+                        [
+                        af'''8
+                        ]
+                        bf'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -600,56 +663,57 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
+                            \set Staff.midiInstrument = #"clarinet" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e''8
                         \mp
@@ -673,18 +737,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e''8
                         \mp
                         [
@@ -707,13 +771,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -755,12 +819,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef''8
@@ -800,12 +864,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         c'8
@@ -886,14 +950,14 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r1
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -909,7 +973,7 @@
                         \fermata
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -934,7 +998,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -950,7 +1014,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -988,7 +1052,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -1028,13 +1092,13 @@
                         [
                         b''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1080,18 +1144,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1111,12 +1175,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1164,12 +1228,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -1263,14 +1327,103 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        af4
+                        df'8
+                        [
+                        b8
+                        ]
+                        ef'8
+                        [
+                        f'8
+                        ~
+                        ]
+                        f'8
+                        [
+                        gf'8
+                        ]
+                        b8
+                        [
+                        df'8
+                        ~
+                        ]
+                        df'8
+                        [
+                        f'8
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        bf'4
+                        af'8
+                        [
+                        gf'8
+                        ]
+                        f'8
+                        [
+                        ef'8
+                        ~
+                        ]
+                        ef'8
+                        [
+                        gf8
+                        ]
+                        af8
+                        [
+                        f8
+                        ]
+                        gf8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf4
+                        ef'8
+                        [
+                        af'8
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -1282,74 +1435,75 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
+                            \set Staff.midiInstrument = #"alto sax" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         gs'8
                         \mp
                         [
@@ -1372,13 +1526,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -1418,8 +1572,8 @@
                         c'8
                         [
                         f'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         f'4
@@ -1428,12 +1582,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         b8
@@ -1473,12 +1627,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         c'8
@@ -1559,14 +1713,14 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r1
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -1582,7 +1736,7 @@
                         \fermata
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -1607,7 +1761,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -1623,7 +1777,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -1661,7 +1815,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e'8
@@ -1701,13 +1855,13 @@
                         [
                         d''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1753,18 +1907,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1784,13 +1938,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                         ef'8
@@ -1815,12 +1969,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -1914,7 +2068,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -1957,8 +2111,78 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ef'8
+                        [
+                        af8
+                        ]
+                        bf8
+                        [
+                        df'8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ~
+                        ]
+                        f4
+                        gf4
+                        ef8
+                        [
+                        f8
+                        ~
+                        ]
+                        f8
+                        [
+                        gf8
+                        ]
+                        df'8
+                        [
+                        ef'8
+                        ]
+                        gf'8
+                        [
+                        f'8
+                        ]
+                        c''8
+                        [
+                        f''8
+                        ]
+                        gf''8
+                        [
+                        af''8
+                        ]
+                        g''8
+                        [
+                        f''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -1970,74 +2194,75 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
+                            \set Staff.midiInstrument = #"alto sax" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         gs'8
                         \mp
                         [
@@ -2060,13 +2285,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -2106,8 +2331,8 @@
                         gf'8
                         [
                         bf8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         bf4
@@ -2116,12 +2341,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         af8
@@ -2161,12 +2386,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef8
@@ -2247,14 +2472,14 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r1
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -2270,7 +2495,7 @@
                         \fermata
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -2295,7 +2520,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -2311,7 +2536,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -2349,7 +2574,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -2389,13 +2614,13 @@
                         [
                         d'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -2441,18 +2666,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -2472,13 +2697,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                         c'8
@@ -2503,12 +2728,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a8
                         [
@@ -2593,7 +2818,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -2636,8 +2861,67 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        g'8
+                        [
+                        ef'8
+                        ]
+                        df'8
+                        [
+                        c'8
+                        ]
+                        ef'4
+                        c'4
+                        fs'8
+                        [
+                        cs'8
+                        ]
+                        g4
+                        f8
+                        [
+                        gf8
+                        ]
+                        af4
+                        gf8
+                        [
+                        d'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        df''8
+                        [
+                        af'8
+                        ]
+                        bf'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -2649,74 +2933,75 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Tsax. }
+                            \set Staff.midiInstrument = #"alto sax" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         df'8
                         \mp
                         [
@@ -2739,13 +3024,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -2785,8 +3070,8 @@
                         a8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -2795,12 +3080,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         af8
@@ -2840,12 +3125,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef8
@@ -2926,14 +3211,14 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r1
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -2949,7 +3234,7 @@
                         \fermata
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -2974,7 +3259,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -2990,7 +3275,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -3028,7 +3313,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -3068,13 +3353,13 @@
                         [
                         b8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -3120,18 +3405,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3151,13 +3436,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                         g'8
@@ -3182,13 +3467,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         a8
@@ -3273,7 +3558,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -3316,8 +3601,69 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        bf8
+                        [
+                        b8
+                        ]
+                        af4
+                        b8
+                        [
+                        bf8
+                        ]
+                        f4
+                        b,8
+                        [
+                        df8
+                        ]
+                        af8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf8
+                        [
+                        df'8
+                        ]
+                        af8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf4
+                        c'4
+                        df'8
+                        [
+                        ef'8
+                        ]
+                        f'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -3329,75 +3675,76 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
+                            \set Staff.midiInstrument = #"alto sax" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         ds8
                         \mp
                         [
@@ -3420,13 +3767,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -3466,8 +3813,8 @@
                         gf,8
                         [
                         f,8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         f,4
@@ -3476,12 +3823,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         b8
@@ -3521,12 +3868,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         g,8
@@ -3607,7 +3954,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r1
@@ -3615,12 +3962,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -3645,7 +3992,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f,8
@@ -3661,7 +4008,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,,8
@@ -3699,7 +4046,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e8
@@ -3739,13 +4086,13 @@
                         [
                         fs,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -3791,18 +4138,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3822,13 +4169,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -3862,19 +4209,19 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -3917,8 +4264,99 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        f8
+                        [
+                        gf8
+                        ]
+                        af4
+                        ~
+                        af8
+                        [
+                        f8
+                        ]
+                        ef4
+                        df8
+                        [
+                        gf,8
+                        ~
+                        ]
+                        gf,8
+                        [
+                        bf,8
+                        ]
+                        c8
+                        [
+                        af8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ]
+                        af8
+                        [
+                        c'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        as8
+                        [
+                        fs8
+                        ]
+                        cs8
+                        [
+                        ds8
+                        ~
+                        ]
+                        ds8
+                        [
+                        d8
+                        ]
+                        a,4
+                        ef,8
+                        [
+                        f,8
+                        ]
+                        ef,4
+                        d,8
+                        [
+                        ef,8
+                        ]
+                        f,8
+                        [
+                        g,8
+                        ]
+                        df8
+                        [
+                        f8
+                        ]
+                        g4
+                        bf8
+                        [
+                        f8
+                        ]
+                        d4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -3930,81 +4368,82 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            \set Staff.midiInstrument = #"bassoon" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         cs8
@@ -4107,18 +4546,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         g,8
@@ -4199,7 +4638,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r1
@@ -4207,12 +4646,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -4237,7 +4676,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f,8
@@ -4253,7 +4692,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,,8
@@ -4291,7 +4730,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e8
@@ -4331,13 +4770,13 @@
                         [
                         fs,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -4383,18 +4822,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4414,13 +4853,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -4454,18 +4893,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -4541,8 +4980,101 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        gs8
+                        [
+                        a8
+                        ]
+                        b,8
+                        [
+                        as,8
+                        ]
+                        e8
+                        [
+                        cs8
+                        ]
+                        af,8
+                        [
+                        bf,8
+                        ]
+                        b,4
+                        bf,8
+                        [
+                        af,8
+                        ~
+                        ]
+                        af,8
+                        [
+                        a,8
+                        ]
+                        b,8
+                        [
+                        c8
+                        ]
+                        e8
+                        [
+                        ef8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        g8
+                        [
+                        e8
+                        ]
+                        f4
+                        b,8
+                        [
+                        g,8
+                        ]
+                        d,4
+                        ef,8
+                        [
+                        bf,8
+                        ]
+                        c8
+                        [
+                        d8
+                        ~
+                        ]
+                        d8
+                        [
+                        bf,8
+                        ]
+                        c4
+                        bf,8
+                        [
+                        a,8
+                        ]
+                        a4
+                        bf8
+                        [
+                        c'8
+                        ]
+                        bf8
+                        [
+                        c'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -4557,62 +5089,63 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
+                            \set Staff.midiInstrument = #"french horn" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d'2
                         \p
                         ~
@@ -4712,12 +5245,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4755,14 +5288,14 @@
                         e8
                         [
                         g8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         g4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r2
@@ -4770,24 +5303,24 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -4804,12 +5337,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e'8
@@ -4849,12 +5382,12 @@
                         [
                         b'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c'4
                         \mf
                         -\staccato
@@ -4890,7 +5423,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4910,38 +5443,100 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f8
+                        [
+                        a8
+                        ]
+                        ef'8
+                        [
+                        f'8
+                        ]
+                        ef'8
+                        [
+                        d'8
+                        ~
+                        ]
+                        d'8
+                        [
+                        ef'8
+                        ]
+                        f'8
+                        [
+                        g'8
+                        ]
+                        bf'8
+                        [
+                        a'8
+                        ]
+                        g'4
+                        bf'8
+                        [
+                        ef''8
+                        ]
+                        f''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -4953,86 +5548,87 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            \set Staff.midiInstrument = #"trumpet" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5070,14 +5666,14 @@
                         ef'8
                         [
                         g'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         g'4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r2
@@ -5085,24 +5681,24 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -5119,12 +5715,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -5164,12 +5760,12 @@
                         [
                         d''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         g'4
                         \mf
                         -\staccato
@@ -5205,7 +5801,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5225,19 +5821,19 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                         r2
@@ -5258,26 +5854,85 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f'4
+                        gf'4
+                        af'8
+                        [
+                        bf'8
+                        ~
+                        ]
+                        bf'8
+                        [
+                        gf'8
+                        ]
+                        af'8
+                        [
+                        c''8
+                        ]
+                        df''8
+                        [
+                        f''8
+                        ]
+                        c''4
+                        bf'8
+                        [
+                        f''8
+                        ]
+                        bf''8
+                        [
+                        c'''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -5289,87 +5944,88 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
+                            \set Staff.midiInstrument = #"trombone" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5407,14 +6063,14 @@
                         b8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r2
@@ -5422,24 +6078,24 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -5456,12 +6112,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -5501,12 +6157,12 @@
                         [
                         d,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d'4
                         \mf
                         -\staccato
@@ -5542,7 +6198,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5562,38 +6218,93 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c8
+                        [
+                        e8
+                        ]
+                        b8
+                        [
+                        gs8
+                        ]
+                        e8
+                        [
+                        gs8
+                        ]
+                        d4
+                        e8
+                        [
+                        fs8
+                        ]
+                        cs'8
+                        [
+                        d'8
+                        ]
+                        ds'8
+                        [
+                        e'8
+                        ]
+                        as8
+                        [
+                        gs8
+                        ]
+                        fs8
+                        [
+                        as8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -5608,50 +6319,51 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
+                            \set Staff.midiInstrument = #"vibraphone" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <a a'>8
                         \mf
                         ^ \markup { "hard mallets" }
@@ -5834,96 +6546,96 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <g c'>8
                         \f
                         [
@@ -6024,20 +6736,54 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -6048,7 +6794,7 @@
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Drum Set" }
                         \set Staff.shortInstrumentName = \markup { Drum. }
                         <c c'>4
@@ -6096,182 +6842,216 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -6286,20 +7066,21 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Guitar }
                             \set Staff.shortInstrumentName = \markup { Gtr. }
+                            \set Staff.midiInstrument = #"electric guitar (clean)" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a8
                         \mp
                         [
@@ -6546,7 +7327,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         bf'8
@@ -6643,134 +7424,168 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -6782,39 +7597,40 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Bass Guitar" }
                             \set Staff.shortInstrumentName = \markup { Bgtr. }
+                            \set Staff.midiInstrument = #"electric bass (finger)" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <a, e>2
                         \mf
                         ~
@@ -6845,7 +7661,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <d a>2
                         ~
                         <d a>4
@@ -6920,7 +7736,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         df8
@@ -7023,91 +7839,91 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                         bf,2
@@ -7190,20 +8006,21 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 1" }
                             \set Staff.shortInstrumentName = \markup { Vln.1 }
+                            \set Staff.midiInstrument = #"violin" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c''4
                         \mf
                         ^ \markup { pizz }
@@ -7248,18 +8065,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c'8
                         -\tenuto
                         [
@@ -7407,60 +8224,60 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -7498,7 +8315,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -7538,13 +8355,13 @@
                         [
                         fs'''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -7590,18 +8407,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -7621,13 +8438,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         af'8
@@ -7668,19 +8485,19 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -7723,8 +8540,97 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        c'4
+                        a8
+                        [
+                        e'8
+                        ]
+                        fs'8
+                        [
+                        gs'8
+                        ~
+                        ]
+                        gs'8
+                        [
+                        e'8
+                        ~
+                        ]
+                        e'8
+                        [
+                        fs'8
+                        ]
+                        b'8
+                        [
+                        cs''8
+                        ]
+                        gs'8
+                        [
+                        as'8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        cs''8
+                        [
+                        gs''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        af'8
+                        [
+                        b'8
+                        ]
+                        gf'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'8
+                        [
+                        ef''8
+                        ~
+                        ]
+                        ef''8
+                        [
+                        d''8
+                        ]
+                        b''4
+                        cs'''8
+                        [
+                        ds'''8
+                        ]
+                        bf''8
+                        [
+                        b''8
+                        ]
+                        df'''8
+                        [
+                        ef'''8
+                        ~
+                        ]
+                        ef'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -7736,20 +8642,21 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.2 }
+                            \set Staff.midiInstrument = #"violin" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c''4
                         \mf
                         ^ \markup { pizz }
@@ -7794,18 +8701,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         f'8
                         -\tenuto
                         [
@@ -7953,60 +8860,60 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -8044,7 +8951,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -8084,30 +8991,30 @@
                         [
                         fs'''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -8127,13 +9034,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         f'8
@@ -8174,19 +9081,19 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -8229,8 +9136,86 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        gs'8
+                        [
+                        as'8
+                        ]
+                        e'8
+                        [
+                        gs'8
+                        ]
+                        fs'8
+                        [
+                        ds'8
+                        ]
+                        cs'4
+                        gs'4
+                        e''8
+                        [
+                        cs''8
+                        ]
+                        bf'4
+                        b'8
+                        [
+                        gf'8
+                        ]
+                        bf'8
+                        [
+                        c''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        gs'8
+                        [
+                        a'8
+                        ]
+                        ds''8
+                        [
+                        cs''8
+                        ]
+                        b'8
+                        [
+                        gs''8
+                        ]
+                        bf''4
+                        b''8
+                        [
+                        gf''8
+                        ]
+                        af''8
+                        [
+                        bf''8
+                        ]
+                        ef'''8
+                        [
+                        b''8
+                        ]
+                        af''4
+                        b''8
+                        [
+                        bf''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -8242,21 +9227,22 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Cello 1" }
                             \set Staff.shortInstrumentName = \markup { Vc.1 }
+                            \set Staff.midiInstrument = #"cello" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a4
                         \mf
                         ^ \markup { pizz }
@@ -8301,78 +9287,78 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -8410,7 +9396,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -8450,13 +9436,13 @@
                         [
                         b,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -8502,18 +9488,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -8533,13 +9519,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -8573,18 +9559,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e'8
                         [
                         (
@@ -8660,8 +9646,91 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        gs8
+                        [
+                        e8
+                        ~
+                        ]
+                        e8
+                        [
+                        cs8
+                        ]
+                        b,8
+                        [
+                        gs,8
+                        ]
+                        as,8
+                        [
+                        ds8
+                        ]
+                        a,8
+                        [
+                        b,8
+                        ]
+                        cs8
+                        [
+                        ds8
+                        ~
+                        ]
+                        ds8
+                        [
+                        e8
+                        ]
+                        b8
+                        [
+                        cs'8
+                        ]
+                        fs'8
+                        [
+                        gs'8
+                        ]
+                        d4
+                        b,4
+                        f,8
+                        [
+                        g,8
+                        ~
+                        ]
+                        g,8
+                        [
+                        e,8
+                        ]
+                        f,8
+                        [
+                        c8
+                        ]
+                        b,8
+                        [
+                        f8
+                        ~
+                        ]
+                        f4
+                        b8
+                        [
+                        f'8
+                        ]
+                        g'4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -8673,21 +9742,22 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Cello 2" }
                             \set Staff.shortInstrumentName = \markup { Vc.2 }
+                            \set Staff.midiInstrument = #"cello" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         bf4
                         \mf
                         ^ \markup { pizz }
@@ -8732,78 +9802,78 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -8841,7 +9911,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -8881,30 +9951,30 @@
                         [
                         b,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -8924,13 +9994,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -8964,18 +10034,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -9051,8 +10121,95 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        f'8
+                        [
+                        df'8
+                        ]
+                        af8
+                        [
+                        f8
+                        ]
+                        df8
+                        [
+                        f,8
+                        ]
+                        g,4
+                        af,8
+                        [
+                        ef8
+                        ]
+                        bf,8
+                        [
+                        c8
+                        ~
+                        ]
+                        c8
+                        [
+                        df8
+                        ]
+                        ef8
+                        [
+                        af8
+                        ]
+                        ef'8
+                        [
+                        c'8
+                        ]
+                        g8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
+                        [
+                        d8
+                        ]
+                        bf,8
+                        [
+                        b,8
+                        ]
+                        gf,8
+                        [
+                        af,8
+                        ]
+                        b,8
+                        [
+                        g8
+                        ]
+                        a4
+                        b8
+                        [
+                        cs'8
+                        ]
+                        gs8
+                        [
+                        d'8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -9070,26 +10227,27 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Flute 1" }
                             \set Staff.shortInstrumentName = \markup { Fl.1 }
+                            \set Staff.midiInstrument = #"flute" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c''8
                         \p
                         [
@@ -9110,7 +10268,7 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a''8
                         \p
@@ -9134,12 +10292,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c''8
                         \mp
@@ -9175,18 +10333,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e''8
                         \mp
@@ -9210,12 +10368,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e'''2
                         \p
                         ~
@@ -9267,13 +10425,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -9315,18 +10473,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         f'''2
                         \mp
                         \<
@@ -9380,48 +10538,48 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         gs'8
                         \mp
@@ -9465,12 +10623,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -9489,7 +10647,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -9537,7 +10695,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                         e'''1
@@ -9607,8 +10765,45 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 13
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        bf'4
+                        b'4
+                        bf'4
+                        c''8
+                        [
+                        df''8
+                        ]
+                        ef''8
+                        [
+                        c''8
+                        ]
+                        af''4
+                        f''4
+                        af''8
+                        [
+                        bf''8
+                        ]
+                        f'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -9620,26 +10815,27 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Flute 2" }
                             \set Staff.shortInstrumentName = \markup { Fl.2 }
+                            \set Staff.midiInstrument = #"flute" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e'8
                         \p
                         [
@@ -9660,7 +10856,7 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \p
@@ -9684,12 +10880,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mp
@@ -9725,18 +10921,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mp
@@ -9760,12 +10956,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r4
                         e'''4
                         \p
@@ -9821,13 +11017,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -9869,18 +11065,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         f'''2
                         \mp
@@ -9929,48 +11125,48 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
@@ -10014,12 +11210,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -10038,7 +11234,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -10086,7 +11282,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                         r4
@@ -10160,8 +11356,54 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 13
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        gs''8
+                        [
+                        g''8
+                        ]
+                        gs''8
+                        [
+                        e''8
+                        ]
+                        fs''8
+                        [
+                        ds''8
+                        ]
+                        gs''8
+                        [
+                        e''8
+                        ]
+                        ds''4
+                        fs''8
+                        [
+                        ds''8
+                        ]
+                        bf''4
+                        gf''4
+                        af''8
+                        [
+                        bf''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -10173,26 +11415,27 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
+                            \set Staff.midiInstrument = #"oboe" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e''8
                         \p
                         [
@@ -10213,7 +11456,7 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c''8
                         \p
@@ -10237,12 +11480,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
@@ -10278,30 +11521,30 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         fs'8
                         -\tenuto
                         [
@@ -10431,90 +11674,90 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -10534,7 +11777,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         af'8
@@ -10575,18 +11818,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e'8
                         [
                         (
@@ -10662,8 +11905,86 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        g'8
+                        [
+                        bf'8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        df''8
+                        [
+                        c''8
+                        ~
+                        ]
+                        c''8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'8
+                        [
+                        f''8
+                        ]
+                        ef''8
+                        [
+                        c''8
+                        ]
+                        g''8
+                        [
+                        f''8
+                        ]
+                        ef''4
+                        f''8
+                        [
+                        g''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        a'8
+                        [
+                        as'8
+                        ]
+                        b'8
+                        [
+                        cs''8
+                        ]
+                        g''4
+                        d''8
+                        [
+                        b'8
+                        ]
+                        ds''4
+                        fs''8
+                        [
+                        d''8
+                        ]
+                        a''4
+                        cs'''4
+                        d'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -10675,26 +11996,27 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
+                            \set Staff.midiInstrument = #"oboe" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         \p
                         [
@@ -10715,7 +12037,7 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \p
@@ -10739,12 +12061,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c''8
                         \mp
@@ -10780,30 +12102,30 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs''8
                         -\tenuto
@@ -10928,90 +12250,90 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -11031,7 +12353,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         f'8
@@ -11072,18 +12394,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         df''8
                         [
                         (
@@ -11159,8 +12481,91 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        ds'4
+                        e'8
+                        [
+                        gs'8
+                        ]
+                        cs''8
+                        [
+                        ds''8
+                        ~
+                        ]
+                        ds''8
+                        [
+                        gs''8
+                        ]
+                        fs''8
+                        [
+                        gs''8
+                        ]
+                        e''8
+                        [
+                        c''8
+                        ]
+                        d''4
+                        b'8
+                        [
+                        cs''8
+                        ~
+                        ]
+                        cs''8
+                        [
+                        d''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        d''8
+                        [
+                        c''8
+                        ]
+                        b'8
+                        [
+                        bf'8
+                        ~
+                        ]
+                        bf'4
+                        ~
+                        bf'4
+                        af'8
+                        [
+                        bf'8
+                        ]
+                        df''8
+                        [
+                        bf'8
+                        ]
+                        e''4
+                        fs''8
+                        [
+                        gs''8
+                        ]
+                        ds''8
+                        [
+                        a''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -11172,26 +12577,27 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
+                            \set Staff.midiInstrument = #"clarinet" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'8
                         \p
                         [
@@ -11212,7 +12618,7 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \p
@@ -11236,12 +12642,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mp
@@ -11277,18 +12683,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c''8
                         \mp
@@ -11312,12 +12718,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         fs'8
                         -\tenuto
                         [
@@ -11447,13 +12853,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -11495,72 +12901,72 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         df'8
                         \mp
@@ -11604,12 +13010,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -11628,7 +13034,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -11676,12 +13082,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         [
@@ -11766,14 +13172,86 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ef'4
+                        d'8
+                        [
+                        a8
+                        ]
+                        bf8
+                        [
+                        c'8
+                        ]
+                        f'8
+                        [
+                        d'8
+                        ]
+                        af8
+                        [
+                        bf8
+                        ]
+                        af4
+                        ef'4
+                        af'4
+                        bf'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ef'8
+                        [
+                        f'8
+                        ]
+                        ef'4
+                        af8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf8
+                        [
+                        af8
+                        ]
+                        bf8
+                        [
+                        af8
+                        ]
+                        gf'8
+                        [
+                        bf'8
+                        ]
+                        c''4
+                        ef''8
+                        [
+                        bf''8
+                        ~
+                        ]
+                        bf''4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -11785,26 +13263,27 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
+                            \set Staff.midiInstrument = #"clarinet" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c'8
                         \p
                         [
@@ -11825,7 +13304,7 @@
                         r4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \p
@@ -11849,12 +13328,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mp
@@ -11890,18 +13369,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c''8
                         \mp
@@ -11925,12 +13404,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         fs'8
                         -\tenuto
@@ -12055,13 +13534,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -12103,72 +13582,72 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         af8
                         \mp
@@ -12212,12 +13691,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -12236,7 +13715,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -12284,13 +13763,13 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         a'8
@@ -12375,14 +13854,88 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        cs'8
+                        [
+                        ds'8
+                        ]
+                        fs'8
+                        [
+                        e'8
+                        ]
+                        b8
+                        [
+                        gs'8
+                        ~
+                        ]
+                        gs'8
+                        [
+                        a'8
+                        ]
+                        e'8
+                        [
+                        f'8
+                        ]
+                        a'8
+                        [
+                        f'8
+                        ]
+                        ds'8
+                        [
+                        g'8
+                        ]
+                        e'4
+                        fs'8
+                        [
+                        ds'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f'4
+                        gf'4
+                        af'8
+                        [
+                        f'8
+                        ]
+                        g'8
+                        [
+                        ef'8
+                        ]
+                        df'4
+                        ef'4
+                        f'4
+                        gf'4
+                        ef''8
+                        [
+                        f''8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -12394,33 +13947,34 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            \set Staff.midiInstrument = #"bassoon" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c'8
                         \p
@@ -12444,12 +13998,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e8
                         \mp
@@ -12485,42 +14039,42 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         df8
@@ -12623,66 +14177,66 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e,8
                         \mp
@@ -12726,12 +14280,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -12751,7 +14305,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -12785,18 +14339,18 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         cs'8
                         [
                         (
@@ -12872,8 +14426,104 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        cs8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        fs8
+                        ]
+                        a8
+                        [
+                        gs8
+                        ]
+                        c8
+                        [
+                        as,8
+                        ]
+                        e,8
+                        [
+                        gs,8
+                        ]
+                        cs8
+                        [
+                        ds8
+                        ]
+                        gs8
+                        [
+                        e8
+                        ]
+                        fs8
+                        [
+                        gs8
+                        ]
+                        b8
+                        [
+                        gs8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ef8
+                        [
+                        b,8
+                        ]
+                        gf,8
+                        [
+                        af,8
+                        ]
+                        gf,8
+                        [
+                        bf,8
+                        ~
+                        ]
+                        bf,4
+                        b,8
+                        [
+                        af,8
+                        ]
+                        bf,4
+                        ~
+                        bf,8
+                        [
+                        b,8
+                        ]
+                        ef4
+                        df8
+                        [
+                        c8
+                        ]
+                        e4
+                        fs8
+                        [
+                        cs8
+                        ]
+                        ds8
+                        [
+                        a8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -12888,62 +14538,63 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
+                            \set Staff.midiInstrument = #"french horn" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r4
                         d'4
                         \p
@@ -13051,12 +14702,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13094,14 +14745,14 @@
                         af8
                         [
                         bf8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         bf4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r2
@@ -13109,42 +14760,42 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d4
                         \mf
                         -\staccato
@@ -13181,12 +14832,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13206,32 +14857,89 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ds8
+                        [
+                        e8
+                        ]
+                        b8
+                        [
+                        c'8
+                        ]
+                        b8
+                        [
+                        c'8
+                        ]
+                        bf4
+                        af8
+                        [
+                        ef'8
+                        ]
+                        af8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf8
+                        [
+                        fs8
+                        ~
+                        ]
+                        fs8
+                        [
+                        cs'8
+                        ]
+                        b8
+                        [
+                        d'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -13243,32 +14951,33 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            \set Staff.midiInstrument = #"trumpet" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \p
@@ -13292,12 +15001,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
@@ -13333,48 +15042,48 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13412,14 +15121,14 @@
                         af'8
                         [
                         c''8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c''4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r2
@@ -13427,42 +15136,42 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         b'4
                         \mf
                         -\staccato
@@ -13499,12 +15208,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13524,12 +15233,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         ef''2
                         \f
                         af'2
@@ -13550,7 +15259,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                         f''2
@@ -13562,17 +15271,17 @@
                         ]
                         (
                         a'4
-                        <>2
+                        c''2
                         )
-                        <>2
+                        bf'2
                         (
-                        <>2
+                        c''2
                         ~
-                        <>4
+                        c''4
                         )
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r1
@@ -13583,14 +15292,81 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        bf8
+                        [
+                        d'8
+                        ]
+                        ef'8
+                        [
+                        af'8
+                        ]
+                        ef''8
+                        [
+                        f''8
+                        ~
+                        ]
+                        f''8
+                        [
+                        df''8
+                        ~
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        gf''8
+                        [
+                        f''8
+                        ~
+                        ]
+                        f''4
+                        df''8
+                        [
+                        c''8
+                        ]
+                        g''8
+                        [
+                        f''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -13602,33 +15378,34 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
+                            \set Staff.midiInstrument = #"trombone" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c8
                         \p
@@ -13652,12 +15429,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         c'8
                         \mp
@@ -13693,48 +15470,48 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13772,14 +15549,14 @@
                         c'8
                         [
                         ef8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         ef4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r1
                         r1
                         r2
@@ -13787,42 +15564,42 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e4
                         \mf
                         -\staccato
@@ -13859,12 +15636,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13884,32 +15661,84 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c8
+                        [
+                        df8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ]
+                        gf8
+                        [
+                        ef8
+                        ]
+                        f4
+                        gf8
+                        [
+                        bf8
+                        ]
+                        f4
+                        g8
+                        [
+                        ef8
+                        ]
+                        df8
+                        [
+                        f8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -13921,7 +15750,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \clef "percussion"
                     r1
                     \mp
@@ -14207,7 +16036,7 @@
                     ]
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r8
                     [
                     c''8
@@ -14464,116 +16293,150 @@
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 7
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 2
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 3
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 7
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 1
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 1
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 1
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 2
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 2
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 5
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 3
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 2
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 1
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 1
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 3
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 6
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 8
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         R1 * 3
                     }
                 }
                 {
                     {
-                        \accidentalStyle modern-cautionary
-                        R1 * 18
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 5
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 3
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    r4
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    r4
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    r4
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    r1
+                    r2
+                    r4
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 5
                     }
                 }
             }
@@ -14587,7 +16450,7 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Harp }
                             \set Staff.shortInstrumentName = \markup { Hp. }
                             R1 * 8
@@ -14595,42 +16458,42 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         f'8
@@ -14727,24 +16590,24 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <gs gs'>8
                         \mf
                         [
@@ -15008,36 +16871,36 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         b'4
                         \f
                         ^ \markup { pizz }
@@ -15061,36 +16924,36 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         f''8
                         \f
                         [
@@ -15191,20 +17054,54 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -15216,7 +17113,7 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Harp }
                             \set Staff.shortInstrumentName = \markup { Hp. }
                             \clef "bass"
@@ -15225,126 +17122,126 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c,4
                         \f
                         ^ \markup { pizz }
@@ -15368,56 +17265,90 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -15432,7 +17363,7 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             R1 * 8
@@ -15440,60 +17371,60 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         fs''8
                         -\staccato
                         [
@@ -15667,7 +17598,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         gs'8
                         -\staccato
                         [
@@ -16126,7 +18057,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r2
                         \fermata
@@ -16171,7 +18102,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <d' g' a'>4
                         ~
                         <d' g' a'>8
@@ -16276,7 +18207,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <df' ef' f' af'>4
                         \f
                         r4
@@ -16309,7 +18240,7 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             \clef "bass"
@@ -16318,60 +18249,60 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         \clef "treble"
                         fs'8
                         -\staccato
@@ -16546,7 +18477,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         \clef "treble"
                         gs8
                         -\staccato
@@ -17006,7 +18937,7 @@
                         ]
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r2
                         \fermata
@@ -17058,12 +18989,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         b,8
                         [
                         c8
@@ -17204,30 +19135,30 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <g bf c'>4
                         r4
                         r2
@@ -17262,20 +19193,21 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 1" }
                             \set Staff.shortInstrumentName = \markup { Vln.I }
+                            \set Staff.midiInstrument = #"string ensemble 1" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d''4
                         \mf
                         ^ \markup { pizz }
@@ -17319,7 +19251,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d'4
                         r4
                         r2
@@ -17338,12 +19270,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d'4
                         \mf
                         ^ \markup { pizz }
@@ -17363,7 +19295,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         af'4
                         r4
                         r2
@@ -17408,36 +19340,36 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         g'4
                         \f
                         ^ \markup { pizz }
@@ -17461,12 +19393,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         gs8
                         \mp
@@ -17510,12 +19442,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -17535,7 +19467,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         c''8
@@ -17576,26 +19508,84 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        ds''4
+                        e''8
+                        [
+                        b''8
+                        ]
+                        as''8
+                        [
+                        gs''8
+                        ]
+                        ds''8
+                        [
+                        e''8
+                        ]
+                        fs''8
+                        [
+                        gs''8
+                        ]
+                        b''8
+                        [
+                        gs''8
+                        ]
+                        as''8
+                        [
+                        d''8
+                        ]
+                        e''8
+                        [
+                        fs''8
+                        ]
+                        gs''8
+                        [
+                        as''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -17607,20 +19597,21 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.II }
+                            \set Staff.midiInstrument = #"string ensemble 1" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d''4
                         \mf
                         ^ \markup { pizz }
@@ -17664,7 +19655,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a'4
                         r4
                         r2
@@ -17683,12 +19674,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         gf'4
                         \mf
                         ^ \markup { pizz }
@@ -17708,7 +19699,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e'4
                         r4
                         r2
@@ -17753,36 +19744,36 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         g'4
                         \f
                         ^ \markup { pizz }
@@ -17806,12 +19797,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
@@ -17855,12 +19846,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -17880,7 +19871,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         af'8
@@ -17921,26 +19912,86 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        c''8
+                        [
+                        g''8
+                        ]
+                        a''8
+                        [
+                        fs''8
+                        ~
+                        ]
+                        fs''8
+                        [
+                        g''8
+                        ]
+                        gs''8
+                        [
+                        a''8
+                        ]
+                        b'8
+                        [
+                        cs''8
+                        ]
+                        b'8
+                        [
+                        ds''8
+                        ~
+                        ]
+                        ds''8
+                        [
+                        bf''8
+                        ]
+                        b''4
+                        df'''8
+                        [
+                        ef'''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -17952,20 +20003,21 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Viola }
                             \set Staff.shortInstrumentName = \markup { Vla. }
+                            \set Staff.midiInstrument = #"string ensemble 1" 
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c'4
                         \mf
                         ^ \markup { pizz }
@@ -18009,7 +20061,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         bf4
                         r4
                         r2
@@ -18027,7 +20079,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <d'>4
                         \mf
                         ^ \markup { arco }
@@ -18084,7 +20136,7 @@
                         <ef'>4
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e'4
                         r4
                         r2
@@ -18129,36 +20181,36 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         e'4
                         \f
                         ^ \markup { pizz }
@@ -18182,12 +20234,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs'8
                         \mp
@@ -18231,12 +20283,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -18256,7 +20308,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         f'8
@@ -18297,26 +20349,114 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f8
+                        [
+                        g8
+                        ]
+                        a8
+                        [
+                        df'8
+                        ~
+                        ]
+                        df'4
+                        ~
+                        df'8
+                        [
+                        a8
+                        ]
+                        b8
+                        [
+                        cs'8
+                        ]
+                        e'8
+                        [
+                        gs'8
+                        ]
+                        g'4
+                        a'8
+                        [
+                        b'8
+                        ]
+                        fs'8
+                        [
+                        g'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ef'8
+                        [
+                        af8
+                        ]
+                        ef'4
+                        ~
+                        ef'8
+                        [
+                        c'8
+                        ]
+                        g'8
+                        [
+                        f'8
+                        ]
+                        ef'8
+                        [
+                        df'8
+                        ]
+                        f'8
+                        [
+                        g'8
+                        ~
+                        ]
+                        g'8
+                        [
+                        af'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        ef''8
+                        [
+                        g''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -18328,21 +20468,22 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Cello }
                             \set Staff.shortInstrumentName = \markup { Vc. }
+                            \set Staff.midiInstrument = #"string ensemble 1" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         bf4
                         \mf
                         ^ \markup { pizz }
@@ -18386,7 +20527,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         a,4
                         r4
                         r2
@@ -18405,12 +20546,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         g,4
                         \mf
                         ^ \markup { pizz }
@@ -18430,7 +20571,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         b,4
                         r4
                         r2
@@ -18475,36 +20616,36 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         d4
                         \f
                         ^ \markup { pizz }
@@ -18528,12 +20669,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs8
                         \mp
@@ -18577,12 +20718,12 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -18602,7 +20743,7 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         c'8
@@ -18643,26 +20784,107 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        cs8
+                        [
+                        a,8
+                        ]
+                        b,8
+                        [
+                        cs8
+                        ]
+                        e8
+                        [
+                        cs8
+                        ]
+                        ds8
+                        [
+                        g8
+                        ]
+                        e4
+                        fs8
+                        [
+                        g8
+                        ]
+                        ef8
+                        [
+                        b8
+                        ]
+                        ef'4
+                        b8
+                        [
+                        ef'8
+                        ]
+                        bf,4
+                        b,8
+                        [
+                        bf,8
+                        ]
+                        df8
+                        [
+                        bf,8
+                        ]
+                        ds8
+                        [
+                        b,8
+                        ]
+                        cs8
+                        [
+                        ds8
+                        ~
+                        ]
+                        ds8
+                        [
+                        d8
+                        ~
+                        ]
+                        d4
+                        gf8
+                        [
+                        df'8
+                        ]
+                        ef'8
+                        [
+                        bf8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -18674,39 +20896,40 @@
                 {
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bass }
                             \set Staff.shortInstrumentName = \markup { Cb. }
+                            \set Staff.midiInstrument = #"cello" 
                             \clef "bass"
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <a, e>2
                         \mf
                         ~
@@ -18737,7 +20960,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         <d a>2
                         ~
                         <d a>4
@@ -18812,7 +21035,7 @@
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         cs8
@@ -18915,54 +21138,54 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         c,4
                         \f
                         ^ \markup { pizz }
@@ -18986,24 +21209,24 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                     }
                     {
-                        \accidentalStyle modern-cautionary
+                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -19023,32 +21246,66 @@
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                     }
                     {
                         {
-                            \accidentalStyle modern-cautionary
-                            R1 * 18
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
                         }
                     }
                 }
@@ -19063,7 +21320,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "High Rhythm" }
                     \set Staff.shortInstrumentName = \markup { H.rhm. }
                     \set Staff.midiInstrument = #"agogo" 
@@ -19164,8 +21421,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     [
                     c''8
                     ]
@@ -19194,8 +21451,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.9 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.9 }
                     [
                     c''8
                     ]
@@ -19224,8 +21481,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.11 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.11 }
                     [
                     c''8
                     ]
@@ -19374,8 +21631,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.10 }
                     ^ \markup { c.21 }
+                    ^ \markup { p.10 }
                     [
                     c''8
                     ]
@@ -19404,8 +21661,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.11 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.11 }
                     [
                     c''8
                     ]
@@ -19435,7 +21692,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -19557,8 +21814,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     [
                     c''8
                     ]
@@ -19677,8 +21934,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     c''8
                     ]
@@ -19768,7 +22025,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -19790,8 +22047,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     [
                     c''8
                     ]
@@ -19830,8 +22087,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     [
                     c''8
                     ]
@@ -19850,8 +22107,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     [
                     c''8
                     ]
@@ -19910,8 +22167,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.7 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.7 }
                     [
                     c''8
                     ]
@@ -19930,8 +22187,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     [
                     c''8
                     ]
@@ -19994,8 +22251,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     [
                     (
                     <c' c''>16
@@ -20016,8 +22273,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.12 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.12 }
                     [
                     (
                     <c' c''>16
@@ -20038,8 +22295,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.13 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.13 }
                     [
                     (
                     <c' c''>16
@@ -20060,8 +22317,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.14 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.14 }
                     [
                     (
                     <c' c''>16
@@ -20110,7 +22367,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -20118,7 +22375,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -20133,7 +22390,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Mid Rhythm" }
                     \set Staff.shortInstrumentName = \markup { M.rhm. }
                     \set Staff.midiInstrument = #"melodic tom" 
@@ -20240,8 +22497,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     [
                     (
                     c'16
@@ -20272,8 +22529,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { c.9 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.9 }
                     [
                     (
                     c'16
@@ -20304,8 +22561,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { c.11 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.11 }
                     [
                     (
                     c'16
@@ -20464,8 +22721,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.10 }
                     ^ \markup { c.21 }
+                    ^ \markup { p.10 }
                     [
                     (
                     c'16
@@ -20496,8 +22753,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.11 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.11 }
                     [
                     (
                     c'16
@@ -20529,7 +22786,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -20632,8 +22889,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     [
                     (
                     c'16
@@ -20664,8 +22921,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { c.9 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.9 }
                     [
                     (
                     c'16
@@ -20696,8 +22953,8 @@
                     c'4
                     )
                     c'16
-                    ^ \markup { c.11 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.11 }
                     [
                     (
                     c'16
@@ -20793,7 +23050,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -20801,7 +23058,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -20809,7 +23066,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -20824,7 +23081,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Rhythm" }
                     \set Staff.shortInstrumentName = \markup { B.rhm. }
                     \set Staff.midiInstrument = #"taiko drum" 
@@ -20890,8 +23147,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     (
                     f4
                     r4
@@ -20950,8 +23207,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     (
                     f4
                     r4
@@ -20995,8 +23252,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     (
                     f4
                     r4
@@ -21025,8 +23282,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     (
                     f4
                     r4
@@ -21040,8 +23297,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.14 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.14 }
                     (
                     f4
                     r4
@@ -21055,8 +23312,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.30 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.30 }
                     (
                     f4
                     r4
@@ -21071,7 +23328,7 @@
                     r4
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -21123,8 +23380,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     (
                     f4
                     r4
@@ -21138,8 +23395,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.9 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.9 }
                     (
                     f4
                     r4
@@ -21153,8 +23410,8 @@
                     <d e'>4
                     r4
                     <c c'>4
-                    ^ \markup { c.11 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.11 }
                     (
                     f4
                     r4
@@ -21199,7 +23456,7 @@
                     r4
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r4
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -21209,8 +23466,8 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     <c c'>4
                     (
                     r4
@@ -21225,16 +23482,16 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     <c c'>4
                     (
                     r4
@@ -21257,16 +23514,16 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.7 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.7 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     <c c'>4
                     (
                     r4
@@ -21279,7 +23536,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -21287,7 +23544,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -21302,7 +23559,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Melody Line 1" }
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
@@ -21341,15 +23598,15 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     [
                     r8
                     ]
                     r2
                     r8
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     [
                     r8
                     ]
@@ -21428,8 +23685,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.12 }
                     ^ \markup { c.15 }
+                    ^ \markup { p.12 }
                     [
                     r8
                     ]
@@ -21456,8 +23713,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.14 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.14 }
                     [
                     r8
                     ]
@@ -21504,7 +23761,7 @@
                     ^ \markup { c.23 }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -21570,15 +23827,15 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     [
                     r8
                     ]
@@ -21605,8 +23862,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.13 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.13 }
                     [
                     r8
                     ]
@@ -21640,29 +23897,29 @@
                     ]
                     r4
                     r8
-                    ^ \markup { p.11 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.11 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.12 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.12 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.13 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.13 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.14 }
                     ^ \markup { c.21 }
+                    ^ \markup { p.14 }
                     [
                     r8
                     ]
@@ -21713,8 +23970,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.19 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.19 }
                     [
                     r8
                     ]
@@ -21733,7 +23990,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -21794,8 +24051,8 @@
                     ^ \markup { c.7 }
                     [
                     r8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     ]
                     r2
                     r8
@@ -21838,8 +24095,8 @@
                     ^ \markup { c.15 }
                     ]
                     <gs, b, ds gs b ds'>8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     (
                     <f gs as c' cs' f'>8
@@ -21889,15 +24146,15 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.12 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.12 }
                     [
                     r8
                     ]
@@ -21910,8 +24167,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { p.14 }
                     ^ \markup { c.25 }
+                    ^ \markup { p.14 }
                     [
                     r8
                     ]
@@ -21935,8 +24192,8 @@
                     ^ \markup { c.27 }
                     [
                     <g, bf, d g bf d'>8
-                    ^ \markup { p.16 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.16 }
                     ]
                     (
                     <ef gf af bf b ef'>8
@@ -22008,8 +24265,8 @@
                     ^ \markup { c.36 }
                     ]
                     r8
-                    ^ \markup { c.37 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.37 }
                     [
                     r8
                     ]
@@ -22022,7 +24279,7 @@
                     r2
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     a8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -22079,8 +24336,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -22113,8 +24370,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e' g' b'>8
                     ^ \markup { c.10 }
                     [
@@ -22167,8 +24424,8 @@
                     ^ \markup { c.15 }
                     ]
                     r8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     r8
                     ]
@@ -22219,8 +24476,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     [
                     r8
                     ]
@@ -22243,8 +24500,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     [
                     r8
                     ]
@@ -22257,8 +24514,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { p.14 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.14 }
                     ]
                     r4
                     r4
@@ -22268,8 +24525,8 @@
                     r8
                     ]
                     <cs e gs>8
-                    ^ \markup { c.30 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.30 }
                     [
                     (
                     <d f a>8
@@ -22317,8 +24574,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.17 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.17 }
                     [
                     r8
                     ]
@@ -22353,8 +24610,8 @@
                     ]
                     )
                     <f gs c'>8
-                    ^ \markup { p.19 }
                     ^ \markup { c.38 }
+                    ^ \markup { p.19 }
                     [
                     (
                     <fs a cs'>8
@@ -22400,7 +24657,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -22454,8 +24711,8 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     [
                     r8
                     ]
@@ -22487,15 +24744,15 @@
                     ]
                     r4
                     r8
-                    ^ \markup { c.13 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.13 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { c.14 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.14 }
                     [
                     r8
                     ]
@@ -22516,30 +24773,30 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.11 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.11 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.12 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.12 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.13 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.13 }
                     [
                     r8
                     ]
                     r4
                     r4
                     r8
-                    ^ \markup { p.14 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.14 }
                     [
                     r8
                     ]
@@ -22605,8 +24862,8 @@
                     ]
                     )
                     <e' gs' b' e'' gs'' b''>8
-                    ^ \markup { p.20 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.20 }
                     [
                     (
                     <f' a' c'' c'' e'' g''>8
@@ -22651,37 +24908,37 @@
                     ]
                     r4
                     r8
-                    ^ \markup { p.23 }
                     ^ \markup { c.31 }
+                    ^ \markup { p.23 }
                     [
                     r8
                     ]
                     r2
                     r8
-                    ^ \markup { c.32 }
                     ^ \markup { p.24 }
+                    ^ \markup { c.32 }
                     [
                     r8
                     ]
                     r4
                     r4
                     r8
-                    ^ \markup { c.33 }
                     ^ \markup { p.25 }
+                    ^ \markup { c.33 }
                     [
                     r8
                     ]
                     r4
                     r8
-                    ^ \markup { p.26 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.26 }
                     [
                     r8
                     ]
                     r2
                     r1
-                    ^ \markup { c.35 }
                     ^ \markup { p.27 }
+                    ^ \markup { c.35 }
                     r8
                     ^ \markup { c.36 }
                     [
@@ -22767,8 +25024,8 @@
                     ]
                     )
                     <ds' g' as' ds'' g'' as''>8
-                    ^ \markup { p.30 }
                     ^ \markup { c.42 }
+                    ^ \markup { p.30 }
                     [
                     (
                     <e' gs' b' b' ds'' fs''>8
@@ -22798,8 +25055,8 @@
                     ]
                     )
                     <bf' d'' f'' bf'' d''' f'''>8
-                    ^ \markup { p.31 }
                     ^ \markup { c.44 }
+                    ^ \markup { p.31 }
                     [
                     (
                     <b' ef'' gf'' gf'' bf'' df'''>8
@@ -22861,7 +25118,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Melody Line 2" }
                     \set Staff.shortInstrumentName = \markup { Mel.2 }
                     \set Staff.midiInstrument = #"misc2" 
@@ -22872,7 +25129,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -22938,7 +25195,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -22946,7 +25203,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r2
                     ^ \markup { c.0 }
                     r2
@@ -23133,7 +25390,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -23264,7 +25521,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Counter Line" }
                     \set Staff.shortInstrumentName = \markup { Count. }
                     \set Staff.midiInstrument = #"misc3" 
@@ -23329,8 +25586,8 @@
                     )
                     [
                     a''8
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     ]
                     (
                     e'''8
@@ -23349,7 +25606,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -23357,7 +25614,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -23365,7 +25622,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     a8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -23422,8 +25679,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -23456,8 +25713,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e' g' b'>8
                     ^ \markup { c.10 }
                     [
@@ -23495,7 +25752,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -23569,8 +25826,8 @@
                     )
                     [
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     ]
                     <a a'>8
                     [
@@ -23594,8 +25851,8 @@
                     r8
                     ]
                     r1
-                    ^ \markup { c.9 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.9 }
                     {
                         R1 * 2
                     }
@@ -23620,8 +25877,8 @@
                     )
                     [
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.12 }
                     ]
                     <b b'>8
                     [
@@ -23713,7 +25970,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Line" }
                     \set Staff.shortInstrumentName = \markup { Bass. }
                     \set Staff.midiInstrument = #"electric bass (finger)" 
@@ -23725,7 +25982,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -23733,7 +25990,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -23806,8 +26063,8 @@
                     )
                     [
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.3 }
                     ]
                     <ef f>8
                     [
@@ -23831,8 +26088,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { c.10 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.10 }
                     [
                     <ef>8
                     ]
@@ -23852,8 +26109,8 @@
                     )
                     [
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.12 }
                     ]
                     <ef f>8
                     [
@@ -23885,7 +26142,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     a8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -23942,8 +26199,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a,,8
                     ^ \markup { c.7 }
                     [
@@ -23976,8 +26233,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e, g, b,>8
                     ^ \markup { c.10 }
                     [
@@ -24015,7 +26272,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -24079,8 +26336,8 @@
                     c,2
                     )
                     r1
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     {
                         R1 * 6
                     }
@@ -24103,8 +26360,8 @@
                     d,2
                     )
                     d,2
-                    ^ \markup { c.10 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.10 }
                     ~
                     (
                     d,4
@@ -24135,7 +26392,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { Riff }
                     \set Staff.shortInstrumentName = \markup { Riff. }
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
@@ -24197,8 +26454,8 @@
                     ]
                     )
                     a8
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     [
                     (
                     bf8
@@ -24213,8 +26470,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     [
                     (
                     c''8
@@ -24343,8 +26600,8 @@
                     ]
                     )
                     a'8
-                    ^ \markup { p.12 }
                     ^ \markup { c.15 }
+                    ^ \markup { p.12 }
                     [
                     (
                     bf'8
@@ -24405,8 +26662,8 @@
                     ]
                     )
                     a'8
-                    ^ \markup { p.14 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.14 }
                     [
                     (
                     bf'8
@@ -24470,7 +26727,7 @@
                     ^ \markup { c.23 }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     <a a'>8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -24592,8 +26849,8 @@
                     ]
                     )
                     <e' e''>8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     [
                     (
                     <fs'' b''>8
@@ -24604,8 +26861,8 @@
                     ]
                     )
                     <e' e''>8
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     [
                     (
                     <c'' f''>8
@@ -24663,8 +26920,8 @@
                     ]
                     )
                     <b b'>8
-                    ^ \markup { c.13 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.13 }
                     [
                     (
                     <g' c''>8
@@ -24737,8 +26994,8 @@
                     ]
                     )
                     <fs' cs''>8
-                    ^ \markup { p.11 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.11 }
                     [
                     (
                     <cs'' gs''>8
@@ -24749,8 +27006,8 @@
                     ]
                     )
                     <d' d''>8
-                    ^ \markup { p.12 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.12 }
                     [
                     (
                     <e'' a''>8
@@ -24761,8 +27018,8 @@
                     ]
                     )
                     <d'' d'''>8
-                    ^ \markup { p.13 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.13 }
                     [
                     (
                     <a'' e'''>8
@@ -24773,8 +27030,8 @@
                     ]
                     )
                     <cs'' gs''>8
-                    ^ \markup { p.14 }
                     ^ \markup { c.21 }
+                    ^ \markup { p.14 }
                     [
                     (
                     <gs'' ds'''>8
@@ -24852,8 +27109,8 @@
                     ]
                     )
                     <gs' gs''>8
-                    ^ \markup { p.19 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.19 }
                     [
                     (
                     <a' e''>8
@@ -24889,7 +27146,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     <gs gs'>8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -24975,8 +27232,8 @@
                     ^ \markup { c.7 }
                     [
                     <ds' ds''>8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     ]
                     (
                     <e' b'>8
@@ -25059,8 +27316,8 @@
                     ^ \markup { c.15 }
                     ]
                     <af af'>8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     (
                     <f' bf'>8
@@ -25128,8 +27385,8 @@
                     ]
                     )
                     <c' c''>8
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     [
                     (
                     <df' af'>8
@@ -25140,8 +27397,8 @@
                     ]
                     )
                     <c' c''>8
-                    ^ \markup { p.12 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.12 }
                     [
                     (
                     <df' af'>8
@@ -25168,8 +27425,8 @@
                     ]
                     )
                     <c c'>8
-                    ^ \markup { p.14 }
                     ^ \markup { c.25 }
+                    ^ \markup { p.14 }
                     [
                     (
                     <af df'>8
@@ -25195,8 +27452,8 @@
                     ^ \markup { c.27 }
                     [
                     <g g'>8
-                    ^ \markup { p.16 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.16 }
                     ]
                     (
                     <ef' af'>8
@@ -25287,8 +27544,8 @@
                     ^ \markup { c.36 }
                     ]
                     <c' c''>8
-                    ^ \markup { c.37 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.37 }
                     [
                     (
                     <a' d''>8
@@ -25315,7 +27572,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     a8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -25372,8 +27629,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     a8
                     ^ \markup { c.7 }
                     [
@@ -25406,8 +27663,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e' g' b'>8
                     ^ \markup { c.10 }
                     [
@@ -25477,8 +27734,8 @@
                     ^ \markup { c.15 }
                     ]
                     b8
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     (
                     c'8
@@ -25546,8 +27803,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     [
                     (
                     a'8
@@ -25588,8 +27845,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     [
                     (
                     a'8
@@ -25609,8 +27866,8 @@
                     )
                     [
                     fs'8
-                    ^ \markup { p.14 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.14 }
                     ]
                     (
                     a'8
@@ -25630,8 +27887,8 @@
                     ]
                     )
                     cs'8
-                    ^ \markup { c.30 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.30 }
                     [
                     (
                     d'8
@@ -25684,8 +27941,8 @@
                     ]
                     )
                     ds'8
-                    ^ \markup { p.17 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.17 }
                     [
                     (
                     e'8
@@ -25730,8 +27987,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.19 }
                     ^ \markup { c.38 }
+                    ^ \markup { p.19 }
                     [
                     (
                     gf'8
@@ -25777,7 +28034,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     <g c' f'>8
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -25871,8 +28128,8 @@
                     ]
                     )
                     <a d' g'>8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     [
                     (
                     <ef'>8
@@ -25929,8 +28186,8 @@
                     ]
                     )
                     a8
-                    ^ \markup { c.13 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.13 }
                     [
                     (
                     bf8
@@ -25941,8 +28198,8 @@
                     ]
                     )
                     a8
-                    ^ \markup { c.14 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.14 }
                     [
                     (
                     bf8
@@ -25985,8 +28242,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.11 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.11 }
                     [
                     (
                     c''8
@@ -25997,8 +28254,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.12 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.12 }
                     [
                     (
                     c''8
@@ -26009,8 +28266,8 @@
                     ]
                     )
                     e'8
-                    ^ \markup { p.13 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.13 }
                     [
                     (
                     b'8
@@ -26025,8 +28282,8 @@
                     ]
                     )
                     e'8
-                    ^ \markup { p.14 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.14 }
                     [
                     (
                     b'8
@@ -26128,8 +28385,8 @@
                     ]
                     )
                     <e' e''>8
-                    ^ \markup { p.20 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.20 }
                     [
                     (
                     <f' c''>8
@@ -26187,8 +28444,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { p.23 }
                     ^ \markup { c.31 }
+                    ^ \markup { p.23 }
                     [
                     (
                     cs''8
@@ -26203,8 +28460,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.32 }
                     ^ \markup { p.24 }
+                    ^ \markup { c.32 }
                     [
                     (
                     cs''8
@@ -26219,8 +28476,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.33 }
                     ^ \markup { p.25 }
+                    ^ \markup { c.33 }
                     [
                     (
                     cs''8
@@ -26231,8 +28488,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { p.26 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.26 }
                     [
                     (
                     cs''8
@@ -26247,8 +28504,8 @@
                     ]
                     )
                     r1
-                    ^ \markup { c.35 }
                     ^ \markup { p.27 }
+                    ^ \markup { c.35 }
                     <fs, cs>8
                     ^ \markup { c.36 }
                     [
@@ -26342,8 +28599,8 @@
                     ]
                     )
                     <ds' ds''>8
-                    ^ \markup { p.30 }
                     ^ \markup { c.42 }
+                    ^ \markup { p.30 }
                     [
                     (
                     <e' b'>8
@@ -26373,8 +28630,8 @@
                     ]
                     )
                     <bf' bf''>8
-                    ^ \markup { p.31 }
                     ^ \markup { c.44 }
+                    ^ \markup { p.31 }
                     [
                     (
                     <b' gf''>8
@@ -26453,7 +28710,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { Chords }
                     \set Staff.shortInstrumentName = \markup { Chrd. }
                     \set Staff.midiInstrument = #"french horn" 
@@ -26480,12 +28737,12 @@
                     ^ \markup { c.4 }
                     r4
                     r4
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     r2
                     <f' c'' d'' e''>4
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     r4
                     r4
                     ^ \markup { c.7 }
@@ -26521,8 +28778,8 @@
                     ^ \markup { c.14 }
                     r2
                     <a' bf' c'' d'' f'' a''>4
-                    ^ \markup { p.12 }
                     ^ \markup { c.15 }
+                    ^ \markup { p.12 }
                     r4
                     r4
                     r4
@@ -26537,8 +28794,8 @@
                     ^ \markup { c.18 }
                     r2
                     r4
-                    ^ \markup { p.14 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.14 }
                     r4
                     r4
                     <e'' f'' b'' c''' d''' e'''>4
@@ -26556,7 +28813,7 @@
                     ^ \markup { c.23 }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     <a f' a' bf' d'' e'' a''>4
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -26590,12 +28847,12 @@
                     ^ \markup { c.7 }
                     r4
                     r4
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     r4
                     r4
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     r2
                     r4
                     ^ \markup { c.10 }
@@ -26610,8 +28867,8 @@
                     ^ \markup { p.7 }
                     r4
                     r4
-                    ^ \markup { c.13 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.13 }
                     r4
                     r4
                     r4
@@ -26630,20 +28887,20 @@
                     ^ \markup { p.10 }
                     r4
                     r4
-                    ^ \markup { p.11 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.11 }
                     r4
                     r4
-                    ^ \markup { p.12 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.12 }
                     r4
                     r4
-                    ^ \markup { p.13 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.13 }
                     r4
                     r4
-                    ^ \markup { p.14 }
                     ^ \markup { c.21 }
+                    ^ \markup { p.14 }
                     r4
                     r4
                     ^ \markup { c.22 }
@@ -26666,8 +28923,8 @@
                     ^ \markup { c.26 }
                     r2
                     r4
-                    ^ \markup { p.19 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.19 }
                     r4
                     r4
                     r4
@@ -26680,7 +28937,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     <gs a b cs' e' fs' gs' ds'' e''>4
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -26719,8 +28976,8 @@
                     ^ \markup { c.7 }
                     [
                     r8
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     ]
                     r8
                     [
@@ -26762,8 +29019,8 @@
                     ^ \markup { c.15 }
                     ]
                     r4
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     r4
                     r4
                     ^ \markup { c.17 }
@@ -26792,20 +29049,20 @@
                     r4
                     ^ \markup { c.21 }
                     <c' df' ef' f' af' c'' ef''>4
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     r4
                     r4
-                    ^ \markup { p.12 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.12 }
                     r2
                     <c af c' df' g' af' c''>4
                     ^ \markup { c.24 }
                     ^ \markup { p.13 }
                     r4
                     <c af c' df'>4
-                    ^ \markup { p.14 }
                     ^ \markup { c.25 }
+                    ^ \markup { p.14 }
                     <c ef af c' df' ef' f' af' c'' ef''>4
                     ^ \markup { p.15 }
                     ^ \markup { c.26 }
@@ -26814,8 +29071,8 @@
                     ^ \markup { c.27 }
                     [
                     r8
-                    ^ \markup { p.16 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.16 }
                     ]
                     r8
                     [
@@ -26861,15 +29118,15 @@
                     ^ \markup { c.36 }
                     ]
                     r4
-                    ^ \markup { c.37 }
                     ^ \markup { p.21 }
+                    ^ \markup { c.37 }
                     r4
                     r4
                     ^ \markup { c.38 }
                     r2
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r4
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -26893,8 +29150,8 @@
                     ^ \markup { c.5 }
                     r4
                     r4
-                    ^ \markup { c.6 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.6 }
                     r4
                     r4
                     ^ \markup { c.7 }
@@ -26904,8 +29161,8 @@
                     ^ \markup { c.8 }
                     r2
                     r4
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     r4
                     r4
                     ^ \markup { c.10 }
@@ -26937,8 +29194,8 @@
                     ^ \markup { c.15 }
                     ]
                     <b c' d' e' g' b'>4
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     r2
                     r8
                     ^ \markup { c.17 }
@@ -26966,8 +29223,8 @@
                     ^ \markup { c.21 }
                     r2
                     <fs' a' b' d'' fs''>4
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     r4
                     r8
                     [
@@ -26988,8 +29245,8 @@
                     r4
                     ^ \markup { c.25 }
                     r4
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     r4
                     r8
                     [
@@ -26999,8 +29256,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { p.14 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.14 }
                     ]
                     r8
                     [
@@ -27010,8 +29267,8 @@
                     r4
                     ^ \markup { c.29 }
                     <cs' d' e' fs' a' cs''>4
-                    ^ \markup { c.30 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.30 }
                     r4
                     r4
                     r4
@@ -27031,8 +29288,8 @@
                     r8
                     ]
                     <ds' e' gs' b' ds''>4
-                    ^ \markup { p.17 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.17 }
                     r4
                     r8
                     [
@@ -27057,8 +29314,8 @@
                     r8
                     ]
                     r4
-                    ^ \markup { p.19 }
                     ^ \markup { c.38 }
+                    ^ \markup { p.19 }
                     r4
                     r8
                     [
@@ -27084,7 +29341,7 @@
                     ]
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     <g bf c' df' ef' f' af'>4
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -27126,8 +29383,8 @@
                     r8
                     ]
                     r4
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     r4
                     r4
                     ^ \markup { c.9 }
@@ -27150,12 +29407,12 @@
                     ^ \markup { p.6 }
                     r4
                     r4
-                    ^ \markup { c.13 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.13 }
                     r4
                     r4
-                    ^ \markup { c.14 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.14 }
                     r4
                     r4
                     r4
@@ -27167,21 +29424,21 @@
                     ^ \markup { p.10 }
                     r2
                     r4
-                    ^ \markup { p.11 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.11 }
                     r4
                     <f' c'' d'' e''>4
-                    ^ \markup { p.12 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.12 }
                     r4
                     <e' f' b' c'' d'' e''>4
-                    ^ \markup { p.13 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.13 }
                     r4
                     r4
                     r4
-                    ^ \markup { p.14 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.14 }
                     r4
                     r4
                     ^ \markup { p.15 }
@@ -27209,8 +29466,8 @@
                     ^ \markup { c.26 }
                     r2
                     r4
-                    ^ \markup { p.20 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.20 }
                     r4
                     r4
                     r4
@@ -27226,25 +29483,25 @@
                     ^ \markup { c.30 }
                     r4
                     r4
-                    ^ \markup { p.23 }
                     ^ \markup { c.31 }
+                    ^ \markup { p.23 }
                     r2
                     r4
-                    ^ \markup { c.32 }
                     ^ \markup { p.24 }
+                    ^ \markup { c.32 }
                     r4
                     r4
                     r4
-                    ^ \markup { c.33 }
                     ^ \markup { p.25 }
+                    ^ \markup { c.33 }
                     r4
                     r4
-                    ^ \markup { p.26 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.26 }
                     r2
                     r4
-                    ^ \markup { c.35 }
                     ^ \markup { p.27 }
+                    ^ \markup { c.35 }
                     r4
                     r2
                     r4
@@ -27271,16 +29528,16 @@
                     ^ \markup { c.41 }
                     r2
                     r4
-                    ^ \markup { p.30 }
                     ^ \markup { c.42 }
+                    ^ \markup { p.30 }
                     r4
                     r4
                     r4
                     ^ \markup { c.43 }
                     r2
                     r4
-                    ^ \markup { p.31 }
                     ^ \markup { c.44 }
+                    ^ \markup { p.31 }
                     r4
                     r4
                     r4
@@ -27314,7 +29571,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "High Drones" }
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     \set Staff.midiInstrument = #"piccolo" 
@@ -27325,7 +29582,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -27360,15 +29617,15 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     (
                     <e'''>4
                     <e'''>4
@@ -27403,7 +29660,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -27434,14 +29691,14 @@
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     (
                     <f'''>2
                     )
@@ -27477,7 +29734,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -27485,7 +29742,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -27520,15 +29777,15 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     (
                     <e'''>4
                     <e'''>4
@@ -27590,15 +29847,15 @@
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { p.14 }
                     ^ \markup { c.15 }
+                    ^ \markup { p.14 }
                     (
                     <e'''>4
                     <e'''>4
                     )
                     <e'''>2
-                    ^ \markup { c.16 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.16 }
                     (
                     <e'''>4
                     <e'''>4
@@ -27644,8 +29901,8 @@
                     ]
                     )
                     <ef'''>8
-                    ^ \markup { p.18 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.18 }
                     [
                     (
                     <ef'''>8
@@ -27664,8 +29921,8 @@
                     ]
                     )
                     <ef'''>8
-                    ^ \markup { p.19 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.19 }
                     [
                     (
                     <ef'''>8
@@ -27684,8 +29941,8 @@
                     ]
                     )
                     <ef'' ef'''>8
-                    ^ \markup { p.20 }
                     ^ \markup { c.21 }
+                    ^ \markup { p.20 }
                     [
                     (
                     <ef'' ef'''>8
@@ -27724,8 +29981,8 @@
                     ]
                     )
                     <ef'' ef'''>8
-                    ^ \markup { p.22 }
                     ^ \markup { c.23 }
+                    ^ \markup { p.22 }
                     [
                     (
                     <ef'' ef'''>8
@@ -27744,8 +30001,8 @@
                     ]
                     )
                     <ef'' ef'''>8
-                    ^ \markup { c.24 }
                     ^ \markup { p.23 }
+                    ^ \markup { c.24 }
                     [
                     (
                     <ef'' ef'''>8
@@ -27804,8 +30061,8 @@
                     ]
                     )
                     <af''>8
-                    ^ \markup { p.26 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.26 }
                     [
                     (
                     <af''>8
@@ -27872,7 +30129,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Mid Drones" }
                     \set Staff.shortInstrumentName = \markup { M.drn. }
                     \set Staff.midiInstrument = #"string ensemble 2" 
@@ -27883,7 +30140,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -27918,15 +30175,15 @@
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     (
                     <d'>4
                     <d'>2
                     )
                     <d'>4
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     (
                     <d'>4
                     <d'>2
@@ -27990,16 +30247,16 @@
                     <ef'>4
                     )
                     <ef'>4
-                    ^ \markup { p.14 }
                     ^ \markup { c.15 }
+                    ^ \markup { p.14 }
                     (
                     <ef'>4
                     <ef'>4
                     <ef'>4
                     )
                     <ef'>4
-                    ^ \markup { c.16 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.16 }
                     (
                     <ef'>4
                     <ef'>4
@@ -28007,7 +30264,7 @@
                     )
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -28015,7 +30272,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -28023,7 +30280,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     ef''2
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
@@ -28057,8 +30314,8 @@
                     ]
                     d''4
                     f''2
-                    ^ \markup { c.8 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.8 }
                     bf'2
                     ^ \markup { c.9 }
                     f''2
@@ -28076,11 +30333,11 @@
                     ^ \markup { c.12 }
                     ^ \markup { p.6 }
                     <bf' f''>2
-                    ^ \markup { c.13 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.13 }
                     <c'' g''>2
-                    ^ \markup { c.14 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.14 }
                     ~
                     <c'' g''>4
                     <bf' f''>4
@@ -28094,18 +30351,18 @@
                     ~
                     <c'' g''>2
                     <f' c''>2
-                    ^ \markup { p.11 }
                     ^ \markup { c.17 }
+                    ^ \markup { p.11 }
                     <g' d''>2
-                    ^ \markup { p.12 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.12 }
                     r2
-                    ^ \markup { p.13 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.13 }
                     r4
                     r4
-                    ^ \markup { p.14 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.14 }
                     r4
                     r4
                     ^ \markup { p.15 }
@@ -28133,8 +30390,8 @@
                     ~
                     <g' d''>2
                     <f' c''>2
-                    ^ \markup { p.20 }
                     ^ \markup { c.27 }
+                    ^ \markup { p.20 }
                     ~
                     <f' c''>4
                     <d'' a''>4
@@ -28152,28 +30409,28 @@
                     ~
                     <a' e''>4
                     <g' d''>4
-                    ^ \markup { p.23 }
                     ^ \markup { c.31 }
+                    ^ \markup { p.23 }
                     ~
                     <g' d''>2
                     <a' e''>2
-                    ^ \markup { c.32 }
                     ^ \markup { p.24 }
+                    ^ \markup { c.32 }
                     ~
                     <a' e''>4
                     <g' d''>4
-                    ^ \markup { c.33 }
                     ^ \markup { p.25 }
+                    ^ \markup { c.33 }
                     ~
                     <g' d''>4
                     <a' e''>4
-                    ^ \markup { p.26 }
                     ^ \markup { c.34 }
+                    ^ \markup { p.26 }
                     ~
                     <a' e''>2
                     r1
-                    ^ \markup { c.35 }
                     ^ \markup { p.27 }
+                    ^ \markup { c.35 }
                     <a' e''>2
                     ^ \markup { c.36 }
                     ~
@@ -28201,8 +30458,8 @@
                     ~
                     <e'' b''>2
                     <gf'' df'''>2
-                    ^ \markup { p.30 }
                     ^ \markup { c.42 }
+                    ^ \markup { p.30 }
                     ~
                     <gf'' df'''>4
                     <b' gf''>4
@@ -28210,8 +30467,8 @@
                     ~
                     <b' gf''>2
                     <df'' af''>2
-                    ^ \markup { p.31 }
                     ^ \markup { c.44 }
+                    ^ \markup { p.31 }
                     ~
                     <df'' af''>4
                     <gf'' df'''>4
@@ -28246,7 +30503,7 @@
             }
             {
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Drones" }
                     \set Staff.shortInstrumentName = \markup { B.drn. }
                     \set Staff.midiInstrument = #"fretless bass" 
@@ -28277,13 +30534,13 @@
                     ~
                     <g, d>2
                     <a, e>2
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     ~
                     <a, e>4
                     <g, d>4
-                    ^ \markup { c.6 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.6 }
                     ~
                     <g, d>2
                     <a, e>2
@@ -28300,15 +30557,15 @@
                     ^ \markup { c.9 }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     <d, a,>2
                     ^ \markup { c.0 }
                     ^ \markup { p.0 }
                     ~
                     <d, a,>4
                     <c, g,>4
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     ~
                     <c, g,>2
                     <d, a,>2
@@ -28317,13 +30574,13 @@
                     ~
                     <d, a,>4
                     <c, g,>4
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     ~
                     <c, g,>2
                     <d, a,>2
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     ~
                     <d, a,>4
                     <c, g,>4
@@ -28337,8 +30594,8 @@
                     ~
                     <d, a,>4
                     <c, g,>4
-                    ^ \markup { p.7 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.7 }
                     ~
                     (
                     <c, g,>4
@@ -28347,8 +30604,8 @@
                     <c, g,>4
                     )
                     <c, g,>4
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     ~
                     (
                     <c, g,>2
@@ -28368,23 +30625,23 @@
                     ~
                     <c, g,>4
                     <d, a,>4
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                     ~
                     <d, a,>2
                     <c, g,>2
-                    ^ \markup { p.12 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.12 }
                     ~
                     <c, g,>4
                     <d, a,>4
-                    ^ \markup { p.13 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.13 }
                     ~
                     <d, a,>2
                     <d, a,>2
-                    ^ \markup { p.14 }
                     ^ \markup { c.14 }
+                    ^ \markup { p.14 }
                     <d, a,>2
                     ^ \markup { c.15 }
                     ^ \markup { p.15 }
@@ -28395,20 +30652,20 @@
                     ^ \markup { c.17 }
                     ^ \markup { p.17 }
                     <d, a,>2
-                    ^ \markup { p.18 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.18 }
                     <d, a,>2
-                    ^ \markup { p.19 }
                     ^ \markup { c.19 }
+                    ^ \markup { p.19 }
                     <d, a,>2
-                    ^ \markup { p.20 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.20 }
                     <df, af,>2
                     ^ \markup { p.21 }
                     ^ \markup { c.21 }
                     <df, af,>2
-                    ^ \markup { p.22 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.22 }
                     ~
                     <df, af,>4
                     <ef, bf,>4
@@ -28422,8 +30679,8 @@
                     ~
                     <df, af,>4
                     <ef, bf,>4
-                    ^ \markup { c.25 }
                     ^ \markup { p.25 }
+                    ^ \markup { c.25 }
                     ~
                     <ef, bf,>2
                     r1
@@ -28433,7 +30690,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -28441,7 +30698,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {
@@ -28449,7 +30706,7 @@
                     }
                 }
                 {
-                    \accidentalStyle modern-cautionary
+                    \accidentalStyle neo-modern-cautionary
                     r1
                     ^ \markup { c.0 }
                     {

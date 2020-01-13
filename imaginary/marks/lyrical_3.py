@@ -8,7 +8,7 @@ from imaginary.fabrics import (instrument_groups,
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import library
 from imaginary.stories.fabric import ImaginaryFabric
-import lyrical
+from imaginary.marks import lyrical
 
 # TEMPO = 96
 # =======================================================

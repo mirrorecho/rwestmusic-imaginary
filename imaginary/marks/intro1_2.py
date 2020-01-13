@@ -29,7 +29,7 @@ def block2(lib):
     b2["ooa_alto_saxes"].machine_arrow(ImaginaryCell(
             rhythm=(1,)*7 + (0.25,)*6 + (2,), 
             pitches=(4,5,9,11,12,14,16,  4,11,5,12,14,16,9, )).eps(
-            0, "both improvise on these pitches")(
+            0, "markup_column:both improvise on|these pitches")(
             0,1,2,3,4,5,6, "\\once \\hide Stem")(
             7,"markup_column:making use of|this figure")(
             7,9,11, "(")(

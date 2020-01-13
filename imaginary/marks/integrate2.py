@@ -26,10 +26,11 @@ from imaginary.marks import integrate
 def score2(lib):
     s = score.ImaginaryScore()
     sb = lib("integrate_block2")
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
 
     trumpets = lambda_segment.LambdaSegments(
         sb.with_only("melody_line1"),
