@@ -19,6 +19,41 @@ from imaginary.stories import library
 class Dummy(calliope.CalliopeBase): pass
 output_directory = Dummy().get_module_info()[0] 
 
+def rhythm1(lib):
+    c1 =  ImaginaryCell(
+        rhythm=(
+            0.25,0.25, 0.5, 
+            0.5,       0.5, 
+            -1, 
+            0.25,0.25, 0.5
+            ),
+        pitches=(
+            (5,-5),5,-8,
+            (-5,2,4), -8,
+            "R",
+            5,4,(-1,-8)
+            )
+        ).eps(
+        2,4,8, "note_head:0:cross"
+        )()
+    c2 =ImaginaryCell(
+        rhythm=(
+            -1, 
+            0.5, 0.5, 
+            0.5, 0.5, 
+            1,),
+        pitches=(
+            "R",
+            9,(-8,9),
+            (-5,2,5),-8,
+            2,
+            )
+        ).eps(
+        1,2,4, "note_head:0:cross")(
+        2, "note_head:1:cross"
+        )()
+    return ImaginaryPhrase(c1, c2)
+
 
 # RHYTHMIC MATERIAL:
 def high_rhythm(lib=None):
@@ -59,8 +94,11 @@ def mid_rhythm(lib=None):
 
 def bass_rhythm(lib=None):
     return ImaginaryPhrase(
-        ImaginaryCell(rhythm=(1, 1, -1.5, 0.5), pitches=((-12,0),-7, "R", -9,)),
-        ImaginaryCell(rhythm=(-2, 1, -1), pitches=("R",(-10,4),"R")),
+        ImaginaryCell(
+            rhythm=(1, 1, -1.5, 0.5), 
+            pitches=(-5,(-5,4), "R", -1,)),
+        ImaginaryCell(rhythm=(-2, 1, -1), 
+            pitches=("R",(-5,5),"R")),
     )
 
 def riff_opening_end_wiggle(lib): #OPENING_END_WIGGLE
@@ -914,7 +952,9 @@ def to_lib(lib):
         lib.add(riff_opening_end_wiggle, riffs_opening,)    
 
         # TO DO: this is nasty! Should use intropection to avoid
-        lib.add(high_rhythm, high_rhythm_ii, off_rhythm, off_rhythm_slow, mid_rhythm, bass_rhythm,
+        lib.add(
+            rhythm1,
+            high_rhythm, high_rhythm_ii, off_rhythm, off_rhythm_slow, mid_rhythm, bass_rhythm,
             grid_g0_c11, grid_g0_c13, grid_g0_c21_22,
             grid_g1_c6, grid_g1_c23_24, grid_g2_c4_5, grid_g2_c16_17, grid_g2_c26_31,
             grid_g3_c10_11_sax_strings, grid_g3_c10_11_winds_brass, grid_g3_c20_21,

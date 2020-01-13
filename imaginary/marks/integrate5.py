@@ -25,10 +25,10 @@ from imaginary.marks import integrate
 def score5(lib):
     s = score.ImaginaryScore()
     sb = lib("integrate_block5")
-    # s = sb().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
     strings_pulse1 = pulse.Pulse(
         sb,

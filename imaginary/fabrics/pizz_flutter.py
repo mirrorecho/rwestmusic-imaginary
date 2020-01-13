@@ -8,6 +8,8 @@ class PizzFlutter(ImaginaryFabric):
     pizz_dynamic = None
     flutter_dynamic = None
     fabric_staves = (
+                "ooa_guitar",
+                "ooa_bass_guitar",
                 "ooa_violin1", 
                 "ooa_violin2", 
                 "ooa_cello1", 
@@ -27,7 +29,7 @@ class PizzFlutter(ImaginaryFabric):
     def weave(self, staff, index=0, **kwargs):
         if staff.name in instrument_groups.get_instruments("strings"):
             return self.pizz_helper(pizz_indicator=True)
-        elif staff.name in ("harp1", "harp2"):
+        elif staff.name in ("harp1", "harp2","ooa_guitar","ooa_bass_guitar"):
             return self.pizz_helper(pizz_indicator=False)
         elif staff.name in instrument_groups.get_instruments("flutes"):
             return self.flutter_helper()

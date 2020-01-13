@@ -26,10 +26,10 @@ from imaginary.marks import integrate
 def score4(lib):
     s = score.ImaginaryScore()
     sb = lib("integrate_block4")
-    # s = sb().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
     s.extend_from(
         pulse_on_off_beat.PulseOnOffBeat(

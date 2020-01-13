@@ -98,9 +98,30 @@
                         }
                     }
                     {
+                        \accidentalStyle neo-modern-cautionary
+                        e'1
+                        \pp
+                        ~
+                        \<
+                        e'4
+                        ~
+                        e'8
+                        [
+                        e'8
+                        \mp
+                        ~
+                        ]
+                        e'2
+                        ~
+                        e'2
+                        ~
+                        e'4
+                        r4
+                    }
+                    {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 1
                         }
                     }
                     {
@@ -126,9 +147,35 @@
                         }
                     }
                     {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        e'8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        e'4
+                        ~
+                        e'2
+                        ~
+                        e'2
+                        e'2
+                        \mp
+                        ~
+                        e'2
+                        ~
+                        e'4
+                        ~
+                        e'8
+                        [
+                        r8
+                        ]
+                    }
+                    {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 1
                         }
                     }
                     {
@@ -154,9 +201,30 @@
                         }
                     }
                     {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        e'4
+                        \pp
+                        ~
+                        \<
+                        e'2
+                        ~
+                        e'2
+                        ~
+                        e'8
+                        [
+                        e'8
+                        \mp
+                        ~
+                        ]
+                        e'4
+                        ~
+                        e'1
+                    }
+                    {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 1
                         }
                     }
                     {
@@ -183,9 +251,30 @@
                         }
                     }
                     {
+                        \accidentalStyle neo-modern-cautionary
+                        a1
+                        \pp
+                        ~
+                        \<
+                        a4
+                        ~
+                        a8
+                        [
+                        a8
+                        \mp
+                        ~
+                        ]
+                        a2
+                        ~
+                        a2
+                        ~
+                        a4
+                        r4
+                    }
+                    {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 1
                         }
                     }
                     {
@@ -212,16 +301,44 @@
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        a4
+                        \p
+                        (
+                        e2
+                        ~
+                        e2
+                        ~
+                        e4
+                        )
+                        r4
+                        e2
+                        (
+                        f4
+                        g4
+                        a1
+                        )
+                        r4
+                        e4
+                        (
+                        f2
+                        f1
+                        )
+                        r4
+                        a4
+                        ~
+                        (
+                        a2
+                        e1
+                        )
+                        e2
+                        (
+                        f4
+                        g4
+                        a2
+                        e2
+                        )
                     }
                 }
             >>
@@ -418,18 +535,192 @@
                             \clef "percussion"
                             R1 * 2
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        ^ \markup { mallets }
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        r16
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
                     }
                 }
             >>
@@ -442,13 +733,17 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { Guitar }
-                            \set Staff.shortInstrumentName = \markup { Gtr. }
-                            \set Staff.midiInstrument = #"electric guitar (clean)" 
-                            R1 * 2
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { Guitar }
+                        \set Staff.shortInstrumentName = \markup { Gtr. }
+                        \set Staff.midiInstrument = #"electric guitar (clean)" 
+                        a'4
+                        r4
+                        e'4
+                        r4
+                        r2
+                        d'4
+                        r4
                     }
                     {
                         {
@@ -470,54 +765,63 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Bass Guitar" }
-                            \set Staff.shortInstrumentName = \markup { Bgtr. }
-                            \set Staff.midiInstrument = #"electric bass (finger)" 
-                            \clef "bass"
-                            R1 * 2
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Bass Guitar" }
+                        \set Staff.shortInstrumentName = \markup { Bgtr. }
+                        \set Staff.midiInstrument = #"electric bass (finger)" 
+                        \clef "bass"
+                        d4
+                        r4
+                        d4
+                        r4
+                        r2
+                        g4
+                        r4
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
                         r4
-                        a4
-                        e2
                         d4
-                        ~
-                        d8
+                        e4
+                        r4
+                        g,4
+                        r8
                         [
                         e8
-                        ~
                         ]
-                        e2
-                        e2
+                        r2
+                        a,4
+                        r4
                         f4
-                        g4
-                        a2
-                        e2
+                        c4
+                        a4
+                        r4
+                        a,4
+                        r4
                         r4
                         e4
-                        f2
+                        bf,4
+                        r4
                         f4
-                        ~
-                        f8
+                        r8
                         [
-                        e8
-                        ~
+                        a,8
                         ]
-                        e2
+                        r2
                         r4
                         a4
-                        ~
-                        a2
-                        e1
-                        e2
-                        f4
+                        r2
+                        a,4
+                        r4
+                        r2
+                        e4
+                        r4
+                        bf,4
                         g4
-                        a2
-                        e2
+                        d4
+                        r4
+                        e4
+                        r4
                     }
                 }
             >>
@@ -534,13 +838,13 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
                         \set Staff.midiInstrument = #"violin" 
-                        a'4
+                        f''4
                         ^ \markup { pizz }
                         r4
                         e''4
                         r4
                         r2
-                        d''4
+                        a'4
                         r4
                     }
                     {
@@ -607,20 +911,31 @@
                         d4
                         r4
                         r2
-                        g4
+                        d4
                         r4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        d1
+                        ^ \markup { "arco, distorted" }
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -645,16 +960,18 @@
                         r4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        f,1
+                        ^ \markup { "arco, distorted" }
+                        g,1
+                        f,1
+                        g,1
+                        f,1
+                        g,1
+                        f,1
+                        g,1
+                        f,1
+                        g,1
                     }
                 }
             >>
@@ -769,91 +1086,91 @@
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
@@ -893,31 +1210,31 @@
                             R1 * 4
                         }
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                         \>
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                         \>
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                         \>
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                     }
                 }
@@ -943,80 +1260,80 @@
                         }
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
@@ -1043,64 +1360,64 @@
                             R1 * 4
                         }
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        f'8
                         \mp
                         ~
                         ]
                         \>
-                        c'2
+                        f'2
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'2
+                        a'2
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        e'8
                         \mp
                         ~
                         ]
                         \>
-                        c'2
+                        e'2
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
-                        c'2
+                        a'2
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -1458,7 +1775,7 @@
                         e''4
                         ^ \markup { pizz }
                         r4
-                        a''4
+                        e''4
                         r4
                         r2
                         e''4
@@ -1591,7 +1908,7 @@
                         d4
                         ^ \markup { pizz }
                         r4
-                        d4
+                        a4
                         r4
                         r2
                         d4
@@ -1668,131 +1985,59 @@
                         \accidentalStyle neo-modern-cautionary
                         r4
                         a4
-                        e2
+                        a,4
+                        r4
                         d4
-                        ~
-                        d8
+                        r8
                         [
-                        e8
-                        ~
+                        a,8
                         ]
-                        e2
-                        e2
-                        f4
+                        r2
+                        e4
+                        r4
+                        bf,4
                         g4
-                        a2
-                        e2
+                        d4
                         r4
                         e4
-                        f2
+                        r4
+                        r4
+                        a,4
                         f4
-                        ~
-                        f8
+                        r4
+                        bf,4
+                        r8
                         [
                         e8
-                        ~
                         ]
-                        e2
+                        r2
                         r4
-                        a4
-                        ~
-                        a2
-                        e1
-                        e2
+                        d4
+                        r2
+                        e4
+                        r4
+                        r2
+                        a,4
+                        r4
                         f4
-                        g4
-                        a2
-                        e2
+                        c4
+                        a4
+                        r4
+                        a,4
+                        r4
                     }
                 }
             >>
         >>
-        \context StaffGroup = "short_score"
-        <<
-            \context RhythmicStaff = "high_rhythm"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context RhythmicStaff = "mid_rhythm"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context RhythmicStaff = "bass_rhythm"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "melody_line1"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "melody_line2"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "counter_line"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "bass_line"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "riff"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "chords"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "high_drones"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "mid_drones"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "bass_drones"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-        >>
     >>
+    
+                \midi {
+                    \context {
+                        \Score
+                        midiChannelMapping = #'instrument
+                    }
+                    \tempo 4 = 96
+                }
+                \layout { }                 
+                
 }

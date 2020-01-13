@@ -26,8 +26,11 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
+    score = lib["integrate_score"]
+    # score.remove(score.staff_groups["short_score"])
+    
     calliope.illustrate(
-        calliope.illustrate(lib["integrate_score"]),
+        score,
         as_midi=True,
         open_midi=True,
         )

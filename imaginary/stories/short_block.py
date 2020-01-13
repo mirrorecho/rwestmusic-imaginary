@@ -2,7 +2,7 @@ import abjad, calliope
 
 from imaginary.scores.short_score import ImaginaryShortScore
 from imaginary.stories.pitch_analyzer import PitchAnalyzer
-from imaginary.stories.library_material import ImaginarySegment, ImaginaryLine, ImaginaryPhrase
+from imaginary.stories.library_material import ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell
 from imaginary.libraries import tally_apps
 
 # TO DO: CONSIDER WHETHER THIS SHOULD BE UNIVERSAL HERE OR NOT
@@ -141,7 +141,7 @@ class ShortBlock(calliope.SegmentBlock):
 
         for seg, seg_beats in zip(segs, segs_beats):
             if seg_beats < beats:
-                seg.append( calliope.Cell(rhythm=(seg_beats-beats,)) )
+                seg.append( ImaginaryCell(rhythm=(seg_beats-beats,)) )
 
     # TO DO: refactor this better into libraries...
     def get_grid_a(self, name,

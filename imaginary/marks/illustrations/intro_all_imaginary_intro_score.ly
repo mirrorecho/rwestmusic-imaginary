@@ -151,9 +151,9 @@
                         s16
                         \mp
                         \>
-                        \freeContinue
                         \bar ":|."
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat hairpin" }
                         \once \hide Rest
@@ -205,8 +205,8 @@
                         \fermata
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat 1 or 2 X" }
                         \once \hide Rest
@@ -340,12 +340,12 @@
                         a8
                         )
                         b1
-                        \mp
                         \fermata
+                        \mp
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -422,8 +422,8 @@
                         \p
                         \<
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup {
                             \column
@@ -474,8 +474,8 @@
                         \p
                         \<
                         s16
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         \mp
@@ -731,8 +731,8 @@
                         a'2
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup {
                             \column
@@ -928,8 +928,8 @@
                         )
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup {
                             \column
@@ -1124,8 +1124,8 @@
                         \p
                         \<
                         s16
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         \mp
@@ -1314,8 +1314,8 @@
                         \p
                         \<
                         s16
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         \mp
@@ -1493,8 +1493,8 @@
                         \mp
                         \>
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -1780,8 +1780,8 @@
                         \p
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -2204,8 +2204,8 @@
                         r8
                         ^ \markup { "bowed, (motor on)" }
                         c'''1
-                        \mp
                         \fermata
+                        \mp
                         s16
                         \freePad
                         s8
@@ -2417,8 +2417,8 @@
                         \<
                         b4
                         s16
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         \mf
@@ -2472,9 +2472,9 @@
                         s8.
                         b4
                         s16
+                        \bar ":|."
                         \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
-                        \bar ":|."
                         s4
                         \pp
                         ^ \markup { "cont. repeating consant pulse" }
@@ -2967,8 +2967,8 @@
                         \fermata
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "both repeat freely, 2nd starting slightly after 1st (staggered)" }
                         \once \hide Rest
@@ -3023,8 +3023,8 @@
                         \fermata
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat, freely (staggered)" }
                         \once \hide Rest
@@ -3133,9 +3133,9 @@
                         \normalStaff
                         s16
                         s16
-                        \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (choosing between 1., 2., 3.)" }
                         \once \hide Rest
@@ -3269,8 +3269,8 @@
                         \mp
                         \>
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat hairpin, 1,2 staggered" }
                         \once \hide Rest
@@ -3323,9 +3323,9 @@
                         s16
                         \mp
                         \>
-                        \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "(continue repeating, staggered)" }
                         \once \hide Rest
@@ -3540,8 +3540,8 @@
                         r4
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat, freely (staggered)" }
                         \once \hide Rest
@@ -3588,8 +3588,8 @@
                         s8
                         \normalStaff
                         b''1
-                        \mp
                         \fermata
+                        \mp
                         ^ \markup {
                             \column
                                 {
@@ -3603,8 +3603,8 @@
                         b''1
                         :32
                         \fermata
-                        ^ \markup { 2., }
                         ^ \markup { Flt. }
+                        ^ \markup { 2., }
                         \freePad
                         s4
                         \normalStaff
@@ -3618,9 +3618,9 @@
                         \normalStaff
                         s16
                         s16
-                        \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat (choosing between 1., 2., 3.)" }
                         \once \hide Rest
@@ -3833,12 +3833,12 @@
                         a'8
                         )
                         b'2
-                        \mp
                         \fermata
+                        \mp
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -3919,8 +3919,8 @@
                         s16
                         \freePad
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         fs8
                         \ppp
@@ -3937,8 +3937,8 @@
                         \mp
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -3971,8 +3971,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         fs'8
                         \p
@@ -3982,8 +3982,8 @@
                         )
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat (staggered)" }
                         \once \hide Rest
@@ -4036,12 +4036,12 @@
                         a8
                         )
                         b1
-                        \mp
                         \fermata
+                        \mp
                         s16
-                        \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "(continue repeating, staggered)" }
                         \once \hide Rest
@@ -4091,12 +4091,12 @@
                         a'8
                         )
                         c''2
-                        \mp
                         \fermata
+                        \mp
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat, freely (staggered)" }
                         \once \hide Rest
@@ -4144,8 +4144,8 @@
                         \p
                         \<
                         s16
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         \mp
@@ -4313,8 +4313,8 @@
                         )
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -4376,8 +4376,8 @@
                         \p
                         \<
                         s16
-                        \freeContinue
                         \bar ":|."
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         \mp
@@ -4541,8 +4541,8 @@
                         \mp
                         \>
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -4778,8 +4778,8 @@
                         e'1
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -5011,8 +5011,8 @@
                         d'2
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat, freely" }
                         \once \hide Rest
@@ -5287,8 +5287,8 @@
                     \mf
                     \>
                     \freeContinue
-                    \once \override TextScript.extra-offset = #'( 1 . 0 )
                     \bar ":|."
+                    \once \override TextScript.extra-offset = #'( 1 . 0 )
                     s4
                     ^ \markup { "repeat, keeping pulse constant" }
                     \once \hide Rest
@@ -5554,8 +5554,8 @@
                             \pp
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5595,8 +5595,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             af''16
                             (
@@ -5604,8 +5604,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5645,8 +5645,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             g''16
                             (
@@ -5654,8 +5654,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5703,8 +5703,8 @@
                             \p
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5748,12 +5748,12 @@
                             \normalStaff
                             s8.
                             f'''1
-                            \mp
                             \fermata
+                            \mp
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5801,8 +5801,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -5827,9 +5827,9 @@
                             \mf
                             e'''8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -5905,16 +5905,16 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             af''1
                             \fermata
                             \pp
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -5954,15 +5954,15 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             g''1
                             \fermata
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6010,8 +6010,8 @@
                             \p
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6083,8 +6083,8 @@
                             d''4
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6127,8 +6127,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -6153,9 +6153,9 @@
                             \mf
                             b''8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -6263,8 +6263,8 @@
                             r1
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             fs'8
                             \pp
@@ -6276,8 +6276,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6319,8 +6319,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6366,8 +6366,8 @@
                             \fermata
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6421,8 +6421,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -6447,9 +6447,9 @@
                             \mf
                             b''8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -6581,8 +6581,8 @@
                             d'2
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -6638,8 +6638,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6690,8 +6690,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -6716,9 +6716,9 @@
                             \mf
                             f''8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -6775,8 +6775,8 @@
                             \pp
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6816,15 +6816,15 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             g'1
                             \fermata
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6864,8 +6864,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             d'8
                             \pp
@@ -6898,8 +6898,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -6967,8 +6967,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -7021,8 +7021,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -7067,8 +7067,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -7093,9 +7093,9 @@
                             \mf
                             c'''8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -7171,8 +7171,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             d'8
                             \pp
@@ -7181,8 +7181,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -7221,15 +7221,15 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e'1
                             \fermata
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -7279,8 +7279,8 @@
                             g'8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -7330,8 +7330,8 @@
                             c''2
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -7385,8 +7385,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -7411,9 +7411,9 @@
                             \mf
                             c''8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -7515,8 +7515,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             fs'8
                             \pp
@@ -7525,8 +7525,8 @@
                             d''1
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -7580,8 +7580,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -7632,8 +7632,8 @@
                             b'1
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -7681,8 +7681,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -7707,9 +7707,9 @@
                             \mf
                             b'8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -7845,8 +7845,8 @@
                             b32 \( c'32 \)
                             }
                             c'2
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -7856,8 +7856,8 @@
                             \!
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -7911,8 +7911,8 @@
                             }
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -7962,8 +7962,8 @@
                             \<
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -7988,9 +7988,9 @@
                             \mf
                             e'8
                             s16
-                            \freeContinue
                             \bar ":|."
                             \once \override TextScript.extra-offset = #'( 1 . 0 )
+                            \freeContinue
                             s4
                             ^ \markup {
                                 \column
@@ -8047,8 +8047,8 @@
                             \pp
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8088,8 +8088,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             cs4
                             e1
@@ -8102,8 +8102,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -8136,8 +8136,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             d''8
                             \pp
@@ -8154,8 +8154,8 @@
                             \p
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8213,8 +8213,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -8253,8 +8253,8 @@
                             \normalStaff
                             s8.
                             c''1
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -8264,8 +8264,8 @@
                             \p
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8367,8 +8367,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -8397,8 +8397,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             d''8
                             \pp
@@ -8416,8 +8416,8 @@
                             cs1
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8453,16 +8453,16 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             fs1
                             \fermata
                             \p
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8520,8 +8520,8 @@
                             \mp
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8564,8 +8564,8 @@
                             \fermata
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8670,8 +8670,8 @@
                             b1
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -8701,8 +8701,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             r4
                             b4
@@ -8718,8 +8718,8 @@
                             d'2
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -8753,15 +8753,15 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b4
                             d'2
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -8819,8 +8819,8 @@
                             fs'32 \( g'32 \)
                             }
                             c''1
-                            \mp
                             \fermata
+                            \mp
                             \>
                             \repeat tremolo 8
                             {
@@ -8830,8 +8830,8 @@
                             \!
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -8870,8 +8870,8 @@
                             \p
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -8895,8 +8895,8 @@
                             c2
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -9004,8 +9004,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -9039,8 +9039,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             r4
                             cs'8
@@ -9055,8 +9055,8 @@
                             \fermata
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -9094,8 +9094,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             g'16
                             (
@@ -9108,8 +9108,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -9163,8 +9163,8 @@
                             \p
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -9300,8 +9300,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             cs2
                             \pp
@@ -9321,8 +9321,8 @@
                             \!
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -9358,8 +9358,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             fs2
                             \pp
@@ -9379,8 +9379,8 @@
                             \!
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -9427,8 +9427,8 @@
                             b1
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -9481,8 +9481,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -9589,16 +9589,16 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             cs'1
                             \fermata
                             \pp
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -9638,8 +9638,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             r4
                             b4
@@ -9653,8 +9653,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { repeat }
                             \once \hide Rest
@@ -9703,8 +9703,8 @@
                             )
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup { "repeat, freely" }
                             \once \hide Rest
@@ -9832,8 +9832,8 @@
                         \pp
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -9866,16 +9866,16 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         g1
                         \fermata
                         \pp
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -9915,16 +9915,16 @@
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         fs1
                         \fermata
                         \pp
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -9972,8 +9972,8 @@
                         \p
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest
@@ -10020,8 +10020,8 @@
                         \fermata
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { repeat }
                         \once \hide Rest

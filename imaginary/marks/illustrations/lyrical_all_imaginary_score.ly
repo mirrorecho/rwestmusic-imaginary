@@ -26,21 +26,23 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
                         \set Staff.midiInstrument = #"flute" 
                         e''1
                         :32
+                        \p
                         ^ \markup { f.t. }
                         r4
-                        b'4
+                        g'4
                         :32
                         ~
-                        b'2
+                        g'2
                         :32
                         ~
-                        b'4
+                        g'4
                         :32
                         r4
                         r2
@@ -49,73 +51,84 @@
                         \accidentalStyle neo-modern-cautionary
                         g'4
                         \p
-                        ^ \markup { normal }
-                        c''8
-                        [
-                        b'8
+                        ^ \markup { "normal, expressive" }
+                        (
+                        c''4
                         ~
-                        ]
-                        b'2
+                        c''4
+                        )
+                        r4
                         r4
                         a'4
                         ~
+                        \<
+                        (
                         a'4
                         g'8
                         [
                         c''8
+                        \mp
+                        ~
                         ]
-                        c''8
-                        [
-                        c''8
-                        ]
+                        \>
+                        c''4
+                        )
                         b'8
                         [
+                        (
                         a'8
+                        ~
                         ]
-                        r2
+                        a'4
+                        )
+                        r4
+                        \!
                         r4
                         b'4
-                        e''8
-                        [
-                        c''8
+                        \p
+                        e''2
                         ~
-                        ]
-                        c''4
-                        ~
-                        c''1
-                        c''8
+                        e''1
+                        r8
                         [
                         b'8
                         ~
                         ]
+                        \<
                         b'4
                         ~
                         b'2
                         f''4
-                        e''8
-                        [
-                        a'8
+                        (
+                        e''4
                         ~
-                        ]
-                        a'2
+                        e''4
+                        )
+                        r4
+                        \!
                         f''8
+                        \mp
                         [
+                        \>
+                        (
                         e''8
                         ~
                         ]
                         e''4
                         ~
                         e''2
-                        e''4
-                        a''8
-                        [
-                        g''8
                         ~
-                        ]
-                        g''2
+                        e''4
+                        )
+                        a''4
+                        \p
+                        ~
+                        a''4
+                        r4
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         a'2
                         :32
                         ^ \markup { f.t. }
@@ -142,6 +155,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -160,14 +174,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -178,22 +198,81 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
                             \set Staff.midiInstrument = #"clarinet" 
-                            R1 * 6
+                            R1 * 3
                         }
+                        r4
+                        c''8
+                        \p
+                        ^ \markup { expressive }
+                        [
+                        \<
+                        (
+                        b'8
+                        ~
+                        ]
+                        b'2
+                        ~
+                        b'2
+                        ~
+                        b'4
+                        )
+                        r4
+                        \!
+                        r4
+                        b'4
+                        \mp
+                        ~
+                        \>
+                        b'2
+                        ~
+                        b'4
+                        r4
+                        e''8
+                        \p
+                        [
+                        \<
+                        (
+                        c''8
+                        ~
+                        ]
+                        c''4
+                        ~
+                        c''1
+                        )
+                        {
+                            R1 * 1
+                            \!
+                        }
+                        r4
+                        r8
+                        [
+                        a'8
+                        \mp
+                        ~
+                        ]
+                        a'2
+                        ~
+                        a'2
+                        ~
+                        a'4
+                        r4
+                        r4
+                        r8
+                        [
+                        g''8
+                        ~
+                        ]
+                        g''2
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -212,6 +291,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -230,14 +310,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_alto_sax1"
@@ -248,6 +334,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
@@ -258,7 +345,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
@@ -270,7 +357,35 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #1
+                            R1 * 2
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e'1
+                        \pp
+                        ~
+                        \<
+                        e'4
+                        ~
+                        e'8
+                        [
+                        e'8
+                        \mp
+                        ~
+                        ]
+                        e'2
+                        ~
+                        e'2
+                        ~
+                        e'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
                         }
                     }
                     {
@@ -282,6 +397,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -330,16 +446,73 @@
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        g'2
+                        \pp
+                        ~
+                        \<
+                        g'4
+                        ~
+                        g'8
+                        [
+                        g'8
+                        \mp
+                        ~
+                        ]
+                        g'2
+                        ~
+                        g'4
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c''2
+                        \pp
+                        ~
+                        \<
+                        c''4
+                        ~
+                        c''8
+                        [
+                        c''8
+                        \mp
+                        ~
+                        ]
+                        c''2
+                        ~
+                        c''4
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ef'2
+                        \pp
+                        ~
+                        \<
+                        ef'4
+                        ~
+                        ef'8
+                        [
+                        c'8
+                        \mp
+                        ~
+                        ]
+                        c'2
+                        ~
+                        c'4
+                        r4
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_alto_sax2"
@@ -350,6 +523,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
@@ -360,7 +534,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
@@ -372,7 +546,40 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #1
+                            R1 * 2
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        e'8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        e'4
+                        ~
+                        e'2
+                        ~
+                        e'2
+                        e'2
+                        \mp
+                        ~
+                        e'2
+                        ~
+                        e'4
+                        ~
+                        e'8
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
                         }
                     }
                     {
@@ -384,6 +591,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -438,16 +646,82 @@
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        r8
+                        [
+                        g'8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        g'4
+                        ~
+                        g'2
+                        g'2
+                        \mp
+                        ~
+                        g'4
+                        ~
+                        g'8
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        c''8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        c''4
+                        ~
+                        c''2
+                        c''2
+                        \mp
+                        ~
+                        c''4
+                        ~
+                        c''8
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        d''8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        d''4
+                        ~
+                        d''2
+                        af'2
+                        \mp
+                        ~
+                        af'4
+                        ~
+                        af'8
+                        [
+                        r8
+                        ]
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -458,23 +732,12 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Tsax. }
                             \set Staff.midiInstrument = #"alto sax" 
                             R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
                         }
                     }
                     {
@@ -486,12 +749,53 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
+                            R1 * 2
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        e'4
+                        \pp
+                        ~
+                        \<
+                        e'2
+                        ~
+                        e'2
+                        ~
+                        e'8
+                        [
+                        e'8
+                        \mp
+                        ~
+                        ]
+                        e'4
+                        ~
+                        e'1
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -540,16 +844,73 @@
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        r4
+                        g'4
+                        \pp
+                        ~
+                        \<
+                        g'2
+                        ~
+                        g'8
+                        [
+                        g'8
+                        \mp
+                        ~
+                        ]
+                        g'4
+                        ~
+                        g'2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        c'4
+                        \pp
+                        ~
+                        \<
+                        c'2
+                        ~
+                        c'8
+                        [
+                        c'8
+                        \mp
+                        ~
+                        ]
+                        c'4
+                        ~
+                        c'2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        d'4
+                        \pp
+                        ~
+                        \<
+                        d'2
+                        ~
+                        d'8
+                        [
+                        g'8
+                        \mp
+                        ~
+                        ]
+                        g'4
+                        ~
+                        g'2
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -560,6 +921,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
@@ -571,7 +933,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
@@ -583,7 +945,35 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #1
+                            R1 * 2
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a1
+                        \pp
+                        ~
+                        \<
+                        a4
+                        ~
+                        a8
+                        [
+                        a8
+                        \mp
+                        ~
+                        ]
+                        a2
+                        ~
+                        a2
+                        ~
+                        a4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
                         }
                     }
                     {
@@ -595,6 +985,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -631,16 +1022,55 @@
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        r2
+                        g2
+                        \pp
+                        ~
+                        \<
+                        g4
+                        g4
+                        \mp
+                        ~
+                        g2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        c'2
+                        \pp
+                        ~
+                        \<
+                        c'4
+                        c'4
+                        \mp
+                        ~
+                        c'2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        af2
+                        \pp
+                        ~
+                        \<
+                        af4
+                        g4
+                        \mp
+                        ~
+                        g2
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -651,6 +1081,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
@@ -662,7 +1093,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
@@ -674,18 +1105,60 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
+                            R1 * 2
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        a4
+                        \p
+                        (
+                        e2
+                        ~
+                        e2
+                        ~
+                        e4
+                        )
+                        r4
+                        e2
+                        (
+                        f4
+                        g4
+                        a1
+                        )
+                        r4
+                        e4
+                        (
+                        f2
+                        f1
+                        )
+                        r4
+                        a4
+                        ~
+                        (
+                        a2
+                        e1
+                        )
+                        e2
+                        (
+                        f4
+                        g4
+                        a2
+                        e2
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
@@ -698,20 +1171,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 7
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -725,6 +1198,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
@@ -735,12 +1209,23 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e1
+                        \pp
+                        ~
+                        \<
+                        e2
+                        e2
+                        \mp
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -759,6 +1244,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -777,14 +1263,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -795,6 +1287,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
@@ -805,12 +1298,19 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -829,6 +1329,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -847,14 +1348,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -865,6 +1372,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
@@ -876,12 +1384,23 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        f1
+                        \pp
+                        ~
+                        \<
+                        f2
+                        g2
+                        \mp
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -900,6 +1419,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -918,14 +1438,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -939,6 +1465,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
@@ -995,6 +1522,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -1073,32 +1601,60 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        bf''1
+                        :32
+                        \p
+                        ~
+                        \<
+                        bf''1
+                        :32
+                        ~
+                        bf''1
+                        :32
+                        ~
+                        bf''1
+                        :32
+                        <c'' c'''>4
+                        \mf
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                        <c'' c'''>4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 7
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -1109,65 +1665,526 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Drum Set" }
                             \set Staff.shortInstrumentName = \markup { Drum. }
-                            R1 * 6
+                            \set Staff.midiInstrument = #"taiko drum" 
+                            \clef "percussion"
+                            R1 * 3
                         }
+                        \tweak style #'cross
+                        e4
+                        \p
+                        \tweak style #'cross
+                        a'4
+                        ^ \markup { brushes }
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        ^ \markup { mallets }
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        r16
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #2
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            f'
+                        >16
+                        e'16
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            f'
+                        >16
+                        e'16
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            f'
+                        >16
+                        e'16
+                        ]
+                        r4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 7
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -1180,89 +2197,32 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { Guitar }
+                        \set Staff.shortInstrumentName = \markup { Gtr. }
+                        \set Staff.midiInstrument = #"electric guitar (clean)" 
+                        e'4
+                        \mp
+                        r4
+                        r2
+                        r4
+                        b4
+                        r2
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { Guitar }
-                            \set Staff.shortInstrumentName = \markup { Gtr. }
-                            \set Staff.midiInstrument = #"electric guitar (clean)" 
-                            R1 * 6
+                            R1 * 1
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 3
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
                             R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
-                    }
-                }
-                \context Staff = "ooa_bass_guitar"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Bass Guitar" }
-                            \set Staff.shortInstrumentName = \markup { Bgtr. }
-                            \set Staff.midiInstrument = #"electric bass (finger)" 
-                            \clef "bass"
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
                         }
                     }
                     {
@@ -1273,73 +2233,209 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
+                        a'4
                         r4
-                        a4
-                        e2
+                        e'4
+                        r4
+                        r2
+                        d'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #2
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #3
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 7
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
+                    }
+                }
+                \context Staff = "ooa_bass_guitar"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Bass Guitar" }
+                        \set Staff.shortInstrumentName = \markup { Bgtr. }
+                        \set Staff.midiInstrument = #"electric bass (finger)" 
+                        \clef "bass"
+                        a,4
+                        \mp
+                        r4
+                        r2
+                        r4
+                        a,4
+                        r2
+                        {
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         d4
-                        ~
-                        d8
+                        r4
+                        d4
+                        r4
+                        r2
+                        g4
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        d4
+                        e4
+                        r4
+                        g,4
+                        r8
                         [
                         e8
-                        ~
                         ]
-                        e2
-                        e2
+                        r2
+                        a,4
+                        r4
                         f4
-                        g4
-                        a2
-                        e2
+                        c4
+                        a4
+                        r4
+                        a,4
+                        r4
                         r4
                         e4
-                        f2
+                        bf,4
+                        r4
                         f4
-                        ~
-                        f8
+                        r8
                         [
-                        e8
-                        ~
+                        a,8
                         ]
-                        e2
+                        r2
                         r4
                         a4
-                        ~
-                        a2
-                        e1
-                        e2
-                        f4
+                        r2
+                        a,4
+                        r4
+                        r2
+                        e4
+                        r4
+                        bf,4
                         g4
-                        a2
-                        e2
+                        d4
+                        r4
+                        e4
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #2
+                        <c g>2
+                        \p
+                        <c g>2
+                        <d g>2
+                        <d g>2
+                        <c g>2
+                        <c g>2
+                        <d g>2
+                        <d g>2
+                        <c g>2
+                        <c g>2
+                        <d g>2
+                        <d g>2
+                        <c g>2
+                        <c g>2
+                        <d g>2
+                        <d g>2
+                        <c g>2
+                        <c g>2
+                        <d g>2
+                        <d g>2
+                        <c g>2
+                        <c g>2
+                        <d g>2
+                        <d g>2
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 7
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -1352,11 +2448,13 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
                         \set Staff.midiInstrument = #"violin" 
                         e''4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
@@ -1376,99 +2474,18 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
-                        a'4
-                        ^ \markup { pizz }
-                        r4
-                        e''4
-                        r4
-                        r2
-                        d''4
-                        r4
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
-                    }
-                }
-                \context Staff = "ooa_violin2"
-                \with
-                {
-                    \consists Horizontal_bracket_engraver
-                }
-                {
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Violin 2" }
-                        \set Staff.shortInstrumentName = \markup { Vln.2 }
-                        \set Staff.midiInstrument = #"violin" 
-                        b''4
-                        ^ \markup { pizz }
-                        r4
-                        r2
-                        r4
-                        g'4
-                        r2
-                        {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         f''4
                         ^ \markup { pizz }
                         r4
@@ -1493,7 +2510,396 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
+                        }
+                        c''8
+                        \p
+                        -\staccato
+                        ^ \markup { normal }
+                        [
+                        \<
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        d'8
+                        -\tenuto
+                        ~
+                        ]
+                        d'8
+                        [
+                        d'8
+                        -\tenuto
+                        ~
+                        ]
+                        d'8
+                        [
+                        a'8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        a'4
+                        c''8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        ef''8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        ef''4
+                        c''8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        c'''8
+                        -\staccato
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        d''8
+                        -\tenuto
+                        ~
+                        ]
+                        d''8
+                        [
+                        f''8
+                        -\tenuto
+                        ~
+                        ]
+                        f''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''8
+                        [
+                        g''8
+                        -\tenuto
+                        ~
+                        ]
+                        g''4
+                        c''8
+                        -\staccato
+                        [
+                        f''8
+                        -\tenuto
+                        ~
+                        ]
+                        f''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''4
+                        c''8
+                        -\staccato
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        af'8
+                        -\tenuto
+                        ~
+                        ]
+                        af'8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'4
+                        c''8
+                        -\staccato
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c'4
+                        -\tenuto
+                        af4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        f'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        bf4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        af4
+                        -\tenuto
+                        f'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        cs'2
+                        \<
+                        cs'2
+                        bf1
+                        \f
+                        \fermata
+                    }
+                }
+                \context Staff = "ooa_violin2"
+                \with
+                {
+                    \consists Horizontal_bracket_engraver
+                }
+                {
+                    {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Violin 2" }
+                        \set Staff.shortInstrumentName = \markup { Vln.2 }
+                        \set Staff.midiInstrument = #"violin" 
+                        b''4
+                        \mp
+                        ^ \markup { pizz }
+                        r4
+                        r2
+                        r4
+                        g'4
+                        r2
+                        {
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
                         }
                     }
                     {
@@ -1505,8 +2911,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 2
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #1
+                        f''4
+                        ^ \markup { pizz }
+                        r4
+                        e''4
+                        r4
+                        r2
+                        a'4
+                        r4
                     }
                     {
                         {
@@ -1517,8 +2935,372 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 6
                         }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #2
+                            R1 * 4
+                        }
+                        bf'8
+                        \p
+                        -\staccato
+                        ^ \markup { normal }
+                        [
+                        \<
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        bf'4
+                        bf'8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        bf'4
+                        c''8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        c'''8
+                        -\staccato
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''4
+                        c'''8
+                        -\staccato
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                        cs'4
+                        -\tenuto
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        cs'2
+                        \<
+                        cs'2
+                        cs'1
+                        \f
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -1528,12 +3310,14 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
                         \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         a4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
@@ -1547,7 +3331,8 @@
                     {
                         \accidentalStyle neo-modern-cautionary
                         a,1
-                        \p
+                        \pp
+                        ^ \markup { "arco, distorted" }
                         e2
                         d2
                         r8
@@ -1599,56 +3384,493 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         d4
                         ^ \markup { pizz }
                         r4
                         d4
                         r4
                         r2
-                        g4
+                        d4
                         r4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        d1
+                        ^ \markup { "arco, distorted" }
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
+                        ~
+                        d1
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #2
+                        g,8
+                        \p
+                        -\staccato
+                        ^ \markup { normal }
+                        [
+                        \<
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        d4
+                        g,8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        a,8
+                        -\tenuto
+                        ~
+                        ]
+                        a,8
+                        [
+                        f,8
+                        -\tenuto
+                        ~
+                        ]
+                        f,8
+                        [
+                        f,8
+                        -\tenuto
+                        ~
+                        ]
+                        f,8
+                        [
+                        f,8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        f,4
+                        g,8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        g,8
+                        -\tenuto
+                        ~
+                        ]
+                        g,8
+                        [
+                        d8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        d4
+                        g8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        a8
+                        -\tenuto
+                        ~
+                        ]
+                        a8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        g8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        g4
+                        g8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        g4
+                        g8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        g4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        g8
+                        -\staccato
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'4
+                        g8
+                        -\staccato
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        ef8
+                        -\tenuto
+                        ~
+                        ]
+                        ef4
+                        g8
+                        -\staccato
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g4
+                        g8
+                        -\staccato
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        af8
+                        -\tenuto
+                        ~
+                        ]
+                        af4
+                        g8
+                        -\staccato
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c4
+                        g,8
+                        -\staccato
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,8
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        af,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        f,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        ef4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        bf,2
+                        \<
+                        cs2
+                        bf,1
+                        \f
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -1658,17 +3880,19 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
                         a4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
                         r4
-                        a4
+                        b,4
                         r2
                         {
                             R1 * 1
@@ -1677,7 +3901,8 @@
                     {
                         \accidentalStyle neo-modern-cautionary
                         a,1
-                        \p
+                        \pp
+                        ^ \markup { "arco, distorted" }
                         e2
                         d2
                         r8
@@ -1729,6 +3954,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         d4
                         ^ \markup { pizz }
                         r4
@@ -1739,46 +3965,473 @@
                         r4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        f,1
+                        ^ \markup { "arco, distorted" }
+                        g,1
+                        f,1
+                        g,1
+                        f,1
+                        g,1
+                        f,1
+                        g,1
+                        f,1
+                        g,1
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #2
+                        d8
+                        \p
+                        -\staccato
+                        ^ \markup { normal }
+                        [
+                        \<
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        a,8
+                        -\tenuto
+                        ~
+                        ]
+                        a,8
+                        [
+                        a,8
+                        -\tenuto
+                        ~
+                        ]
+                        a,8
+                        [
+                        a,8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        a,4
+                        g,8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        f,8
+                        -\tenuto
+                        ~
+                        ]
+                        f,8
+                        [
+                        f,8
+                        -\tenuto
+                        ~
+                        ]
+                        f,8
+                        [
+                        f,8
+                        -\tenuto
+                        ~
+                        ]
+                        f,8
+                        [
+                        e,8
+                        -\tenuto
+                        ~
+                        ]
+                        e,8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        c4
+                        c8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        d8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        d4
+                        c8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        ef8
+                        -\tenuto
+                        ~
+                        ]
+                        ef8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        d8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        d4
+                        c8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        c'8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        c'4
+                        c'8
+                        \p
+                        -\staccato
+                        [
+                        \<
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        bf8
+                        \mf
+                        -\tenuto
+                        ~
+                        ]
+                        bf4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #3
+                        c'8
+                        -\staccato
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g4
+                        c'8
+                        -\staccato
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf4
+                        bf8
+                        -\staccato
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f4
+                        f8
+                        -\staccato
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        ef8
+                        -\tenuto
+                        ~
+                        ]
+                        ef4
+                        ef8
+                        -\staccato
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c4
+                        af,8
+                        -\staccato
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,8
+                        [
+                        c,8
+                        -\tenuto
+                        ~
+                        ]
+                        c,8
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        f,4
+                        -\tenuto
+                        c,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        c4
+                        -\tenuto
+                        ef4
+                        -\tenuto
+                        ef4
+                        -\tenuto
+                        c4
+                        -\tenuto
+                        f,4
+                        -\tenuto
+                        c,4
+                        -\tenuto
+                        c,4
+                        -\tenuto
+                        cs,4
+                        -\tenuto
+                        f,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        bf,2
+                        \<
+                        f,2
+                        bf,1
+                        \f
+                        \fermata
                     }
                 }
             >>
@@ -1794,12 +4447,14 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
                         \set Staff.midiInstrument = #"flute" 
                         b''1
                         :32
+                        \p
                         ^ \markup { f.t. }
                         r4
                         b''4
@@ -1822,11 +4477,18 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         f''2
                         :32
                         ^ \markup { f.t. }
@@ -1853,6 +4515,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -1871,14 +4534,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -1888,12 +4557,14 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
                         \set Staff.midiInstrument = #"flute" 
                         b''1
                         :32
+                        \p
                         ^ \markup { f.t. }
                         r4
                         b''4
@@ -1916,11 +4587,18 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         a''2
                         :32
                         ^ \markup { f.t. }
@@ -1947,6 +4625,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -1965,14 +4644,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_oboe1"
@@ -1983,6 +4668,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
@@ -1995,22 +4681,22 @@
                         r4
                         r8
                         [
-                        d''8
+                        b'8
                         \pp
                         ~
                         ]
                         \<
-                        d''4
+                        b'4
                         ~
-                        d''8
+                        b'8
                         [
-                        d''8
+                        c''8
                         \mp
                         ~
                         ]
-                        d''4
+                        c''4
                         ~
-                        d''8
+                        c''8
                         [
                         r8
                         ]
@@ -2020,22 +4706,22 @@
                         r4
                         r8
                         [
-                        d''8
+                        b'8
                         \pp
                         ~
                         ]
                         \<
-                        d''4
+                        b'4
                         ~
-                        d''8
+                        b'8
                         [
-                        d''8
+                        c''8
                         \mp
                         ~
                         ]
-                        d''4
+                        c''4
                         ~
-                        d''8
+                        c''8
                         [
                         r8
                         ]
@@ -2073,6 +4759,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         r8
                         [
                         a'8
@@ -2098,91 +4785,91 @@
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r4
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
@@ -2190,6 +4877,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2208,14 +4896,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -2226,6 +4920,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
@@ -2236,30 +4931,37 @@
                     {
                         \accidentalStyle neo-modern-cautionary
                         r2
-                        d''2
+                        e''2
                         \pp
                         \<
-                        a''2
+                        c''2
                         \mp
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
                         r2
-                        d''2
+                        e''2
                         \pp
                         \<
-                        a''2
+                        c''2
                         \mp
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 3
+                            R1 * 1
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 1
                         }
                         r4
@@ -2282,36 +4984,37 @@
                             R1 * 4
                         }
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                         \>
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                         \>
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                         \>
                         r2
-                        c'2
+                        a'2
                         \pp
                         \<
-                        c'2
+                        a'2
                         \mp
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2330,14 +5033,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -2348,6 +5057,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
@@ -2359,20 +5069,20 @@
                         \accidentalStyle neo-modern-cautionary
                         r8
                         [
-                        d'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        d'4
+                        a'4
                         ~
-                        d'4
-                        d'4
+                        a'4
+                        c''4
                         \mp
                         ~
-                        d'4
+                        c''4
                         ~
-                        d'8
+                        c''8
                         [
                         r8
                         ]
@@ -2381,20 +5091,20 @@
                         \accidentalStyle neo-modern-cautionary
                         r8
                         [
-                        d'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        d'4
+                        a'4
                         ~
-                        d'4
-                        d'4
+                        a'4
+                        c''4
                         \mp
                         ~
-                        d'4
+                        c''4
                         ~
-                        d'8
+                        c''8
                         [
                         r8
                         ]
@@ -2402,7 +5112,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 3
+                            R1 * 1
                         }
                     }
                     {
@@ -2414,84 +5124,91 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
                         \>
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
                         r8
                         [
-                        c'8
+                        a'8
                         \pp
                         ~
                         ]
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mp
                         ~
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
                         r8
                         ]
@@ -2499,6 +5216,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2517,14 +5235,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -2535,6 +5259,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
@@ -2545,41 +5270,41 @@
                     {
                         \accidentalStyle neo-modern-cautionary
                         r4
-                        d'4
+                        b'4
                         \pp
                         ~
                         \<
-                        d'4
+                        b'4
                         ~
-                        d'8
-                        [
                         b'8
+                        [
+                        a'8
                         \mp
                         ~
                         ]
-                        b'2
+                        a'2
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
                         r4
-                        d'4
+                        b'4
                         \pp
                         ~
                         \<
-                        d'4
+                        b'4
                         ~
-                        d'8
-                        [
                         b'8
+                        [
+                        a'8
                         \mp
                         ~
                         ]
-                        b'2
+                        a'2
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 3
+                            R1 * 1
                         }
                     }
                     {
@@ -2591,71 +5316,79 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        f'8
                         \mp
                         ~
                         ]
                         \>
-                        c'2
+                        f'2
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
                         \>
-                        c'2
+                        a'2
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        e'8
                         \mp
                         ~
                         ]
                         \>
-                        c'2
+                        e'2
                         r4
-                        c'4
+                        a'4
                         \pp
                         ~
                         \<
-                        c'4
+                        a'4
                         ~
-                        c'8
+                        a'8
                         [
-                        c'8
+                        a'8
                         \mp
                         ~
                         ]
-                        c'2
+                        a'2
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2674,14 +5407,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -2692,6 +5431,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
@@ -2703,12 +5443,19 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -2727,6 +5474,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2745,14 +5493,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -2766,6 +5520,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
@@ -2776,12 +5531,23 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a,1
+                        \pp
+                        ~
+                        \<
+                        a,2
+                        a,2
+                        \mp
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -2800,6 +5566,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2818,14 +5585,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -2836,6 +5609,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
@@ -2846,12 +5620,19 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -2870,6 +5651,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2888,14 +5670,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -2906,6 +5694,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
@@ -2917,12 +5706,23 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        f1
+                        \pp
+                        ~
+                        \<
+                        f2
+                        g2
+                        \mp
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -2941,6 +5741,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -2959,14 +5760,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -2978,6 +5785,7 @@
             {
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \clef "percussion"
                         R1 * 6
@@ -2986,12 +5794,19 @@
                 {
                     {
                         \accidentalStyle neo-modern-cautionary
-                        R1 * 6
+                        R1 * 4
                     }
                 }
                 {
                     {
                         \accidentalStyle neo-modern-cautionary
+                        R1 * 2
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         R1 * 2
                     }
                 }
@@ -3010,6 +5825,7 @@
                 {
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #2
                         R1 * 4
                     }
                 }
@@ -3028,14 +5844,20 @@
                 {
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         R1 * 4
                     }
                 }
                 {
                     {
                         \accidentalStyle neo-modern-cautionary
-                        R1 * 8
+                        R1 * 7
                     }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    \fermata
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -3047,10 +5869,12 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         fs''4
+                        \mp
                         r4
                         r2
                         r4
@@ -3069,11 +5893,18 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         e''4
                         r4
                         e''4
@@ -3097,6 +5928,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -3115,14 +5947,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "harp2"
@@ -3132,11 +5970,13 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \clef "bass"
                         e,4
+                        \mp
                         r4
                         r2
                         r4
@@ -3155,11 +5995,18 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         f,4
                         r4
                         f,4
@@ -3183,6 +6030,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -3201,14 +6049,20 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -3222,6 +6076,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
@@ -3231,12 +6086,19 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -3254,6 +6116,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #2
                         <bf'' a'''>2
                         ~
                         <bf'' a'''>4
@@ -3301,6 +6164,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         <c''' c''''>8
                         [
                         <c''' c''''>8
@@ -3384,6 +6248,7 @@
                         <cs''' cs''''>4
                         <cs''' cs''''>4
                         <cs''' cs''''>4
+                        \fermata
                     }
                 }
                 \context Staff = "piano2"
@@ -3394,6 +6259,7 @@
                 {
                     {
                         {
+                            \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
@@ -3404,12 +6270,19 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 4
                         }
                     }
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #1
                             R1 * 2
                         }
                     }
@@ -3427,6 +6300,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #2
                         <c, g,>2
                         <c, g,>2
                         <d, g,>2
@@ -3454,6 +6328,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         <g,, g,>2
                         ~
                         <g,, g,>4
@@ -3490,6 +6365,7 @@
                         <af,, af,>2
                         <bf,, bf,>2
                         <af,, af,>2
+                        \fermata
                     }
                 }
             >>
@@ -3502,11 +6378,13 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        b''4
+                        fs''4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
@@ -3521,6 +6399,7 @@
                         \accidentalStyle neo-modern-cautionary
                         b''4
                         \pp
+                        ^ \markup { "arco, sul pont" }
                         b''4
                         ~
                         b''2
@@ -3562,6 +6441,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         a''4
                         ^ \markup { pizz }
                         r4
@@ -3623,6 +6503,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #2
                         d''8
                         [
                         c''8
@@ -3677,6 +6558,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         ef''16
                         [
                         d''8.
@@ -3827,6 +6709,7 @@
                         cs'''8
                         [
                         c'''8
+                        \fermata
                         ]
                     }
                 }
@@ -3837,11 +6720,13 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
                         \set Staff.midiInstrument = #"string ensemble 1" 
                         fs''4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
@@ -3856,6 +6741,7 @@
                         \accidentalStyle neo-modern-cautionary
                         c''4
                         \pp
+                        ^ \markup { "arco, sul pont" }
                         c''4
                         ~
                         c''2
@@ -3897,10 +6783,11 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         e''4
                         ^ \markup { pizz }
                         r4
-                        a''4
+                        e''4
                         r4
                         r2
                         e''4
@@ -3954,6 +6841,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                         r4
@@ -3977,6 +6865,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         r4
                         c'4
                         ef'2
@@ -4070,6 +6959,7 @@
                         bf''4
                         f''4
                         af''2
+                        \fermata
                     }
                 }
                 \context Staff = "cco_viola"
@@ -4079,11 +6969,13 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
                         e'4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
@@ -4098,6 +6990,7 @@
                         \accidentalStyle neo-modern-cautionary
                         g'4
                         \pp
+                        ^ \markup { "arco, sul pont" }
                         c'4
                         ~
                         c'2
@@ -4139,6 +7032,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         a4
                         ^ \markup { pizz }
                         r4
@@ -4195,6 +7089,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #2
                         r4
                         <g' d''>4
                         <bf' f''>2
@@ -4259,6 +7154,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         r8
                         [
                         <c' g'>8
@@ -4366,6 +7262,7 @@
                         f''8
                         [
                         af''8
+                        \fermata
                         ]
                     }
                 }
@@ -4376,12 +7273,14 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
                         \clef "bass"
-                        a4
+                        e4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
@@ -4396,6 +7295,7 @@
                         \accidentalStyle neo-modern-cautionary
                         a4
                         \pp
+                        ^ \markup { "arco, sul pont" }
                         a4
                         ~
                         a2
@@ -4437,10 +7337,11 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         d4
                         ^ \markup { pizz }
                         r4
-                        d4
+                        a4
                         r4
                         r2
                         d4
@@ -4494,6 +7395,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            \mark #2
                             R1 * 4
                         }
                     }
@@ -4533,6 +7435,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         r8
                         [
                         <c g>8
@@ -4653,6 +7556,7 @@
                         ]
                         ef4
                         bf,4
+                        \fermata
                     }
                 }
                 \context Staff = "cco_bass"
@@ -4662,12 +7566,14 @@
                 }
                 {
                     {
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \set Staff.midiInstrument = #"cello" 
                         \clef "bass"
-                        a,4
+                        e,4
+                        \mp
                         ^ \markup { pizz }
                         r4
                         r2
@@ -4682,6 +7588,7 @@
                         \accidentalStyle neo-modern-cautionary
                         a,4
                         \pp
+                        ^ \markup { "arco, sul pont" }
                         a,4
                         ~
                         a,2
@@ -4723,6 +7630,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #1
                         d4
                         ^ \markup { pizz }
                         r4
@@ -4736,44 +7644,50 @@
                         \accidentalStyle neo-modern-cautionary
                         r4
                         a4
-                        e2
+                        a,4
+                        r4
                         d4
-                        ~
-                        d8
+                        r8
                         [
-                        e8
-                        ~
+                        a,8
                         ]
-                        e2
-                        e2
-                        f4
+                        r2
+                        e4
+                        r4
+                        bf,4
                         g4
-                        a2
-                        e2
+                        d4
                         r4
                         e4
-                        f2
+                        r4
+                        r4
+                        a,4
                         f4
-                        ~
-                        f8
+                        r4
+                        bf,4
+                        r8
                         [
                         e8
-                        ~
                         ]
-                        e2
+                        r2
                         r4
-                        a4
-                        ~
-                        a2
-                        e1
-                        e2
+                        d4
+                        r2
+                        e4
+                        r4
+                        r2
+                        a,4
+                        r4
                         f4
-                        g4
-                        a2
-                        e2
+                        c4
+                        a4
+                        r4
+                        a,4
+                        r4
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #2
                         c,2
                         c,2
                         d,2
@@ -4801,6 +7715,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         g,,2
                         ~
                         g,,4
@@ -4837,96 +7752,10 @@
                         af,,2
                         bf,,2
                         af,,2
+                        \fermata
                     }
                 }
             >>
-        >>
-        \context StaffGroup = "short_score"
-        <<
-            \context RhythmicStaff = "high_rhythm"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context RhythmicStaff = "mid_rhythm"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context RhythmicStaff = "bass_rhythm"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "melody_line1"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "melody_line2"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "counter_line"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "bass_line"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "riff"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "chords"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "high_drones"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "mid_drones"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
-            \context Staff = "bass_drones"
-            \with
-            {
-                \consists Horizontal_bracket_engraver
-            }
-            {
-            }
         >>
     >>
     

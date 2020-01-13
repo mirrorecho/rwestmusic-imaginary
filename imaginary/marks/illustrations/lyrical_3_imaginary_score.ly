@@ -5,6 +5,7 @@
 
 \header {
     tagline = ##f
+    composer = \markup { "Randall West" }
 }
 
 \layout {}
@@ -26,17 +27,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Flute }
                             \set Staff.shortInstrumentName = \markup { Fl. }
+                            \set Staff.midiInstrument = #"flute" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -47,17 +58,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
+                            \set Staff.midiInstrument = #"clarinet" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_alto_sax1"
@@ -67,18 +88,81 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
-                            \set Staff.shortInstrumentName = \markup { Asax.1 }
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
+                        \set Staff.shortInstrumentName = \markup { Asax.1 }
+                        \set Staff.midiInstrument = #"alto sax" 
+                        \mark #3
+                        g'2
+                        \pp
+                        ~
+                        \<
+                        g'4
+                        ~
+                        g'8
+                        [
+                        g'8
+                        \mp
+                        ~
+                        ]
+                        g'2
+                        ~
+                        g'4
+                        r4
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        c''2
+                        \pp
+                        ~
+                        \<
+                        c''4
+                        ~
+                        c''8
+                        [
+                        c''8
+                        \mp
+                        ~
+                        ]
+                        c''2
+                        ~
+                        c''4
+                        r4
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        ef'2
+                        \pp
+                        ~
+                        \<
+                        ef'4
+                        ~
+                        ef'8
+                        [
+                        c'8
+                        \mp
+                        ~
+                        ]
+                        c'2
+                        ~
+                        c'4
+                        r4
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_alto_sax2"
@@ -88,18 +172,90 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
-                            \set Staff.shortInstrumentName = \markup { Asax.2 }
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
+                        \set Staff.shortInstrumentName = \markup { Asax.2 }
+                        \set Staff.midiInstrument = #"alto sax" 
+                        \mark #3
+                        r8
+                        [
+                        g'8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        g'4
+                        ~
+                        g'2
+                        g'2
+                        \mp
+                        ~
+                        g'4
+                        ~
+                        g'8
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        c''8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        c''4
+                        ~
+                        c''2
+                        c''2
+                        \mp
+                        ~
+                        c''4
+                        ~
+                        c''8
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        d''8
+                        \pp
+                        ~
+                        ]
+                        \<
+                        d''4
+                        ~
+                        d''2
+                        gs'2
+                        \mp
+                        ~
+                        gs'4
+                        ~
+                        gs'8
+                        [
+                        r8
+                        ]
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -109,18 +265,81 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Tenor Saxophone" }
-                            \set Staff.shortInstrumentName = \markup { Tsax. }
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Tenor Saxophone" }
+                        \set Staff.shortInstrumentName = \markup { Tsax. }
+                        \set Staff.midiInstrument = #"alto sax" 
+                        \mark #3
+                        r4
+                        g'4
+                        \pp
+                        ~
+                        \<
+                        g'2
+                        ~
+                        g'8
+                        [
+                        g'8
+                        \mp
+                        ~
+                        ]
+                        g'4
+                        ~
+                        g'2
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        c'4
+                        \pp
+                        ~
+                        \<
+                        c'2
+                        ~
+                        c'8
+                        [
+                        c'8
+                        \mp
+                        ~
+                        ]
+                        c'4
+                        ~
+                        c'2
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        d'4
+                        \pp
+                        ~
+                        \<
+                        d'2
+                        ~
+                        d'8
+                        [
+                        g'8
+                        \mp
+                        ~
+                        ]
+                        g'4
+                        ~
+                        g'2
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -130,19 +349,64 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Baritone Saxophone" }
-                            \set Staff.shortInstrumentName = \markup { Bsax. }
-                            \clef "bass"
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Baritone Saxophone" }
+                        \set Staff.shortInstrumentName = \markup { Bsax. }
+                        \set Staff.midiInstrument = #"alto sax" 
+                        \mark #3
+                        \clef "bass"
+                        r2
+                        g2
+                        \pp
+                        ~
+                        \<
+                        g4
+                        g4
+                        \mp
+                        ~
+                        g2
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        c'2
+                        \pp
+                        ~
+                        \<
+                        c'4
+                        c'4
+                        \mp
+                        ~
+                        c'2
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        af2
+                        \pp
+                        ~
+                        \<
+                        af4
+                        g4
+                        \mp
+                        ~
+                        g2
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 5
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -153,18 +417,28 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            \set Staff.midiInstrument = #"bassoon" 
+                            \mark #3
                             \clef "bass"
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -178,17 +452,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
+                            \set Staff.midiInstrument = #"french horn" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -199,17 +483,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            \set Staff.midiInstrument = #"trumpet" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -220,18 +514,28 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
+                            \set Staff.midiInstrument = #"trombone" 
+                            \mark #3
                             \clef "bass"
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -245,17 +549,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
+                            \set Staff.midiInstrument = #"vibraphone" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -266,17 +580,28 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Drum Set" }
                             \set Staff.shortInstrumentName = \markup { Drum. }
+                            \set Staff.midiInstrument = #"taiko drum" 
+                            \mark #3
+                            \clef "percussion"
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -290,17 +615,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Guitar }
                             \set Staff.shortInstrumentName = \markup { Gtr. }
+                            \set Staff.midiInstrument = #"electric guitar (clean)" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bass_guitar"
@@ -311,18 +646,28 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Bass Guitar" }
                             \set Staff.shortInstrumentName = \markup { Bgtr. }
+                            \set Staff.midiInstrument = #"electric bass (finger)" 
+                            \mark #3
                             \clef "bass"
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -335,18 +680,178 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin 1" }
-                            \set Staff.shortInstrumentName = \markup { Vln.1 }
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Violin 1" }
+                        \set Staff.shortInstrumentName = \markup { Vln.1 }
+                        \set Staff.midiInstrument = #"violin" 
+                        \mark #3
+                        c'''8
+                        -\staccato
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        d''8
+                        -\tenuto
+                        ~
+                        ]
+                        d''8
+                        [
+                        f''8
+                        -\tenuto
+                        ~
+                        ]
+                        f''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''8
+                        [
+                        g''8
+                        -\tenuto
+                        ~
+                        ]
+                        g''4
+                        c''8
+                        -\staccato
+                        [
+                        f''8
+                        -\tenuto
+                        ~
+                        ]
+                        f''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''8
+                        [
+                        ef''8
+                        -\tenuto
+                        ~
+                        ]
+                        ef''4
+                        c''8
+                        -\staccato
+                        [
+                        f'8
+                        -\tenuto
+                        ~
+                        ]
+                        f'8
+                        [
+                        af'8
+                        -\tenuto
+                        ~
+                        ]
+                        af'8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'4
+                        c''8
+                        -\staccato
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        c'4
+                        -\tenuto
+                        af4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        f'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        bf4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        af4
+                        -\tenuto
+                        f'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        df'2
+                        \<
+                        df'2
+                        bf1
+                        \f
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -356,18 +861,178 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Violin 2" }
-                            \set Staff.shortInstrumentName = \markup { Vln.2 }
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Violin 2" }
+                        \set Staff.shortInstrumentName = \markup { Vln.2 }
+                        \set Staff.midiInstrument = #"violin" 
+                        \mark #3
+                        c'''8
+                        -\staccato
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''4
+                        c'''8
+                        -\staccato
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c'''8
+                        -\tenuto
+                        ~
+                        ]
+                        c'''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''4
+                        c''8
+                        -\staccato
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        c'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                        df'4
+                        -\tenuto
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        df'2
+                        \<
+                        df'2
+                        df'1
+                        \f
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -377,19 +1042,179 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Cello 1" }
-                            \set Staff.shortInstrumentName = \markup { Vc.1 }
-                            \clef "bass"
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Cello 1" }
+                        \set Staff.shortInstrumentName = \markup { Vc.1 }
+                        \set Staff.midiInstrument = #"cello" 
+                        \mark #3
+                        \clef "bass"
+                        g8
+                        -\staccato
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'4
+                        g8
+                        -\staccato
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        ef8
+                        -\tenuto
+                        ~
+                        ]
+                        ef4
+                        g8
+                        -\staccato
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g4
+                        g8
+                        -\staccato
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        af8
+                        -\tenuto
+                        ~
+                        ]
+                        af4
+                        g8
+                        -\staccato
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c4
+                        g,8
+                        -\staccato
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,8
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,8
+                        [
+                        bf,8
+                        -\tenuto
+                        ~
+                        ]
+                        bf,4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        af,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        f,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        ef4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        bf,2
+                        \<
+                        df2
+                        bf,1
+                        \f
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -399,19 +1224,179 @@
                 }
                 {
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Cello 2" }
-                            \set Staff.shortInstrumentName = \markup { Vc.2 }
-                            \clef "bass"
-                            R1 * 4
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Cello 2" }
+                        \set Staff.shortInstrumentName = \markup { Vc.2 }
+                        \set Staff.midiInstrument = #"cello" 
+                        \mark #3
+                        \clef "bass"
+                        c'8
+                        -\staccato
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g4
+                        c'8
+                        -\staccato
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf4
+                        bf8
+                        -\staccato
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f4
+                        f8
+                        -\staccato
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        ef8
+                        -\tenuto
+                        ~
+                        ]
+                        ef4
+                        ef8
+                        -\staccato
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c4
+                        af,8
+                        -\staccato
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,8
+                        [
+                        c,8
+                        -\tenuto
+                        ~
+                        ]
+                        c,8
+                        [
+                        ef,8
+                        -\tenuto
+                        ~
+                        ]
+                        ef,4
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 8
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        f,4
+                        -\tenuto
+                        c,4
+                        -\tenuto
+                        af,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        bf,4
+                        -\tenuto
+                        c4
+                        -\tenuto
+                        ef4
+                        -\tenuto
+                        ef4
+                        -\tenuto
+                        c4
+                        -\tenuto
+                        f,4
+                        -\tenuto
+                        c,4
+                        -\tenuto
+                        c,4
+                        -\tenuto
+                        df,4
+                        -\tenuto
+                        f,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                        ef,4
+                        -\tenuto
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        bf,2
+                        \<
+                        f,2
+                        bf,1
+                        \f
+                        \fermata
                     }
                 }
             >>
@@ -428,17 +1413,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Flute 1" }
                             \set Staff.shortInstrumentName = \markup { Fl.1 }
+                            \set Staff.midiInstrument = #"flute" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -449,17 +1444,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Flute 2" }
                             \set Staff.shortInstrumentName = \markup { Fl.2 }
+                            \set Staff.midiInstrument = #"flute" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_oboe1"
@@ -470,17 +1475,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
+                            \set Staff.midiInstrument = #"oboe" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -491,17 +1506,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
+                            \set Staff.midiInstrument = #"oboe" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -512,17 +1537,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
+                            \set Staff.midiInstrument = #"clarinet" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -533,17 +1568,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
+                            \set Staff.midiInstrument = #"clarinet" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -554,18 +1599,28 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
+                            \set Staff.midiInstrument = #"bassoon" 
+                            \mark #3
                             \clef "bass"
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -579,17 +1634,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
+                            \set Staff.midiInstrument = #"french horn" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -600,17 +1665,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
+                            \set Staff.midiInstrument = #"trumpet" 
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -621,18 +1696,28 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
+                            \set Staff.midiInstrument = #"trombone" 
+                            \mark #3
                             \clef "bass"
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -644,16 +1729,25 @@
             {
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         \clef "percussion"
                         R1 * 4
                     }
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        R1 * 8
+                        R1 * 7
                     }
+                }
+                {
+                    \compressFullBarRests
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    \fermata
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -666,17 +1760,26 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Harp }
                             \set Staff.shortInstrumentName = \markup { Hp. }
+                            \mark #3
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "harp2"
@@ -687,18 +1790,27 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Harp }
                             \set Staff.shortInstrumentName = \markup { Hp. }
+                            \mark #3
                             \clef "bass"
                             R1 * 4
                         }
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 8
+                            R1 * 7
                         }
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -711,9 +1823,11 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Piano }
                         \set Staff.shortInstrumentName = \markup { Pf. }
+                        \mark #3
                         <c''' c''''>8
                         [
                         <c''' c''''>8
@@ -777,26 +1891,27 @@
                         ~
                         <c''' c''''>4
                         <c''' c''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
-                        <cs''' cs''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        <df''' df''''>4
+                        \fermata
                     }
                 }
                 \context Staff = "piano2"
@@ -806,9 +1921,11 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Piano }
                         \set Staff.shortInstrumentName = \markup { Pf. }
+                        \mark #3
                         \clef "bass"
                         <g,, g,>2
                         ~
@@ -846,6 +1963,7 @@
                         <af,, af,>2
                         <bf,, bf,>2
                         <af,, af,>2
+                        \fermata
                     }
                 }
             >>
@@ -858,9 +1976,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #3
                         ef''16
                         [
                         d''8.
@@ -896,10 +2017,12 @@
                         c''4
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         r2
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         ef''16
                         [
@@ -1002,15 +2125,16 @@
                         ]
                         af''8
                         [
-                        cs'''8
+                        df'''8
                         ]
                         c'''8
                         [
                         af''8
                         ]
-                        cs'''8
+                        df'''8
                         [
                         c'''8
+                        \fermata
                         ]
                     }
                 }
@@ -1021,9 +2145,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #3
                         r4
                         c'4
                         ef'2
@@ -1051,6 +2178,7 @@
                         ef'2
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         r8
                         [
@@ -1105,7 +2233,7 @@
                         bf''4
                         r4
                         f''4
-                        cs'''8
+                        df'''8
                         [
                         c'''8
                         ]
@@ -1117,6 +2245,7 @@
                         bf''4
                         f''4
                         af''2
+                        \fermata
                     }
                 }
                 \context Staff = "cco_viola"
@@ -1126,9 +2255,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #3
                         r8
                         [
                         <c' g'>8
@@ -1171,6 +2303,7 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         r4
                         c''4
@@ -1236,6 +2369,7 @@
                         f''8
                         [
                         af''8
+                        \fermata
                         ]
                     }
                 }
@@ -1246,9 +2380,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
+                        \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #3
                         \clef "bass"
                         r8
                         [
@@ -1292,6 +2429,7 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         r8
                         [
@@ -1361,15 +2499,16 @@
                         bf,4
                         bf,4
                         c4
-                        cs4
+                        df4
                         ef4
                         bf,4
                         c8
                         [
-                        cs8
+                        df8
                         ]
                         ef4
                         bf,4
+                        \fermata
                     }
                 }
                 \context Staff = "cco_bass"
@@ -1379,9 +2518,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
+                        \set Staff.midiInstrument = #"cello" 
+                        \mark #3
                         \clef "bass"
                         g,,2
                         ~
@@ -1419,6 +2561,7 @@
                         af,,2
                         bf,,2
                         af,,2
+                        \fermata
                     }
                 }
             >>
@@ -1432,10 +2575,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "High Rhythm" }
                     \set Staff.shortInstrumentName = \markup { H.rhm. }
                     \set Staff.midiInstrument = #"agogo" 
+                    \mark #3
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
@@ -1448,6 +2593,7 @@
                         R1 * 1
                     }
                     r1
+                    \fermata
                     ^ \markup { c.2 }
                     {
                         R1 * 7
@@ -1461,10 +2607,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Mid Rhythm" }
                     \set Staff.shortInstrumentName = \markup { M.rhm. }
                     \set Staff.midiInstrument = #"melodic tom" 
+                    \mark #3
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
@@ -1477,6 +2625,7 @@
                         R1 * 1
                     }
                     r1
+                    \fermata
                     ^ \markup { c.2 }
                     {
                         R1 * 7
@@ -1490,10 +2639,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Rhythm" }
                     \set Staff.shortInstrumentName = \markup { B.rhm. }
                     \set Staff.midiInstrument = #"taiko drum" 
+                    \mark #3
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
@@ -1506,6 +2657,7 @@
                         R1 * 1
                     }
                     r1
+                    \fermata
                     ^ \markup { c.2 }
                     {
                         R1 * 7
@@ -1519,13 +2671,15 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Melody Line 1" }
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
+                    \mark #3
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     <c' g'>8
                     ]
@@ -1553,8 +2707,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     [
                     <f' c''>8
                     ]
@@ -1578,8 +2732,8 @@
                     ]
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     c''4
                     (
                     ef''2
@@ -1596,8 +2750,8 @@
                     f''4
                     )
                     r4
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     c''4
                     (
                     af''8
@@ -1668,6 +2822,7 @@
                     f''8
                     [
                     af''8
+                    \fermata
                     ]
                     )
                 }
@@ -1679,13 +2834,15 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Melody Line 2" }
                     \set Staff.shortInstrumentName = \markup { Mel.2 }
                     \set Staff.midiInstrument = #"misc2" 
+                    \mark #3
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     <c' c''>4
                     (
                     <ef' ef''>2
@@ -1702,8 +2859,8 @@
                     <f' f''>4
                     )
                     r4
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     <c' c''>4
                     (
                     <af' af''>8
@@ -1723,8 +2880,8 @@
                     <ef' ef''>2
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     f''8
                     ]
@@ -1752,8 +2909,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     [
                     f''8
                     ]
@@ -1799,7 +2956,7 @@
                     ^ \markup { p.5 }
                     f''4
                     (
-                    cs'''8
+                    df'''8
                     [
                     c'''8
                     ]
@@ -1814,6 +2971,7 @@
                     ^ \markup { c.11 }
                     (
                     af''2
+                    \fermata
                     )
                 }
             }
@@ -1824,10 +2982,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Counter Line" }
                     \set Staff.shortInstrumentName = \markup { Count. }
                     \set Staff.midiInstrument = #"misc3" 
+                    \mark #3
                     r1
                     ^ \markup { c.0 }
                     {
@@ -1839,8 +2999,8 @@
                         R1 * 1
                     }
                     ef''16
-                    ^ \markup { p.0 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.0 }
                     [
                     (
                     d''8.
@@ -1859,8 +3019,8 @@
                     c''4
                     )
                     af''16
-                    ^ \markup { c.4 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.4 }
                     [
                     (
                     g''8.
@@ -1918,8 +3078,8 @@
                     c'''2
                     )
                     c'''16
-                    ^ \markup { c.10 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.10 }
                     [
                     (
                     bf''8.
@@ -1938,8 +3098,8 @@
                     af''4
                     )
                     f'''16
-                    ^ \markup { p.5 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.5 }
                     [
                     (
                     ef'''8.
@@ -1958,8 +3118,8 @@
                     g'''4
                     )
                     r8
-                    ^ \markup { c.14 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.14 }
                     [
                     f'''8
                     ]
@@ -1981,15 +3141,15 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.7 }
                     ^ \markup { c.16 }
+                    ^ \markup { p.7 }
                     [
                     g''8
                     ]
                     (
                     af''8
                     [
-                    cs'''8
+                    df'''8
                     ]
                     )
                     c'''8
@@ -1998,9 +3158,10 @@
                     (
                     af''8
                     ]
-                    cs'''8
+                    df'''8
                     [
                     c'''8
+                    \fermata
                     ]
                     )
                 }
@@ -2012,10 +3173,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Line" }
                     \set Staff.shortInstrumentName = \markup { Bass. }
                     \set Staff.midiInstrument = #"electric bass (finger)" 
+                    \mark #3
                     \clef "bass"
                     r1
                     ^ \markup { c.0 }
@@ -2053,8 +3216,8 @@
                     <f, f>4
                     )
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.1 }
                     [
                     <bf, bf>8
                     ]
@@ -2109,8 +3272,8 @@
                     <bf, bf>4
                     )
                     r16
-                    ^ \markup { p.3 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.3 }
                     [
                     <ef ef'>8.
                     ~
@@ -2140,11 +3303,11 @@
                     <bf, bf>4
                     )
                     <bf, bf>4
-                    ^ \markup { c.9 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.9 }
                     (
                     <c c'>4
-                    <cs cs'>4
+                    <df df'>4
                     <ef ef'>4
                     )
                     <bf, bf>4
@@ -2152,10 +3315,11 @@
                     (
                     <c c'>8
                     [
-                    <cs cs'>8
+                    <df df'>8
                     ]
                     <ef ef'>4
                     <bf, bf>4
+                    \fermata
                     )
                 }
             }
@@ -2166,10 +3330,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { Riff }
                     \set Staff.shortInstrumentName = \markup { Riff. }
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
+                    \mark #3
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2181,6 +3347,7 @@
                         R1 * 1
                     }
                     r1
+                    \fermata
                     ^ \markup { c.2 }
                     {
                         R1 * 7
@@ -2194,10 +3361,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { Chords }
                     \set Staff.shortInstrumentName = \markup { Chrd. }
                     \set Staff.midiInstrument = #"french horn" 
+                    \mark #3
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2209,6 +3378,7 @@
                         R1 * 1
                     }
                     r1
+                    \fermata
                     ^ \markup { c.2 }
                     {
                         R1 * 7
@@ -2222,13 +3392,15 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "High Drones" }
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     \set Staff.midiInstrument = #"piccolo" 
+                    \mark #3
                     <c''' c''''>8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     <c''' c''''>8
@@ -2240,8 +3412,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     [
                     (
                     <c''' c''''>8
@@ -2253,8 +3425,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { p.2 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     [
                     (
                     <c''' c''''>8
@@ -2266,8 +3438,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     [
                     (
                     <c''' c''''>8
@@ -2279,8 +3451,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     [
                     (
                     <c''' c''''>8
@@ -2292,8 +3464,8 @@
                     <c''' c''''>4
                     )
                     <c''' c''''>8
-                    ^ \markup { p.5 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.5 }
                     [
                     (
                     <c''' c''''>8
@@ -2317,45 +3489,46 @@
                     <c''' c''''>4
                     <c''' c''''>4
                     )
-                    <cs''' cs''''>4
+                    <df''' df''''>4
                     ^ \markup { p.7 }
                     ^ \markup { c.7 }
                     (
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
                     )
-                    <cs''' cs''''>4
+                    <df''' df''''>4
                     ^ \markup { c.8 }
                     ^ \markup { p.8 }
                     (
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
                     )
-                    <cs''' cs''''>4
-                    ^ \markup { c.9 }
+                    <df''' df''''>4
                     ^ \markup { p.9 }
+                    ^ \markup { c.9 }
                     (
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
                     )
-                    <cs''' cs''''>4
+                    <df''' df''''>4
                     ^ \markup { c.10 }
                     ^ \markup { p.10 }
                     (
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
                     )
-                    <cs''' cs''''>4
+                    <df''' df''''>4
                     ^ \markup { c.11 }
                     ^ \markup { p.11 }
                     (
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
-                    <cs''' cs''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
+                    <df''' df''''>4
+                    \fermata
                     )
                 }
             }
@@ -2366,10 +3539,12 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Mid Drones" }
                     \set Staff.shortInstrumentName = \markup { M.drn. }
                     \set Staff.midiInstrument = #"string ensemble 2" 
+                    \mark #3
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2381,6 +3556,7 @@
                         R1 * 1
                     }
                     r1
+                    \fermata
                     ^ \markup { c.2 }
                     {
                         R1 * 7
@@ -2394,44 +3570,46 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Drones" }
                     \set Staff.shortInstrumentName = \markup { B.drn. }
                     \set Staff.midiInstrument = #"fretless bass" 
+                    \mark #3
                     \clef "bass"
                     <g,, g,>2
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     ~
                     (
                     <g,, g,>4
                     <g,, g,>4
                     )
                     <g,, g,>2
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     ~
                     (
                     <g,, g,>4
                     <g,, g,>4
                     )
                     <g,, g,>2
-                    ^ \markup { p.2 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     ~
                     (
                     <g,, g,>4
                     <g,, g,>4
                     )
                     <g,, g,>2
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     <af,, af,>2
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     <g,, g,>2
-                    ^ \markup { p.5 }
                     ^ \markup { c.5 }
+                    ^ \markup { p.5 }
                     <af,, af,>2
                     ^ \markup { p.6 }
                     ^ \markup { c.6 }
@@ -2442,8 +3620,8 @@
                     ^ \markup { c.8 }
                     ^ \markup { p.8 }
                     <af,, af,>2
-                    ^ \markup { c.9 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.9 }
                     ~
                     (
                     <af,, af,>4
@@ -2466,23 +3644,24 @@
                     <af,, af,>4
                     )
                     <bf,, bf,>2
-                    ^ \markup { c.12 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.12 }
                     <af,, af,>2
-                    ^ \markup { p.13 }
                     ^ \markup { c.13 }
+                    ^ \markup { p.13 }
                     <bf,, bf,>2
-                    ^ \markup { c.14 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.14 }
                     <af,, af,>2
-                    ^ \markup { c.15 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.15 }
                     <bf,, bf,>2
                     ^ \markup { c.16 }
                     ^ \markup { p.16 }
                     <af,, af,>2
-                    ^ \markup { c.17 }
+                    \fermata
                     ^ \markup { p.17 }
+                    ^ \markup { c.17 }
                 }
             }
         >>

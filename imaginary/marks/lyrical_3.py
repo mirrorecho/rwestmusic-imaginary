@@ -2,12 +2,15 @@ import abjad, calliope
 
 from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
-    ditto, dovetail, driving_off, hit_cells, 
+    pulse_on_off_beat, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
     pulse, staggered_swell, swell_hit)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import library
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 from imaginary.marks import lyrical
 
 # TEMPO = 96
@@ -19,10 +22,10 @@ from imaginary.marks import lyrical
 def score3(lib):
     s = score.ImaginaryScore()
     sb3 = lib("lyrical_block3")
-    # s = sb3().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb3().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
     # TO DO: add ranges
     # =======================================================
@@ -37,7 +40,45 @@ def score3(lib):
         fabric_staves=("cco_bass",),
         func = lambda x: x.crop_chords( (0,), ),
         ))
-
+    ooa_strings_pulses = pulse_on_off_beat.PulseOnOffBeat(
+            sb3,
+            fabric_staves = (
+                "ooa_violin1", "ooa_violin2", 
+                "ooa_cello1", "ooa_cello2",
+                ),
+            phrase_beats = (4,)*6,
+            ranges=pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        )
+    for st in ooa_strings_pulses.staves:
+        for phrase in st.phrases:
+            if phrase.note_events:
+                phrase.note_events[0].tag(".")
+                phrase.note_events[1:].tag("-")
+    ooa_strings_pulses2 = osti.Osti(
+        sb3,
+        fabric_staves = (
+                "ooa_violin1", "ooa_violin2", 
+                "ooa_cello1", "ooa_cello2",
+                ),
+        ranges=pitch_ranges.BOTTOM_RANGES,
+        selectable_start_beat = 6*4,
+        osti_pulse_duration = 1,
+        tag_all_note_events = ("-",),
+        osti_cell_length = 4,
+        osti_cell_count = 4,
+        )
+    ooa_strings_pulses3 = pad.Pad(
+        sb3,
+        fabric_staves = (
+                "ooa_violin1", "ooa_violin2", 
+                "ooa_cello1", "ooa_cello2",
+                ),
+        ranges=pitch_ranges.BOTTOM_RANGES,
+        selectable_start_beat = 10*4,
+        pad_durations=(2,2,4),
+        tag_events = {0:("\\<",),2:("f",)}
+        )
+    s.extend_from(ooa_strings_pulses,ooa_strings_pulses2,ooa_strings_pulses3)
     # =======================================================
     # bars 1-4
     # =======================================================
@@ -80,6 +121,31 @@ def score3(lib):
 
     s.extend_from(violin_i, violin_ii, viola, cello)
 
+    # pads
+    s.extend_from(
+        lyrical.SaxSwell(
+            sb3.with_only("bass_drones",),
+            ranges = pitch_ranges.get_ranges(ratio_mid=0.7, spread=16),
+            # ranges = pitch_ranges.MID_RANGES,
+            swell_duration=8,
+            ),
+        lyrical.SaxSwell(
+            sb3,
+            selectable_start_beat=8,
+            ranges = pitch_ranges.get_ranges(ratio_mid=0.6, spread=16),
+            # ranges = pitch_ranges.MID_RANGES,
+            swell_duration=8,
+            ),
+        lyrical.SaxSwell(
+            sb3.with_only("counter_line",),
+            selectable_start_beat=16,
+            ranges = pitch_ranges.get_ranges(ratio_mid=0.6, spread=16),
+            # ranges = pitch_ranges.MID_RANGES,
+            swell_duration=8,
+            ),
+    )
+
+
     s.fill_rests(beats=16)
     # =======================================================
     # bars 5-12
@@ -116,8 +182,15 @@ def score3(lib):
         )
     s.extend_from(violin_i, violin_ii, viola, cello)
 
+    s.fill_rests(beats=11*4)
     s.fill_rests()
+    for st in s.staves:
+        st.events[-1].tag("fermata")
     # s.remove_empty()
+    for st in s.staves:
+        st.segments[0].rehearsal_mark_number = 3
+    s.segments.apply(lambda x:x.auto_respell())
+    s.segments.setattrs(compress_full_bar_rests = True)    
     return s
 # =======================================================
 

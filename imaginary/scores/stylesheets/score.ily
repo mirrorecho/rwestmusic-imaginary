@@ -105,17 +105,21 @@ normalStaff = {
     \context {        
         \Score
         
-        % \remove "Bar_number_engraver"
+        % \consists "Bar_number_engraver"
         \override BarNumber #'break-visibility = #'#(#f #t #t)
         \override BarNumber #'font-size = #1.2
         \override BarNumber  #'stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
+
         \override RehearsalMark #'font-size = #6
-        \remove "Timing_translator"
-        \remove "Default_bar_line_engraver"
-        \remove "Bar_engraver"
+        
+        % TO DO: WHAT'S THE PURPOSE OF THIS??!!
+        % \remove "Timing_translator"
+        % \remove "Default_bar_line_engraver"
+        % \remove "Bar_engraver"
     }
     \context {
         \StaffGroup 
+        % \consists "Bar_number_engraver"
         % CONSIDER FOR FREE SECTIONS:
         % \remove "Span_bar_engraver"
     }
@@ -124,16 +128,16 @@ normalStaff = {
         % \RemoveEmptyStaves
         \override VerticalAxisGroup #'remove-first = ##t % NOTE: comment this out to show staves on first page
         \override Hairpin #'minimum-length = #6
-        \consists "Timing_translator"
-        \consists "Default_bar_line_engraver"
+        % \consists "Timing_translator"
+        % \consists "Default_bar_line_engraver"
     }
     \context {
         \RhythmicStaff 
         % \RemoveEmptyStaves
         \override VerticalAxisGroup #'remove-first = ##t % NOTE: comment this out to show staves on first page
         \override Hairpin #'minimum-length = #6
-        \consists "Timing_translator"
-        \consists "Default_bar_line_engraver"
+        % \consists "Timing_translator"
+        % \consists "Default_bar_line_engraver"
     }
     % \context {
     %     \Dynamics

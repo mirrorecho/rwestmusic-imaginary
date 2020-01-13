@@ -7,7 +7,10 @@ from imaginary.fabrics import (instrument_groups,
     pulse, staggered_swell, swell_hit)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import library
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 from imaginary.marks import rock
 
 # SHOULD AVERAGE 20 bars
@@ -16,18 +19,18 @@ from imaginary.marks import rock
 def score0(lib):
     s = score.ImaginaryScore()
     sb = lib("rock_block0")
-    # s = sb().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
     # TO DO: add ranges
     # =======================================================
     low_drums = lambda_segment.LambdaSegment(
         sb.with_only("bass_rhythm"),
         fabric_staves = ("ooa_drum_set",),
-        tag_events = {0:("mp", "FIX PITCHES!")},
-        func = lambda x: x.only_first("cells",8)
+        tag_events = {0:("mp",)},
+        func = lambda x: x.only_first("cells",2)
         )
 
     wood_block = lambda_segment.LambdaSegment(
@@ -37,7 +40,11 @@ def score0(lib):
         func = lambda x: x,
         # func = lambda x: x.only_first("cells",8)
         )
-
+    low_drums.staves["ooa_drum_set"].segments[0].append(
+        get_improv_line(
+            rhythm=(1,)*8,
+            times=3)
+        )
     s.extend_from(
         low_drums,
         wood_block,
@@ -45,7 +52,18 @@ def score0(lib):
 
     s.fill_rests(beats=8*4)
     # # =======================================================
-    # TO DO: add in drumset part here...
+    s.extend_from(
+        lambda_segment.LambdaSegment(
+            calliope.SegmentBlock(ImaginarySegment(
+                lib("rock_rhythm1"),
+                get_improv_line(
+                    rhythm=(1,)*8,
+                    times=11)
+                )),
+            fabric_staves = ("ooa_drum_set",),
+            func = lambda x: x,
+            )
+        )
 
     s.fill_rests(beats=16*4)
     # # =======================================================
@@ -56,9 +74,11 @@ def score0(lib):
         func = lambda x: x.crop("cells",1),
         # func = lambda x: x.only_first("cells",8)
         )
+    for c in guitar.staves["ooa_guitar"].cells[13:]:
+        c.t(-12)
     pizz = lambda_segment.LambdaSegment(
         sb.with_only("chords"),
-        ranges=pitch_ranges.PitchRanges(pitch_ranges.MID_SEQ),
+        ranges=pitch_ranges.MID_RANGES,
         fabric_staves = instrument_groups.get_instruments("strings"),
         mask_staves = ("cco_bass",),
         tag_events = {0:("mf", "pizz")},
@@ -75,8 +95,23 @@ def score0(lib):
     # # =======================================================
     # TO DO... add in piano and harp sections
 
-
     s.fill_rests(beats=22*4)
+
+    wind_hits = lambda_segment.LambdaSegment(
+        sb.with_only("chords"),
+        ranges=pitch_ranges.MID_RANGES,
+        fabric_staves = instrument_groups.get_instruments(
+            "sax","ooa_winds","ooa_brass"),
+        assign_pitches_from_selectable = True,
+        selectable_start_beat = 22*4,
+        func = lambda x: x.with_only("cells",11,12,13,14,15
+            ).mask("cells",0).ops("note_events")(0,"mp")(),
+        tag_all_note_events=(".",),
+        bookend_beats = (0,1)
+        )
+    s.extend_from(
+        wind_hits,
+        )
 
     # # =======================================================
     # block for cell 11 minor chord cloud
@@ -192,6 +227,10 @@ def score0(lib):
         )
 
     s.fill_rests()
+    for staff in s.staves:
+        if staff.segments:
+            staff.segments[0].tempo_command=""" \\note #"4" #UP "= 160 ca" """
+    s.segments.setattrs(compress_full_bar_rests = True) 
     return s
 
 def to_lib(lib):    

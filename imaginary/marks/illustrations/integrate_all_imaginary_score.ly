@@ -5,6 +5,7 @@
 
 \header {
     tagline = ##f
+    composer = \markup { "Randall West" }
 }
 
 \layout {}
@@ -60,7 +61,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -312,7 +313,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -600,6 +601,12 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 16
                         }
                     }
@@ -767,7 +774,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -973,6 +980,12 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 16
                         }
                     }
@@ -1091,7 +1104,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -1208,14 +1221,14 @@
                         a4
                         -\tenuto
                         c'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r2
                         a4
                         -\tenuto
                         c'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r2
                         a4
                         (
@@ -1223,8 +1236,8 @@
                         )
                         [
                         d'8
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r2
                         a4
@@ -1238,18 +1251,24 @@
                         )
                         [
                         d'8
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r4
                         a4
                         -\tenuto
                         c'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r2
                         {
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
                         }
                     }
                     {
@@ -1526,7 +1545,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -1641,7 +1660,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -1979,7 +1998,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -2196,7 +2215,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -2888,6 +2907,8 @@
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Drum Set" }
                             \set Staff.shortInstrumentName = \markup { Drum. }
+                            \set Staff.midiInstrument = #"taiko drum" 
+                            \clef "percussion"
                             R1 * 5
                         }
                     }
@@ -2900,7 +2921,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -2954,6 +2975,21 @@
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
                         \set Staff.midiInstrument = #"electric guitar (clean)" 
+                        b'4
+                        r4
+                        r2
+                        {
+                            R1 * 1
+                        }
+                        r4
+                        b'4
+                        r2
+                        {
+                            R1 * 1
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
                         b4
                         b4
                         b4
@@ -3214,6 +3250,21 @@
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
                         \set Staff.midiInstrument = #"electric bass (finger)" 
                         \clef "bass"
+                        b4
+                        r4
+                        r2
+                        {
+                            R1 * 1
+                        }
+                        r4
+                        b4
+                        r2
+                        {
+                            R1 * 1
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
                         e4
                         e4
                         e4
@@ -3505,7 +3556,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -4456,7 +4507,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
                         \set Staff.midiInstrument = #"violin" 
-                        b'4
+                        e''4
                         ^ \markup { pizz }
                         r4
                         r2
@@ -4464,7 +4515,7 @@
                             R1 * 1
                         }
                         r4
-                        b'4
+                        e''4
                         r2
                         {
                             R1 * 1
@@ -4485,7 +4536,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -5466,7 +5517,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -6447,7 +6498,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -7499,7 +7550,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 5
                         }
                     }
                     {
@@ -8192,7 +8243,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 5
                         }
                     }
                     {
@@ -8846,7 +8897,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 5
                         }
                     }
                     {
@@ -8991,7 +9042,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 5
                         }
                     }
                     {
@@ -9112,6 +9163,12 @@
                         r2
                         {
                             R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
                         }
                     }
                     {
@@ -9374,6 +9431,12 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 16
                         }
                     }
@@ -9587,8 +9650,8 @@
                         -\tenuto
                         ]
                         e'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         c'8
                         [
                         (
@@ -9596,8 +9659,8 @@
                         ]
                         )
                         f'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         c'8
                         -\tenuto
                         [
@@ -9617,16 +9680,16 @@
                         -\tenuto
                         ]
                         e'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r8
                         [
                         c'8
                         -\tenuto
                         ]
                         e4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r4
                         r8
                         [
@@ -9662,8 +9725,8 @@
                         -\tenuto
                         [
                         d8
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r4
                         r4
@@ -9683,8 +9746,8 @@
                         -\tenuto
                         ]
                         e4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r4
                         a4
                         -\tenuto
@@ -9705,7 +9768,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -9982,7 +10045,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -10097,7 +10160,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -10424,7 +10487,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -10637,7 +10700,7 @@
                 {
                     {
                         \accidentalStyle neo-modern-cautionary
-                        R1 * 6
+                        R1 * 10
                     }
                 }
                 {
@@ -10757,6 +10820,12 @@
                         r4
                         {
                             R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
                         }
                     }
                     {
@@ -11036,6 +11105,12 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r8
@@ -11253,7 +11328,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -11578,7 +11653,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -11922,7 +11997,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -12961,7 +13036,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -13941,7 +14016,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -14922,7 +14997,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -15878,6 +15953,12 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
                             R1 * 16
                         }
                     }
@@ -16174,6 +16255,58 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "High Rhythm" }
+                    \set Staff.shortInstrumentName = \markup { H.rhm. }
+                    \set Staff.midiInstrument = #"agogo" 
+                    \clef "percussion"
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 13
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 16
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
             }
             \context RhythmicStaff = "mid_rhythm"
             \with
@@ -16181,6 +16314,58 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Mid Rhythm" }
+                    \set Staff.shortInstrumentName = \markup { M.rhm. }
+                    \set Staff.midiInstrument = #"melodic tom" 
+                    \clef "percussion"
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 13
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 16
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
             }
             \context RhythmicStaff = "bass_rhythm"
             \with
@@ -16188,6 +16373,58 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Bass Rhythm" }
+                    \set Staff.shortInstrumentName = \markup { B.rhm. }
+                    \set Staff.midiInstrument = #"taiko drum" 
+                    \clef "percussion"
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 13
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 16
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
             }
             \context Staff = "melody_line1"
             \with
@@ -16195,6 +16432,1085 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Melody Line 1" }
+                    \set Staff.shortInstrumentName = \markup { Mel.1 }
+                    \set Staff.midiInstrument = #"misc1" 
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 5
+                    }
+                    c'8
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    b8
+                    ~
+                    ]
+                    b4
+                    ~
+                    b2
+                    )
+                    f'4
+                    ^ \markup { c.2 }
+                    (
+                    e'8
+                    [
+                    a8
+                    ~
+                    ]
+                    a2
+                    )
+                    f'8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    e'8
+                    ~
+                    ]
+                    e'4
+                    ~
+                    e'2
+                    )
+                    e'4
+                    ^ \markup { c.4 }
+                    (
+                    a'8
+                    [
+                    g'8
+                    ~
+                    ]
+                    g'2
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    f'4
+                    ~
+                    (
+                    f'4
+                    e'8
+                    [
+                    d'8
+                    ]
+                    )
+                    a'8
+                    ^ \markup { c.6 }
+                    [
+                    (
+                    a'8
+                    ]
+                    g'8
+                    [
+                    f'8
+                    ]
+                    )
+                    r2
+                    r4
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    g'4
+                    c''8
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    a'8
+                    ~
+                    ]
+                    a'4
+                    ~
+                    a'1
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    r8
+                    ^ \markup { c.1 }
+                    [
+                    <g' g''>8
+                    ]
+                    (
+                    <bf' bf''>8
+                    [
+                    <d' d''>8
+                    ]
+                    <a' a''>4
+                    )
+                    <bf' bf''>8
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    <a' a''>8
+                    ]
+                    <f' f''>8
+                    [
+                    <g' g''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    [
+                    <g' g''>8
+                    ]
+                    (
+                    <bf' bf''>8
+                    [
+                    <g' g''>8
+                    ]
+                    <d'' d'''>4
+                    )
+                    <c'' c'''>8
+                    ^ \markup { c.4 }
+                    [
+                    (
+                    <bf' bf''>8
+                    ]
+                    <g' g''>8
+                    [
+                    <bf' bf''>8
+                    ]
+                    )
+                    r2
+                    r8
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    [
+                    <g' g''>8
+                    ]
+                    (
+                    <bf' bf''>8
+                    [
+                    <d' d''>8
+                    ]
+                    r4
+                    <a' a''>4
+                    )
+                    <bf' bf''>8
+                    ^ \markup { c.6 }
+                    [
+                    (
+                    <a' a''>8
+                    ]
+                    <f' f''>4
+                    r8
+                    [
+                    <g' g''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    [
+                    <g' g''>8
+                    ]
+                    (
+                    <bf' bf''>8
+                    [
+                    <g' g''>8
+                    ]
+                    <d'' d'''>4
+                    )
+                    r8
+                    ^ \markup { c.8 }
+                    [
+                    <c'' c'''>8
+                    ]
+                    (
+                    <bf' bf''>4
+                    r4
+                    <g' g''>8
+                    [
+                    <bf' bf''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.9 }
+                    ^ \markup { p.4 }
+                    [
+                    <g' g''>8
+                    ]
+                    (
+                    <bf' bf''>4
+                    <d' d''>4
+                    r8
+                    [
+                    <a' a''>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.10 }
+                    <bf' bf''>8
+                    [
+                    (
+                    <a' a''>8
+                    ]
+                    <f' f''>4
+                    r8
+                    [
+                    <g' g''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.5 }
+                    ^ \markup { c.11 }
+                    [
+                    <g' g''>8
+                    ]
+                    (
+                    <bf' bf''>8
+                    [
+                    <g' g''>8
+                    ]
+                    r8
+                    [
+                    <d'' d'''>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.12 }
+                    <c'' c'''>8
+                    [
+                    (
+                    <bf' bf''>8
+                    ]
+                    r4
+                    r8
+                    [
+                    <g' g''>8
+                    ]
+                    <bf' bf''>4
+                    )
+                    <g' g''>8
+                    ^ \markup { c.13 }
+                    ^ \markup { p.6 }
+                    [
+                    (
+                    <bf' bf''>8
+                    ]
+                    r8
+                    [
+                    <d' d''>8
+                    ]
+                    r4
+                    <a' a''>4
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    [
+                    <bf' bf''>8
+                    ]
+                    (
+                    <a' a''>8
+                    [
+                    <f' f''>8
+                    ]
+                    r4
+                    <g' g''>4
+                    )
+                    <g' g''>8
+                    ^ \markup { c.15 }
+                    ^ \markup { p.7 }
+                    [
+                    (
+                    <bf' bf''>8
+                    ]
+                    r8
+                    [
+                    <g' g''>8
+                    ]
+                    r8
+                    [
+                    <d'' d'''>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.16 }
+                    <c'' c'''>8
+                    [
+                    (
+                    <bf' bf''>8
+                    ]
+                    r4
+                    r8
+                    [
+                    <g' g''>8
+                    ]
+                    <bf' bf''>4
+                    )
+                    r2
+                    ^ \markup { c.17 }
+                    r1
+                    ^ \markup { c.18 }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 2
+                    }
+                    r4
+                    ^ \markup { c.1 }
+                    g'4
+                    (
+                    bf'2
+                    )
+                    r4
+                    ^ \markup { c.2 }
+                    g'4
+                    (
+                    bf'8
+                    [
+                    c''8
+                    ~
+                    ]
+                    c''4
+                    )
+                    r4
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    g'4
+                    (
+                    ef''8
+                    [
+                    d''8
+                    ]
+                    bf'8
+                    [
+                    c''8
+                    ~
+                    ]
+                    c''4
+                    )
+                    g'4
+                    ^ \markup { c.4 }
+                    (
+                    bf'2
+                    )
+                    r8
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    [
+                    c''8
+                    ]
+                    (
+                    ef''4
+                    g'4
+                    ~
+                    g'8
+                    [
+                    d''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.6 }
+                    ef''8
+                    [
+                    (
+                    d''8
+                    ]
+                    bf'4
+                    ~
+                    bf'8
+                    [
+                    c''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    [
+                    c''8
+                    ]
+                    (
+                    ef''4
+                    c''4
+                    g''4
+                    )
+                    r8
+                    ^ \markup { c.8 }
+                    [
+                    f''8
+                    ]
+                    (
+                    ef''4
+                    ~
+                    ef''4
+                    c''8
+                    [
+                    ef''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    ^ \markup { p.4 }
+                    c''4
+                    (
+                    ef''2
+                    )
+                    r4
+                    ^ \markup { c.10 }
+                    c''4
+                    (
+                    ef''8
+                    [
+                    f''8
+                    ~
+                    ]
+                    f''4
+                    )
+                    r4
+                    ^ \markup { p.5 }
+                    ^ \markup { c.11 }
+                    c''4
+                    (
+                    af''8
+                    [
+                    g''8
+                    ]
+                    ef''8
+                    [
+                    f''8
+                    ~
+                    ]
+                    f''4
+                    )
+                    c''4
+                    ^ \markup { c.12 }
+                    (
+                    ef''2
+                    )
+                    r8
+                    ^ \markup { c.13 }
+                    ^ \markup { p.6 }
+                    [
+                    f''8
+                    ]
+                    (
+                    af''4
+                    c''4
+                    ~
+                    c''8
+                    [
+                    g''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.14 }
+                    af''8
+                    [
+                    (
+                    g''8
+                    ]
+                    ef''4
+                    ~
+                    ef''8
+                    [
+                    f''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.15 }
+                    ^ \markup { p.7 }
+                    [
+                    f''8
+                    ]
+                    (
+                    af''4
+                    f''4
+                    c'''4
+                    )
+                    r8
+                    ^ \markup { c.16 }
+                    [
+                    bf''8
+                    ]
+                    (
+                    af''4
+                    ~
+                    af''4
+                    f''8
+                    [
+                    af''8
+                    ]
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r4
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    f'4
+                    (
+                    af'2
+                    )
+                    r4
+                    ^ \markup { c.1 }
+                    f'4
+                    (
+                    af'8
+                    [
+                    bf'8
+                    ~
+                    ]
+                    bf'4
+                    )
+                    r4
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    f'4
+                    (
+                    df''8
+                    [
+                    c''8
+                    ]
+                    af'8
+                    [
+                    bf'8
+                    ~
+                    ]
+                    bf'4
+                    )
+                    f'4
+                    ^ \markup { c.3 }
+                    (
+                    af'2
+                    )
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    bf'8
+                    ]
+                    (
+                    df''4
+                    f'4
+                    ~
+                    f'8
+                    [
+                    c''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    df''8
+                    [
+                    (
+                    c''8
+                    ]
+                    af'4
+                    ~
+                    af'8
+                    [
+                    bf'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    [
+                    bf'8
+                    ]
+                    (
+                    df''4
+                    bf'4
+                    f''4
+                    )
+                    r8
+                    ^ \markup { c.7 }
+                    [
+                    ef''8
+                    ]
+                    (
+                    df''4
+                    ~
+                    df''4
+                    bf'8
+                    [
+                    df''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    bf'4
+                    (
+                    df''2
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    bf'4
+                    (
+                    df''8
+                    [
+                    ef''8
+                    ~
+                    ]
+                    ef''4
+                    )
+                    r4
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    bf'4
+                    (
+                    gf''8
+                    [
+                    f''8
+                    ]
+                    df''8
+                    [
+                    ef''8
+                    ~
+                    ]
+                    ef''4
+                    )
+                    bf'4
+                    ^ \markup { c.11 }
+                    (
+                    df''2
+                    )
+                    r8
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    [
+                    ef''8
+                    ]
+                    (
+                    gf''4
+                    bf'4
+                    ~
+                    bf'8
+                    [
+                    f''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.13 }
+                    gf''8
+                    [
+                    (
+                    f''8
+                    ]
+                    df''4
+                    ~
+                    df''8
+                    [
+                    ef''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    [
+                    ef''8
+                    ]
+                    (
+                    gf''4
+                    ef''4
+                    bf''4
+                    )
+                    r8
+                    ^ \markup { c.15 }
+                    [
+                    af''8
+                    ]
+                    (
+                    gf''4
+                    ~
+                    gf''4
+                    ef''8
+                    [
+                    gf''8
+                    ]
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r4
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ds'4
+                    (
+                    fs'2
+                    )
+                    r4
+                    ^ \markup { c.1 }
+                    ds'4
+                    (
+                    fs'8
+                    [
+                    gs'8
+                    ~
+                    ]
+                    gs'4
+                    )
+                    r4
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    ds'4
+                    (
+                    b'8
+                    [
+                    as'8
+                    ]
+                    fs'8
+                    [
+                    gs'8
+                    ~
+                    ]
+                    gs'4
+                    )
+                    ds'4
+                    ^ \markup { c.3 }
+                    (
+                    fs'2
+                    )
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    gs'8
+                    ]
+                    (
+                    b'4
+                    ds'4
+                    ~
+                    ds'8
+                    [
+                    as'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    b'8
+                    [
+                    (
+                    as'8
+                    ]
+                    fs'4
+                    ~
+                    fs'8
+                    [
+                    gs'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    [
+                    gs'8
+                    ]
+                    (
+                    b'4
+                    gs'4
+                    ds''4
+                    )
+                    r8
+                    ^ \markup { c.7 }
+                    [
+                    cs''8
+                    ]
+                    (
+                    b'4
+                    ~
+                    b'4
+                    gs'8
+                    [
+                    b'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    gs'4
+                    (
+                    b'2
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    gs'4
+                    (
+                    b'8
+                    [
+                    cs''8
+                    ~
+                    ]
+                    cs''4
+                    )
+                    r4
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    gs'4
+                    (
+                    e''8
+                    [
+                    ds''8
+                    ]
+                    b'8
+                    [
+                    cs''8
+                    ~
+                    ]
+                    cs''4
+                    )
+                    gs'4
+                    ^ \markup { c.11 }
+                    (
+                    b'2
+                    )
+                    r8
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    [
+                    cs''8
+                    ]
+                    (
+                    e''4
+                    gs'4
+                    ~
+                    gs'8
+                    [
+                    ds''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.13 }
+                    e''8
+                    [
+                    (
+                    ds''8
+                    ]
+                    b'4
+                    ~
+                    b'8
+                    [
+                    cs''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    [
+                    cs''8
+                    ]
+                    (
+                    e''4
+                    cs''4
+                    gs''4
+                    )
+                    r8
+                    ^ \markup { c.15 }
+                    [
+                    fs''8
+                    ]
+                    (
+                    e''4
+                    ~
+                    e''4
+                    cs''8
+                    [
+                    e''8
+                    ]
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r4
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    cs'4
+                    (
+                    e'2
+                    )
+                    r4
+                    ^ \markup { c.1 }
+                    cs'4
+                    (
+                    e'8
+                    [
+                    fs'8
+                    ~
+                    ]
+                    fs'4
+                    )
+                    r4
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    cs'4
+                    (
+                    a'8
+                    [
+                    gs'8
+                    ]
+                    e'8
+                    [
+                    fs'8
+                    ~
+                    ]
+                    fs'4
+                    )
+                    cs'4
+                    ^ \markup { c.3 }
+                    (
+                    e'2
+                    )
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    fs'8
+                    ]
+                    (
+                    a'4
+                    cs'4
+                    ~
+                    cs'8
+                    [
+                    gs'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    a'8
+                    [
+                    (
+                    gs'8
+                    ]
+                    e'4
+                    ~
+                    e'8
+                    [
+                    fs'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    [
+                    fs'8
+                    ]
+                    (
+                    a'4
+                    fs'4
+                    cs''4
+                    )
+                    r8
+                    ^ \markup { c.7 }
+                    [
+                    b'8
+                    ]
+                    (
+                    a'4
+                    ~
+                    a'4
+                    fs'8
+                    [
+                    a'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    fs'4
+                    (
+                    a'2
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    fs'4
+                    (
+                    a'8
+                    [
+                    b'8
+                    ~
+                    ]
+                    b'4
+                    )
+                    r4
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    fs'4
+                    (
+                    d''8
+                    [
+                    cs''8
+                    ]
+                    a'8
+                    [
+                    b'8
+                    ~
+                    ]
+                    b'4
+                    )
+                    fs'4
+                    ^ \markup { c.11 }
+                    (
+                    a'2
+                    )
+                    r8
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    [
+                    b'8
+                    ]
+                    (
+                    d''4
+                    fs'4
+                    ~
+                    fs'8
+                    [
+                    cs''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.13 }
+                    d''8
+                    [
+                    (
+                    cs''8
+                    ]
+                    a'4
+                    ~
+                    a'8
+                    [
+                    b'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    [
+                    b'8
+                    ]
+                    (
+                    d''4
+                    b'4
+                    fs''4
+                    )
+                    r8
+                    ^ \markup { c.15 }
+                    [
+                    e''8
+                    ]
+                    (
+                    d''4
+                    ~
+                    d''4
+                    b'8
+                    [
+                    d''8
+                    ]
+                    )
+                }
             }
             \context Staff = "melody_line2"
             \with
@@ -16202,6 +17518,818 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Melody Line 2" }
+                    \set Staff.shortInstrumentName = \markup { Mel.2 }
+                    \set Staff.midiInstrument = #"misc2" 
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 13
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    r4
+                    r8
+                    ^ \markup { c.1 }
+                    [
+                    <d'' d'''>8
+                    ]
+                    (
+                    <f'' f'''>8
+                    [
+                    <a' a''>8
+                    ]
+                    <e'' e'''>4
+                    )
+                    <f'' f'''>8
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    <e'' e'''>8
+                    ]
+                    <c'' c'''>8
+                    [
+                    <d'' d'''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    [
+                    <d'' d'''>8
+                    ]
+                    (
+                    <f'' f'''>8
+                    [
+                    <d'' d'''>8
+                    ]
+                    <a'' a'''>4
+                    )
+                    <g'' g'''>8
+                    ^ \markup { c.4 }
+                    [
+                    (
+                    <f'' f'''>8
+                    ]
+                    <d'' d'''>8
+                    [
+                    <f'' f'''>8
+                    ]
+                    )
+                    r4
+                    r4
+                    r8
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    [
+                    <d'' d'''>8
+                    ]
+                    (
+                    <f'' f'''>8
+                    [
+                    <a' a''>8
+                    ]
+                    r4
+                    <e'' e'''>4
+                    )
+                    <f'' f'''>8
+                    ^ \markup { c.6 }
+                    [
+                    (
+                    <e'' e'''>8
+                    ]
+                    <c'' c'''>4
+                    r8
+                    [
+                    <d'' d'''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    [
+                    <d'' d'''>8
+                    ]
+                    (
+                    <f'' f'''>8
+                    [
+                    <d'' d'''>8
+                    ]
+                    <a'' a'''>4
+                    )
+                    r8
+                    ^ \markup { c.8 }
+                    [
+                    <g'' g'''>8
+                    ]
+                    (
+                    <f'' f'''>4
+                    r4
+                    <d'' d'''>8
+                    [
+                    <f'' f'''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.9 }
+                    ^ \markup { p.4 }
+                    [
+                    <d'' d'''>8
+                    ]
+                    (
+                    <f'' f'''>4
+                    <a' a''>4
+                    r8
+                    [
+                    <e'' e'''>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.10 }
+                    <f'' f'''>8
+                    [
+                    (
+                    <e'' e'''>8
+                    ]
+                    <c'' c'''>4
+                    r8
+                    [
+                    <d'' d'''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.5 }
+                    ^ \markup { c.11 }
+                    [
+                    <d'' d'''>8
+                    ]
+                    (
+                    <f'' f'''>8
+                    [
+                    <d'' d'''>8
+                    ]
+                    r8
+                    [
+                    <a'' a'''>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.12 }
+                    <g'' g'''>8
+                    [
+                    (
+                    <f'' f'''>8
+                    ]
+                    r4
+                    r8
+                    [
+                    <d'' d'''>8
+                    ]
+                    <f'' f'''>4
+                    )
+                    <d'' d'''>8
+                    ^ \markup { c.13 }
+                    ^ \markup { p.6 }
+                    [
+                    (
+                    <f'' f'''>8
+                    ]
+                    r8
+                    [
+                    <a' a''>8
+                    ]
+                    r4
+                    <e'' e'''>4
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    [
+                    <f'' f'''>8
+                    ]
+                    (
+                    <e'' e'''>8
+                    [
+                    <c'' c'''>8
+                    ]
+                    r4
+                    <d'' d'''>4
+                    )
+                    <d'' d'''>8
+                    ^ \markup { c.15 }
+                    ^ \markup { p.7 }
+                    [
+                    (
+                    <f'' f'''>8
+                    ]
+                    r8
+                    [
+                    <d'' d'''>8
+                    ]
+                    r8
+                    [
+                    <a'' a'''>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.16 }
+                    <g'' g'''>8
+                    [
+                    (
+                    <f'' f'''>8
+                    ]
+                    r4
+                    r8
+                    [
+                    <d'' d'''>8
+                    ]
+                    <f'' f'''>4
+                    )
+                    r4
+                    ^ \markup { c.17 }
+                    r1
+                    ^ \markup { c.18 }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    bf'8
+                    ]
+                    (
+                    df''4
+                    f'4
+                    ~
+                    f'8
+                    [
+                    c''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.1 }
+                    df''8
+                    [
+                    (
+                    c''8
+                    ]
+                    af'4
+                    ~
+                    af'8
+                    [
+                    bf'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    bf'8
+                    ]
+                    (
+                    df''4
+                    bf'4
+                    f''4
+                    )
+                    r8
+                    ^ \markup { c.3 }
+                    [
+                    ef''8
+                    ]
+                    (
+                    df''4
+                    ~
+                    df''4
+                    bf'8
+                    [
+                    df''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    bf'4
+                    (
+                    df''2
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    bf'4
+                    (
+                    df''8
+                    [
+                    ef''8
+                    ~
+                    ]
+                    ef''4
+                    )
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    bf'4
+                    (
+                    gf''8
+                    [
+                    f''8
+                    ]
+                    df''8
+                    [
+                    ef''8
+                    ~
+                    ]
+                    ef''4
+                    )
+                    bf'4
+                    ^ \markup { c.7 }
+                    (
+                    df''2
+                    )
+                    r8
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    [
+                    ef''8
+                    ]
+                    (
+                    gf''4
+                    bf'4
+                    ~
+                    bf'8
+                    [
+                    f''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    gf''8
+                    [
+                    (
+                    f''8
+                    ]
+                    df''4
+                    ~
+                    df''8
+                    [
+                    ef''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    ef''8
+                    ]
+                    (
+                    gf''4
+                    ef''4
+                    bf''4
+                    )
+                    r8
+                    ^ \markup { c.11 }
+                    [
+                    af''8
+                    ]
+                    (
+                    gf''4
+                    ~
+                    gf''4
+                    ef''8
+                    [
+                    gf''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    ef''4
+                    (
+                    gf''2
+                    )
+                    r4
+                    ^ \markup { c.13 }
+                    ef''4
+                    (
+                    gf''8
+                    [
+                    af''8
+                    ~
+                    ]
+                    af''4
+                    )
+                    r4
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    ef''4
+                    (
+                    b''8
+                    [
+                    bf''8
+                    ]
+                    gf''8
+                    [
+                    af''8
+                    ~
+                    ]
+                    af''4
+                    )
+                    ef''4
+                    ^ \markup { c.15 }
+                    (
+                    gf''2
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    gs'8
+                    ]
+                    (
+                    b'4
+                    ds'4
+                    ~
+                    ds'8
+                    [
+                    as'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.1 }
+                    b'8
+                    [
+                    (
+                    as'8
+                    ]
+                    fs'4
+                    ~
+                    fs'8
+                    [
+                    gs'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    gs'8
+                    ]
+                    (
+                    b'4
+                    gs'4
+                    ds''4
+                    )
+                    r8
+                    ^ \markup { c.3 }
+                    [
+                    cs''8
+                    ]
+                    (
+                    b'4
+                    ~
+                    b'4
+                    gs'8
+                    [
+                    b'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    gs'4
+                    (
+                    b'2
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    gs'4
+                    (
+                    b'8
+                    [
+                    cs''8
+                    ~
+                    ]
+                    cs''4
+                    )
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    gs'4
+                    (
+                    e''8
+                    [
+                    ds''8
+                    ]
+                    b'8
+                    [
+                    cs''8
+                    ~
+                    ]
+                    cs''4
+                    )
+                    gs'4
+                    ^ \markup { c.7 }
+                    (
+                    b'2
+                    )
+                    r8
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    [
+                    cs''8
+                    ]
+                    (
+                    e''4
+                    gs'4
+                    ~
+                    gs'8
+                    [
+                    ds''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    e''8
+                    [
+                    (
+                    ds''8
+                    ]
+                    b'4
+                    ~
+                    b'8
+                    [
+                    cs''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    cs''8
+                    ]
+                    (
+                    e''4
+                    cs''4
+                    gs''4
+                    )
+                    r8
+                    ^ \markup { c.11 }
+                    [
+                    fs''8
+                    ]
+                    (
+                    e''4
+                    ~
+                    e''4
+                    cs''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    cs''4
+                    (
+                    e''2
+                    )
+                    r4
+                    ^ \markup { c.13 }
+                    cs''4
+                    (
+                    e''8
+                    [
+                    fs''8
+                    ~
+                    ]
+                    fs''4
+                    )
+                    r4
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    cs''4
+                    (
+                    a''8
+                    [
+                    gs''8
+                    ]
+                    e''8
+                    [
+                    fs''8
+                    ~
+                    ]
+                    fs''4
+                    )
+                    cs''4
+                    ^ \markup { c.15 }
+                    (
+                    e''2
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    fs'8
+                    ]
+                    (
+                    a'4
+                    cs'4
+                    ~
+                    cs'8
+                    [
+                    gs'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.1 }
+                    a'8
+                    [
+                    (
+                    gs'8
+                    ]
+                    e'4
+                    ~
+                    e'8
+                    [
+                    fs'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    fs'8
+                    ]
+                    (
+                    a'4
+                    fs'4
+                    cs''4
+                    )
+                    r8
+                    ^ \markup { c.3 }
+                    [
+                    b'8
+                    ]
+                    (
+                    a'4
+                    ~
+                    a'4
+                    fs'8
+                    [
+                    a'8
+                    ]
+                    )
+                    r4
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    fs'4
+                    (
+                    a'2
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    fs'4
+                    (
+                    a'8
+                    [
+                    b'8
+                    ~
+                    ]
+                    b'4
+                    )
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    fs'4
+                    (
+                    d''8
+                    [
+                    cs''8
+                    ]
+                    a'8
+                    [
+                    b'8
+                    ~
+                    ]
+                    b'4
+                    )
+                    fs'4
+                    ^ \markup { c.7 }
+                    (
+                    a'2
+                    )
+                    r8
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    [
+                    b'8
+                    ]
+                    (
+                    d''4
+                    fs'4
+                    ~
+                    fs'8
+                    [
+                    cs''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    d''8
+                    [
+                    (
+                    cs''8
+                    ]
+                    a'4
+                    ~
+                    a'8
+                    [
+                    b'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    b'8
+                    ]
+                    (
+                    d''4
+                    b'4
+                    fs''4
+                    )
+                    r8
+                    ^ \markup { c.11 }
+                    [
+                    e''8
+                    ]
+                    (
+                    d''4
+                    ~
+                    d''4
+                    b'8
+                    [
+                    d''8
+                    ]
+                    )
+                    r4
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    b'4
+                    (
+                    d''2
+                    )
+                    r4
+                    ^ \markup { c.13 }
+                    b'4
+                    (
+                    d''8
+                    [
+                    e''8
+                    ~
+                    ]
+                    e''4
+                    )
+                    r4
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    b'4
+                    (
+                    g''8
+                    [
+                    fs''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ~
+                    ]
+                    e''4
+                    )
+                    b'4
+                    ^ \markup { c.15 }
+                    (
+                    d''2
+                    )
+                }
             }
             \context Staff = "counter_line"
             \with
@@ -16209,6 +18337,1697 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Counter Line" }
+                    \set Staff.shortInstrumentName = \markup { Count. }
+                    \set Staff.midiInstrument = #"misc3" 
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 5
+                    }
+                    c'8
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    b8
+                    ~
+                    ]
+                    b4
+                    ~
+                    b2
+                    )
+                    f'4
+                    ^ \markup { c.2 }
+                    (
+                    e'8
+                    [
+                    a8
+                    ~
+                    ]
+                    a2
+                    )
+                    f'8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    e'8
+                    ~
+                    ]
+                    e'4
+                    ~
+                    e'2
+                    )
+                    e'4
+                    ^ \markup { c.4 }
+                    (
+                    a'8
+                    [
+                    g'8
+                    ~
+                    ]
+                    g'2
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    f'4
+                    ~
+                    (
+                    f'4
+                    e'8
+                    [
+                    d'8
+                    ]
+                    )
+                    a'8
+                    ^ \markup { c.6 }
+                    [
+                    (
+                    a'8
+                    ]
+                    g'8
+                    [
+                    f'8
+                    ]
+                    )
+                    r2
+                    r4
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    g'4
+                    c''8
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    a'8
+                    ~
+                    ]
+                    a'4
+                    ~
+                    a'1
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    f'16
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    <a' a''>16
+                    )
+                    <bf' d''>16
+                    ^ \markup { c.2 }
+                    (
+                    <a' a''>16
+                    ]
+                    <d' a'>16
+                    )
+                    [
+                    <bf' d''>16
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    (
+                    <a' a''>16
+                    )
+                    <a' a''>16
+                    ^ \markup { c.4 }
+                    ]
+                    (
+                    d''16
+                    [
+                    c''16
+                    )
+                    r16
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    <bf' d''>16
+                    ]
+                    (
+                    f'16
+                    [
+                    <d' a'>16
+                    )
+                    <d' a'>16
+                    ^ \markup { c.6 }
+                    (
+                    <d' a'>16
+                    ]
+                    f'16
+                    [
+                    c'16
+                    )
+                    r16
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    c'16
+                    ]
+                    (
+                    <d' a'>16
+                    [
+                    g'16
+                    )
+                    f'16
+                    ^ \markup { c.8 }
+                    (
+                    <d' a'>16
+                    ]
+                    g'16
+                    [
+                    f'16
+                    )
+                    r8
+                    ]
+                    r4
+                    f'16
+                    ^ \markup { c.9 }
+                    ^ \markup { p.4 }
+                    [
+                    (
+                    <a' a''>8.
+                    ~
+                    ]
+                    <a' a''>4
+                    )
+                    <bf' d''>16
+                    ^ \markup { c.10 }
+                    [
+                    (
+                    <a' a''>16
+                    <d' a'>8
+                    ~
+                    ]
+                    <d' a'>8.
+                    )
+                    [
+                    <bf' d''>16
+                    ^ \markup { p.5 }
+                    ^ \markup { c.11 }
+                    ]
+                    (
+                    <a' a''>4
+                    ~
+                    <a' a''>8.
+                    )
+                    [
+                    <a' a''>16
+                    ^ \markup { c.12 }
+                    ]
+                    (
+                    d''16
+                    [
+                    c''8.
+                    ~
+                    ]
+                    c''8
+                    )
+                    [
+                    r16
+                    ^ \markup { c.13 }
+                    ^ \markup { p.6 }
+                    <bf' d''>16
+                    ]
+                    (
+                    f'16
+                    [
+                    <d' a'>8
+                    )
+                    <d' a'>16
+                    ^ \markup { c.14 }
+                    ]
+                    (
+                    <d' a'>16
+                    [
+                    f'16
+                    c'8
+                    ]
+                    )
+                    r16
+                    ^ \markup { c.15 }
+                    ^ \markup { p.7 }
+                    [
+                    c'16
+                    (
+                    <d' a'>16
+                    g'16
+                    ~
+                    ]
+                    g'16
+                    )
+                    [
+                    f'16
+                    ^ \markup { c.16 }
+                    (
+                    <d' a'>16
+                    g'16
+                    ]
+                    f'8
+                    )
+                    [
+                    f'16
+                    ^ \markup { c.17 }
+                    ^ \markup { p.8 }
+                    (
+                    <a' a''>16
+                    ~
+                    ]
+                    <a' a''>4
+                    ~
+                    <a' a''>8
+                    )
+                    [
+                    <bf' d''>8
+                    ^ \markup { c.18 }
+                    ]
+                    (
+                    <a' a''>16
+                    [
+                    <d' a'>8.
+                    ~
+                    ]
+                    <d' a'>8
+                    )
+                    [
+                    <bf' d''>16
+                    ^ \markup { p.9 }
+                    ^ \markup { c.19 }
+                    (
+                    <a' a''>16
+                    ~
+                    ]
+                    <a' a''>4
+                    ~
+                    <a' a''>8
+                    )
+                    [
+                    <a' a''>8
+                    ^ \markup { c.20 }
+                    ]
+                    (
+                    d''16
+                    [
+                    c''8.
+                    ~
+                    ]
+                    c''8
+                    )
+                    [
+                    r16
+                    ^ \markup { c.21 }
+                    ^ \markup { p.10 }
+                    <bf' d''>16
+                    ]
+                    (
+                    f'8
+                    [
+                    <d' a'>8
+                    ]
+                    )
+                    <d' a'>16
+                    ^ \markup { c.22 }
+                    [
+                    (
+                    <d' a'>16
+                    f'8
+                    ]
+                    c'8
+                    )
+                    [
+                    r16
+                    ^ \markup { c.23 }
+                    ^ \markup { p.11 }
+                    c'16
+                    ]
+                    (
+                    <d' a'>8
+                    [
+                    g'8
+                    ]
+                    )
+                    f'16
+                    ^ \markup { c.24 }
+                    [
+                    (
+                    <d' a'>16
+                    g'8
+                    ]
+                    f'8
+                    )
+                    [
+                    f'16
+                    ^ \markup { p.12 }
+                    ^ \markup { c.25 }
+                    (
+                    <a' a''>16
+                    ~
+                    ]
+                    <a' a''>4
+                    ~
+                    <a' a''>8
+                    )
+                    [
+                    <bf' d''>8
+                    ^ \markup { c.26 }
+                    ]
+                    (
+                    <a' a''>16
+                    [
+                    <d' a'>8.
+                    ~
+                    ]
+                    <d' a'>8
+                    )
+                    [
+                    <bf' d''>16
+                    ^ \markup { p.13 }
+                    ^ \markup { c.27 }
+                    (
+                    <a' a''>16
+                    ~
+                    ]
+                    <a' a''>4
+                    ~
+                    <a' a''>8
+                    )
+                    [
+                    <a' a''>8
+                    ^ \markup { c.28 }
+                    ]
+                    (
+                    d''16
+                    [
+                    c''8.
+                    ~
+                    ]
+                    c''8
+                    )
+                    [
+                    r16
+                    ^ \markup { c.29 }
+                    ^ \markup { p.14 }
+                    <bf' d''>16
+                    ~
+                    ]
+                    (
+                    <bf' d''>16
+                    [
+                    f'8
+                    <d' a'>16
+                    ~
+                    ]
+                    <d' a'>16
+                    )
+                    [
+                    <d' a'>16
+                    ^ \markup { c.30 }
+                    (
+                    <d' a'>8
+                    ]
+                    f'8
+                    [
+                    c'8
+                    ]
+                    )
+                    r16
+                    ^ \markup { c.31 }
+                    ^ \markup { p.15 }
+                    [
+                    c'8
+                    (
+                    <d' a'>16
+                    ~
+                    ]
+                    <d' a'>16
+                    [
+                    g'8
+                    )
+                    f'16
+                    ^ \markup { c.32 }
+                    ]
+                    (
+                    <d' a'>8
+                    [
+                    g'8
+                    ]
+                    f'8
+                    )
+                    [
+                    f'16
+                    ^ \markup { c.33 }
+                    ^ \markup { p.16 }
+                    (
+                    <a' a''>16
+                    ~
+                    ]
+                    <a' a''>4
+                    ~
+                    <a' a''>8
+                    )
+                    [
+                    <bf' d''>8
+                    ^ \markup { c.34 }
+                    ]
+                    (
+                    <a' a''>16
+                    [
+                    <d' a'>8.
+                    ~
+                    ]
+                    <d' a'>8
+                    )
+                    [
+                    <bf' d''>16
+                    ^ \markup { c.35 }
+                    ^ \markup { p.17 }
+                    (
+                    <a' a''>16
+                    ~
+                    ]
+                    <a' a''>4
+                    ~
+                    <a' a''>8
+                    )
+                    [
+                    <a' a''>8
+                    ^ \markup { c.36 }
+                    ]
+                    (
+                    d''16
+                    [
+                    c''8.
+                    ~
+                    ]
+                    c''8
+                    )
+                    [
+                    r8
+                    ^ \markup { p.18 }
+                    ^ \markup { c.37 }
+                    ]
+                    <bf' d''>8
+                    [
+                    (
+                    f'8
+                    ]
+                    <d' a'>8
+                    )
+                    [
+                    <d' a'>8
+                    ^ \markup { c.38 }
+                    ]
+                    (
+                    <d' a'>8
+                    [
+                    f'8
+                    ]
+                    c'8
+                    )
+                    [
+                    r8
+                    ^ \markup { c.39 }
+                    ]
+                    {
+                        R1 * 1
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 10
+                    }
+                    ef'16
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    d'8.
+                    ~
+                    ]
+                    d'4
+                    )
+                    af'8
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    g'16
+                    c'16
+                    ~
+                    ]
+                    c'4
+                    )
+                    af'16
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    g'8.
+                    ~
+                    ]
+                    g'4
+                    )
+                    g'8
+                    ^ \markup { c.4 }
+                    [
+                    (
+                    c''16
+                    bf'16
+                    ~
+                    ]
+                    bf'4
+                    )
+                    r8
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    [
+                    af'8
+                    ~
+                    ]
+                    (
+                    af'8
+                    [
+                    g'16
+                    f'16
+                    ]
+                    )
+                    c''16
+                    ^ \markup { c.6 }
+                    [
+                    (
+                    c''16
+                    bf'16
+                    af'16
+                    ]
+                    )
+                    r4
+                    r8
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    [
+                    bf'8
+                    ]
+                    ef''16
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    c''8.
+                    ~
+                    ]
+                    c''2
+                    )
+                    c''16
+                    ^ \markup { c.9 }
+                    ^ \markup { p.4 }
+                    [
+                    (
+                    bf'8.
+                    ~
+                    ]
+                    bf'4
+                    )
+                    f''8
+                    ^ \markup { c.10 }
+                    [
+                    (
+                    ef''16
+                    af'16
+                    ~
+                    ]
+                    af'4
+                    )
+                    f''16
+                    ^ \markup { p.5 }
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    ef''8.
+                    ~
+                    ]
+                    ef''4
+                    )
+                    ef''8
+                    ^ \markup { c.12 }
+                    [
+                    (
+                    af''16
+                    g''16
+                    ~
+                    ]
+                    g''4
+                    )
+                    r8
+                    ^ \markup { c.13 }
+                    ^ \markup { p.6 }
+                    [
+                    f''8
+                    ]
+                    (
+                    c''8
+                    [
+                    af'8
+                    ]
+                    )
+                    af'8
+                    ^ \markup { c.14 }
+                    [
+                    (
+                    af'8
+                    ]
+                    c''8
+                    [
+                    g'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.15 }
+                    ^ \markup { p.7 }
+                    [
+                    g'8
+                    ]
+                    (
+                    af'8
+                    [
+                    cs''8
+                    ]
+                    )
+                    c''8
+                    ^ \markup { c.16 }
+                    [
+                    (
+                    af'8
+                    ]
+                    cs''8
+                    [
+                    c''8
+                    ]
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    af'16
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    (
+                    g'8.
+                    ~
+                    ]
+                    g'4
+                    )
+                    df''8
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    c''16
+                    f'16
+                    ~
+                    ]
+                    f'4
+                    )
+                    df''16
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    c''8.
+                    ~
+                    ]
+                    c''4
+                    )
+                    c''8
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    f''16
+                    ef''16
+                    ~
+                    ]
+                    ef''4
+                    )
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    df''8
+                    ~
+                    ]
+                    (
+                    df''8
+                    [
+                    c''16
+                    bf'16
+                    ]
+                    )
+                    f''16
+                    ^ \markup { c.5 }
+                    [
+                    (
+                    f''16
+                    ef''16
+                    df''16
+                    ]
+                    )
+                    r4
+                    r8
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    [
+                    ef''8
+                    ]
+                    af''16
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    f''8.
+                    ~
+                    ]
+                    f''2
+                    )
+                    f''16
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    [
+                    (
+                    ef''8.
+                    ~
+                    ]
+                    ef''4
+                    )
+                    bf''8
+                    ^ \markup { c.9 }
+                    [
+                    (
+                    af''16
+                    df''16
+                    ~
+                    ]
+                    df''4
+                    )
+                    bf''16
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    (
+                    af''8.
+                    ~
+                    ]
+                    af''4
+                    )
+                    af''8
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    df'''16
+                    c'''16
+                    ~
+                    ]
+                    c'''4
+                    )
+                    r8
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    [
+                    bf''8
+                    ]
+                    (
+                    f''8
+                    [
+                    df''8
+                    ]
+                    )
+                    df''8
+                    ^ \markup { c.13 }
+                    [
+                    (
+                    df''8
+                    ]
+                    f''8
+                    [
+                    c''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    [
+                    c''8
+                    ]
+                    (
+                    df''8
+                    [
+                    gf''8
+                    ]
+                    )
+                    f''8
+                    ^ \markup { c.15 }
+                    [
+                    (
+                    df''8
+                    ]
+                    gf''8
+                    [
+                    f''8
+                    ]
+                    )
+                    df''16
+                    ^ \markup { c.16 }
+                    ^ \markup { p.8 }
+                    [
+                    (
+                    c''8.
+                    ~
+                    ]
+                    c''4
+                    )
+                    gf''8
+                    ^ \markup { c.17 }
+                    [
+                    (
+                    f''16
+                    bf'16
+                    ~
+                    ]
+                    bf'4
+                    )
+                    gf''16
+                    ^ \markup { p.9 }
+                    ^ \markup { c.18 }
+                    [
+                    (
+                    f''8.
+                    ~
+                    ]
+                    f''4
+                    )
+                    f''8
+                    ^ \markup { c.19 }
+                    [
+                    (
+                    bf''16
+                    af''16
+                    ~
+                    ]
+                    af''4
+                    )
+                    r8
+                    ^ \markup { p.10 }
+                    ^ \markup { c.20 }
+                    [
+                    gf''8
+                    ~
+                    ]
+                    (
+                    gf''8
+                    [
+                    f''16
+                    ef''16
+                    ]
+                    )
+                    bf''16
+                    ^ \markup { c.21 }
+                    [
+                    (
+                    bf''16
+                    af''16
+                    gf''16
+                    ]
+                    )
+                    r4
+                    r8
+                    ^ \markup { p.11 }
+                    ^ \markup { c.22 }
+                    [
+                    af''8
+                    ]
+                    df'''16
+                    ^ \markup { c.23 }
+                    [
+                    (
+                    bf''8.
+                    ~
+                    ]
+                    bf''2
+                    )
+                    bf''16
+                    ^ \markup { p.12 }
+                    ^ \markup { c.24 }
+                    [
+                    (
+                    af''8.
+                    ~
+                    ]
+                    af''4
+                    )
+                    ef'''8
+                    ^ \markup { c.25 }
+                    [
+                    (
+                    df'''16
+                    gf''16
+                    ~
+                    ]
+                    gf''4
+                    )
+                    ef'''16
+                    ^ \markup { c.26 }
+                    ^ \markup { p.13 }
+                    [
+                    (
+                    df'''8.
+                    ~
+                    ]
+                    df'''4
+                    )
+                    df'''8
+                    ^ \markup { c.27 }
+                    [
+                    (
+                    gf'''16
+                    f'''16
+                    ~
+                    ]
+                    f'''4
+                    )
+                    r8
+                    ^ \markup { p.14 }
+                    ^ \markup { c.28 }
+                    [
+                    ef'''8
+                    ]
+                    (
+                    bf''8
+                    [
+                    gf''8
+                    ]
+                    )
+                    gf''8
+                    ^ \markup { c.29 }
+                    [
+                    (
+                    gf''8
+                    ]
+                    bf''8
+                    [
+                    f''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.15 }
+                    ^ \markup { c.30 }
+                    [
+                    f''8
+                    ]
+                    (
+                    gf''8
+                    [
+                    b''8
+                    ]
+                    )
+                    bf''8
+                    ^ \markup { c.31 }
+                    [
+                    (
+                    gf''8
+                    ]
+                    b''8
+                    [
+                    bf''8
+                    ]
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    fs'16
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    (
+                    f'8.
+                    ~
+                    ]
+                    f'4
+                    )
+                    b'8
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    as'16
+                    ds'16
+                    ~
+                    ]
+                    ds'4
+                    )
+                    b'16
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    as'8.
+                    ~
+                    ]
+                    as'4
+                    )
+                    as'8
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    ds''16
+                    cs''16
+                    ~
+                    ]
+                    cs''4
+                    )
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    b'8
+                    ~
+                    ]
+                    (
+                    b'8
+                    [
+                    as'16
+                    gs'16
+                    ]
+                    )
+                    ds''16
+                    ^ \markup { c.5 }
+                    [
+                    (
+                    ds''16
+                    cs''16
+                    b'16
+                    ]
+                    )
+                    r4
+                    r8
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    [
+                    cs''8
+                    ]
+                    fs''16
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    ds''8.
+                    ~
+                    ]
+                    ds''2
+                    )
+                    ds''16
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    [
+                    (
+                    cs''8.
+                    ~
+                    ]
+                    cs''4
+                    )
+                    gs''8
+                    ^ \markup { c.9 }
+                    [
+                    (
+                    fs''16
+                    b'16
+                    ~
+                    ]
+                    b'4
+                    )
+                    gs''16
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    (
+                    fs''8.
+                    ~
+                    ]
+                    fs''4
+                    )
+                    fs''8
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    b''16
+                    as''16
+                    ~
+                    ]
+                    as''4
+                    )
+                    r8
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    [
+                    gs''8
+                    ]
+                    (
+                    ds''8
+                    [
+                    b'8
+                    ]
+                    )
+                    b'8
+                    ^ \markup { c.13 }
+                    [
+                    (
+                    b'8
+                    ]
+                    ds''8
+                    [
+                    as'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    [
+                    as'8
+                    ]
+                    (
+                    b'8
+                    [
+                    e''8
+                    ]
+                    )
+                    ds''8
+                    ^ \markup { c.15 }
+                    [
+                    (
+                    b'8
+                    ]
+                    e''8
+                    [
+                    ds''8
+                    ]
+                    )
+                    b'16
+                    ^ \markup { c.16 }
+                    ^ \markup { p.8 }
+                    [
+                    (
+                    as'8.
+                    ~
+                    ]
+                    as'4
+                    )
+                    e''8
+                    ^ \markup { c.17 }
+                    [
+                    (
+                    ds''16
+                    gs'16
+                    ~
+                    ]
+                    gs'4
+                    )
+                    e''16
+                    ^ \markup { p.9 }
+                    ^ \markup { c.18 }
+                    [
+                    (
+                    ds''8.
+                    ~
+                    ]
+                    ds''4
+                    )
+                    ds''8
+                    ^ \markup { c.19 }
+                    [
+                    (
+                    gs''16
+                    fs''16
+                    ~
+                    ]
+                    fs''4
+                    )
+                    r8
+                    ^ \markup { p.10 }
+                    ^ \markup { c.20 }
+                    [
+                    e''8
+                    ~
+                    ]
+                    (
+                    e''8
+                    [
+                    ds''16
+                    cs''16
+                    ]
+                    )
+                    gs''16
+                    ^ \markup { c.21 }
+                    [
+                    (
+                    gs''16
+                    fs''16
+                    e''16
+                    ]
+                    )
+                    r4
+                    r8
+                    ^ \markup { p.11 }
+                    ^ \markup { c.22 }
+                    [
+                    fs''8
+                    ]
+                    b''16
+                    ^ \markup { c.23 }
+                    [
+                    (
+                    gs''8.
+                    ~
+                    ]
+                    gs''2
+                    )
+                    gs''16
+                    ^ \markup { p.12 }
+                    ^ \markup { c.24 }
+                    [
+                    (
+                    fs''8.
+                    ~
+                    ]
+                    fs''4
+                    )
+                    cs'''8
+                    ^ \markup { c.25 }
+                    [
+                    (
+                    b''16
+                    e''16
+                    ~
+                    ]
+                    e''4
+                    )
+                    cs'''16
+                    ^ \markup { c.26 }
+                    ^ \markup { p.13 }
+                    [
+                    (
+                    b''8.
+                    ~
+                    ]
+                    b''4
+                    )
+                    b''8
+                    ^ \markup { c.27 }
+                    [
+                    (
+                    e'''16
+                    ds'''16
+                    ~
+                    ]
+                    ds'''4
+                    )
+                    r8
+                    ^ \markup { p.14 }
+                    ^ \markup { c.28 }
+                    [
+                    cs'''8
+                    ]
+                    (
+                    gs''8
+                    [
+                    e''8
+                    ]
+                    )
+                    e''8
+                    ^ \markup { c.29 }
+                    [
+                    (
+                    e''8
+                    ]
+                    gs''8
+                    [
+                    ds''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.15 }
+                    ^ \markup { c.30 }
+                    [
+                    ds''8
+                    ]
+                    (
+                    e''8
+                    [
+                    a''8
+                    ]
+                    )
+                    gs''8
+                    ^ \markup { c.31 }
+                    [
+                    (
+                    e''8
+                    ]
+                    a''8
+                    [
+                    gs''8
+                    ]
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    e'16
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    (
+                    ds'8.
+                    ~
+                    ]
+                    ds'4
+                    )
+                    a'8
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    gs'16
+                    cs'16
+                    ~
+                    ]
+                    cs'4
+                    )
+                    a'16
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    gs'8.
+                    ~
+                    ]
+                    gs'4
+                    )
+                    gs'8
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    cs''16
+                    b'16
+                    ~
+                    ]
+                    b'4
+                    )
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    a'8
+                    ~
+                    ]
+                    (
+                    a'8
+                    [
+                    gs'16
+                    fs'16
+                    ]
+                    )
+                    cs''16
+                    ^ \markup { c.5 }
+                    [
+                    (
+                    cs''16
+                    b'16
+                    a'16
+                    ]
+                    )
+                    r4
+                    r8
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    [
+                    b'8
+                    ]
+                    e''16
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    cs''8.
+                    ~
+                    ]
+                    cs''2
+                    )
+                    cs''16
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    [
+                    (
+                    b'8.
+                    ~
+                    ]
+                    b'4
+                    )
+                    fs''8
+                    ^ \markup { c.9 }
+                    [
+                    (
+                    e''16
+                    a'16
+                    ~
+                    ]
+                    a'4
+                    )
+                    fs''16
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    (
+                    e''8.
+                    ~
+                    ]
+                    e''4
+                    )
+                    e''8
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    a''16
+                    gs''16
+                    ~
+                    ]
+                    gs''4
+                    )
+                    r8
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    [
+                    fs''8
+                    ]
+                    (
+                    cs''8
+                    [
+                    a'8
+                    ]
+                    )
+                    a'8
+                    ^ \markup { c.13 }
+                    [
+                    (
+                    a'8
+                    ]
+                    cs''8
+                    [
+                    gs'8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    [
+                    gs'8
+                    ]
+                    (
+                    a'8
+                    [
+                    d''8
+                    ]
+                    )
+                    cs''8
+                    ^ \markup { c.15 }
+                    [
+                    (
+                    a'8
+                    ]
+                    d''8
+                    [
+                    cs''8
+                    ]
+                    )
+                    a'16
+                    ^ \markup { c.16 }
+                    ^ \markup { p.8 }
+                    [
+                    (
+                    gs'8.
+                    ~
+                    ]
+                    gs'4
+                    )
+                    d''8
+                    ^ \markup { c.17 }
+                    [
+                    (
+                    cs''16
+                    fs'16
+                    ~
+                    ]
+                    fs'4
+                    )
+                    d''16
+                    ^ \markup { p.9 }
+                    ^ \markup { c.18 }
+                    [
+                    (
+                    cs''8.
+                    ~
+                    ]
+                    cs''4
+                    )
+                    cs''8
+                    ^ \markup { c.19 }
+                    [
+                    (
+                    fs''16
+                    e''16
+                    ~
+                    ]
+                    e''4
+                    )
+                    r8
+                    ^ \markup { p.10 }
+                    ^ \markup { c.20 }
+                    [
+                    d''8
+                    ~
+                    ]
+                    (
+                    d''8
+                    [
+                    cs''16
+                    b'16
+                    ]
+                    )
+                    fs''16
+                    ^ \markup { c.21 }
+                    [
+                    (
+                    fs''16
+                    e''16
+                    d''16
+                    ]
+                    )
+                    r4
+                    r8
+                    ^ \markup { p.11 }
+                    ^ \markup { c.22 }
+                    [
+                    e''8
+                    ]
+                    a''16
+                    ^ \markup { c.23 }
+                    [
+                    (
+                    fs''8.
+                    ~
+                    ]
+                    fs''2
+                    )
+                    fs''16
+                    ^ \markup { p.12 }
+                    ^ \markup { c.24 }
+                    [
+                    (
+                    e''8.
+                    ~
+                    ]
+                    e''4
+                    )
+                    b''8
+                    ^ \markup { c.25 }
+                    [
+                    (
+                    a''16
+                    d''16
+                    ~
+                    ]
+                    d''4
+                    )
+                    b''16
+                    ^ \markup { c.26 }
+                    ^ \markup { p.13 }
+                    [
+                    (
+                    a''8.
+                    ~
+                    ]
+                    a''4
+                    )
+                    a''8
+                    ^ \markup { c.27 }
+                    [
+                    (
+                    d'''16
+                    cs'''16
+                    ~
+                    ]
+                    cs'''4
+                    )
+                    r8
+                    ^ \markup { p.14 }
+                    ^ \markup { c.28 }
+                    [
+                    b''8
+                    ]
+                    (
+                    fs''8
+                    [
+                    d''8
+                    ]
+                    )
+                    d''8
+                    ^ \markup { c.29 }
+                    [
+                    (
+                    d''8
+                    ]
+                    fs''8
+                    [
+                    cs''8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.15 }
+                    ^ \markup { c.30 }
+                    [
+                    cs''8
+                    ]
+                    (
+                    d''8
+                    [
+                    g''8
+                    ]
+                    )
+                    fs''8
+                    ^ \markup { c.31 }
+                    [
+                    (
+                    d''8
+                    ]
+                    g''8
+                    [
+                    fs''8
+                    ]
+                    )
+                }
             }
             \context Staff = "bass_line"
             \with
@@ -16216,6 +20035,843 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Bass Line" }
+                    \set Staff.shortInstrumentName = \markup { Bass. }
+                    \set Staff.midiInstrument = #"electric bass (finger)" 
+                    \clef "bass"
+                    r8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    <a, c'>8
+                    ]
+                    (
+                    <c e'>4
+                    )
+                    <a, c'>8
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    <c e'>8
+                    ]
+                    <d f'>4
+                    )
+                    <a, c'>8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    <f a'>8
+                    ]
+                    <e g'>8
+                    [
+                    <c e'>8
+                    ]
+                    <d f'>8
+                    )
+                    [
+                    <a, c'>8
+                    ^ \markup { c.3 }
+                    ]
+                    (
+                    <c e'>4
+                    )
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    <a, c'>8
+                    ]
+                    (
+                    <c, e>4
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    r8
+                    [
+                    <c, e>8
+                    ]
+                    (
+                    <d, d>8
+                    [
+                    <e, e>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    r8
+                    [
+                    <b,, b,>8
+                    ]
+                    (
+                    <g, g>8
+                    [
+                    <f, f>8
+                    ]
+                    <d, d>8
+                    [
+                    <e, e>8
+                    ]
+                    )
+                    r4
+                    <b,, b,>8
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    <d, d>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    r4
+                    <b,, b,>4
+                    (
+                    <d, d>4
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    r8
+                    [
+                    <b,, b,>8
+                    ]
+                    (
+                    r8
+                    [
+                    <d, d>8
+                    ]
+                    <e, e>4
+                    )
+                    r4
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    <a,, a, a>4
+                    (
+                    <f, f f'>8
+                    [
+                    <e, e e'>8
+                    ]
+                    <c, c c'>8
+                    [
+                    <d, d d'>8
+                    ]
+                    )
+                    r4
+                    <a,, a, a>4
+                    ^ \markup { c.11 }
+                    (
+                    <c, c c'>4
+                    )
+                    r2
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    <a,, a, a>4
+                    (
+                    <c, c c'>4
+                    )
+                    r2
+                    ^ \markup { c.13 }
+                    <a,, a, a>4
+                    (
+                    <c, c c'>8
+                    [
+                    <d, d d'>8
+                    ]
+                    )
+                    r2
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    <a,, a, a>4
+                    (
+                    <f, f f'>8
+                    [
+                    <e, e e'>8
+                    ]
+                    <c, c c'>8
+                    [
+                    <d, d d'>8
+                    ]
+                    )
+                    r4
+                    <a,, a, a>4
+                    ^ \markup { c.15 }
+                    (
+                    <c, c c'>4
+                    )
+                    r4
+                    r4
+                    ^ \markup { c.16 }
+                    {
+                        R1 * 1
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    r8
+                    ^ \markup { c.1 }
+                    [
+                    r8
+                    ^ \markup { c.2 }
+                    ]
+                    <g bf>8
+                    [
+                    (
+                    <g bf>8
+                    ]
+                    <d a>8
+                    [
+                    <a d'>8
+                    ]
+                    )
+                    r8
+                    [
+                    <g bf>8
+                    ^ \markup { c.3 }
+                    ]
+                    (
+                    <a d'>8
+                    [
+                    <f c'>8
+                    ]
+                    <g bf>4
+                    )
+                    <g bf>8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.4 }
+                    [
+                    (
+                    <g bf>8
+                    ]
+                    <g bf>8
+                    [
+                    <a d'>8
+                    ]
+                    )
+                    r8
+                    [
+                    <f c'>8
+                    ^ \markup { c.5 }
+                    ]
+                    (
+                    <g bf>8
+                    [
+                    <g bf>8
+                    ]
+                    <g bf>4
+                    )
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { p.2 }
+                    ^ \markup { c.6 }
+                    ]
+                    <g bf>8
+                    [
+                    (
+                    <g bf>8
+                    ]
+                    <d a>4
+                    r8
+                    [
+                    <a d'>8
+                    ]
+                    )
+                    r8
+                    [
+                    <g bf>8
+                    ^ \markup { c.7 }
+                    ]
+                    (
+                    <a d'>8
+                    [
+                    <f c'>8
+                    ]
+                    r4
+                    <g bf>4
+                    )
+                    <g bf>8
+                    ^ \markup { c.8 }
+                    ^ \markup { p.3 }
+                    [
+                    (
+                    <g bf>8
+                    ]
+                    <g bf>8
+                    [
+                    <a d'>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.9 }
+                    <f c'>8
+                    [
+                    (
+                    <g bf>8
+                    ]
+                    r4
+                    r8
+                    [
+                    <g bf>8
+                    ]
+                    <g bf>4
+                    )
+                    <g bf>8
+                    ^ \markup { c.10 }
+                    ^ \markup { p.4 }
+                    [
+                    (
+                    <g bf>8
+                    ]
+                    r8
+                    [
+                    <d a>8
+                    ]
+                    r4
+                    <a d'>4
+                    )
+                    r8
+                    ^ \markup { c.11 }
+                    [
+                    <g bf>8
+                    ]
+                    (
+                    <a d'>8
+                    [
+                    <f c'>8
+                    ]
+                    r4
+                    <g bf>4
+                    )
+                    <g bf>8
+                    ^ \markup { p.5 }
+                    ^ \markup { c.12 }
+                    [
+                    (
+                    <g bf>8
+                    ]
+                    <g bf>4
+                    <a d'>4
+                    )
+                    r8
+                    ^ \markup { c.13 }
+                    [
+                    <f c'>8
+                    ]
+                    (
+                    <g bf>4
+                    r4
+                    <g bf>8
+                    [
+                    <g bf>8
+                    ]
+                    )
+                    r8
+                    [
+                    <g bf>8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.6 }
+                    ]
+                    (
+                    <g bf>4
+                    <d a>4
+                    r8
+                    [
+                    <a d'>8
+                    ]
+                    )
+                    r4
+                    ^ \markup { c.15 }
+                    <g bf>8
+                    [
+                    (
+                    <a d'>8
+                    ]
+                    <f c'>4
+                    r8
+                    [
+                    <g bf>8
+                    ]
+                    )
+                    r8
+                    [
+                    <g bf>8
+                    ^ \markup { c.16 }
+                    ^ \markup { p.7 }
+                    ]
+                    (
+                    <g bf>4
+                    <g bf>4
+                    <a d'>4
+                    )
+                    r8
+                    ^ \markup { c.17 }
+                    [
+                    <f c'>8
+                    ]
+                    (
+                    <g bf>4
+                    r4
+                    <g bf>8
+                    [
+                    <g bf>8
+                    ]
+                    )
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.18 }
+                    ]
+                    r4
+                    r1
+                    ^ \markup { c.19 }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    cs8
+                    ]
+                    (
+                    ds4
+                    ds8.
+                    [
+                    cs16
+                    ~
+                    ]
+                    cs4
+                    )
+                    r16
+                    ^ \markup { c.1 }
+                    [
+                    fs8.
+                    ~
+                    ]
+                    (
+                    fs4
+                    cs2
+                    )
+                    gs4
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    (
+                    fs4
+                    r16
+                    [
+                    gs8.
+                    ]
+                    fs8
+                    [
+                    cs8
+                    ~
+                    ]
+                    cs8
+                    )
+                    [
+                    b,8
+                    ^ \markup { c.3 }
+                    ~
+                    ]
+                    (
+                    b,4
+                    ~
+                    b,8
+                    [
+                    cs8
+                    ~
+                    ]
+                    cs4
+                    )
+                    r16
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    fs8.
+                    ~
+                    ]
+                    (
+                    fs4
+                    b,8
+                    [
+                    cs8
+                    ~
+                    ]
+                    cs4
+                    )
+                    r16
+                    ^ \markup { c.5 }
+                    [
+                    fs8.
+                    ~
+                    ]
+                    (
+                    fs4
+                    b,8.
+                    [
+                    cs16
+                    ~
+                    ]
+                    cs4
+                    )
+                    cs4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    (
+                    ds4
+                    e4
+                    fs4
+                    )
+                    cs4
+                    ^ \markup { c.7 }
+                    (
+                    ds8
+                    [
+                    e8
+                    ]
+                    fs4
+                    cs4
+                    )
+                    fs4
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    ~
+                    (
+                    fs8
+                    [
+                    cs8
+                    ]
+                    b,8.
+                    [
+                    e16
+                    ~
+                    ]
+                    e4
+                    )
+                    r16
+                    ^ \markup { c.9 }
+                    [
+                    fs8.
+                    ]
+                    (
+                    cs4
+                    b,8.
+                    [
+                    cs16
+                    ~
+                    ]
+                    cs4
+                    )
+                    r8
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    fs8
+                    ]
+                    (
+                    gs4
+                    gs8.
+                    [
+                    fs16
+                    ~
+                    ]
+                    fs4
+                    )
+                    r16
+                    ^ \markup { c.11 }
+                    [
+                    b8.
+                    ~
+                    ]
+                    (
+                    b4
+                    fs2
+                    )
+                    cs'4
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    (
+                    b4
+                    r16
+                    [
+                    cs'8.
+                    ]
+                    b8
+                    [
+                    fs8
+                    ~
+                    ]
+                    fs8
+                    )
+                    [
+                    e8
+                    ^ \markup { c.13 }
+                    ~
+                    ]
+                    (
+                    e4
+                    ~
+                    e8
+                    [
+                    fs8
+                    ~
+                    ]
+                    fs4
+                    )
+                    fs4
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    (
+                    gs4
+                    a4
+                    b4
+                    )
+                    fs4
+                    ^ \markup { c.15 }
+                    (
+                    gs8
+                    [
+                    a8
+                    ]
+                    b4
+                    fs4
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    b,8
+                    ]
+                    (
+                    cs4
+                    cs8.
+                    [
+                    b,16
+                    ~
+                    ]
+                    b,4
+                    )
+                    r16
+                    ^ \markup { c.1 }
+                    [
+                    e8.
+                    ~
+                    ]
+                    (
+                    e4
+                    b,2
+                    )
+                    fs4
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    (
+                    e4
+                    r16
+                    [
+                    fs8.
+                    ]
+                    e8
+                    [
+                    b,8
+                    ~
+                    ]
+                    b,8
+                    )
+                    [
+                    a,8
+                    ^ \markup { c.3 }
+                    ~
+                    ]
+                    (
+                    a,4
+                    ~
+                    a,8
+                    [
+                    b,8
+                    ~
+                    ]
+                    b,4
+                    )
+                    r16
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    [
+                    e8.
+                    ~
+                    ]
+                    (
+                    e4
+                    a,8
+                    [
+                    b,8
+                    ~
+                    ]
+                    b,4
+                    )
+                    r16
+                    ^ \markup { c.5 }
+                    [
+                    e8.
+                    ~
+                    ]
+                    (
+                    e4
+                    a,8.
+                    [
+                    b,16
+                    ~
+                    ]
+                    b,4
+                    )
+                    b,4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    (
+                    cs4
+                    d4
+                    e4
+                    )
+                    b,4
+                    ^ \markup { c.7 }
+                    (
+                    cs8
+                    [
+                    d8
+                    ]
+                    e4
+                    b,4
+                    )
+                    e4
+                    ^ \markup { c.8 }
+                    ^ \markup { p.4 }
+                    ~
+                    (
+                    e8
+                    [
+                    b,8
+                    ]
+                    a,8.
+                    [
+                    d16
+                    ~
+                    ]
+                    d4
+                    )
+                    r16
+                    ^ \markup { c.9 }
+                    [
+                    e8.
+                    ]
+                    (
+                    b,4
+                    a,8.
+                    [
+                    b,16
+                    ~
+                    ]
+                    b,4
+                    )
+                    r8
+                    ^ \markup { c.10 }
+                    ^ \markup { p.5 }
+                    [
+                    e8
+                    ]
+                    (
+                    fs4
+                    fs8.
+                    [
+                    e16
+                    ~
+                    ]
+                    e4
+                    )
+                    r16
+                    ^ \markup { c.11 }
+                    [
+                    a8.
+                    ~
+                    ]
+                    (
+                    a4
+                    e2
+                    )
+                    b4
+                    ^ \markup { p.6 }
+                    ^ \markup { c.12 }
+                    (
+                    a4
+                    r16
+                    [
+                    b8.
+                    ]
+                    a8
+                    [
+                    e8
+                    ~
+                    ]
+                    e8
+                    )
+                    [
+                    d8
+                    ^ \markup { c.13 }
+                    ~
+                    ]
+                    (
+                    d4
+                    ~
+                    d8
+                    [
+                    e8
+                    ~
+                    ]
+                    e4
+                    )
+                    e4
+                    ^ \markup { c.14 }
+                    ^ \markup { p.7 }
+                    (
+                    fs4
+                    g4
+                    a4
+                    )
+                    e4
+                    ^ \markup { c.15 }
+                    (
+                    fs8
+                    [
+                    g8
+                    ]
+                    a4
+                    e4
+                    )
+                }
             }
             \context Staff = "riff"
             \with
@@ -16223,6 +20879,597 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { Riff }
+                    \set Staff.shortInstrumentName = \markup { Riff. }
+                    \set Staff.midiInstrument = #"electric guitar (clean)" 
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 4
+                    }
+                    c'8
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    b8
+                    ~
+                    ]
+                    b4
+                    ~
+                    b2
+                    )
+                    f'4
+                    ^ \markup { c.2 }
+                    (
+                    e'8
+                    [
+                    a8
+                    ~
+                    ]
+                    a2
+                    )
+                    f'8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    e'8
+                    ~
+                    ]
+                    e'4
+                    ~
+                    e'2
+                    )
+                    e'4
+                    ^ \markup { c.4 }
+                    (
+                    a'8
+                    [
+                    g'8
+                    ~
+                    ]
+                    g'2
+                    )
+                    r4
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    f'4
+                    ~
+                    (
+                    f'4
+                    e'8
+                    [
+                    d'8
+                    ]
+                    )
+                    a'8
+                    ^ \markup { c.6 }
+                    [
+                    (
+                    a'8
+                    ]
+                    g'8
+                    [
+                    f'8
+                    ]
+                    )
+                    r2
+                    r4
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    g'4
+                    c''8
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    a'8
+                    ~
+                    ]
+                    a'4
+                    ~
+                    a'1
+                    )
+                    r1
+                    ^ \markup { c.9 }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 16
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ds'16
+                    ^ \markup { c.1 }
+                    [
+                    (
+                    e'16
+                    fs'16
+                    gs'16
+                    ]
+                    b'16
+                    [
+                    ds''16
+                    )
+                    a'16
+                    ^ \markup { c.2 }
+                    (
+                    e''16
+                    ]
+                    b'16
+                    [
+                    fs''16
+                    gs''16
+                    a''16
+                    ]
+                    )
+                    b''16
+                    ^ \markup { p.1 }
+                    ^ \markup { c.3 }
+                    [
+                    (
+                    a''16
+                    gs''16
+                    cs''16
+                    ]
+                    fs''16
+                    [
+                    b'16
+                    )
+                    e''16
+                    ^ \markup { c.4 }
+                    (
+                    cs''16
+                    ]
+                    a'16
+                    [
+                    gs'16
+                    fs'16
+                    e'16
+                    ]
+                    )
+                    r2
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    ds'16
+                    ^ \markup { c.6 }
+                    [
+                    (
+                    e'16
+                    fs'16
+                    gs'16
+                    ]
+                    b'16
+                    [
+                    ds''16
+                    )
+                    a'16
+                    ^ \markup { c.7 }
+                    (
+                    e''16
+                    ]
+                    b'16
+                    [
+                    fs''16
+                    gs''16
+                    a''16
+                    ]
+                    )
+                    b''16
+                    ^ \markup { c.8 }
+                    ^ \markup { p.3 }
+                    [
+                    (
+                    a''16
+                    gs''16
+                    cs''16
+                    ]
+                    fs''16
+                    [
+                    b'16
+                    )
+                    e''16
+                    ^ \markup { c.9 }
+                    (
+                    cs''16
+                    ]
+                    a'16
+                    [
+                    gs'16
+                    fs'16
+                    e'16
+                    ]
+                    )
+                    r2
+                    ^ \markup { c.10 }
+                    ^ \markup { p.4 }
+                    ds'16
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    e'16
+                    fs'16
+                    gs'16
+                    ]
+                    b'16
+                    [
+                    ds''16
+                    )
+                    a'16
+                    ^ \markup { c.12 }
+                    (
+                    e''16
+                    ]
+                    b'16
+                    [
+                    fs''16
+                    gs''16
+                    a''16
+                    ]
+                    )
+                    b''16
+                    ^ \markup { p.5 }
+                    ^ \markup { c.13 }
+                    [
+                    (
+                    a''16
+                    gs''16
+                    cs''16
+                    ]
+                    fs''16
+                    [
+                    b'16
+                    )
+                    e''16
+                    ^ \markup { c.14 }
+                    (
+                    cs''16
+                    ]
+                    a'16
+                    [
+                    gs'16
+                    fs'16
+                    e'16
+                    ]
+                    )
+                    gs16
+                    ^ \markup { p.6 }
+                    ^ \markup { c.15 }
+                    [
+                    (
+                    a16
+                    b16
+                    cs'16
+                    ]
+                    e'16
+                    [
+                    gs'16
+                    )
+                    d'16
+                    ^ \markup { c.16 }
+                    (
+                    a'16
+                    ]
+                    e'16
+                    [
+                    b'16
+                    cs''16
+                    d''16
+                    ]
+                    )
+                    e''16
+                    ^ \markup { c.17 }
+                    ^ \markup { p.7 }
+                    [
+                    (
+                    d''16
+                    cs''16
+                    fs'16
+                    ]
+                    b'16
+                    [
+                    e'16
+                    )
+                    a'16
+                    ^ \markup { c.18 }
+                    (
+                    fs'16
+                    ]
+                    d'16
+                    [
+                    cs'16
+                    b16
+                    a16
+                    ]
+                    )
+                    gs16
+                    ^ \markup { p.8 }
+                    ^ \markup { c.19 }
+                    [
+                    (
+                    a16
+                    b16
+                    cs'16
+                    ]
+                    e'16
+                    [
+                    gs'16
+                    )
+                    d'16
+                    ^ \markup { c.20 }
+                    (
+                    a'16
+                    ]
+                    e'16
+                    [
+                    b'16
+                    cs''16
+                    d''16
+                    ]
+                    )
+                    e''16
+                    ^ \markup { p.9 }
+                    ^ \markup { c.21 }
+                    [
+                    (
+                    d''16
+                    cs''16
+                    fs'16
+                    ]
+                    b'16
+                    [
+                    e'16
+                    )
+                    a'16
+                    ^ \markup { c.22 }
+                    (
+                    fs'16
+                    ]
+                    d'16
+                    [
+                    cs'16
+                    b16
+                    a16
+                    ]
+                    )
+                    gs16
+                    ^ \markup { p.10 }
+                    ^ \markup { c.23 }
+                    [
+                    (
+                    a16
+                    b16
+                    cs'16
+                    ]
+                    e'16
+                    [
+                    gs'16
+                    )
+                    d'16
+                    ^ \markup { c.24 }
+                    (
+                    a'16
+                    ]
+                    e'16
+                    [
+                    b'16
+                    cs''16
+                    d''16
+                    ]
+                    )
+                    e''16
+                    ^ \markup { p.11 }
+                    ^ \markup { c.25 }
+                    [
+                    (
+                    d''16
+                    cs''16
+                    fs'16
+                    ]
+                    b'16
+                    [
+                    e'16
+                    )
+                    a'16
+                    ^ \markup { c.26 }
+                    (
+                    fs'16
+                    ]
+                    d'16
+                    [
+                    cs'16
+                    b16
+                    a16
+                    ]
+                    )
+                    gs16
+                    ^ \markup { c.27 }
+                    ^ \markup { p.12 }
+                    [
+                    (
+                    a16
+                    b16
+                    cs'16
+                    ]
+                    e'16
+                    [
+                    gs'16
+                    )
+                    d'16
+                    ^ \markup { c.28 }
+                    (
+                    a'16
+                    ]
+                    e'16
+                    [
+                    b'16
+                    cs''16
+                    d''16
+                    ]
+                    )
+                    e''16
+                    ^ \markup { c.29 }
+                    ^ \markup { p.13 }
+                    [
+                    (
+                    d''16
+                    cs''16
+                    fs'16
+                    ]
+                    b'16
+                    [
+                    e'16
+                    )
+                    a'16
+                    ^ \markup { c.30 }
+                    (
+                    fs'16
+                    ]
+                    d'16
+                    [
+                    cs'16
+                    b16
+                    a16
+                    ]
+                    )
+                    r2
+                    ^ \markup { p.14 }
+                    ^ \markup { c.31 }
+                    cs'16
+                    ^ \markup { c.32 }
+                    [
+                    (
+                    d'16
+                    e'16
+                    fs'16
+                    ]
+                    a'16
+                    [
+                    cs''16
+                    )
+                    g'16
+                    ^ \markup { c.33 }
+                    (
+                    d''16
+                    ]
+                    a'16
+                    [
+                    e''16
+                    fs''16
+                    g''16
+                    ]
+                    )
+                    a''16
+                    ^ \markup { c.34 }
+                    ^ \markup { p.15 }
+                    [
+                    (
+                    g''16
+                    fs''16
+                    b'16
+                    ]
+                    e''16
+                    [
+                    a'16
+                    )
+                    d''16
+                    ^ \markup { c.35 }
+                    (
+                    b'16
+                    ]
+                    g'16
+                    [
+                    fs'16
+                    e'16
+                    d'16
+                    ]
+                    )
+                    r2
+                    ^ \markup { c.36 }
+                    ^ \markup { p.16 }
+                    cs'16
+                    ^ \markup { c.37 }
+                    [
+                    (
+                    d'16
+                    e'16
+                    fs'16
+                    ]
+                    a'16
+                    [
+                    cs''16
+                    )
+                    g'16
+                    ^ \markup { c.38 }
+                    (
+                    d''16
+                    ]
+                    a'16
+                    [
+                    e''16
+                    fs''16
+                    g''16
+                    ]
+                    )
+                    a''16
+                    ^ \markup { c.39 }
+                    ^ \markup { p.17 }
+                    [
+                    (
+                    g''16
+                    fs''16
+                    b'16
+                    ]
+                    e''16
+                    [
+                    a'16
+                    )
+                    d''16
+                    ^ \markup { c.40 }
+                    (
+                    b'16
+                    ]
+                    g'16
+                    [
+                    fs'16
+                    e'16
+                    d'16
+                    ]
+                    )
+                }
             }
             \context Staff = "chords"
             \with
@@ -16230,6 +21477,57 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { Chords }
+                    \set Staff.shortInstrumentName = \markup { Chrd. }
+                    \set Staff.midiInstrument = #"french horn" 
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 13
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 16
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
             }
             \context Staff = "high_drones"
             \with
@@ -16237,6 +21535,112 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "High Drones" }
+                    \set Staff.shortInstrumentName = \markup { H.drn. }
+                    \set Staff.midiInstrument = #"piccolo" 
+                    e'''1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    e'''1
+                    ~
+                    e'''1
+                    ~
+                    e'''1
+                    ~
+                    e'''1
+                    ~
+                    e'''1
+                    ~
+                    e'''1
+                    c'''1
+                    ^ \markup { c.1 }
+                    ^ \markup { p.1 }
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    c'''1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                    ~
+                    c'''1
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 15
+                    }
+                }
             }
             \context Staff = "mid_drones"
             \with
@@ -16244,6 +21648,352 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Mid Drones" }
+                    \set Staff.shortInstrumentName = \markup { M.drn. }
+                    \set Staff.midiInstrument = #"string ensemble 2" 
+                    <b' e''>1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    <b' e''>1
+                    ~
+                    <b' e''>4
+                    <e'' a''>4
+                    ^ \markup { c.1 }
+                    ^ \markup { p.1 }
+                    ~
+                    <e'' a''>2
+                    ~
+                    <e'' a''>1
+                    ~
+                    <e'' a''>2
+                    <a' d''>2
+                    ^ \markup { p.2 }
+                    ^ \markup { c.2 }
+                    ~
+                    <a' d''>1
+                    ~
+                    <a' d''>2
+                    ~
+                    <a' d''>4
+                    <d'' g''>4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.3 }
+                    ~
+                    <d'' g''>1
+                    ~
+                    <d'' g''>1
+                    <g'' c'''>1
+                    ^ \markup { c.4 }
+                    ^ \markup { p.4 }
+                    ~
+                    <g'' c'''>1
+                    ~
+                    <g'' c'''>4
+                    <c'' f''>4
+                    ^ \markup { c.5 }
+                    ^ \markup { p.5 }
+                    ~
+                    <c'' f''>2
+                    ~
+                    <c'' f''>1
+                    ~
+                    <c'' f''>2
+                    r2
+                    ^ \markup { c.6 }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    d'1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    d'1
+                    ^ \markup { c.1 }
+                    ^ \markup { p.1 }
+                    d'1
+                    ^ \markup { p.2 }
+                    ^ \markup { c.2 }
+                    <bf g'>1
+                    ^ \markup { p.3 }
+                    ^ \markup { c.3 }
+                    <bf g'>1
+                    ^ \markup { c.4 }
+                    ^ \markup { p.4 }
+                    <bf g'>1
+                    ^ \markup { c.5 }
+                    ^ \markup { p.5 }
+                    <bf d'>1
+                    ^ \markup { c.6 }
+                    ^ \markup { p.6 }
+                    <bf d'>1
+                    ^ \markup { c.7 }
+                    ^ \markup { p.7 }
+                    <bf d'>1
+                    ^ \markup { c.8 }
+                    ^ \markup { p.8 }
+                    <ef c'>1
+                    ^ \markup { p.9 }
+                    ^ \markup { c.9 }
+                    <ef c'>1
+                    ^ \markup { c.10 }
+                    ^ \markup { p.10 }
+                    <ef c'>1
+                    ^ \markup { c.11 }
+                    ^ \markup { p.11 }
+                    <ef g'>1
+                    ^ \markup { c.12 }
+                    ^ \markup { p.12 }
+                    <ef g'>1
+                    ^ \markup { p.13 }
+                    ^ \markup { c.13 }
+                    <af d'>1
+                    ^ \markup { p.14 }
+                    ^ \markup { c.14 }
+                    <af d'>1
+                    ^ \markup { p.15 }
+                    ^ \markup { c.15 }
+                    <af d'>1
+                    ^ \markup { c.16 }
+                    ^ \markup { p.16 }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { c.0 }
+                    {
+                        R1 * 18
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    f'2
+                    (
+                    af'1
+                    )
+                    r2
+                    ^ \markup { c.1 }
+                    f'2
+                    (
+                    af'4
+                    bf'4
+                    ~
+                    bf'2
+                    )
+                    r2
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    f'2
+                    (
+                    df''4
+                    c''4
+                    af'4
+                    bf'4
+                    ~
+                    bf'2
+                    )
+                    f'2
+                    ^ \markup { c.3 }
+                    (
+                    af'1
+                    )
+                    r4
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    bf'4
+                    (
+                    df''2
+                    f'2
+                    ~
+                    f'4
+                    c''4
+                    )
+                    r2
+                    ^ \markup { c.5 }
+                    df''4
+                    (
+                    c''4
+                    af'2
+                    ~
+                    af'4
+                    bf'4
+                    )
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    bf'4
+                    (
+                    df''2
+                    bf'2
+                    f''2
+                    )
+                    r4
+                    ^ \markup { c.7 }
+                    ef''4
+                    (
+                    df''2
+                    ~
+                    df''2
+                    bf'4
+                    df''4
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ds'2
+                    (
+                    fs'1
+                    )
+                    r2
+                    ^ \markup { c.1 }
+                    ds'2
+                    (
+                    fs'4
+                    gs'4
+                    ~
+                    gs'2
+                    )
+                    r2
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    ds'2
+                    (
+                    b'4
+                    as'4
+                    fs'4
+                    gs'4
+                    ~
+                    gs'2
+                    )
+                    ds'2
+                    ^ \markup { c.3 }
+                    (
+                    fs'1
+                    )
+                    r4
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    gs'4
+                    (
+                    b'2
+                    ds'2
+                    ~
+                    ds'4
+                    as'4
+                    )
+                    r2
+                    ^ \markup { c.5 }
+                    b'4
+                    (
+                    as'4
+                    fs'2
+                    ~
+                    fs'4
+                    gs'4
+                    )
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    gs'4
+                    (
+                    b'2
+                    gs'2
+                    ds''2
+                    )
+                    r4
+                    ^ \markup { c.7 }
+                    cs''4
+                    (
+                    b'2
+                    ~
+                    b'2
+                    gs'4
+                    b'4
+                    )
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    cs'2
+                    (
+                    e'1
+                    )
+                    r2
+                    ^ \markup { c.1 }
+                    cs'2
+                    (
+                    e'4
+                    fs'4
+                    ~
+                    fs'2
+                    )
+                    r2
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    cs'2
+                    (
+                    a'4
+                    gs'4
+                    e'4
+                    fs'4
+                    ~
+                    fs'2
+                    )
+                    cs'2
+                    ^ \markup { c.3 }
+                    (
+                    e'1
+                    )
+                    r4
+                    ^ \markup { p.2 }
+                    ^ \markup { c.4 }
+                    fs'4
+                    (
+                    a'2
+                    cs'2
+                    ~
+                    cs'4
+                    gs'4
+                    )
+                    r2
+                    ^ \markup { c.5 }
+                    a'4
+                    (
+                    gs'4
+                    e'2
+                    ~
+                    e'4
+                    fs'4
+                    )
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.6 }
+                    fs'4
+                    (
+                    a'2
+                    fs'2
+                    cs''2
+                    )
+                    r4
+                    ^ \markup { c.7 }
+                    b'4
+                    (
+                    a'2
+                    ~
+                    a'2
+                    fs'4
+                    a'4
+                    )
+                }
             }
             \context Staff = "bass_drones"
             \with
@@ -16251,6 +22001,241 @@
                 \consists Horizontal_bracket_engraver
             }
             {
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    \set Staff.instrumentName = \markup { "Bass Drones" }
+                    \set Staff.shortInstrumentName = \markup { B.drn. }
+                    \set Staff.midiInstrument = #"fretless bass" 
+                    \clef "bass"
+                    <e b>1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    <e b>1
+                    ~
+                    <e b>1
+                    ~
+                    <e b>2
+                    <d c'>2
+                    ^ \markup { c.1 }
+                    ^ \markup { p.1 }
+                    ~
+                    <d c'>1
+                    ~
+                    <d c'>1
+                    ~
+                    <d c'>1
+                    <c d'>1
+                    ^ \markup { p.2 }
+                    ^ \markup { c.2 }
+                    ~
+                    <c d'>1
+                    ~
+                    <c d'>1
+                    ~
+                    <c d'>2
+                    <bf, f'>2
+                    ^ \markup { p.3 }
+                    ^ \markup { c.3 }
+                    ~
+                    <bf, f'>1
+                    ~
+                    <bf, f'>1
+                    ~
+                    <bf, f'>1
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    a,,1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    a,,1
+                    ~
+                    a,,1
+                    ~
+                    a,,1
+                    ~
+                    a,,1
+                    ~
+                    a,,1
+                    ~
+                    a,,1
+                    ~
+                    a,,1
+                    ~
+                    a,,1
+                    <a,, bf,>1
+                    ^ \markup { c.1 }
+                    ^ \markup { p.1 }
+                    ~
+                    <a,, bf,>1
+                    ~
+                    <a,, bf,>1
+                    ~
+                    <a,, bf,>1
+                    ~
+                    <a,, bf,>1
+                    ~
+                    <a,, bf,>1
+                    ~
+                    <a,, bf,>1
+                    ~
+                    <a,, bf,>1
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ef1
+                    ^ \markup { c.1 }
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    ~
+                    ef1
+                    <d, ef>1
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    ~
+                    <d, ef>1
+                    ~
+                    <d, ef>1
+                    ~
+                    <d, ef>1
+                    ~
+                    <d, ef>1
+                    ~
+                    <d, ef>1
+                    ~
+                    <d, ef>1
+                    ~
+                    <d, ef>1
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    <df, ef>1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    <df, ef>1
+                    ~
+                    <df, ef>1
+                    ~
+                    <df, ef>1
+                    ~
+                    <df, ef>1
+                    ~
+                    <df, ef>1
+                    ~
+                    <df, ef>1
+                    ~
+                    <df, ef>1
+                    <ef, df>1
+                    ^ \markup { c.1 }
+                    ^ \markup { p.1 }
+                    ~
+                    <ef, df>1
+                    ~
+                    <ef, df>1
+                    ~
+                    <ef, df>1
+                    ~
+                    <ef, df>1
+                    ~
+                    <ef, df>1
+                    ~
+                    <ef, df>1
+                    ~
+                    <ef, df>1
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    <ds, gs, cs>1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    <ds, gs, cs>1
+                    ~
+                    <ds, gs, cs>1
+                    ~
+                    <ds, gs, cs>1
+                    ~
+                    <ds, gs, cs>1
+                    ~
+                    <ds, gs, cs>1
+                    ~
+                    <ds, gs, cs>1
+                    ~
+                    <ds, gs, cs>1
+                    <d, a, e>1
+                    ^ \markup { c.1 }
+                    ^ \markup { p.1 }
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    <d, a, e>1
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                    ~
+                    <d, a, e>1
+                }
             }
         >>
     >>

@@ -286,6 +286,13 @@ class ImaginaryScore(calliope.Score):
         from imaginary.libraries import pitch_ranges
         return pitch_ranges.PitchRanges()
 
+    def only_staves(self, *args):
+        for staff in self.staves:
+            if staff.name not in args:
+                parent = staff.parent
+                parent.remove(staff)
+        return self
+
     def fill_rests(self, beats=None, fill_to=None, include_short_score=False, only_staves=(), **kwargs):
         if only_staves:
             my_staves = list(self.staves[only_staves])

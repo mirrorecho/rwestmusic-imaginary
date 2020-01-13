@@ -22,8 +22,12 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
+    score = lib["lyrical_score"]
+
+    score.remove(score.staff_groups["short_score"])
+    
     calliope.illustrate(
-        lib["lyrical_score"],
+        score,
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         )

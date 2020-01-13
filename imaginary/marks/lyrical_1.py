@@ -7,7 +7,10 @@ from imaginary.fabrics import (instrument_groups,
     pulse, staggered_swell, swell_hit)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import library
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 from imaginary.marks import lyrical
 
 # TEMPO = 96
@@ -17,10 +20,10 @@ from imaginary.marks import lyrical
 def score1(lib):
     s = score.ImaginaryScore()
     sb1 = lib("lyrical_block1")
-    # s = sb1().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb1().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
     # =======================================================
     # TO DO... adjust ranges:
@@ -36,6 +39,38 @@ def score1(lib):
             )
         for i, beats in enumerate(pop_fizz_beats)], 
         extend_last_machine=True)
+
+    drum_off_cell = ImaginaryCell(
+        rhythm=(0.25,0.25,-0.5,) + (0.5,0.5,-1)*3 + (1,), 
+        pitches=((-8,9),9, "R",) + (9,-8,"R")*3 + ((-8,9),),
+        )
+    # drum_off_cell.note_events[1].tag("brushes")
+    drum_off_cell.note_events.tag("note_head:0:cross")
+    drum_off_cell.note_events.tag("note_head:1:cross")
+    drum_off_cell.note_events[0].tag("mallets")
+    
+    drum_end_cell1 = ImaginaryCell(
+        rhythm=(0.25,0.25, -0.25, 0.25,  -0.5,0.5,-0.5, 0.5,-0.5, 0.25, 0.25,), 
+        pitches=((-8,9),9, "R",  9,   "R", (-8,9),"R", (-8,9), "R", 9,  9,),
+        )
+    drum_end_cell1.note_events.tag("note_head:0:cross")
+    drum_end_cell1.note_events.tag("note_head:1:cross")
+    drum_end_cell2 = ImaginaryCell(
+        rhythm=(0.25,0.25, 0.25, -0.25,  -0.5,0.5,-0.5, 0.5,-0.5, 0.25, 0.25,), 
+        pitches=(9 ,9, 9,  "R",   "R", (-8,9),"R", (-8,9), "R", 9,  9,),
+        )
+    drum_end_cell2.note_events.tag("note_head:0:cross")
+    drum_end_cell2.note_events.tag("note_head:1:cross")
+    drum_offs = ImaginarySegment(
+        ImaginaryCell(rhythm=(-8,)),
+        drum_off_cell,
+        get_improv_line(
+            rhythm=(1,)*8,
+            times=3),
+        drum_end_cell1,
+        drum_end_cell2,
+        )
+    s.staves["ooa_drum_set"].append(drum_offs)
 
     # INTRO OBOES
     # TO DO: these lambdas are nasty... simplify
@@ -55,11 +90,45 @@ def score1(lib):
 
     s.fill_rests(beats=8)
 
-    bass_melody  = lambda_segment.LambdaSegment(
+    cello_drones =  lambda_segment.LambdaSegments(
+        sb1.with_only("bass_drones"),
+        fabric_staves = ("ooa_cello1", "ooa_cello2",),
+        funcs = (
+            lambda x: x.crop("cells",2).crop_chords(indices=(1,)).fuse().eps(
+                0, "arco, distorted")(),
+            lambda x: x.crop("cells",2).crop_chords(indices=(0,)).fuse().eps(
+                0, "arco, distorted")(),
+            )
+        )
+    s.extend_from(cello_drones)
+
+    sax_swells = staggered_swell.StaggeredSwell(
+        sb1,
+        fabric_staves = instrument_groups.get_instruments("sax"),
+        ranges=pitch_ranges.MID_RANGES,
+        selectable_start_beat = 8,
+        swell_duration = 12,
+        # swell_split_ratios = (
+        #     1/2,
+        #     ),
+        # swell_staggers = (
+        #         (0,1),
+        #         (0.5,0.5),
+        #         (1,0)
+        #     ),
+        )
+    s.extend_from(sax_swells)
+
+    bass_melody  = lambda_segment.LambdaSegments(
         sb1.with_only("bass_line"),
-        fabric_staves = ("ooa_bass_guitar",  "cco_bass"),
-        # tag_events = {0:("p", "normal")},
-        func = lambda x: x.crop("cells",1).crop_chords((1,))
+        fabric_staves = ("ooa_bass_guitar",  "cco_bass","ooa_bassoon"),
+        funcs = (
+            lambda x: x.crop("cells",1).crop_chords(indices=(0,1,)).transformed(calliope.StandardDurations()),
+            lambda x: x.crop("cells",1).crop_chords(indices=(1,0,)).transformed(calliope.StandardDurations()),
+            lambda x: x.crop("cells",1).crop_chords(indices=(1,)
+                ).mask("note_events",2,3,8,12).smear_after(fill=True,gap_beats=1).slur_cells().eps(
+                1,"p")(),
+            ),
         )
     s.extend_from(bass_melody)
 
@@ -96,10 +165,22 @@ def score1(lib):
     # more winds swells:
     # TO DO: vary these up!
     s.extend_from( 
-        lyrical.CcoWindsSwell(),
-        lyrical.CcoWindsSwell(),
-        lyrical.CcoWindsSwell(),
-        lyrical.CcoWindsSwell(),
+        lyrical.CcoWindsSwell(sb1,
+            ranges=pitch_ranges.MID_RANGES,
+            selectable_start_beat=6*4,
+            ),
+        lyrical.CcoWindsSwell(sb1,
+            ranges=pitch_ranges.MID_RANGES,
+            selectable_start_beat=6*4 + 6,
+            ),
+        lyrical.CcoWindsSwell(sb1,
+            ranges=pitch_ranges.MID_RANGES,
+            selectable_start_beat=6*4 + 12,
+            ),
+        lyrical.CcoWindsSwell(sb1,
+            ranges=pitch_ranges.MID_RANGES,
+            selectable_start_beat=6*4 + 18,
+            ),
         extend_last_machine=True
         )
 
@@ -126,7 +207,11 @@ def score1(lib):
     # # =======================================================
 
     s.fill_rests()
-
+    for st in s.staves:
+        st.segments[0].rehearsal_mark_number = 1
+    s.segments.apply(lambda x:x.auto_respell())
+    s.segments.setattrs(compress_full_bar_rests = True)
+    s.midi_tempo = 96
     return s
 
 def to_lib(lib):    
@@ -136,5 +221,11 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["lyrical_score1"])
+    score = lib["lyrical_score1"]
+    score.remove(score.staff_groups["short_score"])
+    calliope.illustrate(score, 
+        as_midi=True,
+        open_midi=True)
+
+
 

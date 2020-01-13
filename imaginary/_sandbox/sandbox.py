@@ -4,19 +4,84 @@ from imaginary.stories.library_material import (
     )
 from imaginary.stories import library
 
-class YoYo(calliope.CalliopeBase):
-    def yaya(self):
 
-        def func(x, y):
-            print(x, y)
+drum_key = {
+    2: "Snare Drum",
+    -5: "Bass Drum",
+    5: "High Tom",
+    4: "Mid Tom",
+    -1: "Low Tom"
+}
+
+cymbal_key = {
+    9: "Hi-hat Hands",
+    -8: "Hi-hat Foot",
+    7: "Ride Cymbal",
+    11: "Crash Cymbal",
+}
 
 
-        return lambda x: func(1, x)
+seg = calliope.Segment()
+for n,v in drum_key.items():
+    key_cell = calliope.Cell(
+        rhythm=(1,-3),
+        pitches=(n,"S")
+        )
+    key_cell[0].tag(str(n) + ": " + v)
+    seg.append(key_cell)
 
 
-y = YoYo()
-g = y.yaya()
-g(44)
+for n,v in cymbal_key.items():
+    key_cell = calliope.Cell(
+        rhythm=(1,-3),
+        pitches=(n,"S")
+        )
+    key_cell[0].tag(str(n) + ": " + v,"note_head:0:cross")
+    seg.append(key_cell)
+
+seg.note_events.tag("\\textLengthOn", "\\once \\hide Stem")
+
+c1 =  ImaginaryCell(
+    rhythm=(
+        0.25,0.25, 0.5, 
+        0.5,       0.5, 
+        -1, 
+        0.25,0.25, 0.5
+        ),
+    pitches=(
+        (5,-5),5,-8,
+        (-5,2,4), -8,
+        "R",
+        5,4,(-1,-8)
+        )
+    ).eps(
+    2,4,8, "note_head:0:cross"
+    )()
+c2 =ImaginaryCell(
+    rhythm=(
+        -1, 
+        0.5, 0.5, 
+        0.5, 0.5, 
+        1,),
+    pitches=(
+        "R",
+        9,(-8,9),
+        (-5,2,5),-8,
+        2,
+        )
+    ).eps(
+    1,2,4, "note_head:0:cross")(
+    2, "note_head:1:cross"
+    )()
+
+seg.append(c1)
+seg.append(c2)
+
+
+calliope.illustrate(calliope.Staff(
+    seg,
+    clef="percussion"
+    ))
 
 
 

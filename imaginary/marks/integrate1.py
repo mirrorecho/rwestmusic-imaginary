@@ -53,10 +53,10 @@ def score1(lib):
     s = score.ImaginaryScore()
     sb = lib("integrate_block1")
     
-    # s = sb().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
     s.extend_from(
         pulse_on_off_beat.PulseOnOffBeat(
