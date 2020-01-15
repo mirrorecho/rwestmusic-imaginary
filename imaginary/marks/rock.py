@@ -55,6 +55,26 @@ def rhythm1(lib):
     return ImaginaryPhrase(c1, c2)
 
 
+def rhythm2(lib=None):
+    c =  ImaginaryCell(
+        rhythm=(
+            -0.5, 0.5,
+            0.5,       0.5, 
+            -0.5, 0.5,
+            0.5,       0.5, 
+            ),
+        pitches=(
+            "R", 9,
+            2,9,
+            "R", 9,
+            2,9,
+            )
+        ).eps(
+        1,3,5,7, "note_head:0:cross"
+        )()
+    return ImaginaryPhrase(c,)
+
+
 # RHYTHMIC MATERIAL:
 def high_rhythm(lib=None):
     p = ImaginaryPhrase(
@@ -953,7 +973,7 @@ def to_lib(lib):
 
         # TO DO: this is nasty! Should use intropection to avoid
         lib.add(
-            rhythm1,
+            rhythm1, rhythm2,
             high_rhythm, high_rhythm_ii, off_rhythm, off_rhythm_slow, mid_rhythm, bass_rhythm,
             grid_g0_c11, grid_g0_c13, grid_g0_c21_22,
             grid_g1_c6, grid_g1_c23_24, grid_g2_c4_5, grid_g2_c16_17, grid_g2_c26_31,

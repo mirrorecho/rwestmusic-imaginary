@@ -27,8 +27,8 @@
         {
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { "Drum Set" }
@@ -57,8 +57,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -84,8 +84,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -111,8 +111,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -138,8 +138,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -157,9 +157,9 @@
                 \<
                 b4
                 s16
-                \bar ":|."
-                \freeContinue
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
+                \freeContinue
+                \bar ":|."
                 s4
                 \mf
                 ^ \markup {
@@ -202,8 +202,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -213,9 +213,9 @@
                 s8.
                 b4
                 s16
-                \bar ":|."
-                \freeContinue
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
+                \freeContinue
+                \bar ":|."
                 s4
                 \pp
                 ^ \markup { "cont. repeating consant pulse" }

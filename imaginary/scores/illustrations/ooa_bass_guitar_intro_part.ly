@@ -27,8 +27,8 @@
         {
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { "Bass Guitar" }
@@ -60,8 +60,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -87,8 +87,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -114,8 +114,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -144,8 +144,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -171,8 +171,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1

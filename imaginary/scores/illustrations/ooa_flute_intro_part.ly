@@ -27,8 +27,8 @@
         {
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { Flute }
@@ -56,8 +56,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -83,8 +83,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -110,8 +110,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -137,8 +137,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -156,8 +156,8 @@
                 \mp
                 \>
                 \freeContinue
-                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 \bar ":|."
+                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 s4
                 ^ \markup { "repeat hairpin" }
                 \once \hide Rest
@@ -193,8 +193,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -203,15 +203,15 @@
                 \normalStaff
                 s8.
                 b'1
-                \mf
                 \fermata
+                \mf
                 ^ \markup { "growl tone" }
                 r1
                 \fermata
                 s16
                 \freeContinue
-                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 \bar ":|."
+                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 s4
                 ^ \markup { "repeat 1 or 2 X" }
                 \once \hide Rest

@@ -32,6 +32,7 @@
                     \set Staff.instrumentName = \markup { "Horn in F" }
                     \set Staff.shortInstrumentName = \markup { Hn. }
                     \set Staff.midiInstrument = #"french horn" 
+                    \mark #1
                     R1 * 6
                 }
             }

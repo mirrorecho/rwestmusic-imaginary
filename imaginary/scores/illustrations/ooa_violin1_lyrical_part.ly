@@ -31,6 +31,7 @@
                 \set Staff.instrumentName = \markup { "Violin 1" }
                 \set Staff.shortInstrumentName = \markup { Vln.1 }
                 \set Staff.midiInstrument = #"violin" 
+                \mark #1
                 e''4
                 \mp
                 ^ \markup { pizz }

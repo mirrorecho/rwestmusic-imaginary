@@ -31,6 +31,7 @@
                 \set Staff.instrumentName = \markup { "Cello 2" }
                 \set Staff.shortInstrumentName = \markup { Vc.2 }
                 \set Staff.midiInstrument = #"cello" 
+                \mark #1
                 \clef "bass"
                 a4
                 \mp

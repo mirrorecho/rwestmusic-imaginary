@@ -13,8 +13,25 @@ bracketify = #(define-music-function (parser loc arg) (ly:music?)
   \parenthesize $arg
 #})
 
+slash-over-note = #(lambda (grob)
+   (let* ((note (ly:note-head::print grob))
+          (x-extent (ly:stencil-extent note X))
+          (y-extent (ly:stencil-extent note Y))
+          (scaling (magstep (ly:grob-property grob 'font-size 0.0)))
+          (slash (ly:make-stencil (list 'draw-line 0.15 0 1.5 1.5 0) '(0
+. 1.5) '(0 . 1.5)))
+          (transformed (ly:stencil-translate
+            (ly:stencil-scale (centered-stencil slash) scaling scaling)
+            (cons (interval-center x-extent) (interval-center y-extent))))
+          (combined (ly:stencil-add note transformed)))
+     (ly:make-stencil (ly:stencil-expr combined) x-extent y-extent)))
+
+slashesOn = \override NoteHead.stencil = #slash-over-note
+slashesOff = \revert NoteHead.stencil
+withSlash = \once \slashesOn
+
 % THIS CAUSES ERRORS ONLY SOMETOMES... WHY????!!!!!!!
-#(set-global-staff-size 11)
+#(set-global-staff-size 10)
 
 freePad = {
     % \once \override Staff.Clef.stencil = ##f

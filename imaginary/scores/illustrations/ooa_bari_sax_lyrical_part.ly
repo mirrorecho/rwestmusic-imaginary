@@ -32,6 +32,7 @@
                     \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                     \set Staff.shortInstrumentName = \markup { Bsax. }
                     \set Staff.midiInstrument = #"alto sax" 
+                    \mark #1
                     \clef "treble"
                     R1 * 6
                 }

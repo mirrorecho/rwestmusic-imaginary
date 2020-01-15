@@ -188,7 +188,7 @@ def score3(lib):
         st.events[-1].tag("fermata")
     # s.remove_empty()
     for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 3
+        st.segments[0].rehearsal_mark_number = 5
     s.segments.apply(lambda x:x.auto_respell())
     s.segments.setattrs(compress_full_bar_rests = True)    
     return s

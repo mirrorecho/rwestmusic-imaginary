@@ -221,7 +221,7 @@ def score2(lib):
     s.fill_rests(beats=12*4)
     # s.remove_empty()
     for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 2
+        st.segments[0].rehearsal_mark_number = 4
     
     s.segments.apply(lambda x:x.auto_respell())
     s.segments.setattrs(compress_full_bar_rests = True)

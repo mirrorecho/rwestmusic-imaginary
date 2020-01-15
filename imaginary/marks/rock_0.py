@@ -230,6 +230,7 @@ def score0(lib):
     for staff in s.staves:
         if staff.segments:
             staff.segments[0].tempo_command=""" \\note #"4" #UP "= 160 ca" """
+            staff.segments[0].rehearsal_mark_number = 6
     s.segments.setattrs(compress_full_bar_rests = True) 
     return s
 

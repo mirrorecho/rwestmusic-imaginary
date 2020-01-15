@@ -25,5 +25,5 @@ if __name__ == '__main__':
     calliope.illustrate(
         lib["intro_score"],
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         )

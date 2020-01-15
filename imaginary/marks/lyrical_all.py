@@ -24,7 +24,7 @@ if __name__ == '__main__':
     to_lib(lib)
     score = lib["lyrical_score"]
 
-    score.remove(score.staff_groups["short_score"])
+    # score.remove(score.staff_groups["short_score"])
     
     calliope.illustrate(
         score,

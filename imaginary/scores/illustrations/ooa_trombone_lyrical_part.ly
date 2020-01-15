@@ -32,6 +32,7 @@
                     \set Staff.instrumentName = \markup { "Tenor Trombone" }
                     \set Staff.shortInstrumentName = \markup { Tbn. }
                     \set Staff.midiInstrument = #"trombone" 
+                    \mark #1
                     \clef "bass"
                     R1 * 6
                 }

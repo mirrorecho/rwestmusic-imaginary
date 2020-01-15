@@ -32,6 +32,7 @@
                     \set Staff.instrumentName = \markup { "Trumpet in C" }
                     \set Staff.shortInstrumentName = \markup { Tpt. }
                     \set Staff.midiInstrument = #"trumpet" 
+                    \mark #1
                     R1 * 6
                 }
             }

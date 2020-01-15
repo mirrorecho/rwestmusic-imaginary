@@ -32,6 +32,7 @@
                     \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                     \set Staff.shortInstrumentName = \markup { Cl. }
                     \set Staff.midiInstrument = #"clarinet" 
+                    \mark #1
                     R1 * 3
                 }
                 r4

@@ -32,6 +32,7 @@
                     \set Staff.instrumentName = \markup { Vibraphone }
                     \set Staff.shortInstrumentName = \markup { Vib. }
                     \set Staff.midiInstrument = #"vibraphone" 
+                    \mark #1
                     R1 * 6
                 }
             }

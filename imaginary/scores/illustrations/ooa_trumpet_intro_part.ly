@@ -27,8 +27,8 @@
         {
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { "Trumpet in C" }
@@ -56,8 +56,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -83,8 +83,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -110,8 +110,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -191,8 +191,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -205,8 +205,8 @@
                 \p
                 s16
                 \freeContinue
-                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 \bar ":|."
+                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 s4
                 ^ \markup { repeat }
                 \once \hide Rest
@@ -241,8 +241,8 @@
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1

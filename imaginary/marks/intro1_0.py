@@ -182,7 +182,10 @@ def block0(lib):
     return b0
 
 def score0(lib):
-    return intro.block_to_score(lib, "intro1_block0")
+    sc = intro.block_to_score(lib, "intro1_block0")
+    for st in sc.staves:
+        st.segments[0].rehearsal_mark_number = 1
+    return sc
 
 # # =========================================================================
 # # =========================================================================

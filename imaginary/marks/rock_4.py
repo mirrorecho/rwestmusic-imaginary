@@ -307,6 +307,10 @@ def score4(lib):
     s.cells.apply(lambda x:x.auto_respell())
 
     s.fill_rests()
+
+    for st in s.staves:
+        st.segments[0].rehearsal_mark_number = 10
+
     return s
 
 

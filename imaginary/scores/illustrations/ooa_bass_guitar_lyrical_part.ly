@@ -31,6 +31,7 @@
                 \set Staff.instrumentName = \markup { "Bass Guitar" }
                 \set Staff.shortInstrumentName = \markup { Bgtr. }
                 \set Staff.midiInstrument = #"electric bass (finger)" 
+                \mark #1
                 \clef "bass"
                 a4
                 \mp

@@ -31,6 +31,7 @@
                 \set Staff.instrumentName = \markup { Guitar }
                 \set Staff.shortInstrumentName = \markup { Gtr. }
                 \set Staff.midiInstrument = #"electric guitar (clean)" 
+                \mark #1
                 e''4
                 \mp
                 r4

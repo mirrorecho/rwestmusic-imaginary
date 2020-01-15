@@ -32,6 +32,7 @@
                     \set Staff.instrumentName = \markup { "Drum Set" }
                     \set Staff.shortInstrumentName = \markup { Drum. }
                     \set Staff.midiInstrument = #"taiko drum" 
+                    \mark #1
                     \clef "percussion"
                     R1 * 3
                 }

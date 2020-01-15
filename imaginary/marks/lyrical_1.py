@@ -208,7 +208,7 @@ def score1(lib):
 
     s.fill_rests()
     for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 1
+        st.segments[0].rehearsal_mark_number = 3
     s.segments.apply(lambda x:x.auto_respell())
     s.segments.setattrs(compress_full_bar_rests = True)
     s.midi_tempo = 96

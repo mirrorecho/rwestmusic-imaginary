@@ -45,6 +45,7 @@
     \set Score.markFormatter = #format-mark-circle-letters 
     \context {        
         \Score
+        \remove "Bar_number_engraver"
         \override MultiMeasureRest #'expand-limit = #1
         \override BarNumber #'font-size = #1.4
         \override BarNumber  #'stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)

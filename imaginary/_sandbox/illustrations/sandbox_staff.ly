@@ -64,8 +64,8 @@
             ^ \markup { "-8: Hi-hat Foot" }
             s4
             s2
-            \once \hide Stem
             \textLengthOn
+            \once \hide Stem
             \tweak style #'cross
             g'4
             ^ \markup { "7: Ride Cymbal" }

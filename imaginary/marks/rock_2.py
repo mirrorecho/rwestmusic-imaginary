@@ -7,7 +7,10 @@ from imaginary.fabrics import (instrument_groups,
     pulse, staggered_swell, swell_hit)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import short_block, library
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 from imaginary.marks import rock
 
 
@@ -21,6 +24,21 @@ def score2(lib):
         slur_cells=True,
         label=("phrases", "cells")
         ).to_score(s)
+
+
+    rim_shots = ImaginaryCell(rhythm=(1,1,1,1), pitches=(2,2,2,2))
+    rim_shots.note_events.tag("\\withSlash")
+
+    drum_rhythm2 = lambda_segment.LambdaSegment(
+            calliope.SegmentBlock(ImaginarySegment(
+                lib("rock_rhythm2"),
+                get_improv_line(times=8),
+                rim_shots,
+                get_improv_line(times=6),
+            )),
+            fabric_staves = ("ooa_drum_set",),
+            func = lambda x: x,
+            )
 
 
     riffs_block = short_block.ChordsToSegmentBlock(
@@ -75,11 +93,21 @@ def score2(lib):
         # func = lambda x: x.only_first("cells",8)
         )
 
+    constant_pluck = osti.Osti(
+        sb,
+        fabric_staves = instrument_groups.get_instruments("ooa_guitar","ooa_strings"),
+        ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
+        osti_pulse_duration = 1,
+        osti_cell_length = 4,
+        osti_cell_count = 9,
+        )
 
     s.extend_from(
         harp1_riff,
         piano_riff,
         pizz,
+        drum_rhythm2,
+        constant_pluck,
         )
     # =======================================================
 
@@ -202,7 +230,8 @@ def score2(lib):
                 ),
         tag_all_note_events = ("-",),
         tag_events = {1:("mf","\\<"), -1:(".","f")},
-        func = lambda x: x.bookend_pad(3,0),
+        func = lambda x: x,
+        bookend_beats=(3,1)
         )
 
     s.extend_from(
@@ -210,9 +239,30 @@ def score2(lib):
         )
 
     # # =======================================================
+    # BAR 16+
+    # s.fill_rests(beats=15*4)
+
+    hits_final = lambda_segment.LambdaSegment(
+        sb.with_only("chords"),
+        ranges=pitch_ranges.HIGHISH_TO_MID_RANGES,
+        fabric_staves = instrument_groups.get_instruments(
+            "ooa_brass","ooa_strings") + ("ooa_guitar","ooa_bass_guitar"),
+        assign_pitches_from_selectable = True,
+        selectable_start_beat = 15*4,
+        func = lambda x: x.with_only("cells",32,33).bookend_pad(3,1),
+        tag_all_note_events=(">",)
+        )
+    s.extend_from(hits_final)
+
+
+    # # =======================================================
 
     s.cells.apply(lambda x:x.auto_respell())
     s.fill_rests()
+
+    for st in s.staves:
+        st.segments[0].rehearsal_mark_number = 8
+
     return s
 
 
