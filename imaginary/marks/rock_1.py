@@ -105,6 +105,7 @@ def score1(lib):
         else:
             next_include = False
     mallets_riff.segments[0].poke("events", *poke_mallets)
+    mallets_riff.note_events[-4:].transformed(calliope.Transpose(interval=-12))
 
     riffs_opening = lambda_segment.LambdaSegments(
         riffs_block,
@@ -161,6 +162,30 @@ def score1(lib):
         )
 
     # TO DO: add in piano
+
+    osti_chords_brass = lambda_segment.LambdaSegment(
+        sb.with_only("melody_line2"),
+        fabric_staves = instrument_groups.get_instruments("brass",),
+        func = lambda x:x.only_first("cells",7
+            ).poke("note_events",2,5,6,10,11
+            ).ops("note_events")(0,"mf")(),
+        tag_all_note_events=("-",),
+        assign_pitches_from_selectable=True,
+        ranges=pitch_ranges.MID_RANGES,
+        )
+    osti_chords_piano = lambda_segment.LambdaSegments(
+        sb.with_only("melody_line2"),
+        fabric_staves = ("piano1","piano2"),
+        funcs = (
+            lambda x: x.crop_chords(above=(3,)).ops("note_events")(
+                0,"f")(),
+            lambda x: x.crop_chords(below=(3,)),
+            )
+        )
+    s.extend_from(
+        osti_chords_brass,
+        osti_chords_piano,
+        )
 
     s.fill_rests(beats=4*4)
     # # =======================================================

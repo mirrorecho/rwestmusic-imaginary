@@ -173,7 +173,11 @@ class ImaginaryScore(calliope.Score):
                 clef="bass"
                 midi_instrument = "trombone"
 
-        class CcoPercussion(calliope.RhythmicStaff): pass
+        class CcoPercussion(calliope.RhythmicStaff): 
+                instrument=abjad.Instrument(
+                    name="Percussion", short_name="perc.")
+                midi_instrument = "woodblock"
+                clef = "percussion"
 
         class CcoHarp(calliope.Harp): pass
             # instrument=abjad.Piano(

@@ -33,11 +33,11 @@ def score0(lib):
         func = lambda x: x.only_first("cells",2)
         )
 
-    wood_block = lambda_segment.LambdaSegment(
+    cowbell = lambda_segment.LambdaSegment(
         sb.with_only("high_rhythm"),
         fabric_staves = ("cco_percussion",),
-        tag_events = {0:("mp", "woodblock")},
-        func = lambda x: x,
+        tag_events = {0:("mp", "to cowbell")},
+        func = lambda x: x.ops("note_events")(0,"cowbell","mp")(),
         # func = lambda x: x.only_first("cells",8)
         )
     low_drums.staves["ooa_drum_set"].segments[0].append(
@@ -45,9 +45,18 @@ def score0(lib):
             rhythm=(1,)*8,
             times=3)
         )
+    harp_piano_highlights = lambda_segment.LambdaSegments(
+        sb.with_only("counter_line", "riff"),
+        fabric_staves = ("harp1","harp2","piano1","piano2"),
+        funcs = (
+            lambda x: x.ops("note_events")(0, "mp")(),
+            lambda x: x.poke("cells",9,10,12,13).ops("note_events")(0, "treble")(),
+            )
+        )
     s.extend_from(
         low_drums,
-        wood_block,
+        cowbell,
+        harp_piano_highlights
         )
 
     s.fill_rests(beats=8*4)
@@ -85,9 +94,8 @@ def score0(lib):
         assign_pitches_from_selectable = True,
         selectable_start_beat = 16*4,
         func = lambda x: x.crop("cells",1),
-        # func = lambda x: x.crop("cells",1),
-        # func = lambda x: x.only_first("cells",8)
         )
+
     s.extend_from(
         guitar,
         pizz,
@@ -196,7 +204,7 @@ def score0(lib):
 
     # # =======================================================
 
-    # TO DO: this cloud is not lovely!
+    # TO DO: this cloud is not lovely!!
     cloud_21_22 = lib("rock_grid_g0_c21_22")
     cloud_21_22[7].t(-12)
     cloud_21_22[8].t(-12)
@@ -214,13 +222,13 @@ def score0(lib):
             "cco_bassoon", #7
             "cco_trombone", #8 
             ),
-        tag_events = {1:("mp", "\\<",), 12:("f",)},
         # selectable_start_beat = 16*4,
         # ranges=pitch_ranges.PitchRanges(pitch_ranges.MID_SEQ),
-        func = lambda x: x.slur_cells().bookend_pad(2),
-        # func = lambda x: x.crop("cells",1),
-        # func = lambda x: x.only_first("cells",8)
+        func = lambda x: x.fuse().slur_cells().bookend_pad(2).eps(
+            1,"mp", "\\<")(),
         )
+    for st in wind_cloud_21_22.staves:
+        st.note_events[-1].tag("f")
     wind_cloud_21_22.phrases.setattrs(respell="flats")
     s.extend_from(
         wind_cloud_21_22,
@@ -231,7 +239,8 @@ def score0(lib):
         if staff.segments:
             staff.segments[0].tempo_command=""" \\note #"4" #UP "= 160 ca" """
             staff.segments[0].rehearsal_mark_number = 6
-    s.segments.setattrs(compress_full_bar_rests = True) 
+    s.segments.setattrs(compress_full_bar_rests = True)
+    s.midi_tempo = 160 
     return s
 
 def to_lib(lib):    
@@ -242,7 +251,12 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["rock_score0"])
+    score = lib["rock_score0"]
+    score.remove(score.staff_groups["short_score"])
+    calliope.illustrate(
+        score,
+        as_midi=True,
+        open_midi=True)
 
 # wind_cloud_21_22.staves["cco_clarinet2","cco_trumpet"].phrases.setattrs(respell="sharps")
 

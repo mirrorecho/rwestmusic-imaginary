@@ -421,6 +421,9 @@
             }
             {
                 {
+                    \set Staff.instrumentName = \markup { Percussion }
+                    \set Staff.shortInstrumentName = \markup { Perc. }
+                    \set Staff.midiInstrument = #"woodblock" 
                     \clef "percussion"
                     r1
                 }
