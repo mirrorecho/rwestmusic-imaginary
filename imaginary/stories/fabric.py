@@ -29,6 +29,11 @@ class FabricFactory(calliope.FromSelectableFactory):
     only_staves = ()
     mask_staves = ()
 
+    # TO DO: shouldn't need both this and LambdaSegment.. 
+    # could probably get rid of LambdaSegment
+    after_funcs = ()
+    after_func = None #
+
     def weave(self, staff, index=0, **kwargs):
         pass
 
@@ -62,6 +67,11 @@ class FabricFactory(calliope.FromSelectableFactory):
             else:
                 my_machine = self.weave(my_staff, i)
 
+            if self.after_func:
+                my_machine = self.after_func(my_machine)
+            if self.after_funcs:
+                my_machine = self.after_funcs[i % len(self.after_funcs)](my_machine)
+
             if self.tag_events:
                 for n, t in self.tag_events.items():
                     # print(n,t,my_machine.events[n])
@@ -85,6 +95,8 @@ class FabricFactory(calliope.FromSelectableFactory):
 
             if self.bookend_beats[1]:
                 my_bubble.append(calliope.Event(beats=0-self.bookend_beats[1]))
+
+
 
             my_staff.append(my_bubble)
 
@@ -110,7 +122,8 @@ class FabricFactory(calliope.FromSelectableFactory):
             #     if not e.skip_or_rest:
             #         if j < len(block_pitches):
             #             e.pitch = block_pitches[j]
-        
+
+
 
 
 class ImaginaryFabric(FabricFactory, score.ImaginaryScore):

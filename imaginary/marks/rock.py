@@ -816,6 +816,89 @@ def block4(lib):
     for p in b4.segments["mid_drones"].phrases[6:]:
         p.stack_p( ST_7UP )
 
+    # TO DO MAKE THIS A FUNCTION
+    b4.ext_segments(
+        bass_drones = [
+            drone.DroneLine( # Ab
+                line_pitches=( (-28,),),
+                phrase_rhythm = (2,),
+                phrase_count = 5,
+            ).stack_p([(0,19,26)]),
+            drone.DroneLine( # Ab
+                line_pitches=( (-28,),),
+                phrase_rhythm = (2,),
+                phrase_count = 4,
+            ).stack_p([(0,19,23)]),
+
+            drone.DroneLine( #A
+                line_pitches=( (-27,),),
+                phrase_rhythm = (2,),
+                phrase_count = 4,
+            ).stack_p([(0,17,22)]),
+            drone.DroneLine( #A
+                line_pitches=( (-27,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,17,27)]),
+
+            drone.DroneLine( #Bb
+                line_pitches=( (-26,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,19,26)]),
+            drone.DroneLine( #Bb
+                line_pitches=( (-26,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,19,23)]),
+            
+            drone.DroneLine( #B
+                line_pitches=( (-25,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,17,22)]),
+            drone.DroneLine( #B
+                line_pitches=( (-25,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,17,27)]),
+
+            drone.DroneLine( #C
+                line_pitches=( (-24,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,19,26)]),
+            drone.DroneLine( #C
+                line_pitches=( (-24,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,19,23)]),
+
+            drone.DroneLine( #C#
+                line_pitches=( (-23,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,17,22)]),
+            drone.DroneLine( #C#
+                line_pitches=( (-23,),),
+                phrase_rhythm = (2,),
+                phrase_count = 3,
+            ).stack_p([(0,17,27)]),
+
+            drone.DroneLine( #D
+                line_pitches=( (-22,),),
+                phrase_rhythm = (2,),
+                phrase_count = 4,
+            ).stack_p([(0,19,26)]),
+
+            drone.DroneLine( #Eb
+                line_pitches=( (-21,),),
+                phrase_rhythm = (2,),
+                phrase_count = 16,
+            ).stack_p([(0,17,24)]),
+            ],
+        )
+
     b4.fill_rests()
 
     return b4
@@ -947,10 +1030,10 @@ def grid_g4_c43_45(lib):
 
 def score_short(lib):
     b = short_block.get_block()
-    b.extend_from(lib["rock_block0"])
-    b.extend_from(lib["rock_block1"])
-    b.extend_from(lib["rock_block2"])
-    b.extend_from(lib["rock_block3"])
+    # b.extend_from(lib["rock_block0"])
+    # b.extend_from(lib["rock_block1"])
+    # b.extend_from(lib["rock_block2"])
+    # b.extend_from(lib["rock_block3"])
     b.extend_from(lib["rock_block4"])
 
     b.annotate(
@@ -992,7 +1075,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["rock_score_short"], 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )
 

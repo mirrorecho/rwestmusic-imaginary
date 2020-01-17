@@ -1,14 +1,14 @@
 import abjad, calliope
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.fabric import ImaginaryFabric, ImaginaryPhrase, ImaginaryCell
 from imaginary.fabrics import instrument_groups
 
 class Pad(ImaginaryFabric):
     pad_durations = (4,)*4
 
     def weave(self, staff, index=0, **kwargs):
-        my_phrase = calliope.Phrase(
-            rhythm = self.pad_durations
-            )
+        my_phrase = ImaginaryPhrase(ImaginaryCell(
+            rhythm = self.pad_durations,
+            ))
 
         return my_phrase
 

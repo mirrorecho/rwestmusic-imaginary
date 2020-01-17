@@ -17,6 +17,17 @@ from imaginary.stories import artics
 # TO DO: add ranges
 # =======================================================
 
+# TO DO... same func exists in rock_2... DRY!!!
+def bass_artics(n):
+    n.note_events(beats__lt=1).tag("-")
+    n.note_events(beats__gte=1).tag(".",">")
+    return n
+
+def cresc(n, low="p", hi="f"):
+    n.note_events[0].tag(low, "\\<")
+    n.note_events[-1].tag(hi)
+    return n
+
 def score4(lib):
     s = score.ImaginaryScore()
     sb = lib("rock_block4")
@@ -36,25 +47,50 @@ def score4(lib):
     bass_line = lambda_segment.LambdaSegment(
         sb.with_only("bass_line",), 
         fabric_staves=("ooa_bass_guitar",),
-        func = lambda x: x,
+        func = lambda x: x.only_first("cells",7),
         tag_events = {1:("f",),},
         ) 
+    bass_line.cells[-1].t(12)
     piano_chords_rh = lambda_segment.LambdaSegment(
         sb.with_only("chords",),
         fabric_staves=("piano1",),
         # tag_all_note_events = ("-",),
         tag_events = {0:("f",),},
-        func = lambda x: x.crop_chords(above=(3,)),
+        func = lambda x: x.with_only("cells",0).crop_chords(above=(3,)),
         )
     piano_chords_lh = lambda_segment.LambdaSegment(
-        sb.with_only("chords",),
+        sb.with_only("riff",),
         fabric_staves=("piano2",),
-        # tag_all_note_events = ("-",),
-        func = lambda x: x.crop_chords(below=(3,)),
+        tag_all_note_events=(".",),
+        func = lambda x: x.only_first("cells",12).t(-24).e_smear_after(
+            *[i*2 for i in range(24)], extend_beats=0.5, cover_notes=True
+            ).crop_chords(indices=((0,2),)),
         )
-    for n in piano_chords_lh.note_events:
-        if sum(n.pitch) > 0:
-            n.pitch = [p - 12 for p in n.pitch]
+
+    string_chords = pad.Pad(
+        sb.with_only("bass_drones"),
+        fabric_staves = instrument_groups.get_instruments("cco_strings"),
+        mask_staves=("cco_bass",),
+        ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
+        pad_durations = (10,8,6),
+        tag_all_note_events = (":32",),
+        after_func = lambda x: x.eps(
+            0,"pp")(
+            2, "\\<")()
+        )
+    s.extend_from(string_chords)
+
+
+
+    # piano_chords_lh2 = lambda_segment.LambdaSegment(
+    #     sb.with_only("chords",),
+    #     fabric_staves=("piano2",),
+    #     # tag_all_note_events = ("-",),
+    #     func = lambda x: x.crop_chords(below=(3,)),
+    #     ) 
+    # for n in piano_chords_lh2.note_events:
+    #     if sum(n.pitch) > 0:
+    #         n.pitch = [p - 12 for p in n.pitch]
 
      
     trumpet_line1 = lambda_segment.LambdaSegment(
@@ -62,13 +98,13 @@ def score4(lib):
         fabric_staves=("cco_trumpet",),
 
         func = lambda x: x.only_first("cells",5).bookend_pad(0,2),
-        tag_events = {0:("f",), 1:("(",),2:(")"), 3:("(",), 4:(")"),},
+        tag_events = {0:("f","solo"), 1:("(",),2:(")"), 3:("(",), 4:(")"),},
         ) 
     trumpet_line2 = lambda_segment.LambdaSegment(
         sb.with_only("mid_drones",), # TO DO... mid_drones not the best name for this
         fabric_staves=("ooa_trumpet",),
         func = lambda x: x.with_only("cells",5,6,7,8,9).bookend_pad(10),
-        tag_events = {1:("f",), 2:("(",),3:(")"),},
+        tag_events = {1:("f","solo"), 2:("(",),3:(")"),},
         ) 
     trumpet_line3 = lambda_segment.LambdaSegment(
         sb.with_only("mid_drones",), # TO DO... mid_drones not the best name for this
@@ -77,34 +113,10 @@ def score4(lib):
         tag_events = {2:("(",),3:(")"), 4:("(",), 5:(")"),},
         ) 
 
-    fl_swells = staggered_swell.StaggeredSwells(
-        sb.with_only("high_drones"),
-        low_dynamic = "mp",
-        swell_dynamic = "mf",
-        cell_count = 1,
-        phrase_count=4,
-        swell_duration = 16,
-        selectable_start_beat=6*4,
-        # swell_split_ratios = (
-        #     1/2,
-        #     )
-        swell_staggers = (
-                (0,2),
-                (1,1),
-                # (0.5,0.5),
-                # (1,0)
-            ),
-        fabric_staves = (
-            "cco_flute1", "cco_flute2"
-            ),
-        bookend_beats = (6*4,None)
-        )
-    # for c
 
 
     s.extend_from(trumpet_line1, trumpet_line2, trumpet_line3, bass_line,
         piano_chords_rh, piano_chords_lh,
-        fl_swells,
         )
 
 
@@ -114,7 +126,7 @@ def score4(lib):
     riff_mallets1 = lambda_segment.LambdaSegment(
         sb.with_only("riff",), 
         fabric_staves=("ooa_mallets",),
-        func = lambda x: x.only_first("cells",12).crop_chords(below=(2,1)),
+        func = lambda x: x.only_first("cells",12).crop_chords(below=(2,1)).crop_chords(above=(1,)),
         tag_events = {0:("f",)},
         ) 
 
@@ -145,10 +157,72 @@ def score4(lib):
         )
 
     s.fill_rests(beats=6*4)
+
     # =======================================================
     # BARS 7+
     # =======================================================
 
+    piano_osti = lambda_segment.LambdaSegment(
+        sb.with_only("melody_line2",),
+        fabric_staves=("piano1","piano2"),
+        func = lambda x: x.with_only("cells",*list(range(1,7))),
+        funcs = (
+            lambda x: x,
+            lambda x: x.t(-12).eps(0,"treble")(),
+            ),
+        bookend_beats=(0,2),
+        )
+    brass_osti = lambda_segment.LambdaSegment(
+        sb.with_only("melody_line2",),
+        fabric_staves=instrument_groups.get_instruments("brass"),
+        mask_staves = ("cco_trumpet"),
+        selectable_start_beat=6*4,
+        assign_pitches_from_selectable=True,
+        tag_all_note_events=("-",),
+        ranges=pitch_ranges.LOWISH_TO_HIGH_RANGES,
+        bookend_beats=(4,2),
+        func = lambda x: x.with_only("cells",3,4,5,6).eps(
+            0,"p","\\<")(
+            10,"mf")(
+            0,1,5,7,9,"-")(
+            2,6,10,".")()
+        )
+
+
+    string_chords2 = pad.Pad(
+        sb.with_only("bass_drones","mid_drones","high_drones","riff","bass_line"),
+        fabric_staves = instrument_groups.get_instruments("strings"),
+        mask_staves=("cco_bass",),
+        ranges=pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        pad_durations = (3,1)*8,
+        tag_all_note_events = (":32",),
+        selectable_start_beat=6*4,
+        after_func = lambda x: x.eps(
+            0,"mp")()
+        )
+    s.extend_from(string_chords2, extend_last_machine=True)
+
+    fl_swells = staggered_swell.StaggeredSwells(
+        sb.with_only("high_drones"),
+        low_dynamic = "mp",
+        swell_dynamic = "mf",
+        cell_count = 1,
+        phrase_count=4,
+        swell_duration = 16,
+        selectable_start_beat=6*4,
+        # swell_split_ratios = (
+        #     1/2,
+        #     )
+        swell_staggers = (
+                (0,2),
+                (1,1),
+                # (0.5,0.5),
+                # (1,0)
+            ),
+        fabric_staves = (
+            "cco_flute1", "cco_flute2"
+            ),
+        )
     cl_dove_riff = dovetail.Dovetail(
         sb.with_only("riff", "counter_line",),
         fabric_staves=("ooa_alto_sax1", "ooa_alto_sax2", "ooa_tenor_sax", "ooa_clarinet", "cco_clarinet1","cco_clarinet2"),
@@ -156,12 +230,31 @@ def score4(lib):
         dove_count=3,
         selectable_start_beat=6*4,
         dovetail_duration = 8*4,
+        after_func = lambda x: x.fuse().slur_cells().ops("note_events")(
+            0,"mf")()
         )
-    for seg in cl_dove_riff.segments:
-        seg.slur_cells()
-    s.extend_from(cl_dove_riff,)
+    
+    s.extend_from(piano_osti, cl_dove_riff,fl_swells, brass_osti)
 
-    # TO DO: add counter line here... 
+    s.fill_rests(beats=10*4)
+    # =======================================================
+    # BARS 11+
+    # =======================================================
+    counter_line = lambda_segment.LambdaSegment(
+        sb.with_only("counter_line",),
+        assign_pitches_from_selectable=True,
+        selectable_start_beat=10*4,
+        ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        fabric_staves = (
+            "ooa_bari_sax", "ooa_bassoon","ooa_trombone",
+            "ooa_bass_guitar"
+            ),
+        func = lambda x: cresc(bass_artics(
+            x.with_only("cells",1,2,3,4,5,6,7,8
+            ).fuse()))
+        )
+    s.extend_from(counter_line)
+
 
     s.fill_rests(beats=14*4)
     # =======================================================
@@ -304,12 +397,22 @@ def score4(lib):
 
     # =======================================================
 
-    s.cells.apply(lambda x:x.auto_respell())
-
     s.fill_rests()
+    # s.remove(s.staff_groups["short_score"])
 
-    for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 10
+    s.lines.apply(lambda x:x.auto_respell())
+    s.phrases.apply(lambda x:x.auto_respell())
+
+    for staff in s.staves:
+        # staff.phrases.transformed(calliope.Label())
+        # staff.lines.transformed(calliope.Label())
+        if segs := staff.segments:
+            main_seg = segs[0]
+            # for next_seg in segs[1:]:
+            #     main_seg += next_seg
+            main_seg.rehearsal_mark_number = 10
+            main_seg.compress_full_bar_rests = True
+    s.midi_tempo = 160
 
     return s
 
@@ -322,7 +425,11 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["rock_score4"])
+    calliope.illustrate(
+        lib["rock_score4"],
+        as_midi=True,
+        # open_midi=True,
+        )
 
 
 

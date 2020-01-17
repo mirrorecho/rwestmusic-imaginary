@@ -62,7 +62,7 @@ class ImaginaryScore(calliope.Score):
                 instrument=abjad.TenorTrombone(
                     name="Tenor Trombone", short_name="tbn.")
                 clef="bass"
-                midi_instrument = "trombone"
+                midi_instrument = "french horn"
 
         class OoaPercussion(calliope.StaffGroup):
 
@@ -171,7 +171,7 @@ class ImaginaryScore(calliope.Score):
                 instrument=abjad.TenorTrombone(
                     name="Trombone", short_name="tbn.")
                 clef="bass"
-                midi_instrument = "trombone"
+                midi_instrument = "french horn"
 
         class CcoPercussion(calliope.RhythmicStaff): 
                 instrument=abjad.Instrument(
@@ -183,11 +183,13 @@ class ImaginaryScore(calliope.Score):
             # instrument=abjad.Piano(
             #     name="Bass", short_name="vc.")
             # clef="bass"
+            # midi_instrument = "orchestral harp "
 
         class CcoPiano(calliope.Piano): pass
             # instrument=abjad.Piano(
             #     name="Bass", short_name="vc.")
             # clef="bass"
+            # midi_instrument = "acoustic grand"
 
         class CcoStrings(calliope.StaffGroup):
             class CcoViolinI(calliope.Staff):

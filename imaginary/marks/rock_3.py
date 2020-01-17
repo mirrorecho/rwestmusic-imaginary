@@ -333,7 +333,7 @@ def score3(lib):
             main_seg = segs[0]
             # for next_seg in segs[1:]:
             #     main_seg += next_seg
-            main_seg.rehearsal_mark_number = 8
+            main_seg.rehearsal_mark_number = 9
             main_seg.compress_full_bar_rests = True
 
     s.lines.apply(lambda x:x.auto_respell())

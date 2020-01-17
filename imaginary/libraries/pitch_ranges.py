@@ -31,7 +31,7 @@ MAX_RANGES = dict(
     ooa_tenor_sax  =  (-16, 12), # TenorSaxophone [Ab2, C5] span: 28
     ooa_bari_sax  =  (-23, 4), # BaritoneSaxophone [Db2, E4] span: 28
     ooa_bassoon  =  (-26, 11), # Bassoon [Bb1, B4] span: 37
-    ooa_horn  =  (-25, 13), # FrenchHorn [B1, C#5] span: 38
+    ooa_horn  =  (-22, 13), # FrenchHorn [D2, C#5] span: ...
     ooa_trumpet  =  (-6, 22), # Trumpet [F#3, Bb5] span: 28
     ooa_trombone  =  (-20, 11), # TenorTrombone [E2, B4] span: 31
     ooa_mallets  =  (-7, 25), # Vibraphone [F3, C#6] span: 32
@@ -51,7 +51,7 @@ MAX_RANGES = dict(
     cco_clarinet1  =  (-10, 30), # ClarinetInBFlat [D3, F#6] span: 40
     cco_clarinet2  =  (-10, 30), # ClarinetInBFlat [D3, F#6] span: 40
     cco_bassoon  =  (-26, 11), # Bassoon [Bb1, B4] span: 37
-    cco_horn  =  (-25, 13), # FrenchHorn [B1, C#5] span: 38
+    cco_horn  =  (-22, 13), # FrenchHorn [D2, C#5] span: ...
     cco_trumpet  =  (-6, 22), # Trumpet [F#3, Bb5] span: 28
     cco_trombone  =  (-20, 11), # TenorTrombone [E2, B4] span: 31
     harp1  =  (-2, 40), # Harp [B0, E7] span: 77
@@ -230,6 +230,11 @@ BOTTOM_RANGE = RangeFrame(
     spread = 16
     )
 
+LOWISH_RANGE = RangeFrame(
+    from_bottom = 0.16,
+    spread = 16
+    )
+
 MID_RANGE = RangeFrame(
     ratio_mid = 0.45,
     spread = 16
@@ -255,9 +260,18 @@ def get_ranges(**kwargs):
         )
 
 BOTTOM_SEQ = RangeSeq().add_constant_abstract(BOTTOM_RANGE)
+LOWISH_SEQ = RangeSeq().add_constant_abstract(LOWISH_RANGE)
 MID_SEQ = RangeSeq().add_constant_abstract(MID_RANGE)
 HIGHISH_SEQ = RangeSeq().add_constant_abstract(HIGHER_RANGE)
 TOP_SEQ = RangeSeq().add_constant_abstract(TOP_RANGE)
+
+LOWISH_TO_HIGH_SEQ = RangeSeq().add_abstract(
+    0, 
+    LOWISH_RANGE,
+    ).add_abstract(
+    1, 
+    TOP_RANGE,
+    )
 
 LOW_TO_HIGH_SEQ = RangeSeq().add_abstract(
     0, 
@@ -364,6 +378,7 @@ TOP_RANGES = PitchRanges(TOP_SEQ)
 HIGHISH_RANGES = PitchRanges(HIGHISH_SEQ)
 
 LOW_TO_HIGH_RANGES = PitchRanges(LOW_TO_HIGH_SEQ)
+LOWISH_TO_HIGH_RANGES = PitchRanges(LOWISH_TO_HIGH_SEQ)
 LOW_TO_HIGHISH_RANGES = PitchRanges(LOW_TO_HIGHISH_SEQ)
 LOW_TO_MID_RANGES = PitchRanges(LOW_TO_MID_SEQ)
 HIGH_TO_LOW_RANGES = PitchRanges(HIGH_TO_LOW_SEQ)
