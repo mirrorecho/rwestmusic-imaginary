@@ -8,8 +8,8 @@ def rock_score(lib):
     sc = lib["rock_score0"]
     sc.extend_from(lib["rock_score1"])
     sc.extend_from(lib["rock_score2"])
-    sc.extend_from(lib["rock_score3"])
-    sc.extend_from(lib["rock_score4"])
+    # sc.extend_from(lib["rock_score3"])
+    # sc.extend_from(lib["rock_score4"])
     sc.midi_tempo = 160
     return sc
 
@@ -26,7 +26,7 @@ if __name__ == '__main__':
     to_lib(lib)
     score = lib["rock_score"]
 
-    # score.remove(score.staff_groups["short_score"])
+    score.remove(score.staff_groups["short_score"])
     
     calliope.illustrate(
         score,

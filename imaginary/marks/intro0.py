@@ -18,15 +18,19 @@ from imaginary.marks import intro
 def block0(lib):
     b0 = free_segment.AlocFreeSegmentBlock(tempo_command=""" \\note #"4" #UP "= 72 ca, freely, 20'' " """)
 
-    b0["ooa_bass_guitar"].machine(ImaginaryCell(rhythm=(4,), pitches=(-11,)).eps(
-        0,"mp")(),
-        )
+    # b0["ooa_bass_guitar"].machine(ImaginaryCell(rhythm=(4,), pitches=(-11,)).eps(
+    #     0,"mp")(),
+    #     )
 
-    b0["ooa_bass_guitar"].machine_arrow(lib("cell_rest4"),
-        # pad=(8,1), 
-        with_repeat=False,
-        machine_pad=(8,8)
-        )
+    # b0["ooa_bass_guitar"].machine_arrow(lib("cell_rest4"),
+    #     # pad=(8,1), 
+    #     with_repeat=False,
+    #     machine_pad=(8,8)
+    #     )
+
+    b0["cco_percussion"].machine(lib("cell_rest2"), pad=(1.5,0))
+    b0["cco_percussion"].machine_arrow(
+        intro.hold_cell(0,"pp",":32","fermata","low tom, soft mallets"), instruction="repeat")
 
     b0["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((1,2,19,20),)).eps(
         0, ">","ff")(),
@@ -77,7 +81,10 @@ def block1(lib):
         0, "(", "ppp", "\\<", "a2, 2nd start after 1st")(
         5, ")")(
         6, "mp")(), 
-        instruction="repeat (staggered)")
+        instruction="repeat, freely (staggered)")
+
+    b1["cco_percussion"].machine_arrow(
+        intro.hold_cell(0,":32","fermata"), instruction="(cont. repeating)")
 
     b1["cco_violin_i1"].machine_arrow(lib("intro_cell_down").t(18), instruction="repeat")
 
@@ -98,7 +105,7 @@ def block1(lib):
         2,4, ")",)(
         5, "p")(
         6, beats=4)(), 
-        instruction="repeat")
+        instruction="repeat, freely")
 
     b1["cco_viola3"].machine_arrow(lib("intro_a_phrase_1"), instruction="repeat, freely")
 
@@ -106,7 +113,7 @@ def block1(lib):
         5, "fermata", beats=2)(),
         instruction="repeat, freely")
 
-    b1["cco_cello1"].machine_arrow(lib("intro_cell_shake"), instruction="repeat")
+    b1["cco_cello1"].machine_arrow(lib("intro_cell_shake"), instruction="repeat, freely")
 
     b1["cco_cello2"].machine_arrow(intro.hold_cell(1,"pp",), instruction="repeat")
 
@@ -128,7 +135,10 @@ def block2(lib):
         0, "p", "\\<", "(")(
         2, ")",)(
         3, "mp", "fermata", beats=4)(),
-        instruction="repeat (staggered)")
+        instruction="repeat, freely (staggered)")
+
+    b2["cco_percussion"].machine_arrow(
+        intro.hold_cell(0,":32","fermata"), instruction="(cont. repeating)")
 
     b2["cco_violin_i1"].machine_arrow(lib("intro_cell_down").t(17), instruction="repeat")
 
@@ -139,25 +149,25 @@ def block2(lib):
         0, "pp")(
         3, "(")(
         4,")", beats=2)(), 
-        instruction="repeat")
+        instruction="repeat, freely")
 
     b2["cco_violin_ii1"].machine_arrow(lib("intro_rock3_cco_oboe1_c38_41").eps(
         )(), 
-        instruction="repeat")
+        instruction="repeat, freely")
 
     b2["cco_violin_ii2"].machine_arrow(intro.hold_cell(4), instruction="repeat")
 
     b2["cco_violin_ii3"].machine_arrow(lib("intro_phrase_wiggle").crop("events",0,2).ops("events")(
         0, "pp")(
         3, beats=4)(), 
-        instruction="repeat")
+        instruction="repeat, freely")
 
     b2["cco_viola1"].machine_arrow(lib("intro_rock3_cco_bassoon_c39_41").crop("events",0,1).eps(
         0, "pp", "\\<")(
         0,2, "(",)(
         1,3, ")",)(
         5, "p", beats=4)(),
-        instruction="repeat")
+        instruction="repeat, freely")
 
     b2["cco_viola2"].machine_arrow(intro.hold_cell(-6,"p",), instruction="repeat")
 
@@ -165,9 +175,9 @@ def block2(lib):
 
     b2["cco_viola4"].machine_arrow(lib("intro_phrase_straight_i").crop("events",3), instruction="repeat, freely")
 
-    b2["cco_cello1"].machine_arrow(lib("intro_cell_shake").t(5), instruction="repeat")
+    b2["cco_cello1"].machine_arrow(lib("intro_cell_shake").t(5), instruction="repeat, freely")
 
-    b2["cco_cello2"].machine_arrow(lib("intro_a_cell_2"), instruction="repeat")
+    b2["cco_cello2"].machine_arrow(lib("intro_a_cell_2"), instruction="repeat, freely")
 
     b2["cco_bass"].machine_arrow(intro.hold_cell(-6,"pp",), instruction="repeat")
 

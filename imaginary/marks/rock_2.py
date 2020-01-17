@@ -17,13 +17,18 @@ from imaginary.marks import rock
 # SHOULD AVERAGE 20 bars
 # TEMPO = 160+ !!!!!!
 
+def bass_artics(n):
+    n.events(beats__lt=1).tag("-")
+    n.events(beats__gte=1).tag(".",">")
+    return n
+
 def score2(lib):
     s = score.ImaginaryScore()
     sb = lib("rock_block2")
-    s = sb().annotate(
-        slur_cells=True,
-        label=("phrases", "cells")
-        ).to_score(s)
+    # s = sb().annotate(
+    #     slur_cells=True,
+    #     label=("phrases", "cells")
+    #     ).to_score(s)
 
 
     rim_shots = ImaginaryCell(rhythm=(1,1,1,1), pitches=(2,2,2,2))
@@ -48,6 +53,12 @@ def score2(lib):
 
     # TO DO: add ranges
     # =======================================================
+
+    trumpet_mute_outs = ImaginarySegment(ImaginaryCell(
+        rhythm=(-4,)).eps(
+            0, "mute out")())
+    s.staves["ooa_trumpet"].append(trumpet_mute_outs())
+    s.staves["cco_trumpet"].append(trumpet_mute_outs())
 
     harp1_riff = lambda_segment.LambdaSegment(
         sb.with_only("riff",),
@@ -74,23 +85,35 @@ def score2(lib):
     harp1_riff.segments[0].poke("events", *poke_harp1)
 
     piano_riff = lambda_segment.LambdaSegment(
-        riffs_block,
+        sb.with_only("riff"),
         fabric_staves=("piano1","piano2",),
         tag_all_note_events = (".",),
-        func = lambda x: x,
+        ranges = pitch_ranges.LOW_TO_HIGH_RANGES,
+        assign_pitches_from_selectable=True,
+        func = lambda x: x.eps(0, "bass")(),
+        funcs = (
+            lambda x: x.eps(
+                40, "treble")(
+                136, "8va")(
+                151, "8va!")(),
+            lambda x: x.eps(
+                0, "8vb")(
+                23, "8vb!")(
+                112, "treble")(),
+            )
         )
-    piano_riff.staves["piano2"].events[0].tag("treble")
+    piano_riff.staves["piano1"].note_events[-1].pitch+=12
+    piano_riff.staves["piano1"].phrases[:8].apply(lambda x: x.t(12))
+    piano_riff.staves["piano2"].phrases[8:].apply(lambda x: x.t(-12))
+
 
     pizz = lambda_segment.LambdaSegment(
         sb.with_only("chords"),
         ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
         fabric_staves = instrument_groups.get_instruments("cco_strings"),
         mask_staves = ("cco_bass",),
-        # tag_events = {0:("mf", "pizz")},
         assign_pitches_from_selectable = True,
-        func = lambda x: x.transformed(calliope.StandardDurations()),
-        # func = lambda x: x.crop("cells",1),
-        # func = lambda x: x.only_first("cells",8)
+        func = lambda x: x.transformed(calliope.StandardDurations())
         )
 
     constant_pluck = osti.Osti(
@@ -101,6 +124,9 @@ def score2(lib):
         osti_cell_length = 4,
         osti_cell_count = 9,
         )
+    for st in constant_pluck.staves:
+        st.segments[0].eps(
+            0, "mf", "pizz, distorted")()
 
     s.extend_from(
         harp1_riff,
@@ -122,7 +148,14 @@ def score2(lib):
         # tag_events = {0:("mf", "pizz")},
         # func = lambda x: x.only_first("cells",7).bookend_pad(0,3),
         # func = lambda x: x.crop("cells",1),
-        func = lambda x: x.only_first("cells",14),
+        func = lambda x: x.only_first("cells",14
+            ).transformed(calliope.StandardDurations()).eps(0, "f")(),
+        funcs = (
+            lambda x: bass_artics(x),
+            lambda x: bass_artics(x),
+            lambda x:x,
+            lambda x:x.eps(1, "pizz")(),
+            )
         )
 
 
@@ -229,8 +262,7 @@ def score2(lib):
                 "ooa_bassoon",
                 ),
         tag_all_note_events = ("-",),
-        tag_events = {1:("mf","\\<"), -1:(".","f")},
-        func = lambda x: x,
+        tag_events = {0:("mf","\\<"), -1:(".","f")},
         bookend_beats=(3,1)
         )
 
@@ -252,16 +284,52 @@ def score2(lib):
         func = lambda x: x.with_only("cells",32,33).bookend_pad(3,1),
         tag_all_note_events=(">",)
         )
+    for st in hits_final.staves["ooa_violin1","ooa_violin2","ooa_cello1","ooa_cello2"]:
+        st.note_events[0].tag("arco, distorted")
     s.extend_from(hits_final)
 
 
     # # =======================================================
-
-    s.cells.apply(lambda x:x.auto_respell())
+    # adjust for bass 8va
+    for bass_seg in s.staves["cco_bass"].segments:
+        bass_seg.transformed(calliope.Transpose(interval=12))
+    
     s.fill_rests()
+    # s.remove(s.staff_groups["short_score"])
 
-    for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 8
+
+    for staff in s.staves:
+        # staff.phrases.transformed(calliope.Label())
+        # staff.lines.transformed(calliope.Label())
+        if segs := staff.segments:
+            main_seg = segs[0]
+            for next_seg in segs[1:]:
+                main_seg += next_seg
+            main_seg.rehearsal_mark_number = 8
+            main_seg.compress_full_bar_rests = True
+
+    s.lines.apply(lambda x:x.auto_respell())
+    s.phrases.apply(lambda x:x.auto_respell())
+    s.staves["ooa_clarinet","ooa_alto_sax1","ooa_alto_sax2",
+        "ooa_tenor_sax","ooa_bari_sax"
+        ].phrases.setattrs(
+        respell="flats")
+    s.staves["ooa_clarinet"].phrases[0].respell="flats"
+    s.staves["ooa_bassoon","cco_bass"].phrases.setattrs(
+        respell="sharps")
+    s.staves["ooa_bassoon"].phrases[6].respell="flats"
+    s.staves["ooa_bass_guitar","cco_bassoon"].phrases.setattrs(
+        respell="flats")
+    s.staves["piano1"].phrases[:8].setattrs(respell="sharps")
+    s.staves["piano1"].phrases[8:].setattrs(respell="flats")
+    s.staves["piano2"].phrases[:8].setattrs(respell="sharps")
+    s.staves["piano2"].phrases[8:].setattrs(respell="flats")
+
+
+    # for seg in s.select_by_type(ImaginarySegment):
+    #     seg.label("phrases", "lines")
+
+    s.midi_tempo=160
 
     return s
 
@@ -274,7 +342,11 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["rock_score2"])
+    calliope.illustrate(
+        lib["rock_score2"],
+        as_midi=True,
+        open_midi=True,
+        )
 
 
 # # TO DO ... consider moving this later

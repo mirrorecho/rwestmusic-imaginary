@@ -99,6 +99,29 @@ def block2(lib):
 
     # TO DO: fragments of osti!
     # b1["ooa_mallets"]
+    b2["ooa_mallets"].machine(lib("cell_rest2").eps(0, "fermata")())
+    b2["ooa_mallets"].machine_arrow(
+        ImaginaryCell(rhythm=(1,), pitches=(16,)), 
+        instruction="repeat constant pulse, with drum set")
+    b2["ooa_mallets"].eps(
+        6, "pp", "\\<")(
+        20, "mf", "\\>")()
+
+    b2["ooa_guitar"].machine_arrow(
+        lib("riff_phrase").sc(0.5).crop("events",4).eps(
+            0, "mp")(
+            0,4,"[")(
+            3,7,"]")() + lib("cell_rest2").eps(0, "fermata"), 
+        instruction="markup_column:repeat, with drum set quarter note pulse")
+    
+    b2["ooa_bass_guitar"].machine(lib("cell_rest4").eps(0, "fermata")())
+    b2["ooa_bass_guitar"].machine_arrow(
+        ImaginaryCell(rhythm=(1,), pitches=(-8,)), 
+        instruction="repeat constant pulse, with drum set")
+    b2["ooa_bass_guitar"].eps(
+        6, "pp", "\\<")(
+        20, "mf", "\\>")()
+
     b2["ooa_drum_set"].machine_arrow(
         ImaginaryCell(rhythm=(1,), pitches=(-1,)), 
         instruction="cont. repeating consant pulse")
@@ -182,7 +205,7 @@ def block2(lib):
     b2["cco_oboes"].machine_arrow(lib("intro_riff_winds").eps(
         0, "markup_column:a2, 2nd start after 1st|match drum set quarter note pulse")(
         4, pitch=11)(), 
-        instruction="repeat (staggered)")
+        instruction="markup_column:repeat (staggered), freely at first, eventually with|drum set's quarter note pulse")
 
     intro.hold_swell_arrow(b2["cco_clarinets"], (5,11), instruction="repeat")
 
@@ -236,7 +259,7 @@ def block2(lib):
     b2["cco_percussion"].machine_arrow(
         ImaginaryCell(rhythm=(0.5,0.5,0.5,0.5),), 
         instruction="repeat, keeping pulse constant").eps(
-            5, "markup_column:wood block|faster, NOT with drum set|quarter note = 112 approx")()
+            5, "markup_column:wood block, hard mallets|faster, NOT with drum set|quarter note = 112 approx")()
     b2["cco_percussion"].eps(
         6, "pp", "\\<")(
         10, "mf", "\\>")(

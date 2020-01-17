@@ -254,8 +254,9 @@ def get_ranges(**kwargs):
         default = RangeSeq().add_constant(**kwargs)
         )
 
-MID_SEQ = RangeSeq().add_constant_abstract(MID_RANGE)
 BOTTOM_SEQ = RangeSeq().add_constant_abstract(BOTTOM_RANGE)
+MID_SEQ = RangeSeq().add_constant_abstract(MID_RANGE)
+HIGHISH_SEQ = RangeSeq().add_constant_abstract(HIGHER_RANGE)
 TOP_SEQ = RangeSeq().add_constant_abstract(TOP_RANGE)
 
 LOW_TO_HIGH_SEQ = RangeSeq().add_abstract(
@@ -360,6 +361,8 @@ HIGHISH_TO_MID_SEQ = RangeSeq(
 MID_RANGES = PitchRanges(MID_SEQ)
 BOTTOM_RANGES = PitchRanges(BOTTOM_SEQ)
 TOP_RANGES = PitchRanges(TOP_SEQ)
+HIGHISH_RANGES = PitchRanges(HIGHISH_SEQ)
+
 LOW_TO_HIGH_RANGES = PitchRanges(LOW_TO_HIGH_SEQ)
 LOW_TO_HIGHISH_RANGES = PitchRanges(LOW_TO_HIGHISH_SEQ)
 LOW_TO_MID_RANGES = PitchRanges(LOW_TO_MID_SEQ)

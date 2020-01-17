@@ -31,15 +31,21 @@ def score3(lib):
     # =======================================================
     # throuhout pad / texture
     s.extend_from(lambda_segment.LambdaSegment(
-        sb3.with_only("high_drones", "bass_drones"),
-        fabric_staves=("piano1", "piano2"),
+        sb3.with_only("high_drones",),
+        fabric_staves=("piano1", ),
         func = lambda x: x,
         ))
     s.extend_from(lambda_segment.LambdaSegment(
         sb3.with_only("bass_drones"),
-        fabric_staves=("cco_bass",),
-        func = lambda x: x.crop_chords( (0,), ),
-        ))
+        fabric_staves=("cco_bass","piano2"),
+        func = lambda x: x.crop("events",0,1).eps(
+            22, beats=4)(),
+        funcs = (
+            lambda x: x.crop_chords( (0,),),
+            lambda x: x,
+            ),
+        )
+    )
     ooa_strings_pulses = pulse_on_off_beat.PulseOnOffBeat(
             sb3,
             fabric_staves = (
@@ -78,7 +84,18 @@ def score3(lib):
         pad_durations=(2,2,4),
         tag_events = {0:("\\<",),2:("f",)}
         )
-    s.extend_from(ooa_strings_pulses,ooa_strings_pulses2,ooa_strings_pulses3)
+    mallets_osti = osti.Osti(
+        sb3.with_only("high_drones"),
+        fabric_staves = ("ooa_mallets",),
+        ranges=pitch_ranges.TOP_RANGES,
+        osti_pulse_duration = 0.5,
+        osti_cell_length = 6,
+        osti_cell_count = 12,
+    )
+    for n in mallets_osti.note_events:
+        n.pitch = (n.pitch, n.pitch+12)
+    s.extend_from(ooa_strings_pulses,ooa_strings_pulses2,ooa_strings_pulses3,
+        mallets_osti)
     # =======================================================
     # bars 1-4
     # =======================================================
@@ -88,59 +105,56 @@ def score3(lib):
             fabric_staves = ("cco_violin_i",),
             func = lambda x: x.scramble("cells",2,3,4,5,2,4,3
                 ).mask("cells", 1,3
-                ) #.smart_ranges( ((-4,12),), ),
-            # tag_events = {0:("p", "normal")},
-        )
-    violin_ii = lambda_segment.LambdaSegment(
-            sb3.with_only("melody_line2",),
-            fabric_staves = ("cco_violin_ii",),
-            func = lambda x: x.with_only("cells",0,1,2,3
-                ).crop_chords( (0,)
-                ) #.smart_ranges( ((-4,12),), ),
-            # tag_events = {0:("p", "normal")},
-        )
-    viola = lambda_segment.LambdaSegment(
-            sb3.with_only("melody_line1",),
-            fabric_staves = ("cco_viola",),
-            func = lambda x: x.with_only("cells",0,1,2,3
-                # ).crop_chords( (0,)
-                # ).smart_ranges( ((-4,12),), 
-                ),
-            # tag_events = {0:("p", "normal")},
-        )
-    cello = lambda_segment.LambdaSegment(
-            sb3.with_only("melody_line1",),
-            fabric_staves = ("cco_cello",),
-            func = lambda x: x.with_only("cells",0,1,2,3
-                # ).crop_chords( (1,)
-                ).t(-12
-                # ).smart_ranges( ((-12,0),), 
-                ),
-            # tag_events = {0:("p", "normal")},
+                ).e_smear_after(fill=True).eps(
+                    0,2,4,6,9,"(")(
+                    1,3,5,7,10,")")()
         )
 
-    s.extend_from(violin_i, violin_ii, viola, cello)
+    violin_ii_seg = sb3["melody_line2"]().with_only("cells",0,1,2,3
+            ).crop_chords( (0,)).e_smear_after(fill=True)
+    violin_ii_seg.note_events[:4].transformed(calliope.Transpose(interval=7))
+    violin_ii_seg.note_events[0,2,5].transformed(calliope.Transpose(interval=12))
+    violin_ii_seg.e_smear_after(fill=True).eps(
+        7,9,11, "(")(
+        8,10,12,")")()
+    s["cco_violin_ii"].append(violin_ii_seg)
+
+    viola_cello = lambda_segment.LambdaSegments(
+            sb3.with_only("melody_line1",),
+            fabric_staves = ("cco_viola","cco_cello",),
+            func = lambda x: x.with_only("cells",0,1,2,3
+                    ).e_smear_after(fill=True).eps(
+                    1, "div.",)(
+                    1,6,9,15,"(")(
+                    2,7,10,16,")")(),
+            funcs = (
+                lambda x: x,
+                lambda x: x.t(-12)
+                    ),
+            )
+
+    s.extend_from(violin_i, viola_cello)
 
     # pads
     s.extend_from(
         lyrical.SaxSwell(
             sb3.with_only("bass_drones",),
             ranges = pitch_ranges.get_ranges(ratio_mid=0.7, spread=16),
-            # ranges = pitch_ranges.MID_RANGES,
+            swell_dynamic = "mf",
             swell_duration=8,
             ),
         lyrical.SaxSwell(
             sb3,
             selectable_start_beat=8,
             ranges = pitch_ranges.get_ranges(ratio_mid=0.6, spread=16),
-            # ranges = pitch_ranges.MID_RANGES,
+            swell_dynamic = "mf",
             swell_duration=8,
             ),
         lyrical.SaxSwell(
             sb3.with_only("counter_line",),
             selectable_start_beat=16,
             ranges = pitch_ranges.get_ranges(ratio_mid=0.6, spread=16),
-            # ranges = pitch_ranges.MID_RANGES,
+            swell_dynamic = "mf",
             swell_duration=8,
             ),
     )
@@ -155,44 +169,93 @@ def score3(lib):
             sb3.with_only("counter_line",),
             fabric_staves = ("cco_violin_i",),
             func = lambda x: x.crop("cells",2
-                )
-            # tag_events = {0:("p", "normal")},
+                ).mask("cells",4,5).crop("events",0,6
+                ).e_smear_after(fill=True).eps(
+                0,2,5,8,11,13,15,18,21, "(")(
+                1,3,6,9,12,14,16,19,22, ")")(
+                23,24,25,26,27,28,29, "-")(
+                29, beats=0.5)(
+                30, beats=4)()
         )
+    for c in violin_i.cells[2:]:
+        c.t(-12)
     violin_ii = lambda_segment.LambdaSegment(
             sb3.with_only("melody_line2",),
             fabric_staves = ("cco_violin_ii",),
             func = lambda x: x.crop("cells",4
-                )
-            # tag_events = {0:("p", "normal")},
+                ).mask("cells",2).e_smear_after(fill=True
+                ).crop("events",0,1).eps(
+                1,5,9,11,16,"(")(
+                2,6,10,12,17,")")(
+                19,20,21,22, "-")(
+                22, beats=0.5)(
+                23, beats=4)().t(-12)#.label("events")
         )
     viola = lambda_segment.LambdaSegment(
             sb3.with_only("melody_line1",),
             fabric_staves = ("cco_viola",),
             func = lambda x: x.crop("cells",4
-                )
-            # tag_events = {0:("p", "normal")},
+                ).e_smear_after(fill=True 
+                ).crop("events",0,3).eps(
+                1, 4,7,9,13,17,19,21, "(")(
+                2, 5,8,10,14,18,20,22, ")")(
+                23,24, "-")(
+                24, beats=1)(
+                25, beats=4)()#.label("events")
         )
     cello = lambda_segment.LambdaSegment(
             sb3.with_only("bass_line",),
             fabric_staves = ("cco_cello",),
             func = lambda x: x.crop("cells",3
-                ).crop_chords( (0,) 
-                )
-            # tag_events = {0:("p", "normal")},
-        )
+                ).crop_chords( (0,)
+                ).crop("events",0,4).eps(
+                1,11,18, "(")(
+                2,12,19, ")")(
+                24,25,26,27, "-")(
+                28, beats=4)()#.label("events")
+            )
+        
     s.extend_from(violin_i, violin_ii, viola, cello)
 
-    s.fill_rests(beats=11*4)
-    s.fill_rests()
-    for st in s.staves:
-        st.events[-1].tag("fermata")
-    # s.remove_empty()
-    for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 5
-    s.segments.apply(lambda x:x.auto_respell())
-    s.segments.setattrs(compress_full_bar_rests = True)    
-    return s
+    # adjust for bass 8va
+    for bass_seg in s.staves["cco_bass"].segments:
+        bass_seg.t(12)
+
 # =======================================================
+
+    s.fill_rests(beats=11*4)
+    # anything here?
+    s.fill_rests()
+
+    s.fill_rests(beats=12*4)
+    for staff in s.staves:
+        if segs := staff.segments:
+            main_seg = segs[0]
+            for next_seg in segs[1:]:
+                main_seg += next_seg
+            main_seg.rehearsal_mark_number = 5
+            main_seg.compress_full_bar_rests = True
+
+            # WTF TO DO: why doesn't this work????
+            # for l in main_seg.lines:
+            #     print(l)
+            #     l.auto_respell()
+
+            # st.events[-1].tag("fermata")
+
+    # FIX FOR FERMATA END:
+    s.staves["piano1"].segments[0].crop("events",0,3)
+    s.staves["piano1"].events[-1].beats=4
+
+    s.events.setattrs(respell="flats")
+
+
+    for staff in s.staves:
+        last_event = staff.events[-1]
+        last_event.tag("fermata")       
+        # last_event.beats = -4 if last_event.rest else 4
+    s.midi_tempo = 96
+    return s
 
 
 # =======================================================
@@ -205,5 +268,12 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["lyrical_score3"])
+    score = lib["lyrical_score3"]
+    # score.remove(score.staff_groups["band"])
+    # score.remove(score.staff_groups["short_score"])
+    calliope.illustrate(score, 
+        as_midi=True,
+        # open_midi=True
+        )
+
 

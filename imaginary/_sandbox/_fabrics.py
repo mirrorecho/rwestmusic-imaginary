@@ -238,6 +238,7 @@ x = swell_hit.SwellHit(
     # swell_duration = 4,
     # hit_duration = 0.5,
     # hit_rest = 3.5,
+    # hit_articulations = (".",)
     )
 # calliope.illustrate(x)
 

@@ -229,9 +229,9 @@ class SaxSwell(staggered_swell.StaggeredSwell):
 
 def score_short(lib):
     b = short_block.get_block()
-    b.extend_from(lib["lyrical_block0"])
-    b.extend_from(lib["lyrical_block1"])
-    b.extend_from(lib["lyrical_block2"])
+    # b.extend_from(lib["lyrical_block0"])
+    # b.extend_from(lib["lyrical_block1"])
+    # b.extend_from(lib["lyrical_block2"])
     b.extend_from(lib["lyrical_block3"])
 
     b.annotate(
@@ -251,10 +251,12 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
-    calliope.illustrate(lib["lyrical_score_short"].to_score(), 
+    sc = lib["lyrical_score_short"]
+    sc.midi_tempo = 96
+    calliope.illustrate(sc, 
         as_midi=True,
-        # open_midi=True,
-        # open_pdf=False,
+        open_midi=True,
+        open_pdf=False,
         )
 
 

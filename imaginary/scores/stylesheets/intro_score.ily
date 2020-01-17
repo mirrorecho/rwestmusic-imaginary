@@ -6,7 +6,7 @@
         
         
         % TO DO: WHAT'S THE PURPOSE OF THIS??!!
-        \remove "Timing_translator"
+        % \remove "Timing_translator"
         \remove "Default_bar_line_engraver"
         \remove "Bar_engraver"
     }
@@ -21,6 +21,7 @@
         \override BarLine.extra-offset = #'( -1 . 0 )
         \consists "Timing_translator"
         \consists "Default_bar_line_engraver"
+        \consists "Bar_number_engraver"
     }
     \context {
         \RhythmicStaff 

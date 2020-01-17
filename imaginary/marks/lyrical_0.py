@@ -70,6 +70,16 @@ def score0(lib):
         )
     s.staves["ooa_drum_set"].append(drum_offs)
 
+    cym_seg = ImaginarySegment(
+        calliope.Cell(rhythm=(-1*4,-5*4),),
+        calliope.Cell(rhythm=(0.5,-3.5),),
+        calliope.Cell(rhythm=(-5*4,),),
+        )
+    cym_seg.events[0].tag("to sus. cym.")
+    cym_seg.note_events[0].tag("sus. cym., soft mallets",":32","p","(")
+    cym_seg.events[3].tag(")")
+    s.staves["cco_percussion"].append(cym_seg)
+
 
     # =======================================================
     # intro strings pad
@@ -117,9 +127,16 @@ def score0(lib):
     cello_melody = lambda_segment.LambdaSegment(
         sb0.with_only("bass_line"),
         fabric_staves = ("ooa_cello1","ooa_cello2",),
-        tag_events = {0:("pp","arco, distorted")},
-        func = lambda x: x.crop("cells",1).crop("events",2),
+        tag_events = {0:("pp","arco, thin, spacey fx")},
+        func = lambda x: x.crop("cells",1).crop("events",2).e_smear_after(fill=True),
         )
+    cello_melody.staves["ooa_cello1"].note_events[0].pitch += 12
+    
+    # TO DO: manually setting pitch here is nasty
+    for n in cello_melody.staves["ooa_cello2"].note_events[:6]:
+        n.pitch = -1
+    for n in cello_melody.staves["ooa_cello2"].note_events[6:]:
+        n.pitch = 4
 
     s.extend_from(
         intro_pad, 
@@ -179,16 +196,27 @@ def score0(lib):
         swell_split_ratios = (3/4,),
         swell_staggers = ((0,0),),
     )
+    # horns are too low (TO DO: why?) ... so adjust
+    for horn_seg in brass_swells.staves["ooa_horn","cco_horn"].segments:
+        horn_seg.t(12)
     s.extend_from(brass_swells)
 
     s.fill_rests(fill_to="cco_violin_i")
+
+    # adjust for bass 8va
+    for bass_seg in s.staves["cco_bass"].segments:
+        bass_seg.t(12)
+
     for staff in s.staves:
-        if staff.segments:
-            staff.segments[0].tempo_command=""" \\note #"4" #UP "= 96 ca" """
-    s.segments.apply(lambda x:x.auto_respell())
-    s.segments.setattrs(compress_full_bar_rests = True)
-    for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 2
+        if segs := staff.segments:
+            main_seg = segs[0]
+            for next_seg in segs[1:]:
+                main_seg += next_seg
+            main_seg.tempo_command=""" \\note #"4" #UP "= 96 ca" """
+            main_seg.rehearsal_mark_number = 2
+            main_seg.auto_respell()
+            main_seg.compress_full_bar_rests = True
+
     s.midi_tempo = 96
     return s
 

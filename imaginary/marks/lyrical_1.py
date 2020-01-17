@@ -72,21 +72,41 @@ def score1(lib):
         )
     s.staves["ooa_drum_set"].append(drum_offs)
 
-    # INTRO OBOES
-    # TO DO: these lambdas are nasty... simplify
-    intro_melody_lambdas = dict(
-        cco_oboe1 = lambda x: x(
-            ).with_only("phrases",0).mask("cells",1).crop("events",0,1
-            ).slur_cells(),
-        cco_oboe2 = lambda x: x(
-            ).with_only("phrases",0).mask("events",0,1,2,3,4).crop("events",0,1
-            ).slur_cells()
+    cym_seg = ImaginarySegment(
+        calliope.Cell(rhythm=(-2*4,),),
+        calliope.Cell(rhythm=(1,-3),),
+        calliope.Cell(rhythm=(-3*4,),),
+        calliope.Cell(rhythm=(1,-3),),
+        calliope.Cell(rhythm=(-5*4,),),
         )
-    s.extend_from(*[lambda_segment.LambdaSegment(
+    cym_seg.note_events.tag(":32","(")
+    cym_seg.events[2,5].tag(")")
+    s.staves["cco_percussion"].append(cym_seg)
+
+    intro_melody = lambda_segment.LambdaSegments(
         sb1.with_only("melody_line2"),
-        fabric_staves = (n,),
-        func = l,
-        ) for n, l in intro_melody_lambdas.items()])
+        fabric_staves = ("cco_oboe1", "cco_oboe2","cco_clarinet1", "cco_clarinet2",),
+        funcs = (
+            lambda x: x.with_only("phrases",0).mask("cells",1
+                ).crop("events",0,1
+                ).slur_cells(),
+            lambda x: x(
+                ).with_only("phrases",0).mask("events",0,1,2,3,4
+                ).crop("events",0,1
+                ).slur_cells(),
+            lambda x: x.with_only("cells",0,1,2).poke("events",4
+                ).e_smear_before(extend_beats=3, rearticulate=True
+                ).e_smear_after(extend_beats=4).ops("note_events")(
+                0,"pp","\\<")(
+                1,"mp",)(),
+            lambda x: x.with_only("cells",0,1,2).poke("events",9
+                ).e_smear_before(extend_beats=3.5, rearticulate=True
+                ).e_smear_after(extend_beats=4).ops("note_events")(
+                0,"pp","\\<")(
+                1,"mp",)(),
+            )
+        )
+    s.extend_from(intro_melody)
 
     s.fill_rests(beats=8)
 
@@ -136,7 +156,10 @@ def score1(lib):
     # counter to violin i
     counter_violin = lambda_segment.LambdaSegment(
         sb1.with_only("counter_line"),
-        func = lambda x: x.crop("phrases",1),
+        func = lambda x: x.crop("phrases",1).fuse().eps(
+            1, "p", "arco (normal)")(
+            2,7,9,12,14,16,20,25,27,30, "(")(
+            3,8,10,13,15,17,21,26,28,31, ")")(),
         fabric_staves = ("cco_violin_i",),
         )
     s.extend_from(counter_violin)
@@ -147,7 +170,7 @@ def score1(lib):
     pad_durations = (2,1,2,2,1,2,2) # based on 3 + 5 + 4
     bookend_beats = (None, (4,0), None,)
     start_offset = (8, 8, 12)
-    s.extend_from(*[
+    strings_pads = [
         lyrical.Intro2Pad(
             sb1,
             mask_staves=("cco_bass","cco_violin_i"),
@@ -156,7 +179,10 @@ def score1(lib):
             selectable_start_beat = start_offset[i] + sum(pad_durations)*i,
             bookend_beats = bookend_beats[i]
             )
-        for i in range(3)])
+        for i in range(3)]
+    for st in strings_pads[0].staves:
+        st.note_events[0].tag("p", "arco (normal)")
+    s.extend_from(*strings_pads)
 
     s.fill_rests(beats=24)
 
@@ -207,10 +233,16 @@ def score1(lib):
     # # =======================================================
 
     s.fill_rests()
-    for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 3
-    s.segments.apply(lambda x:x.auto_respell())
-    s.segments.setattrs(compress_full_bar_rests = True)
+    for staff in s.staves:
+        if segs := staff.segments:
+            main_seg = segs[0]
+            for next_seg in segs[1:]:
+                main_seg += next_seg
+            main_seg.rehearsal_mark_number = 3
+            main_seg.auto_respell()
+            main_seg.compress_full_bar_rests = True
+
+
     s.midi_tempo = 96
     return s
 

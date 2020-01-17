@@ -71,7 +71,7 @@ def block1(lib):
     b1["ooa_drum_set"].machine(lib("cell_rest2"))
     b1["ooa_drum_set"].machine_arrow(
         ImaginaryCell(rhythm=(1,), pitches=(-1,)), 
-        instruction="markup_column:soft mallets|repeat, keep pulse constant")
+        instruction="markup_column:mallets|repeat, keep pulse constant")
     b1["ooa_drum_set"].eps(
         5, "pp", "\\<")(
         8, "mf", "\\>")(
@@ -131,6 +131,12 @@ def block1(lib):
 
     b1["cco_trombone"].machine_arrow(lib("intro_a_phrase_1").cells[1](), instruction="repeat, freely")
 
+    b1["cco_percussion"].machine_arrow(
+        intro.hold_cell(0,"mp",":32","fermata", "high tom").eps(
+            1,5, "p", "\\<")(
+            9, "mp", "\\>")(),
+            instruction="repeat")
+
     b1["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((4,5,23,24),)).ops("events")(
         0, ">")(),
         )
@@ -144,7 +150,7 @@ def block1(lib):
 
     b1["cco_violin_i2"].machine(lib("cell_rest1"))
     b1["cco_violin_i2"].machine_arrow(lib("intro_rock3_cco_oboe2_c38_41"),
-        instruction="repeat")
+        instruction="repeat, freely")
 
     b1["cco_violin_i3"].machine_arrow(intro.hold_cell(23), instruction="repeat")
 
@@ -213,7 +219,7 @@ if __name__ == '__main__':
     # FOR TEMP TESTING ONLY:
     import intro1_0
     intro1_0.to_lib(lib)
-    calliope.illustrate(lib("intro1_score0").extend_from(lib("intro1_score1")))
+    calliope.illustrate(lib("intro1_score1"))
 
 # =========================================================================
 # BAR 2

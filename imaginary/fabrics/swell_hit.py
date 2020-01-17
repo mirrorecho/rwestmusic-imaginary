@@ -8,6 +8,7 @@ class SwellHit(ImaginaryFabric):
     swell_duration = 4
     hit_duration = 0.5
     hit_rest = 3.5
+    hit_articulations = (".",)
 
     def weave(self, staff, index=0, **kwargs):
         my_rhythm = [self.swell_duration, self.hit_duration]
@@ -17,6 +18,6 @@ class SwellHit(ImaginaryFabric):
             calliope.Cell(rhythm=my_rhythm)
             )
         my_cell.events[0].tag(self.low_dynamic, "\\<")
-        my_cell.events[1].tag(self.hit_dynamic, ".")
+        my_cell.events[1].tag(self.hit_dynamic, *self.hit_articulations)
         return my_cell
 

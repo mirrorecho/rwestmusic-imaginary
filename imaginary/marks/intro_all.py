@@ -22,8 +22,14 @@ def to_lib(lib):
 if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
+    score = lib["intro_score"]
+    for seg in score.segments:
+        seg.tempo_font_size = 4
+    for st in score.staves[1:]:
+        st.events[0].tag("\\override Staff.BarNumber #'break-visibility = #'#(#f #f #f)")
     calliope.illustrate(
-        lib["intro_score"],
+        score,
+        title = "Memory Bubbles I.",
         as_midi=True,
         # open_midi=True,
         )

@@ -59,7 +59,7 @@ def score1(lib):
         fabric_staves = instrument_groups.get_instruments(
             "sax","ooa_winds","ooa_brass"),
         assign_pitches_from_selectable = True,
-        func = lambda x: x.only_first("cells",1).bookend_pad(0,3),
+        func = lambda x: x.only_first("cells",1).bookend_pad(0,1),
         tag_all_note_events=(".",)
         )
 
@@ -161,31 +161,35 @@ def score1(lib):
             )
         )
 
-    # TO DO: add in piano
+    osti_chords_piano = lambda_segment.LambdaSegments(
+        sb.with_only("melody_line2"),
+        fabric_staves = ("piano1","piano2"),
+        func = lambda x: x.crop_chords(above=(3,)).only_first("cells",7),
+        funcs = (
+            lambda x: x.ops("note_events")(
+                0,"f")(),
+            lambda x: x.ops("note_events")(
+                0,"treble")(),
+            )
+        )
+    # osti_chords_piano.staves["piano2"].note_events[0].tag("treble")
+    s.extend_from(osti_chords_piano,)
+
+    s.fill_rests(beats=8)
 
     osti_chords_brass = lambda_segment.LambdaSegment(
         sb.with_only("melody_line2"),
         fabric_staves = instrument_groups.get_instruments("brass",),
         func = lambda x:x.only_first("cells",7
-            ).poke("note_events",2,5,6,10,11
-            ).ops("note_events")(0,"mf")(),
+            ).crop("events",4).poke("note_events",0,3,4,7,8,9
+            ).ops("events")(0,"mf")(),
         tag_all_note_events=("-",),
         assign_pitches_from_selectable=True,
+        selectable_start_beat=8,
         ranges=pitch_ranges.MID_RANGES,
         )
-    osti_chords_piano = lambda_segment.LambdaSegments(
-        sb.with_only("melody_line2"),
-        fabric_staves = ("piano1","piano2"),
-        funcs = (
-            lambda x: x.crop_chords(above=(3,)).ops("note_events")(
-                0,"f")(),
-            lambda x: x.crop_chords(below=(3,)),
-            )
-        )
-    s.extend_from(
-        osti_chords_brass,
-        osti_chords_piano,
-        )
+
+    s.extend_from(osti_chords_brass,)
 
     s.fill_rests(beats=4*4)
     # # =======================================================
@@ -348,14 +352,35 @@ def score1(lib):
         dovetail_duration = 28,
         )
     piano_riff = lambda_segment.LambdaSegment(
-        riffs_block,
+        sb.with_only("riff"),
         fabric_staves=("piano1","piano2",),
-        # ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
-        # tag_events = {0:("THIS CLOUD SUCKS",)},
+        ranges=pitch_ranges.PitchRanges(pitch_ranges.RangeSeq().add_abstract(
+            0, pitch_ranges.TOP_RANGE,
+            ).add_abstract(
+            0.5, pitch_ranges.MID_RANGE,
+            ).add_abstract(
+            1, pitch_ranges.TOP_RANGE,
+            ),),
+        assign_pitches_from_selectable=True,
+        selectable_start_beat=12*4,
         tag_all_note_events = (".",),
         func = lambda x: x.crop("cells", 17),
         )
-    piano_riff.staves["piano2"].events[0].tag("treble")
+    piano_riff.staves["piano1"].note_events[-5:].transformed(
+        calliope.Transpose(interval=12))
+    piano_riff.staves["piano1"].note_events[28,29,30].transformed(
+        calliope.Transpose(interval=12))
+    piano_riff.staves["piano2"].note_events[6,7,8,9,10,11,
+        22,23,24,25,28,30,31,32,33,34,35,36,].transformed(
+        calliope.Transpose(interval=-12))
+    piano_riff.staves["piano1"].segments[0].eps(
+        0,48,"8va")(
+        5,55,"8va!")()
+    piano_riff.staves["piano2"].segments[0].t(-12).eps(
+        18, "bass",)(
+        40, "treble")()
+    # NOT NEEDED SINCE ALREADY TREBLE
+    # piano_riff.staves["piano2"].events[0].tag("treble")
     # ob_cl_dove_riff.transformed(calliope.SlurCells())
 
     s.extend_from(
@@ -403,11 +428,15 @@ def score1(lib):
     # # =======================================================
     s.fill_rests()
 
-    for st in s.staves:
-        st.segments[0].rehearsal_mark_number = 7
+    for staff in s.staves:
+        if segs := staff.segments:
+            main_seg = segs[0]
+            for next_seg in segs[1:]:
+                main_seg += next_seg
+            main_seg.rehearsal_mark_number = 7
+            main_seg.compress_full_bar_rests = True
 
     s.cells.apply(lambda x:x.auto_respell())
-    s.segments.setattrs(compress_full_bar_rests = True) 
 
     return s
 

@@ -124,8 +124,9 @@ normalStaff = {
         
         % \consists "Bar_number_engraver"
         \override BarNumber #'break-visibility = #'#(#f #t #t)
-        \override BarNumber #'font-size = #1.2
+        \override BarNumber #'font-size = #3
         \override BarNumber  #'stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
+        \override BarNumber #'Y-offset = #6
 
         \override RehearsalMark #'font-size = #6
         

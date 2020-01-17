@@ -174,6 +174,11 @@ class LibraryMaterial(object):
                 calliope.Label()(getattr(self, l))
         return self
 
+    def label(self, *args):
+        for l in args:
+            calliope.Label()(getattr(self, l))
+        return self
+
     def smart_ranges(self, ranges=( (0,12), ) ):
         return self.transformed( calliope.SmartRanges(smart_ranges=ranges) )
 
