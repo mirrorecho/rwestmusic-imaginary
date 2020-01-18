@@ -1,5 +1,5 @@
 import abjad, calliope
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.fabric import ImaginaryFabric, ImaginaryPhrase, ImaginaryCell
 from imaginary.fabrics import instrument_groups
 
 # TO DO... not the best name... (this is really for ANY simple copy)
@@ -10,8 +10,8 @@ class HitCells(ImaginaryFabric):
 
     def weave(self, staff, index=0, **kwargs):
         
-        my_phrase = calliope.Phrase(*[           
-            calliope.Cell(
+        my_phrase = ImaginaryPhrase(*[           
+            ImaginaryCell(
                 rhythm=(self.hit_duration, self.hit_duration-c.beats)
                 if c.beats > self.hit_duration 
                 else (self.hit_duration,)

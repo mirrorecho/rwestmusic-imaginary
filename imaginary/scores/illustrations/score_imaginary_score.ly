@@ -150,7 +150,7 @@
                     {
                         \set Staff.instrumentName = \markup { "Tenor Trombone" }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
-                        \set Staff.midiInstrument = #"trombone" 
+                        \set Staff.midiInstrument = #"french horn" 
                         \clef "bass"
                         r1
                     }
@@ -408,7 +408,7 @@
                     {
                         \set Staff.instrumentName = \markup { Trombone }
                         \set Staff.shortInstrumentName = \markup { Tbn. }
-                        \set Staff.midiInstrument = #"trombone" 
+                        \set Staff.midiInstrument = #"french horn" 
                         \clef "bass"
                         r1
                     }
@@ -439,6 +439,7 @@
                     {
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
+                        \set Staff.midiInstrument = #"orchestral harp" 
                         r1
                     }
                 }
@@ -451,6 +452,7 @@
                     {
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
+                        \set Staff.midiInstrument = #"orchestral harp" 
                         \clef "bass"
                         r1
                     }
@@ -467,6 +469,7 @@
                     {
                         \set Staff.instrumentName = \markup { Piano }
                         \set Staff.shortInstrumentName = \markup { Pf. }
+                        \set Staff.midiInstrument = #"acoustic grand" 
                         r1
                     }
                 }
@@ -479,6 +482,7 @@
                     {
                         \set Staff.instrumentName = \markup { Piano }
                         \set Staff.shortInstrumentName = \markup { Pf. }
+                        \set Staff.midiInstrument = #"acoustic grand" 
                         \clef "bass"
                         r1
                     }

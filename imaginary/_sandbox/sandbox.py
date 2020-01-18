@@ -4,6 +4,21 @@ from imaginary.stories.library_material import (
     )
 from imaginary.stories import library
 
+# FX OPTIONS:
+# GUITAR
+# - distorted
+# - distortion off
+# - "slight whammy bar bends"
+# - "spaced out, ambient, noise, no pitches"
+# - "distorted (octave lower"
+# MAYBE...?
+# -echo
+
+
+#CELLO
+# - distorted
+# - "seagul effect"
+
 
 drum_key = {
     2: "Snare Drum",

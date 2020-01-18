@@ -1,5 +1,5 @@
 import abjad, calliope
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.fabric import ImaginaryFabric, ImaginaryLine, ImaginaryPhrase, ImaginaryCell
 from imaginary.fabrics import instrument_groups
 
 class Osti(ImaginaryFabric):
@@ -8,9 +8,9 @@ class Osti(ImaginaryFabric):
     osti_cell_count = 2
 
     def weave(self, staff, index=0, **kwargs):
-        my_phrase = calliope.Phrase(
+        my_phrase = ImaginaryPhrase(
             *[
-            calliope.Cell(rhythm = [self.osti_pulse_duration]*self.osti_cell_length)
+            ImaginaryCell(rhythm = [self.osti_pulse_duration]*self.osti_cell_length)
             for i in range(self.osti_cell_count)
             ]
             

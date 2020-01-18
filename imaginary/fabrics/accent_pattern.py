@@ -1,5 +1,5 @@
 import abjad, calliope
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.fabric import ImaginaryFabric, ImaginaryPhrase, ImaginaryCell
 from imaginary.fabrics import instrument_groups
 
 class AccentPattern(ImaginaryFabric):
@@ -14,7 +14,7 @@ class AccentPattern(ImaginaryFabric):
         my_line = calliope.Line()
 
         for repeat in range(self.repeats):
-            my_phrase = calliope.Phrase()
+            my_phrase = ImaginaryPhrase()
 
             for i,p in enumerate( self.pattern):
                 my_accent = abjad.CyclicTuple(self.pattern_accent)[i]
@@ -39,7 +39,7 @@ class AccentPattern(ImaginaryFabric):
                             my_rhythm.append(self.pulse_duration)
                     else:
                         my_rhythm = [[self.pulse_duration,0-self.pulse_duration][pj%2] for pj in range(p)]
-                my_cell = calliope.Cell(rhythm=my_rhythm)
+                my_cell = ImaginaryCell(rhythm=my_rhythm)
                 if my_accent:
                     my_cell.note_events[0].tag(">")
                 my_phrase.append(my_cell)

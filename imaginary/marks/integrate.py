@@ -2,7 +2,7 @@ import abjad, calliope
 
 from imaginary.stories import short_block
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
-    riff, chords)
+    riff, chords, drum)
 from imaginary.fabrics import (instrument_groups, 
     dovetail, driving_off, hit_cells, 
     hits, lick, melody, osti, pad, 
@@ -299,24 +299,38 @@ def block1(lib):
         ],
         )
 
+    sb.fill_rests(beats=15*4)
+    sb.ext_segments(
+            chords = [drone.DroneLine(
+                line_pitches=( (-2,0), ),
+                phrase_rhythm = (8,),
+                phrase_count = 1,
+                ),]
+        )
     sb.fill_rests()
     return sb
 
 
 def block2(lib):
     sb = short_block.get_block().ext_segments(
-        melody_line1 = lib("home_a_b").t(10).sc(0.5).move_t().bookend_pad(12),
-        counter_line = lib("counter_long_imod").t(3).sc(0.5).bookend_pad(44),
+        melody_line1 = lib("home_a_b").t(10).sc(0.5).move_t().bookend_pad(4),
+        counter_line = lib("counter_long_imod").t(3).sc(0.5).bookend_pad(36),
         # mid_drones = [drone.DroneLine(
         #         line_pitches=(10,),
         #         phrase_rhythm = (4*18,),
         #         phrase_count = 1,
         #         ).bookend_pad(4)],
-        bass_drones = [drone.DroneLine(
-                line_pitches=(-9,),
-                phrase_rhythm = (4*10,),
+        bass_drones = [
+            drone.DroneLine(
+                line_pitches= ((-9,2),),
+                phrase_rhythm = (4,),
                 phrase_count = 1,
-                ).bookend_pad(4),
+                ),
+            drone.DroneLine(
+                line_pitches=(-9,),
+                phrase_rhythm = (4*8,),
+                phrase_count = 1,
+                ),
             drone.DroneLine(
                 line_pitches=( (-22,-9), ),
                 phrase_rhythm = (8*4,),
@@ -483,14 +497,14 @@ def block9(lib):
 
 def score_short(lib):
     b = short_block.get_block()
-    # b.extend_from(lib["integrate_block0"])
+    b.extend_from(lib["integrate_block0"])
     # b.extend_from(lib["integrate_block1"])
     # b.extend_from(lib["integrate_block2"])
     # b.extend_from(lib["integrate_block3"])
     # b.extend_from(lib["integrate_block4"])
     # b.extend_from(lib["integrate_block5"]) 
     # b.extend_from(lib["integrate_block6"])
-    b.extend_from(lib["integrate_block7"])
+    # b.extend_from(lib["integrate_block7"])
     # b.extend_from(lib["integrate_block8"])
     # b.extend_from(lib["integrate_block9"])
 
@@ -512,6 +526,7 @@ def to_lib(lib):
         counter.to_lib(lib)
         bass.to_lib(lib)
         riff.to_lib(lib)
+        drum.to_lib(lib)
         # TO DO: should use intropection to avoid
         lib.add(
             opening, opening_b, opening_b_fifths, opening_counter_b,
@@ -527,7 +542,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate_score_short"], 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         # open_pdf=False,
         )
 

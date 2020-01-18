@@ -1,5 +1,5 @@
 import abjad, calliope
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.fabric import ImaginaryFabric, ImaginaryLine, ImaginaryPhrase, ImaginaryCell
 from imaginary.fabrics import instrument_groups
 
 class PulseOnOffBeat(ImaginaryFabric):
@@ -8,16 +8,16 @@ class PulseOnOffBeat(ImaginaryFabric):
     phrase_beats = (4,) * 4
 
     def weave(self, staff, index=0, **kwargs):
-        my_line = calliope.Line()
+        my_line = ImaginaryLine()
 
         for pb in self.phrase_beats:
             if self.pulse_on_count > 0:
-                cell_on = calliope.Cell(
+                cell_on = ImaginaryCell(
                     rhythm = [self.pulse_duration for i in range(self.pulse_on_count-1)
                     ] + [self.pulse_duration / 2]
                     )
             else:
-                cell_on = calliope.Cell(rhythm=(0-self.pulse_duration/2,))
+                cell_on = ImaginaryCell(rhythm=(0-self.pulse_duration/2,))
             
             beats_remaining = pb - cell_on.beats
             cell_off_rhythm = []
@@ -27,9 +27,9 @@ class PulseOnOffBeat(ImaginaryFabric):
                 beats_remaining -= self.pulse_duration
 
             cell_off_rhythm.append(1.5*self.pulse_duration)
-            cell_off = calliope.Cell(rhythm=cell_off_rhythm)
+            cell_off = ImaginaryCell(rhythm=cell_off_rhythm)
 
-            my_line.append(calliope.Phrase(cell_on, cell_off))
+            my_line.append(ImaginaryPhrase(cell_on, cell_off))
 
         return my_line
 

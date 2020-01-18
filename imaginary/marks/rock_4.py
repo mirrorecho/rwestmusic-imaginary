@@ -230,7 +230,7 @@ def score4(lib):
         dove_count=3,
         selectable_start_beat=6*4,
         dovetail_duration = 8*4,
-        after_func = lambda x: x.fuse().slur_cells().ops("note_events")(
+        after_func = lambda x: x.slur_cells().ops("note_events")(
             0,"mf")()
         )
     
@@ -254,6 +254,22 @@ def score4(lib):
             ).fuse()))
         )
     s.extend_from(counter_line)
+
+
+    s.fill_rests(beats=11*4)
+
+
+    bass_to_end = lambda_segment.LambdaSegment(
+        sb.with_only("bass_drones"),
+        fabric_staves = ("cco_bass",),
+        func = lambda x: x.crop("cells", 22, 1).crop_chords(below=(1,)).eps(
+            0,"p","\\<")(
+            6, "mf")(
+            22, "p")(
+            29, "\\<")(
+            36, "ff", beats=4)()
+        )
+    s.extend_from(bass_to_end)
 
 
     s.fill_rests(beats=14*4)
@@ -293,14 +309,126 @@ def score4(lib):
             else:
                 n.tag(")")
     s.extend_from(cloud_27_28, extend_last_machine=True)
+    
+    hit_staves = s.unused_staves_at_beat(14*4)
+    hit_mask_staves = ("ooa_mallets", "ooa_drum_set",
+            "ooa_guitar", "ooa_bass_guitar", "cco_percussion",
+            "piano1", "piano2", "harp1", "harp2")
+    opening_hit = hits.Hits(
+        sb,
+        fabric_staves = hit_staves,
+        mask_staves=hit_mask_staves,
+        ranges=pitch_ranges.BOTTOM_RANGES,
+        selectable_start_beat = 14*4,
+        hits_spacing = (4,),
+        hit_duration = 1,
+        tag_all_note_events = (">","."),
+    )    
+    then_swell_hit = swell_hit.SwellHit(
+        sb,
+        fabric_staves = hit_staves,
+        mask_staves=hit_mask_staves,
+        ranges=pitch_ranges.MID_TO_HIGHISH_RANGES,
+        selectable_start_beat = 15*4,
+        low_dynamic = "p",
+        hit_dynamic = "f",
+        swell_duration = 7.5,
+        hit_duration = 0.5,
+        hit_rest = 0,
+        hit_articulations = (".",">")
+    )
+
+    s.extend_from(opening_hit, then_swell_hit)
+
     s.fill_rests(beats=17*4)
     # =======================================================
+    dove_riff2 = dovetail.Dovetail(
+        sb.with_only("riff", "counter_line",),
+        fabric_staves=(
+            "ooa_tenor_sax", "ooa_clarinet", 
+            "ooa_bari_sax","ooa_bassoon",
+            "ooa_alto_sax1", "ooa_alto_sax2",
+            "ooa_flute",
+            ),
+        ranges=pitch_ranges.HIGHISH_RANGES,
+        dove_count=3,
+        selectable_start_beat=17*4,
+        dovetail_duration = 4.5*4,
+        after_func = lambda x: x.slur_cells().ops("note_events")(
+            0,"mf")()
+        )
+    counter_line2 = lambda_segment.LambdaSegment(
+        sb.with_only("counter_line",),
+        assign_pitches_from_selectable=True,
+        selectable_start_beat=17*4,
+        ranges = pitch_ranges.HIGHISH_TO_LOW_RANGES,
+        fabric_staves = instrument_groups.get_instruments("cco_winds", "cco_brass"),
+        mask_staves=("cco_flute1","cco_flute2"),
+        func = lambda x: cresc(bass_artics(
+            x.with_only("cells",*list(range(10,18))
+            ).transformed(calliope.StandardDurations()))),
+        )
+    counter_line_mallets = lambda_segment.LambdaSegment(
+        sb.with_only("counter_line",),
+        fabric_staves = ("ooa_mallets",),
+        # bookend_beats=(0,2),
+        func = lambda x: x.with_only("cells", *list(range(10,18))
+            ).eps(1,"f")(),
+        )
+    piano_osti2 = lambda_segment.LambdaSegment(
+        sb.with_only("melody_line2",),
+        fabric_staves=("piano1","piano2"),
+        func = lambda x: x.with_only("cells",*list(range(8,12))),
+        funcs = (
+            lambda x: x,
+            lambda x: x.t(-12).eps(
+                0,"bass")(
+                5, "treble")(),
+            ),
+        bookend_beats=(0,1),
+        )
+    
+    brass_osti2 = lambda_segment.LambdaSegment(
+        sb.with_only("melody_line2",),
+        fabric_staves=instrument_groups.get_instruments("ooa_brass"),
+        selectable_start_beat=17*4,
+        assign_pitches_from_selectable=True,
+        ranges=pitch_ranges.LOWISH_TO_HIGH_RANGES,
+        bookend_beats=(0,1),
+        func = lambda x: x.with_only("cells", *list(range(8,12))).eps(
+            0,"p","\\<")(
+            10,"mf")(
+            0,1,5,7,9,"-")(
+            2,6,10,".")()
+        )
+
+
+    s.extend_from(dove_riff2, counter_line2, piano_osti2, 
+        brass_osti2, counter_line_mallets)
 
 
     s.fill_rests(beats=22*4)
-    # =======================================================
-    # BARS 23+
-    # =======================================================
+    # # =======================================================
+    # # BARS 23+
+    # # =======================================================
+    # END FULL PADS:
+    mallet_rolls = pad.Pad(
+        sb.with_only("high_drones"),
+        ranges = pitch_ranges.TOP_RANGES,
+        selectable_start_beat=22*4,
+        fabric_staves=("ooa_mallets",),
+        pad_durations=(4,)*8,
+        tag_all_note_events=(":32",),
+        after_func = lambda x: x.eps(
+            0, "p")(
+            4, "\\<")(
+            8, "ff")()
+        )
+
+    s.extend_from(mallet_rolls)
+
+    # END CLOUD:
+
     cloud_37_39 = lambda_segment.LambdaSegment(
         lib("rock_grid_g4_c37_39"),
         fabric_staves = (
@@ -308,35 +436,55 @@ def score4(lib):
             "cco_clarinet1", "cco_clarinet2", "cco_viola"),
         # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
         # tag_all_note_events = ("-",),
-        func = lambda x: x.bookend_pad(3),
+        func = lambda x: cresc(x.fuse(),"p","mf").bookend_pad(3),
+        funcs = (
+            lambda x: x.slur_cells(),
+            lambda x: x.eps(
+                1,3,6,8,10,13,"(")(
+                2,5,7,9,11,14,")")(),
+            lambda x: x.eps(
+                1,4,9,11,13,"(")(
+                3,6,10,12,14,")")(),
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x.eps(
+                1,5,8,11,13,"(")(
+                3,7,9,12,14,")")(),
+            )
         )
-    for staff in cloud_37_39.staves:
-        staff.transformed(artics.FuseRepeatedNotes())
+    
     cloud_38_40 = lambda_segment.LambdaSegment(
         lib("rock_grid_g4_c38_40"),
         fabric_staves = (
             "ooa_bari_sax", "ooa_bassoon", "ooa_cello1", 
             "ooa_cello2", "cco_bassoon", "cco_cello"),
-        # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
-        # tag_all_note_events = ("-",),
-        func = lambda x: x.bookend_pad(6),
+        func = lambda x: cresc(x.fuse(),"mp", "mf").bookend_pad(6),
+        funcs = (
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x,
+            lambda x: x,
+            lambda x: x.slur_cells(),
+            lambda x: x,
+            )
         )
-    for staff in cloud_38_40.staves:
-        staff.transformed(artics.FuseRepeatedNotes())
 
     cloud_39_41 = lambda_segment.LambdaSegment(
         lib("rock_grid_g4_c39_41"),
         fabric_staves = (
             "cco_flute1", "cco_flute2", "cco_oboe1", "cco_oboe2", 
             "cco_violin_i", "cco_violin_ii"),
-        # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
-        # tag_all_note_events = ("-",),
-        func = lambda x: x.bookend_pad(9),
+        func = lambda x: cresc(x.fuse(),"mp", "f").bookend_pad(9),
+        funcs = (
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x,
+            lambda x: x,
+            )
         )
-    for staff in cloud_39_41.staves:
-        staff.transformed(artics.FuseRepeatedNotes())
-
-    s.extend_from(cloud_37_39,cloud_38_40,cloud_39_41)
+    s.extend_from(cloud_37_39,cloud_38_40,cloud_39_41, extend_last_machine=True)
     s.fill_rests(beats=25*4)
 
     cloud_40_42 = lambda_segment.LambdaSegment(
@@ -344,13 +492,17 @@ def score4(lib):
         fabric_staves = (
             "ooa_trombone","ooa_violin1","ooa_violin2",
                 "cco_horn","cco_trombone","cco_viola"),
-        # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
-        # tag_all_note_events = ("-",),
-        func = lambda x: x,
+        func = lambda x: cresc(x.fuse(),"mp", "f"),
+        funcs = (
+            lambda x: x.slur_cells(),
+            lambda x: x,
+            lambda x: x,
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x,
+            )
         )
-    for staff in cloud_40_42.staves:
-        staff.transformed(artics.FuseRepeatedNotes())
-    s.extend_from(cloud_40_42,)
+    s.extend_from(cloud_40_42, extend_last_machine=True)
     s.fill_rests(beats=25*4 + 3)
 
     cloud_41_43 = lambda_segment.LambdaSegment(
@@ -358,14 +510,17 @@ def score4(lib):
         fabric_staves = (
             "ooa_clarinet", "cco_clarinet1","cco_clarinet2",
                 "ooa_cello1", "ooa_cello2", "cco_cello"),
-        # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
-        # tag_all_note_events = ("-",),
-        func = lambda x: x,
+        func = lambda x: cresc(x.fuse(),"mf", "f"),
+        funcs = (
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x.slur_cells(),
+            lambda x: x,
+            lambda x: x,
+            lambda x: x,
+            )
         )
-    for staff in cloud_41_43.staves:
-        staff.transformed(artics.FuseRepeatedNotes())
-    s.extend_from(cloud_41_43, 
-        extend_last_machine=True,)
+    s.extend_from(cloud_41_43, extend_last_machine=True,)
     s.fill_rests(beats=26*4 + 2)
 
     cloud_42_45 = lambda_segment.LambdaSegment(
@@ -373,12 +528,9 @@ def score4(lib):
         fabric_staves = (
                 "ooa_alto_sax1","ooa_alto_sax2","ooa_tenor_sax","ooa_bari_sax",
                 "ooa_bassoon","cco_bassoon",),
-        func = lambda x: x,
+        func = lambda x: cresc(x.fuse(),"mf", "ff").slur_cells(),
         )
-    for staff in cloud_42_45.staves:
-        staff.transformed(artics.FuseRepeatedNotes())
-    s.extend_from(cloud_42_45, 
-        extend_last_machine=True,)
+    s.extend_from(cloud_42_45, extend_last_machine=True,)
     s.fill_rests(beats=27*4 + 1)
 
     cloud_43_45 = lambda_segment.LambdaSegment(
@@ -386,19 +538,24 @@ def score4(lib):
         fabric_staves = (
                 "ooa_flute","ooa_horn","ooa_trumpet",
                 "cco_oboe1","cco_oboe2","cco_trumpet"),
-        func = lambda x: x,
+        func = lambda x: cresc(x.fuse(),"mf", "ff").slur_cells(),
         )
-    for staff in cloud_43_45.staves:
-        staff.transformed(artics.FuseRepeatedNotes())
     s.extend_from(cloud_43_45, 
         extend_last_machine=True,)
+
+
 
     s.fill_rests(beats=30*4)
 
     # =======================================================
 
+    # adjust for bass 8va
+    for bass_seg in s.staves["cco_bass"].segments:
+        bass_seg.transformed(calliope.Transpose(interval=12))
+
     s.fill_rests()
     # s.remove(s.staff_groups["short_score"])
+    # s.only_staves("harp1", "harp2", "piano1", "piano2")
 
     s.lines.apply(lambda x:x.auto_respell())
     s.phrases.apply(lambda x:x.auto_respell())
@@ -406,6 +563,8 @@ def score4(lib):
     for staff in s.staves:
         # staff.phrases.transformed(calliope.Label())
         # staff.lines.transformed(calliope.Label())
+
+        # TO DO: WHY DOESN'T THIS WORK?????
         if segs := staff.segments:
             main_seg = segs[0]
             # for next_seg in segs[1:]:

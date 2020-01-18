@@ -1,6 +1,8 @@
 import abjad
 import calliope
 
+from imaginary.stories.library_material import ImaginarySegment, ImaginaryLine
+
 from imaginary.libraries import _settings as settings
 
 
@@ -173,11 +175,11 @@ class ImaginaryScore(calliope.Score):
                 clef="bass"
                 midi_instrument = "french horn"
 
-        class CcoPercussion(calliope.RhythmicStaff): 
+        class CcoPercussion(calliope.Staff): 
                 instrument=abjad.Instrument(
                     name="Percussion", short_name="perc.")
                 midi_instrument = "woodblock"
-                clef = "percussion"
+                # clef = "percussion"
 
         class CcoHarp(calliope.Harp): pass
             # instrument=abjad.Piano(
@@ -206,6 +208,7 @@ class ImaginaryScore(calliope.Score):
                 instrument=abjad.Viola(
                     name="Viola", short_name="vla.")
                 midi_instrument = "string ensemble 1"
+                clef = "alto"
 
             class CcoCello(calliope.Staff):
                 instrument=abjad.Cello(
@@ -314,7 +317,12 @@ class ImaginaryScore(calliope.Score):
         beats = beats or max(staves_beats)
         for staff, staff_beats in zip(my_staves, staves_beats):
             if staff_beats < beats:
-                staff.append( calliope.Segment(rhythm=(staff_beats-beats,)) )
+                if staff.segments:
+                    staff.segments[-1].append(
+                        ImaginaryLine(rhythm=(staff_beats-beats,))
+                        )
+                else:
+                    staff.append( ImaginarySegment( ImaginaryLine(rhythm=(staff_beats-beats,)) ) )
        
     # TO DO: move this would be helpful for any selectable in calliope!
     def remove_empty(self, rests_count=False):
@@ -322,6 +330,14 @@ class ImaginaryScore(calliope.Score):
             if len(staff)==0 or ( not rests_count and sum([n.ticks for n in staff.note_events]) == 0): 
                 staff.parent.remove(staff)
         return self
+
+    def as_rhythm_and_short(self):
+        self.stylesheets += (settings.IMAGINARY_PATH + "/scores/stylesheets/rhythm_and_short_score.ily",)
+        self.only_staves(
+            "ooa_mallets", "ooa_drum_set", "ooa_guitar","ooa_bass_guitar",
+            "cco_percussion","harp1","harp2","piano1","piano2",
+            *[st.name for st in self["short_score"].staves],
+            )
 
     def extend_from(self, *args, **kwargs):
         for st in self.staves:
@@ -336,6 +352,10 @@ class ImaginaryScore(calliope.Score):
         if kwargs.get("fill_rests", False):
             self.fill_rests(beats=kwargs.get("fill_rests_beats", None), **kwargs)
         return self
+
+    def unused_staves_at_beat(self, beats):
+        return [st.name for st in self.staves if 
+            sum([seg.beats for seg in st.segments])<=beats]
 
     def assign_pitches(self, 
         selectable=None, 

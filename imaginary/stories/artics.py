@@ -29,3 +29,22 @@ if __name__ == '__main__':
 
 
 
+
+
+class GroupByBeats(calliope.Transform):
+    group_type = calliope.Cell
+    beat_count = 8
+
+    def transform(self, selectable, **kwargs):
+        # TO DO: this could be more elegant!
+        my_group = self.group_type()
+        beat_counter = 0
+        for e in list(selectable.events):
+            my_group.append(e)
+            beat_counter += e.beats
+            if beat_counter >= self.beat_count:
+                selectable.append(my_group)
+                my_group = self.group_type()
+                beat_counter = 0
+
+        selectable.append(my_group)

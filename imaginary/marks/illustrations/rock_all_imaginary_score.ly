@@ -616,6 +616,164 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e''4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e''1
+                        \p
+                        ~
+                        \<
+                        e''2
+                        ~
+                        e''4
+                        ~
+                        e''8
+                        [
+                        fs''8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        fs''8
+                        \mf
+                        [
+                        (
+                        cs''8
+                        ]
+                        d''8
+                        [
+                        d''8
+                        ]
+                        e''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e''8
+                        [
+                        (
+                        d''8
+                        ]
+                        e''8
+                        [
+                        fs''8
+                        ]
+                        fs''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d''8
+                        [
+                        (
+                        e''8
+                        ]
+                        fs''8
+                        [
+                        e''8
+                        ]
+                        g''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        c''8
+                        [
+                        f''8
+                        ]
+                        gf''8
+                        [
+                        df''8
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        ]
+                        f''8
+                        [
+                        gf''8
+                        ]
+                        c'''8
+                        [
+                        af''8
+                        ]
+                        bf''8
+                        [
+                        c'''8
+                        ~
+                        ]
+                        c'''4
+                        gf'''8
+                        [
+                        af'''8
+                        ]
+                        bf'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
                 }
                 \context Staff = "ooa_clarinet"
                 \with
@@ -1232,6 +1390,273 @@
                         -\staccato
                         -\accent
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a'8
+                        \mf
+                        [
+                        (
+                        bf'8
+                        ]
+                        c''8
+                        [
+                        d''8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        a'8
+                        ]
+                        a'8
+                        [
+                        bf'8
+                        ]
+                        c''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        e'8
+                        ]
+                        d'8
+                        [
+                        b'8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        g'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a'1
+                        \p
+                        ~
+                        \<
+                        a'2
+                        ~
+                        a'4
+                        ~
+                        a'8
+                        [
+                        fs'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        e''8
+                        \mf
+                        [
+                        (
+                        fs''8
+                        ]
+                        e''8
+                        [
+                        cs''8
+                        ]
+                        b'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        fs'8
+                        [
+                        (
+                        e'8
+                        ]
+                        g'8
+                        [
+                        d'8
+                        ]
+                        fs'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        g'8
+                        [
+                        (
+                        e'8
+                        ]
+                        b'8
+                        [
+                        fs'8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        af4
+                        df'8
+                        [
+                        b8
+                        ]
+                        ef'8
+                        [
+                        f'8
+                        ~
+                        ]
+                        f'8
+                        [
+                        gf'8
+                        ]
+                        b8
+                        [
+                        df'8
+                        ~
+                        ]
+                        df'8
+                        [
+                        f'8
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        bf'4
+                        af'8
+                        [
+                        gf'8
+                        ]
+                        f'8
+                        [
+                        ef'8
+                        ~
+                        ]
+                        ef'8
+                        [
+                        gf8
+                        ]
+                        af8
+                        [
+                        f8
+                        ]
+                        gf8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf4
+                        ef'8
+                        [
+                        af'8
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
                 }
                 \context Staff = "ooa_alto_sax1"
                 \with
@@ -1820,6 +2245,271 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a8
+                        \mf
+                        [
+                        (
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        a'8
+                        ]
+                        a'8
+                        [
+                        bf'8
+                        ]
+                        c'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        c'8
+                        ]
+                        e'8
+                        [
+                        b8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e'8
+                        [
+                        (
+                        a'8
+                        ]
+                        f'8
+                        [
+                        c'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        a8
+                        ]
+                        g8
+                        [
+                        e'8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        gs'8
+                        [
+                        (
+                        a'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        e'8
+                        ]
+                        )
+                        d'8
+                        [
+                        (
+                        e'8
+                        ]
+                        )
+                        ds'8
+                        [
+                        (
+                        as8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        b8
+                        \mf
+                        [
+                        (
+                        d'8
+                        ]
+                        fs'8
+                        [
+                        cs'8
+                        ]
+                        g8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        fs8
+                        [
+                        (
+                        cs'8
+                        ]
+                        g8
+                        [
+                        b8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        g'8
+                        [
+                        (
+                        d'8
+                        ]
+                        e'8
+                        [
+                        fs'8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ef'8
+                        [
+                        af8
+                        ]
+                        bf8
+                        [
+                        df'8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ~
+                        ]
+                        f4
+                        gf4
+                        ef8
+                        [
+                        f8
+                        ~
+                        ]
+                        f8
+                        [
+                        gf8
+                        ]
+                        df'8
+                        [
+                        ef'8
+                        ]
+                        gf'8
+                        [
+                        f'8
+                        ]
+                        c''8
+                        [
+                        f''8
+                        ]
+                        gf''8
+                        [
+                        af''8
+                        ]
+                        g''8
+                        [
+                        f''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
                 }
                 \context Staff = "ooa_alto_sax2"
                 \with
@@ -2407,6 +3097,248 @@
                         \f
                         -\accent
                         ]
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        a8
+                        \mf
+                        [
+                        (
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c'8
+                        [
+                        (
+                        d'8
+                        ]
+                        a8
+                        [
+                        bf8
+                        ]
+                        c'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        e'8
+                        [
+                        b8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        g'8
+                        ]
+                        d'8
+                        [
+                        b8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        e'8
+                        [
+                        (
+                        g'8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        a'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        bf'8
+                        [
+                        (
+                        gf'8
+                        ]
+                        )
+                        d'8
+                        [
+                        (
+                        b8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        gf'8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        b8
+                        \mf
+                        [
+                        (
+                        g8
+                        ]
+                        fs8
+                        [
+                        d'8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        fs'8
+                        [
+                        (
+                        fs'8
+                        ]
+                        g'8
+                        [
+                        fs'8
+                        ]
+                        d'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a8
+                        [
+                        (
+                        g8
+                        ]
+                        e8
+                        [
+                        g8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        g'8
+                        [
+                        ef'8
+                        ]
+                        df'8
+                        [
+                        c'8
+                        ]
+                        ef'4
+                        c'4
+                        gf'8
+                        [
+                        df'8
+                        ]
+                        g4
+                        f8
+                        [
+                        gf8
+                        ]
+                        af4
+                        gf8
+                        [
+                        d'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        df''8
+                        [
+                        af'8
+                        ]
+                        bf'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -2999,6 +3931,254 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        a8
+                        \mf
+                        [
+                        (
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c'8
+                        [
+                        (
+                        d'8
+                        ]
+                        f'8
+                        [
+                        a8
+                        ]
+                        f8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e8
+                        [
+                        (
+                        a8
+                        ]
+                        f8
+                        [
+                        c'8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        a8
+                        ]
+                        c'8
+                        [
+                        e'8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a8
+                        [
+                        (
+                        c'8
+                        ]
+                        e'8
+                        [
+                        g8
+                        ]
+                        a8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        af8
+                        [
+                        (
+                        c'8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        af8
+                        ]
+                        )
+                        c'8
+                        [
+                        (
+                        af8
+                        ]
+                        )
+                        gf8
+                        [
+                        (
+                        df8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        gf8
+                        ]
+                        )
+                        a8
+                        [
+                        (
+                        bf8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        fs8
+                        \mf
+                        [
+                        (
+                        b8
+                        ]
+                        g8
+                        [
+                        d8
+                        ]
+                        b,8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        g8
+                        [
+                        (
+                        b8
+                        ]
+                        d'8
+                        [
+                        fs8
+                        ]
+                        fs8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        g8
+                        [
+                        (
+                        d8
+                        ]
+                        fs8
+                        [
+                        cs8
+                        ]
+                        g8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        bf8
+                        [
+                        b8
+                        ]
+                        af4
+                        b8
+                        [
+                        bf8
+                        ]
+                        f4
+                        b,8
+                        [
+                        df8
+                        ]
+                        af8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf8
+                        [
+                        df'8
+                        ]
+                        af8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf4
+                        c'4
+                        df'8
+                        [
+                        ef'8
+                        ]
+                        f'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
                 }
                 \context Staff = "ooa_bari_sax"
                 \with
@@ -3582,6 +4762,295 @@
                         -\staccato
                         -\accent
                         ]
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        a8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        c8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        f,8
+                        -\tenuto
+                        ]
+                        e,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        r8
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        f,8
+                        -\tenuto
+                        ]
+                        e,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        \f
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        af,8
+                        [
+                        (
+                        c8
+                        ]
+                        )
+                        g,8
+                        [
+                        (
+                        af,8
+                        ]
+                        )
+                        g,8
+                        [
+                        (
+                        af,8
+                        ]
+                        )
+                        df8
+                        [
+                        (
+                        bf,8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        ef8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        b,8
+                        \mf
+                        [
+                        (
+                        d8
+                        ]
+                        fs8
+                        [
+                        cs8
+                        ]
+                        e8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        fs8
+                        [
+                        (
+                        fs8
+                        ]
+                        g8
+                        [
+                        cs8
+                        ]
+                        d8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a,8
+                        [
+                        (
+                        g,8
+                        ]
+                        e,8
+                        [
+                        g,8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        f8
+                        [
+                        gf8
+                        ]
+                        af4
+                        ~
+                        af8
+                        [
+                        f8
+                        ]
+                        ef4
+                        df8
+                        [
+                        gf,8
+                        ~
+                        ]
+                        gf,8
+                        [
+                        bf,8
+                        ]
+                        c8
+                        [
+                        af8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ]
+                        af8
+                        [
+                        c'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        bf8
+                        [
+                        gf8
+                        ]
+                        df8
+                        [
+                        ef8
+                        ~
+                        ]
+                        ef8
+                        [
+                        d8
+                        ]
+                        a,4
+                        ef,8
+                        [
+                        f,8
+                        ]
+                        ef,4
+                        d,8
+                        [
+                        ef,8
+                        ]
+                        f,8
+                        [
+                        g,8
+                        ]
+                        df8
+                        [
+                        f8
+                        ]
+                        g4
+                        bf8
+                        [
+                        f8
+                        ]
+                        d4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -4198,6 +5667,332 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        a8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a8
+                        -\tenuto
+                        [
+                        c'8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        f,8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        r8
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        d,8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        \f
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a8
+                        [
+                        (
+                        f8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        d8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        a,8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        c8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        e,8
+                        ]
+                        )
+                        gs8
+                        [
+                        (
+                        c8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        a,8
+                        ]
+                        )
+                        d8
+                        [
+                        (
+                        gs,8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        as,8
+                        ]
+                        )
+                        d,8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        cs8
+                        [
+                        (
+                        cs,8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        fs8
+                        \mf
+                        [
+                        (
+                        b8
+                        ]
+                        g8
+                        [
+                        d8
+                        ]
+                        b,8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        g8
+                        [
+                        (
+                        b8
+                        ]
+                        d'8
+                        [
+                        fs8
+                        ]
+                        fs8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        g8
+                        [
+                        (
+                        d8
+                        ]
+                        fs8
+                        [
+                        cs8
+                        ]
+                        g8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        gs8
+                        [
+                        a8
+                        ]
+                        b,8
+                        [
+                        as,8
+                        ]
+                        e8
+                        [
+                        cs8
+                        ]
+                        gs,8
+                        [
+                        as,8
+                        ]
+                        b,4
+                        as,8
+                        [
+                        gs,8
+                        ~
+                        ]
+                        gs,8
+                        [
+                        a,8
+                        ]
+                        b,8
+                        [
+                        c8
+                        ]
+                        e8
+                        [
+                        ds8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        g8
+                        [
+                        e8
+                        ]
+                        f4
+                        b,8
+                        [
+                        g,8
+                        ]
+                        d,4
+                        ef,8
+                        [
+                        bf,8
+                        ]
+                        c8
+                        [
+                        d8
+                        ~
+                        ]
+                        d8
+                        [
+                        bf,8
+                        ]
+                        c4
+                        bf,8
+                        [
+                        a,8
+                        ]
+                        a4
+                        bf8
+                        [
+                        c'8
+                        ]
+                        bf8
+                        [
+                        c'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
                 }
             >>
             \context StaffGroup = "ooa_brass"
@@ -4620,6 +6415,209 @@
                             \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        c4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        c8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        c8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f8
+                        [
+                        f8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        f4
+                        -\tenuto
+                        r8
+                        [
+                        a8
+                        -\tenuto
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        \mf
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a,4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        g1
+                        \p
+                        ~
+                        \<
+                        g2
+                        ~
+                        g4
+                        ~
+                        g8
+                        [
+                        d8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        d8
+                        [
+                        e8
+                        -\tenuto
+                        ~
+                        ]
+                        e8
+                        [
+                        d8
+                        -\staccato
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d8
+                        -\staccato
+                        ]
+                        e4
+                        -\tenuto
+                        r8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d'8
+                        \mf
+                        -\staccato
+                        ]
+                        e'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f8
+                        [
+                        a8
+                        ]
+                        ef'8
+                        [
+                        f'8
+                        ]
+                        ef'8
+                        [
+                        d'8
+                        ~
+                        ]
+                        d'8
+                        [
+                        ef'8
+                        ]
+                        f'8
+                        [
+                        g'8
+                        ]
+                        bf'8
+                        [
+                        a'8
+                        ]
+                        g'4
+                        bf'8
+                        [
+                        ef''8
+                        ]
+                        f''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -5051,6 +7049,228 @@
                             R1 * 3
                         }
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 2
+                        }
+                        r2
+                        ef''2
+                        \f
+                        ^ \markup { solo }
+                        bf'2
+                        ~
+                        (
+                        bf'8
+                        [
+                        d''8
+                        ~
+                        ]
+                        d''4
+                        )
+                        f''2
+                        bf'2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        g'4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        g'8
+                        [
+                        c''8
+                        -\tenuto
+                        ~
+                        ]
+                        c''8
+                        [
+                        g'8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        bf'8
+                        -\tenuto
+                        ~
+                        ]
+                        bf'8
+                        [
+                        a'8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        c''4
+                        -\tenuto
+                        r8
+                        [
+                        f''8
+                        -\tenuto
+                        ~
+                        ]
+                        f''8
+                        [
+                        e''8
+                        \mf
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        f'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        g'1
+                        \p
+                        ~
+                        \<
+                        g'2
+                        ~
+                        g'4
+                        ~
+                        g'8
+                        [
+                        ef'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e'4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        e'8
+                        [
+                        a'8
+                        -\tenuto
+                        ~
+                        ]
+                        a'8
+                        [
+                        e'8
+                        -\staccato
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        fs'8
+                        -\staccato
+                        ]
+                        a'4
+                        -\tenuto
+                        r8
+                        [
+                        g'8
+                        -\tenuto
+                        ~
+                        ]
+                        g'8
+                        [
+                        fs'8
+                        \mf
+                        -\staccato
+                        ]
+                        a'4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f'4
+                        gf'4
+                        af'8
+                        [
+                        bf'8
+                        ~
+                        ]
+                        bf'8
+                        [
+                        gf'8
+                        ]
+                        af'8
+                        [
+                        c''8
+                        ]
+                        df''8
+                        [
+                        f''8
+                        ]
+                        c''4
+                        bf'8
+                        [
+                        f''8
+                        ]
+                        bf''8
+                        [
+                        c'''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
                 }
                 \context Staff = "ooa_trombone"
                 \with
@@ -5414,6 +7634,290 @@
                             \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        f4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        f8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        f8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        g4
+                        -\tenuto
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        \mf
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        a8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a8
+                        -\tenuto
+                        [
+                        c'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a8
+                        -\tenuto
+                        [
+                        f8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        r8
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        g,8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        g,8
+                        \f
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        bf,4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d1
+                        \p
+                        ~
+                        \<
+                        d2
+                        ~
+                        d4
+                        ~
+                        d8
+                        [
+                        b8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        d8
+                        [
+                        e8
+                        -\tenuto
+                        ~
+                        ]
+                        e8
+                        [
+                        d8
+                        -\staccato
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d8
+                        -\staccato
+                        ]
+                        e4
+                        -\tenuto
+                        r8
+                        [
+                        d8
+                        -\tenuto
+                        ~
+                        ]
+                        d8
+                        [
+                        d8
+                        \mf
+                        -\staccato
+                        ]
+                        e4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c8
+                        [
+                        e8
+                        ]
+                        b8
+                        [
+                        gs8
+                        ]
+                        e8
+                        [
+                        gs8
+                        ]
+                        d4
+                        e8
+                        [
+                        fs8
+                        ]
+                        cs'8
+                        [
+                        d'8
+                        ]
+                        ds'8
+                        [
+                        e'8
+                        ]
+                        as8
+                        [
+                        gs8
+                        ]
+                        fs8
+                        [
+                        as8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
             >>
@@ -5929,6 +8433,232 @@
                         \accidentalStyle neo-modern-cautionary
                         r1
                         r2
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        c'8
+                        \f
+                        [
+                        df'8
+                        ]
+                        ef'8
+                        [
+                        af'8
+                        ]
+                        g'8
+                        [
+                        af'8
+                        ]
+                        ef''8
+                        [
+                        f''8
+                        ]
+                        c'8
+                        [
+                        df'8
+                        ]
+                        f'8
+                        [
+                        af'8
+                        ]
+                        c''8
+                        [
+                        g'8
+                        ]
+                        d''8
+                        [
+                        g''8
+                        ]
+                        g'8
+                        [
+                        af'8
+                        ]
+                        bf'8
+                        [
+                        ef''8
+                        ]
+                        d''8
+                        [
+                        ef''8
+                        ]
+                        bf''8
+                        [
+                        c'''8
+                        ]
+                        g'8
+                        [
+                        af'8
+                        ]
+                        c''8
+                        [
+                        ef''8
+                        ]
+                        g''8
+                        [
+                        d''8
+                        ]
+                        a''8
+                        [
+                        d'''8
+                        ]
+                        d'8
+                        [
+                        ef'8
+                        ]
+                        f'8
+                        [
+                        bf'8
+                        ]
+                        a'8
+                        [
+                        bf'8
+                        ]
+                        f''8
+                        [
+                        g''8
+                        ]
+                        d'8
+                        [
+                        ef'8
+                        ]
+                        g'8
+                        [
+                        bf'8
+                        ]
+                        d''8
+                        [
+                        a'8
+                        ]
+                        e''8
+                        [
+                        a''8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        <b b'>8
+                        \f
+                        ]
+                        <d' d''>8
+                        [
+                        r8
+                        ]
+                        <b b'>8
+                        [
+                        <d' d''>8
+                        ]
+                        <e' e''>8
+                        [
+                        r8
+                        ]
+                        <b b'>8
+                        [
+                        <g' g''>8
+                        ]
+                        <fs' fs''>8
+                        [
+                        <d' d''>8
+                        ]
+                        <e' e''>8
+                        [
+                        <b b'>8
+                        ]
+                        <d' d''>8
+                        [
+                        r8
+                        ]
+                        r8
+                        [
+                        <e' e''>8
+                        ]
+                        <g' g''>8
+                        [
+                        <b b'>8
+                        ]
+                        <fs' fs''>8
+                        [
+                        r8
+                        ]
+                        <g' g''>8
+                        [
+                        <fs' fs''>8
+                        ]
+                        <d' d''>8
+                        [
+                        <e' e''>8
+                        ]
+                        r8
+                        [
+                        <e' e''>8
+                        ]
+                        <g' g''>8
+                        [
+                        <e' e''>8
+                        ]
+                        <b' b''>8
+                        [
+                        r8
+                        ]
+                        <a' a''>8
+                        [
+                        <g' g''>8
+                        ]
+                        <e' e''>8
+                        [
+                        <g' g''>8
+                        ]
+                        r2
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -6982,6 +9712,66 @@
                             R1 * 3
                         }
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
             >>
             \context StaffGroup = "ooa_guitars"
@@ -7509,6 +10299,66 @@
                             R1 * 3
                         }
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "ooa_bass_guitar"
                 \with
@@ -7832,6 +10682,185 @@
                             \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 4
+                        }
+                        bf,2
+                        \f
+                        ~
+                        bf,4
+                        bf,4
+                        bf,4
+                        ~
+                        bf,8
+                        [
+                        bf,8
+                        ~
+                        ]
+                        bf,2
+                        f,2
+                        ~
+                        f,4
+                        f,4
+                        f,4
+                        ~
+                        f,8
+                        [
+                        f,8
+                        ~
+                        ]
+                        f,2
+                        f,2
+                        ~
+                        f,4
+                        f,4
+                        c4
+                        ~
+                        c8
+                        [
+                        c8
+                        ~
+                        ]
+                        c2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        a8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        c'8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        f,8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        r8
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        g,8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        f,8
+                        -\tenuto
+                        ]
+                        e,8
+                        -\tenuto
+                        [
+                        c8
+                        -\tenuto
+                        ]
+                        a,8
+                        -\tenuto
+                        [
+                        a,8
+                        -\tenuto
+                        ]
+                        g,8
+                        \f
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
             >>
@@ -8376,6 +11405,203 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                        a''2
+                        :32
+                        \mp
+                        ~
+                        a''4
+                        :32
+                        c'''4
+                        :32
+                        c'''2
+                        :32
+                        ~
+                        c'''4
+                        :32
+                        c'''4
+                        :32
+                        c''2
+                        :32
+                        ~
+                        c''4
+                        :32
+                        f''4
+                        :32
+                        f''2
+                        :32
+                        ~
+                        f''4
+                        :32
+                        g''4
+                        :32
+                        a'2
+                        :32
+                        ~
+                        a'4
+                        :32
+                        a'4
+                        :32
+                        a'2
+                        :32
+                        ~
+                        a'4
+                        :32
+                        a'4
+                        :32
+                        a'2
+                        :32
+                        ~
+                        a'4
+                        :32
+                        d'4
+                        :32
+                        d'2
+                        :32
+                        ~
+                        d'4
+                        :32
+                        d'4
+                        :32
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        b'8
+                        [
+                        (
+                        c''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        g''8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        ef''8
+                        [
+                        (
+                        bf''8
+                        ]
+                        )
+                        c'''8
+                        [
+                        (
+                        a''8
+                        ]
+                        )
+                        e'''8
+                        [
+                        (
+                        ef'''8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        c'4
+                        a8
+                        [
+                        e'8
+                        ]
+                        fs'8
+                        [
+                        gs'8
+                        ~
+                        ]
+                        gs'8
+                        [
+                        e'8
+                        ~
+                        ]
+                        e'8
+                        [
+                        fs'8
+                        ]
+                        b'8
+                        [
+                        cs''8
+                        ]
+                        gs'8
+                        [
+                        as'8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        cs''8
+                        [
+                        gs''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        gs'8
+                        [
+                        b'8
+                        ]
+                        fs'8
+                        [
+                        gs'8
+                        ~
+                        ]
+                        gs'8
+                        [
+                        ds''8
+                        ~
+                        ]
+                        ds''8
+                        [
+                        d''8
+                        ]
+                        b''4
+                        cs'''8
+                        [
+                        ds'''8
+                        ]
+                        as''8
+                        [
+                        b''8
+                        ]
+                        cs'''8
+                        [
+                        ds'''8
+                        ~
+                        ]
+                        ds'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "ooa_violin2"
                 \with
@@ -8883,6 +12109,192 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                        c''2
+                        :32
+                        \mp
+                        ~
+                        c''4
+                        :32
+                        bf'4
+                        :32
+                        c''2
+                        :32
+                        ~
+                        c''4
+                        :32
+                        bf'4
+                        :32
+                        bf'2
+                        :32
+                        ~
+                        bf'4
+                        :32
+                        c''4
+                        :32
+                        f''2
+                        :32
+                        ~
+                        f''4
+                        :32
+                        d''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        f''2
+                        :32
+                        ~
+                        f''4
+                        :32
+                        d''4
+                        :32
+                        e'2
+                        :32
+                        ~
+                        e'4
+                        :32
+                        e'4
+                        :32
+                        f'2
+                        :32
+                        ~
+                        f'4
+                        :32
+                        d'4
+                        :32
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        e''8
+                        [
+                        (
+                        g''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        fs''8
+                        [
+                        (
+                        fs'''8
+                        ]
+                        )
+                        b''8
+                        [
+                        (
+                        a''8
+                        ]
+                        )
+                        cs'''8
+                        [
+                        (
+                        as'''8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        gs'8
+                        [
+                        as'8
+                        ]
+                        e'8
+                        [
+                        gs'8
+                        ]
+                        fs'8
+                        [
+                        ds'8
+                        ]
+                        cs'4
+                        gs'4
+                        e''8
+                        [
+                        cs''8
+                        ]
+                        as'4
+                        b'8
+                        [
+                        fs'8
+                        ]
+                        as'8
+                        [
+                        c''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        gs'8
+                        [
+                        a'8
+                        ]
+                        ds''8
+                        [
+                        cs''8
+                        ]
+                        b'8
+                        [
+                        gs''8
+                        ]
+                        as''4
+                        b''8
+                        [
+                        fs''8
+                        ]
+                        gs''8
+                        [
+                        as''8
+                        ]
+                        ds'''8
+                        [
+                        b''8
+                        ]
+                        gs''4
+                        b''8
+                        [
+                        as''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "ooa_cello1"
                 \with
@@ -9281,6 +12693,229 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                        f2
+                        :32
+                        \mp
+                        ~
+                        f4
+                        :32
+                        f4
+                        :32
+                        f2
+                        :32
+                        ~
+                        f4
+                        :32
+                        f4
+                        :32
+                        f2
+                        :32
+                        ~
+                        f4
+                        :32
+                        f4
+                        :32
+                        c2
+                        :32
+                        ~
+                        c4
+                        :32
+                        c4
+                        :32
+                        bf,2
+                        :32
+                        ~
+                        bf,4
+                        :32
+                        bf,4
+                        :32
+                        b,2
+                        :32
+                        ~
+                        b,4
+                        :32
+                        b,4
+                        :32
+                        b,2
+                        :32
+                        ~
+                        b,4
+                        :32
+                        b,4
+                        :32
+                        b,2
+                        :32
+                        ~
+                        b,4
+                        :32
+                        b,4
+                        :32
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e'8
+                        [
+                        (
+                        f'8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        d'8
+                        ]
+                        )
+                        a8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        b8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        e,8
+                        ]
+                        )
+                        fs,8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        f'8
+                        ]
+                        )
+                        d'8
+                        [
+                        (
+                        cs'8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        cs8
+                        [
+                        (
+                        fs8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        d8
+                        ]
+                        )
+                        cs8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        gs8
+                        [
+                        e8
+                        ~
+                        ]
+                        e8
+                        [
+                        cs8
+                        ]
+                        b,8
+                        [
+                        gs,8
+                        ]
+                        as,8
+                        [
+                        ds8
+                        ]
+                        a,8
+                        [
+                        b,8
+                        ]
+                        cs8
+                        [
+                        ds8
+                        ~
+                        ]
+                        ds8
+                        [
+                        e8
+                        ]
+                        b8
+                        [
+                        cs'8
+                        ]
+                        fs'8
+                        [
+                        gs'8
+                        ]
+                        d4
+                        b,4
+                        f,8
+                        [
+                        g,8
+                        ~
+                        ]
+                        g,8
+                        [
+                        e,8
+                        ]
+                        f,8
+                        [
+                        c8
+                        ]
+                        b,8
+                        [
+                        f8
+                        ~
+                        ]
+                        f4
+                        b8
+                        [
+                        f'8
+                        ]
+                        g'4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
                 }
                 \context Staff = "ooa_cello2"
                 \with
@@ -9636,6 +13271,233 @@
                         ~
                         ]
                         d,4
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                        d2
+                        :32
+                        \mp
+                        ~
+                        d4
+                        :32
+                        d4
+                        :32
+                        d2
+                        :32
+                        ~
+                        d4
+                        :32
+                        d4
+                        :32
+                        f2
+                        :32
+                        ~
+                        f4
+                        :32
+                        f4
+                        :32
+                        f2
+                        :32
+                        ~
+                        f4
+                        :32
+                        f4
+                        :32
+                        f2
+                        :32
+                        ~
+                        f4
+                        :32
+                        f4
+                        :32
+                        e2
+                        :32
+                        ~
+                        e4
+                        :32
+                        e4
+                        :32
+                        e2
+                        :32
+                        ~
+                        e4
+                        :32
+                        e4
+                        :32
+                        e2
+                        :32
+                        ~
+                        e4
+                        :32
+                        e4
+                        :32
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a8
+                        [
+                        (
+                        bf8
+                        ]
+                        )
+                        c'8
+                        [
+                        (
+                        a8
+                        ]
+                        )
+                        f8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        af8
+                        [
+                        (
+                        ef8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        af,8
+                        ]
+                        )
+                        b8
+                        [
+                        (
+                        a8
+                        ]
+                        )
+                        b8
+                        [
+                        (
+                        b8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        b8
+                        ]
+                        )
+                        fs8
+                        [
+                        (
+                        cs8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        fs8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        fs8
+                        ]
+                        )
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        f'8
+                        [
+                        df'8
+                        ]
+                        af8
+                        [
+                        f8
+                        ]
+                        df8
+                        [
+                        f,8
+                        ]
+                        g,4
+                        af,8
+                        [
+                        ef8
+                        ]
+                        bf,8
+                        [
+                        c8
+                        ~
+                        ]
+                        c8
+                        [
+                        df8
+                        ]
+                        ef8
+                        [
+                        af8
+                        ]
+                        ef'8
+                        [
+                        c'8
+                        ]
+                        g8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
+                        [
+                        d8
+                        ]
+                        as,8
+                        [
+                        b,8
+                        ]
+                        fs,8
+                        [
+                        gs,8
+                        ]
+                        b,8
+                        [
+                        g8
+                        ]
+                        a4
+                        b8
+                        [
+                        cs'8
+                        ]
+                        gs8
+                        [
+                        d'8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
                     }
                 }
             >>
@@ -10133,6 +13995,118 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e'''1
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''4
+                        e'''4
+                        \mf
+                        ~
+                        \>
+                        e'''1
+                        ~
+                        e'''2
+                        r2
+                        \!
+                        e'''1
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''4
+                        e'''4
+                        \mf
+                        ~
+                        \>
+                        e'''1
+                        ~
+                        e'''2
+                        r2
+                        \!
+                        e'''1
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''4
+                        e'''4
+                        \mf
+                        ~
+                        \>
+                        e'''1
+                        ~
+                        e'''2
+                        r2
+                        \!
+                        e'''1
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''4
+                        e'''4
+                        \mf
+                        ~
+                        \>
+                        e'''1
+                        ~
+                        e'''2
+                        r2
+                        \!
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        bf'4
+                        b'4
+                        bf'4
+                        c''8
+                        [
+                        df''8
+                        ]
+                        ef''8
+                        [
+                        c''8
+                        ]
+                        af''4
+                        f''4
+                        af''8
+                        [
+                        bf''8
+                        ]
+                        f'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "cco_flute2"
                 \with
@@ -10626,6 +14600,131 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        e'''4
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''1
+                        e'''1
+                        \mf
+                        ~
+                        \>
+                        e'''2
+                        ~
+                        e'''4
+                        r4
+                        \!
+                        r4
+                        e'''4
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''1
+                        e'''1
+                        \mf
+                        ~
+                        \>
+                        e'''2
+                        ~
+                        e'''4
+                        r4
+                        \!
+                        r4
+                        e'''4
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''1
+                        e'''1
+                        \mf
+                        ~
+                        \>
+                        e'''2
+                        ~
+                        e'''4
+                        r4
+                        \!
+                        r4
+                        e'''4
+                        \mp
+                        ~
+                        \<
+                        e'''2
+                        ~
+                        e'''1
+                        e'''1
+                        \mf
+                        ~
+                        \>
+                        e'''2
+                        ~
+                        e'''4
+                        r4
+                        \!
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        gs''8
+                        [
+                        g''8
+                        ]
+                        gs''8
+                        [
+                        e''8
+                        ]
+                        fs''8
+                        [
+                        ds''8
+                        ]
+                        gs''8
+                        [
+                        e''8
+                        ]
+                        ds''4
+                        fs''8
+                        [
+                        ds''8
+                        ]
+                        as''4
+                        fs''4
+                        gs''8
+                        [
+                        as''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "cco_oboe1"
                 \with
@@ -11046,6 +15145,270 @@
                         -\staccato
                         -\accent
                         ]
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e'8
+                        [
+                        (
+                        d'8
+                        ]
+                        )
+                        e'8
+                        [
+                        (
+                        fs'8
+                        ]
+                        )
+                        a'8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                        e''8
+                        [
+                        (
+                        fs''8
+                        ]
+                        )
+                        f''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        e'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        b'8
+                        ]
+                        )
+                        g'8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        fs''8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                        g''8
+                        [
+                        (
+                        d''8
+                        ]
+                        )
+                        cs''8
+                        [
+                        (
+                        fs''8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b'8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        d''8
+                        -\tenuto
+                        ]
+                        e''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        fs'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        b'8
+                        -\tenuto
+                        ]
+                        d''4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e''8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        b'8
+                        -\tenuto
+                        ]
+                        fs'4
+                        -\staccato
+                        -\accent
+                        g'8
+                        -\tenuto
+                        [
+                        fs'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        b4
+                        -\staccato
+                        -\accent
+                        a'8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        g'8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        g'8
+                        [
+                        bf'8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        df''8
+                        [
+                        c''8
+                        ~
+                        ]
+                        c''8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'8
+                        [
+                        f''8
+                        ]
+                        ef''8
+                        [
+                        c''8
+                        ]
+                        g''8
+                        [
+                        f''8
+                        ]
+                        ef''4
+                        f''8
+                        [
+                        g''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        a'8
+                        [
+                        as'8
+                        ]
+                        b'8
+                        [
+                        cs''8
+                        ]
+                        g''4
+                        d''8
+                        [
+                        b'8
+                        ]
+                        ds''4
+                        fs''8
+                        [
+                        d''8
+                        ]
+                        a''4
+                        cs'''4
+                        d'''4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -11469,6 +15832,275 @@
                         -\staccato
                         -\accent
                         ]
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        df''8
+                        [
+                        (
+                        bf'8
+                        ]
+                        )
+                        g''8
+                        [
+                        (
+                        gf''8
+                        ]
+                        )
+                        f''8
+                        [
+                        (
+                        df''8
+                        ]
+                        )
+                        af''8
+                        [
+                        (
+                        ef''8
+                        ]
+                        )
+                        c'''8
+                        [
+                        (
+                        c''8
+                        ]
+                        )
+                        d''8
+                        [
+                        (
+                        af''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        e''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                        b'8
+                        [
+                        (
+                        gs''8
+                        ]
+                        )
+                        as''8
+                        [
+                        (
+                        fs''8
+                        ]
+                        )
+                        b''8
+                        [
+                        (
+                        d''8
+                        ]
+                        )
+                        a'8
+                        [
+                        (
+                        cs''8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b'8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        d''8
+                        -\tenuto
+                        ]
+                        e''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        fs'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        b'8
+                        -\tenuto
+                        ]
+                        d''4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e''8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        b'8
+                        -\tenuto
+                        ]
+                        fs'4
+                        -\staccato
+                        -\accent
+                        g'8
+                        -\tenuto
+                        [
+                        fs'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        b4
+                        -\staccato
+                        -\accent
+                        a'8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        g'8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        ds'4
+                        e'8
+                        [
+                        gs'8
+                        ]
+                        cs''8
+                        [
+                        ds''8
+                        ~
+                        ]
+                        ds''8
+                        [
+                        gs''8
+                        ]
+                        fs''8
+                        [
+                        gs''8
+                        ]
+                        e''8
+                        [
+                        c''8
+                        ]
+                        d''4
+                        b'8
+                        [
+                        cs''8
+                        ~
+                        ]
+                        cs''8
+                        [
+                        d''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        d''8
+                        [
+                        c''8
+                        ]
+                        b'8
+                        [
+                        as'8
+                        ~
+                        ]
+                        as'4
+                        ~
+                        as'4
+                        gs'8
+                        [
+                        as'8
+                        ]
+                        cs''8
+                        [
+                        as'8
+                        ]
+                        e''4
+                        fs''8
+                        [
+                        gs''8
+                        ]
+                        ds''8
+                        [
+                        a''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -11999,6 +16631,288 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        a'8
+                        \mf
+                        [
+                        (
+                        bf'8
+                        ]
+                        c''8
+                        [
+                        d''8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c''8
+                        [
+                        (
+                        d''8
+                        ]
+                        a'8
+                        [
+                        bf'8
+                        ]
+                        c''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        f'8
+                        [
+                        (
+                        c'8
+                        ]
+                        d'8
+                        [
+                        e'8
+                        ]
+                        e'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        f'8
+                        ]
+                        e'8
+                        [
+                        c'8
+                        ]
+                        d'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d'8
+                        [
+                        (
+                        e'8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        a'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c''1
+                        \p
+                        ~
+                        \<
+                        c''2
+                        ~
+                        c''4
+                        ~
+                        c''8
+                        [
+                        fs'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b'8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        d''8
+                        -\tenuto
+                        ]
+                        e''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        fs'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        b8
+                        -\tenuto
+                        ]
+                        d'4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        b'8
+                        -\tenuto
+                        ]
+                        fs'4
+                        -\staccato
+                        -\accent
+                        g'8
+                        -\tenuto
+                        [
+                        fs'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        b4
+                        -\staccato
+                        -\accent
+                        a8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        g8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ef'4
+                        d'8
+                        [
+                        a8
+                        ]
+                        bf8
+                        [
+                        c'8
+                        ]
+                        f'8
+                        [
+                        d'8
+                        ]
+                        af8
+                        [
+                        bf8
+                        ]
+                        af4
+                        ef'4
+                        af'4
+                        bf'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ef'8
+                        [
+                        f'8
+                        ]
+                        ef'4
+                        af8
+                        [
+                        bf8
+                        ~
+                        ]
+                        bf8
+                        [
+                        af8
+                        ]
+                        bf8
+                        [
+                        af8
+                        ]
+                        gf'8
+                        [
+                        bf'8
+                        ]
+                        c''4
+                        ef''8
+                        [
+                        bf''8
+                        ~
+                        ]
+                        bf''4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
                 }
                 \context Staff = "cco_clarinet2"
                 \with
@@ -12520,6 +17434,291 @@
                         -\accent
                         ]
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        a'8
+                        \mf
+                        [
+                        (
+                        bf'8
+                        ]
+                        c''8
+                        [
+                        d''8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        c'8
+                        [
+                        (
+                        d'8
+                        ]
+                        f'8
+                        [
+                        a'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        e'8
+                        [
+                        (
+                        b'8
+                        ]
+                        c''8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        d''8
+                        [
+                        (
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        e''8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                        r2
+                        a'8
+                        [
+                        (
+                        c''8
+                        ]
+                        e''8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        )
+                        [
+                        r8
+                        ]
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        e'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c''1
+                        \p
+                        ~
+                        \<
+                        c''2
+                        ~
+                        c''4
+                        ~
+                        c''8
+                        [
+                        fs'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b'8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        d''8
+                        -\tenuto
+                        ]
+                        e''4
+                        -\staccato
+                        -\accent
+                        b'8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        fs'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        b8
+                        -\tenuto
+                        ]
+                        d'4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        b'8
+                        -\tenuto
+                        ]
+                        fs'4
+                        -\staccato
+                        -\accent
+                        g'8
+                        -\tenuto
+                        [
+                        fs'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        b4
+                        -\staccato
+                        -\accent
+                        a8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        g8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        cs'8
+                        [
+                        ds'8
+                        ]
+                        fs'8
+                        [
+                        e'8
+                        ]
+                        b8
+                        [
+                        gs'8
+                        ~
+                        ]
+                        gs'8
+                        [
+                        a'8
+                        ]
+                        e'8
+                        [
+                        f'8
+                        ]
+                        a'8
+                        [
+                        f'8
+                        ]
+                        ds'8
+                        [
+                        g'8
+                        ]
+                        e'4
+                        fs'8
+                        [
+                        ds'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f'4
+                        gf'4
+                        af'8
+                        [
+                        f'8
+                        ]
+                        g'8
+                        [
+                        ef'8
+                        ]
+                        df'4
+                        ef'4
+                        f'4
+                        gf'4
+                        ef''8
+                        [
+                        f''8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
                 }
                 \context Staff = "cco_bassoon"
                 \with
@@ -12963,6 +18162,288 @@
                         ]
                         d,4
                     }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        cs'8
+                        [
+                        (
+                        d'8
+                        ]
+                        )
+                        g8
+                        [
+                        (
+                        a8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        a,8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        fs,8
+                        ]
+                        )
+                        f,8
+                        [
+                        (
+                        g,8
+                        ]
+                        )
+                        fs,8
+                        [
+                        (
+                        b,8
+                        ]
+                        )
+                        e8
+                        [
+                        (
+                        f8
+                        ]
+                        )
+                        d8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        c8
+                        [
+                        (
+                        e8
+                        ]
+                        )
+                        b,8
+                        [
+                        (
+                        cs8
+                        ]
+                        )
+                        g,8
+                        [
+                        (
+                        d8
+                        ]
+                        )
+                        a,8
+                        [
+                        (
+                        fs,8
+                        ]
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d'4
+                        -\staccato
+                        -\accent
+                        b8
+                        -\tenuto
+                        [
+                        d8
+                        -\tenuto
+                        ]
+                        e4
+                        -\staccato
+                        -\accent
+                        b,8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        fs,8
+                        -\tenuto
+                        [
+                        d8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        b,8
+                        -\tenuto
+                        ]
+                        d4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        g8
+                        -\tenuto
+                        [
+                        b,8
+                        -\tenuto
+                        ]
+                        fs,4
+                        -\staccato
+                        -\accent
+                        g,8
+                        -\tenuto
+                        [
+                        fs,8
+                        -\tenuto
+                        ]
+                        d,8
+                        -\tenuto
+                        [
+                        e,8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e,8
+                        -\tenuto
+                        ]
+                        g,8
+                        -\tenuto
+                        [
+                        e,8
+                        -\tenuto
+                        ]
+                        b,,4
+                        -\staccato
+                        -\accent
+                        a,8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        e,8
+                        -\tenuto
+                        [
+                        g,8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        cs8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        fs8
+                        ]
+                        a8
+                        [
+                        gs8
+                        ]
+                        c8
+                        [
+                        as,8
+                        ]
+                        e,8
+                        [
+                        gs,8
+                        ]
+                        cs8
+                        [
+                        ds8
+                        ]
+                        gs8
+                        [
+                        e8
+                        ]
+                        fs8
+                        [
+                        gs8
+                        ]
+                        b8
+                        [
+                        gs8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        ds8
+                        [
+                        b,8
+                        ]
+                        fs,8
+                        [
+                        gs,8
+                        ]
+                        fs,8
+                        [
+                        as,8
+                        ~
+                        ]
+                        as,4
+                        b,8
+                        [
+                        gs,8
+                        ]
+                        as,4
+                        ~
+                        as,8
+                        [
+                        b,8
+                        ]
+                        ds4
+                        cs8
+                        [
+                        c8
+                        ]
+                        e4
+                        fs8
+                        [
+                        cs8
+                        ]
+                        ds8
+                        [
+                        a8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
                 }
             >>
             \context StaffGroup = "cco_brass"
@@ -13321,6 +18802,247 @@
                             \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        f4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        f8
+                        [
+                        g8
+                        -\tenuto
+                        ~
+                        ]
+                        g8
+                        [
+                        f8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        bf8
+                        -\tenuto
+                        ~
+                        ]
+                        bf8
+                        [
+                        a8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        g4
+                        -\tenuto
+                        r8
+                        [
+                        c'8
+                        -\tenuto
+                        ~
+                        ]
+                        c'8
+                        [
+                        c'8
+                        \mf
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a,4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d1
+                        \p
+                        ~
+                        \<
+                        d2
+                        ~
+                        d4
+                        ~
+                        d8
+                        [
+                        a8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d'4
+                        -\staccato
+                        -\accent
+                        b8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e4
+                        -\staccato
+                        -\accent
+                        b,8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        fs8
+                        -\tenuto
+                        [
+                        d8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        b,8
+                        -\tenuto
+                        ]
+                        d4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        g8
+                        -\tenuto
+                        [
+                        b8
+                        -\tenuto
+                        ]
+                        fs4
+                        -\staccato
+                        -\accent
+                        g8
+                        -\tenuto
+                        [
+                        fs8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        g8
+                        -\tenuto
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        b,4
+                        -\staccato
+                        -\accent
+                        a,8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        e,8
+                        -\tenuto
+                        [
+                        g,8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ds8
+                        [
+                        e8
+                        ]
+                        b8
+                        [
+                        c'8
+                        ]
+                        b8
+                        [
+                        c'8
+                        ]
+                        as4
+                        gs8
+                        [
+                        ds'8
+                        ]
+                        gs8
+                        [
+                        as8
+                        ~
+                        ]
+                        as8
+                        [
+                        fs8
+                        ~
+                        ]
+                        fs8
+                        [
+                        cs'8
+                        ]
+                        b8
+                        [
+                        d'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -13734,6 +19456,248 @@
                             R1 * 3
                         }
                     }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        ef''2
+                        \f
+                        ^ \markup { solo }
+                        af'2
+                        (
+                        ef''2
+                        ~
+                        ef''8
+                        )
+                        [
+                        g'8
+                        ~
+                        ]
+                        (
+                        g'4
+                        bf'2
+                        )
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        f''2
+                        ~
+                        f''8
+                        [
+                        a'8
+                        ~
+                        ]
+                        (
+                        a'4
+                        c''2
+                        )
+                        bf'2
+                        (
+                        c''2
+                        ~
+                        c''4
+                        )
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        g'1
+                        \p
+                        ~
+                        \<
+                        g'2
+                        ~
+                        g'4
+                        ~
+                        g'8
+                        [
+                        e'8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d'4
+                        -\staccato
+                        -\accent
+                        b8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e'4
+                        -\staccato
+                        -\accent
+                        b8
+                        -\tenuto
+                        [
+                        g'8
+                        -\tenuto
+                        ]
+                        fs'8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        b8
+                        -\tenuto
+                        ]
+                        d'4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        b'8
+                        -\tenuto
+                        ]
+                        fs'4
+                        -\staccato
+                        -\accent
+                        g'8
+                        -\tenuto
+                        [
+                        fs'8
+                        -\tenuto
+                        ]
+                        d'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        g'8
+                        -\tenuto
+                        [
+                        e'8
+                        -\tenuto
+                        ]
+                        b4
+                        -\staccato
+                        -\accent
+                        a8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        e'8
+                        -\tenuto
+                        [
+                        g'8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        bf8
+                        [
+                        d'8
+                        ]
+                        ef'8
+                        [
+                        af'8
+                        ]
+                        ef''8
+                        [
+                        f''8
+                        ~
+                        ]
+                        f''8
+                        [
+                        df''8
+                        ~
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        gf''8
+                        [
+                        f''8
+                        ~
+                        ]
+                        f''4
+                        df''8
+                        [
+                        c''8
+                        ]
+                        g''8
+                        [
+                        f''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                    }
                 }
                 \context Staff = "cco_trombone"
                 \with
@@ -14057,6 +20021,242 @@
                             \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        g4
+                        \p
+                        -\tenuto
+                        ~
+                        \<
+                        g8
+                        [
+                        c8
+                        -\tenuto
+                        ~
+                        ]
+                        c8
+                        [
+                        g,8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f8
+                        [
+                        f8
+                        -\staccato
+                        -\tenuto
+                        ]
+                        c4
+                        -\tenuto
+                        r8
+                        [
+                        f8
+                        -\tenuto
+                        ~
+                        ]
+                        f8
+                        [
+                        e8
+                        \mf
+                        -\staccato
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        f1
+                        \p
+                        ~
+                        \<
+                        f2
+                        ~
+                        f4
+                        ~
+                        f8
+                        [
+                        d8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        b8
+                        \p
+                        -\tenuto
+                        ]
+                        \<
+                        d'4
+                        -\staccato
+                        -\accent
+                        b8
+                        -\tenuto
+                        [
+                        d'8
+                        -\tenuto
+                        ]
+                        e4
+                        -\staccato
+                        -\accent
+                        b,8
+                        -\tenuto
+                        [
+                        g8
+                        -\tenuto
+                        ]
+                        fs8
+                        -\tenuto
+                        [
+                        d8
+                        -\tenuto
+                        ]
+                        e8
+                        -\tenuto
+                        [
+                        b,8
+                        -\tenuto
+                        ]
+                        d4
+                        -\staccato
+                        -\accent
+                        r8
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        g8
+                        -\tenuto
+                        [
+                        b8
+                        -\tenuto
+                        ]
+                        fs4
+                        -\staccato
+                        -\accent
+                        g8
+                        -\tenuto
+                        [
+                        fs8
+                        -\tenuto
+                        ]
+                        d8
+                        -\tenuto
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        r8
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        g8
+                        -\tenuto
+                        [
+                        e8
+                        -\tenuto
+                        ]
+                        b,4
+                        -\staccato
+                        -\accent
+                        a,8
+                        -\tenuto
+                        [
+                        g,8
+                        -\tenuto
+                        ]
+                        e,8
+                        -\tenuto
+                        [
+                        g,8
+                        \f
+                        -\tenuto
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        c8
+                        [
+                        df8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ]
+                        gf8
+                        [
+                        ef8
+                        ]
+                        f4
+                        gf8
+                        [
+                        bf8
+                        ]
+                        f4
+                        g8
+                        [
+                        ef8
+                        ]
+                        df8
+                        [
+                        f8
+                        ]
+                        gf8
+                        [
+                        f8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
             >>
@@ -14704,6 +20904,66 @@
                         R1 * 3
                     }
                 }
+                {
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        R1 * 6
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 4
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 4
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 3
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 5
+                    }
+                }
+                {
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        R1 * 3
+                    }
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    r4
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    r4
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r2
+                    r4
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    r1
+                    r1
+                    r2
+                    r4
+                }
             }
             \context PianoStaff = "cco_harp"
             <<
@@ -15231,6 +21491,160 @@
                             R1 * 3
                         }
                     }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        f''8
+                        \f
+                        [
+                        df''8
+                        ]
+                        af'8
+                        [
+                        af'8
+                        ]
+                        c'8
+                        [
+                        af8
+                        ]
+                        af8
+                        [
+                        f8
+                        ]
+                        f''8
+                        [
+                        df''8
+                        ]
+                        bf'8
+                        [
+                        af'8
+                        ]
+                        f'8
+                        [
+                        g8
+                        ]
+                        g8
+                        [
+                        g8
+                        ]
+                        c'''8
+                        [
+                        af''8
+                        ]
+                        ef''8
+                        [
+                        ef''8
+                        ]
+                        g'8
+                        [
+                        ef'8
+                        ]
+                        ef'8
+                        [
+                        c'8
+                        ]
+                        c'''8
+                        [
+                        af''8
+                        ]
+                        f''8
+                        [
+                        ef''8
+                        ]
+                        c''8
+                        [
+                        d'8
+                        ]
+                        d'8
+                        [
+                        d'8
+                        ]
+                        g''8
+                        [
+                        ef''8
+                        ]
+                        bf'8
+                        [
+                        bf'8
+                        ]
+                        d'8
+                        [
+                        bf8
+                        ]
+                        bf8
+                        [
+                        g8
+                        ]
+                        g''8
+                        [
+                        ef''8
+                        ]
+                        c''8
+                        [
+                        bf'8
+                        ]
+                        g'8
+                        [
+                        a8
+                        ]
+                        a8
+                        [
+                        a8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "harp2"
                 \with
@@ -15449,6 +21863,66 @@
                             \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
             >>
@@ -16373,6 +22847,157 @@
                             R1 * 6
                         }
                     }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        <df' ef' f' af'>4
+                        \f
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r1
+                        r1
+                        r1
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        <c'' f'' g''>4
+                        ~
+                        <c'' f'' g''>8
+                        [
+                        <d'' g'' c'''>8
+                        ]
+                        r8
+                        [
+                        <d'' f'' bf''>8
+                        ~
+                        ]
+                        <d'' f'' bf''>8
+                        [
+                        <d'' f'' a''>8
+                        ]
+                        <c'' f'' g''>4
+                        ~
+                        <c'' f'' g''>8
+                        [
+                        <d'' g'' c'''>8
+                        ~
+                        ]
+                        <d'' g'' c'''>8
+                        [
+                        <c'' f'' g''>8
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        <d'' f'' bf''>8
+                        ~
+                        ]
+                        <d'' f'' bf''>8
+                        [
+                        <d'' f'' a''>8
+                        ]
+                        <f'' g'' c'''>4
+                        r8
+                        [
+                        <a' c'' f''>8
+                        ~
+                        ]
+                        <a' c'' f''>8
+                        [
+                        <a' c'' e''>8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        <a d' e'>4
+                        ~
+                        <a d' e'>8
+                        [
+                        <d' e' a'>8
+                        ~
+                        ]
+                        <d' e' a'>8
+                        [
+                        <a d' e'>8
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        <cs'' d'' g''>8
+                        ~
+                        ]
+                        <cs'' d'' g''>8
+                        [
+                        <b' d'' fs''>8
+                        ]
+                        <cs'' e'' a''>4
+                        r8
+                        [
+                        <cs'' d'' g''>8
+                        ~
+                        ]
+                        <cs'' d'' g''>8
+                        [
+                        <b' d'' fs''>8
+                        ]
+                        <cs'' e'' a''>4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "piano2"
                 \with
@@ -17295,6 +23920,196 @@
                             R1 * 3
                         }
                     }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        <g,, f,>4
+                        -\staccato
+                        <bf,, af,>4
+                        -\staccato
+                        <d, c>4
+                        -\staccato
+                        <bf, af>4
+                        -\staccato
+                        <g,, f,>4
+                        -\staccato
+                        <c, bf,>4
+                        -\staccato
+                        <g, f>4
+                        -\staccato
+                        <a, g>4
+                        -\staccato
+                        <d, c>4
+                        -\staccato
+                        <f, ef>4
+                        -\staccato
+                        <a, g>4
+                        -\staccato
+                        <f ef'>4
+                        -\staccato
+                        <d, c>4
+                        -\staccato
+                        <g, f>4
+                        -\staccato
+                        <d c'>4
+                        -\staccato
+                        <e d'>4
+                        -\staccato
+                        <a,, g,>4
+                        -\staccato
+                        <c, bf,>4
+                        -\staccato
+                        <e, d>4
+                        -\staccato
+                        <c bf>4
+                        -\staccato
+                        <a,, g,>4
+                        -\staccato
+                        <d, c>4
+                        -\staccato
+                        <a, g>4
+                        -\staccato
+                        <b, a>4
+                        -\staccato
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \clef "treble"
+                        <c' f' g'>4
+                        ~
+                        <c' f' g'>8
+                        [
+                        <d' g' c''>8
+                        ]
+                        r8
+                        [
+                        <d' f' bf'>8
+                        ~
+                        ]
+                        <d' f' bf'>8
+                        [
+                        <d' f' a'>8
+                        ]
+                        <c' f' g'>4
+                        ~
+                        <c' f' g'>8
+                        [
+                        <d' g' c''>8
+                        ~
+                        ]
+                        <d' g' c''>8
+                        [
+                        <c' f' g'>8
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        <d' f' bf'>8
+                        ~
+                        ]
+                        <d' f' bf'>8
+                        [
+                        <d' f' a'>8
+                        ]
+                        <f' g' c''>4
+                        r8
+                        [
+                        <a c' f'>8
+                        ~
+                        ]
+                        <a c' f'>8
+                        [
+                        <a c' e'>8
+                        ]
+                        r2
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        \clef "bass"
+                        <a, d e>4
+                        ~
+                        <a, d e>8
+                        [
+                        <d e a>8
+                        ~
+                        ]
+                        <d e a>8
+                        [
+                        <a, d e>8
+                        ]
+                        r4
+                        r4
+                        r8
+                        [
+                        \clef "treble"
+                        <cs' d' g'>8
+                        ~
+                        ]
+                        <cs' d' g'>8
+                        [
+                        <b d' fs'>8
+                        ]
+                        <cs' e' a'>4
+                        r8
+                        [
+                        <cs' d' g'>8
+                        ~
+                        ]
+                        <cs' d' g'>8
+                        [
+                        <b d' fs'>8
+                        ]
+                        <cs' e' a'>4
+                        r4
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
             >>
             \context StaffGroup = "cco_strings"
@@ -17626,6 +24441,175 @@
                         ]
                         d'''4
                     }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        bf1
+                        :32
+                        \pp
+                        ~
+                        bf1
+                        :32
+                        ~
+                        bf2
+                        :32
+                        g'2
+                        :32
+                        ~
+                        g'1
+                        :32
+                        ~
+                        g'2
+                        :32
+                        g''2
+                        :32
+                        ~
+                        \<
+                        g''1
+                        :32
+                        g''2
+                        :32
+                        \mp
+                        ~
+                        g''4
+                        :32
+                        f''4
+                        :32
+                        g''2
+                        :32
+                        ~
+                        g''4
+                        :32
+                        f''4
+                        :32
+                        f''2
+                        :32
+                        ~
+                        f''4
+                        :32
+                        g''4
+                        :32
+                        c''2
+                        :32
+                        ~
+                        c''4
+                        :32
+                        d''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        e'2
+                        :32
+                        ~
+                        e'4
+                        :32
+                        e'4
+                        :32
+                        e'2
+                        :32
+                        ~
+                        e'4
+                        :32
+                        e'4
+                        :32
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        bf'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d''1
+                        \p
+                        ~
+                        \<
+                        d''2
+                        ~
+                        d''4
+                        ~
+                        d''8
+                        [
+                        bf''8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        ds''4
+                        e''8
+                        [
+                        b''8
+                        ]
+                        as''8
+                        [
+                        gs''8
+                        ]
+                        ds''8
+                        [
+                        e''8
+                        ]
+                        fs''8
+                        [
+                        gs''8
+                        ]
+                        b''8
+                        [
+                        gs''8
+                        ]
+                        as''8
+                        [
+                        d''8
+                        ]
+                        e''8
+                        [
+                        fs''8
+                        ]
+                        gs''8
+                        [
+                        as''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "cco_violin_ii"
                 \with
@@ -17954,6 +24938,177 @@
                         -\accent
                         ]
                     }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        bf1
+                        :32
+                        \pp
+                        ~
+                        bf1
+                        :32
+                        ~
+                        bf2
+                        :32
+                        g'2
+                        :32
+                        ~
+                        g'1
+                        :32
+                        ~
+                        g'2
+                        :32
+                        g''2
+                        :32
+                        ~
+                        \<
+                        g''1
+                        :32
+                        e'''2
+                        :32
+                        \mp
+                        ~
+                        e'''4
+                        :32
+                        e''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        e''2
+                        :32
+                        ~
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        e'2
+                        :32
+                        ~
+                        e'4
+                        :32
+                        e'4
+                        :32
+                        e'2
+                        :32
+                        ~
+                        e'4
+                        :32
+                        e'4
+                        :32
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        f'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        d''1
+                        \p
+                        ~
+                        \<
+                        d''2
+                        ~
+                        d''4
+                        ~
+                        d''8
+                        [
+                        cs'''8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
+                        r4
+                        c''8
+                        [
+                        g''8
+                        ]
+                        a''8
+                        [
+                        fs''8
+                        ~
+                        ]
+                        fs''8
+                        [
+                        g''8
+                        ]
+                        gs''8
+                        [
+                        a''8
+                        ]
+                        b'8
+                        [
+                        cs''8
+                        ]
+                        b'8
+                        [
+                        ds''8
+                        ~
+                        ]
+                        ds''8
+                        [
+                        as''8
+                        ]
+                        b''4
+                        cs'''8
+                        [
+                        ds'''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
+                    }
                 }
                 \context Staff = "cco_viola"
                 \with
@@ -18047,8 +25202,8 @@
                         \accidentalStyle neo-modern-cautionary
                         <d'>4
                         \mf
-                        ^ \markup { "sul pont" }
                         ^ \markup { arco }
+                        ^ \markup { "sul pont" }
                         <d'>4
                         <d'>2
                         <d'>4
@@ -18318,6 +25473,205 @@
                         -\staccato
                         -\accent
                         ]
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        ef1
+                        :32
+                        \pp
+                        ~
+                        ef1
+                        :32
+                        ~
+                        ef2
+                        :32
+                        ef'2
+                        :32
+                        ~
+                        ef'1
+                        :32
+                        ~
+                        ef'2
+                        :32
+                        d'2
+                        :32
+                        ~
+                        \<
+                        d'1
+                        :32
+                        a2
+                        :32
+                        \mp
+                        ~
+                        a4
+                        :32
+                        c'4
+                        :32
+                        c'2
+                        :32
+                        ~
+                        c'4
+                        :32
+                        c'4
+                        :32
+                        c'2
+                        :32
+                        ~
+                        c'4
+                        :32
+                        f'4
+                        :32
+                        f'2
+                        :32
+                        ~
+                        f'4
+                        :32
+                        g'4
+                        :32
+                        a'2
+                        :32
+                        ~
+                        a'4
+                        :32
+                        a4
+                        :32
+                        a2
+                        :32
+                        ~
+                        a4
+                        :32
+                        a4
+                        :32
+                        a2
+                        :32
+                        ~
+                        a4
+                        :32
+                        d'4
+                        :32
+                        d'2
+                        :32
+                        ~
+                        d'4
+                        :32
+                        d'4
+                        :32
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        df'4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        f'1
+                        \p
+                        ~
+                        \<
+                        f'2
+                        ~
+                        f'4
+                        ~
+                        f'8
+                        [
+                        b8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                        f8
+                        [
+                        g8
+                        ]
+                        a8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        ~
+                        cs'8
+                        [
+                        a8
+                        ]
+                        b8
+                        [
+                        cs'8
+                        ]
+                        e'8
+                        [
+                        gs'8
+                        ]
+                        g'4
+                        a'8
+                        [
+                        b'8
+                        ]
+                        fs'8
+                        [
+                        g'8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ef'8
+                        [
+                        af8
+                        ]
+                        ef'4
+                        ~
+                        ef'8
+                        [
+                        c'8
+                        ]
+                        g'8
+                        [
+                        f'8
+                        ]
+                        ef'8
+                        [
+                        df'8
+                        ]
+                        f'8
+                        [
+                        g'8
+                        ~
+                        ]
+                        g'8
+                        [
+                        af'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        ef''8
+                        [
+                        g''8
+                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
                 \context Staff = "cco_cello"
@@ -18649,6 +26003,198 @@
                         -\staccato
                         -\accent
                         ]
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        gs,1
+                        :32
+                        \pp
+                        ~
+                        gs,1
+                        :32
+                        ~
+                        gs,2
+                        :32
+                        gs2
+                        :32
+                        ~
+                        gs1
+                        :32
+                        ~
+                        gs2
+                        :32
+                        a2
+                        :32
+                        ~
+                        \<
+                        a1
+                        :32
+                        g2
+                        :32
+                        \mp
+                        ~
+                        g4
+                        :32
+                        c'4
+                        :32
+                        a2
+                        :32
+                        ~
+                        a4
+                        :32
+                        a4
+                        :32
+                        c'2
+                        :32
+                        ~
+                        c'4
+                        :32
+                        c'4
+                        :32
+                        c'2
+                        :32
+                        ~
+                        c'4
+                        :32
+                        a4
+                        :32
+                        a2
+                        :32
+                        ~
+                        a4
+                        :32
+                        a4
+                        :32
+                        a,2
+                        :32
+                        ~
+                        a,4
+                        :32
+                        a,4
+                        :32
+                        a,2
+                        :32
+                        ~
+                        a,4
+                        :32
+                        d4
+                        :32
+                        d2
+                        :32
+                        ~
+                        d4
+                        :32
+                        d4
+                        :32
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        a,4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        f1
+                        \p
+                        ~
+                        \<
+                        f2
+                        ~
+                        f4
+                        ~
+                        f8
+                        [
+                        b8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 1
+                        }
+                        r2
+                        cs8
+                        [
+                        a,8
+                        ]
+                        b,8
+                        [
+                        cs8
+                        ]
+                        e8
+                        [
+                        cs8
+                        ]
+                        ds8
+                        [
+                        g8
+                        ]
+                        e4
+                        fs8
+                        [
+                        g8
+                        ]
+                        ds8
+                        [
+                        b8
+                        ]
+                        ds'4
+                        b8
+                        [
+                        ds'8
+                        ]
+                        as,4
+                        b,8
+                        [
+                        as,8
+                        ]
+                        cs8
+                        [
+                        as,8
+                        ]
+                        ds8
+                        [
+                        b,8
+                        ]
+                        cs8
+                        [
+                        ds8
+                        ~
+                        ]
+                        ds8
+                        [
+                        d8
+                        ~
+                        ]
+                        d4
+                        fs8
+                        [
+                        cs'8
+                        ]
+                        ds'8
+                        [
+                        as8
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "cco_bass"
@@ -18993,6 +26539,86 @@
                             \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
+                    }
+                    {
+                        {
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #10
+                            R1 * 6
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        g,4
+                        -\staccato
+                        -\accent
+                        r4
+                        r2
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        g1
+                        \p
+                        ~
+                        \<
+                        g2
+                        ~
+                        g4
+                        ~
+                        g8
+                        [
+                        g8
+                        \f
+                        -\staccato
+                        -\accent
+                        ]
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 5
+                        }
+                    }
+                    {
+                        {
+                            \accidentalStyle neo-modern-cautionary
+                            R1 * 3
+                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r2
+                        r4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r1
+                        r1
+                        r2
+                        r4
                     }
                 }
             >>

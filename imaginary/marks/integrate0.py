@@ -14,7 +14,10 @@ from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
 from imaginary.stories import library, artics
 from imaginary.marks import rock, integrate
-
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 
 # SHOULD AVERAGE 12-16 bars
 # TEMPO = 112+ !!!!!!
@@ -124,7 +127,7 @@ def score0(lib):
     
     s = sb().annotate(
         slur_cells=True,
-        label=("phrases", "cells")
+        label=("cells",)
         ).to_score(s)
     
     # s.extend_from(
@@ -143,7 +146,9 @@ def score0(lib):
             pizz_flutter_initial = True, # if True then will add pizz and f.t. indications
             pizz_flutter_beats = 8,
             bookend_beats=(0,1),
-            mask_staves = ("cco_bass",)
+            mask_staves = ("cco_bass",),
+            pizz_dynamic="mf",
+            flutter_dynamic="p",
             )
         )
     s.extend_from(pizz_flutter.PizzFlutter(
@@ -155,6 +160,32 @@ def score0(lib):
             ),
         extend_last_machine=True
         )
+    # (make the guitars quiter)
+    for st in s.staves["ooa_guitar", "ooa_bass_guitar"]:
+        st.note_events[0].tag("mp")
+
+    drum_set = ImaginarySegment(
+        ImaginaryCell(rhythm=(-4*4,)),
+        lib("drum_off_short").eps(
+            0, "p",)(),
+        get_improv_line(
+            rhythm=(1,)*4,
+            times=8),
+        lib("drum_du_du").eps(
+            0, "mp","\\<")(
+            13, "mf")(),
+        )
+    s.staves["ooa_drum_set"].append(drum_set)
+
+    mallets = pad.Pad(
+        sb.with_only("high_drones"),
+        fabric_staves=("ooa_mallets",),
+        pad_durations=(4,)*10,
+        tag_all_note_events=(":32",),
+        bookend_beats=(4*4,0),
+        after_func = lambda x: x.eps(0,"p",)(),
+        )
+    s.extend_from(mallets)
 
     bass_accent_es = (2,5,12,15,28,36)
     bass_accent_es2 = (1,4,8,14,17)
@@ -199,12 +230,28 @@ def score0(lib):
                 0,2,4,6,8,10, "p","\\<")(
                 1,3,5,7,9,11, "mf", ".")()
             )    
-    bass_pizz = lambda_segment.LambdaSegment(
+    bass_line = lambda_segment.LambdaSegment(
             sb.with_only("bass_line",),
-            fabric_staves = ("cco_bass",),
-            func = lambda x: x.crop_chords(indices=(0,)).t(12).eps(
-                1, "pizz", "mf")()
+            fabric_staves = ("cco_bass","cco_percussion"),
+            funcs = (
+                lambda x: x.crop_chords(indices=(0,)).t(12).eps(
+                    1, "pizz", "mf")(),
+                lambda x: x.only_first("cells", 6
+                    ).crop_chords(indices=(0,1)).smart_ranges( ((-15,-4),)
+                    # ).label("events"
+                    ).poke("events", 1,4,5,11,15,18,19
+                    ).e_smear_after(1,11, fill=True
+                    ).bookend_pad(0,3
+                    ).eps(
+                    0, "\\timpStaff", "timpani")(
+                    1,9, "pp","\\<")(
+                    3,10, "mp")(
+                    1,9, ":32")(
+                    )
+                )
             )
+
+
     harp = lambda_segment.LambdaSegments(
             sb.with_only("riff",),
             fabric_staves = ("harp1", "harp2"),
@@ -223,8 +270,9 @@ def score0(lib):
         fabric_staves = ("ooa_bass_guitar","ooa_guitar",),
         ranges=pitch_ranges.MID_RANGES,
         osti_pulse_duration = 1,
-        osti_cell_length = 14,
+        osti_cell_length = 10,
         osti_cell_count = 4,
+        after_func = lambda x: x.eps(0,"disorted")()
     )
     sax_counter = lambda_segment.LambdaSegment(
         sb.with_only("melody_line1"),
@@ -234,7 +282,7 @@ def score0(lib):
             1, "mp")()
         )
     s.extend_from(
-        bass_pizz,
+        bass_line,
         bassoon_undo, 
         tenor_highlights, 
         basson_highlights,
@@ -243,6 +291,16 @@ def score0(lib):
         harp,
         sax_counter,
         )
+    cym_line = ImaginaryLine(
+        ImaginaryCell(rhythm=(1,-3),).eps(
+            0,":32","p", "sus. cym.", "\\percStaff", "(")(
+            1, ")")(
+            ),
+        ImaginaryCell(rhythm=(-4*8,),),
+        ImaginaryCell(rhythm=(4,),).eps(0,":32","mp")(
+            ),
+        )
+    s.staves["cco_percussion"].segments[-1].append(cym_line)
 
     s.fill_rests(5*4)
     oboe_swells = staggered_swell.StaggeredSwells(
@@ -279,8 +337,27 @@ def score0(lib):
         clarinet_highlights,
         )    
 
-
     s.fill_rests()
+
+    # s.lines.apply(lambda x:x.auto_respell())
+    # s.phrases.apply(lambda x:x.auto_respell())
+    # s.as_rhythm_and_short()
+    s.remove(s.staff_groups["short_score"])
+
+    for staff in s.staves:
+        # staff.phrases.transformed(calliope.Label())
+        # staff.lines.transformed(calliope.Label())
+
+        # TO DO: WHY DOESN'T THIS WORK?????
+        if segs := staff.segments:
+            main_seg = segs[0]
+            # for next_seg in segs[1:]:
+            #     main_seg += next_seg
+            main_seg.rehearsal_mark_number = 11
+            main_seg.compress_full_bar_rests = True
+    s.midi_tempo = 96
+
+
     return s
 
 def to_lib(lib):
@@ -293,7 +370,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate0_score0"], 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )
 

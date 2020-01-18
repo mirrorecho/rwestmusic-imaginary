@@ -1,5 +1,5 @@
 import abjad, calliope
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.fabric import ImaginaryFabric, ImaginaryLine, ImaginaryPhrase, ImaginaryCell
 from imaginary.fabrics import instrument_groups
 
 class Pulse(ImaginaryFabric):
@@ -7,8 +7,8 @@ class Pulse(ImaginaryFabric):
     pulse_beats = 4
 
     def weave(self, staff, index=0, **kwargs):
-        my_phrase = calliope.Phrase(
-            calliope.Cell(
+        my_phrase = ImaginaryPhrase(
+            ImaginaryCell(
             rhythm = [self.pulse_duration for i in range(int(self.pulse_beats/self.pulse_duration))]
             )
             )

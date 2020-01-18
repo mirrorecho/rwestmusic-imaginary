@@ -8,7 +8,10 @@ from imaginary.fabrics import (instrument_groups,
 
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
-
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 from imaginary.stories import library, artics
 from imaginary.marks import lyrical, rock
 from imaginary.marks import integrate
@@ -29,32 +32,91 @@ def score2(lib):
     
     s = sb().annotate(
         slur_cells=True,
-        label=("phrases", "cells")
+        label=("phrases", "cells", "events")
         ).to_score(s)
+
+    strings = pad.Pad(
+        sb.with_only("bass_drones"),
+        fabric_staves = instrument_groups.get_instruments("cco_strings"),
+        pad_durations=(1*4,8*4,8*4),
+        # bookend_beats=(4,0),
+        ranges=pitch_ranges.MID_RANGES,
+        after_func = lambda x: x.eps(
+            0,"pp","fermata")()
+        )
+    s.extend_from(strings)
+
+    for st in s.staves:
+        unused_staves = s.unused_staves_at_beat(0)
+        if st.name in unused_staves:
+            st.append(ImaginarySegment(
+                ImaginaryCell(rhythm=(-4,)).eps(0,"fermata")())
+            )
 
     trumpets = lambda_segment.LambdaSegments(
         sb.with_only("melody_line1"),
         fabric_staves = ("ooa_trumpet","cco_trumpet"),
+        func = lambda x: x.crop("cells", 1),
         funcs = (
-            lambda x: x.only_first("cells",9).slur_cells().eps(
-                )(),
-            lambda x: x.only_last("cells",7).bookend_pad(11*4).slur_cells().eps(
-                )(),
+            lambda x: x.only_first("cells",9
+                ).e_smear_after(7, cover_notes=True, extend_beats=4
+                ).e_smear_after(13, cover_notes=True, extend_beats=2
+                ).e_smear_after(17, cover_notes=True, extend_beats=0.5
+                ).e_smear_after(21, cover_notes=True, extend_beats=1
+                ).e_smear_after(24, cover_notes=True, extend_beats=1
+                ).mask("events",8
+                ).slur_cells().eps(
+                2, "mp", "solo")(),
+            lambda x: x.only_last("cells",7).bookend_pad(10*4
+                ).mask("events",2
+                ).e_smear_after(3, cover_notes=True, extend_beats=1
+                ).slur_cells().eps(
+                3, "mp", "solo")(),
                 )
         )
+    clarinet_swells = lambda_segment.LambdaSegments(
+        sb.with_only("melody_line1"),
+        fabric_staves = ("ooa_clarinet","cco_clarinet1", "cco_clarinet2"),
+        func = lambda x: x.crop("cells", 1),
+        funcs = (
+            lambda x: x.poke("events", 7, 10, 14, 18, 27).smear_before(
+                extend_beats=1.5, rearticulate=True
+                ).smear_after(fill=True, gap_beats=0.5, max_beats=4).eps(
+                    1,4,7,10,13,"ppp","\\<")(
+                    2,5,8,11,14,"mp","\\>")(
+                    3,6,9,12,15,"\\!")().label("events"),
+            lambda x: x.poke("events", 38,46, 50, 55, 63).smear_before(
+                extend_beats=1.5, rearticulate=True
+                ).smear_after(fill=True, gap_beats=0.5, max_beats=4).eps(
+                    1,4,7,10,13,"ppp","\\<")(
+                    2,5,8,11,14,"mp","\\>")(
+                    3,6,9,12,15,"\\!")().label("events"),
+            lambda x: x.poke("events", 42, 48, 52, 57, 65).smear_before(
+                extend_beats=1.5, rearticulate=True
+                ).smear_after(fill=True, gap_beats=0.5, max_beats=4).eps(
+                    1,4,7,10,13,"ppp","\\<")(
+                    2,5,8,11,14,"mp","\\>")(
+                    3,6,9,12,15,"\\!")().label("events"),
+            ),
+        )
+
     counter_me = lambda_segment.LambdaSegments(
         sb.with_only("counter_line"),
-        fabric_staves = ("cco_flute1","cco_flute2","ooa_mallets"),
+        fabric_staves = ("cco_flute1","cco_flute2","ooa_mallets","harp1"),
+        func = lambda x: x.crop("cells", 1).auto_respell(),
         funcs = (
-            lambda x: x.auto_respell().eps(
-                )(),
-            lambda x: x.auto_respell().eps(
-                )(),
-            lambda x: x.auto_respell().transformed(calliope.StandardDurations(
-            min_duration=0.25,
-            standard_duration=0.5,)).eps(
-                )(),
-                )
+            lambda x:x,
+            lambda x:x,
+            lambda x:x.transformed(calliope.StandardDurations(
+                min_duration=0.25,
+                standard_duration=0.5,)).eps(
+                    )(),
+            lambda x:x.poke("events",1,3,6,8,9,15,22,24,26,29,31,32).smear_after(
+                min_beats=1,
+                ).transformed(
+                calliope.StandardDurations()
+                ).eps(1,"mp")(),
+            )
         )
     for fi, f in enumerate(counter_me.staves("cco_flute1","cco_flute2")):
         for i,c in enumerate(f.cells):
@@ -67,7 +129,7 @@ def score2(lib):
             min_duration=0.25,
             standard_duration=0.5,))
     # flutes.slur_cells()
-    s.extend_from(trumpets, counter_me)
+    s.extend_from(trumpets, counter_me, clarinet_swells)
 
     # counter_winds1 = melody.Melody(
     #     calliope.LineBlock(
@@ -125,6 +187,23 @@ def score2(lib):
     #     strings_pulse2
     #     )
     s.fill_rests()
+
+    # s.as_rhythm_and_short()
+    # s.remove(s.staff_groups["short_score"])
+
+    for staff in s.staves:
+        # staff.phrases.transformed(calliope.Label())
+        # staff.lines.transformed(calliope.Label())
+
+        # TO DO: WHY DOESN'T THIS WORK?????
+        if segs := staff.segments:
+            main_seg = segs[0]
+            # for next_seg in segs[1:]:
+            #     main_seg += next_seg
+            main_seg.rehearsal_mark_number = 13
+            main_seg.compress_full_bar_rests = True
+    s.midi_tempo = 112
+
     return s
 
 # # =============================================================

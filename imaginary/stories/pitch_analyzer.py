@@ -66,5 +66,6 @@ class PitchAnalyzer(calliope.CalliopeBase):
     def pitches_at_ticks(self, ticks):
         return sorted(self.ticks_pitches[int(ticks)])
 
+    # TO DO... this is confusing
     def pitches_at(self, beats):
-        return int(beats * calliope.MACHINE_TICKS_PER_BEAT)
+        return self.pitches_at_ticks(int(beats * calliope.MACHINE_TICKS_PER_BEAT))

@@ -71,6 +71,7 @@ def score3(lib):
         transposes={"ooa_tenor_sax":-12,},
         )
     s.extend_from(riff_all_1)
+    # TO DO USE unused_staves_at_beat methoed...
     s.extend_from(lambda_segment.LambdaSegment(
         fermata_block,
         fabric_staves=[st.name for st in s.staves if 

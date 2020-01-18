@@ -733,7 +733,7 @@ def block4(lib):
             lib("riff_line").t(-1).stack_p( ST_UP_II ),
             lib("riff_line").t(6).stack_p( ST_UP_I ),
             lib("riff_line").t(13).stack_p( ST_UP_I ),
-            lib("riff_line").t(8).bookend_pad(6)
+            # lib("riff_line").t(8).bookend_pad(6)
             ],
         counter_line = [
             # home_riffs(1, respell="sharps").t( 4 ).stack_p( ST_7UP )
@@ -757,13 +757,13 @@ def block4(lib):
             drone.DroneLine(
                 line_pitches=( ( 15,27, ),),
                 phrase_rhythm = (0.5,)*8,
-                phrase_count = 5,
-                ),
-            drone.DroneLine(
-                line_pitches=( (20,),),
-                phrase_rhythm = (0.5,)*8,
                 phrase_count = 4,
                 ),
+            # drone.DroneLine(
+            #     line_pitches=( (20,),),
+            #     phrase_rhythm = (0.5,)*8,
+            #     phrase_count = 4,
+            #     ),
             ],
 
         )
@@ -810,7 +810,7 @@ def block4(lib):
         )
 
     # extras!
-    b4.segments["mid_drones"].cells[45].t(12)
+    # b4.segments["mid_drones"].cells[45].t(12)
 
 
     for p in b4.segments["mid_drones"].phrases[6:]:
@@ -1075,7 +1075,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["rock_score_short"], 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         # open_pdf=False,
         )
 

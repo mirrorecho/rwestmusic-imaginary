@@ -46,6 +46,24 @@ freePad = {
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
 }
 
+percStaff = {
+    \stopStaff
+    \override Staff.StaffSymbol.line-positions = #'(
+        0
+        )
+    \startStaff
+    \clef percussion
+}
+
+timpStaff = {
+    \stopStaff
+    \override Staff.StaffSymbol.line-positions = #'(
+        -4 -2 0 2 4
+        )
+    \startStaff
+    \clef bass
+}
+
 freeContinue = {
     \stopStaff
     \override Staff.StaffSymbol.line-positions = #'(

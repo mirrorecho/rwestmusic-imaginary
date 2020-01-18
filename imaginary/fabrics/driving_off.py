@@ -1,5 +1,5 @@
 import abjad, calliope
-from imaginary.stories.fabric import ImaginaryFabric
+from imaginary.stories.fabric import ImaginaryFabric, ImaginaryPhrase, ImaginaryCell
 from imaginary.fabrics import instrument_groups
 
 class DrivingOff(ImaginaryFabric):
@@ -11,10 +11,10 @@ class DrivingOff(ImaginaryFabric):
 
     def weave(self, staff, index=0, **kwargs):
             
-        drive_in_cell = calliope.Cell(
+        drive_in_cell = ImaginaryCell(
             rhythm=(-0.5,) + (0.5, 0.5,)*(self.drive_in_beats-1) + (0.5,)
             )
-        off_cell = calliope.Cell(
+        off_cell = ImaginaryCell(
             rhythm =(-0.5,) + (1,)*(self.off_count-1) + (1.5,)
             )
 
@@ -27,10 +27,10 @@ class DrivingOff(ImaginaryFabric):
         off_cell.events[-1].tag(">")
         off_cell.note_events.tag("-")
 
-        my_phrase = calliope.Phrase(drive_in_cell, off_cell)
+        my_phrase = ImaginaryPhrase(drive_in_cell, off_cell)
 
         if self.end_downbeat == True:
-            end_cell = calliope.Cell(rhythm=(1,))
+            end_cell = ImaginaryCell(rhythm=(1,))
             end_cell.events[0].tag(">", ".")
             my_phrase.append(end_cell)
 

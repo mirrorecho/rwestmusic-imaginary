@@ -7,11 +7,11 @@ def integrate_score(lib):
     # in order to prevent copying larger score objects
     sc = lib["integrate0_score0"]
     sc.extend_from(lib["integrate1_score1"])
-    sc.extend_from(lib["integrate2_score2"])
-    sc.extend_from(lib["integrate3_score3"])
-    sc.extend_from(lib["integrate4_score4"])
-    sc.extend_from(lib["integrate5_score5"])
-    sc.midi_tempo = 112
+    # sc.extend_from(lib["integrate2_score2"])
+    # sc.extend_from(lib["integrate3_score3"])
+    # sc.extend_from(lib["integrate4_score4"])
+    # sc.extend_from(lib["integrate5_score5"])
+    sc.midi_tempo = 96
     return sc
 
 def to_lib(lib):

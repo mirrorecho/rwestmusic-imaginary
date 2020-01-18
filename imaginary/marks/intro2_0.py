@@ -10,26 +10,9 @@ from imaginary.scores import score
 from imaginary.stories.library_material import (
     LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, ImaginaryCell,
     )
-from imaginary.stories import library
+from imaginary.stories import library, artics
 from imaginary.marks import intro
 
-class GroupByBeats(calliope.Transform):
-    group_type = calliope.Cell
-    beat_count = 8
-
-    def transform(self, selectable, **kwargs):
-        # TO DO: this could be more elegant!
-        my_group = self.group_type()
-        beat_counter = 0
-        for e in list(selectable.events):
-            my_group.append(e)
-            beat_counter += e.beats
-            if beat_counter >= self.beat_count:
-                selectable.append(my_group)
-                my_group = self.group_type()
-                beat_counter = 0
-
-        selectable.append(my_group)
 
 # TEMPO = 112
 # =========================================================================
@@ -56,7 +39,7 @@ def block0(lib):
     melody2 = lib("home_b_aup4").sc(0.5) + lib("home_b_aup4").sc(0.5).t(5)
 
     melody_combo = calliope.CompositeChordsLine(
-        calliope.LineBlock(melody1, melody2)).transformed(GroupByBeats())
+        calliope.LineBlock(melody1, melody2)).transformed(artics.GroupByBeats())
 
     sb0.ext_segments(
         melody_line1 = [lib("home_a_b").sc(0.5), lib("home_a_b").sc(0.5).t(5)],
