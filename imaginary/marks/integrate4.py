@@ -14,8 +14,11 @@ from imaginary.stories.library_material import (
     )
 
 from imaginary.stories import library, artics
-from imaginary.marks import lyrical, rock
+from imaginary.marks import lyrical, rock, intro
 from imaginary.marks import integrate
+from imaginary.stories import library, artics, free_segment
+from imaginary.marks import intro
+
 
 
 # SHOULD AVERAGE 20 bars
@@ -65,10 +68,21 @@ def score4(lib):
         ranges=pitch_ranges.BOTTOM_RANGES,
         osti_pulse_duration = 1,
         osti_cell_length = 16,
-        osti_cell_count = 4,
+        osti_cell_count = 3,
         after_func = lambda x: x.eps(
                 0, "f")()
     )
+    guitars_end = osti.Osti(
+        sb.with_only("bass_drones"),
+        fabric_staves = ("ooa_bass_guitar","ooa_guitar",),
+        ranges=pitch_ranges.BOTTOM_RANGES,
+        osti_pulse_duration = 4,
+        osti_cell_length = 1,
+        osti_cell_count = 4,
+        after_func = lambda x: x.eps(
+                2, "\\>")()
+    )
+    guitars_end.cells.setattrs(respell="sharps")
     trombones = lambda_segment.LambdaSegment(
         sb.with_only("bass_line"),
         fabric_staves = ("ooa_trombone","cco_trombone"),
@@ -212,7 +226,7 @@ def score4(lib):
         ranges=pitch_ranges.HIGHISH_TO_MID_RANGES,
         osti_pulse_duration = 0.5,
         osti_cell_length = 8,
-        osti_cell_count = 16,
+        osti_cell_count = 12,
         tag_all_note_events=(">"),
         after_funcs = (
             lambda x: x.eps(
@@ -247,9 +261,159 @@ def score4(lib):
     s.extend_from(
         sax_melody, cco_melody,
         altos1,altos2,horns_end,trumpets_end,flutes_end,
-        end_piano_harp, end_roll, )
+        end_piano_harp, end_roll, guitars_end)
+
+    e0 = free_segment.AlocFreeSegmentBlock(
+        tempo_command=""" slow down to \\note #"4" #UP "= 72 ca, freely, 20'' " """)
+    
+    s.staves["ooa_flute"].events[-7].tag("\\>")
+    s.staves["ooa_flute"].events[-1].tag("\\!")
+    e0["ooa_flute"].machine_arrow(
+        intro.hold_cell(20,).eps(0,")")(), 
+        instruction="repeat, slowing down", with_repeat=False).eps(
+            1, "\\>")(
+            9, "pp")()
+    e0["ooa_flute"].respell="sharps"
+
+    e0["ooa_clarinet"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_alto_sax1"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_alto_sax2"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_tenor_sax"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_bari_sax"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_bassoon"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_horn"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_trumpet"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_trombone"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_mallets"].machine_arrow(
+        ImaginaryCell(rhythm=(4,), pitches=(16,)).eps(
+            0, ":32")(), with_repeat=False).eps(
+            1, "\\>")(
+            9, "pp")()
+
+    e0["ooa_drum_set"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_guitar"].machine_arrow(
+        s.staves["ooa_guitar"].cells[-1](), with_repeat=False).eps(
+            1, "\\>", "distorted, ethereal")(
+            9, "pp")()
+
+    e0["ooa_bass_guitar"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_violin1"].machine_arrow(s.staves["ooa_violin1"].phrases[-1](),
+        instruction="repeat, slowing, down", 
+            with_repeat=False).eps(
+            1, "\\>")(
+            9, "pp")()
+
+    e0["ooa_violin2"].machine_arrow(
+        lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_cello1"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["ooa_cello2"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_flute1"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_flute2"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_oboe1"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_oboe2"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_clarinet1"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_clarinet2"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_bassoon"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_horn"].machine_arrow(
+        s.staves["cco_horn"].phrases[-1]().eps(
+            0,"\\>")(), instruction="repeat, slowing down", with_repeat=False)
+
+    e0["cco_trumpet"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_trombone"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_percussion"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["harp1"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["harp2"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["piano1"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["piano2"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_violin_i"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_violin_ii"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_viola"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_cello"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    e0["cco_bass"].machine_arrow(lib("cell_rest4").eps(
+        0, "fermata")(), with_repeat=False)
+
+    for bass_seg in s.staves["cco_bass"].segments:
+        bass_seg.transformed(calliope.Transpose(interval=12))
+
+    s.fill_rests(beats=16*4)
+
+    for st in s.staves:
+        try:
+            end_seg = e0[st.name]
+            if end_seg.events:
+                end_seg.events[-1].tag("""!\\bar "|." """)
+            st.append(end_seg)
+        except:
+            print("st.name not in final free block")
 
 
+
+    # s.staves["cco_violin_i"].append(b0["cco_violin_i1"]
+    #     )
 
     # strings_pulse1 = pulse.Pulse(
     #     fabric_staves = (
@@ -344,23 +508,41 @@ def score4(lib):
 
     # # =======================================================
     # adjust for bass 8va
-    for bass_seg in s.staves["cco_bass"].segments:
-        bass_seg.transformed(calliope.Transpose(interval=12))
+
+
+    for staff in s.staves:
+        # staff.phrases.transformed(calliope.Label())
+        # staff.lines.transformed(calliope.Label())
+
+        # TO DO: WHY DOESN'T THIS WORK?????
+        if segs := staff.segments:
+            main_seg = segs[0]
+            # for next_seg in segs[1:]:
+            #     main_seg += next_seg
+            main_seg.rehearsal_mark_number = 15
+            main_seg.compress_full_bar_rests = True
+    s.midi_tempo = 96
 
     s.lines.apply(lambda x:x.auto_respell())
     s.phrases.apply(lambda x:x.auto_respell())
+
 
     # s.extend_from(
     #     counter_winds(),
     #     strings_pulse1(),
     #     strings_low_pulse1(),
     #     )
-    s.fill_rests()
+    # s.fill_rests()
+
+    s.remove(s.staff_groups["short_score"])
+
+
     s.midi_tempo=112
     return s
 
 def to_lib(lib):
     integrate.to_lib(lib)
+    intro.to_lib(lib)
     lib.add(score4, namespace="integrate4")
 
 if __name__ == '__main__':
