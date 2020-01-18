@@ -9,7 +9,7 @@
     tagline = ##f
     composer = \markup { "Randall West" }
     title = \markup { "Memory Bubbles I." }
-    piece = \markup { "OOA Harp" }
+    piece = \markup { "CCO Harp" }
 }
 
 \layout {}
@@ -27,8 +27,8 @@
         {
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { Harp }
@@ -61,15 +61,15 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -88,15 +88,15 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -115,18 +115,19 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
+                \mark #1
                 s4
                 \normalStaff
                 s16
@@ -153,15 +154,15 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -190,15 +191,15 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -225,8 +226,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }

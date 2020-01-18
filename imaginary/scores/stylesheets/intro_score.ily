@@ -6,7 +6,7 @@
         
         
         % TO DO: WHAT'S THE PURPOSE OF THIS??!!
-        % \remove "Timing_translator"
+        \remove "Timing_translator"
         \remove "Default_bar_line_engraver"
         \remove "Bar_engraver"
     }

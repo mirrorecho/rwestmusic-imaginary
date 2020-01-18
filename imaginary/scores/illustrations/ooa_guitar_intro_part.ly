@@ -49,8 +49,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -76,8 +76,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -103,8 +103,36 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
+                r4
+                s8
+            }
+            {
+                \numericTimeSignature
+                \freePad
+                \break
+                \tempo \markup \fontsize #1 {  " 20'' "  }
+                \accidentalStyle neo-modern-cautionary
+                \time 8/1
+                \mark #1
+                s8
+                \normalStaff
+                s\breve
+                s2
+                r1
+                s\breve
+                s2
+                \freeContinue
+                s4
+                \once \hide Rest
+                r4
+                s4
+                s4
+                s4
+                s4
+                \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -130,8 +158,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -143,49 +171,62 @@
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
                 s8
+                \bar ".|:"
                 \normalStaff
-                s\breve
-                s2
-                r1
-                s\breve
-                s2
+                s8.
+                f''16
+                \mp
+                [
+                a''16
+                e''16
+                b''16
+                ]
+                f''16
+                [
+                c'''16
+                d'''16
+                e'''16
+                ]
+                r2
+                \fermata
+                s16
+                \once \override TextScript.extra-offset = #'( 1 . 0 )
+                \bar ":|."
                 \freeContinue
                 s4
+                ^ \markup {
+                    \column
+                        {
+                            "repeat, with drum set quarter note pulse"
+                        }
+                    }
                 \once \hide Rest
                 r4
                 s4
                 s4
                 s4
                 s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                \freePad
                 \freeRestArrow
-                \freePad
-                r4
-                s8
-            }
-            {
-                \numericTimeSignature
-                \freePad
-                \break
-                \tempo \markup \fontsize #1 {  " 20'' "  }
-                \accidentalStyle neo-modern-cautionary
-                \time 8/1
-                s8
-                \normalStaff
-                s\breve
-                s2
-                r1
-                s\breve
-                s2
-                \freeContinue
-                s4
-                \once \hide Rest
-                r4
-                s4
-                s4
-                s4
-                s4
-                \freeRestArrow
-                \freePad
                 r4
                 s8
             }

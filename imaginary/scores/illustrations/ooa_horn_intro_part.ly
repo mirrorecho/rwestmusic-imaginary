@@ -49,8 +49,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -76,8 +76,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -103,8 +103,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -115,6 +115,7 @@
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
+                \mark #1
                 s4
                 \normalStaff
                 s8
@@ -137,8 +138,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -160,9 +161,9 @@
                 s16
                 \mp
                 \>
-                \freeContinue
-                \bar ":|."
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
+                \bar ":|."
+                \freeContinue
                 s4
                 ^ \markup { repeat }
                 \once \hide Rest
@@ -191,8 +192,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -262,8 +263,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }

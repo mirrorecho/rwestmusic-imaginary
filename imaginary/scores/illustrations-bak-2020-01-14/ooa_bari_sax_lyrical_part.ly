@@ -32,35 +32,18 @@
                     \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                     \set Staff.shortInstrumentName = \markup { Bsax. }
                     \set Staff.midiInstrument = #"alto sax" 
-                    \mark #1
+                    \mark #2
                     \clef "treble"
-                    R1 * 6
+                    R1 * 12
                 }
             }
             {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     R1 * 2
                 }
             }
             {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    \mark #1
-                    R1 * 2
-                }
-            }
-            {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 fs''1
                 \pp
@@ -80,31 +63,17 @@
                 ~
                 fs''4
                 r4
-            }
-            {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 1
+                    R1 * 7
                 }
             }
             {
                 {
-                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    R1 * 6
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    \mark #2
                     R1 * 4
                 }
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 r2
                 g''2
@@ -118,7 +87,6 @@
                 g''2
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 r2
                 g''2
@@ -130,18 +98,12 @@
                 \mf
                 ~
                 g''2
-            }
-            {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
                     R1 * 4
                 }
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
-                \mark #3
                 r2
                 e''2
                 \pp
@@ -149,12 +111,11 @@
                 \<
                 e''4
                 e''4
-                \mp
+                \mf
                 ~
                 e''2
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 r2
                 a''2
@@ -163,12 +124,11 @@
                 \<
                 a''4
                 a''4
-                \mp
+                \mf
                 ~
                 a''2
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 r2
                 f''2
@@ -177,20 +137,12 @@
                 \<
                 f''4
                 e''4
-                \mp
+                \mf
                 ~
                 e''2
-            }
-            {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
                     R1 * 5
                 }
-            }
-            {
-                \compressFullBarRests
-                \accidentalStyle neo-modern-cautionary
                 r1
                 \fermata
             }

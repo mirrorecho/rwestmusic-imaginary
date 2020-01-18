@@ -4,12 +4,13 @@
 \include "/Users/rwest/Code/mirrorecho/rwestmusic-imaginary/imaginary/scores/stylesheets/score.ily"
 \include "/Users/rwest/Code/mirrorecho/rwestmusic-imaginary/imaginary/scores/stylesheets/parts.ily"
 \include "/Users/rwest/Code/mirrorecho/rwestmusic-imaginary/imaginary/scores/stylesheets/intro_score.ily"
+\include "/Users/rwest/Code/mirrorecho/rwestmusic-imaginary/imaginary/scores/stylesheets/intro_group_parts.ily"
 
 \header {
     tagline = ##f
     composer = \markup { "Randall West" }
-    title = \markup { [] }
-    piece = \markup { "OOA Cello 1" }
+    title = \markup { "Memory Bubbles I." }
+    piece = \markup { "CCO Cello 1" }
 }
 
 \layout {}
@@ -29,8 +30,8 @@
             {
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Cello 1" }
@@ -52,21 +53,21 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s8
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
-                    \normalStaff
                     \bar ".|:"
+                    \normalStaff
                     s8.
                     cs2
                     \pp
@@ -85,11 +86,11 @@
                     cs4
                     \!
                     s16
-                    \bar ":|."
                     \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \bar ":|."
                     \freeContinue
                     s4
-                    ^ \markup { repeat }
+                    ^ \markup { "repeat, freely" }
                     \once \hide Rest
                     r4
                     s4
@@ -111,21 +112,21 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s8
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
-                    \normalStaff
                     \bar ".|:"
+                    \normalStaff
                     s8.
                     fs2
                     \pp
@@ -144,11 +145,11 @@
                     fs4
                     \!
                     s16
-                    \bar ":|."
                     \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \bar ":|."
                     \freeContinue
                     s4
-                    ^ \markup { repeat }
+                    ^ \markup { "repeat, freely" }
                     \once \hide Rest
                     r4
                     s4
@@ -170,21 +171,22 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s8
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
+                    \mark #1
                     s8
-                    \normalStaff
                     \bar ".|:"
+                    \normalStaff
                     s8.
                     g'4
                     \p
@@ -193,9 +195,9 @@
                     )
                     b1
                     s16
-                    \bar ":|."
-                    \once \override TextScript.extra-offset = #'( 1 . 0 )
                     \freeContinue
+                    \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \bar ":|."
                     s4
                     ^ \markup { "repeat, freely" }
                     \once \hide Rest
@@ -221,21 +223,21 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
-                    \normalStaff
                     \bar ".|:"
+                    \normalStaff
                     s8.
                     e8
                     (
@@ -248,9 +250,9 @@
                     b2
                     )
                     s16
-                    \bar ":|."
-                    \once \override TextScript.extra-offset = #'( 1 . 0 )
                     \freeContinue
+                    \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \bar ":|."
                     s4
                     ^ \markup { "repeat, freely" }
                     \once \hide Rest
@@ -275,15 +277,15 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s8
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
@@ -310,8 +312,8 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
@@ -324,8 +326,8 @@
             {
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Cello 2" }
@@ -347,28 +349,28 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s8
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
-                    \normalStaff
                     \bar ".|:"
+                    \normalStaff
                     s8.
                     cs'1
                     \pp
                     \fermata
                     s16
-                    \bar ":|."
                     \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \bar ":|."
                     \freeContinue
                     s4
                     ^ \markup { repeat }
@@ -397,21 +399,21 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s8
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
-                    \normalStaff
                     \bar ".|:"
+                    \normalStaff
                     s8.
                     r4
                     b4
@@ -424,11 +426,11 @@
                     e1
                     )
                     s16
-                    \bar ":|."
                     \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \bar ":|."
                     \freeContinue
                     s4
-                    ^ \markup { repeat }
+                    ^ \markup { "repeat, freely" }
                     \once \hide Rest
                     r4
                     s4
@@ -450,22 +452,23 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                     s16
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
+                    \mark #1
                     s8
-                    \normalStaff
                     \bar ".|:"
+                    \normalStaff
                     s8.
                     b4
                     \p
@@ -475,9 +478,9 @@
                     b2
                     )
                     s16
-                    \bar ":|."
-                    \once \override TextScript.extra-offset = #'( 1 . 0 )
                     \freeContinue
+                    \once \override TextScript.extra-offset = #'( 1 . 0 )
+                    \bar ":|."
                     s4
                     ^ \markup { "repeat, freely" }
                     \once \hide Rest
@@ -503,15 +506,15 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
@@ -530,15 +533,15 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s8
                 }
                 {
                     \numericTimeSignature
-                    \break
                     \freePad
+                    \break
                     \tempo \markup \fontsize #1 {  " 20'' "  }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
@@ -565,8 +568,8 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                 }

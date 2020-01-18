@@ -35,19 +35,19 @@
                         \set Staff.shortInstrumentName = \markup { Fl. }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b'1
-                        \fermata
                         \mf
+                        \fermata
                         ^ \markup { "growl tone" }
                         r1
                         \fermata
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat 1 or 2 X" }
                         \once \hide Rest
@@ -92,17 +92,17 @@
                         \set Staff.shortInstrumentName = \markup { Cl. }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         a'1
                         \p
                         \fermata
                         \<
                         s16
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
-                        \freeContinue
                         s4
                         \mp
                         ^ \markup { repeat }
@@ -154,8 +154,8 @@
                         \set Staff.shortInstrumentName = \markup { Asax.1,2 }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         \once \hide Stem
                         e'4
@@ -249,8 +249,8 @@
                         \set Staff.shortInstrumentName = \markup { Tsax. }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         r4
                         b4
@@ -325,17 +325,17 @@
                         s16
                         \freePad
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         e1
                         \p
                         \fermata
                         \<
                         s16
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
-                        \freeContinue
                         s4
                         \mp
                         ^ \markup { repeat }
@@ -385,17 +385,17 @@
                         \time 8/1
                         \clef "bass"
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b,1
                         \p
                         \fermata
                         \<
                         s16
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
-                        \freeContinue
                         s4
                         \mp
                         ^ \markup { repeat }
@@ -706,8 +706,8 @@
                         s16
                         \freePad
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         e''4
                         \pp
@@ -765,14 +765,14 @@
                         \time 8/1
                         \clef "percussion"
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         b4
                         s16
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
-                        \freeContinue
                         s4
                         \pp
                         ^ \markup { "cont. repeating consant pulse" }
@@ -832,8 +832,8 @@
                         \set Staff.shortInstrumentName = \markup { Gtr. }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         f'16
                         \mp
@@ -915,8 +915,8 @@
                         s16
                         \freePad
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         e4
                         \pp
@@ -974,8 +974,8 @@
                         \set Staff.shortInstrumentName = \markup { Vln.1,2 }
                         \time 8/1
                         s4
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8
                         \freePad
                         s8
@@ -1045,8 +1045,8 @@
                         \normalStaff
                         s16
                         s16
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
                         s4
                         ^ \markup { "repeat (choosing between 1., 2., 3.)" }
@@ -1138,8 +1138,8 @@
                         \set Staff.shortInstrumentName = \markup { Fl.1,2 }
                         \time 8/1
                         s4
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8
                         \freePad
                         s8
@@ -1175,8 +1175,8 @@
                         \normalStaff
                         s16
                         s16
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
                         s4
                         ^ \markup { "repeat (choosing between 1., 2., 3.)" }
@@ -1214,8 +1214,8 @@
                         \set Staff.shortInstrumentName = \markup { Ob.1,2 }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         e'8
                         \p
@@ -1237,8 +1237,8 @@
                         \fermata
                         s16
                         \freeContinue
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup {
                             \column
@@ -1293,17 +1293,17 @@
                         \set Staff.shortInstrumentName = \markup { Cl.1,2 }
                         \time 8/1
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         <f' b'>1
                         \p
                         \fermata
                         \<
                         s16
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
-                        \freeContinue
                         s4
                         \mp
                         ^ \markup { repeat }
@@ -1370,17 +1370,17 @@
                         s16
                         \freePad
                         s8
-                        \bar ".|:"
                         \normalStaff
+                        \bar ".|:"
                         s8.
                         c1
                         \p
                         \fermata
                         \<
                         s16
+                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \bar ":|."
-                        \freeContinue
                         s4
                         \mp
                         ^ \markup { repeat }
@@ -1673,15 +1673,14 @@
                     s16
                     \freePad
                     s8
-                    \bar ".|:"
                     \normalStaff
+                    \bar ".|:"
                     s8.
                     ^ \markup {
                         \column
                             {
-                                "wood block, hard mallets"
-                                "faster, NOT with drum set"
-                                "quarter note = 112 approx"
+                                "wood block, hard mallets faster,"
+                                "NOT with drum set, quarter note = 112 approx"
                             }
                         }
                     c'8
@@ -1791,8 +1790,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.1 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e'''2
                             \pp
@@ -1818,16 +1817,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e'''8
                             \mf
                             e'''8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -1877,8 +1876,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.I.2 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b''2
                             \pp
@@ -1904,16 +1903,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b''8
                             \mf
                             b''8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -1969,8 +1968,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b''2
                             \pp
@@ -1996,16 +1995,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b''8
                             \mf
                             b''8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -2058,8 +2057,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             f''2
                             \pp
@@ -2085,16 +2084,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             f''8
                             \mf
                             f''8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -2143,8 +2142,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.1 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c'''2
                             \pp
@@ -2170,16 +2169,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c'''8
                             \mf
                             c'''8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -2229,8 +2228,8 @@
                             \set Staff.shortInstrumentName = \markup { Vln.II.2 }
                             \time 8/1
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c''2
                             \pp
@@ -2256,16 +2255,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             c''8
                             \mf
                             c''8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -2321,8 +2320,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b'2
                             \pp
@@ -2348,16 +2347,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             b'8
                             \mf
                             b'8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column
@@ -2410,8 +2409,8 @@
                             s16
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e'2
                             \pp
@@ -2437,16 +2436,16 @@
                             s8
                             \freePad
                             s8
-                            \bar ".|:"
                             \normalStaff
+                            \bar ".|:"
                             s8.
                             e'8
                             \mf
                             e'8
                             s16
                             \freeContinue
-                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             \bar ":|."
+                            \once \override TextScript.extra-offset = #'( 1 . 0 )
                             s4
                             ^ \markup {
                                 \column

@@ -31,7 +31,7 @@ slashesOff = \revert NoteHead.stencil
 withSlash = \once \slashesOn
 
 % THIS CAUSES ERRORS ONLY SOMETOMES... WHY????!!!!!!!
-#(set-global-staff-size 9)
+#(set-global-staff-size 11)
 
 freePad = {
     % \once \override Staff.Clef.stencil = ##f

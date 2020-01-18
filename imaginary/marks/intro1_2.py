@@ -259,7 +259,7 @@ def block2(lib):
     b2["cco_percussion"].machine_arrow(
         ImaginaryCell(rhythm=(0.5,0.5,0.5,0.5),), 
         instruction="repeat, keeping pulse constant").eps(
-            5, "markup_column:wood block, hard mallets|faster, NOT with drum set|quarter note = 112 approx")()
+            5, "markup_column:wood block, hard mallets faster, |NOT with drum set, quarter note = 112 approx")()
     b2["cco_percussion"].eps(
         6, "pp", "\\<")(
         10, "mf", "\\>")(

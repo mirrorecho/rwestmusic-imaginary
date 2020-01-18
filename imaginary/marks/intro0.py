@@ -30,7 +30,8 @@ def block0(lib):
 
     b0["cco_percussion"].machine(lib("cell_rest2"), pad=(1.5,0))
     b0["cco_percussion"].machine_arrow(
-        intro.hold_cell(0,"pp",":32","fermata","low tom, soft mallets"), instruction="repeat")
+        intro.hold_cell(0,"pp",":32","fermata","low tom, soft mallets"), instruction="repeat").eps(
+        0, "\\percStaff")()
 
     b0["cco_harp"].machine(ImaginaryCell(rhythm=(1,), pitches=((1,2,19,20),)).eps(
         0, ">","ff")(),

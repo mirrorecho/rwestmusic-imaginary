@@ -49,8 +49,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -76,8 +76,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -103,8 +103,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -115,14 +115,15 @@
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
+                \mark #1
                 s4
                 \normalStaff
                 s16
                 r8
                 ^ \markup { "bowed, (motor on)" }
                 c'''1
-                \fermata
                 \mp
+                \fermata
                 s16
                 \freePad
                 s8
@@ -138,8 +139,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -170,8 +171,8 @@
                 r4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -182,25 +183,55 @@
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
-                s8
+                s4
                 \normalStaff
-                s\breve
-                s2
-                r1
-                s\breve
-                s2
+                s16
+                r2
+                \fermata
+                s16
+                \freePad
+                s8
+                \bar ".|:"
+                \normalStaff
+                s8.
+                e''4
+                \pp
+                \<
+                s16
+                \once \override TextScript.extra-offset = #'( 1 . 0 )
+                \bar ":|."
                 \freeContinue
                 s4
+                ^ \markup { "repeat constant pulse, with drum set" }
                 \once \hide Rest
                 r4
                 s4
                 s4
                 s4
                 s4
-                \freeRestArrow
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                \mf
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
+                s4
                 \freePad
+                \freeRestArrow
                 r4
-                s8
+                s4
             }
         }
     >>

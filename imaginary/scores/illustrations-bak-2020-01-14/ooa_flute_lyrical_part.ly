@@ -25,13 +25,10 @@
         }
         {
             {
-                \compressFullBarRests
-                \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { Flute }
                 \set Staff.shortInstrumentName = \markup { Fl. }
                 \set Staff.midiInstrument = #"flute" 
-                \mark #1
                 e''1
                 :32
                 \p
@@ -49,7 +46,6 @@
                 r2
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 g'4
                 \p
@@ -131,7 +127,7 @@
             {
                 \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
-                \mark #1
+                \mark #3
                 a'2
                 :32
                 ^ \markup { f.t. }
@@ -142,61 +138,25 @@
                 :32
                 d''2
                 :32
-            }
-            {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
+                    R1 * 10
                 }
             }
             {
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    R1 * 6
+                    \mark #4
+                    R1 * 12
                 }
             }
             {
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #2
-                    R1 * 4
+                    \mark #5
+                    R1 * 11
                 }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    \mark #3
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 7
-                }
-            }
-            {
-                \compressFullBarRests
-                \accidentalStyle neo-modern-cautionary
                 r1
                 \fermata
             }

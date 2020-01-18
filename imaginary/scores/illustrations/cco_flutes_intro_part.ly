@@ -9,7 +9,7 @@
     tagline = ##f
     composer = \markup { "Randall West" }
     title = \markup { "Memory Bubbles I." }
-    piece = \markup { "OOA Flute 1,2" }
+    piece = \markup { "CCO Flute 1,2" }
 }
 
 \layout {}
@@ -27,8 +27,8 @@
         {
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { "Flute 1,2" }
@@ -49,15 +49,15 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -76,15 +76,15 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -103,18 +103,19 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
+                \mark #1
                 s8
                 \normalStaff
                 s\breve
@@ -130,21 +131,21 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
                 s8
-                \normalStaff
                 \bar ".|:"
+                \normalStaff
                 s8.
                 b'16
                 \ppp
@@ -164,8 +165,8 @@
                 )
                 r4
                 s16
-                \bar ":|."
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
+                \bar ":|."
                 \freeContinue
                 s4
                 ^ \markup { "repeat, freely (staggered)" }
@@ -194,28 +195,28 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }
             {
                 \numericTimeSignature
-                \break
                 \freePad
+                \break
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
                 s4
-                \normalStaff
                 \bar ".|:"
+                \normalStaff
                 s8
                 \freePad
                 s8
                 \normalStaff
                 b''1
-                \fermata
                 \mp
+                \fermata
                 ^ \markup {
                     \column
                         {
@@ -244,8 +245,8 @@
                 \normalStaff
                 s16
                 s16
-                \bar ":|."
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
+                \bar ":|."
                 \freeContinue
                 s4
                 ^ \markup { "repeat (choosing between 1., 2., 3.)" }
@@ -262,8 +263,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }

@@ -32,34 +32,17 @@
                     \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                     \set Staff.shortInstrumentName = \markup { Asax.1 }
                     \set Staff.midiInstrument = #"alto sax" 
-                    \mark #1
-                    R1 * 6
+                    \mark #2
+                    R1 * 12
                 }
             }
             {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     R1 * 2
                 }
             }
             {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    \mark #1
-                    R1 * 2
-                }
-            }
-            {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 cs''1
                 \pp
@@ -79,31 +62,17 @@
                 ~
                 cs''4
                 r4
-            }
-            {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 1
+                    R1 * 7
                 }
             }
             {
                 {
-                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    R1 * 6
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    \mark #2
                     R1 * 4
                 }
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 g''2
                 \pp
@@ -123,7 +92,6 @@
                 r4
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 g''2
                 \p
@@ -141,18 +109,12 @@
                 ~
                 g''4
                 r4
-            }
-            {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
                     R1 * 4
                 }
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
-                \mark #3
                 e''2
                 \pp
                 ~
@@ -162,7 +124,7 @@
                 e''8
                 [
                 e''8
-                \mp
+                \mf
                 ~
                 ]
                 e''2
@@ -171,7 +133,6 @@
                 r4
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 a''2
                 \pp
@@ -182,7 +143,7 @@
                 a''8
                 [
                 a''8
-                \mp
+                \mf
                 ~
                 ]
                 a''2
@@ -191,7 +152,6 @@
                 r4
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 c''2
                 \pp
@@ -202,24 +162,16 @@
                 c''8
                 [
                 a'8
-                \mp
+                \mf
                 ~
                 ]
                 a'2
                 ~
                 a'4
                 r4
-            }
-            {
                 {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
                     R1 * 5
                 }
-            }
-            {
-                \compressFullBarRests
-                \accidentalStyle neo-modern-cautionary
                 r1
                 \fermata
             }

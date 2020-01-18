@@ -50,8 +50,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -77,8 +77,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -104,8 +104,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -116,6 +116,7 @@
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
+                \mark #1
                 s8
                 \normalStaff
                 s\breve
@@ -131,8 +132,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -158,14 +159,14 @@
                 b4
                 s16
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
-                \freeContinue
                 \bar ":|."
+                \freeContinue
                 s4
                 \mf
                 ^ \markup {
                     \column
                         {
-                            "soft mallets"
+                            mallets
                             "repeat, keep pulse constant"
                         }
                     }
@@ -195,8 +196,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }
@@ -214,8 +215,8 @@
                 b4
                 s16
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
-                \freeContinue
                 \bar ":|."
+                \freeContinue
                 s4
                 \pp
                 ^ \markup { "cont. repeating consant pulse" }
@@ -251,8 +252,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }

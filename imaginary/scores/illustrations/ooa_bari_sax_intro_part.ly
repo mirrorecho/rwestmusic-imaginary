@@ -50,8 +50,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -77,8 +77,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -104,8 +104,36 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
+                r4
+                s8
+            }
+            {
+                \numericTimeSignature
+                \freePad
+                \break
+                \tempo \markup \fontsize #1 {  " 20'' "  }
+                \accidentalStyle neo-modern-cautionary
+                \time 8/1
+                \mark #1
+                s8
+                \normalStaff
+                s\breve
+                s2
+                r1
+                s\breve
+                s2
+                \freeContinue
+                s4
+                \once \hide Rest
+                r4
+                s4
+                s4
+                s4
+                s4
+                \freePad
+                \freeRestArrow
                 r4
                 s8
             }
@@ -131,35 +159,8 @@
                 s4
                 s4
                 s4
+                \freePad
                 \freeRestArrow
-                \freePad
-                r4
-                s8
-            }
-            {
-                \numericTimeSignature
-                \freePad
-                \break
-                \tempo \markup \fontsize #1 {  " 20'' "  }
-                \accidentalStyle neo-modern-cautionary
-                \time 8/1
-                s8
-                \normalStaff
-                s\breve
-                s2
-                r1
-                s\breve
-                s2
-                \freeContinue
-                s4
-                \once \hide Rest
-                r4
-                s4
-                s4
-                s4
-                s4
-                \freeRestArrow
-                \freePad
                 r4
                 s8
             }
@@ -181,13 +182,13 @@
                 \normalStaff
                 s8.
                 cs''1
-                \fermata
                 \p
+                \fermata
                 \<
                 s16
                 \once \override TextScript.extra-offset = #'( 1 . 0 )
-                \freeContinue
                 \bar ":|."
+                \freeContinue
                 s4
                 \mp
                 ^ \markup { repeat }
@@ -215,8 +216,8 @@
                 s4
                 s4
                 s4
-                \freeRestArrow
                 \freePad
+                \freeRestArrow
                 r4
                 s4
             }

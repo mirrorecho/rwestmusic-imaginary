@@ -30,6 +30,7 @@ if __name__ == '__main__':
     
     calliope.illustrate(
         score,
+        title="Memory Bubbles III.",
         as_midi=True,
         open_midi=True,
         )

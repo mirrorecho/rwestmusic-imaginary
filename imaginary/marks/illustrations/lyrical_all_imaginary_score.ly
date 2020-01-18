@@ -27,10 +27,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
                         \set Staff.midiInstrument = #"flute" 
+                        \mark #2
                         e''1
                         :32
                         \p
@@ -127,7 +131,10 @@
                         r4
                     }
                     {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         a'2
                         :32
                         ^ \markup { f.t. }
@@ -138,51 +145,27 @@
                         :32
                         d''2
                         :32
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -195,6 +178,7 @@
                 {
                     {
                         {
+                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -270,54 +254,30 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -330,23 +290,15 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #2
+                            R1 * 12
                         }
                     }
                     {
@@ -375,17 +327,8 @@
                         ~
                         e'4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 7
                         }
                     }
                     {
@@ -431,10 +374,7 @@
                         ~
                         bf'4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
@@ -494,15 +434,9 @@
                         ~
                         c'4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -515,23 +449,15 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #2
+                            R1 * 12
                         }
                     }
                     {
@@ -565,17 +491,8 @@
                         [
                         r8
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 7
                         }
                     }
                     {
@@ -627,10 +544,7 @@
                         [
                         r8
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
@@ -699,15 +613,9 @@
                         [
                         r8
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -720,23 +628,15 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Tsax. }
                             \set Staff.midiInstrument = #"alto sax" 
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #2
+                            R1 * 12
                         }
                     }
                     {
@@ -765,17 +665,8 @@
                         e'4
                         ~
                         e'1
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 7
                         }
                     }
                     {
@@ -821,10 +712,7 @@
                         bf4
                         ~
                         bf2
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
@@ -884,15 +772,9 @@
                         g'4
                         ~
                         g'2
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -905,24 +787,16 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
                             \set Staff.midiInstrument = #"alto sax" 
+                            \mark #2
                             \clef "bass"
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 12
                         }
                     }
                     {
@@ -951,17 +825,8 @@
                         ~
                         a4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 7
                         }
                     }
                     {
@@ -995,10 +860,7 @@
                         \mf
                         ~
                         bf2
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
@@ -1040,15 +902,9 @@
                         \mf
                         ~
                         g2
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -1061,24 +917,16 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
                             \set Staff.midiInstrument = #"bassoon" 
+                            \mark #2
                             \clef "bass"
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 12
                         }
                     }
                     {
@@ -1129,36 +977,21 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -1174,17 +1007,15 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #2
+                            R1 * 10
                         }
                     }
                     {
@@ -1199,54 +1030,30 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -1259,75 +1066,43 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            R1 * 6
+                            \mark #2
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -1340,80 +1115,54 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
-                            \set Staff.midiInstrument = #"trombone" 
+                            \set Staff.midiInstrument = #"french horn" 
+                            \mark #2
                             \clef "bass"
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
-                        f1
+                        a1
                         \pp
                         ~
                         \<
-                        f2
-                        g2
+                        a2
+                        a2
                         \mp
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -1429,55 +1178,59 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
                             \set Staff.midiInstrument = #"vibraphone" 
+                            \mark #2
                             R1 * 6
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
-                        e'4
+                        e''4
                         :32
                         \pp
                         ^ \markup { "soft mallets" }
-                        b4
+                        b'4
                         :32
                         ~
-                        b2
+                        b'2
                         :32
-                        c'2
-                        :32
-                        ~
-                        c'4
-                        :32
-                        c'4
+                        c''2
                         :32
                         ~
-                        c'2
+                        c''4
                         :32
-                        b2
+                        c''4
+                        :32
+                        ~
+                        c''2
+                        :32
+                        b'2
                         :32
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
-                        f'4
+                        f''4
                         :32
-                        e'4
-                        :32
-                        ~
-                        e'2
-                        :32
-                        e'2
+                        e''4
                         :32
                         ~
-                        e'4
+                        e''2
                         :32
-                        e'4
+                        e''2
                         :32
                         ~
-                        e'2
+                        e''4
+                        :32
+                        e''4
+                        :32
+                        ~
+                        e''2
                         :32
                         g'2
                         :32
@@ -1496,15 +1249,15 @@
                         ^ \markup { "arco (normal)" }
                         c''4
                         :32
-                        e'4
+                        e''4
                         :32
                         ~
-                        e'4
+                        e''4
                         :32
-                        c'4
+                        c''4
                         :32
                         ~
-                        c'4
+                        c''4
                         :32
                         a'4
                         :32
@@ -1520,12 +1273,12 @@
                         }
                         d''2
                         :32
-                        e'4
+                        e''4
                         :32
-                        e'4
+                        e''4
                         :32
                         ~
-                        e'4
+                        e''4
                         :32
                         a'4
                         :32
@@ -1536,7 +1289,7 @@
                         :32
                         d'2
                         :32
-                        c'2
+                        c''2
                         :32
                     }
                     {
@@ -1557,9 +1310,9 @@
                         :32
                         d'4
                         :32
-                        c'2
+                        c''2
                         :32
-                        d'2
+                        d''2
                         :32
                     }
                     {
@@ -1602,160 +1355,157 @@
                         <c'' c'''>4
                     }
                     {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        <c'' c'''>8
+                        \mark #5
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <c'' c'''>8
+                        <c''' c''''>8
                         [
-                        <c'' c'''>8
+                        <c''' c''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                        <df'' df'''>8
+                        <df''' df''''>8
                         [
-                        <df'' df'''>8
+                        <df''' df''''>8
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -1768,6 +1518,7 @@
                 {
                     {
                         {
+                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -1903,6 +1654,7 @@
                     }
                     {
                         {
+                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -2096,6 +1848,7 @@
                         ]
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -2382,18 +2135,12 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -2408,10 +2155,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
                         \set Staff.midiInstrument = #"electric guitar (clean)" 
+                        \mark #2
                         e'4
                         \mp
                         r4
@@ -2420,29 +2171,14 @@
                         b4
                         r2
                         {
-                            R1 * 1
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         a'4
                         r4
                         e'4
@@ -2450,21 +2186,15 @@
                         r2
                         d'4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #4
                         r4
                         <g' d''>4
                         \mp
@@ -2493,27 +2223,18 @@
                         <bf' f''>2
                         <g' d''>4
                         <bf' f''>4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -2525,10 +2246,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Bass Guitar" }
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
                         \set Staff.midiInstrument = #"electric bass (finger)" 
+                        \mark #2
                         \clef "bass"
                         a,4
                         \mp
@@ -2538,25 +2263,7 @@
                         a,4
                         r2
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 10
                         }
                     }
                     {
@@ -2615,6 +2322,7 @@
                         r4
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -2646,18 +2354,12 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -2672,10 +2374,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
                         \set Staff.midiInstrument = #"violin" 
+                        \mark #2
                         e''4
                         \mp
                         ^ \markup { pizz }
@@ -2685,29 +2391,14 @@
                         g'4
                         r2
                         {
-                            R1 * 1
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         f''4
                         ^ \markup { pizz }
                         r4
@@ -2716,21 +2407,13 @@
                         r2
                         a'4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
+                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -2739,7 +2422,7 @@
                         c''8
                         \p
                         -\staccato
-                        ^ \markup { normal }
+                        ^ \markup { arco }
                         [
                         \<
                         c''8
@@ -3101,10 +2784,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
                         \set Staff.midiInstrument = #"violin" 
+                        \mark #2
                         b''4
                         \mp
                         ^ \markup { pizz }
@@ -3114,29 +2801,14 @@
                         g'4
                         r2
                         {
-                            R1 * 1
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         f''4
                         ^ \markup { pizz }
                         r4
@@ -3145,21 +2817,13 @@
                         r2
                         a'4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
+                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -3168,7 +2832,7 @@
                         bf'8
                         \p
                         -\staccato
-                        ^ \markup { normal }
+                        ^ \markup { arco }
                         [
                         \<
                         bf'8
@@ -3530,10 +3194,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
                         \set Staff.midiInstrument = #"cello" 
+                        \mark #2
                         \clef "bass"
                         a4
                         \mp
@@ -3639,13 +3307,14 @@
                         d1
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
                         g,8
                         \p
                         -\staccato
-                        ^ \markup { normal }
+                        ^ \markup { arco }
                         [
                         \<
                         g,8
@@ -4101,10 +3770,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \set Staff.midiInstrument = #"cello" 
+                        \mark #2
                         \clef "bass"
                         a4
                         \mp
@@ -4201,13 +3874,14 @@
                         g,1
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
                         d8
                         \p
                         -\staccato
-                        ^ \markup { normal }
+                        ^ \markup { arco }
                         [
                         \<
                         c8
@@ -4669,10 +4343,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
                         \set Staff.midiInstrument = #"flute" 
+                        \mark #2
                         b''1
                         :32
                         \p
@@ -4688,27 +4366,15 @@
                         :32
                         r4
                         r2
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
+                            R1 * 9
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         f''2
                         :32
                         ^ \markup { f.t. }
@@ -4719,21 +4385,15 @@
                         :32
                         a'2
                         :32
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #4
                         r4
                         g'4
                         \p
@@ -4796,27 +4456,18 @@
                         -\staccato
                         ]
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -4828,10 +4479,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
                         \set Staff.midiInstrument = #"flute" 
+                        \mark #2
                         b''1
                         :32
                         \p
@@ -4847,27 +4502,15 @@
                         :32
                         r4
                         r2
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
+                            R1 * 9
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         a''2
                         :32
                         ^ \markup { f.t. }
@@ -4878,21 +4521,15 @@
                         :32
                         a''2
                         :32
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #4
                         r4
                         d''4
                         \p
@@ -4955,27 +4592,18 @@
                         -\staccato
                         ]
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -4988,10 +4616,14 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
                             \set Staff.midiInstrument = #"oboe" 
+                            \mark #2
                             R1 * 6
                         }
                     }
@@ -5077,7 +4709,10 @@
                         )
                     }
                     {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         r8
                         [
                         a'8
@@ -5092,13 +4727,7 @@
                         ]
                         )
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 5
                         }
                         r4
                         r8
@@ -5194,36 +4823,21 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -5236,10 +4850,14 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
                             \set Staff.midiInstrument = #"oboe" 
+                            \mark #2
                             R1 * 6
                         }
                     }
@@ -5260,22 +4878,17 @@
                         \<
                         c''2
                         \mp
+                        r2
+                        r1
+                        r1
+                        r2
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 1
                         }
                         r4
@@ -5291,10 +4904,7 @@
                         a'8
                         ]
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                         r2
@@ -5327,36 +4937,21 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -5369,10 +4964,14 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
                             \set Staff.midiInstrument = #"clarinet" 
+                            \mark #2
                             R1 * 6
                         }
                     }
@@ -5419,21 +5018,16 @@
                         [
                         r8
                         ]
+                        r2
+                        r1
+                        r1
+                        r2
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         r8
                         [
                         b'8
@@ -5453,13 +5047,7 @@
                         ]
                         b'1
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
+                            R1 * 4
                         }
                         r8
                         [
@@ -5543,36 +5131,21 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -5585,10 +5158,14 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
                             \set Staff.midiInstrument = #"clarinet" 
+                            \mark #2
                             R1 * 6
                         }
                     }
@@ -5625,22 +5202,17 @@
                         ~
                         ]
                         a'2
+                        r2
+                        r1
+                        r1
+                        r2
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
+                            \mark #3
                             R1 * 1
                         }
                         a'2
@@ -5656,10 +5228,7 @@
                         ~
                         ]
                         a'1
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r4
@@ -5724,36 +5293,21 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -5766,76 +5320,44 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
                             \set Staff.midiInstrument = #"bassoon" 
+                            \mark #2
                             \clef "bass"
-                            R1 * 6
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -5851,79 +5373,53 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #2
+                            R1 * 10
                         }
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
-                        a1
+                        f'1
                         \pp
                         ~
                         \<
-                        a2
-                        a2
+                        f'2
+                        g'2
                         \mp
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -5936,75 +5432,43 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            R1 * 6
+                            \mark #2
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -6017,18 +5481,16 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
-                            \set Staff.midiInstrument = #"trombone" 
+                            \set Staff.midiInstrument = #"french horn" 
+                            \mark #2
                             \clef "bass"
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
@@ -6043,66 +5505,44 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
                 }
             >>
-            \context RhythmicStaff = "cco_percussion"
+            \context Staff = "cco_percussion"
             \with
             {
                 \consists Horizontal_bracket_engraver
             }
             {
                 {
+                    \percStaff
+                     \bar "]" 
                     \compressFullBarRests
                     \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                     \accidentalStyle neo-modern-cautionary
@@ -6110,7 +5550,6 @@
                     \set Staff.shortInstrumentName = \markup { Perc. }
                     \set Staff.midiInstrument = #"woodblock" 
                     \mark #2
-                    \clef "percussion"
                     r1
                     ^ \markup { "to sus. cym." }
                     {
@@ -6133,6 +5572,7 @@
                 }
                 {
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -6158,6 +5598,7 @@
                     }
                 }
                 {
+                     \bar "]" 
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \mark #4
@@ -6225,18 +5666,12 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        R1 * 4
+                        \mark #5
+                        R1 * 11
                     }
-                }
-                {
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        R1 * 7
-                    }
-                }
-                {
-                    \accidentalStyle neo-modern-cautionary
                     r1
                     \fermata
                 }
@@ -6250,40 +5685,30 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
-                        fs''4
+                        \set Staff.midiInstrument = #"orchestral harp" 
+                        \mark #2
+                        gf''4
                         \mp
                         r4
                         r2
                         r4
-                        fs''4
+                        gf''4
                         r2
                         {
-                            R1 * 1
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         e''4
                         r4
                         e''4
@@ -6291,17 +5716,8 @@
                         r2
                         e''4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            R1 * 10
                         }
                     }
                     {
@@ -6355,18 +5771,12 @@
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -6378,41 +5788,30 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
+                        \set Staff.midiInstrument = #"orchestral harp" 
+                        \mark #2
                         \clef "bass"
                         e,4
-                        \mp
                         r4
                         r2
                         r4
                         e,4
                         r2
                         {
-                            R1 * 1
+                            R1 * 10
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 3
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
+                         \bar "]" 
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #3
                         f,4
                         r4
                         f,4
@@ -6420,51 +5819,27 @@
                         r2
                         g,4
                         r4
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 10
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 6
+                            \mark #4
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #5
+                            R1 * 11
                         }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 7
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r1
                         \fermata
                     }
@@ -6480,43 +5855,28 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
-                            R1 * 6
+                            \set Staff.midiInstrument = #"acoustic grand" 
+                            \mark #2
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -6566,6 +5926,7 @@
                         <c''' c''''>4
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5
@@ -6660,44 +6021,29 @@
                 {
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
+                            \set Staff.midiInstrument = #"acoustic grand" 
+                            \mark #2
                             \clef "bass"
-                            R1 * 6
+                            R1 * 12
                         }
                     }
                     {
                         {
+                             \bar "]" 
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            \mark #3
+                            R1 * 12
                         }
                     }
                     {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 6
-                        }
-                    }
-                    {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -6727,6 +6073,7 @@
                         <d, g,>2
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5
@@ -6778,11 +6125,15 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        fs''4
+                        \mark #2
+                        gf''4
                         \mp
                         ^ \markup { pizz }
                         r4
@@ -7050,9 +6401,6 @@
                         ]
                         c''4
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                     }
                     {
@@ -7175,17 +6523,21 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        fs''4
+                        \mark #2
+                        gf''4
                         \mp
                         ^ \markup { pizz }
                         r4
                         r2
                         r4
-                        fs''4
+                        gf''4
                         r2
                         {
                             R1 * 1
@@ -7460,10 +6812,15 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #2
+                        \clef "alto"
                         e'4
                         \mp
                         ^ \markup { pizz }
@@ -7794,10 +7151,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #2
                         \clef "bass"
                         e4
                         \mp
@@ -7916,13 +7277,7 @@
                     {
                         {
                             \accidentalStyle neo-modern-cautionary
-                            R1 * 4
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 4
+                            R1 * 8
                         }
                     }
                     {
@@ -8108,10 +7463,14 @@
                 }
                 {
                     {
+                         \bar "]" 
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \set Staff.midiInstrument = #"cello" 
+                        \mark #2
                         \clef "bass"
                         e4
                         \mp
@@ -8226,6 +7585,7 @@
                         r4
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -8255,6 +7615,7 @@
                         d2
                     }
                     {
+                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5

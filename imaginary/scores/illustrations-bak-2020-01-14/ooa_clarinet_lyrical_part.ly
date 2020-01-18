@@ -32,7 +32,7 @@
                     \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                     \set Staff.shortInstrumentName = \markup { Cl. }
                     \set Staff.midiInstrument = #"clarinet" 
-                    \mark #1
+                    \mark #2
                     R1 * 3
                 }
                 r4
@@ -103,64 +103,25 @@
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #1
-                    R1 * 2
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 6
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    \mark #2
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
                     \mark #3
-                    R1 * 4
+                    R1 * 12
                 }
             }
             {
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    R1 * 7
+                    \mark #4
+                    R1 * 12
                 }
             }
             {
-                \compressFullBarRests
-                \accidentalStyle neo-modern-cautionary
+                {
+                    \compressFullBarRests
+                    \accidentalStyle neo-modern-cautionary
+                    \mark #5
+                    R1 * 11
+                }
                 r1
                 \fermata
             }

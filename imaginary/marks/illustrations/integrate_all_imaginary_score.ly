@@ -259,7 +259,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af''4
                         \f
@@ -330,6 +332,7 @@
                         ds''8
                         -\tenuto
                         ]
+                        \>
                         e''8
                         -\tenuto
                         [
@@ -348,6 +351,55 @@
                         gs''8
                         -\tenuto
                         ]
+                        \!
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        \>
+                        gs''1
+                        \fermata
+                        \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        s4
+                        ^ \markup { "repeat, slowing down" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \pp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -498,7 +550,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af'4
                         \f
@@ -537,6 +591,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_alto_sax1"
@@ -767,7 +865,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af'4
                         \f
@@ -853,6 +953,50 @@
                         {
                             R1 * 4
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_alto_sax2"
@@ -1015,7 +1159,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         ef'4
                         \f
@@ -1105,6 +1251,50 @@
                         {
                             R1 * 4
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -1227,7 +1417,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af4
                         \f
@@ -1266,6 +1458,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -1354,7 +1590,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af,4
                         \f
@@ -1393,6 +1631,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -1797,7 +2079,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af,4
                         \f
@@ -1836,6 +2120,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -1926,7 +2254,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af4
                         \f
@@ -2019,6 +2349,50 @@
                         -\tenuto
                         fs'4
                         -\tenuto
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -2177,7 +2551,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r4
                         af4
                         \f
@@ -2246,6 +2622,50 @@
                         e''8
                         -\tenuto
                         ]
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -2334,7 +2754,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r8
                         [
                         df8
@@ -2489,6 +2911,50 @@
                         ]
                         b4
                         fs4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -2863,7 +3329,9 @@
                         :32
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         cs''1
                         :32
                         cs''1
@@ -2896,6 +3364,52 @@
                         :32
                         e''1
                         :32
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        \>
+                        e''1
+                        :32
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \pp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -3823,7 +4337,9 @@
                     }
                     {
                         \once \hide Stem
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         \tweak style #'slash
                         c'8
                         \f
@@ -4353,6 +4869,50 @@
                         c'8
                         ]
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
+                    }
                 }
             >>
             \context StaffGroup = "ooa_guitars"
@@ -4715,7 +5275,9 @@
                         -\staccato
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         cs'4
                         \f
                         cs'4
@@ -4765,22 +5327,59 @@
                         e'4
                         e'4
                         e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        cs'1
+                        cs'1
+                        cs'1
+                        cs'1
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        ^ \markup { "distorted, ethereal" }
+                        \>
+                        cs'1
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \pp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "ooa_bass_guitar"
@@ -5142,7 +5741,9 @@
                         -\staccato
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         gs,4
                         \f
                         gs,4
@@ -5192,22 +5793,57 @@
                         a,4
                         a,4
                         a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        gs,1
+                        gs,1
+                        gs,1
+                        gs,1
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -5353,8 +5989,8 @@
                         g'2
                         g''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a''8
                         ~
@@ -5571,7 +6207,9 @@
                         -\staccato
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         b''8
                         \f
                         [
@@ -5830,6 +6468,56 @@
                         ]
                         b''4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        \>
+                        b''8
+                        b''4
+                        b''4
+                        b''4.
+                        \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        s4
+                        ^ \markup { "repeat, slowing, down" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        \pp
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
+                    }
                 }
                 \context Staff = "ooa_violin2"
                 \with
@@ -5971,8 +6659,8 @@
                         a''2
                         f''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a''8
                         ~
@@ -6189,7 +6877,9 @@
                         -\staccato
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         b''8
                         \f
                         [
@@ -6448,6 +7138,50 @@
                         ]
                         e'''4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
+                    }
                 }
                 \context Staff = "ooa_cello1"
                 \with
@@ -6662,8 +7396,8 @@
                         bf,2
                         bf,8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         bf,8
                         ~
@@ -6912,7 +7646,9 @@
                         -\staccato
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         af8
                         \f
                         [
@@ -7171,6 +7907,50 @@
                         ]
                         e'4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
+                    }
                 }
                 \context Staff = "ooa_cello2"
                 \with
@@ -7385,8 +8165,8 @@
                         d2
                         a,8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         ef8
                         ~
@@ -7635,7 +8415,9 @@
                         -\staccato
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         af8
                         \f
                         [
@@ -7893,6 +8675,50 @@
                         ~
                         ]
                         b'4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -8490,7 +9316,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -8572,6 +9400,50 @@
                         gs''8
                         -\tenuto
                         ]
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -9141,7 +10013,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -9223,6 +10097,50 @@
                         gs''8
                         -\tenuto
                         ]
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_oboe1"
@@ -9508,7 +10426,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -9540,6 +10460,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -9835,7 +10799,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -9867,6 +10833,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -10130,7 +11140,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef'2
                         \f
@@ -10162,6 +11174,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -10423,7 +11479,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef'2
                         \f
@@ -10455,6 +11513,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -10959,7 +12061,9 @@
                         r4
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef,2
                         \f
@@ -10991,6 +12095,50 @@
                         {
                             R1 * 8
                         }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -11235,7 +12383,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef2
                         \f
@@ -11321,6 +12471,64 @@
                         -\tenuto
                         fs4
                         -\tenuto
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        fs4
+                        -\tenuto
+                        gs4
+                        -\tenuto
+                        a4
+                        -\tenuto
+                        b4
+                        -\tenuto
+                        fs4
+                        -\tenuto
+                        gs8
+                        -\tenuto
+                        a8
+                        -\tenuto
+                        b4
+                        -\tenuto
+                        fs4
+                        -\tenuto
+                        \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        s4
+                        ^ \markup { "repeat, slowing down" }
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -11560,7 +12768,9 @@
                         r4
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r2
                         ef'2
                         \f
@@ -11617,6 +12827,50 @@
                         -\tenuto
                         e''2
                         -\tenuto
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -11789,7 +13043,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         r8
                         [
                         df8
@@ -11944,6 +13200,50 @@
                         ]
                         b4
                         fs4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -12322,7 +13622,9 @@
                     df4
                 }
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #15
                     r8
                     [
                     df8
@@ -12421,6 +13723,50 @@
                     af,4
                     -\accent
                     r2
+                }
+                {
+                    \numericTimeSignature
+                    \freePad
+                    \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                    \accidentalStyle neo-modern-cautionary
+                    \time 8/1
+                    s8
+                    \normalStaff
+                    s8
+                    r1
+                    \fermata
+                    \freeContinue
+                    s4
+                    \once \hide Rest
+                    r4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    s4
+                    \freeRestArrow
+                    \freePad
+                    r4
+                    s4
+                    \bar "|." 
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -12914,7 +14260,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         fs''8
                         \f
                         -\accent
@@ -13204,102 +14552,53 @@
                         gs''8
                         -\accent
                         ]
-                        gs''8
-                        -\accent
-                        [
-                        fs''8
-                        -\accent
-                        ]
-                        fs''8
-                        -\accent
-                        [
-                        fs''8
-                        -\accent
-                        ]
-                        cs''8
-                        -\accent
-                        [
-                        b'8
-                        -\accent
-                        ]
-                        e''8
-                        -\accent
-                        [
-                        e''8
-                        -\accent
-                        ]
-                        cs''8
-                        -\accent
-                        [
-                        b'8
-                        -\accent
-                        ]
-                        b'8
-                        -\accent
-                        [
-                        b'8
-                        -\accent
-                        ]
-                        b'8
-                        -\accent
-                        [
-                        e''8
-                        -\accent
-                        ]
-                        ds''8
-                        -\accent
-                        [
-                        ds''8
-                        -\accent
-                        ]
-                        cs''8
-                        -\accent
-                        [
-                        cs''8
-                        -\accent
-                        ]
-                        gs'8
-                        -\accent
-                        [
-                        e''8
-                        -\accent
-                        ]
-                        a''8
-                        -\accent
-                        [
-                        gs''8
-                        -\accent
-                        ]
-                        gs''8
-                        -\accent
-                        [
-                        gs''8
-                        -\accent
-                        ]
-                        fs''8
-                        -\accent
-                        [
-                        fs''8
-                        -\accent
-                        ]
-                        e''8
-                        -\accent
-                        [
-                        a''8
-                        -\accent
-                        ]
-                        gs''8
-                        -\accent
-                        [
-                        e''8
-                        -\accent
-                        ]
-                        a''8
-                        -\accent
-                        [
-                        gs''8
-                        -\accent
-                        ]
+                        {
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "harp2"
@@ -13686,7 +14985,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         gs,8
                         -\accent
                         [
@@ -13975,102 +15276,53 @@
                         e,8
                         -\accent
                         ]
-                        a,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        a,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
+                        {
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -14351,7 +15603,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         cs''8
                         \f
                         -\accent
@@ -14479,54 +15733,6 @@
                         cs''8
                         -\accent
                         ]
-                        fs''8
-                        -\accent
-                        [
-                        fs''8
-                        -\accent
-                        ]
-                        b'8
-                        -\accent
-                        [
-                        cs''8
-                        -\accent
-                        ]
-                        fs''8
-                        -\accent
-                        [
-                        fs''8
-                        -\accent
-                        ]
-                        cs''8
-                        -\accent
-                        [
-                        cs''8
-                        -\accent
-                        ]
-                        fs''8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        b'8
-                        -\accent
-                        [
-                        cs''8
-                        -\accent
-                        ]
-                        ds''8
-                        -\accent
-                        [
-                        ds''8
-                        -\accent
-                        ]
-                        b'8
-                        -\accent
-                        [
-                        cs''8
-                        -\accent
-                        ]
                         fs'8
                         -\accent
                         [
@@ -14545,148 +15751,52 @@
                         fs'8
                         -\accent
                         ]
-                        e'8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        gs'8
-                        -\accent
-                        [
-                        gs'8
-                        -\accent
-                        ]
-                        e'8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        gs'8
-                        -\accent
-                        [
-                        gs'8
-                        -\accent
-                        ]
-                        ds'8
-                        -\accent
-                        [
-                        ds'8
-                        -\accent
-                        ]
-                        ds'8
-                        -\accent
-                        [
-                        ds'8
-                        -\accent
-                        ]
-                        ds'8
-                        -\accent
-                        [
-                        ds'8
-                        -\accent
-                        ]
-                        as8
-                        -\accent
-                        [
-                        as8
-                        -\accent
-                        ]
-                        e'8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        gs'8
-                        -\accent
-                        [
-                        gs'8
-                        -\accent
-                        ]
-                        e'8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        gs'8
-                        -\accent
-                        [
-                        gs'8
-                        -\accent
-                        ]
-                        e'8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        fs'8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        e'8
-                        -\accent
-                        [
-                        fs'8
-                        -\accent
-                        ]
-                        gs'8
-                        -\accent
-                        [
-                        gs'8
-                        -\accent
-                        ]
-                        e'8
+                        cs'8
                         -\accent
                         [
                         cs'8
                         -\accent
                         ]
-                        gs8
+                        fs'8
                         -\accent
                         [
-                        gs8
+                        fs'8
                         -\accent
                         ]
-                        gs8
+                        b'8
                         -\accent
                         [
-                        fs8
+                        cs''8
                         -\accent
                         ]
-                        gs8
+                        ds'8
                         -\accent
                         [
-                        gs8
-                        -\accent
-                        ]
-                        e8
-                        -\accent
-                        [
-                        fs8
-                        -\accent
-                        ]
-                        gs8
-                        -\accent
-                        [
-                        gs8
-                        -\accent
-                        ]
-                        e8
-                        -\accent
-                        [
-                        fs8
+                        ds'8
                         -\accent
                         ]
                         b8
                         -\accent
                         [
-                        b8
+                        cs'8
+                        -\accent
+                        ]
+                        fs'8
+                        -\accent
+                        [
+                        fs'8
+                        -\accent
+                        ]
+                        b'8
+                        -\accent
+                        [
+                        cs'8
+                        -\accent
+                        ]
+                        fs'8
+                        -\accent
+                        [
+                        fs'8
                         -\accent
                         ]
                         e'8
@@ -14695,13 +15805,49 @@
                         fs'8
                         -\accent
                         ]
-                        b8
+                        gs'8
                         -\accent
                         [
-                        b8
+                        gs'8
                         -\accent
                         ]
                         e'8
+                        -\accent
+                        [
+                        fs'8
+                        -\accent
+                        ]
+                        gs'8
+                        -\accent
+                        [
+                        gs'8
+                        -\accent
+                        ]
+                        ds'8
+                        -\accent
+                        [
+                        ds'8
+                        -\accent
+                        ]
+                        ds'8
+                        -\accent
+                        [
+                        ds'8
+                        -\accent
+                        ]
+                        ds'8
+                        -\accent
+                        [
+                        ds'8
+                        -\accent
+                        ]
+                        as8
+                        -\accent
+                        [
+                        as8
+                        -\accent
+                        ]
+                        e8
                         -\accent
                         [
                         fs8
@@ -14719,24 +15865,83 @@
                         fs8
                         -\accent
                         ]
-                        b8
+                        gs8
                         -\accent
                         [
-                        b8
+                        gs8
                         -\accent
                         ]
-                        e'8
+                        e8
                         -\accent
                         [
                         fs8
                         -\accent
                         ]
-                        b8
+                        fs8
                         -\accent
                         [
-                        b8
+                        fs8
                         -\accent
                         ]
+                        e8
+                        -\accent
+                        [
+                        fs8
+                        -\accent
+                        ]
+                        gs8
+                        -\accent
+                        [
+                        gs8
+                        -\accent
+                        ]
+                        {
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "piano2"
@@ -15035,7 +16240,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         b8
                         -\accent
                         [
@@ -15096,40 +16303,40 @@
                         fs'8
                         -\accent
                         ]
-                        b'8
+                        b8
                         -\accent
                         [
-                        as'8
+                        as8
                         -\accent
                         ]
-                        fs'8
+                        fs8
                         -\accent
                         [
-                        gs'8
+                        gs8
                         -\accent
                         ]
-                        fs'8
+                        fs8
                         -\accent
                         [
-                        gs'8
+                        gs8
                         -\accent
                         ]
-                        gs'8
+                        gs8
                         -\accent
                         [
-                        gs'8
+                        gs8
                         -\accent
                         ]
-                        gs'8
+                        gs8
                         -\accent
                         [
-                        gs'8
+                        gs8
                         -\accent
                         ]
-                        gs'8
+                        gs8
                         -\accent
                         [
-                        gs'8
+                        gs8
                         -\accent
                         ]
                         b8
@@ -15240,16 +16447,16 @@
                         as8
                         -\accent
                         ]
-                        b8
+                        b,8
                         -\accent
                         [
-                        b8
+                        b,8
                         -\accent
                         ]
-                        b8
+                        b,8
                         -\accent
                         [
-                        b8
+                        b,8
                         -\accent
                         ]
                         e8
@@ -15258,19 +16465,19 @@
                         fs8
                         -\accent
                         ]
-                        b8
+                        b,8
                         -\accent
                         [
-                        b8
+                        b,8
                         -\accent
                         ]
-                        b8
+                        b,8
                         -\accent
                         [
-                        b8
+                        b,8
                         -\accent
                         ]
-                        b8
+                        b,8
                         -\accent
                         [
                         cs8
@@ -15282,10 +16489,10 @@
                         fs8
                         -\accent
                         ]
-                        b8
+                        b,8
                         -\accent
                         [
-                        b8
+                        b,8
                         -\accent
                         ]
                         cs8
@@ -15303,76 +16510,10 @@
                         fs,8
                         -\accent
                         [
-                        cs8
+                        cs,8
                         -\accent
                         ]
-                        cs8
-                        -\accent
-                        [
-                        cs8
-                        -\accent
-                        ]
-                        cs8
-                        -\accent
-                        [
-                        cs8
-                        -\accent
-                        ]
-                        cs8
-                        -\accent
-                        [
-                        cs8
-                        -\accent
-                        ]
-                        e8
-                        -\accent
-                        [
-                        fs8
-                        -\accent
-                        ]
-                        cs8
-                        -\accent
-                        [
-                        cs8
-                        -\accent
-                        ]
-                        b,8
-                        -\accent
-                        [
-                        b,8
-                        -\accent
-                        ]
-                        b,8
-                        -\accent
-                        [
-                        ds8
-                        -\accent
-                        ]
-                        gs,8
-                        -\accent
-                        [
-                        gs,8
-                        -\accent
-                        ]
-                        ds,8
-                        -\accent
-                        [
-                        ds,8
-                        -\accent
-                        ]
-                        ds,8
-                        -\accent
-                        [
-                        ds,8
-                        -\accent
-                        ]
-                        ds,8
-                        -\accent
-                        [
-                        ds,8
-                        -\accent
-                        ]
-                        e,8
+                        cs,8
                         -\accent
                         [
                         cs,8
@@ -15390,36 +16531,53 @@
                         cs,8
                         -\accent
                         ]
-                        e,8
-                        -\accent
-                        [
-                        ds,8
-                        -\accent
-                        ]
-                        b,,8
-                        -\accent
-                        [
-                        ds,8
-                        -\accent
-                        ]
-                        cs,8
-                        -\accent
-                        [
-                        cs,8
-                        -\accent
-                        ]
-                        e,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
-                        cs,8
-                        -\accent
-                        [
-                        e,8
-                        -\accent
-                        ]
+                        {
+                            R1 * 4
+                        }
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>
@@ -15601,8 +16759,8 @@
                         a'2
                         c''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         c''8
                         ~
@@ -15673,8 +16831,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #13
                         d''1
-                        \fermata
                         \pp
+                        \fermata
                         {
                             R1 * 8
                         }
@@ -15915,7 +17073,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         gf'''8
                         \f
                         [
@@ -16174,6 +17334,50 @@
                         ]
                         e'''4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
+                    }
                 }
                 \context Staff = "cco_violin_ii"
                 \with
@@ -16351,8 +17555,8 @@
                         c''2
                         f''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         c''8
                         ~
@@ -16423,8 +17627,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #13
                         d''1
-                        \fermata
                         \pp
+                        \fermata
                         {
                             R1 * 8
                         }
@@ -16617,7 +17821,9 @@
                         )
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         gf'''8
                         \f
                         [
@@ -16876,6 +18082,50 @@
                         ]
                         e'''4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
+                    }
                 }
                 \context Staff = "cco_viola"
                 \with
@@ -17123,8 +18373,8 @@
                         a2
                         f'8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         g'8
                         ~
@@ -17195,8 +18445,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #13
                         d'1
-                        \fermata
                         \pp
+                        \fermata
                         af1
                         ~
                         af1
@@ -17619,7 +18869,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         df''8
                         \f
                         [
@@ -17878,6 +19130,50 @@
                         ]
                         gs'4
                     }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
+                    }
                 }
                 \context Staff = "cco_cello"
                 \with
@@ -18125,8 +19421,8 @@
                         ef2
                         d8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         c8
                         ~
@@ -18197,8 +19493,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #13
                         ef1
-                        \fermata
                         \pp
+                        \fermata
                         af,1
                         ~
                         af,1
@@ -18454,7 +19750,9 @@
                         ]
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         df'8
                         \f
                         [
@@ -18712,6 +20010,50 @@
                         ~
                         ]
                         gf'4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
                 \context Staff = "cco_bass"
@@ -19056,8 +20398,8 @@
                         a,2
                         a,8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a,8
                         ~
@@ -19128,8 +20470,8 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #13
                         ef1
-                        \fermata
                         \pp
+                        \fermata
                         af1
                         ~
                         af1
@@ -19232,7 +20574,9 @@
                         ef,4
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #15
                         ef'8
                         \f
                         [
@@ -19490,6 +20834,50 @@
                         ~
                         ]
                         a4
+                    }
+                    {
+                        \numericTimeSignature
+                        \freePad
+                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \accidentalStyle neo-modern-cautionary
+                        \time 8/1
+                        s8
+                        \normalStaff
+                        s8
+                        r1
+                        \fermata
+                        \freeContinue
+                        s4
+                        \once \hide Rest
+                        r4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        s4
+                        \freeRestArrow
+                        \freePad
+                        r4
+                        s4
+                        \bar "|." 
                     }
                 }
             >>

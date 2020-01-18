@@ -79,6 +79,7 @@
                         \f
                         -\tenuto
                         ]
+                        \>
                         gs''8
                         -\tenuto
                         [
@@ -102,6 +103,7 @@
                         ds''8
                         -\tenuto
                         ]
+                        \!
                         \>
                         e''8
                         -\tenuto
@@ -116,17 +118,17 @@
                         -\tenuto
                         ]
                         a''8
+                        \p
                         -\tenuto
                         [
                         gs''8
                         -\tenuto
                         ]
-                        \!
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -165,8 +167,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -227,7 +229,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -262,8 +264,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -371,7 +373,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -406,8 +408,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -519,7 +521,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -554,8 +556,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -616,7 +618,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -651,8 +653,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -714,7 +716,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -749,8 +751,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -812,7 +814,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -847,8 +849,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -966,7 +968,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1001,8 +1003,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1068,6 +1070,7 @@
                         \mf
                         -\tenuto
                         ]
+                        \>
                         e''4
                         -\tenuto
                         cs''4
@@ -1084,6 +1087,7 @@
                         ~
                         e''4
                         cs''8
+                        \p
                         -\tenuto
                         [
                         e''8
@@ -1093,7 +1097,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1128,8 +1132,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1307,7 +1311,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1342,8 +1346,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1401,7 +1405,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1438,8 +1442,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1992,7 +1996,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2027,8 +2031,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2110,7 +2114,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2147,8 +2151,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2228,7 +2232,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2263,8 +2267,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2547,7 +2551,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2588,8 +2592,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2849,27 +2853,14 @@
                         ~
                         ]
                         cs'''4
-                        b''8
-                        [
-                        ds'''8
-                        ~
-                        ]
-                        ds'''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2904,8 +2895,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3186,7 +3177,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -3221,8 +3212,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3483,27 +3474,14 @@
                         ~
                         ]
                         a4
-                        e'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
-                        [
-                        a'8
-                        ~
-                        ]
-                        a'8
-                        [
-                        b'8
-                        ~
-                        ]
-                        b'4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -3538,8 +3516,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3604,6 +3582,7 @@
                         \f
                         -\tenuto
                         ]
+                        \>
                         gs''8
                         -\tenuto
                         [
@@ -3640,6 +3619,7 @@
                         -\tenuto
                         ]
                         a''8
+                        \p
                         -\tenuto
                         [
                         gs''8
@@ -3649,7 +3629,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -3684,8 +3664,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3744,6 +3724,7 @@
                         \f
                         -\tenuto
                         ]
+                        \>
                         gs''8
                         -\tenuto
                         [
@@ -3780,6 +3761,7 @@
                         -\tenuto
                         ]
                         a''8
+                        \p
                         -\tenuto
                         [
                         gs''8
@@ -3789,7 +3771,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -3824,8 +3806,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3879,7 +3861,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -3914,8 +3896,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3969,7 +3951,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4004,8 +3986,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4059,7 +4041,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4094,8 +4076,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4149,7 +4131,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4184,8 +4166,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4240,7 +4222,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4275,8 +4257,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4387,7 +4369,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4395,6 +4377,7 @@
                         s8
                         fs4
                         -\tenuto
+                        \>
                         gs4
                         -\tenuto
                         a4
@@ -4410,6 +4393,7 @@
                         b4
                         -\tenuto
                         fs4
+                        \p
                         -\tenuto
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
@@ -4436,8 +4420,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4494,6 +4478,7 @@
                         cs''4
                         \mf
                         -\tenuto
+                        \>
                         a''8
                         -\tenuto
                         [
@@ -4511,12 +4496,13 @@
                         cs''4
                         -\tenuto
                         e''2
+                        \p
                         -\tenuto
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4551,8 +4537,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4730,7 +4716,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4765,8 +4751,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4888,7 +4874,7 @@
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                    \tempo \markup \fontsize #1 {  freely   }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
@@ -4923,8 +4909,8 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                     \bar "|." 
@@ -5241,7 +5227,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -5276,8 +5262,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -5592,7 +5578,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -5627,8 +5613,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -5946,7 +5932,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -5981,8 +5967,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -6297,7 +6283,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -6332,8 +6318,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -6580,43 +6566,14 @@
                         ~
                         ]
                         fs''4
-                        e''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
-                        b''8
-                        [
-                        fs''8
-                        ~
-                        ]
-                        fs''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
+                        {
+                            R1 * 2
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -6651,8 +6608,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -6912,27 +6869,14 @@
                         ~
                         ]
                         gs'''4
-                        fs'''8
-                        [
-                        fs'''8
-                        ~
-                        ]
-                        fs'''8
-                        [
-                        a'''8
-                        ~
-                        ]
-                        a'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -6967,8 +6911,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -7249,16 +7193,20 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        a16
+                        (
+                        gs1
+                        )
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
                         r4
                         s4
@@ -7284,10 +7232,10 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
-                        s4
+                        s8.
                         \bar "|." 
                     }
                 }
@@ -7546,27 +7494,14 @@
                         ~
                         ]
                         fs4
-                        gf8
-                        [
-                        gf8
-                        ~
-                        ]
-                        gf8
-                        [
-                        b8
-                        ~
-                        ]
-                        b8
-                        [
-                        gf'8
-                        ~
-                        ]
-                        gf'4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -7601,8 +7536,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -7883,7 +7818,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -7918,8 +7853,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 

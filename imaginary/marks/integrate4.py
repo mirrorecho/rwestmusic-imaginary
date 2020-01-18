@@ -201,9 +201,11 @@ def score4(lib):
         bookend_beats=(6*4,0),
         funcs = (
             lambda x: x.with_only("cells",14,15).eps(
-                1,"mf")(),
+                1,"mf","\\>")(
+                8,"p")(),
             lambda x: x.with_only("cells",14,15).eps(
-                1,"mf")(),
+                1,"mf","\\>")(
+                7,"p")()
                 ),
         tag_all_note_events=("-",),
         # func = lambda x: x.only_first("cells",8)
@@ -213,7 +215,9 @@ def score4(lib):
         fabric_staves = ("ooa_flute","cco_flute1","cco_flute2"),
         bookend_beats=(6*4,0),
         func = lambda x: x.with_only("cells",28,29,30,31).eps(
-                1,"f")(),
+                1,"f","\\>")(
+                14,"p")(
+                ),
         tag_all_note_events=("-",),
         # func = lambda x: x.only_first("cells",8)
         )
@@ -257,6 +261,16 @@ def score4(lib):
         tag_all_note_events=(":32",),
     )
 
+    s.staves["cco_violin_i"].segments[-1].mask("cells",-1,-2,-3,-4)
+    s.staves["cco_violin_ii"].segments[-1].mask("cells",-1,-2)
+    s.staves["cco_cello"].segments[-1].mask("cells",-1,-2)
+    s.staves["ooa_cello2"].segments[-1].mask("cells",-1,-2)
+    s.staves["ooa_violin2"].segments[-1].mask("cells",-1,-2)
+
+    # s.staves["cco_flute2"].segments[0].mask("cells",-1,)
+    # s.staves["cco_flute2"].note_events[-4].tag("\\>")
+    # s.staves["cco_flute2"].note_events[-1].tag("p")
+
 
     s.extend_from(
         sax_melody, cco_melody,
@@ -264,7 +278,7 @@ def score4(lib):
         end_piano_harp, end_roll, guitars_end)
 
     e0 = free_segment.AlocFreeSegmentBlock(
-        tempo_command=""" slow down to \\note #"4" #UP "= 72 ca, freely, 20'' " """)
+        tempo_command=""" freely  """)
     
     s.staves["ooa_flute"].events[-7].tag("\\>")
     s.staves["ooa_flute"].events[-1].tag("\\!")
@@ -358,7 +372,9 @@ def score4(lib):
 
     e0["cco_horn"].machine_arrow(
         s.staves["cco_horn"].phrases[-1]().eps(
-            0,"\\>")(), instruction="repeat, slowing down", with_repeat=False)
+            0,"\\>")(
+            8, "p")(),
+        instruction="repeat, slowing down", with_repeat=False)
 
     e0["cco_trumpet"].machine_arrow(lib("cell_rest4").eps(
         0, "fermata")(), with_repeat=False)
@@ -387,8 +403,11 @@ def score4(lib):
     e0["cco_violin_ii"].machine_arrow(lib("cell_rest4").eps(
         0, "fermata")(), with_repeat=False)
 
-    e0["cco_viola"].machine_arrow(lib("cell_rest4").eps(
-        0, "fermata")(), with_repeat=False)
+    e0["cco_viola"].machine_arrow(
+        lib("intro_cell_down")(respell="sharps").t(-5), 
+        instruction="repeat, slowing down", with_repeat=False).eps(
+            0,"\\>", "mf")(
+            5, "pp")
 
     e0["cco_cello"].machine_arrow(lib("cell_rest4").eps(
         0, "fermata")(), with_repeat=False)

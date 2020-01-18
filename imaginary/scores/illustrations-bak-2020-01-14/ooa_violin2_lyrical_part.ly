@@ -8,7 +8,7 @@
     tagline = ##f
     composer = \markup { "Randall West" }
     title = \markup { "Memory Bubbles II." }
-    piece = \markup { "OOA Violin 1" }
+    piece = \markup { "OOA Violin 2" }
 }
 
 \layout {}
@@ -18,7 +18,7 @@
 \score {
     \new Score
     <<
-        \context Staff = "ooa_violin1"
+        \context Staff = "ooa_violin2"
         \with
         {
             \consists Horizontal_bracket_engraver
@@ -28,11 +28,11 @@
                 \compressFullBarRests
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                 \accidentalStyle neo-modern-cautionary
-                \set Staff.instrumentName = \markup { "Violin 1" }
-                \set Staff.shortInstrumentName = \markup { Vln.1 }
+                \set Staff.instrumentName = \markup { "Violin 2" }
+                \set Staff.shortInstrumentName = \markup { Vln.2 }
                 \set Staff.midiInstrument = #"violin" 
-                \mark #1
-                e''4
+                \mark #2
+                b''4
                 \mp
                 ^ \markup { pizz }
                 r4
@@ -41,34 +41,13 @@
                 g'4
                 r2
                 {
-                    R1 * 1
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 3
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 4
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 2
+                    R1 * 10
                 }
             }
             {
                 \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
-                \mark #1
+                \mark #3
                 f''4
                 ^ \markup { pizz }
                 r4
@@ -77,123 +56,112 @@
                 r2
                 a'4
                 r4
+                {
+                    R1 * 10
+                }
             }
             {
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #4
                     R1 * 4
                 }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 6
-                }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    \mark #2
-                    R1 * 4
-                }
-                c''8
+                bf'8
                 \p
                 -\staccato
                 ^ \markup { normal }
                 [
                 \<
-                c''8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                c''8
+                bf'8
                 [
-                g'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                g'8
+                bf'8
                 [
-                f'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                f'8
+                bf'8
                 [
-                f'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                f'8
+                bf'8
                 [
-                d'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                d'8
+                bf'8
                 [
-                d'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                d'8
+                bf'8
                 [
-                a'8
+                bf'8
                 \mf
                 -\tenuto
                 ~
                 ]
-                a'4
-                c''8
+                bf'4
+                bf'8
                 \p
                 -\staccato
                 [
                 \<
-                c''8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                c''8
+                bf'8
                 [
-                g'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                g'8
+                bf'8
                 [
-                f'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                f'8
+                bf'8
                 [
-                f'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                f'8
+                bf'8
                 [
-                f'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                f'8
+                bf'8
                 [
-                f'8
+                bf'8
                 -\tenuto
                 ~
                 ]
-                f'8
+                bf'8
                 [
-                ef''8
+                bf'8
                 \mf
                 -\tenuto
                 ~
                 ]
-                ef''4
+                bf'4
                 c''8
                 \p
                 -\staccato
@@ -290,9 +258,7 @@
                 c''4
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
-                \mark #3
                 c'''8
                 -\staccato
                 [
@@ -308,11 +274,31 @@
                 ]
                 c'''8
                 [
-                ef''8
+                c'''8
                 -\tenuto
                 ~
                 ]
-                ef''4
+                c'''4
+                c'''8
+                -\staccato
+                [
+                c'''8
+                -\tenuto
+                ~
+                ]
+                c'''8
+                [
+                c'''8
+                -\tenuto
+                ~
+                ]
+                c'''8
+                [
+                c''8
+                -\tenuto
+                ~
+                ]
+                c''4
                 c''8
                 -\staccato
                 [
@@ -322,17 +308,17 @@
                 ]
                 c''8
                 [
-                d''8
+                c''8
                 -\tenuto
                 ~
                 ]
-                d''8
+                c''8
                 [
-                f''8
+                c''8
                 -\tenuto
                 ~
                 ]
-                f''4
+                c''4
                 c''8
                 -\staccato
                 [
@@ -342,71 +328,51 @@
                 ]
                 c''8
                 [
-                ef''8
+                c''8
                 -\tenuto
                 ~
                 ]
-                ef''8
+                c''8
                 [
-                g''8
+                c''8
                 -\tenuto
                 ~
                 ]
-                g''4
+                c''4
                 c''8
                 -\staccato
                 [
-                f''8
+                c''8
                 -\tenuto
                 ~
                 ]
-                f''8
+                c''8
                 [
-                ef''8
+                c''8
                 -\tenuto
                 ~
                 ]
-                ef''8
+                c''8
                 [
-                ef''8
+                c''8
                 -\tenuto
                 ~
                 ]
-                ef''4
+                c''4
                 c''8
                 -\staccato
                 [
-                f'8
-                -\tenuto
-                ~
-                ]
-                f'8
-                [
-                af'8
-                -\tenuto
-                ~
-                ]
-                af'8
-                [
-                g'8
-                -\tenuto
-                ~
-                ]
-                g'4
                 c''8
-                -\staccato
-                [
-                g'8
                 -\tenuto
                 ~
                 ]
-                g'8
+                c''8
                 [
-                g'8
+                c''8
                 -\tenuto
                 ~
                 ]
-                g'8
+                c''8
                 [
                 c'8
                 -\tenuto
@@ -415,19 +381,10 @@
                 c'4
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 c'4
                 -\tenuto
-                af4
-                -\tenuto
                 c'4
-                -\tenuto
-                c'4
-                -\tenuto
-                f'4
-                -\tenuto
-                df'4
                 -\tenuto
                 c'4
                 -\tenuto
@@ -435,13 +392,21 @@
                 -\tenuto
                 df'4
                 -\tenuto
-                bf4
+                df'4
                 -\tenuto
                 df'4
                 -\tenuto
-                af4
+                df'4
                 -\tenuto
-                f'4
+                df'4
+                -\tenuto
+                df'4
+                -\tenuto
+                df'4
+                -\tenuto
+                df'4
+                -\tenuto
+                df'4
                 -\tenuto
                 df'4
                 -\tenuto
@@ -451,12 +416,11 @@
                 -\tenuto
             }
             {
-                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
                 df'2
                 \<
                 df'2
-                bf1
+                df'1
                 \f
                 \fermata
             }

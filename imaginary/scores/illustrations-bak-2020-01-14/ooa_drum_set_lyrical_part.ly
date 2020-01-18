@@ -32,7 +32,7 @@
                     \set Staff.instrumentName = \markup { "Drum Set" }
                     \set Staff.shortInstrumentName = \markup { Drum. }
                     \set Staff.midiInstrument = #"taiko drum" 
-                    \mark #1
+                    \mark #2
                     \clef "percussion"
                     R1 * 3
                 }
@@ -153,7 +153,7 @@
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #1
+                    \mark #3
                     R1 * 2
                 }
                 <e a'>16
@@ -311,7 +311,7 @@
             {
                 \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
-                \mark #2
+                \mark #4
                 <e a'>16
                 [
                 \tweak style #'cross
@@ -392,98 +392,170 @@
                 c'4
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
-                ^ \markup { (3) }
+                c'8
+                ^ \markup { improv }
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
-                ^ \markup { (4) }
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
+                <e a'>16
+                [
+                \tweak style #'cross
+                a'16
+                r8
+                ]
+                \tweak style #'cross
+                a'8
+                [
+                <e f'>16
+                e'16
+                ]
+                r4
+                \tweak style #'cross
+                a'8
+                [
+                <e f'>16
+                e'16
+                ]
+                r4
+                \tweak style #'cross
+                a'8
+                [
+                <e f'>16
+                e'16
+                ]
+                r4
+                <e a'>4
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
-                ^ \markup { (5) }
+                c'8
+                ^ \markup { improv }
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                [
                 \once \hide Stem
                 \tweak style #'slash
-                c'4
+                c'8
+                ]
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                [
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                ]
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                [
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                ]
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                [
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                ]
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                [
+                \once \hide Stem
+                \tweak style #'slash
+                c'8
+                ]
             }
             {
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #3
-                    R1 * 4
+                    \mark #5
+                    R1 * 11
                 }
-            }
-            {
-                {
-                    \compressFullBarRests
-                    \accidentalStyle neo-modern-cautionary
-                    R1 * 7
-                }
-            }
-            {
-                \compressFullBarRests
-                \accidentalStyle neo-modern-cautionary
                 r1
                 \fermata
             }

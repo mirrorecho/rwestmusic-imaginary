@@ -75,7 +75,7 @@ def score0(lib):
         calliope.Cell(rhythm=(0.5,-3.5),),
         calliope.Cell(rhythm=(-5*4,),),
         )
-    cym_seg.events[0].tag("to sus. cym.")
+    cym_seg.events[0].tag("to sus. cym.", "\\percStaff")
     cym_seg.note_events[0].tag("sus. cym., soft mallets",":32","p","(")
     cym_seg.events[3].tag(")")
     s.staves["cco_percussion"].append(cym_seg)
@@ -210,8 +210,8 @@ def score0(lib):
     for staff in s.staves:
         if segs := staff.segments:
             main_seg = segs[0]
-            for next_seg in segs[1:]:
-                main_seg += next_seg
+            # for next_seg in segs[1:]:
+            #     main_seg += next_seg
             main_seg.tempo_command=""" \\note #"4" #UP "= 96 ca" """
             main_seg.rehearsal_mark_number = 2
             main_seg.auto_respell()

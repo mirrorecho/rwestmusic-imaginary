@@ -200,7 +200,7 @@ def score2(lib):
     for st in ooa_strings_pulses.staves["ooa_violin1","ooa_violin2"]:
         st.segments[0].mask("phrases",0,1)
     for st in ooa_strings_pulses.staves:
-        st.note_events[0].tag("normal")
+        st.note_events[0].tag("arco")
         for phrase in st.phrases:
             if phrase.note_events:
                 phrase.note_events[0].tag(".","p","\\<")
