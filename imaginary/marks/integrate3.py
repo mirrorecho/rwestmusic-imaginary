@@ -8,7 +8,10 @@ from imaginary.fabrics import (instrument_groups,
 
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
-
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 from imaginary.stories import library, artics
 from imaginary.marks import lyrical, rock
 from imaginary.marks import integrate
@@ -32,6 +35,23 @@ def score3(lib):
         slur_cells=True,
         label=("phrases", "cells")
         ).to_score(s)
+
+    drum_set = ImaginarySegment(
+        lib("drum_quick_off2").eps(0,"mp")(),
+        get_improv_line(
+            rhythm=(1,)*4,
+            times=6),
+        lib("drum_du_du").eps(0,"\\<")(),
+        lib("drum_rock_out").eps(0,"mf")(),
+        get_improv_line(
+            rhythm=(1,)*4,
+            times=5),
+        get_improv_line(
+            instruction="improv",
+            rhythm=(0.5,)*8,
+            times=2),
+        )
+    s.staves["ooa_drum_set"].append(drum_set)
 
     counter_me = lambda_segment.LambdaSegments(
         sb.with_only("counter_line"),
@@ -136,13 +156,43 @@ def score3(lib):
         osti_cell_length = 8,
         osti_cell_count = 9,
         tag_all_note_events = (":16",),
-        after_func = lambda x: x.ops("note_events")(0, "mp",)(),
         after_funcs = (
-            lambda x: x.mask("cells",0,1).ops("cells")(7,"\\<")(),
-            lambda x: x.mask("cells",0,1,2,3).ops("cells")(7,"\\<")(),
-            lambda x: x,
+            lambda x: x.mask("cells",0,1).ops("cells")(7,"\\<")(
+                ).ops("note_events")(0, "mp",)(),
+            lambda x: x.mask("cells",0,1,2,3).ops("cells")(7,"\\<")(
+                ).ops("note_events")(0, "mp",)(),
+            lambda x: x.ops("note_events")(0, "mp",)(),
             )
         )
+
+    measured_trems2 = osti.Osti(
+        sb,
+        fabric_staves = ("cco_viola","cco_cello"),
+        ranges=pitch_ranges.HIGH_TO_LOW_RANGES,
+        osti_pulse_duration = 0.5,
+        osti_cell_length = 8,
+        osti_cell_count = 8,
+        selectable_start_beat=8*4,
+        tag_all_note_events = (":16",),
+        func = lambda x: x.ops("cells")(
+            1, "f")()
+        )
+    measured_trems2.staves["cco_viola"].segments[0].crop("cells",1)
+
+    sax_melody = lambda_segment.LambdaSegment(
+        sb.with_only("high_drones"),
+        fabric_staves = instrument_groups.get_instruments("sax"),
+        func = lambda x: x.slur_cells().ops("note_events")(
+            0,"mf")(
+            ),
+        funcs = (
+            lambda x:x,
+            lambda x:x.t(-5),
+            lambda x:x.t(-12),
+            lambda x:x.t(-24),
+            )
+        )
+    
 
     bass_pulse = osti.Osti(
         sb.with_only("bass_drones"),
@@ -187,6 +237,9 @@ def score3(lib):
         bass_pulse,
         measured_trems,
         violins_end_melody,
+        
+        sax_melody, 
+        measured_trems2,
         extend_last_machine=True
         )
 

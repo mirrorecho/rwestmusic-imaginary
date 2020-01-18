@@ -69,8 +69,36 @@
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
                             \set Staff.midiInstrument = #"alto sax" 
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf'2
+                        \mf
+                        (
+                        df''1
+                        )
+                        r2
+                        bf'2
+                        (
+                        df''4
+                        ef''4
+                        ~
+                        ef''2
+                        )
+                        r2
+                        bf'2
+                        (
+                        gf''4
+                        f''4
+                        df''4
+                        ef''4
+                        ~
+                        ef''2
+                        )
+                        bf'2
+                        (
+                        df''1
+                        )
                     }
                 }
                 \context Staff = "ooa_alto_sax2"
@@ -87,8 +115,36 @@
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
                             \set Staff.midiInstrument = #"alto sax" 
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        f'2
+                        \mf
+                        (
+                        af'1
+                        )
+                        r2
+                        f'2
+                        (
+                        af'4
+                        bf'4
+                        ~
+                        bf'2
+                        )
+                        r2
+                        f'2
+                        (
+                        df''4
+                        c''4
+                        af'4
+                        bf'4
+                        ~
+                        bf'2
+                        )
+                        f'2
+                        (
+                        af'1
+                        )
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -105,8 +161,36 @@
                             \set Staff.shortInstrumentName = \markup { Tsax. }
                             \set Staff.midiInstrument = #"alto sax" 
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf2
+                        \mf
+                        (
+                        df'1
+                        )
+                        r2
+                        bf2
+                        (
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        r2
+                        bf2
+                        (
+                        gf'4
+                        f'4
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        bf2
+                        (
+                        df'1
+                        )
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -124,8 +208,36 @@
                             \set Staff.midiInstrument = #"alto sax" 
                             \mark #14
                             \clef "bass"
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf,2
+                        \mf
+                        (
+                        df1
+                        )
+                        r2
+                        bf,2
+                        (
+                        df4
+                        ef4
+                        ~
+                        ef2
+                        )
+                        r2
+                        bf,2
+                        (
+                        gf4
+                        f4
+                        df4
+                        ef4
+                        ~
+                        ef2
+                        )
+                        bf,2
+                        (
+                        df1
+                        )
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -442,16 +554,336 @@
                 }
                 {
                     {
-                        {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Drum Set" }
-                            \set Staff.shortInstrumentName = \markup { Drum. }
-                            \set Staff.midiInstrument = #"taiko drum" 
-                            \mark #14
-                            \clef "percussion"
-                            R1 * 16
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Drum Set" }
+                        \set Staff.shortInstrumentName = \markup { Drum. }
+                        \set Staff.midiInstrument = #"taiko drum" 
+                        \mark #14
+                        \clef "percussion"
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (6) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            f'
+                        >16
+                        [
+                        \<
+                        f'16
+                        f'16
+                        f'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        [
+                        e'16
+                        r16
+                        e'16
+                        ]
+                        \tweak style #'cross
+                        e16
+                        [
+                        e'16
+                        r16
+                        e'16
+                        ]
+                        <e b>8
+                        [
+                        <b d' f'>8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        \mf
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        d'16
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ^ \markup { improv }
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ^ \markup { (2) }
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
                     }
                 }
             >>
@@ -2362,24 +2794,18 @@
                 }
                 {
                     {
-                        \compressFullBarRests
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Violin 1" }
-                        \set Staff.shortInstrumentName = \markup { Vln.I }
-                        \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #14
-                        r8
-                        \mp
-                        [
-                        r8
-                        ]
-                        r4
-                        r2
                         {
-                            R1 * 1
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin 1" }
+                            \set Staff.shortInstrumentName = \markup { Vln.I }
+                            \set Staff.midiInstrument = #"string ensemble 1" 
+                            \mark #14
+                            R1 * 2
                         }
                         ef'8
                         :16
+                        \mp
                         [
                         df'8
                         :16
@@ -2598,24 +3024,18 @@
                 }
                 {
                     {
-                        \compressFullBarRests
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Violin 2" }
-                        \set Staff.shortInstrumentName = \markup { Vln.II }
-                        \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #14
-                        r8
-                        \mp
-                        [
-                        r8
-                        ]
-                        r4
-                        r2
                         {
-                            R1 * 3
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { "Violin 2" }
+                            \set Staff.shortInstrumentName = \markup { Vln.II }
+                            \set Staff.midiInstrument = #"string ensemble 1" 
+                            \mark #14
+                            R1 * 4
                         }
                         f'8
                         :16
+                        \mp
                         [
                         ef'8
                         :16
@@ -3010,9 +3430,174 @@
                         bf'8
                         :16
                         ]
-                        {
-                            R1 * 7
-                        }
+                        gf''8
+                        :16
+                        [
+                        f''8
+                        :16
+                        ]
+                        gf'8
+                        :16
+                        [
+                        f'8
+                        :16
+                        ]
+                        f'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        af'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        df''8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        gf'8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        df''8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        af'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        gf'8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        f'8
+                        :16
+                        [
+                        f'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        ef'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        gf8
+                        :16
+                        ]
+                        b8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        af8
+                        :16
+                        [
+                        af8
+                        :16
+                        ]
+                        gf8
+                        :16
+                        [
+                        b8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        gf8
+                        :16
+                        ]
+                        b8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
                     }
                 }
                 \context Staff = "cco_cello"
@@ -3055,9 +3640,198 @@
                         )
                         f'2
                         af1
-                        {
-                            R1 * 8
-                        }
+                        df'8
+                        :16
+                        [
+                        c'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        f8
+                        :16
+                        [
+                        f8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        ef'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        af8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        bf,8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        bf,8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        bf,8
+                        :16
+                        ]
+                        ef8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        ef8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        ef8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
                     }
                 }
                 \context Staff = "cco_bass"
