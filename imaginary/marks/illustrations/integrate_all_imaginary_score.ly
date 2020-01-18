@@ -227,8 +227,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf''2
+                        \mf
+                        (
+                        df'''1
+                        )
+                        r2
+                        bf''2
+                        (
+                        df'''4
+                        ef'''4
+                        ~
+                        ef'''2
+                        )
+                        r2
+                        bf''2
+                        (
+                        gf'''4
+                        f'''4
+                        df'''4
+                        ef'''4
+                        ~
+                        ef'''2
+                        )
+                        bf''2
+                        (
+                        df'''1
+                        )
                     }
                     {
                         {
@@ -400,8 +428,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf'2
+                        \mf
+                        (
+                        df''1
+                        )
+                        r2
+                        bf'2
+                        (
+                        df''4
+                        ef''4
+                        ~
+                        ef''2
+                        )
+                        r2
+                        bf'2
+                        (
+                        gf''4
+                        f''4
+                        df''4
+                        ef''4
+                        ~
+                        ef''2
+                        )
+                        bf'2
+                        (
+                        df''1
+                        )
                     }
                     {
                         {
@@ -1205,14 +1261,14 @@
                         a4
                         -\tenuto
                         c'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r2
                         a4
                         -\tenuto
                         c'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r2
                         a4
                         (
@@ -1220,8 +1276,8 @@
                         )
                         [
                         d'8
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r2
                         a4
@@ -1235,15 +1291,15 @@
                         )
                         [
                         d'8
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r4
                         a4
                         -\tenuto
                         c'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r2
                         {
                             R1 * 1
@@ -1496,8 +1552,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf,2
+                        \mf
+                        (
+                        df1
+                        )
+                        r2
+                        bf,2
+                        (
+                        df4
+                        ef4
+                        ~
+                        ef2
+                        )
+                        r2
+                        bf,2
+                        (
+                        gf4
+                        f4
+                        df4
+                        ef4
+                        ~
+                        ef2
+                        )
+                        bf,2
+                        (
+                        df1
+                        )
                     }
                     {
                         {
@@ -1562,8 +1646,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf2
+                        \mf
+                        (
+                        df'1
+                        )
+                        r2
+                        bf2
+                        (
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        r2
+                        bf2
+                        (
+                        gf'4
+                        f'4
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        bf2
+                        (
+                        df'1
+                        )
                     }
                     {
                         {
@@ -1747,8 +1859,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf2
+                        \mf
+                        (
+                        df'1
+                        )
+                        r2
+                        bf2
+                        (
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        r2
+                        bf2
+                        (
+                        gf'4
+                        f'4
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        bf2
+                        (
+                        df'1
+                        )
                     }
                     {
                         {
@@ -1838,8 +1978,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        f2
+                        \mf
+                        (
+                        af1
+                        )
+                        r2
+                        f2
+                        (
+                        af4
+                        bf4
+                        ~
+                        bf2
+                        )
+                        r2
+                        f2
+                        (
+                        df'4
+                        c'4
+                        af4
+                        bf4
+                        ~
+                        bf2
+                        )
+                        f2
+                        (
+                        af1
+                        )
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -2216,6 +2384,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         af'16
+                        \mf
                         [
                         g'16
                         r8
@@ -2345,88 +2514,28 @@
                         af''16
                         ]
                         r4
-                        r8
-                        [
-                        gf''8
-                        ]
-                        r8
-                        [
-                        f''16
-                        ef''16
-                        ]
-                        bf''16
-                        [
-                        bf''16
-                        af''16
-                        gf''16
-                        ]
-                        r4
-                        r8
-                        [
-                        af''8
-                        ]
-                        df'''16
-                        [
-                        bf''16
-                        r8
-                        ]
-                        r2
-                        bf''16
-                        [
-                        af''16
-                        r8
-                        ]
-                        r4
-                        ef'''8
-                        [
-                        df'''16
-                        gf''16
-                        ]
-                        r4
-                        ef'''16
-                        [
-                        df'''16
-                        r8
-                        ]
-                        r4
-                        df'''8
-                        [
-                        gf'''16
-                        f'''16
-                        ]
-                        r4
-                        r8
-                        [
-                        ef'''8
-                        ]
-                        bf''8
-                        [
-                        gf''8
-                        ]
-                        gf''8
-                        [
-                        gf''8
-                        ]
-                        bf''8
-                        [
-                        f''8
-                        ]
-                        r8
-                        [
-                        f''8
-                        ]
-                        gf''8
-                        [
-                        b''8
-                        ]
-                        bf''8
-                        [
-                        gf''8
-                        ]
-                        b''8
-                        [
-                        bf''8
-                        ]
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        df''1
+                        :32
+                        \mf
+                        ~
+                        \<
+                        df''1
+                        :32
+                        df''1
+                        :32
+                        \f
+                        ~
+                        df''1
+                        :32
+                        ~
+                        df''1
+                        :32
+                        ~
+                        df''1
+                        :32
                     }
                     {
                         {
@@ -3528,71 +3637,71 @@
                             \mark #14
                             R1 * 1
                         }
-                        af'8
+                        df''8
                         \mp
                         ^ \markup { distorted }
                         [
-                        af'8
+                        c''8
                         ]
-                        af'8
+                        df''8
                         [
-                        af'8
+                        c''8
                         ]
-                        af'8
+                        c''8
                         [
-                        af'8
+                        f'8
                         ]
-                        af'8
+                        ef'8
                         [
+                        ef'8
+                        ]
+                        ef'8
+                        [
+                        df'8
+                        ]
+                        df'8
+                        [
+                        df'8
+                        ]
+                        f'8
+                        [
+                        ef'8
+                        ]
+                        f'8
+                        [
+                        f'8
+                        ]
                         bf'8
+                        [
+                        ef'8
+                        ]
+                        af'8
+                        [
+                        f'8
+                        ]
+                        f'8
+                        [
+                        f'8
+                        ]
+                        f'8
+                        [
+                        f'8
+                        ]
+                        f'8
+                        [
+                        ef'8
                         ]
                         ef'8
                         [
-                        bf8
-                        ]
-                        df'8
-                        [
-                        c'8
-                        ]
-                        bf8
-                        [
-                        bf8
-                        ]
-                        af8
-                        [
-                        bf8
-                        ]
-                        af8
-                        [
-                        bf8
-                        ]
-                        bf8
-                        [
-                        bf8
-                        ]
-                        bf8
-                        [
-                        bf8
-                        ]
-                        bf8
-                        [
-                        bf8
-                        ]
                         ef'8
-                        [
+                        ]
                         bf8
+                        [
+                        af8
                         ]
                         df'8
                         [
                         df'8
-                        ]
-                        f'8
-                        [
-                        f'8
-                        ]
-                        f'8
-                        [
-                        c'8
                         ]
                         df'8
                         [
@@ -3675,29 +3784,55 @@
                         ef'8
                         ]
                         df'4
+                        \mf
+                        -\staccato
+                        ^ \markup { arco }
                         gf'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         c'4
+                        -\staccato
                         df'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         df'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         f'4
+                        -\staccato
                         f'4
+                        -\staccato
                         f'4
+                        -\staccato
                         df'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         df''4
+                        -\staccato
                         ef''4
+                        -\staccato
                         gf''4
+                        -\staccato
                         ef''4
+                        -\staccato
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -3928,59 +4063,43 @@
                             \mark #14
                             R1 * 1
                         }
-                        df8
+                        af8
                         \mp
                         ^ \markup { distorted }
                         [
-                        df8
+                        af8
                         ]
-                        ef8
+                        f8
                         [
-                        ef8
+                        f8
                         ]
-                        ef8
+                        af8
                         [
-                        ef8
+                        af8
                         ]
-                        ef8
+                        af8
                         [
-                        ef8
-                        ]
-                        df8
-                        [
-                        df8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
+                        af8
                         ]
                         df8
                         [
-                        ef8
+                        bf,8
+                        ]
+                        f8
+                        [
+                        f8
+                        ]
+                        f8
+                        [
+                        f8
+                        ]
+                        f8
+                        [
+                        f8
                         ]
                         ef8
                         [
                         ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        df8
-                        [
-                        df8
                         ]
                         ef8
                         [
@@ -3996,19 +4115,35 @@
                         ]
                         df8
                         [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
                         df8
                         ]
-                        ef8
+                        df8
                         [
-                        ef8
+                        df8
                         ]
-                        ef8
+                        bf,8
                         [
-                        ef8
+                        bf,8
                         ]
-                        ef8
+                        af,8
                         [
-                        ef8
+                        af,8
+                        ]
+                        af,8
+                        [
+                        bf,8
                         ]
                         ef8
                         [
@@ -4040,31 +4175,31 @@
                         ]
                         af,8
                         [
-                        af,8
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
                         ]
                         df8
                         [
-                        c8
+                        df8
                         ]
-                        bf,8
+                        df8
                         [
-                        bf,8
+                        df8
                         ]
-                        bf,8
+                        df8
                         [
-                        bf,8
+                        df8
                         ]
-                        bf,8
+                        df8
                         [
-                        bf,8
+                        df8
                         ]
-                        f,8
+                        df8
                         [
-                        f,8
-                        ]
-                        bf,8
-                        [
-                        bf,8
+                        df8
                         ]
                         df8
                         [
@@ -4075,29 +4210,55 @@
                         df8
                         ]
                         ef4
+                        \mf
+                        -\staccato
+                        ^ \markup { arco }
                         bf,4
+                        -\staccato
                         df4
+                        -\staccato
                         bf,4
+                        -\staccato
                         af,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         ef4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         ef4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -4310,8 +4471,8 @@
                         g'2
                         g''8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         a''8
                         ~
@@ -4328,8 +4489,8 @@
                         ]
                         bf''4
                         d'''8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         d'''8
                         ~
@@ -4392,76 +4553,12 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 1
+                            R1 * 5
                         }
-                        af''8
+                        df''8
                         \mp
                         ^ \markup { "pizz, distorted" }
                         [
-                        af''8
-                        ]
-                        c'''8
-                        [
-                        c'''8
-                        ]
-                        af''8
-                        [
-                        bf''8
-                        ]
-                        bf''8
-                        [
-                        bf''8
-                        ]
-                        ef''8
-                        [
-                        bf'8
-                        ]
-                        df''8
-                        [
-                        c''8
-                        ]
-                        df''8
-                        [
-                        c''8
-                        ]
-                        af'8
-                        [
-                        bf'8
-                        ]
-                        af'8
-                        [
-                        ef''8
-                        ]
-                        df''8
-                        [
-                        df''8
-                        ]
-                        df''8
-                        [
-                        df''8
-                        ]
-                        bf'8
-                        [
-                        df''8
-                        ]
-                        f''8
-                        [
-                        bf''8
-                        ]
-                        df''8
-                        [
-                        df''8
-                        ]
-                        df''8
-                        [
-                        df''8
-                        ]
-                        df''8
-                        [
-                        df''8
-                        ]
-                        df''8
-                        [
                         df''8
                         ]
                         df''8
@@ -4492,41 +4589,41 @@
                         [
                         ef''8
                         ]
-                        af'8
+                        af''8
                         [
-                        ef'8
+                        ef''8
                         ]
-                        df'8
+                        df''8
                         [
-                        df'8
+                        df''8
                         ]
-                        df'8
+                        df''8
                         [
-                        df'8
+                        df''8
                         ]
-                        df'8
+                        df''8
                         [
-                        df'8
+                        df''8
                         ]
-                        df'8
+                        df''8
                         [
-                        c'8
+                        c''8
                         ]
-                        c'8
+                        c''8
                         [
-                        c'8
+                        c''8
                         ]
-                        df'8
+                        df''8
                         [
-                        df'8
+                        df''8
                         ]
-                        df'8
+                        df''8
                         [
-                        df'8
+                        df''8
                         ]
-                        df'8
+                        df''8
                         [
-                        df'8
+                        df''8
                         ]
                         f'8
                         [
@@ -4541,29 +4638,55 @@
                         ef'8
                         ]
                         df'4
+                        \mf
+                        -\staccato
+                        ^ \markup { arco }
                         gf'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         bf'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         gf'4
+                        -\staccato
                         gf''4
+                        -\staccato
                         gf''4
+                        -\staccato
                         gf''4
+                        -\staccato
                         af''4
+                        -\staccato
                         ef''4
+                        -\staccato
                         gf''4
+                        -\staccato
                         gf''4
+                        -\staccato
                         bf''4
+                        -\staccato
                         df'''4
+                        -\staccato
                         gf'''4
+                        -\staccato
                         gf'''4
+                        -\staccato
                         gf'''4
+                        -\staccato
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -4965,8 +5088,8 @@
                         a''2
                         f''8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         a''8
                         ~
@@ -4983,8 +5106,8 @@
                         ]
                         d'''4
                         a''8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         a''8
                         ~
@@ -5047,125 +5170,61 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 1
+                            R1 * 5
                         }
-                        df''8
+                        bf''8
                         \mp
                         ^ \markup { "pizz, distorted" }
                         [
-                        c''8
-                        ]
-                        df''8
-                        [
-                        c''8
-                        ]
-                        c''8
-                        [
-                        f''8
-                        ]
-                        ef''8
-                        [
-                        ef''8
-                        ]
-                        ef''8
-                        [
-                        df''8
-                        ]
-                        df''8
-                        [
-                        df''8
-                        ]
-                        f''8
-                        [
-                        ef''8
-                        ]
-                        f''8
-                        [
-                        f''8
-                        ]
-                        bf''8
-                        [
-                        ef''8
+                        af''8
                         ]
                         af''8
                         [
-                        f''8
+                        af''8
                         ]
-                        f''8
+                        af''8
                         [
-                        f''8
+                        df'''8
                         ]
-                        f''8
+                        c'''8
                         [
+                        c'''8
+                        ]
+                        bf''8
+                        [
+                        bf''8
+                        ]
                         f''8
-                        ]
-                        f''8
-                        [
-                        ef''8
-                        ]
-                        ef''8
-                        [
-                        ef''8
-                        ]
-                        bf'8
-                        [
-                        af'8
-                        ]
-                        df''8
                         [
                         df''8
                         ]
-                        bf'8
+                        gf''8
                         [
-                        af'8
+                        f''8
                         ]
-                        af'8
+                        f''8
                         [
-                        af'8
+                        f''8
                         ]
-                        af'8
+                        ef''8
+                        [
+                        ef''8
+                        ]
+                        df''8
+                        [
+                        gf''8
+                        ]
+                        f''8
                         [
                         df''8
                         ]
-                        c''8
+                        gf''8
                         [
-                        c''8
+                        f''8
                         ]
-                        bf'8
+                        df''8
                         [
-                        bf'8
-                        ]
-                        f'8
-                        [
-                        df'8
-                        ]
-                        gf'8
-                        [
-                        f'8
-                        ]
-                        f'8
-                        [
-                        f'8
-                        ]
-                        ef'8
-                        [
-                        ef'8
-                        ]
-                        df'8
-                        [
-                        gf'8
-                        ]
-                        f'8
-                        [
-                        df'8
-                        ]
-                        gf'8
-                        [
-                        f'8
-                        ]
-                        df'8
-                        [
-                        ef'8
+                        ef''8
                         ]
                         gf'8
                         [
@@ -5196,29 +5255,55 @@
                         af'8
                         ]
                         df'4
+                        \mf
+                        -\staccato
+                        ^ \markup { arco }
                         gf'4
+                        -\staccato
                         bf'4
+                        -\staccato
                         bf'4
+                        -\staccato
                         ef''4
+                        -\staccato
                         df''4
+                        -\staccato
                         bf'4
+                        -\staccato
                         bf'4
+                        -\staccato
                         bf'4
+                        -\staccato
                         af'4
+                        -\staccato
                         ef''4
+                        -\staccato
                         gf''4
+                        -\staccato
                         ef''4
+                        -\staccato
                         df''4
+                        -\staccato
                         df''4
+                        -\staccato
                         f''4
+                        -\staccato
                         ef''4
+                        -\staccato
                         bf''4
+                        -\staccato
                         b''4
+                        -\staccato
                         bf''4
+                        -\staccato
                         af''4
+                        -\staccato
                         gf''4
+                        -\staccato
                         bf''4
+                        -\staccato
                         b''4
+                        -\staccato
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -5693,8 +5778,8 @@
                         bf,2
                         bf,8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         bf,8
                         ~
@@ -5711,8 +5796,8 @@
                         ]
                         ef4
                         bf,8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         g8
                         ~
@@ -5775,44 +5860,12 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 1
+                            R1 * 3
                         }
-                        ef8
+                        af8
                         \mp
                         ^ \markup { "pizz, distorted" }
                         [
-                        ef8
-                        ]
-                        f8
-                        [
-                        f8
-                        ]
-                        af8
-                        [
-                        af8
-                        ]
-                        af8
-                        [
-                        af8
-                        ]
-                        df'8
-                        [
-                        ef'8
-                        ]
-                        ef'8
-                        [
-                        ef'8
-                        ]
-                        f8
-                        [
-                        f8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
                         af8
                         ]
                         f8
@@ -5829,124 +5882,150 @@
                         ]
                         ef8
                         [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        f8
-                        [
-                        f8
-                        ]
-                        f8
-                        [
-                        f8
-                        ]
-                        ef8
-                        [
-                        ef8
+                        bf,8
                         ]
                         bf,8
                         [
                         bf,8
                         ]
-                        af,8
+                        f8
                         [
-                        af,8
+                        f8
                         ]
-                        af,8
+                        f8
+                        [
+                        ef8
+                        ]
+                        df8
+                        [
+                        df8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        df8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        df8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        ef8
+                        ]
+                        ef8
+                        [
+                        af8
+                        ]
+                        df8
+                        [
+                        df8
+                        ]
+                        bf,8
+                        [
+                        bf,8
+                        ]
+                        bf,8
+                        [
+                        bf,8
+                        ]
+                        bf,8
                         [
                         bf,8
                         ]
                         df8
                         [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        df8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        ef8
-                        [
-                        ef8
-                        ]
-                        df8
-                        [
                         df8
                         ]
-                        df8
+                        f8
                         [
-                        df8
+                        f8
                         ]
-                        df8
+                        f8
                         [
-                        df8
+                        f,8
                         ]
-                        df8
+                        c,8
                         [
-                        df8
-                        ]
-                        df8
-                        [
-                        df8
-                        ]
-                        df8
-                        [
-                        df8
-                        ]
-                        df8
-                        [
-                        c8
+                        c,8
                         ]
                         ef,4
+                        \mf
+                        -\staccato
+                        ^ \markup { arco }
                         df,4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         df4
+                        -\staccato
                         bf,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         df4
+                        -\staccato
                         bf4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         ef'4
+                        -\staccato
                         bf4
+                        -\staccato
                         bf4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         bf4
+                        -\staccato
                         df'4
+                        -\staccato
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -6421,8 +6500,8 @@
                         d2
                         a,8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         ef8
                         ~
@@ -6439,8 +6518,8 @@
                         ]
                         g4
                         g8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         af8
                         ~
@@ -6503,77 +6582,45 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 1
+                            R1 * 3
                         }
                         af8
                         \mp
                         ^ \markup { "pizz, distorted" }
                         [
-                        af8
+                        ef8
+                        ]
+                        df8
+                        [
+                        df8
+                        ]
+                        df8
+                        [
+                        df8
+                        ]
+                        bf,8
+                        [
+                        df8
                         ]
                         f8
-                        [
-                        f8
-                        ]
-                        af8
-                        [
-                        af8
-                        ]
-                        af8
-                        [
-                        af8
-                        ]
-                        df'8
                         [
                         bf8
                         ]
-                        f8
+                        df'8
                         [
-                        f8
+                        df'8
                         ]
-                        f8
+                        df'8
                         [
-                        f8
+                        df'8
                         ]
-                        f8
+                        df'8
                         [
                         f8
-                        ]
-                        af8
-                        [
-                        af8
-                        ]
-                        f8
-                        [
-                        f8
-                        ]
-                        af8
-                        [
-                        af8
-                        ]
-                        af8
-                        [
-                        af8
                         ]
                         ef8
                         [
-                        bf,8
-                        ]
-                        bf,8
-                        [
-                        bf,8
-                        ]
-                        f8
-                        [
-                        f8
-                        ]
-                        f8
-                        [
-                        f8
-                        ]
-                        df8
-                        [
-                        df8
+                        ef8
                         ]
                         bf,8
                         [
@@ -6611,70 +6658,96 @@
                         [
                         af8
                         ]
-                        af,8
+                        af8
                         [
-                        af,8
+                        af8
                         ]
-                        af,8
+                        af8
                         [
-                        af,8
-                        ]
-                        df8
-                        [
-                        df8
-                        ]
-                        bf,8
-                        [
-                        bf,8
-                        ]
-                        bf,8
-                        [
-                        bf,8
-                        ]
-                        bf,8
-                        [
-                        bf,8
+                        af8
                         ]
                         df8
                         [
-                        df8
+                        c8
                         ]
-                        f8
+                        bf,8
                         [
-                        f8
+                        bf,8
                         ]
-                        f8
+                        bf,8
+                        [
+                        bf,8
+                        ]
+                        bf,8
+                        [
+                        bf,8
+                        ]
+                        f,8
                         [
                         f,8
                         ]
-                        c,8
+                        bf,8
                         [
-                        df,8
+                        bf,8
+                        ]
+                        df8
+                        [
+                        df8
+                        ]
+                        df8
+                        [
+                        df8
                         ]
                         ef,4
+                        \mf
+                        -\staccato
+                        ^ \markup { arco }
                         df,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         df4
+                        -\staccato
                         af,4
+                        -\staccato
                         af,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         df4
+                        -\staccato
                         bf,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         bf,4
+                        -\staccato
                         ef4
+                        -\staccato
                         df4
+                        -\staccato
                         ef4
+                        -\staccato
                         df4
+                        -\staccato
                         ef4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                         df'4
+                        -\staccato
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -7476,113 +7549,59 @@
                         f''8
                         -\staccato
                         ]
+                        f'4
+                        \<
+                        (
+                        bf'4
+                        df''4
+                        ~
                         df''8
-                        -\staccato
                         [
-                        r8
-                        ]
-                        r4
-                        gf''8
-                        -\tenuto
-                        [
-                        f''16
-                        -\tenuto
-                        bf'16
-                        -\staccato
-                        ]
-                        r4
-                        gf''8
-                        -\staccato
-                        [
-                        r8
-                        ]
-                        r4
-                        f''8
-                        -\tenuto
-                        [
-                        bf''16
-                        -\tenuto
-                        af''16
-                        -\staccato
-                        ]
-                        r4
-                        r2
-                        bf''16
-                        -\tenuto
-                        [
-                        bf''16
-                        -\tenuto
-                        af''16
-                        -\tenuto
-                        gf''16
-                        -\staccato
-                        ]
-                        r4
-                        r4
-                        df'''16
-                        -\tenuto
-                        [
-                        bf''16
-                        -\staccato
-                        r8
-                        ]
-                        r2
-                        bf''8
-                        -\staccato
-                        [
-                        r8
-                        ]
-                        r4
-                        ef'''8
-                        -\tenuto
-                        [
-                        df'''16
-                        -\tenuto
-                        gf''16
-                        -\staccato
-                        ]
-                        r4
-                        ef'''8
-                        -\staccato
-                        [
-                        r8
-                        ]
-                        r4
                         df'''8
-                        -\tenuto
-                        [
-                        gf'''16
-                        -\tenuto
-                        f'''16
-                        -\staccato
                         ]
+                        )
+                        f'''2
+                        \f
+                        ~
+                        f'''8.
+                        [
+                        c'''16
+                        -\accent
+                        ~
+                        ]
+                        c'''4
+                        r2
+                        df'''4
+                        (
+                        c'''4
+                        )
+                        af''2
+                        ~
+                        af''8.
+                        [
+                        bf''16
+                        -\accent
+                        ~
+                        ]
+                        bf''4
                         r4
-                        r2
-                        gf''8
-                        -\tenuto
-                        [
-                        gf''8
-                        -\tenuto
-                        ]
-                        bf''8
-                        -\tenuto
-                        [
-                        f''8
-                        -\staccato
-                        ]
-                        r2
-                        bf''8
-                        -\tenuto
-                        [
-                        gf''8
-                        -\tenuto
-                        ]
-                        b''8
-                        -\tenuto
-                        [
-                        bf''8
-                        -\staccato
-                        ]
+                        bf''4
+                        (
+                        df'''2
+                        )
+                        bf''2
+                        f'''2
+                        r4
+                        ef'''4
+                        (
+                        df'''2
+                        ~
+                        df'''2
+                        )
+                        bf''4
+                        (
+                        df'''4
+                        )
                     }
                     {
                         {
@@ -8144,125 +8163,65 @@
                         r8
                         ]
                         r4
-                        df''16
-                        -\tenuto
+                        gf'8
                         [
-                        c''16
-                        -\staccato
-                        r8
+                        \<
+                        (
+                        f'8
                         ]
-                        r4
-                        gf''8
-                        -\staccato
+                        gf'8
                         [
-                        r8
-                        ]
-                        r4
-                        gf''16
-                        -\tenuto
-                        [
-                        f''16
-                        -\staccato
-                        r8
-                        ]
-                        r4
                         f''8
-                        -\staccato
-                        [
-                        r8
+                        ~
                         ]
-                        r4
-                        r8
+                        f''8
                         [
-                        gf''8
-                        -\tenuto
-                        ]
-                        r8
-                        [
-                        f''16
-                        -\tenuto
-                        ef''16
-                        -\staccato
-                        ]
                         bf''8
-                        -\staccato
-                        [
-                        r8
                         ]
-                        r4
-                        r8
+                        af''4
+                        )
+                        f'''2
+                        \f
+                        ~
+                        f'''8.
                         [
-                        af''8
-                        -\staccato
+                        c'''16
+                        -\accent
+                        ~
                         ]
-                        df'''8
-                        -\staccato
-                        [
-                        r8
-                        ]
+                        c'''4
                         r2
+                        df'''4
+                        (
+                        c'''4
+                        )
+                        af''2
+                        ~
+                        af''8.
+                        [
                         bf''16
-                        -\tenuto
-                        [
-                        af''16
-                        -\staccato
-                        r8
+                        -\accent
+                        ~
                         ]
+                        bf''4
                         r4
-                        ef'''8
-                        -\staccato
-                        [
-                        r8
-                        ]
+                        bf''4
+                        (
+                        df'''2
+                        )
+                        bf''2
+                        f'''2
                         r4
-                        ef'''16
-                        -\tenuto
-                        [
-                        df'''16
-                        -\staccato
-                        r8
-                        ]
-                        r4
-                        df'''8
-                        -\staccato
-                        [
-                        r8
-                        ]
-                        r4
-                        r8
-                        [
-                        ef'''8
-                        -\tenuto
-                        ]
-                        bf''8
-                        -\tenuto
-                        [
-                        gf''8
-                        -\staccato
-                        ]
-                        gf''8
-                        -\staccato
-                        [
-                        r8
-                        ]
-                        r4
-                        r8
-                        [
-                        f''8
-                        -\tenuto
-                        ]
-                        gf''8
-                        -\tenuto
-                        [
-                        b''8
-                        -\staccato
-                        ]
-                        bf''8
-                        -\staccato
-                        [
-                        r8
-                        ]
-                        r4
+                        ef'''4
+                        (
+                        df'''2
+                        ~
+                        df'''2
+                        )
+                        bf''4
+                        (
+                        df'''4
+                        )
                     }
                     {
                         {
@@ -8488,12 +8447,117 @@
                         }
                     }
                     {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        af'4
+                        \mf
+                        -\staccato
+                        r4
+                        df''2
+                        \mp
+                        \<
+                        df''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
+                        f''2
+                        \mp
+                        \<
+                        f''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
+                        f''2
+                        \mp
+                        \<
+                        f''4
+                        \mf
+                        -\staccato
+                        r4
+                        bf''2
+                        \mp
+                        \<
+                        bf''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 16
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        bf'4
+                        \mf
+                        (
+                        gf''8
+                        [
+                        f''8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ~
+                        ]
+                        ef''4
+                        )
+                        bf'4
+                        (
+                        df''2
+                        )
+                        r8
+                        [
+                        ef''8
+                        ]
+                        (
+                        gf''4
+                        bf'4
+                        ~
+                        bf'8
+                        [
+                        f''8
+                        ]
+                        )
+                        r4
+                        gf''8
+                        [
+                        (
+                        f''8
+                        ]
+                        df''4
+                        ~
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        )
+                        r8
+                        [
+                        ef''8
+                        ]
+                        (
+                        gf''4
+                        ef''4
+                        bf''4
+                        )
+                        r8
+                        [
+                        af''8
+                        ]
+                        (
+                        gf''4
+                        ~
+                        gf''4
+                        ef''8
+                        [
+                        gf''8
+                        ]
+                        )
                     }
                     {
                         {
@@ -8684,12 +8748,115 @@
                         }
                     }
                     {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        r8
+                        [
+                        df''8
+                        \mp
+                        ~
+                        ]
+                        \<
+                        df''4
+                        df''4
+                        \mf
+                        -\staccato
+                        r4
+                        c''2
+                        \mp
+                        \<
+                        c''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
+                        r4
+                        af''4
+                        \mp
+                        ~
+                        \<
+                        af''4
+                        af''4
+                        \mf
+                        -\staccato
+                        r2
+                        bf''2
+                        \mp
+                        \<
+                        bf''4
+                        \mf
+                        -\staccato
+                        r4
+                        af''2
+                        \mp
+                        \<
+                        af''4
+                        \mf
+                        -\staccato
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 16
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        ef''8
+                        \mf
+                        ]
+                        (
+                        gf''4
+                        ef''4
+                        bf''4
+                        )
+                        r8
+                        [
+                        af''8
+                        ]
+                        (
+                        gf''4
+                        ~
+                        gf''4
+                        ef''8
+                        [
+                        gf''8
+                        ]
+                        )
+                        r4
+                        ef''4
+                        (
+                        gf''2
+                        )
+                        r4
+                        ef''4
+                        (
+                        gf''8
+                        [
+                        af''8
+                        ~
+                        ]
+                        af''4
+                        )
+                        r4
+                        ef''4
+                        (
+                        b''8
+                        [
+                        bf''8
+                        ]
+                        gf''8
+                        [
+                        af''8
+                        ~
+                        ]
+                        af''4
+                        )
+                        ef''4
+                        (
+                        gf''2
+                        )
                     }
                     {
                         {
@@ -8846,12 +9013,117 @@
                         \!
                     }
                     {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        af'4
+                        \mf
+                        -\staccato
+                        r4
+                        df''2
+                        \mp
+                        \<
+                        df''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
+                        f''2
+                        \mp
+                        \<
+                        f''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
+                        f''2
+                        \mp
+                        \<
+                        f''4
+                        \mf
+                        -\staccato
+                        r4
+                        bf''2
+                        \mp
+                        \<
+                        bf''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 16
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r4
+                        bf'4
+                        \mf
+                        (
+                        gf''8
+                        [
+                        f''8
+                        ]
+                        df''8
+                        [
+                        ef''8
+                        ~
+                        ]
+                        ef''4
+                        )
+                        bf'4
+                        (
+                        df''2
+                        )
+                        r8
+                        [
+                        ef''8
+                        ]
+                        (
+                        gf''4
+                        bf'4
+                        ~
+                        bf'8
+                        [
+                        f''8
+                        ]
+                        )
+                        r4
+                        gf''8
+                        [
+                        (
+                        f''8
+                        ]
+                        df''4
+                        ~
+                        df''8
+                        [
+                        ef''8
+                        ]
+                        )
+                        r8
+                        [
+                        ef''8
+                        ]
+                        (
+                        gf''4
+                        ef''4
+                        bf''4
+                        )
+                        r8
+                        [
+                        af''8
+                        ]
+                        (
+                        gf''4
+                        ~
+                        gf''4
+                        ef''8
+                        [
+                        gf''8
+                        ]
+                        )
                     }
                     {
                         {
@@ -9008,12 +9280,115 @@
                         }
                     }
                     {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        r8
+                        [
+                        df''8
+                        \mp
+                        ~
+                        ]
+                        \<
+                        df''4
+                        df''4
+                        \mf
+                        -\staccato
+                        r4
+                        c''2
+                        \mp
+                        \<
+                        c''4
+                        \mf
+                        -\staccato
+                        r4
+                        r2
+                        r4
+                        af''4
+                        \mp
+                        ~
+                        \<
+                        af''4
+                        af''4
+                        \mf
+                        -\staccato
+                        r2
+                        bf''2
+                        \mp
+                        \<
+                        bf''4
+                        \mf
+                        -\staccato
+                        r4
+                        af''2
+                        \mp
+                        \<
+                        af''4
+                        \mf
+                        -\staccato
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 16
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        ef''8
+                        \mf
+                        ]
+                        (
+                        gf''4
+                        ef''4
+                        bf''4
+                        )
+                        r8
+                        [
+                        af''8
+                        ]
+                        (
+                        gf''4
+                        ~
+                        gf''4
+                        ef''8
+                        [
+                        gf''8
+                        ]
+                        )
+                        r4
+                        ef''4
+                        (
+                        gf''2
+                        )
+                        r4
+                        ef''4
+                        (
+                        gf''8
+                        [
+                        af''8
+                        ~
+                        ]
+                        af''4
+                        )
+                        r4
+                        ef''4
+                        (
+                        b''8
+                        [
+                        bf''8
+                        ]
+                        gf''8
+                        [
+                        af''8
+                        ~
+                        ]
+                        af''4
+                        )
+                        ef''4
+                        (
+                        gf''2
+                        )
                     }
                     {
                         {
@@ -9043,8 +9418,8 @@
                         -\tenuto
                         ]
                         e'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         c'8
                         [
                         (
@@ -9052,8 +9427,8 @@
                         ]
                         )
                         f'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         c'8
                         -\tenuto
                         [
@@ -9073,16 +9448,16 @@
                         -\tenuto
                         ]
                         e'4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r8
                         [
                         c'8
                         -\tenuto
                         ]
                         e4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r4
                         r8
                         [
@@ -9118,8 +9493,8 @@
                         -\tenuto
                         [
                         d8
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r4
                         r4
@@ -9139,8 +9514,8 @@
                         -\tenuto
                         ]
                         e4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r4
                         a4
                         -\tenuto
@@ -9408,8 +9783,120 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 10
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        df8
+                        \mf
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        af,8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        af,8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        bf8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        bf8
+                        -\staccato
+                        ]
+                        r4
                     }
                     {
                         {
@@ -9544,8 +10031,120 @@
                         f'2
                         af1
                         {
-                            R1 * 8
+                            R1 * 2
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ef,8
+                        \mf
+                        -\staccato
+                        [
+                        ef,8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        af,8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        gf8
+                        -\staccato
+                        [
+                        gf8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        gf8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        bf8
+                        -\staccato
+                        ]
                     }
                     {
                         {
@@ -9726,8 +10325,120 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 10
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        r8
+                        [
+                        gf'8
+                        \mf
+                        -\staccato
+                        ]
+                        gf'8
+                        -\staccato
+                        [
+                        gf'8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        af'8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        af'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        bf8
+                        -\staccato
+                        ]
+                        bf8
+                        -\staccato
+                        [
+                        bf8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        af'8
+                        -\staccato
+                        ]
+                        af'8
+                        -\staccato
+                        [
+                        af'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        gf'8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        gf'8
+                        -\staccato
+                        ]
+                        b'8
+                        -\staccato
+                        [
+                        bf'8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        af'8
+                        -\staccato
+                        ]
+                        gf'8
+                        -\staccato
+                        [
+                        b'8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        gf'8
+                        -\staccato
+                        ]
+                        r4
                     }
                     {
                         {
@@ -9812,8 +10523,120 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 10
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        df8
+                        \mf
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        f8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        bf8
+                        -\staccato
+                        [
+                        bf8
+                        -\staccato
+                        ]
+                        af8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        r4
+                        r8
+                        [
+                        gf8
+                        -\staccato
+                        ]
+                        b8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -10285,8 +11108,67 @@
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
-                        R1 * 16
+                        R1 * 2
                     }
+                    \timpStaff
+                    ef4
+                    \mp
+                    ^ \markup { timpani }
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    ef4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
+                    df4
                 }
                 {
                     {
@@ -10599,12 +11481,191 @@
                         }
                     }
                     {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        af'4
+                        \mf
+                        r4
+                        df''4
+                        r4
+                        df''4
+                        r4
+                        c''8
+                        [
+                        f''8
+                        ]
+                        r4
+                        r2
+                        f''4
+                        r4
+                        r4
+                        af''4
+                        r2
+                        f''16
+                        [
+                        ef''8.
+                        ]
+                        r4
+                        r2
+                        bf''4
+                        r4
+                        af''8
+                        [
+                        df'''8
+                        ]
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 16
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        df'''8
+                        \mf
+                        -\staccato
+                        [
+                        gf'''8
+                        -\staccato
+                        ]
+                        gf'''8
+                        -\staccato
+                        [
+                        gf'''8
+                        -\staccato
+                        ]
+                        bf''8
+                        -\staccato
+                        [
+                        af''8
+                        -\staccato
+                        ]
+                        bf''8
+                        -\staccato
+                        [
+                        bf''8
+                        -\staccato
+                        ]
+                        ef'''8
+                        -\staccato
+                        [
+                        af''8
+                        -\staccato
+                        ]
+                        df'''8
+                        -\staccato
+                        [
+                        bf''8
+                        -\staccato
+                        ]
+                        bf''8
+                        -\staccato
+                        [
+                        bf''8
+                        -\staccato
+                        ]
+                        bf''8
+                        -\staccato
+                        [
+                        bf''8
+                        -\staccato
+                        ]
+                        bf''8
+                        -\staccato
+                        [
+                        af''8
+                        -\staccato
+                        ]
+                        af''8
+                        -\staccato
+                        [
+                        af''8
+                        -\staccato
+                        ]
+                        ef''8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        gf''8
+                        -\staccato
+                        [
+                        gf''8
+                        -\staccato
+                        ]
+                        ef''8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        df''8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        df''8
+                        -\staccato
+                        [
+                        gf''8
+                        -\staccato
+                        ]
+                        f''8
+                        -\staccato
+                        [
+                        f''8
+                        -\staccato
+                        ]
+                        ef''8
+                        -\staccato
+                        [
+                        ef''8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        gf''8
+                        -\staccato
+                        ]
+                        b''8
+                        -\staccato
+                        [
+                        bf''8
+                        -\staccato
+                        ]
+                        bf''8
+                        -\staccato
+                        [
+                        bf''8
+                        -\staccato
+                        ]
+                        af''8
+                        -\staccato
+                        [
+                        af''8
+                        -\staccato
+                        ]
+                        gf''8
+                        -\staccato
+                        [
+                        b''8
+                        -\staccato
+                        ]
+                        bf''8
+                        -\staccato
+                        [
+                        gf''8
+                        -\staccato
+                        ]
+                        b''8
+                        -\staccato
+                        [
+                        bf''8
+                        -\staccato
+                        ]
                     }
                     {
                         {
@@ -10812,12 +11873,190 @@
                         }
                     }
                     {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        af4
+                        r4
+                        df'4
+                        r4
+                        df'4
+                        r4
+                        c'8
+                        [
+                        f'8
+                        ]
+                        r4
+                        r2
+                        f'4
+                        r4
+                        r4
+                        af'4
+                        r2
+                        f'16
+                        [
+                        ef'8.
+                        ]
+                        r4
+                        r2
+                        bf'4
+                        r4
+                        af'8
+                        [
+                        df''8
+                        ]
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 16
+                            R1 * 4
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ef,8
+                        \mf
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        af,8
+                        -\staccato
+                        ]
+                        af,8
+                        -\staccato
+                        [
+                        af,8
+                        -\staccato
+                        ]
+                        af,8
+                        -\staccato
+                        [
+                        af,8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        bf,8
+                        -\staccato
+                        [
+                        bf,8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        ef,8
+                        -\staccato
+                        [
+                        ef,8
+                        -\staccato
+                        ]
+                        bf,,8
+                        -\staccato
+                        [
+                        bf,,8
+                        -\staccato
+                        ]
+                        bf,,8
+                        -\staccato
+                        [
+                        bf,,8
+                        -\staccato
+                        ]
+                        df,8
+                        -\staccato
+                        [
+                        df,8
+                        -\staccato
+                        ]
+                        df,8
+                        -\staccato
+                        [
+                        df,8
+                        -\staccato
+                        ]
+                        bf,,8
+                        -\staccato
+                        [
+                        bf,,8
+                        -\staccato
+                        ]
+                        df,8
+                        -\staccato
+                        [
+                        df,8
+                        -\staccato
+                        ]
                     }
                     {
                         {
@@ -10952,8 +12191,156 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 10
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        ef''8
+                        \mf
+                        -\staccato
+                        [
+                        ef''8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        bf'8
+                        -\staccato
+                        ]
+                        df''8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        bf'8
+                        -\staccato
+                        ]
+                        af'8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        bf'8
+                        -\staccato
+                        ]
+                        df''8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        df''8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        df''8
+                        -\staccato
+                        [
+                        ef''8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        bf'8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        bf'8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        df''8
+                        -\staccato
+                        ]
+                        bf'8
+                        -\staccato
+                        [
+                        bf'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        df'8
+                        -\staccato
+                        ]
                     }
                     {
                         {
@@ -11107,8 +12494,156 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 10
                         }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        df'8
+                        \mf
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        gf'8
+                        -\staccato
+                        [
+                        f'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        df'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        ef'8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        bf8
+                        -\staccato
+                        [
+                        ef'8
+                        -\staccato
+                        ]
+                        gf'8
+                        -\staccato
+                        [
+                        gf8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        df8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        gf8
+                        -\staccato
+                        [
+                        gf8
+                        -\staccato
+                        ]
+                        f8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        f8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        f8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        gf8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        df8
+                        -\staccato
+                        [
+                        f8
+                        -\staccato
+                        ]
+                        ef8
+                        -\staccato
+                        [
+                        ef8
+                        -\staccato
+                        ]
+                        gf,8
+                        -\staccato
+                        [
+                        gf,8
+                        -\staccato
+                        ]
+                        ef,8
+                        -\staccato
+                        [
+                        gf,8
+                        -\staccato
+                        ]
                     }
                     {
                         {
@@ -11296,8 +12831,8 @@
                         a'2
                         c''8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         c''8
                         ~
@@ -11314,8 +12849,8 @@
                         ]
                         bf''4
                         a''8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         c'''8
                         ~
@@ -12045,8 +13580,8 @@
                         c''2
                         f''8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         c''8
                         ~
@@ -12063,8 +13598,8 @@
                         ]
                         d''4
                         c''8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         d''8
                         ~
@@ -12816,8 +14351,8 @@
                         a2
                         f'8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         g'8
                         ~
@@ -12834,8 +14369,8 @@
                         ]
                         g'4
                         bf'8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         a'8
                         ~
@@ -13817,8 +15352,8 @@
                         ef2
                         d8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         c8
                         ~
@@ -13835,8 +15370,8 @@
                         ]
                         bf,4
                         af8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         bf8
                         ~
@@ -14747,8 +16282,8 @@
                         a,2
                         a,8
                         \mf
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         a,8
                         ~
@@ -14765,8 +16300,8 @@
                         ]
                         a,4
                         bf,8
-                        -\staccato
                         -\accent
+                        -\staccato
                         [
                         bf,8
                         ~
@@ -14858,133 +16393,69 @@
                         \mark #14
                         ef4
                         \mp
-                        -\tenuto
                         ef4
-                        -\tenuto
                         ef4
-                        -\tenuto
                         ef4
-                        -\tenuto
                         ef4
-                        -\tenuto
                         ef4
-                        -\tenuto
                         ef4
-                        -\tenuto
                         ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
-                        ef4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
                         df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
-                        df4
-                        -\tenuto
+                        df,4
+                        df,4
+                        df,4
+                        df,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
+                        ef,4
                     }
                     {
                         {

@@ -323,16 +323,14 @@ def score3(lib):
         osti_pulse_duration = 0.5,
         osti_cell_length = 8,
         osti_cell_count = 6,
-        tag_all_note_events=("."),
+        tag_all_note_events=(">"),
         after_funcs = (
             lambda x: x.eps(
                 0, "mf")(),
+            lambda x: x,
             lambda x: x.eps(
                 0, "mf")(),
-            lambda x: x.eps(
-                0, "mf")(),
-            lambda x: x.eps(
-                0, "mf")(),
+            lambda x: x,
             )
         )
     end_osti.staves["piano2"].segments[0].t(-12)
