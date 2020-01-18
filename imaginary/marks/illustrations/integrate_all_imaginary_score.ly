@@ -606,8 +606,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf'2
+                        \mf
+                        (
+                        df''1
+                        )
+                        r2
+                        bf'2
+                        (
+                        df''4
+                        ef''4
+                        ~
+                        ef''2
+                        )
+                        r2
+                        bf'2
+                        (
+                        gf''4
+                        f''4
+                        df''4
+                        ef''4
+                        ~
+                        ef''2
+                        )
+                        bf'2
+                        (
+                        df''1
+                        )
                     }
                     {
                         {
@@ -791,8 +819,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        f'2
+                        \mf
+                        (
+                        af'1
+                        )
+                        r2
+                        f'2
+                        (
+                        af'4
+                        bf'4
+                        ~
+                        bf'2
+                        )
+                        r2
+                        f'2
+                        (
+                        df''4
+                        c''4
+                        af'4
+                        bf'4
+                        ~
+                        bf'2
+                        )
+                        f'2
+                        (
+                        af'1
+                        )
                     }
                     {
                         {
@@ -940,8 +996,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf2
+                        \mf
+                        (
+                        df'1
+                        )
+                        r2
+                        bf2
+                        (
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        r2
+                        bf2
+                        (
+                        gf'4
+                        f'4
+                        df'4
+                        ef'4
+                        ~
+                        ef'2
+                        )
+                        bf2
+                        (
+                        df'1
+                        )
                     }
                     {
                         {
@@ -1004,8 +1088,36 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 16
+                            R1 * 8
                         }
+                        r2
+                        bf,2
+                        \mf
+                        (
+                        df1
+                        )
+                        r2
+                        bf,2
+                        (
+                        df4
+                        ef4
+                        ~
+                        ef2
+                        )
+                        r2
+                        bf,2
+                        (
+                        gf4
+                        f4
+                        df4
+                        ef4
+                        ~
+                        ef2
+                        )
+                        bf,2
+                        (
+                        df1
+                        )
                     }
                     {
                         {
@@ -1093,14 +1205,14 @@
                         a4
                         -\tenuto
                         c'4
-                        -\accent
                         -\staccato
+                        -\accent
                         r2
                         a4
                         -\tenuto
                         c'4
-                        -\accent
                         -\staccato
+                        -\accent
                         r2
                         a4
                         (
@@ -1108,8 +1220,8 @@
                         )
                         [
                         d'8
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r2
                         a4
@@ -1123,15 +1235,15 @@
                         )
                         [
                         d'8
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r4
                         a4
                         -\tenuto
                         c'4
-                        -\accent
                         -\staccato
+                        -\accent
                         r2
                         {
                             R1 * 1
@@ -2919,12 +3031,332 @@
                         c'4
                     }
                     {
-                        {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 16
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (6) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            f'
+                        >16
+                        [
+                        \<
+                        f'16
+                        f'16
+                        f'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        [
+                        e'16
+                        r16
+                        e'16
+                        ]
+                        \tweak style #'cross
+                        e16
+                        [
+                        e'16
+                        r16
+                        e'16
+                        ]
+                        <e b>8
+                        [
+                        <b d' f'>8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        \mf
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        d'16
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ^ \markup { improv }
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ^ \markup { (2) }
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
                     }
                     {
                         {
@@ -3226,13 +3658,13 @@
                         [
                         df'8
                         ]
-                        f'8
+                        df'8
                         [
-                        f'8
+                        df'8
                         ]
-                        bf8
+                        df'8
                         [
-                        bf8
+                        df'8
                         ]
                         df'8
                         [
@@ -3245,17 +3677,17 @@
                         df'4
                         gf'4
                         ef'4
+                        c'4
                         df'4
-                        af4
-                        bf4
-                        df'4
-                        df'4
+                        ef'4
+                        ef'4
+                        ef'4
                         df'4
                         ef'4
                         df'4
                         df'4
-                        bf4
-                        ef'4
+                        gf'4
+                        f'4
                         f'4
                         f'4
                         df'4
@@ -3630,39 +4062,39 @@
                         [
                         f,8
                         ]
-                        f,8
+                        bf,8
                         [
-                        f,8
+                        bf,8
                         ]
-                        f,8
+                        df8
                         [
-                        f,8
+                        df8
                         ]
-                        c8
+                        df8
                         [
                         df8
                         ]
                         ef4
                         bf,4
                         df4
-                        c4
-                        af,4
-                        af,4
+                        bf,4
                         af,4
                         bf,4
-                        ef4
-                        df4
-                        df4
-                        df4
-                        ef4
-                        df4
                         df4
                         df4
                         ef4
                         df4
                         df4
                         df4
+                        df4
+                        df4
+                        df4
+                        df4
                         ef4
+                        df4
+                        df4
+                        df4
+                        df4
                         df4
                         df4
                         df4
@@ -3878,8 +4310,8 @@
                         g'2
                         g''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a''8
                         ~
@@ -3896,8 +4328,8 @@
                         ]
                         bf''4
                         d'''8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         d'''8
                         ~
@@ -4092,9 +4524,9 @@
                         [
                         df'8
                         ]
-                        f'8
+                        df'8
                         [
-                        f'8
+                        df'8
                         ]
                         f'8
                         [
@@ -4112,7 +4544,7 @@
                         gf'4
                         gf'4
                         df'4
-                        af'4
+                        df'4
                         gf'4
                         gf'4
                         ef'4
@@ -4120,13 +4552,13 @@
                         gf'4
                         gf'4
                         gf'4
-                        bf'4
+                        gf''4
                         gf''4
                         gf''4
                         af''4
-                        df'''4
-                        gf'''4
-                        gf'''4
+                        ef''4
+                        gf''4
+                        gf''4
                         bf''4
                         df'''4
                         gf'''4
@@ -4142,26 +4574,26 @@
                         ]
                         cs'8
                         [
-                        ef'8
+                        f'8
                         ~
                         ]
-                        ef'8
+                        f'8
                         [
                         ef'8
                         ~
                         ]
                         ef'4
+                        ef'8
+                        [
+                        cs'8
+                        ~
+                        ]
                         cs'8
                         [
                         fs'8
                         ~
                         ]
                         fs'8
-                        [
-                        ef'8
-                        ~
-                        ]
-                        ef'8
                         [
                         fs'8
                         ~
@@ -4169,31 +4601,31 @@
                         fs'4
                         cs'8
                         [
-                        af'8
+                        cs'8
                         ~
                         ]
-                        af'8
-                        [
-                        ef'8
-                        ~
-                        ]
-                        ef'8
-                        [
-                        ef'8
-                        ~
-                        ]
-                        ef'4
                         cs'8
                         [
+                        ef'8
+                        ~
+                        ]
+                        ef'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'4
+                        b'8
+                        [
                         fs'8
                         ~
                         ]
                         fs'8
                         [
-                        ef'8
+                        fs'8
                         ~
                         ]
-                        ef'8
+                        fs'8
                         [
                         fs'8
                         ~
@@ -4201,10 +4633,10 @@
                         fs'4
                         cs'8
                         [
-                        fs'8
+                        cs'8
                         ~
                         ]
-                        fs'8
+                        cs'8
                         [
                         af'8
                         ~
@@ -4215,22 +4647,11 @@
                         ~
                         ]
                         ef'4
+                        af'8
+                        [
                         cs''8
-                        [
-                        fs''8
                         ~
                         ]
-                        fs''8
-                        [
-                        af''8
-                        ~
-                        ]
-                        af''8
-                        [
-                        fs''8
-                        ~
-                        ]
-                        fs''4
                         cs''8
                         [
                         af'8
@@ -4238,32 +4659,43 @@
                         ]
                         af'8
                         [
-                        af'8
+                        fs'8
                         ~
                         ]
-                        af'8
-                        [
-                        ef''8
-                        ~
-                        ]
-                        ef''4
+                        fs'4
                         cs''8
                         [
-                        fs''8
+                        cs''8
                         ~
                         ]
-                        fs''8
+                        cs''8
                         [
-                        fs''8
+                        af'8
                         ~
                         ]
-                        fs''8
+                        af'8
                         [
-                        fs''8
+                        af'8
                         ~
                         ]
-                        fs''4
-                        e''8
+                        af'4
+                        b'8
+                        [
+                        bf'8
+                        ~
+                        ]
+                        bf'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'4
+                        fs''8
                         [
                         fs''8
                         ~
@@ -4281,95 +4713,31 @@
                         af''4
                         e''8
                         [
-                        fs''8
-                        ~
-                        ]
-                        fs''8
-                        [
                         ef''8
                         ~
                         ]
                         ef''8
                         [
-                        ef''8
+                        b'8
                         ~
                         ]
-                        ef''4
-                        a''8
+                        b'8
                         [
-                        fs''8
+                        b'8
                         ~
                         ]
-                        fs''8
-                        [
-                        af''8
-                        ~
-                        ]
-                        af''8
-                        [
-                        b''8
-                        ~
-                        ]
-                        b''4
-                        e'''8
-                        [
-                        fs'''8
-                        ~
-                        ]
-                        fs'''8
-                        [
-                        fs'''8
-                        ~
-                        ]
-                        fs'''8
-                        [
-                        fs'''8
-                        ~
-                        ]
-                        fs'''4
-                        e'''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
-                        [
-                        af''8
-                        ~
-                        ]
-                        af''8
-                        [
-                        af''8
-                        ~
-                        ]
-                        af''4
-                        fs''8
-                        [
-                        e''8
-                        ~
-                        ]
+                        b'4
                         e''8
                         [
+                        fs''8
+                        ~
+                        ]
+                        fs''8
+                        [
                         af''8
                         ~
                         ]
                         af''8
-                        [
-                        b''8
-                        ~
-                        ]
-                        b''4
-                        e'''8
-                        [
-                        fs'''8
-                        ~
-                        ]
-                        fs'''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
                         [
                         b''8
                         ~
@@ -4381,6 +4749,22 @@
                         ~
                         ]
                         b''8
+                        [
+                        b''8
+                        ~
+                        ]
+                        b''8
+                        [
+                        b''8
+                        ~
+                        ]
+                        b''4
+                        cs'''8
+                        [
+                        fs'''8
+                        ~
+                        ]
+                        fs'''8
                         [
                         b''8
                         ~
@@ -4391,6 +4775,54 @@
                         ~
                         ]
                         af''4
+                        e''8
+                        [
+                        fs''8
+                        ~
+                        ]
+                        fs''8
+                        [
+                        cs'''8
+                        ~
+                        ]
+                        cs'''8
+                        [
+                        b''8
+                        ~
+                        ]
+                        b''4
+                        fs''8
+                        [
+                        fs''8
+                        ~
+                        ]
+                        fs''8
+                        [
+                        cs'''8
+                        ~
+                        ]
+                        cs'''8
+                        [
+                        b''8
+                        ~
+                        ]
+                        b''4
+                        e'''8
+                        [
+                        b''8
+                        ~
+                        ]
+                        b''8
+                        [
+                        b''8
+                        ~
+                        ]
+                        b''8
+                        [
+                        b''8
+                        ~
+                        ]
+                        b''4
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -4533,8 +4965,8 @@
                         a''2
                         f''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a''8
                         ~
@@ -4551,8 +4983,8 @@
                         ]
                         d'''4
                         a''8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a''8
                         ~
@@ -4779,7 +5211,7 @@
                         df''4
                         df''4
                         f''4
-                        df''4
+                        ef''4
                         bf''4
                         b''4
                         bf''4
@@ -4790,28 +5222,12 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        b8
+                        [
                         cs'8
-                        [
-                        f'8
                         ~
                         ]
-                        f'8
-                        [
-                        ef'8
-                        ~
-                        ]
-                        ef'8
-                        [
-                        ef'8
-                        ~
-                        ]
-                        ef'4
-                        fs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
+                        cs'8
                         [
                         fs'8
                         ~
@@ -4822,71 +5238,39 @@
                         ~
                         ]
                         fs'4
-                        cs'8
-                        [
-                        af'8
-                        ~
-                        ]
-                        af'8
+                        ef'8
                         [
                         ef'8
                         ~
                         ]
                         ef'8
                         [
-                        af'8
-                        ~
-                        ]
-                        af'4
                         fs'8
-                        [
-                        af'8
                         ~
                         ]
-                        af'8
-                        [
-                        af'8
-                        ~
-                        ]
-                        af'8
-                        [
-                        af'8
-                        ~
-                        ]
-                        af'4
-                        cs''8
-                        [
-                        af'8
-                        ~
-                        ]
-                        af'8
-                        [
-                        af'8
-                        ~
-                        ]
-                        af'8
-                        [
-                        ef'8
-                        ~
-                        ]
-                        ef'4
-                        b'8
-                        [
-                        b'8
-                        ~
-                        ]
-                        b'8
-                        [
-                        bf'8
-                        ~
-                        ]
-                        bf'8
+                        fs'8
                         [
                         fs'8
                         ~
                         ]
                         fs'4
+                        af'8
+                        [
                         cs''8
+                        ~
+                        ]
+                        cs''8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        bf'8
+                        ~
+                        ]
+                        bf'4
+                        fs'8
                         [
                         af'8
                         ~
@@ -4902,12 +5286,12 @@
                         ~
                         ]
                         af'4
-                        fs'8
+                        b'8
                         [
-                        bf'8
+                        cs''8
                         ~
                         ]
-                        bf'8
+                        cs''8
                         [
                         af'8
                         ~
@@ -4918,6 +5302,59 @@
                         ~
                         ]
                         b'4
+                        af'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'8
+                        [
+                        bf'8
+                        ~
+                        ]
+                        bf'8
+                        [
+                        cs''8
+                        ~
+                        ]
+                        cs''4
+                        b'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'4
+                        fs'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'4
+                        e''8
+                        [
+                        fs''8
+                        ~
+                        ]
                         fs''8
                         [
                         bf''8
@@ -4925,26 +5362,21 @@
                         ]
                         bf''8
                         [
-                        af''8
-                        ~
-                        ]
-                        af''8
-                        [
                         b''8
                         ~
                         ]
                         b''4
-                        ef''8
+                        e''8
                         [
-                        ef''8
+                        fs''8
                         ~
                         ]
-                        ef''8
+                        fs''8
                         [
-                        af''8
+                        b''8
                         ~
                         ]
-                        af''8
+                        b''8
                         [
                         b''8
                         ~
@@ -4952,15 +5384,15 @@
                         b''4
                         e'''8
                         [
-                        cs'''8
+                        fs''8
                         ~
                         ]
-                        cs'''8
+                        fs''8
                         [
-                        af''8
+                        b''8
                         ~
                         ]
-                        af''8
+                        b''8
                         [
                         cs'''8
                         ~
@@ -4973,31 +5405,31 @@
                         ]
                         cs''8
                         [
-                        af''8
+                        cs''8
                         ~
                         ]
-                        af''8
+                        cs''8
+                        [
+                        cs''8
+                        ~
+                        ]
+                        cs''4
+                        e''8
+                        [
+                        fs''8
+                        ~
+                        ]
+                        fs''8
+                        [
+                        cs'''8
+                        ~
+                        ]
+                        cs'''8
                         [
                         b''8
                         ~
                         ]
                         b''4
-                        cs'''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
-                        [
-                        b''8
-                        ~
-                        ]
-                        b''4
                         af''8
                         [
                         af''8
@@ -5005,10 +5437,10 @@
                         ]
                         af''8
                         [
-                        cs'''8
+                        ef'''8
                         ~
                         ]
-                        cs'''8
+                        ef'''8
                         [
                         ef'''8
                         ~
@@ -5261,8 +5693,8 @@
                         bf,2
                         bf,8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         bf,8
                         ~
@@ -5279,8 +5711,8 @@
                         ]
                         ef4
                         bf,8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         g8
                         ~
@@ -5475,9 +5907,9 @@
                         [
                         df8
                         ]
-                        ef8
+                        df8
                         [
-                        ef8
+                        df8
                         ]
                         df8
                         [
@@ -5495,7 +5927,7 @@
                         df,4
                         df4
                         df4
-                        ef4
+                        df4
                         df4
                         df4
                         df4
@@ -5507,10 +5939,10 @@
                         bf4
                         df'4
                         df'4
-                        ef'4
-                        ef'4
                         df'4
-                        df'4
+                        ef'4
+                        bf4
+                        bf4
                         df'4
                         df'4
                         bf4
@@ -5534,6 +5966,22 @@
                         ~
                         ]
                         af,4
+                        af,8
+                        [
+                        af,8
+                        ~
+                        ]
+                        af,8
+                        [
+                        af,8
+                        ~
+                        ]
+                        af,8
+                        [
+                        af,8
+                        ~
+                        ]
+                        af,4
                         ef,8
                         [
                         af,8
@@ -5550,22 +5998,6 @@
                         ~
                         ]
                         af,4
-                        ef,8
-                        [
-                        af,8
-                        ~
-                        ]
-                        af,8
-                        [
-                        af,8
-                        ~
-                        ]
-                        af,8
-                        [
-                        af,8
-                        ~
-                        ]
-                        af,4
                         af,8
                         [
                         af,8
@@ -5598,23 +6030,7 @@
                         ~
                         ]
                         af4
-                        ef8
-                        [
                         af8
-                        ~
-                        ]
-                        af8
-                        [
-                        af8
-                        ~
-                        ]
-                        af8
-                        [
-                        af8
-                        ~
-                        ]
-                        af4
-                        ef8
                         [
                         af8
                         ~
@@ -5646,71 +6062,23 @@
                         ~
                         ]
                         af4
-                        d8
+                        af8
                         [
-                        a8
+                        af8
                         ~
                         ]
-                        a8
+                        af8
                         [
-                        a8
+                        af8
                         ~
                         ]
-                        a8
+                        af8
                         [
-                        a8
+                        af8
                         ~
                         ]
-                        a4
-                        d'8
-                        [
+                        af4
                         a8
-                        ~
-                        ]
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a4
-                        d'8
-                        [
-                        a8
-                        ~
-                        ]
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a4
-                        d'8
-                        [
-                        a8
-                        ~
-                        ]
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a4
-                        d'8
                         [
                         a8
                         ~
@@ -5743,6 +6111,70 @@
                         ]
                         a4
                         d'8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a4
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a4
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a4
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a8
+                        [
+                        a8
+                        ~
+                        ]
+                        a4
+                        a8
                         [
                         a8
                         ~
@@ -5989,8 +6421,8 @@
                         d2
                         a,8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         ef8
                         ~
@@ -6007,8 +6439,8 @@
                         ]
                         g4
                         g8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         af8
                         ~
@@ -6217,12 +6649,12 @@
                         ]
                         c,8
                         [
-                        c,8
+                        df,8
                         ]
                         ef,4
                         df,4
-                        df4
-                        df4
+                        bf,4
+                        bf,4
                         df4
                         af,4
                         af,4
@@ -6232,26 +6664,42 @@
                         bf,4
                         bf,4
                         bf,4
-                        bf4
+                        ef4
+                        df4
+                        ef4
+                        df4
+                        ef4
                         df'4
                         df'4
-                        ef'4
-                        ef'4
                         df'4
                         df'4
                         df'4
-                        df'4
-                        bf4
                         df'4
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
                         af,8
                         [
-                        af,8
+                        cs8
                         ~
                         ]
-                        af,8
+                        cs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs4
+                        cs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
                         [
                         cs8
                         ~
@@ -6264,26 +6712,10 @@
                         cs4
                         af,8
                         [
-                        af,8
-                        ~
-                        ]
-                        af,8
-                        [
                         cs8
                         ~
                         ]
                         cs8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs4
-                        af,8
-                        [
-                        af,8
-                        ~
-                        ]
-                        af,8
                         [
                         cs8
                         ~
@@ -6294,7 +6726,7 @@
                         ~
                         ]
                         cs4
-                        af,8
+                        cs8
                         [
                         b,8
                         ~
@@ -6312,10 +6744,10 @@
                         cs4
                         af,8
                         [
-                        af,8
+                        cs8
                         ~
                         ]
-                        af,8
+                        cs8
                         [
                         cs8
                         ~
@@ -6326,12 +6758,12 @@
                         ~
                         ]
                         cs4
-                        af,8
+                        cs8
                         [
-                        af,8
+                        cs8
                         ~
                         ]
-                        af,8
+                        cs8
                         [
                         cs8
                         ~
@@ -6358,7 +6790,7 @@
                         ~
                         ]
                         cs4
-                        af,8
+                        cs8
                         [
                         cs8
                         ~
@@ -6376,15 +6808,31 @@
                         cs4
                         a8
                         [
-                        a8
+                        e8
                         ~
                         ]
-                        a8
+                        e8
                         [
-                        cs'8
+                        cs8
                         ~
                         ]
-                        cs'8
+                        cs8
+                        [
+                        b,8
+                        ~
+                        ]
+                        b,4
+                        e8
+                        [
+                        e8
+                        ~
+                        ]
+                        e8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
                         [
                         b8
                         ~
@@ -6392,26 +6840,26 @@
                         b4
                         a8
                         [
-                        a8
+                        e8
                         ~
                         ]
-                        a8
+                        e8
                         [
-                        cs'8
+                        e8
                         ~
                         ]
-                        cs'8
+                        e8
                         [
-                        b8
+                        e8
                         ~
                         ]
-                        b4
-                        d'8
+                        e4
+                        e8
                         [
-                        a8
+                        e8
                         ~
                         ]
-                        a8
+                        e8
                         [
                         e8
                         ~
@@ -6438,28 +6886,12 @@
                         ~
                         ]
                         e4
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a8
-                        [
-                        e8
-                        ~
-                        ]
                         e8
                         [
                         e8
                         ~
                         ]
-                        e4
-                        a8
-                        [
-                        a8
-                        ~
-                        ]
-                        a8
+                        e8
                         [
                         e8
                         ~
@@ -6472,10 +6904,10 @@
                         e'4
                         a'8
                         [
-                        a'8
+                        e'8
                         ~
                         ]
-                        a'8
+                        e'8
                         [
                         e'8
                         ~
@@ -6486,7 +6918,7 @@
                         ~
                         ]
                         e'4
-                        a'8
+                        e'8
                         [
                         e'8
                         ~
@@ -8611,8 +9043,8 @@
                         -\tenuto
                         ]
                         e'4
-                        -\accent
                         -\staccato
+                        -\accent
                         c'8
                         [
                         (
@@ -8620,8 +9052,8 @@
                         ]
                         )
                         f'4
-                        -\accent
                         -\staccato
+                        -\accent
                         c'8
                         -\tenuto
                         [
@@ -8641,16 +9073,16 @@
                         -\tenuto
                         ]
                         e'4
-                        -\accent
                         -\staccato
+                        -\accent
                         r8
                         [
                         c'8
                         -\tenuto
                         ]
                         e4
-                        -\accent
                         -\staccato
+                        -\accent
                         r4
                         r8
                         [
@@ -8686,8 +9118,8 @@
                         -\tenuto
                         [
                         d8
-                        -\accent
                         -\staccato
+                        -\accent
                         ]
                         r4
                         r4
@@ -8707,8 +9139,8 @@
                         -\tenuto
                         ]
                         e4
-                        -\accent
                         -\staccato
+                        -\accent
                         r4
                         a4
                         -\tenuto
@@ -10864,8 +11296,8 @@
                         a'2
                         c''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         c''8
                         ~
@@ -10882,8 +11314,8 @@
                         ]
                         bf''4
                         a''8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         c'''8
                         ~
@@ -10958,21 +11390,15 @@
                         \mf
                     }
                     {
-                        \compressFullBarRests
-                        \accidentalStyle neo-modern-cautionary
-                        \mark #14
-                        r8
-                        \mp
-                        [
-                        r8
-                        ]
-                        r4
-                        r2
                         {
-                            R1 * 1
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #14
+                            R1 * 2
                         }
                         ef'8
                         :16
+                        \mp
                         [
                         df'8
                         :16
@@ -11143,7 +11569,12 @@
                         f'''2
                         \f
                         ~
-                        f'''4
+                        f'''8.
+                        [
+                        c'''16
+                        -\accent
+                        ~
+                        ]
                         c'''4
                         r2
                         df'''4
@@ -11152,7 +11583,12 @@
                         )
                         af''2
                         ~
-                        af''4
+                        af''8.
+                        [
+                        bf''16
+                        -\accent
+                        ~
+                        ]
                         bf''4
                         r4
                         bf''4
@@ -11182,16 +11618,16 @@
                         ]
                         f'8
                         [
-                        f'8
+                        af'8
                         ~
                         ]
-                        f'8
+                        af'8
                         [
-                        fs'8
+                        bf'8
                         ~
                         ]
-                        fs'4
-                        b'8
+                        bf'4
+                        fs'8
                         [
                         fs'8
                         ~
@@ -11207,7 +11643,7 @@
                         ~
                         ]
                         af'4
-                        af'8
+                        b'8
                         [
                         af'8
                         ~
@@ -11219,10 +11655,10 @@
                         ]
                         bf'8
                         [
-                        bf'8
+                        b'8
                         ~
                         ]
-                        bf'4
+                        b'4
                         fs'8
                         [
                         cs'8
@@ -11255,7 +11691,7 @@
                         ~
                         ]
                         b'4
-                        af'8
+                        b'8
                         [
                         b'8
                         ~
@@ -11267,11 +11703,11 @@
                         ]
                         bf'8
                         [
-                        cs''8
+                        ef''8
                         ~
                         ]
-                        cs''4
-                        af'8
+                        ef''4
+                        b'8
                         [
                         af'8
                         ~
@@ -11287,7 +11723,7 @@
                         ~
                         ]
                         b'4
-                        fs'8
+                        b'8
                         [
                         cs''8
                         ~
@@ -11298,22 +11734,6 @@
                         ~
                         ]
                         b'8
-                        [
-                        b'8
-                        ~
-                        ]
-                        b'4
-                        b'8
-                        [
-                        bf'8
-                        ~
-                        ]
-                        bf'8
-                        [
-                        bf'8
-                        ~
-                        ]
-                        bf'8
                         [
                         b'8
                         ~
@@ -11321,10 +11741,26 @@
                         b'4
                         e''8
                         [
-                        ef''8
+                        bf'8
                         ~
                         ]
-                        ef''8
+                        bf'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'4
+                        b'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'8
                         [
                         ef''8
                         ~
@@ -11351,7 +11787,7 @@
                         ~
                         ]
                         ef''4
-                        cs''8
+                        b''8
                         [
                         fs''8
                         ~
@@ -11367,7 +11803,7 @@
                         ~
                         ]
                         e''4
-                        af''8
+                        e''8
                         [
                         cs'''8
                         ~
@@ -11383,12 +11819,12 @@
                         ~
                         ]
                         e'''4
-                        af'''8
+                        e'''8
                         [
-                        af'''8
+                        e'''8
                         ~
                         ]
-                        af'''8
+                        e'''8
                         [
                         ef'''8
                         ~
@@ -11399,7 +11835,7 @@
                         ~
                         ]
                         fs'''4
-                        fs'''8
+                        e'''8
                         [
                         cs'''8
                         ~
@@ -11609,8 +12045,8 @@
                         c''2
                         f''8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         c''8
                         ~
@@ -11627,8 +12063,8 @@
                         ]
                         d''4
                         c''8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         d''8
                         ~
@@ -11703,21 +12139,15 @@
                         \mf
                     }
                     {
-                        \compressFullBarRests
-                        \accidentalStyle neo-modern-cautionary
-                        \mark #14
-                        r8
-                        \mp
-                        [
-                        r8
-                        ]
-                        r4
-                        r2
                         {
-                            R1 * 3
+                            \compressFullBarRests
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #14
+                            R1 * 4
                         }
                         f'8
                         :16
+                        \mp
                         [
                         ef'8
                         :16
@@ -11840,7 +12270,12 @@
                         f'''2
                         \f
                         ~
-                        f'''4
+                        f'''8.
+                        [
+                        c'''16
+                        -\accent
+                        ~
+                        ]
                         c'''4
                         r2
                         df'''4
@@ -11849,7 +12284,12 @@
                         )
                         af''2
                         ~
-                        af''4
+                        af''8.
+                        [
+                        bf''16
+                        -\accent
+                        ~
+                        ]
                         bf''4
                         r4
                         bf''4
@@ -11884,10 +12324,10 @@
                         ]
                         b'8
                         [
-                        bf'8
+                        b'8
                         ~
                         ]
-                        bf'4
+                        b'4
                         b'8
                         [
                         bf'8
@@ -11904,22 +12344,22 @@
                         ~
                         ]
                         ef'4
-                        af'8
+                        b8
                         [
-                        b'8
+                        b8
                         ~
                         ]
-                        b'8
+                        b8
                         [
-                        b'8
+                        b8
                         ~
                         ]
-                        b'8
+                        b8
                         [
-                        cs''8
+                        cs'8
                         ~
                         ]
-                        cs''4
+                        cs'4
                         af'8
                         [
                         cs''8
@@ -11975,10 +12415,10 @@
                         ]
                         af'8
                         [
-                        b'8
+                        cs''8
                         ~
                         ]
-                        b'8
+                        cs''8
                         [
                         ef''8
                         ~
@@ -12096,7 +12536,7 @@
                         ~
                         ]
                         e'''4
-                        fs'''8
+                        cs'''8
                         [
                         cs'''8
                         ~
@@ -12376,8 +12816,8 @@
                         a2
                         f'8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         g'8
                         ~
@@ -12394,8 +12834,8 @@
                         ]
                         g'4
                         bf'8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a'8
                         ~
@@ -12702,9 +13142,174 @@
                         bf'8
                         :16
                         ]
-                        {
-                            R1 * 7
-                        }
+                        gf''8
+                        :16
+                        [
+                        f''8
+                        :16
+                        ]
+                        gf'8
+                        :16
+                        [
+                        f'8
+                        :16
+                        ]
+                        f'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        af'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        df''8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        gf'8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        df''8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        bf'8
+                        :16
+                        ]
+                        bf'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        af'8
+                        :16
+                        [
+                        af'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        gf'8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        gf'8
+                        :16
+                        ]
+                        f'8
+                        :16
+                        [
+                        f'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        ef'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        gf8
+                        :16
+                        ]
+                        b8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        af8
+                        :16
+                        [
+                        af8
+                        :16
+                        ]
+                        gf8
+                        :16
+                        [
+                        b8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        gf8
+                        :16
+                        ]
+                        b8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
@@ -12720,144 +13325,144 @@
                         ]
                         ef8
                         [
-                        ef8
-                        ~
-                        ]
-                        ef4
-                        cs8
-                        [
                         cs8
                         ~
                         ]
-                        cs8
-                        [
-                        ef8
-                        ~
-                        ]
-                        ef8
-                        [
-                        fs8
-                        ~
-                        ]
-                        fs4
-                        cs'8
+                        cs4
+                        b8
                         [
                         cs'8
                         ~
                         ]
                         cs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
-                        [
-                        ef'8
-                        ~
-                        ]
-                        ef'4
-                        cs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
                         [
                         ef'8
                         ~
                         ]
                         ef'8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        cs'8
+                        [
+                        af8
+                        ~
+                        ]
+                        af8
+                        [
+                        ef8
+                        ~
+                        ]
+                        ef8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        b8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'8
+                        [
+                        ef'8
+                        ~
+                        ]
+                        ef'8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        cs'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        b8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        cs'8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        b8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        cs'8
+                        ~
+                        ]
+                        cs'4
+                        e'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'8
                         [
                         fs'8
                         ~
                         ]
                         fs'4
-                        cs'8
-                        [
-                        cs'8
-                        ~
-                        ]
-                        cs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
+                        ef'8
                         [
                         ef'8
                         ~
                         ]
-                        ef'4
-                        cs'8
-                        [
-                        cs'8
-                        ~
-                        ]
-                        cs'8
-                        [
-                        af8
-                        ~
-                        ]
-                        af8
-                        [
-                        fs8
-                        ~
-                        ]
-                        fs4
-                        cs'8
-                        [
-                        cs'8
-                        ~
-                        ]
-                        cs'8
-                        [
-                        af8
-                        ~
-                        ]
-                        af8
-                        [
                         ef'8
-                        ~
-                        ]
-                        ef'4
-                        cs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'4
-                        e'8
-                        [
-                        e'8
-                        ~
-                        ]
-                        e'8
-                        [
-                        af'8
-                        ~
-                        ]
-                        af'8
-                        [
-                        af'8
-                        ~
-                        ]
-                        af'4
-                        e'8
-                        [
-                        e'8
-                        ~
-                        ]
-                        e'8
                         [
                         ef'8
                         ~
@@ -12868,33 +13473,17 @@
                         ~
                         ]
                         ef'4
-                        a8
-                        [
                         e'8
+                        [
+                        fs'8
                         ~
                         ]
-                        e'8
+                        fs'8
                         [
                         af'8
                         ~
                         ]
                         af'8
-                        [
-                        b'8
-                        ~
-                        ]
-                        b'4
-                        e'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
                         [
                         fs'8
                         ~
@@ -12902,68 +13491,84 @@
                         fs'4
                         e'8
                         [
-                        e'8
+                        fs'8
                         ~
                         ]
-                        e'8
+                        fs'8
                         [
-                        af'8
+                        fs'8
                         ~
                         ]
-                        af'8
+                        fs'8
                         [
-                        af'8
+                        fs'8
                         ~
                         ]
-                        af'4
-                        e'8
-                        [
-                        e'8
-                        ~
-                        ]
+                        fs'4
                         e'8
                         [
+                        cs'8
+                        ~
+                        ]
+                        cs'8
+                        [
+                        af'8
+                        ~
+                        ]
+                        af'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'4
+                        e'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
                         af'8
                         ~
                         ]
                         af'8
                         [
-                        b'8
+                        fs'8
                         ~
                         ]
-                        b'4
-                        e''8
+                        fs'4
+                        e'8
                         [
-                        e''8
+                        fs'8
                         ~
                         ]
-                        e''8
-                        [
-                        cs''8
-                        ~
-                        ]
-                        cs''8
-                        [
-                        b'8
-                        ~
-                        ]
-                        b'4
-                        e''8
+                        fs'8
                         [
                         b'8
                         ~
                         ]
                         b'8
                         [
+                        fs'8
+                        ~
+                        ]
+                        fs'4
+                        e'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
                         b'8
                         ~
                         ]
                         b'8
                         [
-                        af'8
+                        fs'8
                         ~
                         ]
-                        af'4
+                        fs'4
                     }
                 }
                 \context Staff = "cco_cello"
@@ -13212,8 +13817,8 @@
                         ef2
                         d8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         c8
                         ~
@@ -13230,8 +13835,8 @@
                         ]
                         bf,4
                         af8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         bf8
                         ~
@@ -13347,17 +13952,201 @@
                         )
                         f'2
                         af1
-                        {
-                            R1 * 8
-                        }
+                        df'8
+                        :16
+                        [
+                        c'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        f8
+                        :16
+                        [
+                        f8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        ef'8
+                        :16
+                        [
+                        ef'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        af8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        bf8
+                        :16
+                        [
+                        bf8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        df'8
+                        :16
+                        ]
+                        df'8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        bf,8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        bf,8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        bf,8
+                        :16
+                        [
+                        bf,8
+                        :16
+                        ]
+                        ef8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        ef8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        ef8
+                        :16
+                        [
+                        ef8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
+                        df8
+                        :16
+                        [
+                        df8
+                        :16
+                        ]
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
-                        af,8
-                        [
-                        cs8
-                        ~
-                        ]
                         cs8
                         [
                         cs8
@@ -13368,9 +14157,62 @@
                         ef8
                         ~
                         ]
+                        ef8
+                        [
+                        ef8
+                        ~
+                        ]
                         ef4
                         cs8
                         [
+                        fs8
+                        ~
+                        ]
+                        fs8
+                        [
+                        fs8
+                        ~
+                        ]
+                        fs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs4
+                        cs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
+                        [
+                        fs8
+                        ~
+                        ]
+                        fs8
+                        [
+                        af8
+                        ~
+                        ]
+                        af4
+                        cs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs8
+                        [
+                        cs8
+                        ~
+                        ]
+                        cs4
+                        cs8
+                        [
                         cs8
                         ~
                         ]
@@ -13385,60 +14227,12 @@
                         ~
                         ]
                         cs4
-                        af,8
-                        [
-                        cs8
-                        ~
-                        ]
                         cs8
                         [
-                        cs8
+                        fs8
                         ~
                         ]
-                        cs8
-                        [
-                        af,8
-                        ~
-                        ]
-                        af,4
-                        cs8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs4
-                        af,8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs4
-                        cs8
-                        [
-                        cs8
-                        ~
-                        ]
-                        cs8
+                        fs8
                         [
                         fs8
                         ~
@@ -13499,10 +14293,10 @@
                         e4
                         e8
                         [
-                        e8
+                        fs8
                         ~
                         ]
-                        e8
+                        fs8
                         [
                         e8
                         ~
@@ -13520,10 +14314,10 @@
                         ]
                         e8
                         [
-                        e8
+                        af8
                         ~
                         ]
-                        e8
+                        af8
                         [
                         af8
                         ~
@@ -13561,7 +14355,7 @@
                         ~
                         ]
                         cs'4
-                        e'8
+                        fs'8
                         [
                         e'8
                         ~
@@ -13577,12 +14371,12 @@
                         ~
                         ]
                         fs'4
-                        a'8
-                        [
                         e'8
+                        [
+                        fs'8
                         ~
                         ]
-                        e'8
+                        fs'8
                         [
                         af'8
                         ~
@@ -13593,7 +14387,7 @@
                         ~
                         ]
                         a'4
-                        e'8
+                        fs'8
                         [
                         fs'8
                         ~
@@ -13953,8 +14747,8 @@
                         a,2
                         a,8
                         \mf
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         a,8
                         ~
@@ -13971,8 +14765,8 @@
                         ]
                         a,4
                         bf,8
-                        -\accent
                         -\staccato
+                        -\accent
                         [
                         bf,8
                         ~

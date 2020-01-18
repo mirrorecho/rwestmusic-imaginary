@@ -1894,8 +1894,8 @@
                         \set Staff.midiInstrument = #"string ensemble 1" 
                         \mark #13
                         d''1
-                        \pp
                         \fermata
+                        \pp
                         {
                             R1 * 8
                         }
@@ -1930,8 +1930,8 @@
                         \set Staff.midiInstrument = #"string ensemble 1" 
                         \mark #13
                         d''1
-                        \pp
                         \fermata
+                        \pp
                         {
                             R1 * 8
                         }
@@ -1967,8 +1967,8 @@
                         \mark #13
                         \clef "alto"
                         d'1
-                        \pp
                         \fermata
+                        \pp
                         af1
                         ~
                         af1
@@ -2016,8 +2016,8 @@
                         \mark #13
                         \clef "bass"
                         ef1
-                        \pp
                         \fermata
+                        \pp
                         af,1
                         ~
                         af,1
@@ -2065,8 +2065,8 @@
                         \mark #13
                         \clef "bass"
                         ef1
-                        \pp
                         \fermata
+                        \pp
                         af1
                         ~
                         af1

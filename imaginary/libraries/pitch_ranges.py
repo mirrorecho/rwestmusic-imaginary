@@ -58,6 +58,7 @@ MAX_RANGES = dict(
     harp2  =  (-37, 4), # Harp [B0, E7] span: 77
     piano1  =  (-39, 44), # Piano [A0, Ab7] span: 83
     piano2  =  (-39, 44), # Piano [A0, Ab7] span: 83
+    cco_percussion  =  (-22, -3), # Timpani
     cco_violin_i  =  (-5, 39), # Violin [G3, Eb7] span: 44
     cco_violin_ii  =  (-5, 39), # Violin [G3, Eb7] span: 44
     cco_viola  =  (-12, 22), # Viola [C3, Bb5] span: 34

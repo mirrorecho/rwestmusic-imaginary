@@ -151,7 +151,9 @@ def score2(lib):
 
     counter_me = lambda_segment.LambdaSegments(
         sb.with_only("counter_line"),
-        fabric_staves = ("cco_flute1","cco_flute2","ooa_mallets",
+        fabric_staves = (
+            "cco_flute1","cco_flute2",
+            "ooa_mallets",
             "harp1",
             "cco_oboe1","cco_oboe2",
             "cco_horn"

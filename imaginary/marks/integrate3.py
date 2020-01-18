@@ -53,19 +53,65 @@ def score3(lib):
         )
     s.staves["ooa_drum_set"].append(drum_set)
 
+
+
     counter_me = lambda_segment.LambdaSegments(
         sb.with_only("counter_line"),
-        fabric_staves = ("cco_flute1","cco_flute2","ooa_mallets"),
+        fabric_staves = ("cco_flute1","cco_flute2","ooa_mallets",
+            "harp1",
+            "harp2",
+            "cco_oboe1","cco_oboe2",
+            "cco_clarinet1","cco_clarinet2",
+            ),
+        func = lambda x: x.crop("cells", 0, 12),
         funcs = (
-            lambda x: x.eps(
+            lambda x: x.only_first("cells",16).eps(
                 )(),
-            lambda x: x.eps(
+            lambda x: x.only_first("cells",16).eps(
                 )(),
             lambda x: x.transformed(calliope.StandardDurations(
             min_duration=0.25,
             standard_duration=0.5,)).eps(
-                )(),
-                )
+                0,"mf")(),
+            lambda x:x.poke("events",0,2,5,7,8,14,21,23,24,28,30,31).smear_after(
+                min_beats=1,
+                ).transformed(
+                calliope.StandardDurations()
+                ).eps(0,"mf")(),
+            lambda x:x.poke("events",0,2,5,7,8,14,21,23,24,28,30,31).smear_after(
+                min_beats=1,
+                ).transformed(
+                calliope.StandardDurations()
+                ).t(-12)(),
+            lambda x:x.poke("events",0,5,14,23,28,
+                ).smear_before(extend_beats=2, gap_beats=0.5, rearticulate=True,
+                ).smear_after(min_beats=1,
+                ).ops("note_events")(
+                0,2,4,6,8, "mf", ".")(
+                1,3,5,7,9, "mp", "\\<")(
+                ),
+            lambda x:x.poke("events",2,7,21,25,30,
+                ).smear_after(min_beats=1,
+                ).smear_before(extend_beats=2, gap_beats=0.5, rearticulate=True,
+                ).ops("note_events")(
+                0,2,4,6,8, "mp", "\\<")(
+                1,3,5,7,9, "mf", ".")(
+                ),
+            lambda x:x.poke("events",0,5,14,23,28,
+                ).smear_before(extend_beats=2, gap_beats=0.5, rearticulate=True,
+                ).smear_after(min_beats=1,
+                ).ops("note_events")(
+                0,2,4,6,8, "mf", ".")(
+                1,3,5,7,9, "mp", "\\<")(
+                ),
+            lambda x:x.poke("events",2,7,21,25,30,
+                ).smear_after(min_beats=1,
+                ).smear_before(extend_beats=2, gap_beats=0.5, rearticulate=True,
+                ).ops("note_events")(
+                0,2,4,6,8, "mp", "\\<")(
+                1,3,5,7,9, "mf", ".")(
+                ),
+        )
         )
     for fi, f in enumerate(counter_me.staves("cco_flute1","cco_flute2")):
         for i,c in enumerate(f.cells):
@@ -77,6 +123,24 @@ def score3(lib):
         f.transformed(calliope.StandardDurations(
             min_duration=0.25,
             standard_duration=0.5,))
+
+    flourish_flutes = osti.Osti(
+        sb,
+        fabric_staves = ("cco_flute1","cco_flute2"),
+        ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
+        selectable_start_beat=9*4,
+        osti_pulse_duration = 0.5,
+        osti_cell_length = 8,
+        osti_cell_count = 1,
+        after_func = lambda x: x.eps(
+            0, "\\<", "(")(
+            )
+        )
+    for st in flourish_flutes.staves:
+        st.segments[0].fuse()
+        st.segments[0].note_events[-1].tag(")")
+
+
     # flutes.slur_cells()
     # violins_melody = lambda_segment.LambdaSegment(
     #     sb.with_only("mid_drones"),
@@ -102,7 +166,9 @@ def score3(lib):
 
     violins_end_melody = lambda_segment.LambdaSegment(
         sb.with_only("mid_drones"),
-        fabric_staves = ("cco_violin_i", "cco_violin_ii",),
+        fabric_staves = (
+            "cco_flute1","cco_flute2",
+            "cco_violin_i", "cco_violin_ii",),
         func = lambda x: x.eps(
             1, "mf")(
             5,9,11,16,21,26,31,33, "(")(
@@ -129,10 +195,10 @@ def score3(lib):
         osti_cell_length = 8,
         osti_cell_count = 9,
         after_funcs = (
-            lambda x: x.eps(0, "mp", "pizz, distorted")(),
-            lambda x: x.eps(0, "mp", "pizz, distorted")(),
-            lambda x: x.eps(0, "mp", "pizz, distorted")(),
-            lambda x: x.eps(0, "mp", "pizz, distorted")(),
+            lambda x: x.mask("cells",0,1,2,3).eps(8*4, "mp", "pizz, distorted")(),
+            lambda x: x.mask("cells",0,1,2,3).eps(8*4, "mp", "pizz, distorted")(),
+            lambda x: x.mask("cells",0,1).eps(8*2, "mp", "pizz, distorted")(),
+            lambda x: x.mask("cells",0,1).eps(8*2, "mp", "pizz, distorted")(),
             lambda x: x.eps(0, "mp", "distorted")(),
             lambda x: x.eps(0, "mp", "distorted")(),
             )
@@ -146,6 +212,8 @@ def score3(lib):
         osti_pulse_duration = 1,
         osti_cell_length = 4,
         osti_cell_count = 6,
+        tag_all_note_events= ("."),
+        after_func = lambda x: x.eps(0,"mf", "arco")()
         )
 
     measured_trems = osti.Osti(
@@ -181,32 +249,112 @@ def score3(lib):
 
     sax_melody = lambda_segment.LambdaSegment(
         sb.with_only("high_drones"),
-        fabric_staves = instrument_groups.get_instruments("sax"),
+        fabric_staves = instrument_groups.get_instruments(
+            "ooa_winds",
+            "sax",
+            "ooa_brass",
+            ),
         func = lambda x: x.slur_cells().ops("note_events")(
             0,"mf")(
             ),
         funcs = (
-            lambda x:x,
-            lambda x:x.t(-5),
-            lambda x:x.t(-12),
-            lambda x:x.t(-24),
+            lambda x:x.t(12), #fl
+            lambda x:x, #cl
+            lambda x:x.t(-24), #bsn
+            lambda x:x, #as
+            lambda x:x.t(-5), #as
+            lambda x:x.t(-12), #ts
+            lambda x:x.t(-24), #bs
+            lambda x:x.t(-12), #hn
+            lambda x:x.t(-12), #tpt
+            lambda x:x.t(-17), #tbn
             )
         )
     
+    cco_wind_melodies = lambda_segment.LambdaSegment(
+        sb.with_only("melody_line1", "melody_line2"),
+        fabric_staves=(
+            "cco_oboe1","cco_oboe2",
+            "cco_clarinet1","cco_clarinet2",
+            ),
+        func = lambda x: x.with_only("cells",
+            10,11,12,13,14,15).slur_cells().eps(
+            1, "mf")()
+        )
+
 
     bass_pulse = osti.Osti(
         sb.with_only("bass_drones"),
-        fabric_staves = ("cco_bass",),
+        fabric_staves = ("cco_bass", "cco_percussion"),
         ranges = pitch_ranges.MID_TO_LOW_RANGES,
         osti_pulse_duration = 1,
         osti_cell_count = 16,
         osti_cell_length = 4,
-        tag_all_note_events=("-"),
         after_funcs = (
             lambda x: x.eps(0, "mp")(),
+            lambda x: x.mask("cells",0,1).eps(8, 
+                "mp", "timpani", "\\timpStaff")(),
             )
         )
     bass_pulse.segments[0].smart_ranges([(-19,-6)])
+
+    end_doves = x = dovetail.Dovetail(
+        sb,
+        fabric_staves = (
+            "cco_horn", "cco_trumpet", "cco_trombone", "cco_bassoon"),
+        ranges=pitch_ranges.LOW_TO_HIGH_RANGES,
+        selectable_start_beat = 10*4,
+        tag_all_note_events=("."),
+        # dove_count = 4,
+        # dove_event_count = 4,
+        # tail_event_count = 1,
+        dovetail_duration = 24,
+        # event_duration = 0.5,
+        offset = 3,
+        after_func = lambda x: x.ops("note_events")(
+            0, "mf")()
+    )
+    end_osti = osti.Osti(
+        sb,
+        fabric_staves = (
+            "harp1", "harp2", "piano1", "piano2"),
+        ranges=pitch_ranges.HIGHISH_TO_MID_RANGES,
+        selectable_start_beat = 10*4,
+        osti_pulse_duration = 0.5,
+        osti_cell_length = 8,
+        osti_cell_count = 6,
+        tag_all_note_events=("."),
+        after_funcs = (
+            lambda x: x.eps(
+                0, "mf")(),
+            lambda x: x.eps(
+                0, "mf")(),
+            lambda x: x.eps(
+                0, "mf")(),
+            lambda x: x.eps(
+                0, "mf")(),
+            )
+        )
+    end_osti.staves["piano2"].segments[0].t(-12)
+
+    s.extend_from(
+        counter_me, 
+        # trumpets_melody,
+        # clarinets_melody,
+        cellos_horns_melody,
+        constant_pluck,
+        constant_pluck2,
+        bass_pulse,
+        measured_trems,
+        flourish_flutes,
+        violins_end_melody,
+        sax_melody, 
+        measured_trems2,
+        
+        extend_last_machine=True
+        )
+    s.fill_rests(beats=10*4)
+    s.extend_from(cco_wind_melodies, end_doves, end_osti)
 
 
     # trumpets_melody = lambda_segment.LambdaSegment(
@@ -227,21 +375,6 @@ def score3(lib):
     #         ).slur_cells(),#.annotate(label=("events",)),
     #     )
 
-    s.extend_from(
-        counter_me, 
-        # trumpets_melody,
-        # clarinets_melody,
-        cellos_horns_melody,
-        constant_pluck,
-        constant_pluck2,
-        bass_pulse,
-        measured_trems,
-        violins_end_melody,
-        
-        sax_melody, 
-        measured_trems2,
-        extend_last_machine=True
-        )
 
     # my_piano = sus_piano.SusPiano1(
     #     sus_duration=8*4,
@@ -331,7 +464,7 @@ def score3(lib):
     #     bass_seg.transformed(calliope.Transpose(interval=12))
 
     # s.as_rhythm_and_short()
-    s.remove(s.staff_groups["short_score"])
+    # s.remove(s.staff_groups["short_score"])
 
     for staff in s.staves:
         # staff.phrases.transformed(calliope.Label())
@@ -358,7 +491,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate3_score3"], 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         # open_pdf=False,
         )
 
