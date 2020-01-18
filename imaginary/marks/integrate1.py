@@ -103,11 +103,35 @@ def score1(lib):
     for st in s.staves["ooa_violin1", "ooa_violin2"]:
         st.segments[0].mask("cells",0,1,2,3,4,5)
 
+    timp_seg = s.staves["cco_cello"].segments[0]()
+    for n in timp_seg.note_events:
+        if not n.pitch in (-22, -15, -10):
+            n.pitch = "R"
+    timp_seg.cells[12,13].note_events.tag(">")
+    timp_seg.transformed(calliope.StandardDurations()).eps(
+        0,"\\timpStaff", "timpani","p")()
+    s.staves["cco_percussion"].append(timp_seg)
+
     for st in s.staves[string_staves]:
         st.note_events[0].tag("arco","p")
         st.phrases[3].e_smear_after(0, cover_notes=True, extend_beats=3.5).eps(
             0,"\\<")()
         st.cells[7].tag("mf")
+        st.cells[13].e_smear_after(0, extend_beats=2.5, cover_notes=True).eps(
+            0,"\\mp","\\<")(
+            )()
+        st.cells[13].eps(
+            1, "mf", ">",".")()
+        st.cells[14].eps(
+            0, ">",".")()
+
+
+    bass_seg = s.staves["cco_cello"].segments[0]()
+    for n in bass_seg.cells[4:].note_events:
+        n.pitch = sb.pitches_at(n.beats_before(bass_seg))[0] + 12
+    for c in bass_seg.cells[14:]:
+        c.t(1)
+    s.staves["cco_bass"].append(bass_seg)
 
     s.extend_from(
         lambda_segment.LambdaSegments(
@@ -260,6 +284,8 @@ def score1(lib):
     s.staves["piano1"].append(piano_rh)
     s.staves["piano2"].append(piano_lh)
 
+
+
     s.fill_rests(beats=15*4)
     final_swell_sax_brass = swell_hit.SwellHit(
         sb.with_only("chords"),
@@ -292,15 +318,15 @@ def score1(lib):
 
     # s.extend_from(final_block)
 
-
+    s.fill_rests(fill_to="cco_violin_i")
     
     # s.only_staves("piano1", "piano2")
     # s.as_rhythm_and_short()
-    # s.remove(s.staff_groups["short_score"])
 
+    # s.only_staves(*instrument_groups.get_instruments("cco_strings"))
 
-    s.fill_rests(fill_to="cco_violin_i")
     s.fill_rests()
+    s.remove(s.staff_groups["short_score"])
 
     # s.lines.apply(lambda x:x.auto_respell())
     # s.phrases.apply(lambda x:x.auto_respell())
@@ -331,7 +357,7 @@ if __name__ == '__main__':
 
     calliope.illustrate(lib["integrate1_score1"], 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )
 

@@ -297,7 +297,7 @@ def score0(lib):
             1, ")")(
             ),
         ImaginaryCell(rhythm=(-4*8,),),
-        ImaginaryCell(rhythm=(4,),).eps(0,":32","mp")(
+        ImaginaryCell(rhythm=(4,),).eps(0,":32","mp", "(sus. cym.)")(
             ),
         )
     s.staves["cco_percussion"].segments[-1].append(cym_line)
@@ -342,7 +342,7 @@ def score0(lib):
     # s.lines.apply(lambda x:x.auto_respell())
     # s.phrases.apply(lambda x:x.auto_respell())
     # s.as_rhythm_and_short()
-    s.remove(s.staff_groups["short_score"])
+    # s.remove(s.staff_groups["short_score"])
 
     for staff in s.staves:
         # staff.phrases.transformed(calliope.Label())
@@ -370,7 +370,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate0_score0"], 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         # open_pdf=False,
         )
 

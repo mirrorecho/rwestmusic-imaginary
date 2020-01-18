@@ -302,7 +302,7 @@ def block1(lib):
     sb.fill_rests(beats=15*4)
     sb.ext_segments(
             chords = [drone.DroneLine(
-                line_pitches=( (-2,0), ),
+                line_pitches=( (-4,-2,0,9), ),
                 phrase_rhythm = (8,),
                 phrase_count = 1,
                 ),]
@@ -313,8 +313,19 @@ def block1(lib):
 
 def block2(lib):
     sb = short_block.get_block().ext_segments(
-        melody_line1 = lib("home_a_b").t(10).sc(0.5).move_t().bookend_pad(4),
-        counter_line = lib("counter_long_imod").t(3).sc(0.5).bookend_pad(36),
+        bass_drones = [
+            drone.DroneLine(
+                line_pitches= ((-9,2),),
+                phrase_rhythm = (4,),
+                phrase_count = 1,
+                ),
+            ]
+        )
+    sb.fill_rests(beats=4)
+
+    sb.ext_segments(
+        melody_line1 = lib("home_a_b").t(10).sc(0.5).move_t(),
+        counter_line = lib("counter_long_imod").t(3).sc(0.5).bookend_pad(32),
         # mid_drones = [drone.DroneLine(
         #         line_pitches=(10,),
         #         phrase_rhythm = (4*18,),
@@ -322,20 +333,26 @@ def block2(lib):
         #         ).bookend_pad(4)],
         bass_drones = [
             drone.DroneLine(
-                line_pitches= ((-9,2),),
-                phrase_rhythm = (4,),
-                phrase_count = 1,
-                ),
-            drone.DroneLine(
-                line_pitches=(-9,),
+                line_pitches=(-16,),
                 phrase_rhythm = (4*8,),
                 phrase_count = 1,
                 ),
             drone.DroneLine(
                 line_pitches=( (-22,-9), ),
-                phrase_rhythm = (8*4,),
+                phrase_rhythm = (2*4,),
                 phrase_count = 1,
-                ),],
+                ),
+            drone.DroneLine(
+                line_pitches=( (-16,-5), ),
+                phrase_rhythm = (4*4,),
+                phrase_count = 1,
+                ),
+            drone.DroneLine(
+                line_pitches=( (-23,-9), ),
+                phrase_rhythm = (4*2,),
+                phrase_count = 1,
+                ),
+            ],
         )
     sb.fill_rests()
     return sb
@@ -497,9 +514,9 @@ def block9(lib):
 
 def score_short(lib):
     b = short_block.get_block()
-    b.extend_from(lib["integrate_block0"])
+    # b.extend_from(lib["integrate_block0"])
     # b.extend_from(lib["integrate_block1"])
-    # b.extend_from(lib["integrate_block2"])
+    b.extend_from(lib["integrate_block2"])
     # b.extend_from(lib["integrate_block3"])
     # b.extend_from(lib["integrate_block4"])
     # b.extend_from(lib["integrate_block5"]) 

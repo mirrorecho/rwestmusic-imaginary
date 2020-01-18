@@ -31,8 +31,10 @@
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
+                    r1
+                    ^ \markup { c.1 }
                     {
-                        R1 * 13
+                        R1 * 15
                     }
                 }
             }
@@ -50,8 +52,10 @@
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
+                    r1
+                    ^ \markup { c.1 }
                     {
-                        R1 * 13
+                        R1 * 15
                     }
                 }
             }
@@ -69,8 +73,10 @@
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
+                    r1
+                    ^ \markup { c.1 }
                     {
-                        R1 * 13
+                        R1 * 15
                     }
                 }
             }
@@ -86,79 +92,161 @@
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
-                    {
-                        R1 * 5
-                    }
-                    c'8
+                    r4
                     ^ \markup { c.1 }
-                    [
-                    b8
-                    ~
-                    ]
-                    b4
-                    ~
-                    b2
-                    f'4
+                    ^ \markup { p.0 }
+                    g'4
+                    bf'2
+                    r4
                     ^ \markup { c.2 }
-                    e'8
+                    g'4
+                    bf'8
                     [
-                    a8
+                    c''8
                     ~
                     ]
-                    a2
-                    f'8
+                    c''4
+                    r4
                     ^ \markup { c.3 }
                     ^ \markup { p.1 }
-                    [
-                    e'8
-                    ~
-                    ]
-                    e'4
-                    ~
-                    e'2
-                    e'4
-                    ^ \markup { c.4 }
-                    a'8
-                    [
-                    g'8
-                    ~
-                    ]
-                    g'2
-                    r4
-                    ^ \markup { p.2 }
-                    ^ \markup { c.5 }
-                    f'4
-                    ~
-                    f'4
-                    e'8
-                    [
-                    d'8
-                    ]
-                    a'8
-                    ^ \markup { c.6 }
-                    [
-                    a'8
-                    ]
-                    g'8
-                    [
-                    f'8
-                    ]
-                    r2
-                    r4
-                    ^ \markup { p.3 }
-                    ^ \markup { c.7 }
                     g'4
+                    ef''8
+                    [
+                    d''8
+                    ]
+                    bf'8
+                    [
                     c''8
+                    ~
+                    ]
+                    c''4
+                    g'4
+                    ^ \markup { c.4 }
+                    bf'2
+                    r8
+                    ^ \markup { c.5 }
+                    ^ \markup { p.2 }
+                    [
+                    c''8
+                    ]
+                    ef''4
+                    g'4
+                    ~
+                    g'8
+                    [
+                    d''8
+                    ]
+                    r4
+                    ^ \markup { c.6 }
+                    ef''8
+                    [
+                    d''8
+                    ]
+                    bf'4
+                    ~
+                    bf'8
+                    [
+                    c''8
+                    ]
+                    r8
+                    ^ \markup { c.7 }
+                    ^ \markup { p.3 }
+                    [
+                    c''8
+                    ]
+                    ef''4
+                    c''4
+                    g''4
+                    r8
                     ^ \markup { c.8 }
                     [
-                    a'8
+                    f''8
+                    ]
+                    ef''4
+                    ~
+                    ef''4
+                    c''8
+                    [
+                    ef''8
+                    ]
+                    r4
+                    ^ \markup { c.9 }
+                    ^ \markup { p.4 }
+                    c''4
+                    ef''2
+                    r4
+                    ^ \markup { c.10 }
+                    c''4
+                    ef''8
+                    [
+                    f''8
                     ~
                     ]
-                    a'4
+                    f''4
+                    r4
+                    ^ \markup { c.11 }
+                    ^ \markup { p.5 }
+                    c''4
+                    af''8
+                    [
+                    g''8
+                    ]
+                    ef''8
+                    [
+                    f''8
                     ~
-                    a'1
+                    ]
+                    f''4
+                    c''4
+                    ^ \markup { c.12 }
+                    ef''2
+                    r8
+                    ^ \markup { c.13 }
+                    ^ \markup { p.6 }
+                    [
+                    f''8
+                    ]
+                    af''4
+                    c''4
+                    ~
+                    c''8
+                    [
+                    g''8
+                    ]
+                    r4
+                    ^ \markup { c.14 }
+                    af''8
+                    [
+                    g''8
+                    ]
+                    ef''4
+                    ~
+                    ef''8
+                    [
+                    f''8
+                    ]
+                    r8
+                    ^ \markup { c.15 }
+                    ^ \markup { p.7 }
+                    [
+                    f''8
+                    ]
+                    af''4
+                    f''4
+                    c'''4
+                    r8
+                    ^ \markup { c.16 }
+                    [
+                    bf''8
+                    ]
+                    af''4
+                    ~
+                    af''4
+                    f''8
+                    [
+                    af''8
+                    ]
                 }
             }
             \context Staff = "melody_line2"
@@ -174,8 +262,10 @@
                     \set Staff.midiInstrument = #"misc2" 
                     r1
                     ^ \markup { c.0 }
+                    r1
+                    ^ \markup { c.1 }
                     {
-                        R1 * 13
+                        R1 * 15
                     }
                 }
             }
@@ -191,79 +281,147 @@
                     \set Staff.shortInstrumentName = \markup { Count. }
                     \set Staff.midiInstrument = #"misc3" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
-                    {
-                        R1 * 5
-                    }
-                    c'8
+                    r1
                     ^ \markup { c.1 }
-                    [
-                    b8
-                    ~
-                    ]
-                    b4
-                    ~
-                    b2
-                    f'4
+                    ^ \markup { p.0 }
+                    {
+                        R1 * 7
+                    }
+                    ef'16
                     ^ \markup { c.2 }
-                    e'8
                     [
-                    a8
+                    d'8.
                     ~
                     ]
-                    a2
-                    f'8
+                    d'4
+                    af'8
                     ^ \markup { c.3 }
+                    [
+                    g'16
+                    c'16
+                    ~
+                    ]
+                    c'4
+                    af'16
                     ^ \markup { p.1 }
-                    [
-                    e'8
-                    ~
-                    ]
-                    e'4
-                    ~
-                    e'2
-                    e'4
                     ^ \markup { c.4 }
-                    a'8
                     [
-                    g'8
+                    g'8.
                     ~
                     ]
-                    g'2
-                    r4
-                    ^ \markup { p.2 }
-                    ^ \markup { c.5 }
-                    f'4
-                    ~
-                    f'4
-                    e'8
-                    [
-                    d'8
-                    ]
-                    a'8
-                    ^ \markup { c.6 }
-                    [
-                    a'8
-                    ]
-                    g'8
-                    [
-                    f'8
-                    ]
-                    r2
-                    r4
-                    ^ \markup { p.3 }
-                    ^ \markup { c.7 }
                     g'4
-                    c''8
-                    ^ \markup { c.8 }
+                    g'8
+                    ^ \markup { c.5 }
                     [
-                    a'8
+                    c''16
+                    bf'16
                     ~
                     ]
-                    a'4
+                    bf'4
+                    r8
+                    ^ \markup { c.6 }
+                    ^ \markup { p.2 }
+                    [
+                    af'8
                     ~
-                    a'1
+                    ]
+                    af'8
+                    [
+                    g'16
+                    f'16
+                    ]
+                    c''16
+                    ^ \markup { c.7 }
+                    [
+                    c''16
+                    bf'16
+                    af'16
+                    ]
+                    r4
+                    r8
+                    ^ \markup { c.8 }
+                    ^ \markup { p.3 }
+                    [
+                    bf'8
+                    ]
+                    ef''16
+                    ^ \markup { c.9 }
+                    [
+                    c''8.
+                    ~
+                    ]
+                    c''2
+                    c''16
+                    ^ \markup { p.4 }
+                    ^ \markup { c.10 }
+                    [
+                    bf'8.
+                    ~
+                    ]
+                    bf'4
+                    f''8
+                    ^ \markup { c.11 }
+                    [
+                    ef''16
+                    af'16
+                    ~
+                    ]
+                    af'4
+                    f''16
+                    ^ \markup { c.12 }
+                    ^ \markup { p.5 }
+                    [
+                    ef''8.
+                    ~
+                    ]
+                    ef''4
+                    ef''8
+                    ^ \markup { c.13 }
+                    [
+                    af''16
+                    g''16
+                    ~
+                    ]
+                    g''4
+                    r8
+                    ^ \markup { c.14 }
+                    ^ \markup { p.6 }
+                    [
+                    f''8
+                    ]
+                    c''8
+                    [
+                    af'8
+                    ]
+                    af'8
+                    ^ \markup { c.15 }
+                    [
+                    af'8
+                    ]
+                    c''8
+                    [
+                    g'8
+                    ]
+                    r8
+                    ^ \markup { p.7 }
+                    ^ \markup { c.16 }
+                    [
+                    g'8
+                    ]
+                    af'8
+                    [
+                    cs''8
+                    ]
+                    c''8
+                    ^ \markup { c.17 }
+                    [
+                    af'8
+                    ]
+                    cs''8
+                    [
+                    c''8
+                    ]
                 }
             }
             \context Staff = "bass_line"
@@ -278,139 +436,12 @@
                     \set Staff.shortInstrumentName = \markup { Bass. }
                     \set Staff.midiInstrument = #"electric bass (finger)" 
                     \clef "bass"
-                    r8
-                    ^ \markup { p.0 }
+                    r1
                     ^ \markup { c.0 }
-                    [
-                    <a, c'>8
-                    ]
-                    <c e'>4
-                    <a, c'>8
+                    r1
                     ^ \markup { c.1 }
-                    [
-                    <c e'>8
-                    ]
-                    <d f'>4
-                    <a, c'>8
-                    ^ \markup { c.2 }
-                    ^ \markup { p.1 }
-                    [
-                    <f a'>8
-                    ]
-                    <e g'>8
-                    [
-                    <c e'>8
-                    ]
-                    <d f'>8
-                    [
-                    <a, c'>8
-                    ^ \markup { c.3 }
-                    ]
-                    <c e'>4
-                    r8
-                    ^ \markup { p.2 }
-                    ^ \markup { c.4 }
-                    [
-                    <a, c'>8
-                    ]
-                    <c, e>4
-                    r4
-                    ^ \markup { c.5 }
-                    r8
-                    [
-                    <c, e>8
-                    ]
-                    <d, d>8
-                    [
-                    <e, e>8
-                    ]
-                    r4
-                    ^ \markup { p.3 }
-                    ^ \markup { c.6 }
-                    r8
-                    [
-                    <b,, b,>8
-                    ]
-                    <g, g>8
-                    [
-                    <f, f>8
-                    ]
-                    <d, d>8
-                    [
-                    <e, e>8
-                    ]
-                    r4
-                    <b,, b,>8
-                    ^ \markup { c.7 }
-                    [
-                    <d, d>8
-                    ]
-                    r4
-                    ^ \markup { p.4 }
-                    ^ \markup { c.8 }
-                    r4
-                    <b,, b,>4
-                    <d, d>4
-                    r4
-                    ^ \markup { c.9 }
-                    r8
-                    [
-                    <b,, b,>8
-                    ]
-                    r8
-                    [
-                    <d, d>8
-                    ]
-                    <e, e>4
-                    r4
-                    ^ \markup { p.5 }
-                    ^ \markup { c.10 }
-                    <a,, a, a>4
-                    <f, f f'>8
-                    [
-                    <e, e e'>8
-                    ]
-                    <c, c c'>8
-                    [
-                    <d, d d'>8
-                    ]
-                    r4
-                    <a,, a, a>4
-                    ^ \markup { c.11 }
-                    <c, c c'>4
-                    r2
-                    ^ \markup { c.12 }
-                    ^ \markup { p.6 }
-                    <a,, a, a>4
-                    <c, c c'>4
-                    r2
-                    ^ \markup { c.13 }
-                    <a,, a, a>4
-                    <c, c c'>8
-                    [
-                    <d, d d'>8
-                    ]
-                    r2
-                    ^ \markup { p.7 }
-                    ^ \markup { c.14 }
-                    <a,, a, a>4
-                    <f, f f'>8
-                    [
-                    <e, e e'>8
-                    ]
-                    <c, c c'>8
-                    [
-                    <d, d d'>8
-                    ]
-                    r4
-                    <a,, a, a>4
-                    ^ \markup { c.15 }
-                    <c, c c'>4
-                    r4
-                    r4
-                    ^ \markup { c.16 }
                     {
-                        R1 * 1
+                        R1 * 15
                     }
                 }
             }
@@ -426,81 +457,12 @@
                     \set Staff.shortInstrumentName = \markup { Riff. }
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
-                    {
-                        R1 * 4
-                    }
-                    c'8
-                    ^ \markup { c.1 }
-                    [
-                    b8
-                    ~
-                    ]
-                    b4
-                    ~
-                    b2
-                    f'4
-                    ^ \markup { c.2 }
-                    e'8
-                    [
-                    a8
-                    ~
-                    ]
-                    a2
-                    f'8
-                    ^ \markup { c.3 }
-                    ^ \markup { p.1 }
-                    [
-                    e'8
-                    ~
-                    ]
-                    e'4
-                    ~
-                    e'2
-                    e'4
-                    ^ \markup { c.4 }
-                    a'8
-                    [
-                    g'8
-                    ~
-                    ]
-                    g'2
-                    r4
-                    ^ \markup { p.2 }
-                    ^ \markup { c.5 }
-                    f'4
-                    ~
-                    f'4
-                    e'8
-                    [
-                    d'8
-                    ]
-                    a'8
-                    ^ \markup { c.6 }
-                    [
-                    a'8
-                    ]
-                    g'8
-                    [
-                    f'8
-                    ]
-                    r2
-                    r4
-                    ^ \markup { p.3 }
-                    ^ \markup { c.7 }
-                    g'4
-                    c''8
-                    ^ \markup { c.8 }
-                    [
-                    a'8
-                    ~
-                    ]
-                    a'4
-                    ~
-                    a'1
                     r1
-                    ^ \markup { c.9 }
+                    ^ \markup { c.1 }
+                    {
+                        R1 * 15
+                    }
                 }
             }
             \context Staff = "chords"
@@ -516,8 +478,10 @@
                     \set Staff.midiInstrument = #"french horn" 
                     r1
                     ^ \markup { c.0 }
+                    r1
+                    ^ \markup { c.1 }
                     {
-                        R1 * 13
+                        R1 * 15
                     }
                 }
             }
@@ -532,36 +496,13 @@
                     \set Staff.instrumentName = \markup { "High Drones" }
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     \set Staff.midiInstrument = #"piccolo" 
-                    e'''1
-                    ^ \markup { p.0 }
+                    r1
                     ^ \markup { c.0 }
-                    ~
-                    e'''1
-                    ~
-                    e'''1
-                    ~
-                    e'''1
-                    ~
-                    e'''1
-                    ~
-                    e'''1
-                    ~
-                    e'''1
-                    c'''1
+                    r1
                     ^ \markup { c.1 }
-                    ^ \markup { p.1 }
-                    ~
-                    c'''1
-                    ~
-                    c'''1
-                    ~
-                    c'''1
-                    ~
-                    c'''1
-                    ~
-                    c'''1
-                    ~
-                    c'''1
+                    {
+                        R1 * 15
+                    }
                 }
             }
             \context Staff = "mid_drones"
@@ -575,56 +516,13 @@
                     \set Staff.instrumentName = \markup { "Mid Drones" }
                     \set Staff.shortInstrumentName = \markup { M.drn. }
                     \set Staff.midiInstrument = #"string ensemble 2" 
-                    <b' e''>1
-                    ^ \markup { p.0 }
+                    r1
                     ^ \markup { c.0 }
-                    ~
-                    <b' e''>1
-                    ~
-                    <b' e''>4
-                    <e'' a''>4
+                    r1
                     ^ \markup { c.1 }
-                    ^ \markup { p.1 }
-                    ~
-                    <e'' a''>2
-                    ~
-                    <e'' a''>1
-                    ~
-                    <e'' a''>2
-                    <a' d''>2
-                    ^ \markup { p.2 }
-                    ^ \markup { c.2 }
-                    ~
-                    <a' d''>1
-                    ~
-                    <a' d''>2
-                    ~
-                    <a' d''>4
-                    <d'' g''>4
-                    ^ \markup { p.3 }
-                    ^ \markup { c.3 }
-                    ~
-                    <d'' g''>1
-                    ~
-                    <d'' g''>1
-                    <g'' c'''>1
-                    ^ \markup { p.4 }
-                    ^ \markup { c.4 }
-                    ~
-                    <g'' c'''>1
-                    ~
-                    <g'' c'''>4
-                    <c'' f''>4
-                    ^ \markup { p.5 }
-                    ^ \markup { c.5 }
-                    ~
-                    <c'' f''>2
-                    ~
-                    <c'' f''>1
-                    ~
-                    <c'' f''>2
-                    r2
-                    ^ \markup { c.6 }
+                    {
+                        R1 * 15
+                    }
                 }
             }
             \context Staff = "bass_drones"
@@ -639,42 +537,45 @@
                     \set Staff.shortInstrumentName = \markup { B.drn. }
                     \set Staff.midiInstrument = #"string ensemble 2" 
                     \clef "bass"
-                    <e b>1
-                    ^ \markup { p.0 }
+                    <ef d'>1
                     ^ \markup { c.0 }
-                    ~
-                    <e b>1
-                    ~
-                    <e b>1
-                    ~
-                    <e b>2
-                    <d c'>2
+                    ^ \markup { p.0 }
+                    af,1
                     ^ \markup { c.1 }
                     ^ \markup { p.1 }
                     ~
-                    <d c'>1
+                    af,1
                     ~
-                    <d c'>1
+                    af,1
                     ~
-                    <d c'>1
-                    <c d'>1
-                    ^ \markup { p.2 }
+                    af,1
+                    ~
+                    af,1
+                    ~
+                    af,1
+                    ~
+                    af,1
+                    ~
+                    af,1
+                    <d, ef>1
                     ^ \markup { c.2 }
+                    ^ \markup { p.2 }
                     ~
-                    <c d'>1
-                    ~
-                    <c d'>1
-                    ~
-                    <c d'>2
-                    <bf, f'>2
-                    ^ \markup { p.3 }
+                    <d, ef>1
+                    <af, g>1
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     ~
-                    <bf, f'>1
+                    <af, g>1
                     ~
-                    <bf, f'>1
+                    <af, g>1
                     ~
-                    <bf, f'>1
+                    <af, g>1
+                    r1
+                    ^ \markup { c.4 }
+                    {
+                        R1 * 1
+                    }
                 }
             }
         >>
