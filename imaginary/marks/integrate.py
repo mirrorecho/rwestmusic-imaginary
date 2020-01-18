@@ -357,6 +357,9 @@ def block2(lib):
     sb.fill_rests()
     return sb
 
+def integrate_riff(lib):
+    return lib("riff_line").scramble("events", 1,0,2,3,4,5,8,9
+                ).sc(0.5)
 
 def block3(lib):
     sb = short_block.get_block().ext_segments(
@@ -364,6 +367,7 @@ def block3(lib):
         melody_line2 = lib("home_b_aup4").t(8).sc(0.5).move_t(),
         counter_line = lib("counter_long_imod").t(8).sc(0.5).move_t(),
         mid_drones = [lib("home_a_b").t(8),],
+        high_drones = [lib("home_b_aup4").t(8).mask("cells",0,1,2,3)],
         bass_drones = [drone.DroneLine(
                 line_pitches=((-23,-9),),
                 phrase_rhythm = (8*4,),
@@ -387,6 +391,11 @@ def block4(lib):
         counter_line = lib("counter_long_imod").t(6).sc(0.5).move_t(),
         bass_line = lib("bass_line").sc(0.5).t(6).move_t().pop_from("cells", 14, 15, 18, 19),
         mid_drones = [lib("home_a_b").t(6),],
+        high_drones = [lib("home_b_aup4").t(6),],
+        riff = [
+            lib("integrate_riff").t(1) * 16,
+            lib("integrate_riff").t(6) * 16, 
+        ],
         bass_drones = [drone.DroneLine(
                 line_pitches=((-21,-16,-11),),
                 phrase_rhythm = (8*4,),
@@ -516,8 +525,8 @@ def score_short(lib):
     b = short_block.get_block()
     # b.extend_from(lib["integrate_block0"])
     # b.extend_from(lib["integrate_block1"])
-    b.extend_from(lib["integrate_block2"])
-    # b.extend_from(lib["integrate_block3"])
+    # b.extend_from(lib["integrate_block2"])
+    b.extend_from(lib["integrate_block3"])
     # b.extend_from(lib["integrate_block4"])
     # b.extend_from(lib["integrate_block5"]) 
     # b.extend_from(lib["integrate_block6"])
@@ -545,6 +554,7 @@ def to_lib(lib):
         riff.to_lib(lib)
         drum.to_lib(lib)
         # TO DO: should use intropection to avoid
+        lib.add(integrate_riff)
         lib.add(
             opening, opening_b, opening_b_fifths, opening_counter_b,
             riff_mod, riff_mod_reversed, riff_up_down,
@@ -559,7 +569,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate_score_short"], 
         as_midi=True,
-        # open_midi=True,
+        open_midi=True,
         # open_pdf=False,
         )
 

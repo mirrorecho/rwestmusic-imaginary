@@ -65,11 +65,49 @@ def drum_quick_off(lib):
     c.events.tag("note_head:0:cross")
     return c
 
+# TO DO... not sure if I like this... 
+def drum_quick_off2(lib): 
+    c = ImaginaryCell(
+        rhythm=(
+            0.25,0.25,0.5,
+            1,
+            0.5,0.25,0.25,
+            0.5,0.5,
+            ),
+        pitches=(
+            9,2,2,
+            -8,
+            9,2,2,
+            (2, -5,-8),9
+            )
+        )
+    c.events[0,3,4,7,8].tag("note_head:0:cross")
+    return c
+
+def drum_rock_out(lib):
+    c = ImaginaryCell(
+        rhythm=(
+            0.5,0.5,
+            0.5,0.5,
+            0.5,0.25,0.25,
+            0.5,0.5,
+            ),
+        pitches=(
+            (-5,9), (9,-8),
+            (-5,9,2), (9,-8),
+            (-5,9), (9,4,-8), 2,
+            (-5,9,2), (9,-8),
+            )
+        )
+    c.events[1,3,5,8].tag("note_head:0:cross")
+    c.events[0,1,2,3,4,5,7,8].tag("note_head:-1:cross")
+    return c    
+
 def to_lib(lib):
     if not lib.is_loaded("drum"):
         lib.add(
-            drum_off_short, drum_du_du, drum_on_off, drum_quick_off
-            )
+            drum_off_short, drum_du_du, drum_on_off, drum_quick_off,drum_rock_out,
+            drum_quick_off2,)
         lib.mark_loaded("drum")
 
 
@@ -78,7 +116,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(
         calliope.Staff(
-            lib("drum_quick_off") * 8, 
+            lib("drum_quick_off2") * 8, 
             clef="percussion"),
         as_midi=True,
         open_midi=True,
