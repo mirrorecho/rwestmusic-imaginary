@@ -337,6 +337,17 @@ def score3(lib):
         )
     end_osti.staves["piano2"].segments[0].t(-12)
 
+    end_roll = pad.Pad(
+        sb.with_only("bass_drones"),
+        fabric_staves = ("ooa_mallets",),
+        ranges=pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat = 10*4,
+        pad_durations = (8,16),
+        after_func = lambda x: x.eps(
+            0,"mf", "\\<",":32")(
+            1,"f",":32")()
+    )
+
     s.extend_from(
         counter_me, 
         # trumpets_melody,
@@ -354,7 +365,7 @@ def score3(lib):
         extend_last_machine=True
         )
     s.fill_rests(beats=10*4)
-    s.extend_from(cco_wind_melodies, end_doves, end_osti)
+    s.extend_from(cco_wind_melodies, end_doves, end_osti, end_roll)
 
 
     # trumpets_melody = lambda_segment.LambdaSegment(

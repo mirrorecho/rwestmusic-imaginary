@@ -632,9 +632,28 @@
                         af''16
                         ]
                         r4
-                        {
-                            R1 * 6
-                        }
+                    }
+                    {
+                        \accidentalStyle neo-modern-cautionary
+                        df''1
+                        :32
+                        \mf
+                        ~
+                        \<
+                        df''1
+                        :32
+                        df''1
+                        :32
+                        \f
+                        ~
+                        df''1
+                        :32
+                        ~
+                        df''1
+                        :32
+                        ~
+                        df''1
+                        :32
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -2507,7 +2526,7 @@
                         \accidentalStyle neo-modern-cautionary
                         r4
                         bf'4
-                        \f
+                        \mf
                         (
                         gf''8
                         [
@@ -2640,7 +2659,7 @@
                         r8
                         [
                         ef''8
-                        \f
+                        \mf
                         ]
                         (
                         gf''4
@@ -2751,7 +2770,7 @@
                         \accidentalStyle neo-modern-cautionary
                         r4
                         bf'4
-                        \f
+                        \mf
                         (
                         gf''8
                         [
@@ -2884,7 +2903,7 @@
                         r8
                         [
                         ef''8
-                        \f
+                        \mf
                         ]
                         (
                         gf''4
@@ -5512,8 +5531,8 @@
                     \set Staff.midiInstrument = #"misc1" 
                     \mark #14
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     f'4
                     (
                     af'2
@@ -5530,8 +5549,8 @@
                     bf'4
                     )
                     r4
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     f'4
                     (
                     df''8
@@ -5551,8 +5570,8 @@
                     af'2
                     )
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     [
                     bf'8
                     ]
@@ -5644,8 +5663,8 @@
                     df''2
                     )
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     ef''8
                     ]
@@ -5673,8 +5692,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.14 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.14 }
                     [
                     ef''8
                     ]
@@ -5713,8 +5732,8 @@
                     \set Staff.midiInstrument = #"misc2" 
                     \mark #14
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     bf'8
                     ]
@@ -5742,8 +5761,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     [
                     bf'8
                     ]
@@ -5767,8 +5786,8 @@
                     ]
                     )
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     bf'4
                     (
                     df''2
@@ -5860,8 +5879,8 @@
                     ]
                     )
                     r4
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     ef''4
                     (
                     gf''2
@@ -5878,8 +5897,8 @@
                     af''4
                     )
                     r4
-                    ^ \markup { c.14 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.14 }
                     ef''4
                     (
                     b''8
@@ -5914,8 +5933,8 @@
                     \set Staff.midiInstrument = #"misc3" 
                     \mark #14
                     af'16
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     g'8.
@@ -5934,8 +5953,8 @@
                     f'4
                     )
                     df''16
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     [
                     (
                     c''8.
@@ -5954,8 +5973,8 @@
                     ef''4
                     )
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     [
                     df''8
                     ~
@@ -6033,8 +6052,8 @@
                     c'''4
                     )
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     bf''8
                     ]
@@ -6056,8 +6075,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.14 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.14 }
                     [
                     c''8
                     ]
@@ -6079,8 +6098,8 @@
                     ]
                     )
                     df''16
-                    ^ \markup { c.16 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     [
                     (
                     c''8.
@@ -6178,8 +6197,8 @@
                     gf''4
                     )
                     ef'''16
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     [
                     (
                     df'''8.
@@ -6198,8 +6217,8 @@
                     f'''4
                     )
                     r8
-                    ^ \markup { c.28 }
                     ^ \markup { p.14 }
+                    ^ \markup { c.28 }
                     [
                     ef'''8
                     ]
@@ -6320,8 +6339,8 @@
                     \set Staff.midiInstrument = #"piccolo" 
                     \mark #14
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r2
                     {
@@ -6334,8 +6353,8 @@
                         R1 * 1
                     }
                     r4
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     r4
                     r2
                     {
@@ -6349,8 +6368,8 @@
                         R1 * 1
                     }
                     r2
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     bf'2
                     (
                     df''1
@@ -6397,8 +6416,8 @@
                     \set Staff.midiInstrument = #"string ensemble 2" 
                     \mark #14
                     r2
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     f'2
                     (
                     af'1
@@ -6413,8 +6432,8 @@
                     bf'2
                     )
                     r2
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     f'2
                     (
                     df''4
@@ -6430,8 +6449,8 @@
                     af'1
                     )
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     bf'4
                     (
                     df''2
@@ -6486,8 +6505,8 @@
                     \mark #14
                     \clef "bass"
                     <df, ef>1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     ~
                     <df, ef>1
                     ~
@@ -6503,8 +6522,8 @@
                     ~
                     <df, ef>1
                     <ef, df>1
-                    ^ \markup { c.1 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.1 }
                     ~
                     <ef, df>1
                     ~
