@@ -156,12 +156,16 @@ class ImaginaryIntroScore(ImaginaryScore):
             class CcoViola(calliope.StaffGroup):
                 class CcoViola1(calliope.Staff):
                     instrument=abjad.Viola(name="Viola 1", short_name="vla.1")
+                    clef="alto"
                 class CcoViola2(calliope.Staff):
                     instrument=abjad.Viola(name="Viola 2", short_name="vla.2")
+                    clef="alto"
                 class CcoViola3(calliope.Staff):
                     instrument=abjad.Viola(name="Viola 3", short_name="vla.3")
+                    clef="alto"
                 class CcoViola4(calliope.Staff):
                     instrument=abjad.Viola(name="Viola 4", short_name="vla.4")
+                    clef="alto"
             
             class CcoCello(calliope.StaffGroup):
                 class CcoCello1(calliope.Staff):

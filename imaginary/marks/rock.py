@@ -1,7 +1,7 @@
 import abjad, calliope
 
 from imaginary.stories import short_block, library, artics
-from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
+from imaginary.libraries import (home, counter, bass, drone, pitch_ranges, drum,
     riff, chords, tally_apps)
 from imaginary.fabrics import (instrument_groups, 
     dovetail, driving_off, hit_cells, 
@@ -1052,6 +1052,7 @@ def score_short(lib):
 def to_lib(lib):  
     if not lib.is_loaded("rock"):
         riff.to_lib(lib)
+        drum.to_lib(lib)
         lib.add(riff_opening_end_wiggle, riffs_opening,)    
 
         # TO DO: this is nasty! Should use intropection to avoid

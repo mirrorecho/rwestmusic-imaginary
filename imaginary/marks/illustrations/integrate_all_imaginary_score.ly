@@ -6,6 +6,7 @@
 \header {
     tagline = ##f
     composer = \markup { "Randall West" }
+    title = \markup { "Memory Bubbles IV." }
 }
 
 \layout {}
@@ -31,7 +32,7 @@
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #11
+                        \mark #10
                         b'1
                         :32
                         \p
@@ -55,7 +56,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         c'''2
                         \p
                         ~
@@ -215,7 +216,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -261,7 +262,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af''4
                         \f
@@ -309,6 +310,7 @@
                         \f
                         -\tenuto
                         ]
+                        \>
                         gs''8
                         -\tenuto
                         [
@@ -332,6 +334,7 @@
                         ds''8
                         -\tenuto
                         ]
+                        \!
                         \>
                         e''8
                         -\tenuto
@@ -346,17 +349,17 @@
                         -\tenuto
                         ]
                         a''8
+                        \p
                         -\tenuto
                         [
                         gs''8
                         -\tenuto
                         ]
-                        \!
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -365,8 +368,8 @@
                         \>
                         gs''1
                         \fermata
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
@@ -415,7 +418,7 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -423,7 +426,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 16
                         }
                     }
@@ -441,7 +444,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -552,7 +555,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af'4
                         \f
@@ -595,7 +598,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -650,7 +653,7 @@
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #11
+                            \mark #10
                             R1 * 6
                         }
                         c'8
@@ -728,7 +731,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -748,7 +751,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -867,7 +870,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af'4
                         \f
@@ -957,7 +960,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1012,7 +1015,7 @@
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -1020,7 +1023,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -1040,7 +1043,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -1161,7 +1164,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         ef'4
                         \f
@@ -1255,7 +1258,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1309,7 +1312,7 @@
                         \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Tsax. }
                         \set Staff.midiInstrument = #"alto sax" 
-                        \mark #11
+                        \mark #10
                         r4
                         e'4
                         \p
@@ -1353,7 +1356,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -1373,7 +1376,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -1419,7 +1422,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af4
                         \f
@@ -1462,7 +1465,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1517,7 +1520,7 @@
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
                             R1 * 14
                         }
@@ -1526,7 +1529,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -1546,7 +1549,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -1592,7 +1595,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af,4
                         \f
@@ -1635,7 +1638,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -1689,7 +1692,7 @@
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \set Staff.midiInstrument = #"bassoon" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         e'4
                         \p
@@ -1804,7 +1807,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 1
                         }
                         r4
@@ -2035,7 +2038,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -2081,7 +2084,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af,4
                         \f
@@ -2124,7 +2127,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2182,7 +2185,7 @@
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -2190,7 +2193,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -2210,7 +2213,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -2256,7 +2259,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af4
                         \f
@@ -2353,7 +2356,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2408,7 +2411,7 @@
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -2416,7 +2419,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -2436,7 +2439,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -2553,7 +2556,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r4
                         af4
                         \f
@@ -2601,6 +2604,7 @@
                         \mf
                         -\tenuto
                         ]
+                        \>
                         e''4
                         -\tenuto
                         cs''4
@@ -2617,6 +2621,7 @@
                         ~
                         e''4
                         cs''8
+                        \p
                         -\tenuto
                         [
                         e''8
@@ -2626,7 +2631,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2681,7 +2686,7 @@
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
                             R1 * 14
                         }
@@ -2690,7 +2695,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -2710,7 +2715,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -2756,7 +2761,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r8
                         [
                         df8
@@ -2915,7 +2920,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -2973,7 +2978,7 @@
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
                             \set Staff.midiInstrument = #"vibraphone" 
-                            \mark #11
+                            \mark #10
                             R1 * 4
                         }
                         e'''1
@@ -3002,7 +3007,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 1
                         }
                         d'16
@@ -3082,7 +3087,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -3331,7 +3336,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         cs''1
                         :32
                         cs''1
@@ -3368,7 +3373,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -3425,7 +3430,7 @@
                             \set Staff.instrumentName = \markup { "Drum Set" }
                             \set Staff.shortInstrumentName = \markup { Drum. }
                             \set Staff.midiInstrument = #"taiko drum" 
-                            \mark #11
+                            \mark #10
                             \clef "percussion"
                             R1 * 4
                         }
@@ -3596,7 +3601,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         g8
                         [
                         <
@@ -3885,7 +3890,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -4339,7 +4344,7 @@
                         \once \hide Stem
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         \tweak style #'slash
                         c'8
                         \f
@@ -4872,7 +4877,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -4929,7 +4934,7 @@
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
                         \set Staff.midiInstrument = #"electric guitar (clean)" 
-                        \mark #11
+                        \mark #10
                         b'4
                         \mp
                         r4
@@ -4991,7 +4996,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         a'4
                         a'4
                         a'4
@@ -5063,7 +5068,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -5277,7 +5282,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         cs'4
                         \f
                         cs'4
@@ -5338,7 +5343,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -5394,7 +5399,7 @@
                         \set Staff.instrumentName = \markup { "Bass Guitar" }
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
                         \set Staff.midiInstrument = #"electric bass (finger)" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mp
@@ -5457,7 +5462,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         a,4
                         a,4
                         a,4
@@ -5529,7 +5534,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -5743,7 +5748,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         gs,4
                         \f
                         gs,4
@@ -5804,7 +5809,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -5861,7 +5866,7 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
                         \set Staff.midiInstrument = #"violin" 
-                        \mark #11
+                        \mark #10
                         b'4
                         \mf
                         ^ \markup { pizz }
@@ -5881,7 +5886,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 6
                         }
                         bf'1
@@ -6059,7 +6064,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -6209,7 +6214,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         b''8
                         \f
                         [
@@ -6471,7 +6476,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -6482,8 +6487,8 @@
                         b''4
                         b''4
                         b''4.
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, slowing, down" }
                         \once \hide Rest
@@ -6531,7 +6536,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
                         \set Staff.midiInstrument = #"violin" 
-                        \mark #11
+                        \mark #10
                         e''4
                         \mf
                         ^ \markup { pizz }
@@ -6551,7 +6556,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 6
                         }
                         a'1
@@ -6729,7 +6734,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -6879,7 +6884,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         b''8
                         \f
                         [
@@ -7121,27 +7126,14 @@
                         ~
                         ]
                         cs'''4
-                        b''8
-                        [
-                        ds'''8
-                        ~
-                        ]
-                        ds'''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -7195,7 +7187,7 @@
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mf
@@ -7216,7 +7208,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 2
                         }
                         a,8
@@ -7466,7 +7458,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -7648,7 +7640,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         af8
                         \f
                         [
@@ -7910,7 +7902,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -7964,7 +7956,7 @@
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mf
@@ -7985,7 +7977,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 2
                         }
                         d8
@@ -8235,7 +8227,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -8417,7 +8409,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         af8
                         \f
                         [
@@ -8659,27 +8651,14 @@
                         ~
                         ]
                         a4
-                        e'8
-                        [
-                        fs'8
-                        ~
-                        ]
-                        fs'8
-                        [
-                        a'8
-                        ~
-                        ]
-                        a'8
-                        [
-                        b'8
-                        ~
-                        ]
-                        b'4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -8739,7 +8718,7 @@
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #11
+                        \mark #10
                         e''1
                         :32
                         \p
@@ -8836,7 +8815,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         r8
                         [
                         c'''8
@@ -9020,7 +8999,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -9318,7 +9297,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef''2
                         \f
@@ -9359,6 +9338,7 @@
                         \f
                         -\tenuto
                         ]
+                        \>
                         gs''8
                         -\tenuto
                         [
@@ -9395,6 +9375,7 @@
                         -\tenuto
                         ]
                         a''8
+                        \p
                         -\tenuto
                         [
                         gs''8
@@ -9404,7 +9385,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -9458,7 +9439,7 @@
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #11
+                        \mark #10
                         e''1
                         :32
                         \p
@@ -9560,7 +9541,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         r4
                         c'''4
                         \p
@@ -9711,7 +9692,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -10015,7 +9996,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef''2
                         \f
@@ -10056,6 +10037,7 @@
                         \f
                         -\tenuto
                         ]
+                        \>
                         gs''8
                         -\tenuto
                         [
@@ -10092,6 +10074,7 @@
                         -\tenuto
                         ]
                         a''8
+                        \p
                         -\tenuto
                         [
                         gs''8
@@ -10101,7 +10084,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -10156,7 +10139,7 @@
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
                             \set Staff.midiInstrument = #"oboe" 
-                            \mark #11
+                            \mark #10
                             R1 * 5
                         }
                     }
@@ -10242,7 +10225,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 16
                         }
                     }
@@ -10260,7 +10243,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -10428,7 +10411,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef''2
                         \f
@@ -10464,7 +10447,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -10519,7 +10502,7 @@
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
                             \set Staff.midiInstrument = #"oboe" 
-                            \mark #11
+                            \mark #10
                             R1 * 5
                         }
                     }
@@ -10617,7 +10600,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 16
                         }
                     }
@@ -10635,7 +10618,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -10801,7 +10784,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef''2
                         \f
@@ -10837,7 +10820,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -10892,7 +10875,7 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #11
+                            \mark #10
                             R1 * 8
                         }
                     }
@@ -10962,7 +10945,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 16
                         }
                     }
@@ -10980,7 +10963,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -11142,7 +11125,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef'2
                         \f
@@ -11178,7 +11161,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -11233,7 +11216,7 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #11
+                            \mark #10
                             R1 * 8
                         }
                     }
@@ -11280,7 +11263,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 16
                         }
                     }
@@ -11298,7 +11281,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -11481,7 +11464,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef'2
                         \f
@@ -11517,7 +11500,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -11571,7 +11554,7 @@
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \set Staff.midiInstrument = #"bassoon" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         r8
                         \mf
@@ -11702,7 +11685,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 1
                         }
                         r4
@@ -11933,7 +11916,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -12063,7 +12046,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef,2
                         \f
@@ -12099,7 +12082,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -12157,7 +12140,7 @@
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -12165,7 +12148,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -12185,7 +12168,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -12385,7 +12368,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef2
                         \f
@@ -12475,7 +12458,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -12483,6 +12466,7 @@
                         s8
                         fs4
                         -\tenuto
+                        \>
                         gs4
                         -\tenuto
                         a4
@@ -12498,9 +12482,10 @@
                         b4
                         -\tenuto
                         fs4
+                        \p
                         -\tenuto
-                        \freeContinue
                         \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        \freeContinue
                         s4
                         ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
@@ -12544,7 +12529,7 @@
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -12552,7 +12537,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -12572,7 +12557,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -12770,7 +12755,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r2
                         ef'2
                         \f
@@ -12809,6 +12794,7 @@
                         cs''4
                         \mf
                         -\tenuto
+                        \>
                         a''8
                         -\tenuto
                         [
@@ -12826,12 +12812,13 @@
                         cs''4
                         -\tenuto
                         e''2
+                        \p
                         -\tenuto
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -12886,7 +12873,7 @@
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
                             R1 * 14
                         }
@@ -12895,7 +12882,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 15
                         }
                     }
@@ -12915,7 +12902,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -13045,7 +13032,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         r8
                         [
                         df8
@@ -13204,7 +13191,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -13260,7 +13247,7 @@
                     \set Staff.instrumentName = \markup { Percussion }
                     \set Staff.shortInstrumentName = \markup { Perc. }
                     \set Staff.midiInstrument = #"woodblock" 
-                    \mark #11
+                    \mark #10
                     r8
                     ^ \markup { timpani }
                     [
@@ -13324,7 +13311,7 @@
                     \timpStaff
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #12
+                    \mark #11
                     d8
                     \p
                     ^ \markup { timpani }
@@ -13439,7 +13426,7 @@
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #13
+                    \mark #12
                     r1
                     \fermata
                     {
@@ -13624,7 +13611,7 @@
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #15
+                    \mark #13
                     r8
                     [
                     df8
@@ -13727,7 +13714,7 @@
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                    \tempo \markup \fontsize #1 {  freely   }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
@@ -13783,7 +13770,7 @@
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
-                        \mark #11
+                        \mark #10
                         e'''4
                         \mf
                         r4
@@ -13859,7 +13846,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 1
                         }
                         r8
@@ -14030,7 +14017,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                     }
@@ -14262,7 +14249,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         fs''8
                         \f
                         -\accent
@@ -14559,7 +14546,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -14613,7 +14600,7 @@
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         e4
                         r4
@@ -14688,7 +14675,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 1
                         }
                         r8
@@ -14792,7 +14779,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -14987,7 +14974,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         gs,8
                         -\accent
                         [
@@ -15283,7 +15270,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -15341,7 +15328,7 @@
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             \set Staff.midiInstrument = #"acoustic grand" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -15349,7 +15336,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 1
                         }
                         d''16
@@ -15439,7 +15426,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -15605,7 +15592,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         cs''8
                         \f
                         -\accent
@@ -15902,7 +15889,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -15957,7 +15944,7 @@
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             \set Staff.midiInstrument = #"acoustic grand" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
                             R1 * 14
                         }
@@ -15966,7 +15953,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 1
                         }
                         r8
@@ -16077,7 +16064,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         r1
                         \fermata
                         {
@@ -16242,7 +16229,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         b8
                         -\accent
                         [
@@ -16538,7 +16525,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -16595,7 +16582,7 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         e''4
                         \mf
                         ^ \markup { pizz }
@@ -16615,7 +16602,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 4
                         }
                         c'8
@@ -16829,7 +16816,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         d''1
                         \pp
                         \fermata
@@ -17075,7 +17062,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         gf'''8
                         \f
                         [
@@ -17301,43 +17288,14 @@
                         ~
                         ]
                         fs''4
-                        e''8
-                        [
-                        cs'''8
-                        ~
-                        ]
-                        cs'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
-                        b''8
-                        [
-                        fs''8
-                        ~
-                        ]
-                        fs''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
+                        {
+                            R1 * 2
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -17391,7 +17349,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         e'''4
                         \mf
                         ^ \markup { pizz }
@@ -17411,7 +17369,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #12
+                            \mark #11
                             R1 * 4
                         }
                         c'8
@@ -17625,7 +17583,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         d''1
                         \pp
                         \fermata
@@ -17823,7 +17781,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         gf'''8
                         \f
                         [
@@ -18065,27 +18023,14 @@
                         ~
                         ]
                         gs'''4
-                        fs'''8
-                        [
-                        fs'''8
-                        ~
-                        ]
-                        fs'''8
-                        [
-                        a'''8
-                        ~
-                        ]
-                        a'''8
-                        [
-                        e'''8
-                        ~
-                        ]
-                        e'''4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -18139,7 +18084,7 @@
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         \clef "alto"
                         b'4
                         \mf
@@ -18159,7 +18104,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         d'8
                         \p
                         ^ \markup { arco }
@@ -18443,7 +18388,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         d'1
                         \pp
                         \fermata
@@ -18871,7 +18816,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         df''8
                         \f
                         [
@@ -19133,16 +19078,20 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        a16
+                        (
+                        gs1
+                        )
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
                         r4
                         s4
@@ -19171,7 +19120,7 @@
                         \freeRestArrow
                         \freePad
                         r4
-                        s4
+                        s8.
                         \bar "|." 
                     }
                 }
@@ -19187,7 +19136,7 @@
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mf
@@ -19207,7 +19156,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         d8
                         \p
                         ^ \markup { arco }
@@ -19491,7 +19440,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         ef1
                         \pp
                         \fermata
@@ -19752,7 +19701,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         df'8
                         \f
                         [
@@ -19994,27 +19943,14 @@
                         ~
                         ]
                         fs4
-                        gf8
-                        [
-                        gf8
-                        ~
-                        ]
-                        gf8
-                        [
-                        b8
-                        ~
-                        ]
-                        b8
-                        [
-                        gf'8
-                        ~
-                        ]
-                        gf'4
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -20068,7 +20004,7 @@
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         r8
                         [
@@ -20184,7 +20120,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #11
                         d8
                         \p
                         ^ \markup { arco }
@@ -20468,7 +20404,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #12
                         ef1
                         \pp
                         \fermata
@@ -20576,7 +20512,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #15
+                        \mark #13
                         ef'8
                         \f
                         [
@@ -20838,7 +20774,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  slow down to \note #"4" #UP "= 72 ca, freely, 20'' "  }
+                        \tempo \markup \fontsize #1 {  freely   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8

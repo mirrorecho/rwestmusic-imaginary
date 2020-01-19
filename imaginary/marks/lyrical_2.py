@@ -322,6 +322,9 @@ def score2(lib):
 
     s.fill_rests(beats=12*4)
     # s.remove_empty()
+    s.fill_rests()
+
+
     for staff in s.staves:
         if segs := staff.segments:
             main_seg = segs[0]

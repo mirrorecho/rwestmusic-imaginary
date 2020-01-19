@@ -27,7 +27,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -131,7 +130,6 @@
                         r4
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -151,7 +149,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -160,7 +157,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -178,7 +174,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -254,7 +249,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -263,7 +257,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -272,7 +265,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -290,7 +282,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -449,7 +440,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -628,7 +618,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -787,7 +776,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -917,7 +905,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -977,7 +964,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -986,7 +972,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -1007,7 +992,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -1030,7 +1014,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -1039,7 +1022,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -1048,7 +1030,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -1066,7 +1047,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -1079,7 +1059,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -1088,7 +1067,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -1097,7 +1075,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -1115,7 +1092,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -1139,7 +1115,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -1148,7 +1123,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -1157,7 +1131,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -1178,7 +1151,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -1355,153 +1327,152 @@
                         <c'' c'''>4
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <c''' c''''>8
+                        <c'' c'''>8
                         [
-                        <c''' c''''>8
+                        <c'' c'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
-                        <df''' df''''>8
+                        <df'' df'''>8
                         [
-                        <df''' df''''>8
+                        <df'' df'''>8
                         ]
                         {
                             R1 * 2
@@ -1518,7 +1489,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -1654,7 +1624,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -1848,7 +1817,6 @@
                         ]
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -2134,13 +2102,185 @@
                         ]
                     }
                     {
-                        {
-                             \bar "]" 
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #5
-                            R1 * 11
-                        }
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #5
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (6) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (7) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (8) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (9) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ^ \markup { improv }
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        [
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'8
+                        ]
                         r1
                         \fermata
                     }
@@ -2155,7 +2295,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -2175,7 +2314,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -2191,7 +2329,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -2229,7 +2366,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -2246,7 +2382,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -2322,7 +2457,6 @@
                         r4
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -2354,7 +2488,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -2374,7 +2507,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -2395,7 +2527,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -2413,7 +2544,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -2773,8 +2903,8 @@
                         \<
                         df'2
                         bf1
-                        \f
                         \fermata
+                        \f
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -2784,7 +2914,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -2805,7 +2934,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -2823,7 +2951,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -3183,8 +3310,8 @@
                         \<
                         df'2
                         df'1
-                        \f
                         \fermata
+                        \f
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -3194,7 +3321,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -3307,7 +3433,6 @@
                         d1
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -3759,8 +3884,8 @@
                         \<
                         df2
                         bf,1
-                        \f
                         \fermata
+                        \f
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -3770,7 +3895,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -3874,7 +3998,6 @@
                         g,1
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -4326,8 +4449,8 @@
                         \<
                         f,2
                         bf,1
-                        \f
                         \fermata
+                        \f
                     }
                 }
             >>
@@ -4343,7 +4466,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -4371,7 +4493,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -4390,7 +4511,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -4462,7 +4582,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -4479,7 +4598,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -4507,7 +4625,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -4526,7 +4643,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -4598,7 +4714,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -4616,7 +4731,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -4709,7 +4823,6 @@
                         )
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -4823,7 +4936,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -4832,7 +4944,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -4850,7 +4961,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -4885,7 +4995,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -4937,7 +5046,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -4946,7 +5054,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -4964,7 +5071,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -5024,7 +5130,6 @@
                         r2
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -5131,7 +5236,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -5140,7 +5244,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5158,7 +5261,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -5209,7 +5311,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -5293,7 +5394,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -5302,7 +5402,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5320,7 +5419,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -5334,7 +5432,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -5343,7 +5440,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -5352,7 +5448,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5373,7 +5468,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -5396,7 +5490,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -5405,7 +5498,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -5414,7 +5506,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5432,7 +5523,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -5445,7 +5535,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -5454,7 +5543,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -5463,7 +5551,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5481,7 +5568,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -5505,7 +5591,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -5514,7 +5599,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -5523,7 +5607,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5542,7 +5625,6 @@
             {
                 {
                     \percStaff
-                     \bar "]" 
                     \compressFullBarRests
                     \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                     \accidentalStyle neo-modern-cautionary
@@ -5572,7 +5654,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -5598,7 +5679,6 @@
                     }
                 }
                 {
-                     \bar "]" 
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \mark #4
@@ -5666,7 +5746,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5
@@ -5685,7 +5764,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -5705,7 +5783,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -5771,7 +5848,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5788,7 +5864,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -5808,7 +5883,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #3
@@ -5825,7 +5899,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #4
@@ -5834,7 +5907,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #5
@@ -5855,7 +5927,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -5868,7 +5939,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -5876,7 +5946,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -5926,7 +5995,6 @@
                         <c''' c''''>4
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5
@@ -6021,7 +6089,6 @@
                 {
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
@@ -6035,7 +6102,6 @@
                     }
                     {
                         {
-                             \bar "]" 
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #3
@@ -6043,7 +6109,6 @@
                         }
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -6073,7 +6138,6 @@
                         <d, g,>2
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5
@@ -6125,7 +6189,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -6523,7 +6586,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -6812,7 +6874,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -7151,7 +7212,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -7463,7 +7523,6 @@
                 }
                 {
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \tempo \markup \fontsize #4 {  \note #"4" #UP "= 96 ca"  }
                         \accidentalStyle neo-modern-cautionary
@@ -7585,7 +7644,6 @@
                         r4
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #4
@@ -7615,7 +7673,6 @@
                         d2
                     }
                     {
-                         \bar "]" 
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \mark #5

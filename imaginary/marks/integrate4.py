@@ -538,7 +538,7 @@ def score4(lib):
             main_seg = segs[0]
             # for next_seg in segs[1:]:
             #     main_seg += next_seg
-            main_seg.rehearsal_mark_number = 15
+            main_seg.rehearsal_mark_number = 13
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 96
 

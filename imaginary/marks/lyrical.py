@@ -1,7 +1,7 @@
 import abjad, calliope
 
 from imaginary.stories import short_block
-from imaginary.libraries import home, counter, bass, drone, pitch_ranges
+from imaginary.libraries import home, counter, bass, drone, pitch_ranges, drum
 from imaginary.fabrics import instrument_groups, melody, pad, pizz_flutter, pulse, staggered_swell
 from imaginary.scores.score import ImaginaryScore
 from imaginary.stories import library
@@ -245,6 +245,7 @@ def to_lib(lib):
         home.to_lib(lib)
         counter.to_lib(lib)
         bass.to_lib(lib)
+        drum.to_lib(lib)
         lib.add(block0, block1, block2, block3, score_short, namespace="lyrical")
         lib.mark_loaded("lyrical")
 

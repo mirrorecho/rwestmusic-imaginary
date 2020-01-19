@@ -279,7 +279,8 @@ def score1(lib):
         tag_all_note_events = ("-",),
         selectable_start_beat=6*4,
         func = lambda x: x.with_only("cells", 8,9,10,11,12,13,14,15,16
-                ).crop("events",2)
+                ).crop("events",2).eps(
+                0, "arco")()
               # ).bookend_pad(0,1)
 
         )

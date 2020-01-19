@@ -19,197 +19,213 @@
     {
         {
             \clef "percussion"
-            \tweak style #'cross
-            a'16
+            <
+                \tweak style #'cross
+                e
+                g
+                b
+            >16
             [
-            d'16
-            d'8
+            b16
+            b8
             ]
             \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
+            e8
             [
-            d'16
-            d'16
+            f'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            e'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            <g f'>16
+            e'16
             ]
             <
                 \tweak style #'cross
                 e
                 g
-                d'
-            >8
+                b
+            >16
             [
-            \tweak style #'cross
-            a'8
+            b16
+            b8
             ]
             \tweak style #'cross
-            a'16
+            e8
             [
-            d'16
-            d'8
+            f'8
             ]
             \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
+            e8
             [
-            d'16
-            d'16
-            ]
-            <
-                \tweak style #'cross
-                e
-                g
-                d'
-            >8
-            [
-            \tweak style #'cross
-            a'8
+            e'8
             ]
             \tweak style #'cross
-            a'16
+            e8
             [
-            d'16
-            d'8
-            ]
-            \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
-            [
-            d'16
-            d'16
+            <g f'>16
+            e'16
             ]
             <
                 \tweak style #'cross
                 e
                 g
-                d'
-            >8
+                b
+            >16
             [
-            \tweak style #'cross
-            a'8
+            b16
+            b8
             ]
             \tweak style #'cross
-            a'16
+            e8
             [
-            d'16
-            d'8
+            f'8
             ]
             \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
+            e8
             [
-            d'16
-            d'16
-            ]
-            <
-                \tweak style #'cross
-                e
-                g
-                d'
-            >8
-            [
-            \tweak style #'cross
-            a'8
+            e'8
             ]
             \tweak style #'cross
-            a'16
+            e8
             [
-            d'16
-            d'8
-            ]
-            \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
-            [
-            d'16
-            d'16
+            <g f'>16
+            e'16
             ]
             <
                 \tweak style #'cross
                 e
                 g
-                d'
-            >8
+                b
+            >16
             [
-            \tweak style #'cross
-            a'8
+            b16
+            b8
             ]
             \tweak style #'cross
-            a'16
+            e8
             [
-            d'16
-            d'8
+            f'8
             ]
             \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
+            e8
             [
-            d'16
-            d'16
-            ]
-            <
-                \tweak style #'cross
-                e
-                g
-                d'
-            >8
-            [
-            \tweak style #'cross
-            a'8
+            e'8
             ]
             \tweak style #'cross
-            a'16
+            e8
             [
-            d'16
-            d'8
-            ]
-            \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
-            [
-            d'16
-            d'16
+            <g f'>16
+            e'16
             ]
             <
                 \tweak style #'cross
                 e
                 g
-                d'
-            >8
+                b
+            >16
             [
-            \tweak style #'cross
-            a'8
+            b16
+            b8
             ]
             \tweak style #'cross
-            a'16
+            e8
             [
-            d'16
-            d'8
+            f'8
             ]
             \tweak style #'cross
-            e4
-            \tweak style #'cross
-            a'8
+            e8
             [
-            d'16
-            d'16
+            e'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            <g f'>16
+            e'16
             ]
             <
                 \tweak style #'cross
                 e
                 g
-                d'
-            >8
+                b
+            >16
             [
+            b16
+            b8
+            ]
             \tweak style #'cross
-            a'8
+            e8
+            [
+            f'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            e'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            <g f'>16
+            e'16
+            ]
+            <
+                \tweak style #'cross
+                e
+                g
+                b
+            >16
+            [
+            b16
+            b8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            f'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            e'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            <g f'>16
+            e'16
+            ]
+            <
+                \tweak style #'cross
+                e
+                g
+                b
+            >16
+            [
+            b16
+            b8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            f'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            e'8
+            ]
+            \tweak style #'cross
+            e8
+            [
+            <g f'>16
+            e'16
             ]
         }
     }

@@ -30,6 +30,19 @@ def score3(lib):
     # TO DO: add ranges
     # =======================================================
     # throuhout pad / texture
+
+    drum_set = ImaginarySegment(
+        lib("drum_dark"),
+        get_improv_line(
+            rhythm=(1,)*4,
+            times=9),
+        get_improv_line(
+            instruction="improv",
+            rhythm=(0.5,)*8,
+            times=1)
+        )
+    s.staves["ooa_drum_set"].append(drum_set)
+
     s.extend_from(lambda_segment.LambdaSegment(
         sb3.with_only("high_drones",),
         fabric_staves=("piano1", ),
@@ -93,7 +106,7 @@ def score3(lib):
         osti_cell_count = 12,
     )
     for n in mallets_osti.note_events:
-        n.pitch = (n.pitch, n.pitch+12)
+        n.pitch = (n.pitch, n.pitch-12)
     s.extend_from(ooa_strings_pulses,ooa_strings_pulses2,ooa_strings_pulses3,
         mallets_osti)
     # =======================================================
@@ -225,9 +238,11 @@ def score3(lib):
 
     s.fill_rests(beats=11*4)
     # anything here?
+    s.fill_rests(beats=12*4)
+
     s.fill_rests()
 
-    s.fill_rests(beats=12*4)
+
     for staff in s.staves:
         if segs := staff.segments:
             main_seg = segs[0]

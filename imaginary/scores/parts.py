@@ -42,12 +42,16 @@ def make_part(section, sc, title="",
         if staff_name == "ooa_bari_sax":
             part.staves[0].clef = "treble"
 
+        if staff_name in ("ooa_guitar", "ooa_bass_guitar", "cco_bass"):
+            transpose_me = False
+        else:
+            transpose_me = True
 
         calliope.illustrate(part,
             open_pdf=False,
             filename=my_name + "_" + section + "_part",
             title = title,
-            transpose_me=True,
+            transpose_me=transpose_me,
             part_name=part_name,
 
             )
@@ -91,9 +95,48 @@ if __name__ == '__main__':
     make_parts(
         "intro",
         from_staves = (
+            # "ooa_flute",
+            # "ooa_clarinet",
+            # "ooa_alto_saxes",
+            # "ooa_tenor_sax",
+            # "ooa_bari_sax",
+            # "ooa_bassoon",
+            # "ooa_horn",
+            # "ooa_trumpet",
+            # "ooa_trombone",
+            # "ooa_mallets",
+            # "ooa_drum_set",
+            # "ooa_guitar",
+            # "ooa_bass_guitar",
+            # "ooa_violins",
+            # "ooa_cellos",
+
+            # "cco_flutes",
+            # "cco_oboes",
+            # "cco_clarinets",
+            # "cco_bassoon",
+            # "cco_horn",
+            # "cco_trumpet",
+            # "cco_trombone",
+            # "cco_harp",
+            # "cco_percussion",
+            # "cco_bass",
+
+        ),
+        from_staff_groups = (
+    #         "cco_violin_i",
+    #         "cco_violin_ii",
+            "cco_viola",
+    #         "cco_cello",
+        )
+        )
+    make_parts(
+        "integrate",
+        from_staves = (
             "ooa_flute",
             "ooa_clarinet",
-            "ooa_alto_saxes",
+            "ooa_alto_sax1",
+            "ooa_alto_sax2",
             "ooa_tenor_sax",
             "ooa_bari_sax",
             "ooa_bassoon",
@@ -104,70 +147,34 @@ if __name__ == '__main__':
             "ooa_drum_set",
             "ooa_guitar",
             "ooa_bass_guitar",
-            "ooa_violins",
-            "ooa_cellos",
+            "ooa_violin1",
+            "ooa_violin2",
+            "ooa_cello1",
+            "ooa_cello2",
 
-            "cco_flutes",
-            "cco_oboes",
-            "cco_clarinets",
+            "cco_flute1",
+            "cco_flute2",
+            "cco_oboe1",
+            "cco_oboe2",
+            "cco_clarinet1",
+            "cco_clarinet2",
             "cco_bassoon",
             "cco_horn",
             "cco_trumpet",
             "cco_trombone",
-            "cco_harp",
+            "cco_violin_i",
+            "cco_violin_ii",
+            "cco_viola",
+            "cco_cello",
             "cco_percussion",
             "cco_bass",
 
         ),
         from_staff_groups = (
-            "cco_violin_i",
-            "cco_violin_ii",
-            "cco_viola",
-            "cco_cello",
+            "cco_piano",
+            "cco_harp",
         )
         )
-    # make_parts(
-    #     "lyrical",
-    #     from_staves = (
-    #         "ooa_flute",
-    #         "ooa_clarinet",
-    #         "ooa_alto_sax1",
-    #         "ooa_alto_sax2",
-    #         "ooa_tenor_sax",
-    #         "ooa_bari_sax",
-    #         "ooa_bassoon",
-    #         "ooa_horn",
-    #         "ooa_trumpet",
-    #         "ooa_trombone",
-    #         "ooa_mallets",
-    #         "ooa_drum_set",
-    #         "ooa_guitar",
-    #         "ooa_bass_guitar",
-    #         "ooa_violin1",
-    #         "ooa_violin2",
-    #         "ooa_cello1",
-    #         "ooa_cello2",
-
-    #         "cco_flutes",
-    #         "cco_oboes",
-    #         "cco_clarinets",
-    #         "cco_bassoon",
-    #         "cco_horn",
-    #         "cco_trumpet",
-    #         "cco_trombone",
-    #         "cco_violin_i",
-    #         "cco_violin_ii",
-    #         "cco_viola",
-    #         "cco_cello",
-    #         "cco_percussion",
-    #         "cco_bass",
-
-    #     ),
-    #     from_staff_groups = (
-    #         "cco_piano"
-    #         "cco_harp",
-    #     )
-    #     )
 
     # make_parts(
     #     "rock",

@@ -25,10 +25,10 @@ def bass_artics(n):
 def score2(lib):
     s = score.ImaginaryScore()
     sb = lib("rock_block2")
-    # s = sb().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
 
     rim_shots = ImaginaryCell(rhythm=(1,1,1,1), pitches=(2,2,2,2))
@@ -44,6 +44,29 @@ def score2(lib):
             fabric_staves = ("ooa_drum_set",),
             func = lambda x: x,
             )
+
+    cco_perc1 = osti.Osti(
+        fabric_staves = ("cco_percussion",),
+        osti_pulse_duration = 0.5,
+        osti_cell_length = 8,
+        osti_cell_count = 9,
+        func = lambda x: x.eps(0, "mf")()
+        )
+    cco_perc2 = lambda_segment.LambdaSegment(
+        sb.with_only("high_rhythm"),
+        fabric_staves = ("cco_percussion",),
+        func = lambda x: x.with_only("cells",9,10,11,12,13,14,15),
+        ) 
+    cco_perc3 = osti.Osti(
+        fabric_staves = ("cco_percussion",),
+        osti_pulse_duration = 0.5,
+        osti_cell_length = 8,
+        osti_cell_count = 3,
+        func = lambda x: x.eps(0, "mf")()
+        )
+    cco_perc3.cells[-2].note_events[0].tag("\\<")
+    cco_perc3.note_events[-1].tag("f")
+    s.extend_from(cco_perc1, cco_perc2, cco_perc3)
 
 
     riffs_block = short_block.ChordsToSegmentBlock(

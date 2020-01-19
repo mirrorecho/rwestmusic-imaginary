@@ -6,6 +6,7 @@
 \header {
     tagline = ##f
     composer = \markup { "Randall West" }
+    title = \markup { "Memory Bubbles III." }
 }
 
 \layout {}
@@ -562,7 +563,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 14
                         }
                     }
@@ -687,6 +688,9 @@
                         \ff
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -1244,7 +1248,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -1510,7 +1514,7 @@
                         ]
                         )
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -2032,7 +2036,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -2282,6 +2286,9 @@
                         ]
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_alto_sax2"
@@ -2802,7 +2809,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -3029,6 +3036,9 @@
                         \ff
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -3552,7 +3562,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -3783,6 +3793,9 @@
                         \ff
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -4299,7 +4312,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 10
                         }
                     }
@@ -4582,6 +4595,9 @@
                         \ff
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -5120,7 +5136,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 10
                         }
                     }
@@ -5441,6 +5457,9 @@
                         ]
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
             >>
@@ -5827,7 +5846,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -6005,6 +6024,9 @@
                         \ff
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -6395,7 +6417,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 2
                         }
                         r2
@@ -6589,6 +6611,9 @@
                         ]
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -6901,7 +6926,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -7173,7 +7198,7 @@
                         r4
                         r2
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -7633,7 +7658,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         c'8
                         \f
                         [
@@ -7831,6 +7856,9 @@
                         :32
                         ef'''1
                         :32
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -8844,16 +8872,645 @@
                         \fermata
                         r2
                         {
-                            R1 * 16
+                            R1 * 1
                         }
                     }
                     {
-                        {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #10
-                            R1 * 30
-                        }
+                        \accidentalStyle neo-modern-cautionary
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (6) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (7) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (8) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (9) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (10) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (11) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (12) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (13) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (14) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                    }
+                    {
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #9
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { simile }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (6) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (7) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (8) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (9) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (10) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (11) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                    }
+                    {
+                        \once \hide Stem
+                        \accidentalStyle neo-modern-cautionary
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { "ad lib with rolls" }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (2) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (3) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (4) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (5) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (6) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (7) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        ^ \markup { (8) }
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
+                        \once \hide Stem
+                        \tweak style #'slash
+                        c'4
                     }
                 }
             >>
@@ -9328,8 +9985,8 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
-                            R1 * 30
+                            \mark #9
+                            R1 * 32
                         }
                     }
                 }
@@ -9584,7 +10241,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 4
                         }
                         bf,2
@@ -9719,7 +10376,7 @@
                         r8
                         ]
                         {
-                            R1 * 16
+                            R1 * 18
                         }
                     }
                 }
@@ -9811,6 +10468,7 @@
                         \accidentalStyle neo-modern-cautionary
                         c'8
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         f'8
                         -\tenuto
@@ -10229,7 +10887,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                         a''2
@@ -10423,7 +11081,7 @@
                         r4
                         r2
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -10512,6 +11170,7 @@
                         \accidentalStyle neo-modern-cautionary
                         f'8
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         c'8
                         -\tenuto
@@ -10891,7 +11550,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                         c''2
@@ -11072,7 +11731,7 @@
                         r4
                         r2
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -11446,7 +12105,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                         f2
@@ -11656,7 +12315,7 @@
                         g'4
                         \f
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -11982,7 +12641,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                         d2
@@ -12196,7 +12855,7 @@
                         \f
                         ]
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -12641,7 +13300,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -12744,7 +13403,7 @@
                         )
                         r2
                         {
-                            R1 * 3
+                            R1 * 5
                         }
                     }
                 }
@@ -13186,7 +13845,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -13302,7 +13961,7 @@
                         )
                         r2
                         {
-                            R1 * 3
+                            R1 * 5
                         }
                     }
                 }
@@ -13647,7 +14306,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 14
                         }
                     }
@@ -13903,6 +14562,9 @@
                         \ff
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -14248,7 +14910,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 14
                         }
                     }
@@ -14509,6 +15171,9 @@
                         ]
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -14975,7 +15640,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -15259,7 +15924,7 @@
                         bf''4
                         )
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -15719,7 +16384,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -16006,7 +16671,7 @@
                         ]
                         )
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -16365,7 +17030,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 14
                         }
                     }
@@ -16641,6 +17306,9 @@
                         ]
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
             >>
@@ -16946,7 +17614,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -17178,7 +17846,7 @@
                         r4
                         r2
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -17547,7 +18215,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         ef''2
                         \f
                         ^ \markup { solo }
@@ -17766,6 +18434,9 @@
                         ]
                         )
                         r2
+                        {
+                            R1 * 2
+                        }
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -18028,7 +18699,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 6
                         }
                     }
@@ -18255,7 +18926,7 @@
                         r4
                         r2
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -18267,6 +18938,7 @@
             }
             {
                 {
+                    \percStaff
                     \compressFullBarRests
                     \tempo \markup \fontsize #1 {  \note #"4" #UP "= 160 ca"  }
                     \accidentalStyle neo-modern-cautionary
@@ -18818,12 +19490,333 @@
                     ]
                 }
                 {
-                    {
-                        \compressFullBarRests
-                        \accidentalStyle neo-modern-cautionary
-                        \mark #8
-                        R1 * 19
-                    }
+                    \accidentalStyle neo-modern-cautionary
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    r8
+                    [
+                    <c' c''>8
+                    ]
+                    <c' c''>16
+                    [
+                    <c' c''>16
+                    <c' c''>8
+                    ]
+                }
+                {
+                    \accidentalStyle neo-modern-cautionary
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    \<
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    \f
+                    ]
                 }
                 {
                     \compressFullBarRests
@@ -18848,16 +19841,675 @@
                     \fermata
                     r2
                     {
-                        R1 * 16
+                        R1 * 1
                     }
                 }
                 {
-                    {
-                        \compressFullBarRests
-                        \accidentalStyle neo-modern-cautionary
-                        \mark #10
-                        R1 * 30
-                    }
+                    \accidentalStyle neo-modern-cautionary
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                }
+                {
+                    \once \hide Stem
+                    \compressFullBarRests
+                    \accidentalStyle neo-modern-cautionary
+                    \mark #9
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { "ad lib" }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (2) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (3) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (4) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (5) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (6) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (7) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (8) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (9) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (10) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (11) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (12) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (13) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (14) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (15) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (16) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (17) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (18) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (19) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (20) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (21) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (22) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (23) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (24) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                }
+                {
+                    \once \hide Stem
+                    \accidentalStyle neo-modern-cautionary
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { "ad lib with rolls" }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (2) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (3) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (4) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (5) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (6) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (7) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    ^ \markup { (8) }
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
+                    \once \hide Stem
+                    \tweak style #'slash
+                    c'4
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -19318,7 +20970,6 @@
                         \accidentalStyle neo-modern-cautionary
                         b'4
                         \f
-                        ^ \markup { pizz }
                         r4
                         r2
                         r2
@@ -19343,7 +20994,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         f''8
                         \f
                         [
@@ -19442,7 +21093,7 @@
                         a8
                         ]
                         {
-                            R1 * 24
+                            R1 * 26
                         }
                     }
                 }
@@ -19563,9 +21214,9 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \clef "bass"
                         c,4
                         \f
-                        ^ \markup { pizz }
                         r4
                         r2
                         r2
@@ -19591,8 +21242,8 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
-                            R1 * 30
+                            \mark #9
+                            R1 * 32
                         }
                     }
                 }
@@ -20518,7 +22169,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         <df' ef' f' af'>4
                         \f
                         r4
@@ -20618,7 +22269,7 @@
                         <cs'' e'' a''>4
                         r4
                         {
-                            R1 * 10
+                            R1 * 12
                         }
                     }
                 }
@@ -21446,6 +23097,7 @@
                     }
                     {
                         \accidentalStyle neo-modern-cautionary
+                        \clef "bass"
                         <b,, b,>4
                         -\staccato
                         <d, d>4
@@ -21522,7 +23174,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         <g,, f,>4
                         -\staccato
                         <bf,, af,>4
@@ -21666,7 +23318,7 @@
                         <cs' e' a'>4
                         r4
                         {
-                            R1 * 10
+                            R1 * 12
                         }
                     }
                 }
@@ -21984,7 +23636,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         bf1
                         :32
                         \pp
@@ -22133,7 +23785,7 @@
                         ]
                         r2
                         {
-                            R1 * 3
+                            R1 * 5
                         }
                     }
                 }
@@ -22448,7 +24100,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         bf1
                         :32
                         \pp
@@ -22599,7 +24251,7 @@
                         ]
                         r2
                         {
-                            R1 * 3
+                            R1 * 5
                         }
                     }
                 }
@@ -22958,7 +24610,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         ef1
                         :32
                         \pp
@@ -23156,7 +24808,7 @@
                         r4
                         r2
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -23474,7 +25126,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #10
+                        \mark #9
                         gs,1
                         :32
                         \pp
@@ -23654,7 +25306,7 @@
                         \f
                         ]
                         {
-                            R1 * 2
+                            R1 * 4
                         }
                     }
                 }
@@ -23946,7 +25598,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #10
+                            \mark #9
                             R1 * 11
                         }
                     }
@@ -23995,6 +25647,9 @@
                         ef2
                         ef1
                         \ff
+                        {
+                            R1 * 2
+                        }
                     }
                 }
             >>

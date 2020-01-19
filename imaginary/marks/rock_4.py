@@ -10,6 +10,10 @@ from imaginary.stories import short_block, library
 from imaginary.stories.fabric import ImaginaryFabric
 from imaginary.marks import rock
 from imaginary.stories import artics
+from imaginary.stories.library_material import (
+    LibraryMaterial, ImaginarySegment, ImaginaryLine, ImaginaryPhrase, 
+    ImaginaryCell, get_improv_line
+    )
 
 # SHOULD AVERAGE 20 bars
 # TEMPO = 160+ !!!!!!
@@ -44,6 +48,57 @@ def score4(lib):
 
     # =======================================================#
     # bass line carries all the way through...
+
+    s.extend_from(
+        lambda_segment.LambdaSegment(
+            calliope.SegmentBlock(ImaginarySegment(
+                get_improv_line(
+                    instruction = "ad lib",
+                    rhythm=(1,)*4,
+                    times=24)
+                )),
+            fabric_staves = ("cco_percussion",),
+            func = lambda x: x.eps("\\percStaff")(),
+            )
+        )
+    s.extend_from(
+        lambda_segment.LambdaSegment(
+            calliope.SegmentBlock(ImaginarySegment(
+                get_improv_line(
+                    instruction = "ad lib with rolls",
+                    rhythm=(1,)*4,
+                    times=8)
+                )),
+            fabric_staves = ("cco_percussion",),
+            func = lambda x: x,
+            )
+        )
+    s.extend_from(
+        lambda_segment.LambdaSegment(
+            calliope.SegmentBlock(ImaginarySegment(
+                lib("rock_rhythm1"),
+                get_improv_line(
+                    rhythm=(1,)*8,
+                    times=11)
+                )),
+            fabric_staves = ("ooa_drum_set",),
+            func = lambda x: x,
+            )
+        )
+    s.extend_from(
+        lambda_segment.LambdaSegment(
+            calliope.SegmentBlock(ImaginarySegment(
+                get_improv_line(
+                    instruction = "ad lib with rolls",
+                    rhythm=(1,)*4,
+                    times=8)
+                )),
+            fabric_staves = ("ooa_drum_set",),
+            func = lambda x: x,
+            )
+        )
+
+
     bass_line = lambda_segment.LambdaSegment(
         sb.with_only("bass_line",), 
         fabric_staves=("ooa_bass_guitar",),
@@ -569,7 +624,7 @@ def score4(lib):
             main_seg = segs[0]
             # for next_seg in segs[1:]:
             #     main_seg += next_seg
-            main_seg.rehearsal_mark_number = 10
+            main_seg.rehearsal_mark_number = 9
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 160
 

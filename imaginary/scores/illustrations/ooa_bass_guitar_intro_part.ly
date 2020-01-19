@@ -27,8 +27,8 @@
         {
             {
                 \numericTimeSignature
-                \freePad
                 \break
+                \freePad
                 \tempo \markup \fontsize #1 {  \note #"4" #UP "= 72 ca, freely, 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \set Staff.instrumentName = \markup { "Bass Guitar" }
@@ -50,15 +50,15 @@
                 s4
                 s4
                 s4
-                \freePad
                 \freeRestArrow
+                \freePad
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \freePad
                 \break
+                \freePad
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -77,15 +77,15 @@
                 s4
                 s4
                 s4
-                \freePad
                 \freeRestArrow
+                \freePad
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \freePad
                 \break
+                \freePad
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -104,15 +104,15 @@
                 s4
                 s4
                 s4
-                \freePad
                 \freeRestArrow
+                \freePad
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \freePad
                 \break
+                \freePad
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -120,7 +120,7 @@
                 s4
                 \normalStaff
                 s16
-                c'1
+                c1
                 \mp
                 s16
                 \freePad
@@ -135,15 +135,15 @@
                 r4
                 s4
                 s4
-                \freePad
                 \freeRestArrow
+                \freePad
                 r4
                 s4
             }
             {
                 \numericTimeSignature
-                \freePad
                 \break
+                \freePad
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -162,15 +162,15 @@
                 s4
                 s4
                 s4
-                \freePad
                 \freeRestArrow
+                \freePad
                 r4
                 s8
             }
             {
                 \numericTimeSignature
-                \freePad
                 \break
+                \freePad
                 \tempo \markup \fontsize #1 {  " 20'' "  }
                 \accidentalStyle neo-modern-cautionary
                 \time 8/1
@@ -182,16 +182,16 @@
                 s16
                 \freePad
                 s8
-                \bar ".|:"
                 \normalStaff
+                \bar ".|:"
                 s8.
-                e'4
+                e4
                 \pp
                 \<
                 s16
-                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 \bar ":|."
                 \freeContinue
+                \once \override TextScript.extra-offset = #'( 1 . 0 )
                 s4
                 ^ \markup { "repeat constant pulse, with drum set" }
                 \once \hide Rest
@@ -217,8 +217,8 @@
                 s4
                 s4
                 s4
-                \freePad
                 \freeRestArrow
+                \freePad
                 r4
                 s4
             }

@@ -168,6 +168,24 @@ def score3(lib):
 
     s.fill_rests(fill_to="ooa_flute")
 
+    drum_set = ImaginarySegment(
+        lib("drum_dark").eps(0,"mf")(),
+        get_improv_line(
+            rhythm=(1,)*4,
+            times=14),
+        )
+    s.staves["ooa_drum_set"].append(drum_set)
+
+    cco_perc1 = osti.Osti(
+        fabric_staves = ("cco_percussion",),
+        osti_pulse_duration = 0.5,
+        osti_cell_length = 8,
+        osti_cell_count = 15,
+        func = lambda x: x.eps(0, "mf")()
+        )
+    s.extend_from(cco_perc1)
+
+
     # =======================================================
     piano_osti2_3 = lambda_segment.LambdaSegment(
         sb.with_only("melody_line2",),
@@ -182,7 +200,8 @@ def score3(lib):
         func = lambda x: x.with_only("cells",*list(range(12,30)),
             ).mask("cells",20,21 #).mask("events", 5,9,-1,-2,-3,-4
             ).t(-12).e_smear_after(*[i*2 for i in range(34)], extend_beats=0.5, cover_notes=True
-            ).stack_p([(0,-12,)]).bookend_pad(0,2),
+            ).stack_p([(0,-12,)]).bookend_pad(0,2).eps(
+            0,"bass")(),
         )
     
     mallets_riff = lambda_segment.LambdaSegment(
@@ -207,6 +226,9 @@ def score3(lib):
         # func = lambda x: x.crop("cells",1),
         # func = lambda x: x.only_first("cells",8)
         )
+    pizz1.staves["harp1","harp2"].note_events.untag("pizz")
+    pizz1.staves["harp2"].note_events[0].tag("bass")
+
 
     brass_stacc = lambda_segment.LambdaSegment(
         sb.with_only("chords"),
@@ -325,7 +347,7 @@ def score3(lib):
     # =======================================================
     s.fill_rests()
 
-    s.remove(s.staff_groups["short_score"])
+    # s.remove(s.staff_groups["short_score"])
 
     for staff in s.staves:
         # staff.phrases.transformed(calliope.Label())

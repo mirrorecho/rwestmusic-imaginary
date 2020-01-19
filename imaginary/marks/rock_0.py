@@ -37,7 +37,7 @@ def score0(lib):
         sb.with_only("high_rhythm"),
         fabric_staves = ("cco_percussion",),
         tag_events = {0:("mp", "to cowbell")},
-        func = lambda x: x.ops("note_events")(0,"cowbell","mp")(),
+        func = lambda x: x.eps(0,"\\percStaff")().ops("note_events")(0,"cowbell","mp")(),
         # func = lambda x: x.only_first("cells",8)
         )
     low_drums.staves["ooa_drum_set"].segments[0].append(
@@ -90,7 +90,7 @@ def score0(lib):
         ranges=pitch_ranges.MID_RANGES,
         fabric_staves = instrument_groups.get_instruments("strings"),
         mask_staves = ("cco_bass",),
-        tag_events = {0:("mf", "pizz")},
+        tag_events = {0:("mf", "pizz", )},
         assign_pitches_from_selectable = True,
         selectable_start_beat = 16*4,
         func = lambda x: x.crop("cells",1),

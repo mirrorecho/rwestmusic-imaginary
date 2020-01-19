@@ -69,8 +69,8 @@
         {
             \accidentalStyle neo-modern-cautionary
             r8
-            ^ \markup { c.0 }
             ^ \markup { p.0 }
+            ^ \markup { c.0 }
             [
             <c' g'>8
             ]
@@ -123,8 +123,8 @@
             ]
             )
             r4
-            ^ \markup { c.4 }
             ^ \markup { p.2 }
+            ^ \markup { c.4 }
             c''4
             (
             ef''2
@@ -219,8 +219,8 @@
         {
             \accidentalStyle neo-modern-cautionary
             r4
-            ^ \markup { c.0 }
             ^ \markup { p.0 }
+            ^ \markup { c.0 }
             <c' c''>4
             (
             <ef' ef''>2
@@ -258,8 +258,8 @@
             <ef' ef''>2
             )
             r8
-            ^ \markup { c.4 }
             ^ \markup { p.2 }
+            ^ \markup { c.4 }
             [
             f''8
             ]
@@ -364,8 +364,8 @@
                 R1 * 1
             }
             ef''16
-            ^ \markup { c.2 }
             ^ \markup { p.0 }
+            ^ \markup { c.2 }
             [
             (
             d''8.
@@ -384,8 +384,8 @@
             c''4
             )
             af''16
-            ^ \markup { c.4 }
             ^ \markup { p.1 }
+            ^ \markup { c.4 }
             [
             (
             g''8.
@@ -443,8 +443,8 @@
             c'''2
             )
             c'''16
-            ^ \markup { p.4 }
             ^ \markup { c.10 }
+            ^ \markup { p.4 }
             [
             (
             bf''8.
@@ -537,8 +537,8 @@
                 R1 * 1
             }
             <bf, bf>4
-            ^ \markup { c.1 }
             ^ \markup { p.0 }
+            ^ \markup { c.1 }
             ~
             (
             <bf, bf>8
@@ -592,8 +592,8 @@
             <bf, bf>2
             )
             <f f'>4
-            ^ \markup { c.5 }
             ^ \markup { p.2 }
+            ^ \markup { c.5 }
             (
             <ef ef'>4
             r16
@@ -654,8 +654,8 @@
             <bf, bf>4
             )
             <bf, bf>4
-            ^ \markup { p.4 }
             ^ \markup { c.9 }
+            ^ \markup { p.4 }
             (
             <c c'>4
             <cs cs'>4
@@ -711,8 +711,8 @@
         {
             \accidentalStyle neo-modern-cautionary
             <c''' c''''>8
-            ^ \markup { c.0 }
             ^ \markup { p.0 }
+            ^ \markup { c.0 }
             [
             (
             <c''' c''''>8
@@ -763,8 +763,8 @@
             <c''' c''''>4
             )
             <c''' c''''>8
-            ^ \markup { c.4 }
             ^ \markup { p.4 }
+            ^ \markup { c.4 }
             [
             (
             <c''' c''''>8
@@ -810,24 +810,24 @@
             <cs''' cs''''>4
             )
             <cs''' cs''''>4
-            ^ \markup { p.8 }
             ^ \markup { c.8 }
+            ^ \markup { p.8 }
             (
             <cs''' cs''''>4
             <cs''' cs''''>4
             <cs''' cs''''>4
             )
             <cs''' cs''''>4
-            ^ \markup { p.9 }
             ^ \markup { c.9 }
+            ^ \markup { p.9 }
             (
             <cs''' cs''''>4
             <cs''' cs''''>4
             <cs''' cs''''>4
             )
             <cs''' cs''''>4
-            ^ \markup { p.10 }
             ^ \markup { c.10 }
+            ^ \markup { p.10 }
             (
             <cs''' cs''''>4
             <cs''' cs''''>4
@@ -863,8 +863,8 @@
         {
             \accidentalStyle neo-modern-cautionary
             <g,, g,>2
-            ^ \markup { c.0 }
             ^ \markup { p.0 }
+            ^ \markup { c.0 }
             ~
             (
             <g,, g,>4
@@ -890,8 +890,8 @@
             ^ \markup { p.3 }
             ^ \markup { c.3 }
             <af,, af,>2
-            ^ \markup { c.4 }
             ^ \markup { p.4 }
+            ^ \markup { c.4 }
             <g,, g,>2
             ^ \markup { p.5 }
             ^ \markup { c.5 }
@@ -902,19 +902,19 @@
             ^ \markup { p.7 }
             ^ \markup { c.7 }
             <af,, af,>2
-            ^ \markup { p.8 }
             ^ \markup { c.8 }
+            ^ \markup { p.8 }
             <af,, af,>2
-            ^ \markup { p.9 }
             ^ \markup { c.9 }
+            ^ \markup { p.9 }
             ~
             (
             <af,, af,>4
             <af,, af,>4
             )
             <af,, af,>2
-            ^ \markup { p.10 }
             ^ \markup { c.10 }
+            ^ \markup { p.10 }
             ~
             (
             <af,, af,>4
@@ -929,20 +929,20 @@
             <af,, af,>4
             )
             <bf,, bf,>2
-            ^ \markup { c.12 }
             ^ \markup { p.12 }
+            ^ \markup { c.12 }
             <af,, af,>2
-            ^ \markup { c.13 }
             ^ \markup { p.13 }
+            ^ \markup { c.13 }
             <bf,, bf,>2
-            ^ \markup { c.14 }
             ^ \markup { p.14 }
+            ^ \markup { c.14 }
             <af,, af,>2
             ^ \markup { p.15 }
             ^ \markup { c.15 }
             <bf,, bf,>2
-            ^ \markup { p.16 }
             ^ \markup { c.16 }
+            ^ \markup { p.16 }
             <af,, af,>2
             ^ \markup { c.17 }
             ^ \markup { p.17 }
