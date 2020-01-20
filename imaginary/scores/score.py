@@ -362,6 +362,7 @@ class ImaginaryScore(calliope.Score):
         selectable_start_beat = None,
         for_only=None,
         ranges = None,
+        only_indices = None,
         # TO DO... add start beat and end beat
         ):
 
@@ -390,9 +391,9 @@ class ImaginaryScore(calliope.Score):
                 staves_ranges[staff.name] = row_ranges
 
                 note_index = 0
-                for e in staff.events:
+                for ie, e in enumerate(staff.events):
 
-                    if not e.rest:
+                    if not e.rest and (only_indices is None or ie in only_indices):
                         my_tuple = ( e, 
                             staff.name,
                             row_ranges[note_index % len(row_ranges)],

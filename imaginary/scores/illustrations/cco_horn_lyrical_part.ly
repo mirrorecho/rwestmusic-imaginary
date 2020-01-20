@@ -35,9 +35,6 @@
                     \mark #2
                     R1 * 10
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 c''1
                 \pp
                 ~

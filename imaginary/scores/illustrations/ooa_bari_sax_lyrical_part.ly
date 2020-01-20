@@ -39,12 +39,11 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #3
                     R1 * 2
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 fs''1
                 \pp
                 ~
@@ -69,12 +68,11 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #4
                     R1 * 4
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r2
                 g''2
                 \pp
@@ -84,10 +82,8 @@
                 g''4
                 \mp
                 ~
+                \>
                 g''2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r2
                 g''2
                 \p
@@ -103,7 +99,9 @@
                 }
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #5
                 r2
                 e''2
                 \pp
@@ -113,10 +111,8 @@
                 e''4
                 \mf
                 ~
+                \>
                 e''2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r2
                 a''2
                 \pp
@@ -126,10 +122,8 @@
                 a''4
                 \mf
                 ~
+                \>
                 a''2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r2
                 f''2
                 \pp

@@ -482,8 +482,9 @@ def score3(lib):
         # TO DO: WHY DOESN'T THIS WORK?????
         if segs := staff.segments:
             main_seg = segs[0]
-            # for next_seg in segs[1:]:
-            #     main_seg += next_seg
+            for next_seg in list(segs[1:]):
+                main_seg.extend(next_seg)
+                next_seg.parent.remove(next_seg)
             main_seg.rehearsal_mark_number = 14
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 96

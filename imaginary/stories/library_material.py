@@ -238,17 +238,36 @@ def get_improv_line(
     instruction="simile",
     rhythm=(1,1,1,1,),
     times=4,
+    pitches=(),
+    center_pitch = 0,
     ):
     my_line = ImaginaryLine()
     for i in range(times):
-        my_cell = ImaginaryCell(rhythm=rhythm)
+        my_cell = ImaginaryCell(
+            rhythm=rhythm,
+            pitches = [center_pitch if r>0 else "R" for r in rhythm]
+
+            )
         if instruction and i==0:
             my_cell.events[0].tag(instruction)
         else:
             my_cell.events[0].tag("(%s)" % (i+1))
-        my_cell.note_events.tag("note_head:0:slash", "\\once \\hide Stem")
+        if pitches and i==0:
+            my_cell.note_events[0].pitch = pitches
+            my_cell.note_events[0].tag("\\once \\hide Stem")
+            my_cell.note_events[1:].tag("note_head:0:slash")
+        else:
+            my_cell.note_events.tag("note_head:0:slash")
         my_line.append(my_cell)
     return my_line
+
+calliope.illustrate(
+    get_improv_line(
+        pitches=(0,5), 
+        rhythm=(1,-1,1,-1),
+        center_pitch=11), 
+        times=2
+    )
 
 
 

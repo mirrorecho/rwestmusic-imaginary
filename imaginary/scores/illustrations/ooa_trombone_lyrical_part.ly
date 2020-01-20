@@ -36,9 +36,6 @@
                     \clef "bass"
                     R1 * 10
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 a1
                 \pp
                 ~

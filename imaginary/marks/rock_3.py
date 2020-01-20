@@ -354,8 +354,9 @@ def score3(lib):
         # staff.lines.transformed(calliope.Label())
         if segs := staff.segments:
             main_seg = segs[0]
-            # for next_seg in segs[1:]:
-            #     main_seg += next_seg
+            for next_seg in list(segs[1:]):
+                main_seg.extend(next_seg)
+                next_seg.parent.remove(next_seg)
             main_seg.rehearsal_mark_number = 9
             main_seg.compress_full_bar_rests = True
 

@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     ditto, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import library
 from imaginary.stories.library_material import (
@@ -109,6 +109,15 @@ def score1(lib):
     s.extend_from(intro_melody)
 
     s.fill_rests(beats=8)
+
+    improv_fl_cl = improv.Improv(
+        sb1,
+        fabric_staves = ("ooa_flute", "ooa_clarinet"),
+        improv_times = 10,
+        selectable_start_beat=8,
+        ranges = pitch_ranges.MID_RANGES,
+        )
+    s.extend_from(improv_fl_cl)
 
     cello_drones =  lambda_segment.LambdaSegments(
         sb1.with_only("bass_drones"),
@@ -236,8 +245,9 @@ def score1(lib):
     for staff in s.staves:
         if segs := staff.segments:
             main_seg = segs[0]
-            for next_seg in segs[1:]:
-                main_seg += next_seg
+            for next_seg in list(segs[1:]):
+                main_seg.extend(next_seg)
+                next_seg.parent.remove(next_seg)
             main_seg.rehearsal_mark_number = 3
             main_seg.auto_respell()
             main_seg.compress_full_bar_rests = True
@@ -254,10 +264,11 @@ if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
     score = lib["lyrical_score1"]
-    score.remove(score.staff_groups["short_score"])
+    # score.remove(score.staff_groups["short_score"]) 
     calliope.illustrate(score, 
         as_midi=True,
-        open_midi=True)
+        # open_midi=True
+        )
 
 
 

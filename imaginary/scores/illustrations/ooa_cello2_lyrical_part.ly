@@ -44,9 +44,6 @@
                 {
                     R1 * 1
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 b1
                 \pp
                 ^ \markup { "arco, thin, spacey fx" }
@@ -103,7 +100,9 @@
                 e'2
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #3
                 d4
                 ^ \markup { pizz }
                 r4
@@ -112,9 +111,6 @@
                 r2
                 d4
                 r4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 f,1
                 ^ \markup { "arco, distorted" }
                 g,1
@@ -416,7 +412,9 @@
                 bf4
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #5
                 c'8
                 -\staccato
                 [
@@ -537,9 +535,6 @@
                 ~
                 ]
                 ef,4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 f,4
                 -\tenuto
                 c,4
@@ -572,15 +567,12 @@
                 -\tenuto
                 ef,4
                 -\tenuto
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 bf,2
                 \<
                 f,2
                 bf,1
-                \fermata
                 \f
+                \fermata
             }
         }
     >>

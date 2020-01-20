@@ -35,28 +35,22 @@
                     \mark #2
                     R1 * 6
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r2
                 e''2
                 \pp
                 \<
                 c''2
                 \mp
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
+                \>
                 r2
                 e''2
                 \pp
                 \<
                 c''2
                 \mp
-                r2
-                r1
-                r1
-                r2
+                {
+                    R1 * 3
+                }
             }
             {
                 {

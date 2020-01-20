@@ -35,9 +35,29 @@
                     \mark #2
                     R1 * 6
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
+                r4
+                r8
+                [
+                b'8
+                \pp
+                ~
+                ]
+                \<
+                b'4
+                ~
+                b'8
+                [
+                c''8
+                \mp
+                ~
+                ]
+                \>
+                c''4
+                ~
+                c''8
+                [
+                r8
+                ]
                 r4
                 r8
                 [
@@ -60,34 +80,6 @@
                 [
                 r8
                 ]
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
-                r4
-                r8
-                [
-                b'8
-                \pp
-                ~
-                ]
-                \<
-                b'4
-                ~
-                b'8
-                [
-                c''8
-                \mp
-                ~
-                ]
-                c''4
-                ~
-                c''8
-                [
-                r8
-                ]
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r4
                 e''4
                 (

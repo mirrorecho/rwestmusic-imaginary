@@ -47,7 +47,7 @@ class StaggeredSwell(ImaginaryFabric):
             my_cell.note_events[1].tag("\\>")
             # my_cell.events[-1].tag("!<>\\pp") 
 
-        return my_cell
+        return ImaginaryLine(my_cell)
 
 class StaggeredSwells(StaggeredSwell):
     cell_count=2

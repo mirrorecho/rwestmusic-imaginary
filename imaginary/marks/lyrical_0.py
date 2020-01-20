@@ -210,8 +210,9 @@ def score0(lib):
     for staff in s.staves:
         if segs := staff.segments:
             main_seg = segs[0]
-            # for next_seg in segs[1:]:
-            #     main_seg += next_seg
+            for next_seg in list(segs[1:]):
+                main_seg.extend(next_seg)
+                next_seg.parent.remove(next_seg)
             main_seg.tempo_command=""" \\note #"4" #UP "= 96 ca" """
             main_seg.rehearsal_mark_number = 2
             main_seg.auto_respell()
@@ -232,7 +233,7 @@ if __name__ == '__main__':
     calliope.illustrate(
         score,#.only_staves("ooa_flute","ooa_clarinet"),
         as_midi=True,
-        open_midi = True
+        # open_midi = True
         )
 
 

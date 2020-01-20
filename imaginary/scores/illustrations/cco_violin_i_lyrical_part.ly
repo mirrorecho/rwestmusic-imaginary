@@ -32,7 +32,7 @@
                 \set Staff.shortInstrumentName = \markup { Vln.I }
                 \set Staff.midiInstrument = #"string ensemble 1" 
                 \mark #2
-                gf''4
+                fs''4
                 \mp
                 ^ \markup { pizz }
                 r4
@@ -43,9 +43,6 @@
                 {
                     R1 * 1
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 b''4
                 \pp
                 ^ \markup { "arco, sul pont" }
@@ -59,9 +56,17 @@
                 ~
                 b''2
                 b''2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
+                e''4
+                e''4
+                ~
+                e''2
+                e''2
+                ~
+                e''4
+                e''4
+                ~
+                e''2
+                e''2
                 e''4
                 e''4
                 ~
@@ -75,21 +80,9 @@
                 e''2
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
-                e''4
-                e''4
-                ~
-                e''2
-                e''2
-                ~
-                e''4
-                e''4
-                ~
-                e''2
-                e''2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
+                \mark #3
                 a''4
                 ^ \markup { pizz }
                 r4
@@ -98,9 +91,6 @@
                 r2
                 a''4
                 r4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r4
                 f''4
                 \p
@@ -173,7 +163,9 @@
                 )
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #4
                 d''8
                 [
                 (
@@ -212,9 +204,6 @@
                 ]
                 a''2
                 )
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r4
                 g''4
                 bf''2
@@ -227,9 +216,6 @@
                 bf''2
                 g''4
                 bf''4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 c'''1
                 :32
                 \p
@@ -254,7 +240,9 @@
                 r4
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #5
                 ef''16
                 [
                 (
@@ -301,9 +289,6 @@
                 c''4
                 )
                 r2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 ef''16
                 [
                 (

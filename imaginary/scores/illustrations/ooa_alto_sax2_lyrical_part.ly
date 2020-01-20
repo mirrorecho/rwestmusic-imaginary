@@ -38,12 +38,11 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #3
                     R1 * 2
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r8
                 [
                 cs''8
@@ -73,12 +72,11 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #4
                     R1 * 4
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r8
                 [
                 g''8
@@ -92,15 +90,13 @@
                 g''2
                 \mp
                 ~
+                \>
                 g''4
                 ~
                 g''8
                 [
                 r8
                 ]
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r8
                 [
                 g''8
@@ -125,7 +121,9 @@
                 }
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #5
                 r8
                 [
                 e''8
@@ -139,15 +137,13 @@
                 e''2
                 \mf
                 ~
+                \>
                 e''4
                 ~
                 e''8
                 [
                 r8
                 ]
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r8
                 [
                 a''8
@@ -161,15 +157,13 @@
                 a''2
                 \mf
                 ~
+                \>
                 a''4
                 ~
                 a''8
                 [
                 r8
                 ]
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r8
                 [
                 b''8

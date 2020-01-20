@@ -44,9 +44,6 @@
                 {
                     R1 * 1
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 a4
                 \pp
                 ^ \markup { "arco, sul pont" }
@@ -60,9 +57,6 @@
                 ~
                 a2
                 a2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 a4
                 g4
                 ~
@@ -74,9 +68,6 @@
                 ~
                 a2
                 a2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 g4
                 a4
                 ~
@@ -90,7 +81,9 @@
                 a2
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #3
                 d4
                 ^ \markup { pizz }
                 r4
@@ -99,9 +92,6 @@
                 r2
                 g,4
                 r4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r4
                 a4
                 a,4

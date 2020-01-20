@@ -45,7 +45,9 @@
                 }
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #3
                 d4
                 r4
                 d4
@@ -53,9 +55,6 @@
                 r2
                 g4
                 r4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r4
                 d4
                 e4

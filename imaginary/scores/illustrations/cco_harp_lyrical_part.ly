@@ -61,7 +61,9 @@
                     }
                 }
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #4
                     r4
                     <g' d''>4
                     \mf
@@ -89,9 +91,6 @@
                     <bf' f''>2
                     <g' d''>4
                     <bf' f''>4
-                }
-                {
-                    \accidentalStyle neo-modern-cautionary
                     <c'' c'''>4
                     <c'' c'''>4
                     <c'' c'''>4

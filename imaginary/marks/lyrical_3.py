@@ -246,8 +246,9 @@ def score3(lib):
     for staff in s.staves:
         if segs := staff.segments:
             main_seg = segs[0]
-            for next_seg in segs[1:]:
-                main_seg += next_seg
+            for next_seg in list(segs[1:]):
+                main_seg.extend(next_seg)
+                next_seg.parent.remove(next_seg)
             main_seg.rehearsal_mark_number = 5
             main_seg.compress_full_bar_rests = True
 
@@ -267,9 +268,11 @@ def score3(lib):
 
     for staff in s.staves:
         last_event = staff.events[-1]
-        last_event.tag("fermata")       
+        last_event.tag("fermata")
         # last_event.beats = -4 if last_event.rest else 4
     s.midi_tempo = 96
+
+
     return s
 
 
@@ -284,6 +287,8 @@ if __name__ == '__main__':
     lib = library.Library()
     to_lib(lib)
     score = lib["lyrical_score3"]
+    # for seg in score.segments:
+    #     print(seg.parent.name, seg.rehearsal_mark_number)
     # score.remove(score.staff_groups["band"])
     # score.remove(score.staff_groups["short_score"])
     calliope.illustrate(score, 

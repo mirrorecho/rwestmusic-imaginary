@@ -35,9 +35,26 @@
                     \mark #2
                     R1 * 6
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
+                r8
+                [
+                b'8
+                \pp
+                ~
+                ]
+                \<
+                b'4
+                ~
+                b'4
+                d''4
+                \mp
+                ~
+                \>
+                d''4
+                ~
+                d''8
+                [
+                r8
+                ]
                 r8
                 [
                 b'8
@@ -57,32 +74,9 @@
                 [
                 r8
                 ]
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
-                r8
-                [
-                b'8
-                \pp
-                ~
-                ]
-                \<
-                b'4
-                ~
-                b'4
-                d''4
-                \mp
-                ~
-                d''4
-                ~
-                d''8
-                [
-                r8
-                ]
-                r2
-                r1
-                r1
-                r2
+                {
+                    R1 * 3
+                }
             }
             {
                 \compressFullBarRests

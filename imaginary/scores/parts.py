@@ -17,6 +17,14 @@ def make_part(section, sc, title="",
     staff_name=None, 
     staff_group_name=None,
     ):
+
+        # print("================================================================")
+        # print("================================================================")
+        # print(staff_name, len(sc.staves[staff_name]))
+        # for i,n in enumerate(sc.staves[staff_name]):
+        #     print(i, type(n), getattr(n, "rehearsal_mark_number"))
+        #     # calliope.illustrate(seg)
+
         if staff_name:
             part = PartScore(
                 sc.staves[staff_name]()
@@ -92,46 +100,46 @@ def make_parts(
 
 
 if __name__ == '__main__':
-    make_parts(
-        "intro",
-        from_staves = (
-            # "ooa_flute",
-            # "ooa_clarinet",
-            # "ooa_alto_saxes",
-            # "ooa_tenor_sax",
-            # "ooa_bari_sax",
-            # "ooa_bassoon",
-            # "ooa_horn",
-            # "ooa_trumpet",
-            # "ooa_trombone",
-            # "ooa_mallets",
-            # "ooa_drum_set",
-            # "ooa_guitar",
-            # "ooa_bass_guitar",
-            # "ooa_violins",
-            # "ooa_cellos",
+    # make_parts(
+    #     "intro",
+    #     from_staves = (
+    #         # "ooa_flute",
+    #         # "ooa_clarinet",
+    #         # "ooa_alto_saxes",
+    #         # "ooa_tenor_sax",
+    #         # "ooa_bari_sax",
+    #         # "ooa_bassoon",
+    #         # "ooa_horn",
+    #         # "ooa_trumpet",
+    #         # "ooa_trombone",
+    #         # "ooa_mallets",
+    #         # "ooa_drum_set",
+    #         # "ooa_guitar",
+    #         # "ooa_bass_guitar",
+    #         # "ooa_violins",
+    #         # "ooa_cellos",
 
-            # "cco_flutes",
-            # "cco_oboes",
-            # "cco_clarinets",
-            # "cco_bassoon",
-            # "cco_horn",
-            # "cco_trumpet",
-            # "cco_trombone",
-            # "cco_harp",
-            # "cco_percussion",
-            # "cco_bass",
+    #         # "cco_flutes",
+    #         # "cco_oboes",
+    #         # "cco_clarinets",
+    #         # "cco_bassoon",
+    #         # "cco_horn",
+    #         # "cco_trumpet",
+    #         # "cco_trombone",
+    #         # "cco_harp",
+    #         # "cco_percussion",
+    #         # "cco_bass",
 
-        ),
-        from_staff_groups = (
-    #         "cco_violin_i",
-    #         "cco_violin_ii",
-            "cco_viola",
-    #         "cco_cello",
-        )
-        )
+    #     ),
+    #     from_staff_groups = (
+    # #         "cco_violin_i",
+    # #         "cco_violin_ii",
+    #         "cco_viola",
+    # #         "cco_cello",
+    #     )
+    #     )
     make_parts(
-        "integrate",
+        "lyrical",
         from_staves = (
             "ooa_flute",
             "ooa_clarinet",

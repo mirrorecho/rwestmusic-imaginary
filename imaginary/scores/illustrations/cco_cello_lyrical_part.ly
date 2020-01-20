@@ -44,9 +44,6 @@
                 {
                     R1 * 1
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 a4
                 \pp
                 ^ \markup { "arco, sul pont" }
@@ -60,9 +57,6 @@
                 ~
                 d2
                 d2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 a4
                 a4
                 ~
@@ -74,9 +68,6 @@
                 ~
                 a2
                 d'2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 a4
                 a4
                 ~
@@ -90,7 +81,9 @@
                 a2
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #3
                 d4
                 ^ \markup { pizz }
                 r4
@@ -99,9 +92,6 @@
                 r2
                 d4
                 r4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 d2
                 \p
                 ^ \markup { "arco (normal)" }
@@ -115,10 +105,7 @@
                 d4
                 a2
                 d'2
-            }
-            {
                 {
-                    \accidentalStyle neo-modern-cautionary
                     R1 * 1
                 }
                 d2
@@ -132,9 +119,6 @@
                 d4
                 d2
                 d2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 d2
                 d4
                 d4
@@ -149,12 +133,11 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #4
                     R1 * 8
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r4
                 g4
                 \mf
@@ -189,7 +172,9 @@
                 bf2
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #5
                 r8
                 [
                 <c g>8
@@ -242,9 +227,6 @@
                 <ef ef'>8
                 ]
                 )
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r8
                 [
                 bf,8

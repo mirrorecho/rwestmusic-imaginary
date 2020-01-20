@@ -258,7 +258,9 @@
                 c''4
             }
             {
+                \compressFullBarRests
                 \accidentalStyle neo-modern-cautionary
+                \mark #5
                 c'''8
                 -\staccato
                 [
@@ -379,9 +381,6 @@
                 ~
                 ]
                 c'4
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 c'4
                 -\tenuto
                 c'4
@@ -414,15 +413,12 @@
                 -\tenuto
                 df'4
                 -\tenuto
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 df'2
                 \<
                 df'2
                 df'1
-                \fermata
                 \f
+                \fermata
             }
         }
     >>

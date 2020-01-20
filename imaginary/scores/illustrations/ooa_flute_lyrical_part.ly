@@ -47,9 +47,6 @@
                 :32
                 r4
                 r2
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 g'4
                 \p
                 ^ \markup { "normal, expressive" }

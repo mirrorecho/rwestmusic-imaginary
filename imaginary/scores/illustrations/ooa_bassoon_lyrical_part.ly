@@ -39,12 +39,11 @@
             }
             {
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
+                    \mark #3
                     R1 * 2
                 }
-            }
-            {
-                \accidentalStyle neo-modern-cautionary
                 r4
                 a4
                 \p
