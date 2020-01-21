@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     pulse_on_off_beat, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
@@ -53,6 +53,33 @@ def score3(lib):
         )
     s.staves["ooa_drum_set"].append(drum_set)
 
+
+    # # ================================================
+    # # STARTING IMPROV
+    improv_winds1 = improv.Improv(
+        sb,
+        fabric_staves = ("ooa_flute", "ooa_clarinet", "ooa_alto_sax1", "ooa_alto_sax2"),
+        improv_times = 7,
+        # selectable_start_beat=12*4,
+        ranges = pitch_ranges.MID_RANGES,
+        dynamic="mp"
+        )
+    improv_winds2 = improv.Improv(
+        sb,
+        fabric_staves = ("ooa_tenor_sax", "ooa_bari_sax"),
+        improv_times = 4,
+        selectable_start_beat=3*4 + 2,
+        bookend_beats = (3*4, 0),
+        ranges = pitch_ranges.TOP_RANGES,
+        pitch_selectable_indices = (
+            (1,3,4),
+            (0,2,5),
+            ),
+        dynamic="mp"
+        )
+    s.extend_from(
+        improv_winds1, improv_winds2,
+        )
 
 
     counter_me = lambda_segment.LambdaSegments(
@@ -212,9 +239,12 @@ def score3(lib):
         osti_pulse_duration = 1,
         osti_cell_length = 4,
         osti_cell_count = 6,
-        tag_all_note_events= ("."),
-        after_func = lambda x: x.eps(0,"mf", "arco")()
+        after_func = lambda x: x.eps(0,"mf",)()
         )
+    for st in constant_pluck2.staves:
+        if st.name in instrument_groups.get_instruments("ooa_strings"):
+            st.note_events[0].tag("arco")
+            st.note_events.tag(".")
 
     measured_trems = osti.Osti(
         sb,
@@ -314,6 +344,9 @@ def score3(lib):
         after_func = lambda x: x.ops("note_events")(
             0, "mf")()
     )
+    for n in end_doves.staves["cco_horn"].note_events[:7]:
+        n.pitch += 12
+
     end_osti = osti.Osti(
         sb,
         fabric_staves = (
@@ -482,6 +515,7 @@ def score3(lib):
         # TO DO: WHY DOESN'T THIS WORK?????
         if segs := staff.segments:
             main_seg = segs[0]
+            main_seg.tempo_command=""" Gradual Accel. ... """
             for next_seg in list(segs[1:]):
                 main_seg.extend(next_seg)
                 next_seg.parent.remove(next_seg)

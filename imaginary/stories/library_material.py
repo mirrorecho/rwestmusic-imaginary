@@ -244,9 +244,8 @@ def get_improv_line(
     my_line = ImaginaryLine()
     for i in range(times):
         my_cell = ImaginaryCell(
-            rhythm=rhythm,
+            rhythm = rhythm,
             pitches = [center_pitch if r>0 else "R" for r in rhythm]
-
             )
         if instruction and i==0:
             my_cell.events[0].tag(instruction)
@@ -259,6 +258,10 @@ def get_improv_line(
         else:
             my_cell.note_events.tag("note_head:0:slash")
         my_line.append(my_cell)
+    
+    # FOR LISTENING ONLY:
+    # my_line.note_events[1:].setattrs(pitch="R")
+
     return my_line
 
 calliope.illustrate(

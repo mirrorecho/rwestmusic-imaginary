@@ -26,13 +26,78 @@
                 }
                 {
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { Flute }
+                        \set Staff.shortInstrumentName = \markup { Fl. }
+                        \set Staff.midiInstrument = #"flute" 
+                        \mark #14
+                        <af' df'' ef''>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { Flute }
-                            \set Staff.shortInstrumentName = \markup { Fl. }
-                            \set Staff.midiInstrument = #"flute" 
-                            \mark #14
                             R1 * 8
                         }
                         r2
@@ -72,13 +137,78 @@
                 }
                 {
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Clarinet in B♭" }
+                        \set Staff.shortInstrumentName = \markup { Cl. }
+                        \set Staff.midiInstrument = #"clarinet" 
+                        \mark #14
+                        <df' ef' af'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Clarinet in B♭" }
-                            \set Staff.shortInstrumentName = \markup { Cl. }
-                            \set Staff.midiInstrument = #"clarinet" 
-                            \mark #14
                             R1 * 8
                         }
                         r2
@@ -118,13 +248,78 @@
                 }
                 {
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
+                        \set Staff.shortInstrumentName = \markup { Asax.1 }
+                        \set Staff.midiInstrument = #"alto sax" 
+                        \mark #14
+                        <af df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
-                            \set Staff.shortInstrumentName = \markup { Asax.1 }
-                            \set Staff.midiInstrument = #"alto sax" 
-                            \mark #14
                             R1 * 8
                         }
                         r2
@@ -164,13 +359,78 @@
                 }
                 {
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
+                        \set Staff.shortInstrumentName = \markup { Asax.2 }
+                        \set Staff.midiInstrument = #"alto sax" 
+                        \mark #14
+                        <af df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
-                            \set Staff.shortInstrumentName = \markup { Asax.2 }
-                            \set Staff.midiInstrument = #"alto sax" 
-                            \mark #14
                             R1 * 8
                         }
                         r2
@@ -212,11 +472,52 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Tsax. }
                             \set Staff.midiInstrument = #"alto sax" 
                             \mark #14
+                            R1 * 3
+                        }
+                        \once \hide Stem
+                        <bf df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
                             R1 * 8
                         }
                         r2
@@ -258,12 +559,53 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
                             \set Staff.midiInstrument = #"alto sax" 
                             \mark #14
                             \clef "bass"
+                            R1 * 3
+                        }
+                        \once \hide Stem
+                        <df f af>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
                             R1 * 8
                         }
                         r2
@@ -305,6 +647,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
@@ -341,6 +684,9 @@
                         (
                         df1
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -355,6 +701,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
@@ -390,6 +737,9 @@
                         (
                         df'1
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -401,6 +751,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
@@ -436,6 +787,9 @@
                         (
                         df'1
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -447,6 +801,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
@@ -483,6 +838,9 @@
                         (
                         af1
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -496,6 +854,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Vibraphone }
                         \set Staff.shortInstrumentName = \markup { Vib. }
@@ -632,9 +991,6 @@
                         af''16
                         ]
                         r4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df''1
                         :32
                         \mf
@@ -654,6 +1010,9 @@
                         ~
                         df''1
                         :32
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -664,6 +1023,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Drum Set" }
                         \set Staff.shortInstrumentName = \markup { Drum. }
@@ -695,82 +1055,58 @@
                         \tweak style #'cross
                         a'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         <
@@ -862,137 +1198,104 @@
                             a'
                         >8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ^ \markup { improv }
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ^ \markup { (2) }
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -1007,6 +1310,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Guitar }
                             \set Staff.shortInstrumentName = \markup { Gtr. }
@@ -1162,54 +1466,32 @@
                         ]
                         df'4
                         \mf
-                        -\staccato
-                        ^ \markup { arco }
                         gf'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         c'4
-                        -\staccato
                         df'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         df'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         df'4
-                        -\staccato
                         df'4
-                        -\staccato
                         gf'4
-                        -\staccato
                         f'4
-                        -\staccato
                         f'4
-                        -\staccato
                         f'4
-                        -\staccato
                         df'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         gf'4
-                        -\staccato
                         df''4
-                        -\staccato
                         ef''4
-                        -\staccato
                         gf''4
-                        -\staccato
                         ef''4
-                        -\staccato
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "ooa_bass_guitar"
@@ -1221,6 +1503,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Bass Guitar" }
                             \set Staff.shortInstrumentName = \markup { Bgtr. }
@@ -1377,54 +1660,32 @@
                         ]
                         ef4
                         \mf
-                        -\staccato
-                        ^ \markup { arco }
                         bf,4
-                        -\staccato
                         df4
-                        -\staccato
                         bf,4
-                        -\staccato
                         af,4
-                        -\staccato
                         bf,4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         ef4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         ef4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -1439,6 +1700,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 1" }
                             \set Staff.shortInstrumentName = \markup { Vln.1 }
@@ -1578,6 +1840,9 @@
                         -\staccato
                         gf'''4
                         -\staccato
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -1589,6 +1854,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.2 }
@@ -1728,6 +1994,9 @@
                         -\staccato
                         b''4
                         -\staccato
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -1739,6 +2008,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Cello 1" }
                             \set Staff.shortInstrumentName = \markup { Vc.1 }
@@ -1911,6 +2181,9 @@
                         -\staccato
                         df'4
                         -\staccato
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -1922,6 +2195,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Cello 2" }
                             \set Staff.shortInstrumentName = \markup { Vc.2 }
@@ -2094,6 +2368,9 @@
                         -\staccato
                         df'4
                         -\staccato
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -2110,6 +2387,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
@@ -2275,6 +2553,9 @@
                         (
                         df'''4
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -2285,6 +2566,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
@@ -2468,6 +2750,9 @@
                         (
                         df'''4
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_oboe1"
@@ -2478,6 +2763,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Oboe 1" }
                         \set Staff.shortInstrumentName = \markup { Ob.1 }
@@ -2521,9 +2807,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         bf'4
                         \mf
@@ -2591,6 +2874,9 @@
                         gf''8
                         ]
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -2601,6 +2887,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Oboe 2" }
                         \set Staff.shortInstrumentName = \markup { Ob.2 }
@@ -2653,9 +2940,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         ef''8
@@ -2712,6 +2996,9 @@
                         (
                         gf''2
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -2722,6 +3009,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                         \set Staff.shortInstrumentName = \markup { Cl.1 }
@@ -2765,9 +3053,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         bf'4
                         \mf
@@ -2835,6 +3120,9 @@
                         gf''8
                         ]
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -2845,6 +3133,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                         \set Staff.shortInstrumentName = \markup { Cl.2 }
@@ -2897,9 +3186,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         ef''8
@@ -2956,6 +3242,9 @@
                         (
                         gf''2
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -2967,6 +3256,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Bassoon }
                             \set Staff.shortInstrumentName = \markup { Bsn. }
@@ -2975,9 +3265,6 @@
                             \clef "bass"
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         df8
@@ -3087,6 +3374,9 @@
                         -\staccato
                         ]
                         r4
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -3100,6 +3390,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Horn in F" }
                         \set Staff.shortInstrumentName = \markup { Hn. }
@@ -3134,32 +3425,29 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        ef,8
+                        ef8
                         \mf
                         -\staccato
                         [
-                        ef,8
+                        ef8
                         -\staccato
                         ]
                         r4
                         r8
                         [
-                        df8
+                        df'8
                         -\staccato
                         ]
-                        bf,8
+                        bf8
                         -\staccato
                         [
-                        bf,8
+                        bf8
                         -\staccato
                         ]
-                        af,8
+                        af8
                         -\staccato
                         [
-                        df8
+                        df'8
                         -\staccato
                         ]
                         r4
@@ -3246,6 +3534,9 @@
                         bf8
                         -\staccato
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -3257,6 +3548,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
@@ -3264,9 +3556,6 @@
                             \mark #14
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         gf'8
@@ -3376,6 +3665,9 @@
                         -\staccato
                         ]
                         r4
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -3387,6 +3679,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
@@ -3395,9 +3688,6 @@
                             \clef "bass"
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df8
                         \mf
                         -\staccato
@@ -3507,6 +3797,9 @@
                         df'8
                         -\staccato
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -3519,6 +3812,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Percussion }
                         \set Staff.shortInstrumentName = \markup { Perc. }
@@ -3585,6 +3879,9 @@
                     df4
                     df4
                     df4
+                    {
+                        R1 * 7
+                    }
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -3597,6 +3894,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
@@ -3636,154 +3934,154 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df'''8
                         \mf
-                        -\staccato
+                        -\accent
                         [
                         gf'''8
-                        -\staccato
+                        -\accent
                         ]
                         gf'''8
-                        -\staccato
+                        -\accent
                         [
                         gf'''8
-                        -\staccato
+                        -\accent
                         ]
                         bf''8
-                        -\staccato
+                        -\accent
                         [
                         af''8
-                        -\staccato
+                        -\accent
                         ]
                         bf''8
-                        -\staccato
+                        -\accent
                         [
                         bf''8
-                        -\staccato
+                        -\accent
                         ]
                         ef'''8
-                        -\staccato
+                        -\accent
                         [
                         af''8
-                        -\staccato
+                        -\accent
                         ]
                         df'''8
-                        -\staccato
+                        -\accent
                         [
                         bf''8
-                        -\staccato
+                        -\accent
                         ]
                         bf''8
-                        -\staccato
+                        -\accent
                         [
                         bf''8
-                        -\staccato
+                        -\accent
                         ]
                         bf''8
-                        -\staccato
+                        -\accent
                         [
                         bf''8
-                        -\staccato
+                        -\accent
                         ]
                         bf''8
-                        -\staccato
+                        -\accent
                         [
                         af''8
-                        -\staccato
+                        -\accent
                         ]
                         af''8
-                        -\staccato
+                        -\accent
                         [
                         af''8
-                        -\staccato
+                        -\accent
                         ]
                         ef''8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         gf''8
-                        -\staccato
+                        -\accent
                         [
                         gf''8
-                        -\staccato
+                        -\accent
                         ]
                         ef''8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         df''8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         df''8
-                        -\staccato
+                        -\accent
                         [
                         gf''8
-                        -\staccato
+                        -\accent
                         ]
                         f''8
-                        -\staccato
+                        -\accent
                         [
                         f''8
-                        -\staccato
+                        -\accent
                         ]
                         ef''8
-                        -\staccato
+                        -\accent
                         [
                         ef''8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         gf''8
-                        -\staccato
+                        -\accent
                         ]
                         b''8
-                        -\staccato
+                        -\accent
                         [
                         bf''8
-                        -\staccato
+                        -\accent
                         ]
                         bf''8
-                        -\staccato
+                        -\accent
                         [
                         bf''8
-                        -\staccato
+                        -\accent
                         ]
                         af''8
-                        -\staccato
+                        -\accent
                         [
                         af''8
-                        -\staccato
+                        -\accent
                         ]
                         gf''8
-                        -\staccato
+                        -\accent
                         [
                         b''8
-                        -\staccato
+                        -\accent
                         ]
                         bf''8
-                        -\staccato
+                        -\accent
                         [
                         gf''8
-                        -\staccato
+                        -\accent
                         ]
                         b''8
-                        -\staccato
+                        -\accent
                         [
                         bf''8
-                        -\staccato
+                        -\accent
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "harp2"
@@ -3794,6 +4092,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
@@ -3833,154 +4132,153 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         ef,8
-                        \mf
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
+                        -\accent
                         ]
                         bf,8
-                        -\staccato
+                        -\accent
                         [
                         bf,8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         af,8
-                        -\staccato
+                        -\accent
                         ]
                         af,8
-                        -\staccato
+                        -\accent
                         [
                         af,8
-                        -\staccato
+                        -\accent
                         ]
                         af,8
-                        -\staccato
+                        -\accent
                         [
                         af,8
-                        -\staccato
+                        -\accent
                         ]
                         bf,8
-                        -\staccato
+                        -\accent
                         [
                         bf,8
-                        -\staccato
+                        -\accent
                         ]
                         ef8
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
-                        ]
-                        bf,8
-                        -\staccato
-                        [
-                        bf,8
-                        -\staccato
+                        -\accent
                         ]
                         bf,8
-                        -\staccato
+                        -\accent
                         [
                         bf,8
-                        -\staccato
-                        ]
-                        df8
-                        -\staccato
-                        [
-                        df8
-                        -\staccato
+                        -\accent
                         ]
                         bf,8
-                        -\staccato
+                        -\accent
                         [
                         bf,8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
+                        -\accent
+                        ]
+                        bf,8
+                        -\accent
+                        [
+                        bf,8
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
+                        [
+                        df8
+                        -\accent
+                        ]
+                        df8
+                        -\accent
                         [
                         ef8
-                        -\staccato
+                        -\accent
                         ]
                         ef8
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
+                        -\accent
                         ]
                         ef,8
-                        -\staccato
+                        -\accent
                         [
                         ef,8
-                        -\staccato
+                        -\accent
                         ]
                         bf,,8
-                        -\staccato
+                        -\accent
                         [
                         bf,,8
-                        -\staccato
+                        -\accent
                         ]
                         bf,,8
-                        -\staccato
+                        -\accent
                         [
                         bf,,8
-                        -\staccato
+                        -\accent
                         ]
                         df,8
-                        -\staccato
+                        -\accent
                         [
                         df,8
-                        -\staccato
+                        -\accent
                         ]
                         df,8
-                        -\staccato
+                        -\accent
                         [
                         df,8
-                        -\staccato
+                        -\accent
                         ]
                         bf,,8
-                        -\staccato
+                        -\accent
                         [
                         bf,,8
-                        -\staccato
+                        -\accent
                         ]
                         df,8
-                        -\staccato
+                        -\accent
                         [
                         df,8
-                        -\staccato
+                        -\accent
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -3995,6 +4293,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
@@ -4002,154 +4301,154 @@
                             \mark #14
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         ef''8
                         \mf
-                        -\staccato
+                        -\accent
                         [
                         ef''8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         bf'8
-                        -\staccato
+                        -\accent
                         ]
                         df''8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         bf'8
-                        -\staccato
+                        -\accent
                         ]
                         af'8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         bf'8
-                        -\staccato
+                        -\accent
                         ]
                         df''8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         df''8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         df''8
-                        -\staccato
+                        -\accent
                         [
                         ef''8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         bf'8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         bf'8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         df''8
-                        -\staccato
+                        -\accent
                         ]
                         bf'8
-                        -\staccato
+                        -\accent
                         [
                         bf'8
-                        -\staccato
+                        -\accent
                         ]
                         ef'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         df'8
-                        -\staccato
+                        -\accent
                         ]
                         ef'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         ef'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         df'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         df'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         df'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         df'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         df'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         df'8
-                        -\staccato
+                        -\accent
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "piano2"
@@ -4161,6 +4460,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
@@ -4169,154 +4469,153 @@
                             \clef "bass"
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df'8
-                        \mf
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         gf'8
-                        -\staccato
+                        -\accent
                         [
                         f'8
-                        -\staccato
+                        -\accent
                         ]
                         ef'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
-                        ]
-                        df'8
-                        -\staccato
-                        [
-                        ef'8
-                        -\staccato
+                        -\accent
                         ]
                         df'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
+                        ]
+                        df'8
+                        -\accent
+                        [
+                        ef'8
+                        -\accent
                         ]
                         ef'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         ef'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         ef'8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         bf8
-                        -\staccato
+                        -\accent
                         [
                         ef'8
-                        -\staccato
+                        -\accent
                         ]
                         gf'8
-                        -\staccato
+                        -\accent
                         [
                         gf8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         df8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         f8
-                        -\staccato
+                        -\accent
                         ]
                         gf8
-                        -\staccato
+                        -\accent
                         [
                         gf8
-                        -\staccato
+                        -\accent
                         ]
                         f8
-                        -\staccato
+                        -\accent
                         [
                         f8
-                        -\staccato
+                        -\accent
                         ]
                         f8
-                        -\staccato
+                        -\accent
                         [
                         f8
-                        -\staccato
+                        -\accent
                         ]
                         f8
-                        -\staccato
+                        -\accent
                         [
                         f8
-                        -\staccato
+                        -\accent
                         ]
                         ef8
-                        -\staccato
+                        -\accent
                         [
                         ef8
-                        -\staccato
+                        -\accent
                         ]
                         ef8
-                        -\staccato
+                        -\accent
                         [
                         ef8
-                        -\staccato
+                        -\accent
                         ]
                         ef8
-                        -\staccato
+                        -\accent
                         [
                         ef8
-                        -\staccato
+                        -\accent
                         ]
                         gf8
-                        -\staccato
+                        -\accent
                         [
                         f8
-                        -\staccato
+                        -\accent
                         ]
                         df8
-                        -\staccato
+                        -\accent
                         [
                         f8
-                        -\staccato
+                        -\accent
                         ]
                         ef8
-                        -\staccato
+                        -\accent
                         [
                         ef8
-                        -\staccato
+                        -\accent
                         ]
                         gf,8
-                        -\staccato
+                        -\accent
                         [
                         gf,8
-                        -\staccato
+                        -\accent
                         ]
                         ef,8
-                        -\staccato
+                        -\accent
                         [
                         gf,8
-                        -\staccato
+                        -\accent
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -4331,6 +4630,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 1" }
                             \set Staff.shortInstrumentName = \markup { Vln.I }
@@ -4550,6 +4850,9 @@
                         (
                         df'''4
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_violin_ii"
@@ -4561,6 +4864,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.II }
@@ -4732,6 +5036,9 @@
                         (
                         df'''4
                         )
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_viola"
@@ -4742,6 +5049,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
@@ -5133,6 +5441,9 @@
                         bf8
                         :16
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_cello"
@@ -5143,6 +5454,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
@@ -5367,6 +5679,9 @@
                         df8
                         :16
                         ]
+                        {
+                            R1 * 7
+                        }
                     }
                 }
                 \context Staff = "cco_bass"
@@ -5377,6 +5692,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
@@ -5448,6 +5764,9 @@
                         ef,4
                         ef,4
                         ef,4
+                        {
+                            R1 * 7
+                        }
                     }
                 }
             >>
@@ -5462,6 +5781,7 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "High Rhythm" }
                     \set Staff.shortInstrumentName = \markup { H.rhm. }
@@ -5483,6 +5803,7 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Mid Rhythm" }
                     \set Staff.shortInstrumentName = \markup { M.rhm. }
@@ -5504,6 +5825,7 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Rhythm" }
                     \set Staff.shortInstrumentName = \markup { B.rhm. }
@@ -5525,14 +5847,15 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Melody Line 1" }
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
                     \mark #14
                     r4
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     f'4
                     (
                     af'2
@@ -5570,8 +5893,8 @@
                     af'2
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     bf'8
                     ]
@@ -5599,8 +5922,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     [
                     bf'8
                     ]
@@ -5624,8 +5947,8 @@
                     ]
                     )
                     r4
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     bf'4
                     (
                     df''2
@@ -5726,14 +6049,15 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Melody Line 2" }
                     \set Staff.shortInstrumentName = \markup { Mel.2 }
                     \set Staff.midiInstrument = #"misc2" 
                     \mark #14
                     r8
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     [
                     bf'8
                     ]
@@ -5786,8 +6110,8 @@
                     ]
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     bf'4
                     (
                     df''2
@@ -5804,8 +6128,8 @@
                     ef''4
                     )
                     r4
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     bf'4
                     (
                     gf''8
@@ -5825,8 +6149,8 @@
                     df''2
                     )
                     r8
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     ef''8
                     ]
@@ -5927,14 +6251,15 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Counter Line" }
                     \set Staff.shortInstrumentName = \markup { Count. }
                     \set Staff.midiInstrument = #"misc3" 
                     \mark #14
                     af'16
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     [
                     (
                     g'8.
@@ -5973,8 +6298,8 @@
                     ef''4
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     df''8
                     ~
@@ -5997,8 +6322,8 @@
                     )
                     r4
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     [
                     ef''8
                     ]
@@ -6012,8 +6337,8 @@
                     f''2
                     )
                     f''16
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     [
                     (
                     ef''8.
@@ -6118,8 +6443,8 @@
                     bf'4
                     )
                     gf''16
-                    ^ \markup { p.9 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.9 }
                     [
                     (
                     f''8.
@@ -6162,8 +6487,8 @@
                     )
                     r4
                     r8
-                    ^ \markup { p.11 }
                     ^ \markup { c.22 }
+                    ^ \markup { p.11 }
                     [
                     af''8
                     ]
@@ -6177,8 +6502,8 @@
                     bf''2
                     )
                     bf''16
-                    ^ \markup { c.24 }
                     ^ \markup { p.12 }
+                    ^ \markup { c.24 }
                     [
                     (
                     af''8.
@@ -6272,6 +6597,7 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Line" }
                     \set Staff.shortInstrumentName = \markup { Bass. }
@@ -6293,6 +6619,7 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { Riff }
                     \set Staff.shortInstrumentName = \markup { Riff. }
@@ -6313,6 +6640,7 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { Chords }
                     \set Staff.shortInstrumentName = \markup { Chrd. }
@@ -6333,14 +6661,15 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "High Drones" }
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     \set Staff.midiInstrument = #"piccolo" 
                     \mark #14
                     r4
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     r4
                     r2
                     {
@@ -6368,8 +6697,8 @@
                         R1 * 1
                     }
                     r2
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     bf'2
                     (
                     df''1
@@ -6384,8 +6713,8 @@
                     ef''2
                     )
                     r2
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     bf'2
                     (
                     gf''4
@@ -6410,14 +6739,15 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Mid Drones" }
                     \set Staff.shortInstrumentName = \markup { M.drn. }
                     \set Staff.midiInstrument = #"string ensemble 2" 
                     \mark #14
                     r2
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     f'2
                     (
                     af'1
@@ -6449,8 +6779,8 @@
                     af'1
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     bf'4
                     (
                     df''2
@@ -6470,8 +6800,8 @@
                     bf'4
                     )
                     r4
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     bf'4
                     (
                     df''2
@@ -6498,6 +6828,7 @@
             {
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                     \accidentalStyle neo-modern-cautionary
                     \set Staff.instrumentName = \markup { "Bass Drones" }
                     \set Staff.shortInstrumentName = \markup { B.drn. }
@@ -6505,8 +6836,8 @@
                     \mark #14
                     \clef "bass"
                     <df, ef>1
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     ~
                     <df, ef>1
                     ~

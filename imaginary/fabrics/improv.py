@@ -29,7 +29,7 @@ class Improv(ImaginaryFabric):
             selectable_pitches = self.selectable.pitch_analyzer.pitches_at_ticks(my_ticks)
             if self.pitch_selectable_indices:
                 selectable_pitches = [p for i,p in enumerate(sorted(selectable_pitches)) 
-                    if i in self.pitch_selectable_indices] 
+                    if i in self.pitch_selectable_indices[index % len(self.pitch_selectable_indices)]] 
             return selectable_pitches
 
         else:
@@ -53,9 +53,9 @@ class Improv(ImaginaryFabric):
             times=self.improv_times,
             )
         if my_pitches and getattr(self, "ranges"):
-            row_ranges = getattr(self, "ranges").get_ranges(staff.name, 0)
+            row_ranges = getattr(self, "ranges").get_ranges(staff.name, 1)
             print(row_ranges)
-            calliope.SmartRanges(smart_ranges=row_ranges)(my_line.note_events[0:1])
+            calliope.SmartRanges(smart_ranges=row_ranges)(my_line.note_events[0,0])
         if self.dynamic:
             my_line.note_events[0].tag(self.dynamic)
         return my_line
