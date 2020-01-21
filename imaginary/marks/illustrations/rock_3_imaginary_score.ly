@@ -46,9 +46,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -71,9 +68,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f''8
@@ -88,9 +82,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a'8
@@ -127,9 +118,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -164,10 +152,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -213,9 +198,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -235,9 +217,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -319,9 +298,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -344,9 +320,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f''8
@@ -361,9 +334,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a'8
@@ -400,9 +370,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -441,10 +408,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -490,9 +454,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -512,9 +473,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -589,9 +547,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -614,9 +569,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -631,9 +583,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -670,9 +619,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e'8
@@ -711,10 +657,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -760,9 +703,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -780,13 +720,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 3
                         }
                         ef'8
                         \p
@@ -840,9 +774,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -865,9 +796,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -882,9 +810,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -921,9 +846,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -966,10 +888,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1015,9 +934,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1035,13 +951,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 3
                         }
                         c'8
                         \p
@@ -1091,9 +1001,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -1116,9 +1023,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -1133,9 +1037,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -1172,9 +1073,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -1217,10 +1115,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1266,9 +1161,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1286,13 +1178,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 3
                         }
                         g'8
                         \p
@@ -1335,9 +1221,6 @@
                         r2
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -1360,9 +1243,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f,8
@@ -1377,9 +1257,6 @@
                         e8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -1416,9 +1293,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e8
@@ -1457,10 +1331,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1506,9 +1377,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1526,13 +1394,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -1582,9 +1444,6 @@
                         r2
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -1607,9 +1466,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f,8
@@ -1624,9 +1480,6 @@
                         e8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -1663,9 +1516,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e8
@@ -1708,10 +1558,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1757,9 +1604,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1777,13 +1621,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -1843,9 +1681,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -1866,9 +1701,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e'8
@@ -1907,10 +1739,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -1942,9 +1771,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1985,9 +1811,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -2008,9 +1831,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -2053,10 +1873,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -2088,9 +1905,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -2132,9 +1946,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -2155,9 +1966,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -2200,10 +2008,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -2235,9 +2040,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -2296,9 +2098,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b8
                         [
                         c'8
@@ -2547,9 +2346,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <
                             \tweak style #'cross
                             e
@@ -2577,186 +2373,130 @@
                         <g f'>16
                         e'16
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (9) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (10) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (11) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (12) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (13) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (14) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                     }
@@ -2796,7 +2536,101 @@
                         \fermata
                         r2
                         {
-                            R1 * 16
+                            R1 * 1
+                        }
+                        \once \hide Stem
+                        <b c' d' e'>4
+                        \mp
+                        ^ \markup { "improv, straight quarter notes on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (8) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (9) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (10) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 5
                         }
                     }
                 }
@@ -2833,7 +2667,101 @@
                         \fermata
                         r2
                         {
-                            R1 * 16
+                            R1 * 1
+                        }
+                        \once \hide Stem
+                        <d e b c'>4
+                        \mp
+                        ^ \markup { "improv, straight quarter notes on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (8) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (9) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (10) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 5
                         }
                     }
                 }
@@ -2862,9 +2790,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -2901,9 +2826,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -2946,10 +2868,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -2992,17 +2911,63 @@
                         \mf
                         -\tenuto
                         ]
-                        {
-                            R1 * 5
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <a' d'' e'' fs''>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         gf'8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -3015,13 +2980,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         af'8
                         \p
@@ -3081,9 +3040,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -3120,9 +3076,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -3166,16 +3119,65 @@
                         -\accent
                         ]
                         {
-                            R1 * 10
+                            R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <a' d'' e'' fs''>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         gf'8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -3188,13 +3190,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         f'8
                         \p
@@ -3262,9 +3258,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -3301,9 +3294,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -3342,10 +3332,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -3388,17 +3375,63 @@
                         \mf
                         -\tenuto
                         ]
-                        {
-                            R1 * 5
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <e fs a d'>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         bf,8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -3411,13 +3444,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -3478,9 +3505,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -3517,9 +3541,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -3559,16 +3580,65 @@
                         -\accent
                         ]
                         {
-                            R1 * 10
+                            R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <e fs a d'>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         bf,8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -3581,13 +3651,7 @@
                         -\accent
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -3663,9 +3727,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         gs'8
                         \mp
@@ -3709,9 +3770,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3728,9 +3786,6 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3814,9 +3869,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
@@ -3860,9 +3912,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3879,9 +3928,6 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3969,9 +4015,6 @@
                         {
                             R1 * 12
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3988,10 +4031,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         af'8
@@ -4064,9 +4104,6 @@
                         {
                             R1 * 12
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4083,10 +4120,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         f'8
@@ -4166,9 +4200,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         df'8
                         \mp
@@ -4212,9 +4243,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4231,9 +4259,6 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4319,9 +4344,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         af8
                         \mp
@@ -4365,9 +4387,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4384,9 +4403,6 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4470,9 +4486,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e,8
                         \mp
@@ -4516,9 +4529,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4535,10 +4545,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -4612,9 +4619,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         \mf
                         -\staccato
@@ -4648,9 +4652,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4706,9 +4707,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b'4
                         \mf
                         -\staccato
@@ -4742,9 +4740,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4801,9 +4796,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e4
                         \mf
                         -\staccato
@@ -4837,9 +4829,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4894,8 +4883,248 @@
                     \fermata
                     r2
                     {
-                        R1 * 16
+                        R1 * 1
                     }
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -4934,9 +5163,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b'4
                         \f
                         r4
@@ -4996,9 +5222,7 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \clef "bass"
                         c,4
                         \f
                         r4
@@ -5091,9 +5315,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <d' g' a'>4
                         ~
                         <d' g' a'>8
@@ -5264,9 +5485,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         \clef "bass"
                         <b,, b,>4
                         -\staccato
@@ -5379,9 +5597,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g'4
                         \f
                         ^ \markup { pizz }
@@ -5405,13 +5620,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         gs8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         d'8
@@ -5451,9 +5664,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5470,10 +5680,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         c''8
@@ -5550,9 +5757,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g'4
                         \f
                         ^ \markup { pizz }
@@ -5576,13 +5780,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         d'8
@@ -5622,9 +5824,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5641,10 +5840,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         gs'8
@@ -5722,9 +5918,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'4
                         \f
                         ^ \markup { pizz }
@@ -5748,13 +5941,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs'8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         d'8
@@ -5794,9 +5985,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5813,10 +6001,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         f'8
@@ -5899,9 +6084,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d4
                         \f
                         ^ \markup { pizz }
@@ -5925,13 +6107,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         a,8
@@ -5971,9 +6151,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5990,10 +6167,7 @@
                         -\tenuto
                         -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         c'8
@@ -6073,9 +6247,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c,4
                         \f
                         ^ \markup { pizz }
@@ -6099,14 +6270,12 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
                         bf,8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -6141,26 +6310,10 @@
                     \set Staff.midiInstrument = #"agogo" 
                     \mark #9
                     \clef "percussion"
-                    r2
-                    r2
-                    \fermata
+                    r1
+                    ^ \markup { c.0 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 21
                     }
                 }
             }
@@ -6178,26 +6331,10 @@
                     \set Staff.midiInstrument = #"melodic tom" 
                     \mark #9
                     \clef "percussion"
-                    r2
-                    r2
-                    \fermata
+                    r1
+                    ^ \markup { c.0 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 21
                     }
                 }
             }
@@ -6215,26 +6352,10 @@
                     \set Staff.midiInstrument = #"taiko drum" 
                     \mark #9
                     \clef "percussion"
-                    r2
-                    r2
-                    \fermata
+                    r1
+                    ^ \markup { c.0 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 21
                     }
                 }
             }
@@ -6251,27 +6372,381 @@
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
                     \mark #9
-                    r2
-                    r2
-                    \fermata
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
+                    a8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
                     r2
                     \fermata
+                    ^ \markup { c.1 }
+                    a8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
+                    f'8
+                    ^ \markup { c.3 }
+                    ^ \markup { p.2 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
                     r2
-                    {
-                        R1 * 1
-                    }
+                    \fermata
+                    ^ \markup { p.3 }
+                    ^ \markup { c.4 }
+                    f'8
+                    ^ \markup { c.5 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.6 }
+                    ^ \markup { p.4 }
+                    a8
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    f'8
+                    [
+                    a'8
+                    ]
+                    )
+                    e'8
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    b'8
+                    ]
+                    f'8
+                    [
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.9 }
+                    ^ \markup { p.5 }
+                    <e' g' b'>8
+                    ^ \markup { c.10 }
+                    [
+                    (
+                    <f' gs' c''>8
+                    ]
+                    <g' as' d''>8
+                    [
+                    <a' c'' e''>8
+                    ]
+                    <c'' ds'' g''>8
+                    [
+                    <e'' g'' b''>8
+                    ]
+                    )
+                    <b' d'' fs''>8
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    <fs'' a'' cs'''>8
+                    ]
+                    <c'' ds'' g''>8
+                    [
+                    <g'' as'' d'''>8
+                    ]
+                    <a'' c''' e'''>8
+                    [
+                    <b'' d''' fs'''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.12 }
+                    ^ \markup { p.6 }
+                    [
+                    r8
+                    ]
+                    r4
+                    r4
+                    r8
+                    ^ \markup { c.13 }
+                    [
+                    r8
+                    ^ \markup { p.7 }
+                    ^ \markup { c.14 }
+                    ]
+                    r2
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.15 }
+                    ]
+                    r8
+                    ^ \markup { p.8 }
+                    ^ \markup { c.16 }
+                    [
+                    r8
+                    ]
+                    r2
+                    r8
+                    ^ \markup { c.17 }
+                    [
+                    r8
+                    ^ \markup { p.9 }
+                    ^ \markup { c.18 }
+                    ]
+                    r4
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.19 }
+                    ]
+                    <b, d fs>8
+                    ^ \markup { c.20 }
+                    ^ \markup { p.10 }
+                    [
+                    (
+                    <c ds g>8
+                    ]
+                    <d f a>8
+                    [
+                    <e g b>8
+                    ]
+                    <g as d'>8
+                    [
+                    <b d' fs'>8
+                    ]
+                    )
+                    <fs a cs'>8
+                    ^ \markup { c.21 }
+                    [
+                    (
+                    <cs' e' gs'>8
+                    ]
+                    <g as d'>8
+                    [
+                    <d' f' a'>8
+                    ]
+                    <e' g' b'>8
+                    [
+                    <fs' a' cs''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.22 }
+                    ^ \markup { p.11 }
+                    [
+                    r8
+                    ]
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.23 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ^ \markup { p.12 }
+                    ^ \markup { c.24 }
+                    ]
+                    r2
+                    r8
+                    ^ \markup { c.25 }
+                    [
+                    r8
+                    ]
+                    r8
+                    ^ \markup { p.13 }
+                    ^ \markup { c.26 }
+                    [
+                    r8
+                    ]
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.27 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.28 }
+                    ^ \markup { p.14 }
+                    ]
+                    r4
+                    r4
+                    r8
+                    ^ \markup { c.29 }
+                    [
+                    r8
+                    ]
+                    <cs e gs>8
+                    ^ \markup { p.15 }
+                    ^ \markup { c.30 }
+                    [
+                    (
+                    <d f a>8
+                    ]
+                    <e g b>8
+                    [
+                    <fs a cs'>8
+                    ]
+                    <a c' e'>8
+                    [
+                    <cs' e' gs'>8
+                    ]
+                    )
+                    <gs b ds'>8
+                    ^ \markup { c.31 }
+                    [
+                    (
+                    <ds' fs' as'>8
+                    ]
+                    <a c' e'>8
+                    [
+                    <e' g' b'>8
+                    ]
+                    <fs' a' cs''>8
+                    [
+                    <gs' b' ds''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { p.16 }
+                    ^ \markup { c.32 }
+                    [
+                    r8
+                    ]
+                    r4
+                    r8
+                    [
+                    <ds' fs' as'>8
+                    ^ \markup { c.33 }
+                    ]
+                    (
+                    <as' cs'' f''>8
+                    [
+                    <b' d'' fs''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.34 }
+                    ^ \markup { p.17 }
+                    [
+                    r8
+                    ]
+                    r4
+                    r8
+                    [
+                    <bf df' f'>8
+                    ^ \markup { c.35 }
+                    ]
+                    (
+                    <f' af' c''>8
+                    [
+                    <bf' df'' f''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.36 }
+                    ^ \markup { p.18 }
+                    [
+                    r8
+                    ]
+                    r4
+                    r8
+                    [
+                    <f af c'>8
+                    ^ \markup { c.37 }
+                    ]
+                    (
+                    <c' ef' g'>8
+                    [
+                    <f' af' c''>8
+                    ]
+                    )
+                    <f gs c'>8
+                    ^ \markup { p.19 }
+                    ^ \markup { c.38 }
+                    [
+                    (
+                    <fs a cs'>8
+                    ]
+                    <as cs' f'>8
+                    [
+                    <cs' e' gs'>8
+                    ]
+                    <f' gs' c''>8
+                    )
+                    [
+                    <c' ds' g'>8
+                    ^ \markup { c.39 }
+                    ]
+                    (
+                    <g' as' d''>8
+                    [
+                    <gs' b' ds''>8
+                    ]
+                    )
+                    <c' ef' g'>8
+                    ^ \markup { c.40 }
+                    ^ \markup { p.20 }
+                    [
+                    (
+                    <df' e' af'>8
+                    ]
+                    <f' af' c''>8
+                    [
+                    <af' b' ef''>8
+                    ]
+                    <c'' ef'' g''>8
+                    )
+                    [
+                    <g' bf' d''>8
+                    ^ \markup { c.41 }
+                    ]
+                    (
+                    <d'' f'' a''>8
+                    [
+                    <g'' bf'' d'''>8
+                    ]
+                    )
                 }
             }
             \context Staff = "melody_line2"
@@ -6288,25 +6763,188 @@
                     \set Staff.midiInstrument = #"misc2" 
                     \mark #9
                     r2
+                    ^ \markup { c.0 }
                     r2
                     \fermata
+                    r8
+                    ^ \markup { c.1 }
+                    [
+                    <d'' f'' bf''>8
+                    ~
+                    ]
+                    (
+                    <d'' f'' bf''>8
+                    [
+                    <d'' f'' a''>8
+                    ]
+                    )
+                    r8
+                    ^ \markup { c.2 }
+                    [
+                    <a' c'' f''>8
+                    ~
+                    ]
+                    (
+                    <a' c'' f''>8
+                    [
+                    <a' c'' e''>8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.3 }
+                    <g' a' d''>4
+                    (
+                    <d'' e'' a''>4
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.4 }
+                    <c'' f'' g''>4
+                    (
+                    <e'' a'' d'''>4
+                    <e'' a'' d'''>4
+                    ~
+                    <e'' a'' d'''>8
+                    [
+                    <b'' c''' f'''>8
+                    ]
+                    )
+                    r2
+                    ^ \markup { c.5 }
+                    r2
+                    \fermata
+                    r2
                     {
                         R1 * 1
                     }
+                    <d' g' a'>4
+                    ^ \markup { c.6 }
+                    ~
+                    (
+                    <d' g' a'>8
+                    [
+                    <e' a' d''>8
+                    ~
+                    ]
+                    <e' a' d''>8
+                    [
+                    <d' g' a'>8
+                    ]
+                    <fs' a' d''>8
+                    )
+                    [
+                    r8
+                    ^ \markup { c.7 }
+                    ]
+                    <e' g' c''>4
+                    (
+                    <e' g' b'>8
+                    [
+                    <g' a' d''>8
+                    ~
+                    ]
+                    <g' a' d''>8
+                    [
+                    <fs' a' d''>8
+                    ]
+                    )
+                    <d' g' c''>4
+                    ^ \markup { c.8 }
+                    (
+                    <fs' b' d''>8
+                    [
+                    <c' e' a'>8
+                    ~
+                    ]
+                    <c' e' a'>8
+                    [
+                    <d' g' b'>8
+                    ~
+                    ]
+                    <d' g' b'>8
+                    )
+                    [
+                    <d' g' c''>8
+                    ^ \markup { c.9 }
+                    ~
+                    ]
+                    (
+                    <d' g' c''>8
+                    [
+                    <fs' b' d''>8
+                    ]
+                    <c' e' a'>4
+                    <d' g' b'>4
+                    )
                     r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
+                    ^ \markup { c.10 }
                     {
                         R1 * 1
                     }
+                    <e'' fs'' b''>4
+                    ^ \markup { c.11 }
+                    ~
+                    (
+                    <e'' fs'' b''>8
+                    [
+                    <fs'' b'' e'''>8
+                    ~
+                    ]
+                    <fs'' b'' e'''>8
+                    [
+                    <e'' a'' b''>8
+                    ]
+                    <af'' b'' e'''>8
+                    )
+                    [
+                    r8
+                    ^ \markup { c.12 }
+                    ]
+                    <fs'' a'' d'''>4
+                    (
+                    <fs'' b'' cs'''>8
+                    [
+                    <fs'' b'' e'''>8
+                    ~
+                    ]
+                    <fs'' b'' e'''>8
+                    [
+                    <af'' b'' e'''>8
+                    ]
+                    )
+                    <fs'' a'' d'''>4
+                    ^ \markup { c.13 }
+                    (
+                    <af'' cs''' d'''>8
+                    [
+                    <d'' fs'' b''>8
+                    ~
+                    ]
+                    <d'' fs'' b''>8
+                    [
+                    <e'' a'' cs'''>8
+                    ~
+                    ]
+                    <e'' a'' cs'''>8
+                    )
+                    [
+                    <fs'' a'' d'''>8
+                    ^ \markup { c.14 }
+                    ~
+                    ]
+                    (
+                    <fs'' a'' d'''>8
+                    [
+                    <af'' cs''' d'''>8
+                    ]
+                    <d'' fs'' b''>4
+                    <e'' a'' cs'''>4
+                    )
                     r2
-                    \fermata
-                    r2
+                    ^ \markup { c.15 }
                     {
-                        R1 * 1
+                        R1 * 6
                     }
                 }
             }
@@ -6323,26 +6961,132 @@
                     \set Staff.shortInstrumentName = \markup { Count. }
                     \set Staff.midiInstrument = #"misc3" 
                     \mark #9
-                    r2
+                    a8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
                     r2
                     \fermata
+                    ^ \markup { c.1 }
+                    a8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
+                    f'8
+                    ^ \markup { c.3 }
+                    ^ \markup { p.2 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { p.3 }
+                    ^ \markup { c.4 }
+                    f'8
+                    ^ \markup { c.5 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.6 }
+                    ^ \markup { p.4 }
+                    a8
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    f'8
+                    [
+                    a'8
+                    ]
+                    )
+                    e'8
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    b'8
+                    ]
+                    f'8
+                    [
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.9 }
+                    ^ \markup { p.5 }
+                    <e' g' b'>8
+                    ^ \markup { c.10 }
+                    [
+                    (
+                    <f' gs' c''>8
+                    ]
+                    <g' as' d''>8
+                    [
+                    <a' c'' e''>8
+                    ]
+                    <c'' ds'' g''>8
+                    [
+                    <e'' g'' b''>8
+                    ]
+                    )
+                    <b' d'' fs''>8
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    <fs'' a'' cs'''>8
+                    ]
+                    <c'' ds'' g''>8
+                    [
+                    <g'' as'' d'''>8
+                    ]
+                    <a'' c''' e'''>8
+                    [
+                    <b'' d''' fs'''>8
+                    ]
+                    )
+                    r1
+                    ^ \markup { c.12 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 14
                     }
                 }
             }
@@ -6360,26 +7104,132 @@
                     \set Staff.midiInstrument = #"electric bass (finger)" 
                     \mark #9
                     \clef "bass"
-                    r2
+                    a8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
                     r2
                     \fermata
+                    ^ \markup { c.1 }
+                    a8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
+                    f'8
+                    ^ \markup { c.3 }
+                    ^ \markup { p.2 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { p.3 }
+                    ^ \markup { c.4 }
+                    f'8
+                    ^ \markup { c.5 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.6 }
+                    ^ \markup { p.4 }
+                    a,,8
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    bf,,8
+                    ]
+                    c,8
+                    [
+                    d,8
+                    ]
+                    f,8
+                    [
+                    a,8
+                    ]
+                    )
+                    e,8
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    b,8
+                    ]
+                    f,8
+                    [
+                    c8
+                    ]
+                    d8
+                    [
+                    e8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.9 }
+                    ^ \markup { p.5 }
+                    <e, g, b,>8
+                    ^ \markup { c.10 }
+                    [
+                    (
+                    <f, gs, c>8
+                    ]
+                    <g, as, d>8
+                    [
+                    <a, c e>8
+                    ]
+                    <c ds g>8
+                    [
+                    <e g b>8
+                    ]
+                    )
+                    <b, d fs>8
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    <fs a cs'>8
+                    ]
+                    <c ds g>8
+                    [
+                    <g as d'>8
+                    ]
+                    <a c' e'>8
+                    [
+                    <b d' fs'>8
+                    ]
+                    )
+                    r1
+                    ^ \markup { c.12 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 14
                     }
                 }
             }
@@ -6396,27 +7246,465 @@
                     \set Staff.shortInstrumentName = \markup { Riff. }
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
                     \mark #9
-                    r2
-                    r2
-                    \fermata
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
+                    a8
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
                     r2
                     \fermata
+                    ^ \markup { c.1 }
+                    a8
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    )
+                    f'8
+                    ^ \markup { c.3 }
+                    ^ \markup { p.2 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
                     r2
-                    {
-                        R1 * 1
-                    }
+                    \fermata
+                    ^ \markup { p.3 }
+                    ^ \markup { c.4 }
+                    f'8
+                    ^ \markup { c.5 }
+                    [
+                    (
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.6 }
+                    ^ \markup { p.4 }
+                    a8
+                    ^ \markup { c.7 }
+                    [
+                    (
+                    bf8
+                    ]
+                    c'8
+                    [
+                    d'8
+                    ]
+                    f'8
+                    [
+                    a'8
+                    ]
+                    )
+                    e'8
+                    ^ \markup { c.8 }
+                    [
+                    (
+                    b'8
+                    ]
+                    f'8
+                    [
+                    c''8
+                    ]
+                    d''8
+                    [
+                    e''8
+                    ]
+                    )
+                    r2
+                    \fermata
+                    ^ \markup { c.9 }
+                    ^ \markup { p.5 }
+                    <e' g' b'>8
+                    ^ \markup { c.10 }
+                    [
+                    (
+                    <f' gs' c''>8
+                    ]
+                    <g' as' d''>8
+                    [
+                    <a' c'' e''>8
+                    ]
+                    <c'' ds'' g''>8
+                    [
+                    <e'' g'' b''>8
+                    ]
+                    )
+                    <b' d'' fs''>8
+                    ^ \markup { c.11 }
+                    [
+                    (
+                    <fs'' a'' cs'''>8
+                    ]
+                    <c'' ds'' g''>8
+                    [
+                    <g'' as'' d'''>8
+                    ]
+                    <a'' c''' e'''>8
+                    [
+                    <b'' d''' fs'''>8
+                    ]
+                    )
+                    b8
+                    ^ \markup { c.12 }
+                    ^ \markup { p.6 }
+                    [
+                    (
+                    c'8
+                    ]
+                    d'8
+                    [
+                    e'8
+                    ]
+                    g'8
+                    [
+                    b'8
+                    ]
+                    )
+                    fs'8
+                    ^ \markup { c.13 }
+                    [
+                    b8
+                    ^ \markup { p.7 }
+                    ^ \markup { c.14 }
+                    ]
+                    (
+                    c'8
+                    [
+                    d'8
+                    ]
+                    e'8
+                    [
+                    g'8
+                    ]
+                    b'8
+                    )
+                    [
+                    fs'8
+                    ^ \markup { c.15 }
+                    ]
+                    b8
+                    ^ \markup { p.8 }
+                    ^ \markup { c.16 }
+                    [
+                    (
+                    c'8
+                    ]
+                    d'8
+                    [
+                    e'8
+                    ]
+                    g'8
+                    [
+                    b'8
+                    ]
+                    )
+                    fs'8
+                    ^ \markup { c.17 }
+                    [
+                    b8
+                    ^ \markup { p.9 }
+                    ^ \markup { c.18 }
+                    ]
+                    (
+                    c'8
+                    [
+                    d'8
+                    ]
+                    e'8
+                    [
+                    g'8
+                    ]
+                    b'8
+                    )
+                    [
+                    fs'8
+                    ^ \markup { c.19 }
+                    ]
+                    b8
+                    ^ \markup { c.20 }
+                    ^ \markup { p.10 }
+                    [
+                    (
+                    c'8
+                    ]
+                    d'8
+                    [
+                    e'8
+                    ]
+                    g'8
+                    [
+                    b'8
+                    ]
+                    )
+                    fs'8
+                    ^ \markup { c.21 }
+                    [
+                    (
+                    cs''8
+                    ]
+                    g'8
+                    [
+                    d''8
+                    ]
+                    e''8
+                    [
+                    fs''8
+                    ]
+                    )
+                    fs'8
+                    ^ \markup { c.22 }
+                    ^ \markup { p.11 }
+                    [
+                    (
+                    a'8
+                    ]
+                    b'8
+                    [
+                    d''8
+                    ]
+                    fs''8
+                    )
+                    [
+                    cs''8
+                    ^ \markup { c.23 }
+                    ]
+                    (
+                    gs''8
+                    )
+                    [
+                    fs'8
+                    ^ \markup { p.12 }
+                    ^ \markup { c.24 }
+                    ]
+                    (
+                    a'8
+                    [
+                    b'8
+                    ]
+                    d''8
+                    [
+                    fs''8
+                    ]
+                    )
+                    cs''8
+                    ^ \markup { c.25 }
+                    [
+                    (
+                    gs''8
+                    ]
+                    )
+                    fs'8
+                    ^ \markup { p.13 }
+                    ^ \markup { c.26 }
+                    [
+                    (
+                    a'8
+                    ]
+                    b'8
+                    [
+                    d''8
+                    ]
+                    fs''8
+                    )
+                    [
+                    cs''8
+                    ^ \markup { c.27 }
+                    ]
+                    (
+                    gs''8
+                    )
+                    [
+                    fs'8
+                    ^ \markup { c.28 }
+                    ^ \markup { p.14 }
+                    ]
+                    (
+                    a'8
+                    [
+                    b'8
+                    ]
+                    d''8
+                    [
+                    fs''8
+                    ]
+                    )
+                    cs''8
+                    ^ \markup { c.29 }
+                    [
+                    (
+                    gs''8
+                    ]
+                    )
+                    cs'8
+                    ^ \markup { p.15 }
+                    ^ \markup { c.30 }
+                    [
+                    (
+                    d'8
+                    ]
+                    e'8
+                    [
+                    fs'8
+                    ]
+                    a'8
+                    [
+                    cs''8
+                    ]
+                    )
+                    gs'8
+                    ^ \markup { c.31 }
+                    [
+                    (
+                    ds''8
+                    ]
+                    a'8
+                    [
+                    e''8
+                    ]
+                    fs''8
+                    [
+                    gs''8
+                    ]
+                    )
+                    gs'8
+                    ^ \markup { p.16 }
+                    ^ \markup { c.32 }
+                    [
+                    (
+                    a'8
+                    ]
+                    cs''8
+                    [
+                    e''8
+                    ]
+                    gs''8
+                    )
+                    [
+                    ds''8
+                    ^ \markup { c.33 }
+                    ]
+                    (
+                    as''8
+                    [
+                    b''8
+                    ]
+                    )
+                    ds'8
+                    ^ \markup { c.34 }
+                    ^ \markup { p.17 }
+                    [
+                    (
+                    e'8
+                    ]
+                    gs'8
+                    [
+                    b'8
+                    ]
+                    ds''8
+                    )
+                    [
+                    as'8
+                    ^ \markup { c.35 }
+                    ]
+                    (
+                    f''8
+                    [
+                    as''8
+                    ]
+                    )
+                    bf8
+                    ^ \markup { c.36 }
+                    ^ \markup { p.18 }
+                    [
+                    (
+                    b8
+                    ]
+                    ef'8
+                    [
+                    gf'8
+                    ]
+                    bf'8
+                    )
+                    [
+                    f'8
+                    ^ \markup { c.37 }
+                    ]
+                    (
+                    c''8
+                    [
+                    f''8
+                    ]
+                    )
+                    f'8
+                    ^ \markup { p.19 }
+                    ^ \markup { c.38 }
+                    [
+                    (
+                    gf'8
+                    ]
+                    bf'8
+                    [
+                    df''8
+                    ]
+                    f''8
+                    )
+                    [
+                    c''8
+                    ^ \markup { c.39 }
+                    ]
+                    (
+                    g''8
+                    [
+                    af''8
+                    ]
+                    )
+                    c''8
+                    ^ \markup { c.40 }
+                    ^ \markup { p.20 }
+                    [
+                    (
+                    df''8
+                    ]
+                    f''8
+                    [
+                    af''8
+                    ]
+                    c'''8
+                    )
+                    [
+                    g''8
+                    ^ \markup { c.41 }
+                    ]
+                    (
+                    d'''8
+                    [
+                    g'''8
+                    ]
+                    )
                 }
             }
             \context Staff = "chords"
@@ -6432,27 +7720,218 @@
                     \set Staff.shortInstrumentName = \markup { Chrd. }
                     \set Staff.midiInstrument = #"french horn" 
                     \mark #9
+                    r4
+                    ^ \markup { p.0 }
+                    ^ \markup { c.0 }
+                    r4
+                    r4
+                    ^ \markup { c.1 }
+                    r4
+                    r4
+                    ^ \markup { p.1 }
+                    ^ \markup { c.2 }
+                    r4
+                    r4
+                    ^ \markup { c.3 }
+                    ^ \markup { p.2 }
+                    r4
+                    r4
+                    ^ \markup { p.3 }
+                    ^ \markup { c.4 }
+                    r4
+                    r4
+                    ^ \markup { c.5 }
+                    r4
+                    r4
+                    ^ \markup { c.6 }
+                    ^ \markup { p.4 }
+                    r4
+                    r4
+                    ^ \markup { c.7 }
+                    r4
+                    r4
+                    r4
+                    ^ \markup { c.8 }
                     r2
+                    r4
+                    ^ \markup { c.9 }
+                    ^ \markup { p.5 }
+                    r4
+                    r4
+                    ^ \markup { c.10 }
+                    r4
+                    r4
+                    r4
+                    ^ \markup { c.11 }
                     r2
-                    \fermata
-                    {
-                        R1 * 1
-                    }
+                    <b c' d' e' g' b'>4
+                    ^ \markup { c.12 }
+                    ^ \markup { p.6 }
+                    r4
+                    r4
+                    r8
+                    ^ \markup { c.13 }
+                    [
+                    r8
+                    ^ \markup { p.7 }
+                    ^ \markup { c.14 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.15 }
+                    ]
+                    <b c' d' e' g' b'>4
+                    ^ \markup { p.8 }
+                    ^ \markup { c.16 }
                     r2
-                    \fermata
+                    r8
+                    ^ \markup { c.17 }
+                    [
+                    r8
+                    ^ \markup { p.9 }
+                    ^ \markup { c.18 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.19 }
+                    ]
+                    <b c' d' e' g' b'>4
+                    ^ \markup { c.20 }
+                    ^ \markup { p.10 }
+                    r4
+                    r4
+                    r4
+                    ^ \markup { c.21 }
                     r2
+                    <fs' a' b' d'' fs''>4
+                    ^ \markup { c.22 }
+                    ^ \markup { p.11 }
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.23 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ^ \markup { p.12 }
+                    ^ \markup { c.24 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    r4
+                    r4
+                    ^ \markup { c.25 }
+                    r4
+                    ^ \markup { p.13 }
+                    ^ \markup { c.26 }
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.27 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.28 }
+                    ^ \markup { p.14 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    r4
+                    r4
+                    ^ \markup { c.29 }
+                    <cs' d' e' fs' a' cs''>4
+                    ^ \markup { p.15 }
+                    ^ \markup { c.30 }
+                    r4
+                    r4
+                    r4
+                    ^ \markup { c.31 }
                     r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
+                    <gs' a' cs'' e'' gs''>4
+                    ^ \markup { p.16 }
+                    ^ \markup { c.32 }
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.33 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    <ds' e' gs' b' ds''>4
+                    ^ \markup { c.34 }
+                    ^ \markup { p.17 }
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.35 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    <bf b ef' gf' bf'>4
+                    ^ \markup { c.36 }
+                    ^ \markup { p.18 }
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.37 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    r4
+                    ^ \markup { p.19 }
+                    ^ \markup { c.38 }
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.39 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
+                    r4
+                    ^ \markup { c.40 }
+                    ^ \markup { p.20 }
+                    r4
+                    r8
+                    [
+                    r8
+                    ^ \markup { c.41 }
+                    ]
+                    r8
+                    [
+                    r8
+                    ]
                 }
             }
             \context Staff = "high_drones"
@@ -6468,26 +7947,10 @@
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     \set Staff.midiInstrument = #"piccolo" 
                     \mark #9
-                    r2
-                    r2
-                    \fermata
+                    r1
+                    ^ \markup { c.0 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 21
                     }
                 }
             }
@@ -6504,26 +7967,10 @@
                     \set Staff.shortInstrumentName = \markup { M.drn. }
                     \set Staff.midiInstrument = #"string ensemble 2" 
                     \mark #9
-                    r2
-                    r2
-                    \fermata
+                    r1
+                    ^ \markup { c.0 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 21
                     }
                 }
             }
@@ -6541,26 +7988,10 @@
                     \set Staff.midiInstrument = #"fretless bass" 
                     \mark #9
                     \clef "bass"
-                    r2
-                    r2
-                    \fermata
+                    r1
+                    ^ \markup { c.0 }
                     {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
-                    }
-                    r2
-                    \fermata
-                    r2
-                    {
-                        R1 * 1
+                        R1 * 21
                     }
                 }
             }

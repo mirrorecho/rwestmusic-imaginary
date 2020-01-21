@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     ditto, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import short_block, library
 from imaginary.stories.library_material import (
@@ -22,10 +22,10 @@ def score3(lib):
     sb = lib("rock_block3")
     # TO DO: add ranges
     # =======================================================
-    # s = sb().annotate(
-    #     slur_cells=True,
-    #     label=("phrases", "cells")
-    #     ).to_score(s)
+    s = sb().annotate(
+        slur_cells=True,
+        label=("phrases", "cells")
+        ).to_score(s)
 
     # riffs_block = short_block.ChordsToSegmentBlock(
     #     selectable = sb.with_only("riff",).segments[0],
@@ -168,6 +168,20 @@ def score3(lib):
 
     s.fill_rests(fill_to="ooa_flute")
 
+    guitar_improv = improv.Improv(
+        sb,
+        instruction="improv, straight quarter notes on these pitches",
+        fabric_staves = ("ooa_guitar", "ooa_bass_guitar"),
+        improv_times = 10,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=7*4,
+        pitch_selectable_indices = (
+            (0,2,4,5),
+            ),
+        dynamic="mp"
+        )
+    s.extend_from(guitar_improv)
+
     drum_set = ImaginarySegment(
         lib("drum_dark").eps(0,"mf")(),
         get_improv_line(
@@ -257,6 +271,20 @@ def score3(lib):
     s.extend_from(ooa_cloud_20_21,)
     s.fill_rests(fill_to="ooa_flute")
 
+    s.fill_rests(beats=12*4)
+    strings_improv = improv.Improv(
+        sb,
+        instruction="markup_column:pizz, improv,|straight quarter notes on these pitches",
+        fabric_staves = instrument_groups.get_instruments("ooa_strings",),
+        improv_times = 5,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=12*4,
+        pitch_selectable_indices = (
+            (0,2,4,5),
+            ),
+        )
+    s.extend_from(strings_improv)
+
     s.fill_rests(beats=15*4)
 
     lb_cco_cloud_30_31 = lib("rock_grid_g3_c30_31")
@@ -269,6 +297,8 @@ def score3(lib):
         tag_all_note_events = ("-",),
         func = lambda x: x.bookend_pad(2),
         )
+    for st in cco_cloud_30_31.staves["cco_violin_i","cco_violin_ii","cco_viola","cco_cello"]:
+        st.note_events[0].tag("arco")
     s.extend_from(cco_cloud_30_31,)
     s.fill_rests(fill_to="cco_flute1")
 
@@ -285,6 +315,10 @@ def score3(lib):
         tag_events = {1:("mf", "\\<", "(",), 2:(")",), -1:("f","-",">")},
         func = lambda x: x.bookend_pad(2.5),
         )
+    for st in ooa_cloud_33.staves["ooa_violin1","ooa_cello1",
+                "ooa_violin2","ooa_cello2"]:
+        st.note_events[0].tag("arco")
+
     s.extend_from(ooa_cloud_33,)
     s.fill_rests(fill_to="ooa_flute")
 
@@ -297,6 +331,7 @@ def score3(lib):
         tag_events = {1:("mf", "\\<", "(",), 2:(")",), -1:("f","-",">")},
         func = lambda x: x.fuse().bookend_pad(2.5),
         )
+    cco_cloud_35.staves["cco_bass"].note_events[0].tag("arco")
     s.extend_from(cco_cloud_35,)
     s.fill_rests(fill_to="cco_flute1")
 
@@ -382,7 +417,7 @@ if __name__ == '__main__':
     calliope.illustrate(
         lib["rock_score3"],
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         )
 
 # # # TO DO... change pitches!!!

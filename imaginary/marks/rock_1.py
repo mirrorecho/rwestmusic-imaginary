@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     ditto, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import short_block, library
 from imaginary.stories.library_material import (
@@ -40,6 +40,7 @@ def score1(lib):
         func = lambda x: x,
         # func = lambda x: x.only_first("cells",8)
         )   
+    wood_block.note_events.setattrs(pitch=0)
     # TO DO... consider varying this up... so not always
     # bass on double stop
     bass_drones =  lambda_segment.LambdaSegment(
@@ -71,7 +72,9 @@ def score1(lib):
         mask_staves = ("cco_bass",),
         # tag_events = {0:("mf", "pizz")},
         assign_pitches_from_selectable = True,
-        func = lambda x: x.only_first("cells",7).bookend_pad(0,3),
+        func = lambda x: x.only_first("cells",7
+            ).bookend_pad(0,3).eps(
+            0, "!\\snappizzicato")(),
         )
 
     s.extend_from(
@@ -168,7 +171,7 @@ def score1(lib):
         funcs = (
             lambda x: x.ops("note_events")(
                 0,"f")(),
-            lambda x: x.ops("note_events")(
+            lambda x: x.t(-12).ops("note_events")(
                 0,"treble")(),
             )
         )
@@ -425,6 +428,27 @@ def score1(lib):
         tag_all_note_events=(".",".")
         )
     s.extend_from(end_wind_hit,)
+
+    s.fill_rests(beats=19*4)
+
+    end_winds_improv =  improv.Improv(
+        sb,
+        fabric_staves = ("ooa_flute", "ooa_clarinet", "ooa_alto_sax1",
+            "ooa_alto_sax2"),
+        improv_times = 3,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=19*4,
+        dynamic="mp"
+        # pitch_selectable_indices = (
+        #     (0,2,4,5),
+        #     ),
+        )
+    s.extend_from(
+        end_winds_improv,
+        )
+
+
+
 
     # # =======================================================
     s.fill_rests()

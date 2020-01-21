@@ -66,7 +66,7 @@ def score3(lib):
         )
     improv_winds2 = improv.Improv(
         sb,
-        fabric_staves = ("ooa_tenor_sax", "ooa_bari_sax"),
+        fabric_staves = ("ooa_tenor_sax", "ooa_bari_sax", "ooa_bassoon"),
         improv_times = 4,
         selectable_start_beat=3*4 + 2,
         bookend_beats = (3*4, 0),
@@ -77,8 +77,20 @@ def score3(lib):
             ),
         dynamic="mp"
         )
+    improv_winds3 = improv.Improv(
+        sb,
+        fabric_staves = ("ooa_horn", "ooa_trumpet", "ooa_trombone"),
+        improv_times = 2,
+        selectable_start_beat=5*4,
+        bookend_beats = (5*4, 0),
+        ranges = pitch_ranges.TOP_RANGES,
+        pitch_selectable_indices = (
+            (0,1,3,4),
+            ),
+        dynamic="mp"
+        )
     s.extend_from(
-        improv_winds1, improv_winds2,
+        improv_winds1, improv_winds2, improv_winds3,
         )
 
 
@@ -86,7 +98,7 @@ def score3(lib):
         sb.with_only("counter_line"),
         fabric_staves = ("cco_flute1","cco_flute2","ooa_mallets",
             "harp1",
-            "harp2",
+            # "harp2",
             "cco_oboe1","cco_oboe2",
             "cco_clarinet1","cco_clarinet2",
             ),
@@ -102,14 +114,15 @@ def score3(lib):
                 0,"mf")(),
             lambda x:x.poke("events",0,2,5,7,8,14,21,23,24,28,30,31).smear_after(
                 min_beats=1,
+                ).stack_p([(0,-12)]
                 ).transformed(
                 calliope.StandardDurations()
                 ).eps(0,"mf")(),
-            lambda x:x.poke("events",0,2,5,7,8,14,21,23,24,28,30,31).smear_after(
-                min_beats=1,
-                ).transformed(
-                calliope.StandardDurations()
-                ).t(-12)(),
+            # lambda x:x.poke("events",0,2,5,7,8,14,21,23,24,28,30,31).smear_after(
+            #     min_beats=1,
+            #     ).transformed(
+            #     calliope.StandardDurations()
+            #     ).t(-12)(),
             lambda x:x.poke("events",0,5,14,23,28,
                 ).smear_before(extend_beats=2, gap_beats=0.5, rearticulate=True,
                 ).smear_after(min_beats=1,
@@ -259,7 +272,8 @@ def score3(lib):
                 ).ops("note_events")(0, "mp",)(),
             lambda x: x.mask("cells",0,1,2,3).ops("cells")(7,"\\<")(
                 ).ops("note_events")(0, "mp",)(),
-            lambda x: x.ops("note_events")(0, "mp",)(),
+            lambda x: x.ops("note_events")(0, "mp",)().ops("cells")(7,"\\<")(
+                )(),
             )
         )
 
@@ -272,10 +286,10 @@ def score3(lib):
         osti_cell_count = 8,
         selectable_start_beat=8*4,
         tag_all_note_events = (":16",),
-        func = lambda x: x.ops("cells")(
-            1, "f")()
         )
     measured_trems2.staves["cco_viola"].segments[0].crop("cells",1)
+    measured_trems2.staves["cco_viola"].note_events[0].tag("mf")
+
 
     sax_melody = lambda_segment.LambdaSegment(
         sb.with_only("high_drones"),
@@ -284,9 +298,10 @@ def score3(lib):
             "sax",
             "ooa_brass",
             ),
-        func = lambda x: x.slur_cells().ops("note_events")(
+        func = lambda x: x.crop("cells",4).slur_cells().ops("note_events")(
             0,"mf")(
             ),
+        bookend_beats = (4,0),
         funcs = (
             lambda x:x.t(12), #fl
             lambda x:x, #cl
@@ -321,7 +336,9 @@ def score3(lib):
         osti_cell_count = 16,
         osti_cell_length = 4,
         after_funcs = (
-            lambda x: x.eps(0, "mp")(),
+            lambda x: x.eps(0, "mp")(
+                28, "\\<")(
+                36, "mf")(),
             lambda x: x.mask("cells",0,1).eps(8, 
                 "mp", "timpani", "\\timpStaff")(),
             )

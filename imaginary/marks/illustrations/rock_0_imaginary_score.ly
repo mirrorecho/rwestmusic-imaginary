@@ -484,6 +484,7 @@
                         \clef "percussion"
                         g4
                         \mp
+                        ^ \markup { sticks }
                         <g e'>4
                         r4
                         r8
@@ -493,79 +494,55 @@
                         r2
                         <g f'>4
                         r4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                     }
@@ -610,279 +587,191 @@
                         e8
                         ]
                         d'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (9) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (10) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (11) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                     }
@@ -1236,6 +1125,7 @@
                         c''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -1254,6 +1144,7 @@
                             R1 * 1
                         }
                         d''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -1300,6 +1191,7 @@
                         c''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -1318,6 +1210,7 @@
                             R1 * 1
                         }
                         f''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -1365,6 +1258,7 @@
                         a4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -1383,6 +1277,7 @@
                             R1 * 1
                         }
                         bf4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -1430,6 +1325,7 @@
                         bf4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -1448,6 +1344,7 @@
                             R1 * 1
                         }
                         bf4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -2412,281 +2309,281 @@
                     }
                     r8
                     [
-                    c''8
+                    c'8
                     \mp
                     ^ \markup { cowbell }
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                 }
             }
@@ -2992,6 +2889,7 @@
                         d''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3010,6 +2908,7 @@
                             R1 * 1
                         }
                         f''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3056,6 +2955,7 @@
                         d''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3074,6 +2974,7 @@
                             R1 * 1
                         }
                         a''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3121,6 +3022,7 @@
                         c'4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3139,6 +3041,7 @@
                             R1 * 1
                         }
                         c'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3186,6 +3089,7 @@
                         bf4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3204,6 +3108,7 @@
                             R1 * 1
                         }
                         c'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -3281,14 +3186,4 @@
             >>
         >>
     >>
-    
-                \midi {
-                    \context {
-                        \Score
-                        midiChannelMapping = #'instrument
-                    }
-                    \tempo 4 = 160
-                }
-                \layout { }                 
-                
 }

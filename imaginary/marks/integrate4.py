@@ -46,8 +46,7 @@ def score4(lib):
         )
     s.staves["ooa_drum_set"].append(drum_set)
 
-    s.extend_from(
-        pulse_on_off_beat.PulseOnOffBeat(
+    string_pulses = pulse_on_off_beat.PulseOnOffBeat(
             sb,
             fabric_staves = (
                 "ooa_violin1", "ooa_violin2", 
@@ -59,8 +58,10 @@ def score4(lib):
                 0, "f")(),
             phrase_beats = (4,)*16,
             ranges=pitch_ranges.HILL_DOWN_RANGES,
-        ),
         )
+    string_pulses.staves["cco_bass"].phrases[0].t(-12)
+    string_pulses.staves["cco_bass"].phrases[1].t(-12)
+    s.extend_from(string_pulses)
 
     guitars = osti.Osti(
         sb.with_only("bass_drones"),

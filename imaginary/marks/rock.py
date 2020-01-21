@@ -131,6 +131,7 @@ def riffs_opening(lib): #OPENING_RIFFS
     #= (RIFF1_4 + RIFF1_4 + lib("riff1_6") + RIFF1_4 + lib("riff1_6") +
     # RIFF2_4B + RIFF2_4B + OPENING_END_WIGGLE)
 
+
 # STACKED PITCHES:
 ST_UP_I =  ( (0,12),(0,7),(0,7),(0,5), )
 ST_DN_I = ( (0,-12),(0,-5),(0,-5),(0,-7), )

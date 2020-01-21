@@ -152,6 +152,7 @@
                         }
                         \once \hide Stem
                         <d' e' f' a'>4
+                        \p
                         ^ \markup { "improv on these pitches" }
                         \tweak style #'slash
                         b'4
@@ -2120,8 +2121,8 @@
                     \set Staff.midiInstrument = #"misc2" 
                     \mark #3
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     a'8
                     ]
@@ -2194,8 +2195,8 @@
                     \set Staff.midiInstrument = #"misc3" 
                     \mark #3
                     f''8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     e''8
@@ -2231,8 +2232,8 @@
                     g'4
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     g'4
                     (
                     a'4
@@ -2283,8 +2284,8 @@
                     g'4
                     )
                     r4
-                    ^ \markup { c.10 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.10 }
                     g'4
                     (
                     a'4
@@ -2436,8 +2437,8 @@
                     \set Staff.midiInstrument = #"piccolo" 
                     \mark #3
                     <a'' e'''>1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     (
                     <a'' e'''>2
                     ~
@@ -2445,8 +2446,8 @@
                     <a'' e'''>4
                     )
                     <a'' e'''>1
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     (
                     <a'' e'''>2
                     ~
@@ -2463,8 +2464,8 @@
                     <a'' e'''>4
                     )
                     <d''' a'''>1
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     (
                     <d''' a'''>2
                     ~
@@ -2472,8 +2473,8 @@
                     <d''' a'''>4
                     )
                     <d''' a'''>1
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     (
                     <d''' a'''>2
                     ~
@@ -2526,20 +2527,20 @@
                     \mark #3
                     \clef "bass"
                     <f, d>1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     <g, d>1
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     <f, d>1
                     ^ \markup { c.2 }
                     ^ \markup { p.2 }
                     <g, d>1
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     <f, d>1
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     <g, d>1
                     ^ \markup { c.5 }
                     ^ \markup { p.5 }
@@ -2550,14 +2551,14 @@
                     ^ \markup { c.7 }
                     ^ \markup { p.7 }
                     <f, d>1
-                    ^ \markup { p.8 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.8 }
                     <g, d>1
                     ^ \markup { c.9 }
                     ^ \markup { p.9 }
                     <f, d>1
-                    ^ \markup { c.10 }
                     ^ \markup { p.10 }
+                    ^ \markup { c.10 }
                     <g, d>1
                     ^ \markup { p.11 }
                     ^ \markup { c.11 }

@@ -31,7 +31,7 @@
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #11
+                        \mark #10
                         b'1
                         :32
                         \p
@@ -66,7 +66,7 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -84,7 +84,7 @@
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #11
+                            \mark #10
                             R1 * 6
                         }
                         c'8
@@ -172,7 +172,7 @@
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -189,7 +189,7 @@
                         \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Tsax. }
                         \set Staff.midiInstrument = #"alto sax" 
-                        \mark #11
+                        \mark #10
                         r4
                         e'4
                         \p
@@ -243,9 +243,60 @@
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
-                            R1 * 14
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <c d e>4
+                        \pp
+                        ^ \markup { "improv on these pitches" }
+                        \<
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \mp
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 4
                         }
                     }
                 }
@@ -261,7 +312,7 @@
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \set Staff.midiInstrument = #"bassoon" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         e'4
                         \p
@@ -322,9 +373,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a4
                         -\tenuto
                         c'4
@@ -389,8 +437,39 @@
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
-                            R1 * 14
+                            \mark #10
+                            R1 * 10
+                        }
+                        \once \hide Stem
+                        <c d a>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <bf, f a>4
+                        ^ \markup { (1) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 1
                         }
                     }
                 }
@@ -407,8 +486,39 @@
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            \mark #11
-                            R1 * 14
+                            \mark #10
+                            R1 * 10
+                        }
+                        \once \hide Stem
+                        <c' d' a'>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <f' a' bf'>4
+                        ^ \markup { (1) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 1
                         }
                     }
                 }
@@ -425,9 +535,40 @@
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
-                            R1 * 14
+                            R1 * 10
+                        }
+                        \once \hide Stem
+                        <c d a>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <bf, f a>4
+                        ^ \markup { (1) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 1
                         }
                     }
                 }
@@ -447,7 +588,7 @@
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
                             \set Staff.midiInstrument = #"vibraphone" 
-                            \mark #11
+                            \mark #10
                             R1 * 4
                         }
                         e'''1
@@ -486,7 +627,7 @@
                             \set Staff.instrumentName = \markup { "Drum Set" }
                             \set Staff.shortInstrumentName = \markup { Drum. }
                             \set Staff.midiInstrument = #"taiko drum" 
-                            \mark #11
+                            \mark #10
                             \clef "percussion"
                             R1 * 4
                         }
@@ -515,108 +656,76 @@
                         \tweak style #'cross
                         e8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         <
@@ -670,7 +779,7 @@
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
                         \set Staff.midiInstrument = #"electric guitar (clean)" 
-                        \mark #11
+                        \mark #10
                         b'4
                         \mp
                         r4
@@ -684,9 +793,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b4
                         ^ \markup { disorted }
                         b4
@@ -742,7 +848,7 @@
                         \set Staff.instrumentName = \markup { "Bass Guitar" }
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
                         \set Staff.midiInstrument = #"electric bass (finger)" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mp
@@ -757,9 +863,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e4
                         ^ \markup { disorted }
                         e4
@@ -818,7 +921,7 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
                         \set Staff.midiInstrument = #"violin" 
-                        \mark #11
+                        \mark #10
                         b'4
                         \mf
                         ^ \markup { pizz }
@@ -847,7 +950,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
                         \set Staff.midiInstrument = #"violin" 
-                        \mark #11
+                        \mark #10
                         e''4
                         \mf
                         ^ \markup { pizz }
@@ -876,7 +979,7 @@
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mf
@@ -906,7 +1009,7 @@
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mf
@@ -942,7 +1045,7 @@
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #11
+                        \mark #10
                         e''1
                         :32
                         \p
@@ -962,9 +1065,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         d''4
                         \pp
@@ -1049,7 +1149,7 @@
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #11
+                        \mark #10
                         e''1
                         :32
                         \p
@@ -1069,9 +1169,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d''2
                         \pp
                         ~
@@ -1162,12 +1259,9 @@
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
                             \set Staff.midiInstrument = #"oboe" 
-                            \mark #11
+                            \mark #10
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'2
                         \pp
                         ~
@@ -1258,12 +1352,9 @@
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
                             \set Staff.midiInstrument = #"oboe" 
-                            \mark #11
+                            \mark #10
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         d''8
@@ -1366,12 +1457,9 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #11
+                            \mark #10
                             R1 * 8
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'4
                         \p
                         \<
@@ -1446,12 +1534,9 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #11
+                            \mark #10
                             R1 * 8
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         c'4
                         \p
@@ -1502,7 +1587,7 @@
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \set Staff.midiInstrument = #"bassoon" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         r8
                         \mf
@@ -1646,7 +1731,7 @@
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -1664,7 +1749,7 @@
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -1682,7 +1767,7 @@
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
                             R1 * 14
                         }
@@ -1702,7 +1787,7 @@
                     \set Staff.instrumentName = \markup { Percussion }
                     \set Staff.shortInstrumentName = \markup { Perc. }
                     \set Staff.midiInstrument = #"woodblock" 
-                    \mark #11
+                    \mark #10
                     r8
                     ^ \markup { timpani }
                     [
@@ -1760,6 +1845,7 @@
                     c'1
                     :32
                     \mp
+                    ^ \markup { "(sus. cym.)" }
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -1776,7 +1862,7 @@
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
-                        \mark #11
+                        \mark #10
                         e'''4
                         \mf
                         r4
@@ -1788,13 +1874,7 @@
                         e''4
                         r2
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         c''8
                         \mf
@@ -1861,7 +1941,7 @@
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         e4
                         r4
@@ -1873,13 +1953,7 @@
                         e,4
                         r2
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         c8
                         [
@@ -1949,7 +2023,7 @@
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             \set Staff.midiInstrument = #"acoustic grand" 
-                            \mark #11
+                            \mark #10
                             R1 * 14
                         }
                     }
@@ -1967,7 +2041,7 @@
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             \set Staff.midiInstrument = #"acoustic grand" 
-                            \mark #11
+                            \mark #10
                             \clef "bass"
                             R1 * 14
                         }
@@ -1988,7 +2062,7 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         e''4
                         \mf
                         ^ \markup { pizz }
@@ -2017,7 +2091,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         e'''4
                         \mf
                         ^ \markup { pizz }
@@ -2046,7 +2120,7 @@
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         \clef "alto"
                         b'4
                         \mf
@@ -2076,7 +2150,7 @@
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         b4
                         \mf
@@ -2106,7 +2180,7 @@
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #11
+                        \mark #10
                         \clef "bass"
                         r8
                         [
@@ -2236,7 +2310,7 @@
                     \set Staff.instrumentName = \markup { "High Rhythm" }
                     \set Staff.shortInstrumentName = \markup { H.rhm. }
                     \set Staff.midiInstrument = #"agogo" 
-                    \mark #11
+                    \mark #10
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
@@ -2257,7 +2331,7 @@
                     \set Staff.instrumentName = \markup { "Mid Rhythm" }
                     \set Staff.shortInstrumentName = \markup { M.rhm. }
                     \set Staff.midiInstrument = #"melodic tom" 
-                    \mark #11
+                    \mark #10
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
@@ -2278,7 +2352,7 @@
                     \set Staff.instrumentName = \markup { "Bass Rhythm" }
                     \set Staff.shortInstrumentName = \markup { B.rhm. }
                     \set Staff.midiInstrument = #"taiko drum" 
-                    \mark #11
+                    \mark #10
                     \clef "percussion"
                     r1
                     ^ \markup { c.0 }
@@ -2299,7 +2373,7 @@
                     \set Staff.instrumentName = \markup { "Melody Line 1" }
                     \set Staff.shortInstrumentName = \markup { Mel.1 }
                     \set Staff.midiInstrument = #"misc1" 
-                    \mark #11
+                    \mark #10
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2398,7 +2472,7 @@
                     \set Staff.instrumentName = \markup { "Melody Line 2" }
                     \set Staff.shortInstrumentName = \markup { Mel.2 }
                     \set Staff.midiInstrument = #"misc2" 
-                    \mark #11
+                    \mark #10
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2418,7 +2492,7 @@
                     \set Staff.instrumentName = \markup { "Counter Line" }
                     \set Staff.shortInstrumentName = \markup { Count. }
                     \set Staff.midiInstrument = #"misc3" 
-                    \mark #11
+                    \mark #10
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2517,7 +2591,7 @@
                     \set Staff.instrumentName = \markup { "Bass Line" }
                     \set Staff.shortInstrumentName = \markup { Bass. }
                     \set Staff.midiInstrument = #"electric bass (finger)" 
-                    \mark #11
+                    \mark #10
                     \clef "bass"
                     r8
                     ^ \markup { c.0 }
@@ -2691,7 +2765,7 @@
                     \set Staff.instrumentName = \markup { Riff }
                     \set Staff.shortInstrumentName = \markup { Riff. }
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
-                    \mark #11
+                    \mark #10
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2792,7 +2866,7 @@
                     \set Staff.instrumentName = \markup { Chords }
                     \set Staff.shortInstrumentName = \markup { Chrd. }
                     \set Staff.midiInstrument = #"french horn" 
-                    \mark #11
+                    \mark #10
                     r1
                     ^ \markup { c.0 }
                     {
@@ -2812,7 +2886,7 @@
                     \set Staff.instrumentName = \markup { "High Drones" }
                     \set Staff.shortInstrumentName = \markup { H.drn. }
                     \set Staff.midiInstrument = #"piccolo" 
-                    \mark #11
+                    \mark #10
                     e'''1
                     ^ \markup { c.0 }
                     ~
@@ -2855,7 +2929,7 @@
                     \set Staff.instrumentName = \markup { "Mid Drones" }
                     \set Staff.shortInstrumentName = \markup { M.drn. }
                     \set Staff.midiInstrument = #"string ensemble 2" 
-                    \mark #11
+                    \mark #10
                     <b' e''>1
                     ^ \markup { c.0 }
                     ~
@@ -2914,7 +2988,7 @@
                     \set Staff.instrumentName = \markup { "Bass Drones" }
                     \set Staff.shortInstrumentName = \markup { B.drn. }
                     \set Staff.midiInstrument = #"fretless bass" 
-                    \mark #11
+                    \mark #10
                     \clef "bass"
                     <e b>1
                     ^ \markup { c.0 }

@@ -46,7 +46,7 @@
 %   }  
 
 \layout {
-    \set Score.markFormatter = #format-mark-circle-letters 
+    \set Score.markFormatter = #format-mark-circle-alphabet 
     \context {        
         \Score
         \override BarNumber #'break-visibility = #'#(#f #t #t)

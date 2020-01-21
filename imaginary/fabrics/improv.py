@@ -19,8 +19,15 @@ class Improv(ImaginaryFabric):
     pitch_selectable_indices = ()
 
 
+    # WARNING... need to change for parts!
     def get_center_pitch(self, staff):
-        return 11
+        if staff.name in ("ooa_bassoon", 
+            "ooa_bari_sax",
+            "ooa_trombone",
+            "ooa_bass_guitar",):
+            return -10
+        else:
+            return 11
 
     def get_improv_pithes(self, staff, index=0, **kwargs):
         if self.assign_improv_pitches_from_selectable and self.selectable is not None:
@@ -54,8 +61,9 @@ class Improv(ImaginaryFabric):
             )
         if my_pitches and getattr(self, "ranges"):
             row_ranges = getattr(self, "ranges").get_ranges(staff.name, 1)
-            print(row_ranges)
             calliope.SmartRanges(smart_ranges=row_ranges)(my_line.note_events[0,0])
+            # removes dupes
+            my_line.note_events[0].pitch = sorted(my_line.note_events[0].pitch_set)
         if self.dynamic:
             my_line.note_events[0].tag(self.dynamic)
         return my_line

@@ -42,7 +42,7 @@
   }  
 
 \layout {
-    \set Score.markFormatter = #format-mark-circle-letters 
+    \set Score.markFormatter = #format-mark-circle-alphabet 
     \context {        
         \Score
         \remove "Bar_number_engraver"

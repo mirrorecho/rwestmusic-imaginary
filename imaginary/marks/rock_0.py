@@ -29,7 +29,7 @@ def score0(lib):
     low_drums = lambda_segment.LambdaSegment(
         sb.with_only("bass_rhythm"),
         fabric_staves = ("ooa_drum_set",),
-        tag_events = {0:("mp",)},
+        tag_events = {0:("mp","sticks")},
         func = lambda x: x.only_first("cells",2)
         )
 
@@ -40,6 +40,7 @@ def score0(lib):
         func = lambda x: x.eps(0,"\\percStaff")().ops("note_events")(0,"cowbell","mp")(),
         # func = lambda x: x.only_first("cells",8)
         )
+    cowbell.note_events.setattrs(pitch=0)
     low_drums.staves["ooa_drum_set"].segments[0].append(
         get_improv_line(
             rhythm=(1,)*8,
@@ -93,7 +94,9 @@ def score0(lib):
         tag_events = {0:("mf", "pizz", )},
         assign_pitches_from_selectable = True,
         selectable_start_beat = 16*4,
-        func = lambda x: x.crop("cells",1),
+        func = lambda x: x.crop("cells",1
+            ).ops("note_events")(
+                0,4,"!\\snappizzicato")(),
         )
 
     s.extend_from(
@@ -255,7 +258,7 @@ if __name__ == '__main__':
     score.remove(score.staff_groups["short_score"])
     calliope.illustrate(
         score,
-        as_midi=True,
+        # as_midi=True,
         open_midi=True)
 
 # wind_cloud_21_22.staves["cco_clarinet2","cco_trumpet"].phrases.setattrs(respell="sharps")

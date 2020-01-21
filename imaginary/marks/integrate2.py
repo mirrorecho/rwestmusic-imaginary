@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     pulse_on_off_beat, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
@@ -115,7 +115,7 @@ def score2(lib):
             "cco_clarinet2"),
         func = lambda x: x.crop("cells", 1),
         funcs = (
-            lambda x: x.poke("events", 7, 10, 14, 18, 27).smear_before(
+            lambda x: x.crop("cells", 0, 4).poke("events", 7, 10, 14, 18, 27).smear_before(
                 extend_beats=1.5, rearticulate=True
                 ).smear_after(fill=True, gap_beats=0.5, max_beats=4).eps(
                     1,4,7,10,13,"ppp","\\<")(
@@ -222,6 +222,32 @@ def score2(lib):
     counter_me.staves["ooa_mallets"].segments[0].mask("cells", 13, 14,15,16,17)
     s.extend_from(trumpets, counter_me, wind_swells)
 
+    # FINAL IMPROV
+
+    s.fill_rests(beats=4*13)
+    improv_winds1 = improv.Improv(
+        sb,
+        fabric_staves = ("ooa_flute", "ooa_clarinet",),
+        improv_times = 2,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=4*13,
+        dynamic="p"
+        )
+    improv_winds2 = improv.Improv(
+        sb,
+        fabric_staves = ("ooa_flute", "ooa_clarinet",),
+        improv_times = 2,
+        selectable_start_beat=4*15,
+        ranges = pitch_ranges.MID_RANGES,
+        # pitch_selectable_indices = (
+        #     (1,3,4),
+        #     (0,2,5),
+        #     ),
+        # dynamic="mp"
+        )
+    improv_winds2.cells.setattrs(respell="flats")
+    s.extend_from(improv_winds1, improv_winds2)
+
 
     # counter_winds1 = melody.Melody(
     #     calliope.LineBlock(
@@ -315,7 +341,7 @@ if __name__ == '__main__':
     to_lib(lib)
     calliope.illustrate(lib["integrate2_score2"], 
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         # open_pdf=False,
         )
 

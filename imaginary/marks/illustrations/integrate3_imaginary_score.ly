@@ -98,7 +98,7 @@
                         \tweak style #'slash
                         b'4
                         {
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf''2
@@ -209,7 +209,7 @@
                         \tweak style #'slash
                         b'4
                         {
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf'2
@@ -320,7 +320,7 @@
                         \tweak style #'slash
                         b'4
                         {
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf'2
@@ -431,7 +431,7 @@
                         \tweak style #'slash
                         b'4
                         {
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         f'2
@@ -518,7 +518,7 @@
                         \tweak style #'slash
                         b'4
                         {
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf2
@@ -606,7 +606,7 @@
                         \tweak style #'slash
                         b'4
                         {
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf,2
@@ -654,7 +654,47 @@
                             \set Staff.midiInstrument = #"bassoon" 
                             \mark #14
                             \clef "bass"
-                            R1 * 8
+                            R1 * 3
+                        }
+                        \once \hide Stem
+                        <ef bf df'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf,2
@@ -684,9 +724,6 @@
                         (
                         df1
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -707,7 +744,29 @@
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
                             \mark #14
-                            R1 * 8
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <bf df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf2
@@ -737,9 +796,6 @@
                         (
                         df'1
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -757,7 +813,29 @@
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
                             \mark #14
-                            R1 * 8
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <ef' bf' df''>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf2
@@ -787,9 +865,6 @@
                         (
                         df'1
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -808,7 +883,29 @@
                             \set Staff.midiInstrument = #"french horn" 
                             \mark #14
                             \clef "bass"
-                            R1 * 8
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <ef bf df'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 1
                         }
                         r2
                         f2
@@ -838,9 +935,6 @@
                         (
                         af1
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -1010,9 +1104,6 @@
                         ~
                         df''1
                         :32
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -1293,9 +1384,6 @@
                         \tweak style #'slash
                         c'8
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -1489,9 +1577,6 @@
                         ef''4
                         gf''4
                         ef''4
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "ooa_bass_guitar"
@@ -1683,9 +1768,6 @@
                         df4
                         df4
                         df4
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -1840,9 +1922,6 @@
                         -\staccato
                         gf'''4
                         -\staccato
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -1994,9 +2073,6 @@
                         -\staccato
                         b''4
                         -\staccato
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -2181,9 +2257,6 @@
                         -\staccato
                         df'4
                         -\staccato
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -2368,9 +2441,6 @@
                         -\staccato
                         df'4
                         -\staccato
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -2553,9 +2623,6 @@
                         (
                         df'''4
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -2750,9 +2817,6 @@
                         (
                         df'''4
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_oboe1"
@@ -2874,9 +2938,6 @@
                         gf''8
                         ]
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -2996,9 +3057,6 @@
                         (
                         gf''2
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -3120,9 +3178,6 @@
                         gf''8
                         ]
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -3242,9 +3297,6 @@
                         (
                         gf''2
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -3374,9 +3426,6 @@
                         -\staccato
                         ]
                         r4
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -3534,9 +3583,6 @@
                         bf8
                         -\staccato
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -3665,9 +3711,6 @@
                         -\staccato
                         ]
                         r4
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -3797,9 +3840,6 @@
                         df'8
                         -\staccato
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -3879,9 +3919,6 @@
                     df4
                     df4
                     df4
-                    {
-                        R1 * 7
-                    }
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -3900,35 +3937,35 @@
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
                         \mark #14
-                        af'4
+                        <af af'>4
                         \mf
                         r4
-                        df''4
+                        <df' df''>4
                         r4
-                        df''4
+                        <df' df''>4
                         r4
-                        c''8
+                        <c' c''>8
                         [
-                        f''8
+                        <f' f''>8
                         ]
                         r4
                         r2
-                        f''4
+                        <f' f''>4
                         r4
                         r4
-                        af''4
+                        <af' af''>4
                         r2
-                        f''16
+                        <f' f''>16
                         [
-                        ef''8.
+                        <ef' ef''>8.
                         ]
                         r4
                         r2
-                        bf''4
+                        <bf' bf''>4
                         r4
-                        af''8
+                        <af' af''>8
                         [
-                        df'''8
+                        <df'' df'''>8
                         ]
                         r4
                         {
@@ -4079,9 +4116,6 @@
                         bf''8
                         -\accent
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "harp2"
@@ -4091,46 +4125,16 @@
                 }
                 {
                     {
-                        \compressFullBarRests
-                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
-                        \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { Harp }
-                        \set Staff.shortInstrumentName = \markup { Hp. }
-                        \set Staff.midiInstrument = #"orchestral harp" 
-                        \mark #14
-                        \clef "bass"
-                        af4
-                        r4
-                        df'4
-                        r4
-                        df'4
-                        r4
-                        c'8
-                        [
-                        f'8
-                        ]
-                        r4
-                        r2
-                        f'4
-                        r4
-                        r4
-                        af'4
-                        r2
-                        f'16
-                        [
-                        ef'8.
-                        ]
-                        r4
-                        r2
-                        bf'4
-                        r4
-                        af'8
-                        [
-                        df''8
-                        ]
-                        r4
                         {
-                            R1 * 4
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                            \accidentalStyle neo-modern-cautionary
+                            \set Staff.instrumentName = \markup { Harp }
+                            \set Staff.shortInstrumentName = \markup { Hp. }
+                            \set Staff.midiInstrument = #"orchestral harp" 
+                            \mark #14
+                            \clef "bass"
+                            R1 * 10
                         }
                         ef,8
                         -\accent
@@ -4276,9 +4280,6 @@
                         df,8
                         -\accent
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -4446,9 +4447,6 @@
                         df'8
                         -\accent
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "piano2"
@@ -4613,9 +4611,6 @@
                         gf,8
                         -\accent
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -4850,9 +4845,6 @@
                         (
                         df'''4
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_violin_ii"
@@ -5036,9 +5028,6 @@
                         (
                         df'''4
                         )
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_viola"
@@ -5228,6 +5217,7 @@
                         af'8
                         :16
                         [
+                        \<
                         c''8
                         :16
                         ]
@@ -5275,6 +5265,7 @@
                         ]
                         gf''8
                         :16
+                        \mf
                         [
                         f''8
                         :16
@@ -5441,9 +5432,6 @@
                         bf8
                         :16
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_cello"
@@ -5679,9 +5667,6 @@
                         df8
                         :16
                         ]
-                        {
-                            R1 * 7
-                        }
                     }
                 }
                 \context Staff = "cco_bass"
@@ -5729,6 +5714,7 @@
                         df4
                         df4
                         df,4
+                        \<
                         df,4
                         df,4
                         df,4
@@ -5737,6 +5723,7 @@
                         ef,4
                         ef,4
                         ef,4
+                        \mf
                         ef,4
                         ef,4
                         ef,4
@@ -5764,9 +5751,6 @@
                         ef,4
                         ef,4
                         ef,4
-                        {
-                            R1 * 7
-                        }
                     }
                 }
             >>
@@ -5872,8 +5856,8 @@
                     bf'4
                     )
                     r4
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     f'4
                     (
                     df''8
@@ -5893,8 +5877,8 @@
                     af'2
                     )
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     [
                     bf'8
                     ]
@@ -5922,8 +5906,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     bf'8
                     ]
@@ -6085,8 +6069,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     [
                     bf'8
                     ]
@@ -6110,8 +6094,8 @@
                     ]
                     )
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     bf'4
                     (
                     df''2
@@ -6128,8 +6112,8 @@
                     ef''4
                     )
                     r4
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     bf'4
                     (
                     gf''8
@@ -6278,8 +6262,8 @@
                     f'4
                     )
                     df''16
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     [
                     (
                     c''8.
@@ -6298,8 +6282,8 @@
                     ef''4
                     )
                     r8
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     [
                     df''8
                     ~
@@ -6322,8 +6306,8 @@
                     )
                     r4
                     r8
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     [
                     ef''8
                     ]
@@ -6443,8 +6427,8 @@
                     bf'4
                     )
                     gf''16
-                    ^ \markup { c.18 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.18 }
                     [
                     (
                     f''8.
@@ -6463,8 +6447,8 @@
                     af''4
                     )
                     r8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     [
                     gf''8
                     ~
@@ -6502,8 +6486,8 @@
                     bf''2
                     )
                     bf''16
-                    ^ \markup { p.12 }
                     ^ \markup { c.24 }
+                    ^ \markup { p.12 }
                     [
                     (
                     af''8.
@@ -6542,8 +6526,8 @@
                     f'''4
                     )
                     r8
-                    ^ \markup { p.14 }
                     ^ \markup { c.28 }
+                    ^ \markup { p.14 }
                     [
                     ef'''8
                     ]
@@ -6565,8 +6549,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.30 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.30 }
                     [
                     f''8
                     ]
@@ -6682,8 +6666,8 @@
                         R1 * 1
                     }
                     r4
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     r4
                     r2
                     {
@@ -6697,8 +6681,8 @@
                         R1 * 1
                     }
                     r2
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     bf'2
                     (
                     df''1
@@ -6713,8 +6697,8 @@
                     ef''2
                     )
                     r2
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     bf'2
                     (
                     gf''4
@@ -6762,8 +6746,8 @@
                     bf'2
                     )
                     r2
-                    ^ \markup { c.2 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.2 }
                     f'2
                     (
                     df''4
@@ -6779,8 +6763,8 @@
                     af'1
                     )
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     bf'4
                     (
                     df''2
@@ -6800,8 +6784,8 @@
                     bf'4
                     )
                     r4
-                    ^ \markup { c.6 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.6 }
                     bf'4
                     (
                     df''2
@@ -6853,8 +6837,8 @@
                     ~
                     <df, ef>1
                     <ef, df>1
-                    ^ \markup { p.1 }
                     ^ \markup { c.1 }
+                    ^ \markup { p.1 }
                     ~
                     <ef, df>1
                     ~

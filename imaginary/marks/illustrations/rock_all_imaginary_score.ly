@@ -62,7 +62,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         a''4
                         -\staccato
                         r4
@@ -70,9 +72,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mp
@@ -96,9 +95,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gf''4
                         -\staccato
                         r4
@@ -106,9 +102,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b''8
                         \mp
                         [
@@ -128,20 +121,47 @@
                         b'8
                         \mf
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gf'4
                         -\staccato
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <c'' ds'' e''>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -183,9 +203,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef''8
@@ -222,9 +239,6 @@
                         -\staccato
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         f'''4
@@ -314,9 +328,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -339,9 +350,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f''8
@@ -356,9 +364,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a'8
@@ -395,9 +400,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -429,13 +431,10 @@
                         [
                         fs'''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -481,9 +480,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -503,9 +499,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -566,17 +559,11 @@
                             \mark #9
                             R1 * 14
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e''4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e''1
                         \p
                         ~
@@ -592,9 +579,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         fs''8
                         \mf
                         [
@@ -735,7 +719,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         e''4
                         -\staccato
                         r4
@@ -743,9 +729,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e''8
                         \mp
@@ -769,9 +752,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gf'4
                         -\staccato
                         r4
@@ -779,9 +759,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e''8
                         \mp
                         [
@@ -801,20 +778,47 @@
                         bf8
                         \mf
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gf'4
                         -\staccato
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <ds' e' c''>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -856,9 +860,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef''8
@@ -898,9 +899,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         c'8
@@ -1002,9 +1000,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'8
                         [
                         (
@@ -1027,9 +1022,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f''8
@@ -1044,9 +1036,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a'8
@@ -1083,9 +1072,6 @@
                         e'''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -1121,13 +1107,10 @@
                         [
                         b''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1173,9 +1156,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1195,9 +1175,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -1251,9 +1228,6 @@
                             \mark #9
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'8
                         \mf
                         [
@@ -1345,17 +1319,11 @@
                         e'8
                         ]
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'1
                         \p
                         ~
@@ -1371,9 +1339,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e''8
                         \mf
@@ -1560,7 +1525,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         d'4
                         -\staccato
                         r4
@@ -1568,9 +1535,6 @@
                         {
                             R1 * 11
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b4
                         -\staccato
                         r4
@@ -1578,9 +1542,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gs'8
                         \mp
                         [
@@ -1600,20 +1561,47 @@
                         gs8
                         \mf
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b4
                         -\staccato
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <c' ds' e'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -1653,8 +1641,8 @@
                         c'8
                         [
                         f'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         f'4
@@ -1663,9 +1651,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         b8
@@ -1705,9 +1690,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         c'8
@@ -1809,9 +1791,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -1834,9 +1813,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -1851,9 +1827,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -1890,9 +1863,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e'8
@@ -1928,13 +1898,10 @@
                         [
                         d''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -1980,9 +1947,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -2000,13 +1964,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 3
                         }
                         ef'8
                         \p
@@ -2039,9 +1997,6 @@
                             \mark #9
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a8
                         \mf
                         [
@@ -2173,9 +2128,6 @@
                         b'8
                         ]
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         b8
                         \mf
@@ -2333,7 +2285,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         d'4
                         -\staccato
                         r4
@@ -2341,9 +2295,6 @@
                         {
                             R1 * 11
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         -\staccato
                         r4
@@ -2351,9 +2302,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gs'8
                         \mp
                         [
@@ -2373,20 +2321,47 @@
                         ds'8
                         \mf
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         -\staccato
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <c' ds' e'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -2426,8 +2401,8 @@
                         gf'8
                         [
                         bf8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         bf4
@@ -2436,9 +2411,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         af8
@@ -2478,9 +2450,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef8
@@ -2582,9 +2551,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -2607,9 +2573,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -2624,9 +2587,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -2663,9 +2623,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -2705,13 +2662,10 @@
                         [
                         d'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -2757,9 +2711,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -2777,13 +2728,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 3
                         }
                         c'8
                         \p
@@ -2812,9 +2757,6 @@
                             \mark #9
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         a8
                         \mf
@@ -2937,10 +2879,7 @@
                         gf'8
                         ]
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         b8
@@ -3083,7 +3022,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         bf4
                         -\staccato
                         r4
@@ -3091,9 +3032,6 @@
                         {
                             R1 * 11
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b4
                         -\staccato
                         r4
@@ -3101,9 +3039,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df'8
                         \mp
                         [
@@ -3123,9 +3058,6 @@
                         gf8
                         \mf
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b4
                         -\staccato
                         r4
@@ -3136,7 +3068,9 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -3176,8 +3110,8 @@
                         a8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -3186,9 +3120,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         af8
@@ -3228,9 +3159,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         ef8
@@ -3332,9 +3260,6 @@
                         ]
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -3357,9 +3282,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -3374,9 +3296,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -3413,9 +3332,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -3455,13 +3371,10 @@
                         [
                         b8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -3507,9 +3420,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -3527,13 +3437,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 2
+                            R1 * 3
                         }
                         g'8
                         \p
@@ -3563,13 +3467,7 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #9
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 7
                         }
                         a8
                         \mf
@@ -3691,9 +3589,6 @@
                         bf8
                         ]
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         fs8
                         \mf
                         [
@@ -3841,7 +3736,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         f4
                         -\staccato
                         r4
@@ -3849,9 +3746,6 @@
                         {
                             R1 * 11
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gf4
                         -\staccato
                         r4
@@ -3859,9 +3753,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         ds8
                         \mp
                         [
@@ -3881,9 +3772,6 @@
                         ds8
                         \mf
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g,4
                         -\staccato
                         r4
@@ -3894,7 +3782,9 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -3934,8 +3824,8 @@
                         gf,8
                         [
                         f,8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         f,4
@@ -3944,9 +3834,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         b8
@@ -3986,9 +3873,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         g,8
@@ -4079,9 +3963,6 @@
                         r2
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -4104,9 +3985,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f,8
@@ -4121,9 +3999,6 @@
                         e8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -4160,9 +4035,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e8
@@ -4198,13 +4070,10 @@
                         [
                         fs,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -4250,9 +4119,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -4270,13 +4136,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -4315,9 +4175,6 @@
                             \mark #9
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         a8
@@ -4449,10 +4306,7 @@
                         ef8
                         ]
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         b,8
@@ -4643,7 +4497,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         f4
                         -\staccato
                         r4
@@ -4651,9 +4507,6 @@
                         {
                             R1 * 11
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g4
                         -\staccato
                         r4
@@ -4661,9 +4514,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gf,4
                         -\staccato
                         r4
@@ -4673,7 +4523,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         r8
                         \f
                         -\tenuto
@@ -4801,9 +4653,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         g,8
@@ -4894,9 +4743,6 @@
                         r2
                         r2
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,8
                         [
                         (
@@ -4919,9 +4765,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f,8
@@ -4936,9 +4779,6 @@
                         e8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -4975,9 +4815,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e8
@@ -5017,13 +4854,10 @@
                         [
                         fs,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -5069,9 +4903,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5089,13 +4920,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -5139,9 +4964,6 @@
                             \mark #9
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         a8
@@ -5233,9 +5055,6 @@
                         [
                         r8
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -5308,9 +5127,6 @@
                         cs,8
                         ]
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         fs8
                         \mf
                         [
@@ -5507,7 +5323,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         a4
                         -\staccato
                         r4
@@ -5515,9 +5333,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f4
                         \mf
                         -\tenuto
@@ -5540,9 +5355,6 @@
                         -\tenuto
                         g2
                         -\tenuto
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'2
                         \p
                         ~
@@ -5642,12 +5454,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5685,8 +5496,8 @@
                         e8
                         [
                         g8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         g4
@@ -5695,9 +5506,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         a4
@@ -5720,9 +5528,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -5743,9 +5548,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         e'8
@@ -5781,13 +5583,10 @@
                         [
                         b'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -5819,9 +5618,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -5847,13 +5643,7 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #9
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 7
                         }
                         c4
                         \p
@@ -5905,17 +5695,11 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g1
                         \p
                         ~
@@ -5931,9 +5715,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d4
                         \p
                         -\tenuto
@@ -6071,7 +5852,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         e'4
                         -\staccato
                         r4
@@ -6079,9 +5862,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f'4
                         \mf
                         -\tenuto
@@ -6104,9 +5884,6 @@
                         -\tenuto
                         g'2
                         -\tenuto
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'2
                         \p
                         ^ \markup { "straight mute" }
@@ -6206,15 +5983,14 @@
                         \!
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         r1
                         ^ \markup { "mute out" }
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -6252,8 +6028,8 @@
                         ef'8
                         [
                         g'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         g'4
@@ -6262,9 +6038,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         d''4
@@ -6287,9 +6060,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f'8
@@ -6310,9 +6080,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -6352,13 +6119,10 @@
                         [
                         d''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -6390,9 +6154,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -6437,13 +6198,7 @@
                         f''2
                         bf'2
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         g'4
                         \p
@@ -6495,17 +6250,11 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f'1
                         \p
                         ~
@@ -6521,9 +6270,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'4
                         \p
                         -\tenuto
@@ -6659,7 +6405,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         a4
                         -\staccato
                         r4
@@ -6667,9 +6415,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a4
                         \mf
                         -\tenuto
@@ -6695,9 +6440,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b4
                         -\staccato
                         r4
@@ -6705,9 +6447,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b,4
                         -\staccato
                         r4
@@ -6718,12 +6457,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -6761,8 +6499,8 @@
                         af8
                         [
                         bf8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         bf4
@@ -6771,9 +6509,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         a4
@@ -6796,9 +6531,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         f8
@@ -6819,9 +6551,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         g'8
@@ -6861,13 +6590,10 @@
                         [
                         d,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -6899,9 +6625,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -6927,13 +6650,7 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #9
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 7
                         }
                         f4
                         \p
@@ -6982,9 +6699,6 @@
                         -\tenuto
                         ]
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         a8
@@ -7076,17 +6790,11 @@
                         [
                         r8
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g1
                         \p
                         ~
@@ -7102,9 +6810,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d4
                         \p
                         -\tenuto
@@ -7412,8 +7117,98 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #8
-                            R1 * 19
+                            R1 * 9
                         }
+                        \once \hide Stem
+                        <ef' f' af' bf' c'' df''>4
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <f' g' af' c'' df''>4
+                        ^ \markup { (1) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <d' ef' f' g' a' bf' c''>4
+                        ^ \markup { (1) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         \compressFullBarRests
@@ -7440,9 +7235,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b8
                         [
                         c'8
@@ -7759,9 +7551,6 @@
                         {
                             R1 * 11
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         <b b'>8
@@ -7836,9 +7625,6 @@
                         <g' g''>8
                         ]
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         ef'''1
                         :32
                         \p
@@ -7887,79 +7673,55 @@
                         r2
                         <g f'>4
                         r4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                     }
@@ -8004,284 +7766,198 @@
                         e8
                         ]
                         d'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (9) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (10) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (11) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         r8
                         \mp
                         ^ \markup { "improv, cymbals" }
@@ -8374,9 +8050,6 @@
                         \tweak style #'slash
                         c'8
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <g f'>16
                         [
                         f'16
@@ -8415,218 +8088,154 @@
                         e8
                         ]
                         d'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ^ \markup { "improv, solo" }
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
@@ -8655,108 +8264,76 @@
                         \tweak style #'cross
                         a'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         \withSlash
@@ -8767,87 +8344,90 @@
                         d'4
                         \withSlash
                         d'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        {
-                            R1 * 3
-                        }
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                            \tweak style #'cross
+                            b'
+                        >4
+                        r4
+                        r2
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                            \tweak style #'cross
+                            b'
+                        >4
+                        r4
+                        r2
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                            \tweak style #'cross
+                            b'
+                        >4
+                        r4
+                        r2
                     }
                     {
                         \compressFullBarRests
@@ -8874,9 +8454,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <
                             \tweak style #'cross
                             e
@@ -8904,186 +8481,130 @@
                         <g f'>16
                         e'16
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (9) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (10) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (11) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (12) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (13) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (14) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                     }
@@ -9129,386 +8650,263 @@
                         e8
                         ]
                         d'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (9) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (10) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (11) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                    }
-                    {
-                        \once \hide Stem
-                        \accidentalStyle neo-modern-cautionary
                         \tweak style #'slash
                         c'4
                         ^ \markup { "ad lib with rolls" }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (3) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (4) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (5) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (6) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (7) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (8) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                     }
@@ -9783,7 +9181,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         a8
                         [
                         bf8
@@ -9877,9 +9277,6 @@
                         c''8
                         ]
                         r4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <d'>4
                         \mf
                         ^ \markup { "distorted, spacey" }
@@ -9937,12 +9334,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 12
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         d''4
@@ -9978,7 +9374,101 @@
                         \fermata
                         r2
                         {
-                            R1 * 16
+                            R1 * 1
+                        }
+                        \once \hide Stem
+                        <b c' d' e'>4
+                        \mp
+                        ^ \markup { "improv, straight quarter notes on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (8) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (9) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (10) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 5
                         }
                     }
                     {
@@ -10119,7 +9609,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         r8
                         \f
                         [
@@ -10196,9 +9688,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         d'4
@@ -10234,7 +9723,101 @@
                         \fermata
                         r2
                         {
-                            R1 * 16
+                            R1 * 1
+                        }
+                        \once \hide Stem
+                        <d e b c'>4
+                        \mp
+                        ^ \markup { "improv, straight quarter notes on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (6) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (7) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (8) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (9) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (10) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        {
+                            R1 * 5
                         }
                     }
                     {
@@ -10281,9 +9864,6 @@
                         ~
                         ]
                         c2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         a8
@@ -10407,6 +9987,7 @@
                         c''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -10425,6 +10006,7 @@
                             R1 * 1
                         }
                         d''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -10447,8 +10029,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         d'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -10463,9 +10048,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'8
                         -\tenuto
                         ^ \markup { arco }
@@ -10616,7 +10198,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         gs'4
                         \mf
                         ^ \markup { "pizz, distorted" }
@@ -10658,9 +10242,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         e'''4
@@ -10671,8 +10252,35 @@
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <d'' g''>4
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         \compressFullBarRests
@@ -10687,9 +10295,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -10726,9 +10331,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -10768,13 +10370,10 @@
                         [
                         fs'''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -10817,17 +10416,63 @@
                         \mf
                         -\tenuto
                         ]
-                        {
-                            R1 * 5
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <a' d'' e'' fs''>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         gf'8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -10840,13 +10485,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         af'8
                         \p
@@ -11109,6 +10748,7 @@
                         c''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -11127,6 +10767,7 @@
                             R1 * 1
                         }
                         f''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -11149,8 +10790,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         d'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -11165,9 +10809,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f'8
                         -\tenuto
                         ^ \markup { arco }
@@ -11318,7 +10959,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         e'4
                         \mf
                         ^ \markup { "pizz, distorted" }
@@ -11360,9 +11003,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         e'''4
@@ -11373,8 +11013,35 @@
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <d'' g''>4
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         \compressFullBarRests
@@ -11389,9 +11056,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a8
@@ -11428,9 +11092,6 @@
                         e''8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b'8
@@ -11470,20 +11131,69 @@
                         [
                         fs'''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
-                            R1 * 10
+                            R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <a' d'' e'' fs''>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         gf'8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -11496,13 +11206,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         f'8
                         \p
@@ -11760,6 +11464,7 @@
                         a4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -11778,6 +11483,7 @@
                             R1 * 1
                         }
                         bf4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -11800,8 +11506,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         f,4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -11816,9 +11525,6 @@
                         {
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g,4
                         \mf
                         ^ \markup { pizz }
@@ -11838,7 +11544,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         a,4
                         \mf
                         ^ \markup { "pizz, distorted" }
@@ -11880,9 +11588,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         a4
@@ -11893,8 +11598,35 @@
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <g d'>4
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         \compressFullBarRests
@@ -11909,9 +11641,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -11948,9 +11677,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -11986,13 +11712,10 @@
                         [
                         b,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 3
                         }
                         r2
@@ -12035,17 +11758,63 @@
                         \mf
                         -\tenuto
                         ]
-                        {
-                            R1 * 5
-                        }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <e fs a d'>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         bf,8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -12058,13 +11827,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -12165,9 +11928,6 @@
                         :32
                         b,4
                         :32
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'8
                         [
                         (
@@ -12344,6 +12104,7 @@
                         bf4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -12362,6 +12123,7 @@
                             R1 * 1
                         }
                         bf4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -12384,8 +12146,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         a,4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -12400,9 +12165,6 @@
                         {
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b,4
                         \mf
                         ^ \markup { pizz }
@@ -12422,7 +12184,9 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         e4
                         \mf
                         ^ \markup { "pizz, distorted" }
@@ -12464,9 +12228,6 @@
                         {
                             R1 * 3
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r4
                         d'4
@@ -12477,8 +12238,35 @@
                         r4
                         r2
                         {
-                            R1 * 5
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <g d'>4
+                        ^ \markup { "improv on these pitches" }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                     {
                         \compressFullBarRests
@@ -12493,9 +12281,6 @@
                         r2
                         \fermata
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         a,8
@@ -12532,9 +12317,6 @@
                         e'8
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         \fermata
                         b8
@@ -12570,20 +12352,69 @@
                         [
                         b,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
-                            R1 * 10
+                            R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        \once \hide Stem
+                        <e fs a d'>4
+                        ^ \markup {
+                            \column
+                                {
+                                    "pizz, improv,"
+                                    "straight quarter notes on these pitches"
+                                }
+                            }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (3) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (4) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (5) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                         r2
                         r8
                         [
                         bf,8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -12596,13 +12427,7 @@
                         -\tenuto
                         ]
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         r2
                         r8
@@ -12701,9 +12526,6 @@
                         :32
                         e4
                         :32
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a8
                         [
                         (
@@ -12973,12 +12795,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e''8
                         \mp
@@ -13002,9 +12823,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'''2
                         \p
                         ~
@@ -13059,7 +12877,9 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -13101,9 +12921,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f'''2
                         \mp
                         \<
@@ -13117,7 +12934,7 @@
                         f'''2
                         \mp
                         \<
-                        f'''2
+                        bf'''2
                         \mf
                         \>
                         {
@@ -13127,7 +12944,7 @@
                         f'''2
                         \mp
                         \<
-                        f'''2
+                        bf'''2
                         \mf
                         \>
                         {
@@ -13137,7 +12954,7 @@
                         f'''2
                         \mp
                         \<
-                        f'''2
+                        c'''2
                         \mf
                         \>
                         {
@@ -13147,7 +12964,7 @@
                         d'''2
                         \mp
                         \<
-                        g'''2
+                        a''2
                         \mf
                         \>
                         {
@@ -13180,9 +12997,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         gs'8
                         \mp
@@ -13226,9 +13040,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13245,9 +13056,6 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13303,9 +13111,6 @@
                             \mark #9
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'''1
                         \mp
                         ~
@@ -13515,12 +13320,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mp
@@ -13544,9 +13348,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         e'''4
                         \p
@@ -13605,7 +13406,9 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 1
                         }
                         r2
@@ -13647,9 +13450,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         f'''2
                         \mp
@@ -13678,7 +13478,7 @@
                         r2
                         \!
                         r2
-                        f'''2
+                        c'''2
                         \mp
                         \<
                         d'''2
@@ -13721,9 +13521,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
@@ -13767,9 +13564,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13786,9 +13580,6 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -13848,9 +13639,6 @@
                             \mark #9
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         e'''4
                         \mp
@@ -14073,12 +13861,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 12
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         fs'8
                         -\tenuto
                         [
@@ -14242,9 +14029,6 @@
                         {
                             R1 * 12
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -14261,10 +14045,7 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         af'8
@@ -14309,9 +14090,6 @@
                             \mark #9
                             R1 * 14
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'8
                         [
                         (
@@ -14384,9 +14162,6 @@
                         fs''8
                         ]
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b'8
@@ -14675,12 +14450,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 12
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs''8
                         -\tenuto
@@ -14839,9 +14613,6 @@
                         {
                             R1 * 12
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -14858,10 +14629,7 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         f'8
@@ -14913,9 +14681,6 @@
                             \mark #9
                             R1 * 14
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df''8
                         [
                         (
@@ -14988,9 +14753,6 @@
                         cs''8
                         ]
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b'8
@@ -15284,12 +15046,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         c''8
                         \mp
@@ -15313,9 +15074,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         fs'8
                         -\tenuto
                         [
@@ -15518,9 +15276,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         df'8
                         \mp
@@ -15564,9 +15319,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -15583,9 +15335,6 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -15643,9 +15392,6 @@
                             \mark #9
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         a'8
                         \mf
@@ -15728,17 +15474,11 @@
                         ]
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'1
                         \p
                         ~
@@ -15754,9 +15494,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b'8
@@ -16036,12 +15773,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         c''8
                         \mp
@@ -16065,9 +15801,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         fs'8
                         -\tenuto
@@ -16265,9 +15998,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         af8
                         \mp
@@ -16311,9 +16041,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -16330,9 +16057,6 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -16385,13 +16109,7 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #9
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 7
                         }
                         a'8
                         \mf
@@ -16473,17 +16191,11 @@
                         r8
                         ]
                         r4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''1
                         \p
                         ~
@@ -16499,9 +16211,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b'8
@@ -16922,9 +16631,6 @@
                         {
                             R1 * 9
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e,8
                         \mp
@@ -16968,9 +16674,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -16987,10 +16690,7 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r2
@@ -17033,9 +16733,6 @@
                             \mark #9
                             R1 * 14
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         cs'8
                         [
                         (
@@ -17108,9 +16805,6 @@
                         fs,8
                         ]
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b8
@@ -17334,12 +17028,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a4
                         \mf
                         -\tenuto
@@ -17362,9 +17055,6 @@
                         -\tenuto
                         c'2
                         -\tenuto
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         d'4
                         \p
@@ -17472,12 +17162,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -17515,8 +17204,8 @@
                         b8
                         [
                         c'8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c'4
@@ -17551,9 +17240,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         \mf
                         -\staccato
@@ -17587,9 +17273,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -17615,13 +17298,7 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #9
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 7
                         }
                         f4
                         \p
@@ -17673,17 +17350,11 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a,4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d1
                         \p
                         ~
@@ -17699,9 +17370,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b8
@@ -17933,12 +17601,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'4
                         \mf
                         -\tenuto
@@ -17961,9 +17628,6 @@
                         -\tenuto
                         c''2
                         -\tenuto
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         d'4
                         \p
@@ -18071,15 +17735,14 @@
                         \!
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #8
                         r1
                         ^ \markup { "mute out" }
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -18117,8 +17780,8 @@
                         af'8
                         [
                         c''8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         c''4
@@ -18153,9 +17816,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b'4
                         \mf
                         -\staccato
@@ -18189,9 +17849,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -18234,10 +17891,7 @@
                         bf'2
                         )
                         r2
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                         f''2
@@ -18261,17 +17915,11 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g'1
                         \p
                         ~
@@ -18287,9 +17935,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b8
@@ -18523,12 +18168,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         \mf
                         -\tenuto
@@ -18557,12 +18201,11 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #8
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -18600,8 +18243,8 @@
                         c'8
                         [
                         ef8
-                        -\accent
                         -\tenuto
+                        -\accent
                         ~
                         ]
                         ef4
@@ -18636,9 +18279,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e4
                         \mf
                         -\staccato
@@ -18672,9 +18312,6 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -18700,13 +18337,7 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #9
-                            R1 * 6
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 7
                         }
                         g4
                         \p
@@ -18758,17 +18389,11 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf,4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f1
                         \p
                         ~
@@ -18784,9 +18409,6 @@
                         -\staccato
                         -\accent
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         b8
@@ -18954,281 +18576,281 @@
                     }
                     r8
                     [
-                    c''8
+                    c'8
                     \mp
                     ^ \markup { cowbell }
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                 }
                 {
@@ -19237,536 +18859,532 @@
                     \mark #7
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
+                    c'8
                     ]
-                    c''4
+                    c'4
                     r4
-                    c''4
+                    c'4
                     r8
                     [
-                    c''8
-                    ]
-                    r8
-                    [
-                    c''8
+                    c'8
                     ]
                     r8
                     [
-                    c''8
-                    ]
-                }
-                {
-                    \accidentalStyle neo-modern-cautionary
-                    c'8
-                    [
                     c'8
                     ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
-                    [
-                    c'8
-                    ]
-                    c'8
+                    r8
                     [
                     c'8
                     ]
                 }
                 {
+                    \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    <c' c''>16
+                    \mark #8
+                    c'8
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'8
+                    [
+                    c'8
+                    ]
+                    c'16
+                    [
+                    c'16
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
                     r8
                     [
-                    <c' c''>8
+                    c'8
                     ]
-                    <c' c''>16
+                    c'16
                     [
-                    <c' c''>16
-                    <c' c''>8
+                    c'16
+                    c'8
                     ]
-                }
-                {
-                    \accidentalStyle neo-modern-cautionary
                     c'8
                     [
                     c'8
@@ -19843,9 +19461,6 @@
                     {
                         R1 * 1
                     }
-                }
-                {
-                    \accidentalStyle neo-modern-cautionary
                     c'8
                     [
                     c'8
@@ -20088,426 +19703,295 @@
                     ]
                 }
                 {
-                    \once \hide Stem
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
                     \mark #9
                     \tweak style #'slash
                     c'4
                     ^ \markup { "ad lib" }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (2) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (3) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (4) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (5) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (6) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (7) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (8) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (9) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (10) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (11) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (12) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (13) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (14) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (15) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (16) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (17) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (18) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (19) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (20) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (21) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (22) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (23) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (24) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                }
-                {
-                    \once \hide Stem
-                    \accidentalStyle neo-modern-cautionary
                     \tweak style #'slash
                     c'4
                     ^ \markup { "ad lib with rolls" }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (2) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (3) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (4) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (5) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (6) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (7) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                     ^ \markup { (8) }
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
-                    \once \hide Stem
                     \tweak style #'slash
                     c'4
                 }
@@ -20965,9 +20449,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b'4
                         \f
                         r4
@@ -21211,9 +20692,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         \clef "bass"
                         c,4
                         \f
@@ -21312,7 +20790,9 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 1
                         }
                         r2
@@ -21360,9 +20840,6 @@
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         \ottava #1
                         fs'''8
                         -\staccato
@@ -22060,9 +21537,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <d' g' a'>4
                         ~
                         <d' g' a'>8
@@ -22177,9 +21651,6 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <c'' f'' g''>4
                         ~
                         <c'' f'' g''>8
@@ -22231,9 +21702,6 @@
                         {
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <a d' e'>4
                         ~
                         <a d' e'>8
@@ -22348,57 +21816,56 @@
                     }
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
+                            \mark #7
                             R1 * 1
                         }
                         r2
                         r8
                         [
                         \clef "treble"
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         ~
                         ]
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         [
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         ]
-                        <d'' f'' a''>4
+                        <d' f' a'>4
                         r4
                         r2
                         r8
                         [
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         ~
                         ]
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         [
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         ]
-                        <d'' f'' a''>4
-                        <e'' g'' c'''>4
+                        <d' f' a'>4
+                        <e' g' c''>4
                         r2
                         r8
                         [
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         ~
                         ]
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         [
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         ~
                         ]
-                        <d'' f'' bf''>8
+                        <d' f' bf'>8
                         [
-                        <d'' f'' a''>8
+                        <d' f' a'>8
                         ]
-                        <e'' g'' c'''>4
-                        <f'' g'' c'''>2
+                        <e' g' c''>4
+                        <f' g' c''>2
                         {
                             R1 * 6
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         fs''8
                         -\staccato
                         [
@@ -23094,9 +22561,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         \clef "bass"
                         <b,, b,>4
                         -\staccato
@@ -23223,9 +22687,6 @@
                         -\staccato
                         <b, a>4
                         -\staccato
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         \clef "treble"
                         <c' f' g'>4
                         ~
@@ -23278,9 +22739,6 @@
                         {
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         \clef "bass"
                         <a, d e>4
                         ~
@@ -23349,6 +22807,7 @@
                         d''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -23367,6 +22826,7 @@
                             R1 * 1
                         }
                         f''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -23389,8 +22849,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         e'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -23405,9 +22868,6 @@
                         {
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d'4
                         \mf
                         ^ \markup { pizz }
@@ -23497,9 +22957,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g'4
                         \f
                         ^ \markup { pizz }
@@ -23523,13 +22980,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         gs8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         d'8
@@ -23569,9 +23024,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -23588,10 +23040,7 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         c''8
@@ -23717,17 +23166,11 @@
                         :32
                         e'4
                         :32
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d''1
                         \p
                         ~
@@ -23813,6 +23256,7 @@
                         d''4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -23831,6 +23275,7 @@
                             R1 * 1
                         }
                         a''4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -23853,8 +23298,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         a'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -23869,9 +23317,6 @@
                         {
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         gf'4
                         \mf
                         ^ \markup { pizz }
@@ -23961,9 +23406,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g'4
                         \f
                         ^ \markup { pizz }
@@ -23987,13 +23429,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e'8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         d'8
@@ -24033,9 +23473,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -24052,10 +23489,7 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         gs'8
@@ -24181,17 +23615,11 @@
                         :32
                         e'4
                         :32
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d''1
                         \p
                         ~
@@ -24280,6 +23708,7 @@
                         c'4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -24298,6 +23727,7 @@
                             R1 * 1
                         }
                         c'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -24320,8 +23750,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         bf4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -24336,9 +23769,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <d'>4
                         \mf
                         ^ \markup { "sul pont" }
@@ -24466,9 +23896,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e'4
                         \f
                         ^ \markup { pizz }
@@ -24492,13 +23919,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs'8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         d'8
@@ -24538,9 +23963,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -24557,10 +23979,7 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         f'8
@@ -24691,17 +24110,11 @@
                         :32
                         d'4
                         :32
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f'1
                         \p
                         ~
@@ -24837,6 +24250,7 @@
                         bf4
                         \mf
                         ^ \markup { pizz }
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -24855,6 +24269,7 @@
                             R1 * 1
                         }
                         c'4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -24877,8 +24292,11 @@
                         }
                     }
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
+                        \mark #7
                         a,4
+                        \snappizzicato
                         r4
                         r2
                         r2
@@ -24893,9 +24311,6 @@
                         {
                             R1 * 7
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b,4
                         \mf
                         ^ \markup { pizz }
@@ -24985,9 +24400,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d4
                         \f
                         ^ \markup { pizz }
@@ -25011,13 +24423,11 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         cs8
                         \mp
                         -\tenuto
+                        ^ \markup { arco }
                         [
                         \<
                         a,8
@@ -25057,9 +24467,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
@@ -25076,10 +24483,7 @@
                         -\accent
                         -\tenuto
                         ]
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         c'8
@@ -25207,17 +24611,11 @@
                         :32
                         d4
                         :32
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         g,4
                         -\staccato
                         -\accent
                         r4
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         f1
                         \p
                         ~
@@ -25545,9 +24943,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c,4
                         \f
                         ^ \markup { pizz }
@@ -25571,14 +24966,12 @@
                         {
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         r8
                         [
                         bf,8
                         \mf
+                        ^ \markup { arco }
                         ]
                         \<
                         (
@@ -25601,9 +24994,6 @@
                             \mark #9
                             R1 * 11
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b,2
                         \p
                         \<

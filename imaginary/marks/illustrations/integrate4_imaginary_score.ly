@@ -165,8 +165,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -288,8 +288,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s8.
                         \bar "|." 
@@ -427,8 +427,8 @@
                         b'4
                         \tweak style #'slash
                         b'4
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeating a simple figure 4X, slowing down" }
                         \once \hide Rest
@@ -457,8 +457,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -630,8 +630,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -770,8 +770,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s8
                         \bar "|." 
@@ -880,8 +880,8 @@
                         \>
                         e1
                         \fermata
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat 3X, slowing down" }
                         \once \hide Rest
@@ -910,8 +910,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1050,8 +1050,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1192,8 +1192,8 @@
                         b2
                         fs'2
                         \pp
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat 3X, slowing down" }
                         \once \hide Rest
@@ -1214,8 +1214,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1347,8 +1347,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -1570,8 +1570,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s8.
                         \bar "|." 
@@ -1667,8 +1667,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2134,8 +2134,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2255,8 +2255,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2374,8 +2374,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2700,8 +2700,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -2993,8 +2993,8 @@
                         b''4
                         b''4
                         b''4.
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat 4X, slowing down (not together with others)" }
                         \once \hide Rest
@@ -3023,8 +3023,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3347,8 +3347,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3671,8 +3671,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3817,8 +3817,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -3957,8 +3957,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4048,8 +4048,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4139,8 +4139,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4230,8 +4230,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4321,8 +4321,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4413,8 +4413,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4560,8 +4560,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4675,8 +4675,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -4892,8 +4892,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -5057,8 +5057,8 @@
                     s4
                     s4
                     s4
-                    \freeRestArrow
                     \freePad
+                    \freeRestArrow
                     r4
                     s4
                     \bar "|." 
@@ -5411,8 +5411,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -5763,8 +5763,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -6118,8 +6118,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -6470,8 +6470,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -6761,8 +6761,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -7065,8 +7065,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -7383,8 +7383,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -7688,8 +7688,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 
@@ -7710,39 +7710,39 @@
                         \set Staff.midiInstrument = #"cello" 
                         \mark #13
                         \clef "bass"
-                        ef'8
+                        ef8
                         \f
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'4
-                        af'8
+                        af4
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'4
+                        af4
                         ef'8
                         [
                         af8
@@ -8006,8 +8006,8 @@
                         s4
                         s4
                         s4
-                        \freeRestArrow
                         \freePad
+                        \freeRestArrow
                         r4
                         s4
                         \bar "|." 

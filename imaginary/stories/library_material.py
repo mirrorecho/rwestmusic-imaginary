@@ -255,6 +255,7 @@ def get_improv_line(
             my_cell.note_events[0].pitch = pitches
             my_cell.note_events[0].tag("\\once \\hide Stem")
             my_cell.note_events[1:].tag("note_head:0:slash")
+            my_cell.note_events[1].tag("\\once \\override Accidental #'stencil = ##f ")
         else:
             my_cell.note_events.tag("note_head:0:slash")
         my_line.append(my_cell)

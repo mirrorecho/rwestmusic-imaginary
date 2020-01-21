@@ -8,7 +8,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     ditto, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 
 from imaginary.libraries import (home, counter, bass, drone, pitch_ranges,
     riff, chords)
@@ -303,6 +303,22 @@ def score0(lib):
     s.staves["cco_percussion"].segments[-1].append(cym_line)
 
     s.fill_rests(5*4)
+
+    bari_improv = improv.Improv(
+        sb,
+        fabric_staves = ("ooa_bari_sax",),
+        improv_times = 5,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=5*4,
+        pitch_selectable_indices = (
+            (0,2,5),
+            ),
+        dynamic="pp"
+        )
+    bari_improv.note_events[0].tag("\\<")
+    bari_improv.note_events[9].tag("mp")
+    s.extend_from(bari_improv)
+
     oboe_swells = staggered_swell.StaggeredSwells(
         sb.with_only("mid_drones"),
         fabric_staves = ("cco_oboe1", "cco_oboe2",
@@ -336,6 +352,32 @@ def score0(lib):
     s.extend_from(
         clarinet_highlights,
         )    
+
+    s.fill_rests(beats=10*4)
+    brass_improv1 = improv.Improv(
+        sb,
+        fabric_staves = ("ooa_horn", "ooa_trumpet", "ooa_trombone"),
+        improv_times = 1,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=10*4,
+        pitch_selectable_indices = (
+            (0,2,4),
+            ),
+        dynamic="p"
+        )
+    brass_improv2 = improv.Improv(
+        sb,
+        instruction="",
+        fabric_staves = ("ooa_horn", "ooa_trumpet", "ooa_trombone"),
+        improv_times = 2,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=11*4,
+        pitch_selectable_indices = (
+            (0,2,4),
+            ),
+        # dynamic="p"
+        )
+    s.extend_from(brass_improv1, brass_improv2)
 
     s.fill_rests()
 

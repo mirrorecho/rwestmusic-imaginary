@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     ditto, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import short_block, library
 from imaginary.stories.library_material import (
@@ -18,8 +18,8 @@ from imaginary.marks import rock
 # TEMPO = 160+ !!!!!!
 
 def bass_artics(n):
-    n.events(beats__lt=1).tag("-")
-    n.events(beats__gte=1).tag(".",">")
+    n.note_events(beats__lt=1).tag("-")
+    n.note_events(beats__gte=1).tag(".",">")
     return n
 
 def score2(lib):
@@ -34,12 +34,14 @@ def score2(lib):
     rim_shots = ImaginaryCell(rhythm=(1,1,1,1), pitches=(2,2,2,2))
     rim_shots.note_events.tag("\\withSlash")
 
+
     drum_rhythm2 = lambda_segment.LambdaSegment(
             calliope.SegmentBlock(ImaginarySegment(
                 lib("rock_rhythm2"),
                 get_improv_line(times=8),
                 rim_shots,
                 get_improv_line(times=6),
+                lib("drum_hits") * 3,
             )),
             fabric_staves = ("ooa_drum_set",),
             func = lambda x: x,
@@ -64,6 +66,9 @@ def score2(lib):
         osti_cell_count = 3,
         func = lambda x: x.eps(0, "mf")()
         )
+    cco_perc1.note_events.setattrs(pitch=0)
+    cco_perc2.note_events.setattrs(pitch=0)
+    cco_perc3.note_events.setattrs(pitch=0)
     cco_perc3.cells[-2].note_events[0].tag("\\<")
     cco_perc3.note_events[-1].tag("f")
     s.extend_from(cco_perc1, cco_perc2, cco_perc3)
@@ -91,6 +96,7 @@ def score2(lib):
         tag_events = {0:("mf",)},
         func = lambda x: x,
         )
+    harp1_riff.cells[:16].setattrs(respell="sharps")
 
     # TO DO: model this pattern... already used multiple times!
     poke_harp1 = []
@@ -138,6 +144,7 @@ def score2(lib):
         assign_pitches_from_selectable = True,
         func = lambda x: x.transformed(calliope.StandardDurations())
         )
+    pizz.staves["cco_viola"].note_events[0].tag("pizz")
 
     constant_pluck = osti.Osti(
         sb,
@@ -167,20 +174,27 @@ def score2(lib):
         sb.with_only("bass_line"),
         assign_pitches_from_selectable = True,
         # ranges=pitch_ranges.PitchRanges(pitch_ranges.BOTTOM_SEQ),
-        fabric_staves = ("ooa_bassoon", "cco_bassoon", "ooa_bass_guitar", "cco_bass"),
+        fabric_staves = (
+            "ooa_bassoon", "cco_bassoon", 
+            "ooa_trombone", "cco_trombone", 
+            "ooa_bass_guitar", "cco_bass"
+            ),
         # tag_events = {0:("mf", "pizz")},
         # func = lambda x: x.only_first("cells",7).bookend_pad(0,3),
         # func = lambda x: x.crop("cells",1),
         func = lambda x: x.only_first("cells",14
-            ).transformed(calliope.StandardDurations()).eps(0, "f")(),
+            ).transformed(calliope.StandardDurations()),
         funcs = (
             lambda x: bass_artics(x),
             lambda x: bass_artics(x),
+            lambda x: bass_artics(x.poke("cells", 7,8,10,11)),
+            lambda x: bass_artics(x.poke("cells", 7,8,10,11)),
             lambda x:x,
             lambda x:x.eps(1, "pizz")(),
             )
         )
-
+    for st in opening_bass.staves:
+        st.note_events[0].tag("f")
 
     s.extend_from(
         opening_bass,
@@ -247,9 +261,47 @@ def score2(lib):
     # # =======================================================
     # BAR 10+
     # # =======================================================
+    mallets_improv1 =  improv.Improv(
+        sb,
+        fabric_staves = ("ooa_mallets",),
+        improv_times = 3,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=9*4,
+        # pitch_selectable_indices = (
+        #     (0,1,3,5),
+        #     ),
+        )
+    mallets_improv2 =  improv.Improv(
+        sb,
+        instruction="",
+        fabric_staves = ("ooa_mallets",),
+        improv_times = 4,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=12*4,
+        # pitch_selectable_indices = (
+        #     (0,2,4,5),
+        #     ),
+        )
+    mallets_improv3 =  improv.Improv(
+        sb,
+        instruction="",
+        fabric_staves = ("ooa_mallets",),
+        improv_times = 3,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=16*4,
+        # pitch_selectable_indices = (
+        #     (0,2,4,5),
+        #     ),
+        )
+    s.extend_from(
+        mallets_improv1, 
+        mallets_improv2, 
+        mallets_improv3
+        )
+
 
     flute_high_swells = staggered_swell.StaggeredSwells(
-        sb.with_only("high_drones"),
+        sb,
         low_dynamic = "mp",
         swell_dynamic = "mf",
         cell_count = 1,
@@ -311,6 +363,16 @@ def score2(lib):
         st.note_events[0].tag("arco, distorted")
     s.extend_from(hits_final)
 
+    s.fill_rests(beats=16*4)
+    strings_improv = improv.Improv(
+        sb.with_only("high_drones"),
+        fabric_staves = instrument_groups.get_instruments("ooa_strings",),
+        improv_times = 3,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=16*4,
+        )
+    s.extend_from(strings_improv)
+
 
     # # =======================================================
     # adjust for bass 8va
@@ -369,7 +431,7 @@ if __name__ == '__main__':
     calliope.illustrate(
         lib["rock_score2"],
         as_midi=True,
-        open_midi=True,
+        # open_midi=True,
         )
 
 

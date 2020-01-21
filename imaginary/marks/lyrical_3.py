@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     pulse_on_off_beat, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import library
 from imaginary.stories.library_material import (
@@ -42,6 +42,20 @@ def score3(lib):
             times=1)
         )
     s.staves["ooa_drum_set"].append(drum_set)
+
+    cym_seg = ImaginarySegment(
+        # TO DO... this would be good in the library...
+        ImaginaryCell(rhythm=(-4*9,)),
+        ImaginaryCell(rhythm=(4,4),).eps(
+            0,1, ":32")(
+            0, "\\<")(
+            1, "mf")(),
+        ImaginaryCell(rhythm=(-4,)).eps(0, "l.v.")(),
+        )
+    s.staves["cco_percussion"].append(cym_seg)
+
+
+
 
     s.extend_from(lambda_segment.LambdaSegment(
         sb3.with_only("high_drones",),
@@ -102,8 +116,8 @@ def score3(lib):
         fabric_staves = ("ooa_mallets",),
         ranges=pitch_ranges.TOP_RANGES,
         osti_pulse_duration = 0.5,
-        osti_cell_length = 6,
-        osti_cell_count = 12,
+        osti_cell_length = 8,
+        osti_cell_count = 11,
     )
     for n in mallets_osti.note_events:
         n.pitch = (n.pitch, n.pitch-12)
@@ -172,8 +186,6 @@ def score3(lib):
             ),
     )
 
-
-    s.fill_rests(beats=16)
     # =======================================================
     # bars 5-12
     # =======================================================
@@ -181,6 +193,7 @@ def score3(lib):
     violin_i = lambda_segment.LambdaSegment(
             sb3.with_only("counter_line",),
             fabric_staves = ("cco_violin_i",),
+            bookend_beats=(2,0),
             func = lambda x: x.crop("cells",2
                 ).mask("cells",4,5).crop("events",0,6
                 ).e_smear_after(fill=True).eps(
@@ -210,6 +223,7 @@ def score3(lib):
             func = lambda x: x.crop("cells",4
                 ).e_smear_after(fill=True 
                 ).crop("events",0,3).eps(
+                1, "f")(
                 1, 4,7,9,13,17,19,21, "(")(
                 2, 5,8,10,14,18,20,22, ")")(
                 23,24, "-")(
@@ -222,6 +236,7 @@ def score3(lib):
             func = lambda x: x.crop("cells",3
                 ).crop_chords( (0,)
                 ).crop("events",0,4).eps(
+                1, "f")(
                 1,11,18, "(")(
                 2,12,19, ")")(
                 24,25,26,27, "-")(
@@ -230,18 +245,67 @@ def score3(lib):
         
     s.extend_from(violin_i, violin_ii, viola, cello)
 
+
+
+    guitar_improv1 = improv.Improv(
+        sb3,
+        instruction = "improv on these pitches, spacyey fx",
+        fabric_staves = ("ooa_guitar",),
+        improv_times = 3,
+        ranges = pitch_ranges.MID_RANGES,
+        # selectable_start_beat=7*4,
+        dynamic="mf"
+        )
+    guitar_improv2 = improv.Improv(
+        sb3,
+        instruction = "",
+        fabric_staves = ("ooa_guitar",),
+        improv_times = 3,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=3*4,
+        )
+    s.extend_from(guitar_improv1, guitar_improv2)
+    s.fill_rests(beats=6*4)
+    
+    guitar_improv3 = improv.Improv(
+        sb3,
+        instruction = "",
+        fabric_staves = ("ooa_guitar",),
+        improv_times = 3,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=6*4,
+        )
+    guitar_improv3_bass = improv.Improv(
+        sb3,
+        instruction = "improv on these pitches, spacey fx",
+        fabric_staves = ("ooa_bass_guitar",),
+        improv_times = 3,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=6*4,
+        dynamic="mf"
+        )
+    s.extend_from(guitar_improv3, guitar_improv3_bass)
+    guitar_improv4 = improv.Improv(
+        sb3,
+        instruction = "",
+        fabric_staves = ("ooa_guitar","ooa_bass_guitar",),
+        improv_times = 2,
+        ranges = pitch_ranges.MID_RANGES,
+        selectable_start_beat=9*4,
+        )
+    s.extend_from(guitar_improv4)
+
+    # anything here?
+    s.fill_rests(beats=11*4)
+
+    s.fill_rests()
+
+
     # adjust for bass 8va
     for bass_seg in s.staves["cco_bass"].segments:
         bass_seg.t(12)
 
 # =======================================================
-
-    s.fill_rests(beats=11*4)
-    # anything here?
-    s.fill_rests(beats=12*4)
-
-    s.fill_rests()
-
 
     for staff in s.staves:
         if segs := staff.segments:

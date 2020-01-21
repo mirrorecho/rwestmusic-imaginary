@@ -4,7 +4,7 @@ from imaginary.scores import score
 from imaginary.fabrics import (instrument_groups, 
     pulse_on_off_beat, dovetail, driving_off, hit_cells, 
     hits, lambda_segment, lick, melody, osti, pad, pizz_flutter, 
-    pulse, staggered_swell, swell_hit)
+    pulse, staggered_swell, swell_hit, improv)
 from imaginary.libraries import pitch_ranges
 from imaginary.stories import library
 from imaginary.stories.library_material import (
@@ -184,7 +184,8 @@ def score2(lib):
         sb2.with_only("bass_drones"),
         fabric_staves=("cco_bass","ooa_bass_guitar",),
         funcs = (
-            lambda x: x.crop_chords( (0,), ),
+            lambda x: x.crop_chords( (0,), ).eps(
+                0, "arco", "mp")(),
             lambda x: x.t(12).eps(0,"p")(),
             )
         ))
@@ -250,6 +251,38 @@ def score2(lib):
     # adjust for bass 8va
     for bass_seg in s.staves["cco_bass"].segments:
         bass_seg.t(12)
+
+    s.fill_rests(beats=6*4)
+
+    brass_improv1 = improv.Improv(
+        sb2,
+        fabric_staves = instrument_groups.get_instruments("ooa_brass"),
+        improv_times = 2,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=6*4+2,
+        dynamic="p",
+        after_func = lambda x: x.eps(0,"\\<")()
+        )
+    brass_improv2 = improv.Improv(
+        sb2,
+        instruction = "",
+        fabric_staves = instrument_groups.get_instruments("ooa_brass"),
+        improv_times = 2,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=8*4+2,
+        dynamic="mf",
+        )
+    brass_improv3 = improv.Improv(
+        sb2,
+        instruction = "",
+        fabric_staves = instrument_groups.get_instruments("ooa_brass"),
+        improv_times = 2,
+        ranges = pitch_ranges.HIGHISH_RANGES,
+        selectable_start_beat=10*4+5,
+        )
+
+    s.extend_from(brass_improv1, brass_improv2, brass_improv3)
+
 
     s.fill_rests(beats=32)
 

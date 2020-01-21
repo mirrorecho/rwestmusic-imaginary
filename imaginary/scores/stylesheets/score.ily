@@ -136,7 +136,7 @@ normalStaff = {
 }
 
 \layout {
-    \set Score.markFormatter = #format-mark-circle-letters 
+    \set Score.markFormatter = #format-mark-circle-alphabet 
     \context {        
         \Score
         
@@ -148,6 +148,8 @@ normalStaff = {
 
         \override RehearsalMark #'font-size = #6
         
+
+
         % TO DO: WHAT'S THE PURPOSE OF THIS??!!
         % \remove "Timing_translator"
         % \remove "Default_bar_line_engraver"

@@ -116,6 +116,10 @@ def score1(lib):
         improv_times = 10,
         selectable_start_beat=8,
         ranges = pitch_ranges.MID_RANGES,
+        after_funcs = (
+            lambda x: x,
+            lambda x: x.eps(0, "p")()
+            )
         )
     s.extend_from(improv_fl_cl)
 

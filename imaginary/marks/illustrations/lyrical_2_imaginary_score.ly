@@ -63,15 +63,14 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
                             \set Staff.midiInstrument = #"alto sax" 
+                            \mark #4
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf'2
                         \pp
                         ~
@@ -84,13 +83,11 @@
                         \mp
                         ~
                         ]
+                        \>
                         bf'2
                         ~
                         bf'4
                         r4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf'2
                         \p
                         ~
@@ -120,15 +117,14 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
                             \set Staff.midiInstrument = #"alto sax" 
+                            \mark #4
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         bf'8
@@ -142,15 +138,13 @@
                         bf'2
                         \mp
                         ~
+                        \>
                         bf'4
                         ~
                         bf'8
                         [
                         r8
                         ]
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         bf'8
@@ -183,15 +177,14 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Tsax. }
                             \set Staff.midiInstrument = #"alto sax" 
+                            \mark #4
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         bf4
                         \pp
@@ -205,12 +198,10 @@
                         \mp
                         ~
                         ]
+                        \>
                         bf4
                         ~
                         bf2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         bf4
                         \p
@@ -240,16 +231,15 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
                             \set Staff.midiInstrument = #"alto sax" 
+                            \mark #4
                             \clef "bass"
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         bf2
                         \pp
@@ -259,10 +249,8 @@
                         bf4
                         \mp
                         ~
+                        \>
                         bf2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         bf2
                         \p
@@ -314,8 +302,70 @@
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
                             \mark #4
-                            R1 * 12
+                            R1 * 6
                         }
+                        \once \hide Stem
+                        <bf, c f g>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \<
+                        
+                        \tweak style #'slash
+                        \once \override Accidental #'stencil = ##f 
+                        \once \override NoteHead #'hide-accidental = #'#t
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <bf, c g>4
+                        \mf
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <c d g>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -332,8 +382,68 @@
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
                             \mark #4
-                            R1 * 12
+                            R1 * 6
                         }
+                        \once \hide Stem
+                        <bf c' f' g'>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \<
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <bf c' g'>4
+                        \mf
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \once \hide Stem
+                        <c' d' g'>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
+                        \tweak style #'slash
+                        b'4
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -351,8 +461,68 @@
                             \set Staff.midiInstrument = #"french horn" 
                             \mark #4
                             \clef "bass"
-                            R1 * 12
+                            R1 * 6
                         }
+                        \once \hide Stem
+                        <bf, c f g>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \<
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \once \hide Stem
+                        <bf, c g>4
+                        \mf
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \once \hide Stem
+                        <c d g>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        ^ \markup { (2) }
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
+                        \tweak style #'slash
+                        d4
                     }
                 }
             >>
@@ -366,15 +536,14 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
                             \set Staff.midiInstrument = #"vibraphone" 
+                            \mark #4
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf''1
                         :32
                         \p
@@ -471,118 +640,86 @@
                             \tweak style #'cross
                             a'
                         >4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { simile }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
                         ^ \markup { (2) }
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ^ \markup { improv }
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
@@ -636,68 +773,52 @@
                             \tweak style #'cross
                             a'
                         >4
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ^ \markup { improv }
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         [
-                        \once \hide Stem
                         \tweak style #'slash
                         c'8
                         ]
@@ -720,33 +841,33 @@
                         \set Staff.midiInstrument = #"electric guitar (clean)" 
                         \mark #4
                         r4
-                        <g d'>4
+                        <g' d''>4
                         \mp
                         ^ \markup { distorted }
-                        <bf f'>2
-                        <d a>2
-                        ~
-                        <d a>4
-                        <a e'>4
-                        r2
-                        <bf f'>4
-                        <a e'>4
-                        <f c'>2
-                        ~
-                        <f c'>4
-                        <g d'>4
-                        r4
-                        <g d'>4
-                        <bf f'>2
-                        <g d'>2
+                        <bf' f''>2
                         <d' a'>2
-                        r4
-                        <c' g'>4
-                        <bf f'>2
                         ~
-                        <bf f'>2
-                        <g d'>4
-                        <bf f'>4
+                        <d' a'>4
+                        <a' e''>4
+                        r2
+                        <bf' f''>4
+                        <a' e''>4
+                        <f' c''>2
+                        ~
+                        <f' c''>4
+                        <g' d''>4
+                        r4
+                        <g' d''>4
+                        <bf' f''>2
+                        <g' d''>2
+                        <d'' a''>2
+                        r4
+                        <c'' g''>4
+                        <bf' f''>2
+                        ~
+                        <bf' f''>2
+                        <g' d''>4
+                        <bf' f''>4
                         {
                             R1 * 4
                         }
@@ -2209,10 +2330,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
+                        \mark #4
                         r4
                         <g' d''>4
                         \mf
@@ -2240,9 +2363,6 @@
                         <bf' f''>2
                         <g' d''>4
                         <bf' f''>4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         <c'' c'''>4
                         <c'' c'''>4
                         <c'' c'''>4
@@ -2392,10 +2512,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
                         \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #4
                         d''8
                         [
                         (
@@ -2434,9 +2556,6 @@
                         ]
                         a''2
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         g''4
                         bf''2
@@ -2449,9 +2568,6 @@
                         bf''2
                         g''4
                         bf''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'''1
                         :32
                         \p
@@ -2484,10 +2600,12 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { "Violin 2" }
                             \set Staff.shortInstrumentName = \markup { Vln.II }
                             \set Staff.midiInstrument = #"string ensemble 1" 
+                            \mark #4
                             R1 * 4
                         }
                         r4
@@ -2502,9 +2620,6 @@
                         f''2
                         d''4
                         f''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'''1
                         :32
                         \p
@@ -2536,10 +2651,12 @@
                 }
                 {
                     {
+                        \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
+                        \mark #4
                         \clef "alto"
                         r4
                         g'4
@@ -2555,9 +2672,6 @@
                         ~
                         f'4
                         d'4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         g'4
                         d'4
@@ -2574,9 +2688,6 @@
                         bf4
                         ef'4
                         d'4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         g4
                         \mf
@@ -2619,16 +2730,15 @@
                 {
                     {
                         {
+                            \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \set Staff.instrumentName = \markup { Cello }
                             \set Staff.shortInstrumentName = \markup { Vc. }
                             \set Staff.midiInstrument = #"string ensemble 1" 
+                            \mark #4
                             \clef "bass"
                             R1 * 8
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         g4
                         \mf
@@ -2678,6 +2788,8 @@
                         \mark #4
                         \clef "bass"
                         c2
+                        \mp
+                        ^ \markup { arco }
                         c2
                         d2
                         d2
@@ -2805,8 +2917,8 @@
                     <g' d''>4
                     )
                     r4
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     <g' d''>4
                     (
                     <bf' f''>2
@@ -2920,8 +3032,8 @@
                     bf'2
                     )
                     g''8
-                    ^ \markup { p.1 }
                     ^ \markup { c.2 }
+                    ^ \markup { p.1 }
                     [
                     (
                     f''8
@@ -3077,8 +3189,8 @@
                     <bf'' a'''>4
                     )
                     <bf'' a'''>2
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     ~
                     (
                     <bf'' a'''>4
@@ -3099,22 +3211,22 @@
                     <c''' bf'''>4
                     )
                     <c''' bf'''>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     (
                     <c''' bf'''>4
                     <c''' bf'''>4
                     )
                     <c''' bf'''>2
-                    ^ \markup { p.7 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.7 }
                     (
                     <c''' bf'''>4
                     <c''' bf'''>4
                     )
                     <c''' c''''>4
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     (
                     <c''' c''''>4
                     <c''' c''''>4
@@ -3199,8 +3311,8 @@
                     <c, g,>2
                     )
                     <d, g,>2
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     (
                     <d, g,>2
                     )
@@ -3217,20 +3329,20 @@
                     <d, g,>2
                     )
                     <c, g,>2
-                    ^ \markup { c.6 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.6 }
                     (
                     <c, g,>2
                     )
                     <d, g,>2
-                    ^ \markup { p.7 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.7 }
                     (
                     <d, g,>2
                     )
                     <c, g,>2
-                    ^ \markup { c.8 }
                     ^ \markup { p.8 }
+                    ^ \markup { c.8 }
                     (
                     <c, g,>2
                     )
