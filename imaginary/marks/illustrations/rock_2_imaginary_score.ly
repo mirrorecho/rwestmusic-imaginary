@@ -68,8 +68,8 @@
                         [
                         c'''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 4
@@ -107,8 +107,8 @@
                         [
                         ef''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r2
                         r4
@@ -231,8 +231,8 @@
                         [
                         f''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 4
@@ -270,8 +270,8 @@
                         [
                         g8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -351,8 +351,8 @@
                         [
                         c''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -389,8 +389,8 @@
                         [
                         ef'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -456,8 +456,8 @@
                         [
                         bf8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -537,8 +537,8 @@
                         [
                         f'8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -575,8 +575,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -642,8 +642,8 @@
                         [
                         g8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -723,8 +723,8 @@
                         [
                         d''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -761,8 +761,8 @@
                         [
                         b8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -828,8 +828,8 @@
                         [
                         d8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -909,8 +909,8 @@
                         [
                         a8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -948,8 +948,8 @@
                         [
                         gf8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1015,8 +1015,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -1096,8 +1096,8 @@
                         [
                         e8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -1126,8 +1126,8 @@
                         -\tenuto
                         ]
                         e4
-                        -\staccato
                         -\accent
+                        -\staccato
                         cs8
                         -\tenuto
                         [
@@ -1135,8 +1135,8 @@
                         -\tenuto
                         ]
                         fs4
-                        -\staccato
                         -\accent
+                        -\staccato
                         cs8
                         -\tenuto
                         [
@@ -1156,8 +1156,8 @@
                         -\tenuto
                         ]
                         e,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         {
                             R1 * 2
                         }
@@ -1167,8 +1167,8 @@
                         -\tenuto
                         ]
                         fs,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ds,8
                         -\tenuto
                         [
@@ -1176,8 +1176,8 @@
                         -\tenuto
                         ]
                         gs,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ds,8
                         -\tenuto
                         [
@@ -1197,16 +1197,16 @@
                         -\tenuto
                         ]
                         fs,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r8
                         [
                         ds,8
                         -\tenuto
                         ]
                         fs,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ds,8
                         -\tenuto
                         [
@@ -1214,8 +1214,8 @@
                         -\tenuto
                         ]
                         gs,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ds,8
                         -\tenuto
                         [
@@ -1235,8 +1235,8 @@
                         -\tenuto
                         ]
                         fs,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         {
                             R1 * 4
                         }
@@ -1315,8 +1315,8 @@
                         [
                         a'8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -1356,8 +1356,8 @@
                         [
                         gs8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1412,7 +1412,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Trumpet in C" }
+                        \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                         \set Staff.shortInstrumentName = \markup { Tpt. }
                         \set Staff.midiInstrument = #"trumpet" 
                         \mark #8
@@ -1434,8 +1434,8 @@
                         [
                         f'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1507,8 +1507,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         f8
                         -\tenuto
                         [
@@ -1533,8 +1533,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ef8
                         -\tenuto
                         [
@@ -1542,8 +1542,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         {
                             R1 * 1
                         }
@@ -1560,8 +1560,8 @@
                         [
                         bf8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -1629,93 +1629,59 @@
                         \once \hide Stem
                         <ef' f' af' bf' c'' df''>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         \once \hide Stem
                         <f' g' af' c'' df''>4
                         ^ \markup { (1) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         \once \hide Stem
                         <d' ef' f' g' a' bf' c''>4
                         ^ \markup { (1) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -1752,78 +1718,166 @@
                         \tweak style #'cross
                         a'8
                         ]
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
                         \withSlash
                         d'4
                         \withSlash
@@ -1832,60 +1886,54 @@
                         d'4
                         \withSlash
                         d'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
                         <
                             \tweak style #'cross
                             e
@@ -2125,30 +2173,20 @@
                         \once \hide Stem
                         <d'' g''>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -2220,30 +2258,20 @@
                         \once \hide Stem
                         <d'' g''>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -2316,30 +2344,20 @@
                         \once \hide Stem
                         <g d'>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -2412,30 +2430,20 @@
                         \once \hide Stem
                         <g d'>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                 }
             >>
@@ -2493,8 +2501,8 @@
                         [
                         cs'''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 6
@@ -2600,8 +2608,8 @@
                         [
                         f'''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 6
@@ -2738,8 +2746,8 @@
                         [
                         bf''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 16
@@ -2795,8 +2803,8 @@
                         [
                         af''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 16
@@ -2824,8 +2832,8 @@
                         -\tenuto
                         ]
                         gf4
-                        -\staccato
                         -\accent
+                        -\staccato
                         df8
                         -\tenuto
                         [
@@ -2833,8 +2841,8 @@
                         -\tenuto
                         ]
                         gf4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ef8
                         -\tenuto
                         [
@@ -2854,8 +2862,8 @@
                         -\tenuto
                         ]
                         gf4
-                        -\staccato
                         -\accent
+                        -\staccato
                         {
                             R1 * 2
                         }
@@ -2865,8 +2873,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ef8
                         -\tenuto
                         [
@@ -2874,8 +2882,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ef8
                         -\tenuto
                         [
@@ -2895,16 +2903,16 @@
                         -\tenuto
                         ]
                         af,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         r8
                         [
                         ef,8
                         -\tenuto
                         ]
                         gf,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ef,8
                         -\tenuto
                         [
@@ -2912,8 +2920,8 @@
                         -\tenuto
                         ]
                         af,4
-                        -\staccato
                         -\accent
+                        -\staccato
                         f,8
                         -\tenuto
                         [
@@ -2933,8 +2941,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         {
                             R1 * 11
                         }
@@ -2972,8 +2980,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -3039,8 +3047,8 @@
                         [
                         c''8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -3101,8 +3109,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         f8
                         -\tenuto
                         [
@@ -3127,8 +3135,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         ef8
                         -\tenuto
                         [
@@ -3136,8 +3144,8 @@
                         -\tenuto
                         ]
                         af4
-                        -\staccato
                         -\accent
+                        -\staccato
                         {
                             R1 * 1
                         }
@@ -3154,8 +3162,8 @@
                         [
                         f8
                         \f
-                        -\staccato
                         -\accent
+                        -\staccato
                         ]
                         r8
                         [
@@ -5117,8 +5125,8 @@
                     \mark #8
                     \clef "percussion"
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     c''8
                     ]
@@ -5137,8 +5145,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.1 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.1 }
                     [
                     c''8
                     ]
@@ -5177,8 +5185,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     [
                     c''8
                     ]
@@ -5197,8 +5205,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     [
                     c''8
                     ]
@@ -5217,8 +5225,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.5 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.5 }
                     [
                     c''8
                     ]
@@ -5237,8 +5245,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.6 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.6 }
                     [
                     c''8
                     ]
@@ -5257,8 +5265,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     [
                     c''8
                     ]
@@ -5297,8 +5305,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.9 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.9 }
                     [
                     (
                     <c' c''>16
@@ -5319,8 +5327,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.10 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.10 }
                     [
                     (
                     <c' c''>16
@@ -5341,8 +5349,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.11 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.11 }
                     [
                     (
                     <c' c''>16
@@ -5363,8 +5371,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { p.12 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.12 }
                     [
                     (
                     <c' c''>16
@@ -5385,8 +5393,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.13 }
                     ^ \markup { p.13 }
+                    ^ \markup { c.13 }
                     [
                     (
                     <c' c''>16
@@ -5429,8 +5437,8 @@
                     ]
                     )
                     <c' c''>16
-                    ^ \markup { c.15 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.15 }
                     [
                     (
                     <c' c''>16
@@ -5493,16 +5501,16 @@
                     \mark #8
                     \clef "percussion"
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.1 }
                     ^ \markup { p.1 }
+                    ^ \markup { c.1 }
                     <c c'>4
                     (
                     r4
@@ -5517,40 +5525,40 @@
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.3 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.3 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.4 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.5 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.5 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { p.6 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.6 }
                     <c c'>4
                     (
                     r4
                     <c c'>4
                     )
                     r4
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     <c c'>4
                     (
                     r4
@@ -5585,8 +5593,8 @@
                     \set Staff.midiInstrument = #"misc1" 
                     \mark #8
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     r8
                     ]
@@ -5606,8 +5614,8 @@
                     ^ \markup { c.3 }
                     ]
                     <gf, a, df gf a df'>8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     (
                     <ef gf af bf b ef'>8
@@ -5633,8 +5641,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     [
                     r8
                     ]
@@ -5667,8 +5675,8 @@
                     ]
                     r2
                     r8
-                    ^ \markup { p.6 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.6 }
                     [
                     r8
                     ]
@@ -5715,8 +5723,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.9 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.9 }
                     [
                     r8
                     ]
@@ -5729,8 +5737,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ]
                     r2
                     r8
@@ -5739,8 +5747,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     r8
                     ]
@@ -5766,8 +5774,8 @@
                     r8
                     ]
                     <c, ds, g, c ds g>8
-                    ^ \markup { c.26 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.26 }
                     [
                     (
                     <gs, b, cs ds e gs>8
@@ -5804,8 +5812,8 @@
                     ^ \markup { c.29 }
                     ]
                     <bf df' f' bf' df'' f''>8
-                    ^ \markup { c.30 }
                     ^ \markup { p.17 }
+                    ^ \markup { c.30 }
                     [
                     (
                     <c' ef' g' g' bf' d''>8
@@ -5837,8 +5845,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.19 }
                     ^ \markup { c.33 }
+                    ^ \markup { p.19 }
                     [
                     r8
                     ]
@@ -5927,8 +5935,8 @@
                     \mark #8
                     \clef "bass"
                     r8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     <cs>8
                     ]
@@ -5998,8 +6006,8 @@
                     )
                     [
                     r8
-                    ^ \markup { p.3 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.3 }
                     ]
                     <ef f>8
                     [
@@ -6091,8 +6099,8 @@
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
                     \mark #8
                     <gs gs'>8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     <a e'>8
@@ -6129,8 +6137,8 @@
                     ^ \markup { c.3 }
                     ]
                     <gf gf'>8
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     [
                     (
                     <ef' af'>8
@@ -6156,8 +6164,8 @@
                     ]
                     )
                     <ds' ds''>8
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     [
                     (
                     <e' b'>8
@@ -6221,8 +6229,8 @@
                     ]
                     )
                     <ds'' ds'''>8
-                    ^ \markup { p.6 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.6 }
                     [
                     (
                     <e'' b''>8
@@ -6286,8 +6294,8 @@
                     ]
                     )
                     <f' f''>8
-                    ^ \markup { p.9 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.9 }
                     [
                     (
                     <af' ef''>8
@@ -6307,8 +6315,8 @@
                     )
                     [
                     <c' c''>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ]
                     (
                     <ef' bf'>8
@@ -6328,8 +6336,8 @@
                     ]
                     )
                     <c' c''>8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     (
                     <df' af'>8
@@ -6376,8 +6384,8 @@
                     ]
                     )
                     <c c'>8
-                    ^ \markup { c.26 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.26 }
                     [
                     (
                     <af df'>8
@@ -6414,8 +6422,8 @@
                     ^ \markup { c.29 }
                     ]
                     <bf' bf''>8
-                    ^ \markup { c.30 }
                     ^ \markup { p.17 }
+                    ^ \markup { c.30 }
                     [
                     (
                     <c'' g''>8
@@ -6449,8 +6457,8 @@
                     ]
                     )
                     <d' d''>8
-                    ^ \markup { p.19 }
                     ^ \markup { c.33 }
+                    ^ \markup { p.19 }
                     [
                     (
                     <ef' bf'>8
@@ -6529,8 +6537,8 @@
                     \set Staff.midiInstrument = #"french horn" 
                     \mark #8
                     <gs a b cs' e' fs' gs' ds'' e''>4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r4
                     r8
@@ -6551,15 +6559,15 @@
                     ^ \markup { c.3 }
                     ]
                     r4
-                    ^ \markup { c.4 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.4 }
                     r4
                     r4
                     ^ \markup { c.5 }
                     r2
                     <ds' e' fs' gs' b' cs'' ds'' as'' b''>4
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     r4
                     r4
                     r8
@@ -6587,8 +6595,8 @@
                     ^ \markup { c.11 }
                     r2
                     r4
-                    ^ \markup { p.6 }
                     ^ \markup { c.12 }
+                    ^ \markup { p.6 }
                     r4
                     r4
                     r8
@@ -6616,8 +6624,8 @@
                     ^ \markup { c.17 }
                     r2
                     <f' af' bf' c'' df'' ef'' f'' af'' bf''>4
-                    ^ \markup { p.9 }
                     ^ \markup { c.18 }
+                    ^ \markup { p.9 }
                     r4
                     r8
                     [
@@ -6627,8 +6635,8 @@
                     r8
                     [
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
-                    ^ \markup { p.10 }
                     ^ \markup { c.20 }
+                    ^ \markup { p.10 }
                     ~
                     ]
                     <c' ef' f' g' af' bf' c'' ef'' f''>8
@@ -6639,8 +6647,8 @@
                     r4
                     ^ \markup { c.21 }
                     <c' df' ef' f' af' c'' ef''>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     r4
                     r4
                     ^ \markup { p.12 }
@@ -6654,8 +6662,8 @@
                     ^ \markup { p.14 }
                     ^ \markup { c.25 }
                     <c ef af c' df' ef' f' af' c'' ef''>4
-                    ^ \markup { c.26 }
                     ^ \markup { p.15 }
+                    ^ \markup { c.26 }
                     r2
                     r8
                     ^ \markup { c.27 }
@@ -6675,8 +6683,8 @@
                     ^ \markup { c.29 }
                     ]
                     r4
-                    ^ \markup { c.30 }
                     ^ \markup { p.17 }
+                    ^ \markup { c.30 }
                     r4
                     r4
                     ^ \markup { c.31 }
@@ -6686,8 +6694,8 @@
                     ^ \markup { c.32 }
                     ^ \markup { p.18 }
                     <d' ef' f' g' bf' c'' d'' a'' bf''>4
-                    ^ \markup { p.19 }
                     ^ \markup { c.33 }
+                    ^ \markup { p.19 }
                     r4
                     r4
                     r8
@@ -6730,8 +6738,8 @@
                     \set Staff.midiInstrument = #"piccolo" 
                     \mark #8
                     r1
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     {
                         R1 * 8
                     }
@@ -6747,20 +6755,20 @@
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { p.2 }
                     ^ \markup { c.3 }
+                    ^ \markup { p.2 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.4 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.4 }
                     (
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { c.5 }
                     ^ \markup { p.4 }
+                    ^ \markup { c.5 }
                     (
                     <f'''>2
                     )
@@ -6771,30 +6779,30 @@
                     <f'''>2
                     )
                     <f'''>2
-                    ^ \markup { p.6 }
                     ^ \markup { c.7 }
+                    ^ \markup { p.6 }
                     (
                     <f'''>2
                     )
                     <g'' d'''>4
-                    ^ \markup { c.8 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.8 }
                     (
                     <g'' d'''>4
                     <g'' d'''>4
                     <g'' d'''>4
                     )
                     <g'' d'''>4
-                    ^ \markup { p.8 }
                     ^ \markup { c.9 }
+                    ^ \markup { p.8 }
                     (
                     <g'' d'''>4
                     <g'' d'''>4
                     <g'' d'''>4
                     )
                     <g'' d'''>4
-                    ^ \markup { p.9 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.9 }
                     (
                     <g'' d'''>4
                     <g'' d'''>4

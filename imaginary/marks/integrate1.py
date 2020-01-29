@@ -67,11 +67,11 @@ def score1(lib):
     # drum_on_off_cell.note_events.tag("note_head:1:cross")
 
     drum_set = ImaginarySegment(
-        lib("drum_on_off"),
-        get_improv_line(
-            rhythm=(1,)*8,
-            times=7).ops("cells")(
-            6, "\\<")(),
+        lib("drum_on_off") * 8,
+        # get_improv_line(
+        #     rhythm=(1,)*8,
+        #     times=7).ops("cells")(
+        #     6, "\\<")(),
         get_improv_line(
             instruction="improv, solo",
             rhythm=(0.5,)*8,
@@ -341,7 +341,7 @@ def score1(lib):
             for next_seg in list(segs[1:]):
                 main_seg.extend(next_seg)
                 next_seg.parent.remove(next_seg)
-            main_seg.rehearsal_mark_number = 11
+            main_seg.rehearsal_mark_number = 12
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 96
 

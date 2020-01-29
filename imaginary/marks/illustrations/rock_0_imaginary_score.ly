@@ -371,7 +371,7 @@
                             \compressFullBarRests
                             \tempo \markup \fontsize #1 {  \note #"4" #UP "= 160 ca"  }
                             \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Trumpet in C" }
+                            \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
                             \mark #6
@@ -494,57 +494,36 @@
                         r2
                         <g f'>4
                         r4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        g4
+                        <g e'>4
+                        r4
+                        r8
+                        [
+                        b8
+                        ]
+                        r2
+                        <g f'>4
+                        r4
+                        g4
+                        <g e'>4
+                        r4
+                        r8
+                        [
+                        b8
+                        ]
+                        r2
+                        <g f'>4
+                        r4
+                        g4
+                        <g e'>4
+                        r4
+                        r8
+                        [
+                        b8
+                        ]
+                        r2
+                        <g f'>4
+                        r4
                     }
                     {
                         \compressFullBarRests
@@ -587,193 +566,424 @@
                         e8
                         ]
                         d'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (9) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (10) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (11) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
                     }
                 }
             >>

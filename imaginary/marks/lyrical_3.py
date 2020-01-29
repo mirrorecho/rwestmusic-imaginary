@@ -32,10 +32,11 @@ def score3(lib):
     # throuhout pad / texture
 
     drum_set = ImaginarySegment(
-        lib("drum_dark"),
-        get_improv_line(
-            rhythm=(1,)*4,
-            times=9),
+        lib("drum_dark") * 10,
+        # lib("drum_dark"),
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=9),
         get_improv_line(
             instruction="improv",
             rhythm=(0.5,)*8,

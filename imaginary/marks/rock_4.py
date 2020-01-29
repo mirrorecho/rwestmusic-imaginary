@@ -97,10 +97,11 @@ def score4(lib):
     s.extend_from(
         lambda_segment.LambdaSegment(
             calliope.SegmentBlock(ImaginarySegment(
-                lib("rock_rhythm1"),
-                get_improv_line(
-                    rhythm=(1,)*8,
-                    times=10)
+                lib("rock_rhythm1") * 11,
+                # lib("rock_rhythm1"),
+                # get_improv_line(
+                #     rhythm=(1,)*8,
+                #     times=10)
                 )),
             fabric_staves = ("ooa_drum_set",),
             func = lambda x: x,
@@ -446,8 +447,8 @@ def score4(lib):
         # tag_events = {0:("(",),3:(")",),4:("(",),7:(")",),8:("(",),11:(")",)},
         # tag_all_note_events = ("-",),
         func = lambda x: x.eps(
-            0, "mp","\\<")(
-            15, "f")(),
+            0, "\\<")(
+            11, "f")(),
         )
     for seg in cloud_27_28.segments:
         for i,n in enumerate(seg.note_events):
@@ -766,11 +767,15 @@ def score4(lib):
         bass_seg.transformed(calliope.Transpose(interval=12))
 
     s.fill_rests()
-    s.remove(s.staff_groups["short_score"])
+    # s.remove(s.staff_groups["short_score"])
     # s.only_staves("harp1", "harp2", "piano1", "piano2")
 
     s.lines.apply(lambda x:x.auto_respell())
     s.phrases.apply(lambda x:x.auto_respell())
+
+    for st in s.staves["ooa_alto_sax1", "ooa_alto_sax2", "ooa_tenor_sax", "ooa_bari_sax"]:
+        st.cells[:17].setattrs(respell="sharps")
+        st.cells[17:].setattrs(respell="flats")
 
     for staff in s.staves:
         # staff.phrases.transformed(calliope.Label())
@@ -782,7 +787,7 @@ def score4(lib):
             for next_seg in list(segs[1:]):
                 main_seg.extend(next_seg)
                 next_seg.parent.remove(next_seg)
-            main_seg.rehearsal_mark_number = 9
+            main_seg.rehearsal_mark_number = 10
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 160
 

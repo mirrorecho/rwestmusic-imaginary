@@ -42,8 +42,8 @@ class ImaginaryIntroScore(ImaginaryScore):
                     name="Horn in F", short_name="hn.")
 
             class OoaTrumpet(calliope.Staff):
-                instrument=abjad.Trumpet(
-                    name="Trumpet in C", short_name="tpt.")
+                # NOTE... this will NOT auto-transpose!
+                instrument=abjad.Instrument(name="Trumpet in B♭", short_name="tpt.")
 
             class OoaTrombone(calliope.Staff):
                 instrument=abjad.TenorTrombone(

@@ -45,93 +45,55 @@
                         \once \hide Stem
                         <a' d'' e'' f''>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (6) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (7) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (8) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (9) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (10) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -154,93 +116,55 @@
                         <d' e' f' a'>4
                         \p
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (6) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (7) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (8) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (9) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (10) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                 }
                 \context Staff = "ooa_alto_sax1"
@@ -492,7 +416,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Trumpet in C" }
+                            \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
                             \mark #3
@@ -661,57 +585,123 @@
                             \tweak style #'cross
                             a'
                         >4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        ^ \markup { mallets }
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        ^ \markup { mallets }
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        ^ \markup { mallets }
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >4
                         <
                             \tweak style #'cross
                             e
@@ -2121,8 +2111,8 @@
                     \set Staff.midiInstrument = #"misc2" 
                     \mark #3
                     r8
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     [
                     a'8
                     ]
@@ -2195,8 +2185,8 @@
                     \set Staff.midiInstrument = #"misc3" 
                     \mark #3
                     f''8
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     [
                     (
                     e''8
@@ -2232,8 +2222,8 @@
                     g'4
                     )
                     r4
-                    ^ \markup { p.2 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.2 }
                     g'4
                     (
                     a'4
@@ -2247,8 +2237,8 @@
                     c''4
                     )
                     f''8
-                    ^ \markup { p.3 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.3 }
                     [
                     (
                     e''8
@@ -2269,8 +2259,8 @@
                     g''2
                     )
                     r4
-                    ^ \markup { p.4 }
                     ^ \markup { c.8 }
+                    ^ \markup { p.4 }
                     f''4
                     (
                     c''4
@@ -2284,8 +2274,8 @@
                     g'4
                     )
                     r4
-                    ^ \markup { p.5 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.5 }
                     g'4
                     (
                     a'4
@@ -2437,8 +2427,8 @@
                     \set Staff.midiInstrument = #"piccolo" 
                     \mark #3
                     <a'' e'''>1
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     (
                     <a'' e'''>2
                     ~
@@ -2464,8 +2454,8 @@
                     <a'' e'''>4
                     )
                     <d''' a'''>1
-                    ^ \markup { c.3 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.3 }
                     (
                     <d''' a'''>2
                     ~
@@ -2473,8 +2463,8 @@
                     <d''' a'''>4
                     )
                     <d''' a'''>1
-                    ^ \markup { p.4 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.4 }
                     (
                     <d''' a'''>2
                     ~
@@ -2482,8 +2472,8 @@
                     <d''' a'''>4
                     )
                     <d''' a'''>1
-                    ^ \markup { c.5 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.5 }
                     (
                     <d''' a'''>2
                     ~
@@ -2527,8 +2517,8 @@
                     \mark #3
                     \clef "bass"
                     <f, d>1
-                    ^ \markup { c.0 }
                     ^ \markup { p.0 }
+                    ^ \markup { c.0 }
                     <g, d>1
                     ^ \markup { c.1 }
                     ^ \markup { p.1 }
@@ -2536,32 +2526,32 @@
                     ^ \markup { c.2 }
                     ^ \markup { p.2 }
                     <g, d>1
-                    ^ \markup { c.3 }
                     ^ \markup { p.3 }
+                    ^ \markup { c.3 }
                     <f, d>1
-                    ^ \markup { p.4 }
                     ^ \markup { c.4 }
+                    ^ \markup { p.4 }
                     <g, d>1
-                    ^ \markup { c.5 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.5 }
                     <f, d>1
-                    ^ \markup { p.6 }
                     ^ \markup { c.6 }
+                    ^ \markup { p.6 }
                     <g, d>1
-                    ^ \markup { c.7 }
                     ^ \markup { p.7 }
+                    ^ \markup { c.7 }
                     <f, d>1
                     ^ \markup { c.8 }
                     ^ \markup { p.8 }
                     <g, d>1
-                    ^ \markup { c.9 }
                     ^ \markup { p.9 }
+                    ^ \markup { c.9 }
                     <f, d>1
-                    ^ \markup { p.10 }
                     ^ \markup { c.10 }
+                    ^ \markup { p.10 }
                     <g, d>1
-                    ^ \markup { p.11 }
                     ^ \markup { c.11 }
+                    ^ \markup { p.11 }
                 }
             }
         >>

@@ -183,10 +183,14 @@ def score3(lib):
     s.extend_from(guitar_improv)
 
     drum_set = ImaginarySegment(
-        lib("drum_dark").eps(0,"mf")(),
-        get_improv_line(
-            rhythm=(1,)*4,
-            times=14),
+        lib("drum_dark").eps(0,"mf")() * 15,
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=14),
+        # lib("drum_dark").eps(0,"mf")(),
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=14),
         )
     s.staves["ooa_drum_set"].append(drum_set)
 
@@ -397,6 +401,10 @@ def score3(lib):
 
     s.lines.apply(lambda x:x.auto_respell())
     s.phrases.apply(lambda x:x.auto_respell())
+
+    for st in s.staves["ooa_alto_sax1", "ooa_alto_sax2", "ooa_tenor_sax", "ooa_bari_sax"]:
+        st.cells[:-2].setattrs(respell="sharps")
+        st.cells[-2:].setattrs(respell="flats") 
 
     s.staves["piano1"].cells[5:].setattrs(respell="sharps")
     s.staves["piano2"].cells[5:].setattrs(respell="sharps")

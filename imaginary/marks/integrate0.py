@@ -167,10 +167,12 @@ def score0(lib):
     drum_set = ImaginarySegment(
         ImaginaryCell(rhythm=(-4*4,)),
         lib("drum_off_short").eps(
-            0, "p",)(),
-        get_improv_line(
-            rhythm=(1,)*4,
-            times=8),
+            0, "p",)() * 9,
+        # lib("drum_off_short").eps(
+        #     0, "p",)(),
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=8),
         lib("drum_du_du").eps(
             0, "mp","\\<")(
             13, "mf")(),
@@ -281,6 +283,8 @@ def score0(lib):
             ).slur_cells().eps(
             1, "mp")()
         )
+    for c in sax_counter.cells:
+        c.respell = "sharps"
     s.extend_from(
         bass_line,
         bassoon_undo, 
@@ -316,7 +320,7 @@ def score0(lib):
         dynamic="pp"
         )
     bari_improv.note_events[0].tag("\\<")
-    bari_improv.note_events[9].tag("mp")
+    # bari_improv.note_events[9].tag("mp")
     s.extend_from(bari_improv)
 
     oboe_swells = staggered_swell.StaggeredSwells(
@@ -396,7 +400,7 @@ def score0(lib):
             for next_seg in list(segs[1:]):
                 main_seg.extend(next_seg)
                 next_seg.parent.remove(next_seg)
-            main_seg.rehearsal_mark_number = 10
+            main_seg.rehearsal_mark_number = 11
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 96
 

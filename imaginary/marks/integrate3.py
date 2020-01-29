@@ -37,15 +37,20 @@ def score3(lib):
         ).to_score(s)
 
     drum_set = ImaginarySegment(
-        lib("drum_quick_off2").eps(0,"mp")(),
-        get_improv_line(
-            rhythm=(1,)*4,
-            times=6),
+        lib("drum_quick_off2").eps(0,"mp")() * 7,
+        # lib("drum_quick_off2").eps(0,"mp")(),
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=6),
         lib("drum_du_du").eps(0,"\\<")(),
-        lib("drum_rock_out").eps(0,"mf")(),
-        get_improv_line(
-            rhythm=(1,)*4,
-            times=5),
+        lib("drum_rock_out").eps(0,"mf")() * 6,
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=5),
+        # lib("drum_rock_out").eps(0,"mf")(),
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=5),
         get_improv_line(
             instruction="improv",
             rhythm=(0.5,)*8,

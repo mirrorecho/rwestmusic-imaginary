@@ -65,10 +65,11 @@ def score2(lib):
 
     drum_set = ImaginarySegment(
         ImaginaryCell(rhythm=(-4*8,)),
-        lib("drum_quick_off").eps(0,"p")(),
-        get_improv_line(
-            rhythm=(1,)*4,
-            times=7),
+        lib("drum_quick_off").eps(0,"p")() * 8,
+        # lib("drum_quick_off").eps(0,"p")(),
+        # get_improv_line(
+        #     rhythm=(1,)*4,
+        #     times=7),
         )
     s.staves["ooa_drum_set"].append(drum_set)
 
@@ -324,7 +325,7 @@ def score2(lib):
             for next_seg in list(segs[1:]):
                 main_seg.extend(next_seg)
                 next_seg.parent.remove(next_seg)
-            main_seg.rehearsal_mark_number = 12
+            main_seg.rehearsal_mark_number = 13
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 96
 

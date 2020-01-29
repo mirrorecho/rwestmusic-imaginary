@@ -16,6 +16,8 @@ class PartScore(calliope.Score):
 def make_part(section, sc, title="", 
     staff_name=None, 
     staff_group_name=None,
+    piece_name = None,
+    index=0,
     ):
 
         # print("================================================================")
@@ -50,18 +52,70 @@ def make_part(section, sc, title="",
         if staff_name == "ooa_bari_sax":
             part.staves[0].clef = "treble"
 
-        if staff_name in ("ooa_guitar", "ooa_bass_guitar", "cco_bass"):
+        if staff_name in ("ooa_alto_sax1", "ooa_alto_sax2"):
+            calliope.Transpose(interval=9)(part)
+        elif staff_name == "ooa_tenor_sax":
+            calliope.Transpose(interval=14)(part)
+        elif staff_name == "ooa_bari_sax":
+            calliope.Transpose(interval=21)(part)
+        elif staff_name == "ooa_bari_sax":
+            calliope.Transpose(interval=21)(part)
+        elif staff_name == "ooa_trumpet":
+            calliope.Transpose(interval=2)(part)
+            # part.staves[0].instrument = abjad.Instrument(name="Trumpet in B♭", short_name="tpt.")
+
+        if staff_name in ("ooa_guitar", "ooa_bass_guitar", "cco_bass",
+            "ooa_alto_sax1", "ooa_alto_sax2", "ooa_tenor_sax", "ooa_bari_sax",
+            "ooa_trumpet"):
             transpose_me = False
+
+            if staff_name in ("ooa_tenor_sax", "ooa_bari_sax") and section == "rock":
+                part.cells.apply(lambda x: x.auto_respell())    
+
+            if staff_name == "ooa_tenor_sax" and section == "integrate":
+                part.staves["ooa_tenor_sax"].segments[-1].cells.setattrs(respell="sharps")
+
+            if staff_name == "ooa_trumpet" and section =="intro":
+                part.cells.setattrs(respell="sharps")
+                part.phrases.setattrs(respell="sharps")
+
+            # part.lines.apply(lambda x: x.auto_respell())
+            # part.phrases.apply(lambda x: x.auto_respell())
+            # part.cells.apply(lambda x: x.auto_respell())
+            
+
+            # if section == "rock":
+
+
         else:
             transpose_me = True
 
+
+
+
+
+         # ("ooa_tenor_sax", "ooa_bari_sax")
+
+        file_prefix = str(index) if staff_name else "p" + str(index)
+
+        if section == "intro":
+            section_prefix = "1."
+        elif section == "lyrical":
+            section_prefix = "2."
+        elif section == "rock":
+            section_prefix = "3."
+        elif section == "integrate":
+            section_prefix = "4."
+        else:
+            section_prefix = "0."
+
         calliope.illustrate(part,
             open_pdf=False,
-            filename=my_name + "_" + section + "_part",
+            filename= file_prefix + "." + my_name + "_" + section_prefix + (section or "Memory-Bubbles-West"),
             title = title,
             transpose_me=transpose_me,
             part_name=part_name,
-
+            piece_name = piece_name,
             )
 
 def make_parts(
@@ -75,25 +129,35 @@ def make_parts(
     if section=="intro":
         intro_all.to_lib(lib)
         title = "Memory Bubbles I."
+        piece_name = None
+    elif section=="":
+        lyrical_all.to_lib(lib)
+        title = "Memory Bubbles II-IV."
+        piece_name = "Memory Bubbles II."
     elif section=="lyrical":
         lyrical_all.to_lib(lib)
-        title = "Memory Bubbles II."
+        title = None
+        piece_name = "Memory Bubbles II."
     elif section=="rock":
         rock_all.to_lib(lib)
-        title = "Memory Bubbles III."
+        title = None
+        piece_name = "Memory Bubbles III."
     elif section=="integrate":
         integrate_all.to_lib(lib)
-        title = "Memory Bubbles IV."
+        title = None
+        piece_name = "Memory Bubbles IV."
 
-    sc = lib[section + "_score"]
+    sc = lib[(section or "lyrical") + "_score"]
     
     sc.info("Created score")
 
-    for staff_name in from_staves:
-        make_part(section, sc, title=title, staff_name=staff_name)
+    for i, staff_name in enumerate(from_staves):
+        make_part(section, sc, title=title, piece_name=piece_name, 
+            staff_name=staff_name, index=i+100)
 
-    for staff_group_name in from_staff_groups:
-        make_part(section, sc, title=title, staff_group_name=staff_group_name)
+    for i, staff_group_name in enumerate(from_staff_groups):
+        make_part(section, sc, title=title, piece_name=piece_name, 
+            staff_group_name=staff_group_name, index=i+100)
 
 
 
@@ -106,21 +170,27 @@ if __name__ == '__main__':
     #         # "ooa_flute",
     #         # "ooa_clarinet",
     #         # "ooa_alto_saxes",
+    #         # "ooa_alto_saxes",
     #         # "ooa_tenor_sax",
     #         # "ooa_bari_sax",
     #         # "ooa_bassoon",
     #         # "ooa_horn",
-    #         # "ooa_trumpet",
+    #         "ooa_trumpet",
     #         # "ooa_trombone",
     #         # "ooa_mallets",
     #         # "ooa_drum_set",
     #         # "ooa_guitar",
     #         # "ooa_bass_guitar",
     #         # "ooa_violins",
+    #         # "ooa_violins",
+    #         # "ooa_cellos",
     #         # "ooa_cellos",
 
     #         # "cco_flutes",
+    #         # "cco_flutes",
     #         # "cco_oboes",
+    #         # "cco_oboes",
+    #         # "cco_clarinets",
     #         # "cco_clarinets",
     #         # "cco_bassoon",
     #         # "cco_horn",
@@ -131,57 +201,57 @@ if __name__ == '__main__':
     #         # "cco_bass",
 
     #     ),
-    #     from_staff_groups = (
-    # #         "cco_violin_i",
-    # #         "cco_violin_ii",
-    #         "cco_viola",
-    # #         "cco_cello",
-    #     )
+    #     # from_staff_groups = (
+    #     #     "cco_violin_i",
+    #     #     "cco_violin_ii",
+    #     #     "cco_viola",
+    #     #     "cco_cello",
+    #     # )
     #     )
     make_parts(
-        "lyrical",
+        "integrate",
         from_staves = (
-            "ooa_flute",
-            "ooa_clarinet",
-            "ooa_alto_sax1",
-            "ooa_alto_sax2",
-            "ooa_tenor_sax",
-            "ooa_bari_sax",
-            "ooa_bassoon",
-            "ooa_horn",
+            # "ooa_flute",
+            # "ooa_clarinet",
+            # "ooa_alto_sax1",
+            # "ooa_alto_sax2",
+            # "ooa_tenor_sax",
+            # "ooa_bari_sax",
+            # "ooa_bassoon",
+            # "ooa_horn",
             "ooa_trumpet",
-            "ooa_trombone",
-            "ooa_mallets",
-            "ooa_drum_set",
-            "ooa_guitar",
-            "ooa_bass_guitar",
-            "ooa_violin1",
-            "ooa_violin2",
-            "ooa_cello1",
-            "ooa_cello2",
+            # "ooa_trombone",
+            # "ooa_mallets",
+            # "ooa_drum_set",
+            # "ooa_guitar",
+            # "ooa_bass_guitar",
+            # "ooa_violin1",
+            # "ooa_violin2",
+            # "ooa_cello1",
+            # "ooa_cello2",
 
-            "cco_flute1",
-            "cco_flute2",
-            "cco_oboe1",
-            "cco_oboe2",
-            "cco_clarinet1",
-            "cco_clarinet2",
-            "cco_bassoon",
-            "cco_horn",
-            "cco_trumpet",
-            "cco_trombone",
-            "cco_violin_i",
-            "cco_violin_ii",
-            "cco_viola",
-            "cco_cello",
-            "cco_percussion",
-            "cco_bass",
+            # "cco_flute1",
+            # "cco_flute2",
+            # "cco_oboe1",
+            # "cco_oboe2",
+            # "cco_clarinet1",
+            # "cco_clarinet2",
+            # "cco_bassoon",
+            # "cco_horn",
+            # "cco_trumpet",
+            # "cco_trombone",
+            # "cco_violin_i",
+            # "cco_violin_ii",
+            # "cco_viola",
+            # "cco_cello",
+            # "cco_percussion",
+            # "cco_bass",
 
         ),
-        from_staff_groups = (
-            "cco_piano",
-            "cco_harp",
-        )
+        # from_staff_groups = (
+        #     "cco_piano",
+        #     "cco_harp",
+        # )
         )
 
     # make_parts(

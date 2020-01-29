@@ -129,33 +129,23 @@
                             R1 * 2
                         }
                         \once \hide Stem
-                        <c'' ds'' e''>4
+                        <c'' ef'' e''>4
                         \mp
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         {
@@ -197,8 +187,8 @@
                         [
                         c'''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 4
@@ -236,8 +226,8 @@
                         [
                         ef''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r2
                         r4
@@ -493,8 +483,8 @@
                         [
                         d'''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -556,9 +546,32 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
-                            R1 * 14
+                            \mark #10
+                            R1 * 10
                         }
+                        \once \hide Stem
+                        <a' b' c'' e'' f''>4
+                        \mf
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
                         e''4
                         -\staccato
                         -\accent
@@ -673,8 +686,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_clarinet"
@@ -786,33 +801,23 @@
                             R1 * 2
                         }
                         \once \hide Stem
-                        <ds' e' c''>4
+                        <ef' e' c''>4
                         \mp
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         {
@@ -854,8 +859,8 @@
                         [
                         f''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 4
@@ -893,8 +898,8 @@
                         [
                         g8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -974,8 +979,8 @@
                         [
                         c''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -1169,8 +1174,8 @@
                         [
                         b'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -1225,7 +1230,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         a'8
@@ -1479,8 +1484,10 @@
                         ]
                         )
                         {
-                            R1 * 4
+                            R1 * 3
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_alto_sax1"
@@ -1569,33 +1576,23 @@
                             R1 * 2
                         }
                         \once \hide Stem
-                        <c' ds' e'>4
+                        <c' ef' e'>4
                         \mp
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         {
@@ -1684,8 +1681,8 @@
                         [
                         bf8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -1765,8 +1762,8 @@
                         [
                         f'8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -1781,7 +1778,7 @@
                         \p
                         [
                         (
-                        bf'8
+                        as'8
                         ]
                         c''8
                         )
@@ -1794,7 +1791,7 @@
                         a8
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -1833,7 +1830,7 @@
                         \mf
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -1873,7 +1870,7 @@
                         c'8
                         -\tenuto
                         ]
-                        bf8
+                        as8
                         -\tenuto
                         [
                         e'8
@@ -1950,18 +1947,18 @@
                         r2
                         r8
                         [
-                        ef'8
+                        ds'8
                         \mf
                         ]
                         \<
                         (
-                        bf'8
+                        as'8
                         )
                         [
                         b'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 3
@@ -1994,14 +1991,14 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         a8
                         \mf
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         [
@@ -2021,7 +2018,7 @@
                         ]
                         a'8
                         [
-                        bf'8
+                        as'8
                         ]
                         c'8
                         )
@@ -2094,6 +2091,7 @@
                         r2
                         gs'8
                         [
+                        \<
                         (
                         a'8
                         ]
@@ -2126,6 +2124,7 @@
                         [
                         (
                         b'8
+                        \f
                         ]
                         )
                         r2
@@ -2169,7 +2168,7 @@
                         ]
                         e'8
                         [
-                        fs'8
+                        gf'8
                         ]
                         a'8
                         )
@@ -2239,8 +2238,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_alto_sax2"
@@ -2329,33 +2330,23 @@
                             R1 * 2
                         }
                         \once \hide Stem
-                        <c' ds' e'>4
+                        <c' ef' e'>4
                         \mp
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         {
@@ -2444,8 +2435,8 @@
                         [
                         g8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -2525,8 +2516,8 @@
                         [
                         d''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -2541,7 +2532,7 @@
                         \p
                         [
                         (
-                        bf'8
+                        as'8
                         ]
                         c''8
                         )
@@ -2554,7 +2545,7 @@
                         a8
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -2593,7 +2584,7 @@
                         \mf
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -2639,7 +2630,7 @@
                         c'8
                         -\tenuto
                         ]
-                        ef'8
+                        ds'8
                         -\tenuto
                         [
                         g'8
@@ -2651,10 +2642,10 @@
                         a'8
                         -\tenuto
                         ]
-                        ef'8
+                        ds'8
                         -\tenuto
                         [
-                        bf8
+                        as8
                         -\tenuto
                         ]
                         c'8
@@ -2714,18 +2705,18 @@
                         r2
                         r8
                         [
-                        bf8
+                        as8
                         \mf
                         ]
                         \<
                         (
-                        df'8
+                        cs'8
                         )
                         [
                         d'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 3
@@ -2754,7 +2745,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         r2
@@ -2762,7 +2753,7 @@
                         \mf
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         [
@@ -2782,7 +2773,7 @@
                         ]
                         a8
                         [
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -2845,6 +2836,7 @@
                         r2
                         e'8
                         [
+                        \<
                         (
                         g'8
                         ]
@@ -2861,10 +2853,10 @@
                         b'8
                         ]
                         )
-                        bf'8
+                        as'8
                         [
                         (
-                        gf'8
+                        fs'8
                         ]
                         )
                         d'8
@@ -2876,7 +2868,8 @@
                         e'8
                         [
                         (
-                        gf'8
+                        fs'8
+                        \f
                         ]
                         )
                         {
@@ -2976,8 +2969,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_tenor_sax"
@@ -3153,8 +3148,8 @@
                         [
                         d8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -3234,8 +3229,8 @@
                         [
                         a8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -3250,7 +3245,7 @@
                         \p
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -3263,7 +3258,7 @@
                         a,8
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -3302,7 +3297,7 @@
                         \mf
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -3423,7 +3418,7 @@
                         r2
                         r8
                         [
-                        gf8
+                        fs8
                         \mf
                         ]
                         \<
@@ -3431,10 +3426,10 @@
                         f8
                         )
                         [
-                        gf8
+                        fs8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 3
@@ -3466,14 +3461,14 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 7
                         }
                         a8
                         \mf
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         [
@@ -3553,8 +3548,9 @@
                             R1 * 1
                         }
                         r2
-                        af8
+                        gs8
                         [
+                        \<
                         (
                         c'8
                         ]
@@ -3562,31 +3558,32 @@
                         g8
                         [
                         (
-                        af8
+                        gs8
                         ]
                         )
                         c'8
                         [
                         (
-                        af8
+                        gs8
                         ]
                         )
-                        gf8
+                        fs8
                         [
                         (
-                        df8
+                        cs8
                         ]
                         )
                         g8
                         [
                         (
-                        gf8
+                        fs8
                         ]
                         )
                         a8
                         [
                         (
-                        bf8
+                        as8
+                        \f
                         ]
                         )
                         fs8
@@ -3627,9 +3624,9 @@
                         (
                         d8
                         ]
-                        fs8
+                        gf8
                         [
-                        cs8
+                        df8
                         ]
                         g8
                         )
@@ -3689,8 +3686,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bari_sax"
@@ -3867,8 +3866,8 @@
                         [
                         c'8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 3
@@ -3948,8 +3947,8 @@
                         [
                         e8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -3966,7 +3965,7 @@
                         a,8
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -4005,7 +4004,7 @@
                         \mf
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -4077,7 +4076,7 @@
                             R1 * 3
                         }
                         r2
-                        gf,8
+                        fs,8
                         \mp
                         -\tenuto
                         [
@@ -4091,19 +4090,19 @@
                         b,8
                         -\tenuto
                         ]
-                        bf,8
+                        as,8
                         -\tenuto
                         [
                         d8
                         -\tenuto
                         ]
-                        df8
+                        cs8
                         -\tenuto
                         [
-                        df8
+                        cs8
                         -\tenuto
                         ]
-                        bf,8
+                        as,8
                         -\tenuto
                         [
                         a,8
@@ -4122,18 +4121,18 @@
                         r2
                         r8
                         [
-                        bf,8
+                        as,8
                         \mf
                         ]
                         \<
                         (
-                        df8
+                        cs8
                         )
                         [
-                        gf8
+                        fs8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 2
@@ -4172,7 +4171,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 10
                         }
                         r8
@@ -4270,8 +4269,9 @@
                             R1 * 1
                         }
                         r2
-                        af,8
+                        gs,8
                         [
+                        \<
                         (
                         c8
                         ]
@@ -4279,19 +4279,19 @@
                         g,8
                         [
                         (
-                        af,8
+                        gs,8
                         ]
                         )
                         g,8
                         [
                         (
-                        af,8
+                        gs,8
                         ]
                         )
-                        df8
+                        cs8
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         )
                         c8
@@ -4303,7 +4303,8 @@
                         a,8
                         [
                         (
-                        ef8
+                        ds8
+                        \f
                         ]
                         )
                         {
@@ -4450,8 +4451,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bassoon"
@@ -4527,10 +4530,9 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #8
                         r8
-                        \f
-                        -\tenuto
                         [
                         cs8
+                        \f
                         -\tenuto
                         ]
                         e4
@@ -4566,14 +4568,10 @@
                         e,4
                         -\staccato
                         -\accent
-                        r1
-                        -\staccato
-                        -\accent
-                        r1
-                        -\staccato
-                        -\accent
+                        {
+                            R1 * 2
+                        }
                         r8
-                        -\tenuto
                         [
                         ds,8
                         -\tenuto
@@ -4612,7 +4610,6 @@
                         -\staccato
                         -\accent
                         r8
-                        -\tenuto
                         [
                         ds,8
                         -\tenuto
@@ -4728,8 +4725,8 @@
                         [
                         a'8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         {
@@ -4916,8 +4913,8 @@
                         [
                         b,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 2
@@ -4961,7 +4958,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 10
                         }
                         r8
@@ -5056,7 +5053,9 @@
                         r8
                         ]
                         a8
+                        \mp
                         [
+                        \<
                         (
                         f8
                         ]
@@ -5092,7 +5091,9 @@
                         ]
                         )
                         gs8
+                        \!
                         [
+                        \<
                         (
                         c8
                         ]
@@ -5125,6 +5126,7 @@
                         [
                         (
                         cs,8
+                        \f
                         ]
                         )
                         fs8
@@ -5274,8 +5276,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -5631,8 +5635,8 @@
                         [
                         gf'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 4
@@ -5642,7 +5646,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 7
                         }
                         c4
@@ -5659,8 +5663,8 @@
                         d8
                         [
                         c8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         r4
@@ -5673,8 +5677,8 @@
                         f8
                         [
                         f8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         f4
                         -\tenuto
@@ -5688,8 +5692,8 @@
                         [
                         a8
                         \mf
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r2
                         {
@@ -5806,8 +5810,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_trumpet"
@@ -5821,7 +5827,7 @@
                             \compressFullBarRests
                             \tempo \markup \fontsize #1 {  \note #"4" #UP "= 160 ca"  }
                             \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Trumpet in C" }
+                            \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
                             \mark #6
@@ -6167,8 +6173,8 @@
                         [
                         b'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 4
@@ -6178,7 +6184,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 2
                         }
                         r2
@@ -6214,8 +6220,8 @@
                         c''8
                         [
                         g'8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         r4
@@ -6228,8 +6234,8 @@
                         bf'8
                         [
                         a'8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         c''4
                         -\tenuto
@@ -6243,8 +6249,8 @@
                         [
                         e''8
                         \mf
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r2
                         {
@@ -6358,8 +6364,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_trombone"
@@ -6460,7 +6468,56 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #8
-                            R1 * 7
+                            R1 * 4
+                        }
+                        r2
+                        ef8
+                        \f
+                        -\tenuto
+                        [
+                        af8
+                        -\tenuto
+                        ]
+                        af4
+                        -\staccato
+                        -\accent
+                        f8
+                        -\tenuto
+                        [
+                        b,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        gf,8
+                        -\tenuto
+                        ]
+                        bf,8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        r4
+                        r8
+                        [
+                        ef8
+                        -\tenuto
+                        ]
+                        af4
+                        -\staccato
+                        -\accent
+                        ef8
+                        -\tenuto
+                        [
+                        af8
+                        -\tenuto
+                        ]
+                        af4
+                        -\staccato
+                        -\accent
+                        {
+                            R1 * 1
                         }
                         r2
                         r8
@@ -6507,7 +6564,7 @@
                         r4
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
                         r2
                         r4
@@ -6638,8 +6695,8 @@
                         [
                         d'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 4
@@ -6649,7 +6706,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 7
                         }
                         f4
@@ -6666,8 +6723,8 @@
                         g8
                         [
                         f8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         r4
@@ -6680,8 +6737,8 @@
                         d8
                         [
                         d8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         g4
                         -\tenuto
@@ -6695,8 +6752,8 @@
                         [
                         c'8
                         \mf
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r2
                         r8
@@ -6903,8 +6960,10 @@
                         r4
                         r2
                         {
-                            R1 * 4
+                            R1 * 3
                         }
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -7122,93 +7181,59 @@
                         \once \hide Stem
                         <ef' f' af' bf' c'' df''>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         \once \hide Stem
                         <f' g' af' c'' df''>4
                         ^ \markup { (1) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         \once \hide Stem
                         <d' ef' f' g' a' bf' c''>4
                         ^ \markup { (1) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \compressFullBarRests
@@ -7450,7 +7475,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         c'8
                         \f
                         [
@@ -7634,6 +7659,7 @@
                         :32
                         ef'''1
                         :32
+                        \<
                         ef'''1
                         :32
                         ef'''1
@@ -7642,9 +7668,12 @@
                         :32
                         ef'''1
                         :32
+                        \ff
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_drum_set"
@@ -7664,6 +7693,7 @@
                         \clef "percussion"
                         g4
                         \mp
+                        ^ \markup { sticks }
                         <g e'>4
                         r4
                         r8
@@ -7673,57 +7703,36 @@
                         r2
                         <g f'>4
                         r4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        g4
+                        <g e'>4
+                        r4
+                        r8
+                        [
+                        b8
+                        ]
+                        r2
+                        <g f'>4
+                        r4
+                        g4
+                        <g e'>4
+                        r4
+                        r8
+                        [
+                        b8
+                        ]
+                        r2
+                        <g f'>4
+                        r4
+                        g4
+                        <g e'>4
+                        r4
+                        r8
+                        [
+                        b8
+                        ]
+                        r2
+                        <g f'>4
+                        r4
                     }
                     {
                         \compressFullBarRests
@@ -7766,193 +7775,424 @@
                         e8
                         ]
                         d'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (9) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (10) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (11) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
                     }
                     {
                         \compressFullBarRests
@@ -8088,157 +8328,255 @@
                         e8
                         ]
                         d'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
                         \tweak style #'slash
                         c'8
                         ^ \markup { "improv, solo" }
                         [
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \tweak style #'slash
-                        c'8
-                        [
-                        \tweak style #'slash
-                        c'8
-                        ]
-                        \tweak style #'slash
-                        c'8
-                        [
-                        \tweak style #'slash
-                        c'8
-                        ]
-                        \tweak style #'slash
-                        c'8
-                        [
-                        \tweak style #'slash
-                        c'8
-                        ]
-                        \tweak style #'slash
-                        c'8
-                        [
-                        \tweak style #'slash
-                        c'8
-                        ]
+                        {
+                            R1 * 1
+                        }
                     }
                     {
                         \compressFullBarRests
@@ -8264,78 +8602,166 @@
                         \tweak style #'cross
                         a'8
                         ]
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        r8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
                         \withSlash
                         d'4
                         \withSlash
@@ -8344,60 +8770,54 @@
                         d'4
                         \withSlash
                         d'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
+                        \withSlash
+                        d'4
                         <
                             \tweak style #'cross
                             e
@@ -8481,137 +8901,769 @@
                         <g f'>16
                         e'16
                         ]
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (9) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (10) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (11) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (12) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (13) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (14) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
                     }
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
+                        <g f'>16
+                        [
+                        f'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <g d' e'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        f'16
+                        [
+                        e'16
+                        <
+                            \tweak style #'cross
+                            e
+                            b
+                        >8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <g d' f'>8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        d'4
                         <g f'>16
                         [
                         f'16
@@ -8652,263 +9704,54 @@
                         d'4
                         \tweak style #'slash
                         c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (9) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (10) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (11) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
                         ^ \markup { "ad lib with rolls" }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        r4
+                        r4
+                        \>
+                        r4
+                        r4
+                        ^ \markup { (9) }
+                        r4
+                        r4
+                        r4
+                        \pp
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -9380,104 +10223,259 @@
                         <b c' d' e'>4
                         \mp
                         ^ \markup { "improv, straight quarter notes on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (6) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (7) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (8) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (9) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (10) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         {
                             R1 * 5
                         }
                     }
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        <bf g' af'>4
+                        \mf
+                        ^ \markup { "improv, straight quarter notes on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <bf c' d' ef'>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <d' ds' gs' a'>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        a8
+                        [
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        a8
+                        [
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        a8
+                        [
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        f'8
+                        [
+                        a'8
+                        ]
+                        a8
+                        [
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        a8
+                        [
+                        bf8
+                        ]
+                        c'8
+                        [
+                        d'8
+                        ]
+                        f'8
+                        [
+                        a'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        e'8
+                        [
+                        b'8
+                        ]
+                        f'8
+                        [
+                        c''8
+                        ]
+                        d''8
+                        [
+                        e''8
+                        ]
+                        \tweak style #'slash
+                        b'4
+                        \p
+                        ^ \markup { "crazy fat distorted sounds" }
+                        \<
+                        r4
+                        r4
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #9
-                            R1 * 32
+                            R1 * 10
                         }
+                        \tweak style #'slash
+                        b'4
+                        \mp
+                        ^ \markup { "crazy fat distorted sounds" }
+                        \<
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 3
+                        }
+                        r4
+                        r4
+                        \f
+                        r2
+                        {
+                            R1 * 1
+                        }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_bass_guitar"
@@ -9613,9 +10611,9 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #8
                         r8
-                        \f
                         [
                         df8
+                        \f
                         ]
                         gf4
                         df8
@@ -9729,104 +10727,88 @@
                         <d e b c'>4
                         \mp
                         ^ \markup { "improv, straight quarter notes on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (6) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (7) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (8) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (9) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (10) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         {
                             R1 * 5
                         }
                     }
                     {
-                        {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #9
-                            R1 * 4
-                        }
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #10
+                        <af, bf, g>4
+                        \mf
+                        ^ \markup { "improv, straight quarter notes on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <bf, c d ef>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                         bf,2
                         \f
                         ~
@@ -9956,8 +10938,96 @@
                         r8
                         ]
                         {
-                            R1 * 18
+                            R1 * 3
                         }
+                        fs,8
+                        \mf
+                        [
+                        cs8
+                        ]
+                        g,8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        fs8
+                        ]
+                        fs,8
+                        [
+                        cs8
+                        ]
+                        g,8
+                        [
+                        d8
+                        ]
+                        fs,8
+                        [
+                        cs8
+                        ]
+                        g,8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        fs8
+                        ]
+                        fs,8
+                        [
+                        cs8
+                        ]
+                        g,8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        fs8
+                        ]
+                        fs,8
+                        [
+                        cs8
+                        ]
+                        g,8
+                        [
+                        d8
+                        ]
+                        fs,8
+                        [
+                        cs8
+                        ]
+                        g,8
+                        [
+                        d8
+                        ]
+                        e8
+                        [
+                        fs8
+                        ]
+                        {
+                            R1 * 4
+                        }
+                        \tweak style #'slash
+                        c4
+                        \mp
+                        ^ \markup { "crazy fat distorted sounds" }
+                        \<
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 3
+                        }
+                        r4
+                        r4
+                        \f
+                        r2
+                        {
+                            R1 * 1
+                        }
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -10257,30 +11327,20 @@
                         \once \hide Stem
                         <d'' g''>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \compressFullBarRests
@@ -10425,48 +11485,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -10481,8 +11523,8 @@
                         [
                         gf''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 2
@@ -10526,12 +11568,12 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         a''2
                         :32
-                        \mp
+                        \mf
                         ~
                         a''4
                         :32
@@ -10592,6 +11634,7 @@
                         r2
                         b'8
                         [
+                        \<
                         (
                         c''8
                         ]
@@ -10624,6 +11667,7 @@
                         [
                         (
                         ef'''8
+                        \f
                         ]
                         )
                         {
@@ -10718,10 +11762,22 @@
                         ]
                         ds'''4
                         r4
+                        ^ \markup { "speed up into tremolo" }
+                        e''2
+                        \<
+                        \glissando :8
+                        ds'''1
+                        :32
+                        \ff
+                        ~
+                        ds'''2
+                        :32
                         r2
                         {
-                            R1 * 4
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_violin2"
@@ -11018,30 +12074,20 @@
                         \once \hide Stem
                         <d'' g''>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \compressFullBarRests
@@ -11146,48 +12192,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -11202,8 +12230,8 @@
                         [
                         gf''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 2
@@ -11254,12 +12282,12 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         c''2
                         :32
-                        \mp
+                        \mf
                         ~
                         c''4
                         :32
@@ -11320,6 +12348,7 @@
                         r2
                         e''8
                         [
+                        \<
                         (
                         g''8
                         ]
@@ -11352,6 +12381,7 @@
                         [
                         (
                         as'''8
+                        \f
                         ]
                         )
                         {
@@ -11433,10 +12463,22 @@
                         \f
                         ]
                         r4
+                        ^ \markup { "speed up into tremolo" }
+                        e''2
+                        \<
+                        \glissando :8
+                        ds'''1
+                        :32
+                        \ff
+                        ~
+                        ds'''2
+                        :32
                         r2
                         {
-                            R1 * 4
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_cello1"
@@ -11603,30 +12645,20 @@
                         \once \hide Stem
                         <g d'>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \compressFullBarRests
@@ -11767,48 +12799,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -11823,8 +12837,8 @@
                         [
                         d'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 2
@@ -11868,12 +12882,12 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         f2
                         :32
-                        \mp
+                        \mf
                         ~
                         f4
                         :32
@@ -11929,7 +12943,9 @@
                         b,4
                         :32
                         e'8
+                        \mp
                         [
+                        \<
                         (
                         f'8
                         ]
@@ -11965,7 +12981,9 @@
                         ]
                         )
                         e'8
+                        \!
                         [
+                        \<
                         (
                         f'8
                         ]
@@ -11998,6 +13016,7 @@
                         [
                         (
                         b,8
+                        \f
                         ]
                         )
                         {
@@ -12074,9 +13093,21 @@
                         ]
                         g'4
                         \f
+                        r2
+                        ^ \markup { "speed up into tremolo" }
+                        \clef "tenor"
+                        e'2
+                        \<
+                        \glissando :8
+                        ds''2
+                        :32
+                        \ff
+                        r2
                         {
-                            R1 * 4
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "ooa_cello2"
@@ -12243,30 +13274,20 @@
                         \once \hide Stem
                         <g d'>4
                         ^ \markup { "improv on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \compressFullBarRests
@@ -12367,48 +13388,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -12423,8 +13426,8 @@
                         [
                         d'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 2
@@ -12466,12 +13469,12 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         d2
                         :32
-                        \mp
+                        \mf
                         ~
                         d4
                         :32
@@ -12527,7 +13530,9 @@
                         e4
                         :32
                         a8
+                        \mp
                         [
+                        \<
                         (
                         bf8
                         ]
@@ -12563,7 +13568,9 @@
                         ]
                         )
                         b8
+                        \!
                         [
+                        \<
                         (
                         a8
                         ]
@@ -12596,6 +13603,7 @@
                         [
                         (
                         fs8
+                        \f
                         ]
                         )
                         {
@@ -12676,9 +13684,21 @@
                         d'8
                         \f
                         ]
+                        r2
+                        ^ \markup { "speed up into tremolo" }
+                        \clef "tenor"
+                        e'2
+                        \<
+                        \glissando :8
+                        ds''2
+                        :32
+                        \ff
+                        r2
                         {
-                            R1 * 4
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -12915,8 +13935,8 @@
                         [
                         cs'''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 6
@@ -13053,8 +14073,8 @@
                         [
                         f''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         r2
                         r8
@@ -13108,7 +14128,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         e'''1
@@ -13208,8 +14228,10 @@
                         )
                         r2
                         {
-                            R1 * 5
+                            R1 * 4
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_flute2"
@@ -13444,8 +14466,8 @@
                         [
                         f'''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 6
@@ -13577,8 +14599,8 @@
                         [
                         df''8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         r2
                         r8
@@ -13636,7 +14658,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         r4
@@ -13749,8 +14771,10 @@
                         )
                         r2
                         {
-                            R1 * 5
+                            R1 * 4
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_oboe1"
@@ -14042,8 +15066,8 @@
                         [
                         f'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -14087,11 +15111,13 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 14
                         }
                         e'8
+                        \mp
                         [
+                        \<
                         (
                         d'8
                         ]
@@ -14127,7 +15153,9 @@
                         ]
                         )
                         b'8
+                        \!
                         [
+                        \<
                         (
                         e'8
                         ]
@@ -14160,6 +15188,7 @@
                         [
                         (
                         fs''8
+                        \f
                         ]
                         )
                         r8
@@ -14338,8 +15367,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_oboe2"
@@ -14626,8 +15657,8 @@
                         [
                         bf'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -14678,11 +15709,13 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 14
                         }
                         df''8
+                        \mp
                         [
+                        \<
                         (
                         bf'8
                         ]
@@ -14718,7 +15751,9 @@
                         ]
                         )
                         b'8
+                        \!
                         [
+                        \<
                         (
                         e''8
                         ]
@@ -14751,6 +15786,7 @@
                         [
                         (
                         cs''8
+                        \f
                         ]
                         )
                         r8
@@ -14934,8 +15970,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_clarinet1"
@@ -15244,8 +16282,8 @@
                         [
                         bf''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 16
@@ -15332,8 +16370,8 @@
                         [
                         bf8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         r2
                         r8
@@ -15389,7 +16427,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 6
                         }
                         r2
@@ -15661,8 +16699,10 @@
                         bf''4
                         )
                         {
-                            R1 * 4
+                            R1 * 3
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_clarinet2"
@@ -15966,8 +17006,8 @@
                         [
                         af''8
                         \f
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         {
                             R1 * 16
@@ -16054,8 +17094,8 @@
                         [
                         df'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         r2
                         r8
@@ -16108,7 +17148,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 7
                         }
                         a'8
@@ -16380,8 +17420,10 @@
                         ]
                         )
                         {
-                            R1 * 4
+                            R1 * 3
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_bassoon"
@@ -16479,10 +17521,9 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #8
                         r8
-                        \f
-                        -\tenuto
                         [
                         df8
+                        \f
                         -\tenuto
                         ]
                         gf4
@@ -16518,14 +17559,10 @@
                         gf4
                         -\staccato
                         -\accent
-                        r1
-                        -\staccato
-                        -\accent
-                        r1
-                        -\staccato
-                        -\accent
+                        {
+                            R1 * 2
+                        }
                         r8
-                        -\tenuto
                         [
                         ef8
                         -\tenuto
@@ -16536,58 +17573,57 @@
                         ef8
                         -\tenuto
                         [
-                        af8
+                        gf8
                         -\tenuto
                         ]
                         af4
                         -\staccato
                         -\accent
-                        f8
+                        ef8
                         -\tenuto
                         [
                         b,8
-                        -\tenuto
-                        ]
-                        c8
-                        -\tenuto
-                        [
-                        gf,8
                         -\tenuto
                         ]
                         bf,8
                         -\tenuto
                         [
-                        ef8
+                        gf,8
                         -\tenuto
                         ]
-                        af4
+                        af,8
+                        -\tenuto
+                        [
+                        ef,8
+                        -\tenuto
+                        ]
+                        af,4
                         -\staccato
                         -\accent
                         r8
-                        -\tenuto
                         [
-                        ef8
+                        ef,8
                         -\tenuto
                         ]
-                        af4
+                        gf,4
                         -\staccato
                         -\accent
-                        ef8
+                        ef,8
                         -\tenuto
                         [
-                        af8
+                        gf,8
                         -\tenuto
                         ]
-                        af4
+                        af,4
                         -\staccato
                         -\accent
-                        f8
+                        f,8
                         -\tenuto
                         [
-                        b,8
+                        b,,8
                         -\tenuto
                         ]
-                        c8
+                        c,8
                         -\tenuto
                         [
                         gf,8
@@ -16687,8 +17723,8 @@
                         [
                         f,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -16730,11 +17766,13 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 14
                         }
                         cs'8
+                        \mp
                         [
+                        \<
                         (
                         d'8
                         ]
@@ -16770,7 +17808,9 @@
                         ]
                         )
                         e8
+                        \!
                         [
+                        \<
                         (
                         f8
                         ]
@@ -16803,6 +17843,7 @@
                         [
                         (
                         fs,8
+                        \f
                         ]
                         )
                         r8
@@ -17001,8 +18042,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -17286,8 +18329,8 @@
                         [
                         df8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 3
@@ -17297,7 +18340,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 7
                         }
                         f4
@@ -17314,8 +18357,8 @@
                         g8
                         [
                         f8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         r4
@@ -17328,8 +18371,8 @@
                         bf8
                         [
                         a8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         g4
                         -\tenuto
@@ -17343,8 +18386,8 @@
                         [
                         c'8
                         \mf
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r2
                         {
@@ -17514,8 +18557,10 @@
                         r4
                         r2
                         {
-                            R1 * 4
+                            R1 * 3
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_trumpet"
@@ -17862,8 +18907,8 @@
                         [
                         df'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 3
@@ -17872,11 +18917,13 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         ef''2
-                        \f
+                        \mp
                         ^ \markup { solo }
+                        \<
                         af'2
+                        \f
                         (
                         ef''2
                         ~
@@ -18080,8 +19127,10 @@
                         )
                         r2
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_trombone"
@@ -18204,7 +19253,56 @@
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
                             \mark #8
-                            R1 * 7
+                            R1 * 4
+                        }
+                        r2
+                        ef8
+                        \f
+                        -\tenuto
+                        [
+                        af8
+                        -\tenuto
+                        ]
+                        af4
+                        -\staccato
+                        -\accent
+                        f8
+                        -\tenuto
+                        [
+                        b,8
+                        -\tenuto
+                        ]
+                        c8
+                        -\tenuto
+                        [
+                        gf,8
+                        -\tenuto
+                        ]
+                        bf,8
+                        -\tenuto
+                        [
+                        r8
+                        ]
+                        r4
+                        r8
+                        [
+                        ef8
+                        -\tenuto
+                        ]
+                        af4
+                        -\staccato
+                        -\accent
+                        ef8
+                        -\tenuto
+                        [
+                        af8
+                        -\tenuto
+                        ]
+                        af4
+                        -\staccato
+                        -\accent
+                        {
+                            R1 * 1
                         }
                         r2
                         r8
@@ -18251,7 +19349,7 @@
                         r4
                         r2
                         {
-                            R1 * 9
+                            R1 * 8
                         }
                     }
                     {
@@ -18325,8 +19423,8 @@
                         [
                         f,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 3
@@ -18336,7 +19434,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 7
                         }
                         g4
@@ -18353,8 +19451,8 @@
                         c8
                         [
                         g,8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r4
                         r4
@@ -18367,8 +19465,8 @@
                         f8
                         [
                         f8
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         c4
                         -\tenuto
@@ -18382,8 +19480,8 @@
                         [
                         e8
                         \mf
-                        -\staccato
                         -\tenuto
+                        -\staccato
                         ]
                         r2
                         {
@@ -18548,8 +19646,10 @@
                         r4
                         r2
                         {
-                            R1 * 4
+                            R1 * 3
                         }
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -19705,295 +20805,168 @@
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #9
+                    \mark #10
                     \tweak style #'slash
                     c'4
                     ^ \markup { "ad lib" }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (2) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (3) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (4) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (5) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (6) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (7) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (8) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (9) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (10) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (11) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (12) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (13) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (14) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (15) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (16) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (17) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (18) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (19) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (20) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (21) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (22) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    ^ \markup { (23) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    ^ \markup { (24) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
                     \tweak style #'slash
                     c'4
                     ^ \markup { "ad lib with rolls" }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (2) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (3) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (4) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (5) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (6) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (7) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    r4
+                    r4
                     ^ \markup { (8) }
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
-                    \tweak style #'slash
-                    c'4
+                    r4
+                    r4
+                    \>
+                    r4
+                    r4
+                    ^ \markup { (9) }
+                    r4
+                    r4
+                    r4
+                    \pp
+                    r1
+                    \fermata
                 }
             }
             \context PianoStaff = "cco_harp"
@@ -20189,19 +21162,19 @@
                         [
                         r8
                         ]
-                        <gf gf'>8
+                        <fs fs'>8
                         [
-                        <ef' af'>8
+                        <ds' gs'>8
                         ]
                         r4
-                        <bf bf'>8
+                        <as as'>8
                         [
                         <c'' f''>8
                         ]
                         r4
-                        <af' af''>8
+                        <gs' gs''>8
                         [
-                        <f'' bf''>8
+                        <f'' as''>8
                         ]
                         <ds' ds''>8
                         [
@@ -20228,9 +21201,9 @@
                         [
                         r8
                         ]
-                        <df' df''>8
+                        <cs' cs''>8
                         [
-                        <bf' ef''>8
+                        <as' ds''>8
                         ]
                         r4
                         <f' f''>8
@@ -20238,7 +21211,7 @@
                         <g'' c'''>8
                         ]
                         r4
-                        <ef'' ef'''>8
+                        <ds'' ds'''>8
                         [
                         <c''' f'''>8
                         ]
@@ -20475,7 +21448,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         f''8
                         \f
                         [
@@ -20574,8 +21547,32 @@
                         a8
                         ]
                         {
-                            R1 * 26
+                            R1 * 16
                         }
+                        ef'''1
+                        :32
+                        \p
+                        ef'''1
+                        :32
+                        ef'''1
+                        :32
+                        ef'''1
+                        :32
+                        \<
+                        ef'''1
+                        :32
+                        ef'''1
+                        :32
+                        ef'''1
+                        :32
+                        ef'''1
+                        :32
+                        \ff
+                        {
+                            R1 * 1
+                        }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "harp2"
@@ -20720,9 +21717,11 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
-                            R1 * 32
+                            \mark #10
+                            R1 * 31
                         }
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -21643,7 +22642,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         <df' ef' f' af'>4
                         \f
                         r4
@@ -21737,8 +22736,34 @@
                         <cs'' e'' a''>4
                         r4
                         {
-                            R1 * 12
+                            R1 * 2
                         }
+                        \ottava #1
+                        <ef''' ef''''>1
+                        :32
+                        \p
+                        <ef''' ef''''>1
+                        :32
+                        <ef''' ef''''>1
+                        :32
+                        <ef''' ef''''>1
+                        :32
+                        \<
+                        <ef''' ef''''>1
+                        :32
+                        <ef''' ef''''>1
+                        :32
+                        <ef''' ef''''>1
+                        :32
+                        <ef''' ef''''>1
+                        :32
+                        \ff
+                        \ottava #0
+                        {
+                            R1 * 1
+                        }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "piano2"
@@ -22638,7 +23663,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         <g,, f,>4
                         -\staccato
                         <bf,, af,>4
@@ -22776,8 +23801,26 @@
                         <cs' e' a'>4
                         r4
                         {
-                            R1 * 12
+                            R1 * 3
                         }
+                        <ef' ef''>1
+                        :32
+                        <ef' ef''>1
+                        :32
+                        <ef' ef''>1
+                        :32
+                        <ef' ef''>1
+                        :32
+                        <ef' ef''>1
+                        :32
+                        <ef' ef''>1
+                        :32
+                        <ef' ef''>1
+                        :32
+                        <ef' ef''>1
+                        :32
+                        r1
+                        \fermata
                     }
                 }
             >>
@@ -23037,8 +24080,8 @@
                         [
                         bf'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -23085,11 +24128,12 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         bf1
                         :32
                         \pp
                         ~
+                        \<
                         bf1
                         :32
                         ~
@@ -23097,6 +24141,7 @@
                         :32
                         g'2
                         :32
+                        \mp
                         ~
                         g'1
                         :32
@@ -23111,7 +24156,7 @@
                         :32
                         g''2
                         :32
-                        \mp
+                        \mf
                         ~
                         g''4
                         :32
@@ -23227,9 +24272,24 @@
                         \f
                         ]
                         r2
+                        ^ \markup { "speed up into tremolo" }
+                        e''2
+                        \<
+                        \glissando :8
+                        ds'''2
+                        :32
+                        \ff
+                        ~
+                        ds'''1
+                        :32
+                        ~
+                        ds'''1
+                        :32
                         {
-                            R1 * 5
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_violin_ii"
@@ -23486,8 +24546,8 @@
                         [
                         f'8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -23534,11 +24594,12 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         bf1
                         :32
                         \pp
                         ~
+                        \<
                         bf1
                         :32
                         ~
@@ -23546,6 +24607,7 @@
                         :32
                         g'2
                         :32
+                        \mp
                         ~
                         g'1
                         :32
@@ -23560,7 +24622,7 @@
                         :32
                         e'''2
                         :32
-                        \mp
+                        \mf
                         ~
                         e'''4
                         :32
@@ -23678,9 +24740,24 @@
                         \f
                         ]
                         r2
+                        ^ \markup { "speed up into tremolo" }
+                        e''2
+                        \<
+                        \glissando :8
+                        ds'''2
+                        :32
+                        \ff
+                        ~
+                        ds'''1
+                        :32
+                        ~
+                        ds'''1
+                        :32
                         {
-                            R1 * 5
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_viola"
@@ -23830,6 +24907,7 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #8
                         e'4
+                        ^ \markup { pizz }
                         r4
                         r2
                         {
@@ -23976,8 +25054,8 @@
                         [
                         bf8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -24029,11 +25107,12 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         ef1
                         :32
                         \pp
                         ~
+                        \<
                         ef1
                         :32
                         ~
@@ -24041,6 +25120,7 @@
                         :32
                         ef'2
                         :32
+                        \mp
                         ~
                         ef'1
                         :32
@@ -24055,7 +25135,7 @@
                         :32
                         a2
                         :32
-                        \mp
+                        \mf
                         ~
                         a4
                         :32
@@ -24219,10 +25299,22 @@
                         \f
                         ]
                         r4
+                        ^ \markup { "speed up into tremolo" }
+                        e'2
+                        \<
+                        \glissando :8
+                        ds''1
+                        :32
+                        \ff
+                        ~
+                        ds''2
+                        :32
                         r2
                         {
-                            R1 * 4
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_cello"
@@ -24480,8 +25572,8 @@
                         [
                         df8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 1
@@ -24530,11 +25622,12 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #9
+                        \mark #10
                         gs,1
                         :32
                         \pp
                         ~
+                        \<
                         gs,1
                         :32
                         ~
@@ -24542,6 +25635,7 @@
                         :32
                         gs2
                         :32
+                        \mp
                         ~
                         gs1
                         :32
@@ -24556,7 +25650,7 @@
                         :32
                         g2
                         :32
-                        \mp
+                        \mf
                         ~
                         g4
                         :32
@@ -24703,9 +25797,21 @@
                         as8
                         \f
                         ]
+                        r2
+                        ^ \markup { "speed up into tremolo" }
+                        \clef "tenor"
+                        e'2
+                        \<
+                        \glissando :8
+                        ds''2
+                        :32
+                        \ff
+                        r2
                         {
-                            R1 * 4
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
                 \context Staff = "cco_bass"
@@ -24841,9 +25947,9 @@
                         \accidentalStyle neo-modern-cautionary
                         \mark #8
                         r8
-                        \f
                         [
                         cs'8
+                        \f
                         ^ \markup { pizz }
                         ]
                         e'4
@@ -24980,8 +26086,8 @@
                         [
                         bf,,8
                         \f
-                        -\accent
                         -\tenuto
+                        -\accent
                         ]
                         {
                             R1 * 3
@@ -24991,7 +26097,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #9
+                            \mark #10
                             R1 * 11
                         }
                         b,2
@@ -25019,8 +26125,8 @@
                         d2
                         d2
                         d2
-                        ef2
                         \p
+                        ef2
                         ef2
                         ef2
                         ef2
@@ -25038,8 +26144,10 @@
                         ef1
                         \ff
                         {
-                            R1 * 2
+                            R1 * 1
                         }
+                        r1
+                        \fermata
                     }
                 }
             >>

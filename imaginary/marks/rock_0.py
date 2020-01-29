@@ -30,8 +30,14 @@ def score0(lib):
         sb.with_only("bass_rhythm"),
         fabric_staves = ("ooa_drum_set",),
         tag_events = {0:("mp","sticks")},
-        func = lambda x: x.only_first("cells",2)
+        func = lambda x: x.only_first("cells",8)
         )
+    # low_drums = lambda_segment.LambdaSegment(
+    #     sb.with_only("bass_rhythm"),
+    #     fabric_staves = ("ooa_drum_set",),
+    #     tag_events = {0:("mp","sticks")},
+    #     func = lambda x: x.only_first("cells",2)
+    #     )
 
     cowbell = lambda_segment.LambdaSegment(
         sb.with_only("high_rhythm"),
@@ -41,11 +47,11 @@ def score0(lib):
         # func = lambda x: x.only_first("cells",8)
         )
     cowbell.note_events.setattrs(pitch=0)
-    low_drums.staves["ooa_drum_set"].segments[0].append(
-        get_improv_line(
-            rhythm=(1,)*8,
-            times=3)
-        )
+    # low_drums.staves["ooa_drum_set"].segments[0].append(
+    #     get_improv_line(
+    #         rhythm=(1,)*8,
+    #         times=3)
+    #     )
     harp_piano_highlights = lambda_segment.LambdaSegments(
         sb.with_only("counter_line", "riff"),
         fabric_staves = ("harp1","harp2","piano1","piano2"),
@@ -65,10 +71,11 @@ def score0(lib):
     s.extend_from(
         lambda_segment.LambdaSegment(
             calliope.SegmentBlock(ImaginarySegment(
-                lib("rock_rhythm1"),
-                get_improv_line(
-                    rhythm=(1,)*8,
-                    times=11)
+                lib("rock_rhythm1") * 12,
+                # lib("rock_rhythm1"),
+                # get_improv_line(
+                #     rhythm=(1,)*8,
+                #     times=11)
                 )),
             fabric_staves = ("ooa_drum_set",),
             func = lambda x: x,

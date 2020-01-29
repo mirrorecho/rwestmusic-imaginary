@@ -176,9 +176,6 @@
                         c'''4
                         r4
                         \!
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -205,9 +202,6 @@
                             \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf'2
                         \mp
                         ~
@@ -234,9 +228,6 @@
                             \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'1
                         \p
                         ~
@@ -265,9 +256,6 @@
                             \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'1
                         \p
                         ~
@@ -296,9 +284,6 @@
                             \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'1
                         \p
                         ~
@@ -328,17 +313,14 @@
                             \clef "bass"
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        bf,1
+                        af1
                         \p
                         ~
                         \<
-                        bf,2
+                        af2
                         ~
-                        bf,4
-                        bf,4
+                        af4
+                        af4
                         \mf
                         -\tenuto
                     }
@@ -573,15 +555,12 @@
                         -\tenuto
                         ]
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        bf2
+                        af2
                         \mp
                         ~
                         \<
-                        bf4
-                        bf4
+                        af4
+                        af4
                         \f
                         -\tenuto
                     }
@@ -605,9 +584,6 @@
                             \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf1
                         \p
                         ~
@@ -630,23 +606,20 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Trumpet in C" }
+                            \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
                             \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        c'1
+                        a'1
                         \p
                         ~
                         \<
-                        c'2
+                        a'2
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mf
                         -\tenuto
                     }
@@ -668,9 +641,6 @@
                             \clef "bass"
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf1
                         \p
                         ~
@@ -865,215 +835,542 @@
                         >16
                         b16
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \<
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
                         \tweak style #'slash
                         c'8
                         \mf
                         ^ \markup { "improv, solo" }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
                     }
                 }
@@ -1424,15 +1721,12 @@
                         ~
                         ]
                         f''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        c''2
+                        a''2
                         \mp
                         ~
                         \<
-                        c''4
-                        c''4
+                        a''4
+                        a''4
                         \f
                         -\tenuto
                     }
@@ -1609,19 +1903,16 @@
                         ]
                         bf''8
                         [
-                        f''8
+                        a''8
                         ~
                         ]
-                        f''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        c''2
+                        a''4
+                        a''2
                         \mp
                         ~
                         \<
-                        c''4
-                        c''4
+                        a''4
+                        a''4
                         \f
                         -\tenuto
                     }
@@ -1875,9 +2166,6 @@
                         ~
                         ]
                         bf4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf2
                         \mp
                         ~
@@ -2128,18 +2416,15 @@
                         ]
                         af8
                         [
-                        bf8
+                        af8
                         ~
                         ]
-                        bf8
+                        af8
                         [
                         af8
                         ~
                         ]
                         af4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf2
                         \mp
                         ~
@@ -2337,9 +2622,6 @@
                         r8
                         ]
                         \!
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -2495,12 +2777,10 @@
                         \mf
                         ~
                         ]
+                        \>
                         c'''4
                         ~
                         c'''2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -2527,9 +2807,6 @@
                             \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -2556,9 +2833,6 @@
                             \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -2585,9 +2859,6 @@
                             \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf'2
                         \mp
                         ~
@@ -2614,9 +2885,6 @@
                             \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -2857,15 +3125,12 @@
                         -\tenuto
                         ]
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        bf2
+                        af2
                         \mp
                         ~
                         \<
-                        bf4
-                        bf4
+                        af4
+                        af4
                         \f
                         -\tenuto
                     }
@@ -2889,17 +3154,14 @@
                             \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        bf1
+                        c'1
                         \p
                         ~
                         \<
-                        bf2
+                        c'2
                         ~
-                        bf4
-                        bf4
+                        c'4
+                        c'4
                         \mf
                         -\tenuto
                     }
@@ -2920,17 +3182,14 @@
                             \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        c'1
+                        a'1
                         \p
                         ~
                         \<
-                        c'2
+                        a'2
                         ~
-                        c'4
-                        c'4
+                        a'4
+                        a'4
                         \mf
                         -\tenuto
                     }
@@ -2952,9 +3211,6 @@
                             \clef "bass"
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf1
                         \p
                         ~
@@ -3836,15 +4092,12 @@
                         ~
                         ]
                         c'''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        c''2
+                        a''2
                         \mp
                         ~
                         \<
-                        c''4
-                        c''4
+                        a''4
+                        a''4
                         \f
                         -\tenuto
                     }
@@ -4061,15 +4314,12 @@
                         ~
                         ]
                         f''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        c''2
+                        a''2
                         \mp
                         ~
                         \<
-                        c''4
-                        c''4
+                        a''4
+                        a''4
                         \f
                         -\tenuto
                     }
@@ -4342,23 +4592,20 @@
                         ]
                         bf8
                         [
-                        c'8
+                        d'8
                         ~
                         ]
-                        c'8
+                        d'8
                         [
                         d'8
                         ~
                         ]
                         d'8
                         [
-                        c'8
+                        d'8
                         ~
                         ]
-                        c'4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
+                        d'4
                         bf2
                         \mp
                         ~
@@ -4651,9 +4898,6 @@
                         ~
                         ]
                         bf4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf2
                         \mp
                         ~
@@ -4946,15 +5190,12 @@
                         ~
                         ]
                         bf,4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        bf,2
+                        af,2
                         \mp
                         ~
                         \<
-                        bf,4
-                        bf,4
+                        af,4
+                        af,4
                         \f
                         -\tenuto
                     }

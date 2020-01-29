@@ -537,7 +537,7 @@
                         \p
                         [
                         (
-                        bf'8
+                        as'8
                         ]
                         c''8
                         )
@@ -550,7 +550,7 @@
                         a8
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -589,7 +589,7 @@
                         \mf
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -629,7 +629,7 @@
                         c'8
                         -\tenuto
                         ]
-                        bf8
+                        as8
                         -\tenuto
                         [
                         e'8
@@ -706,12 +706,12 @@
                         r2
                         r8
                         [
-                        ef'8
+                        ds'8
                         \mf
                         ]
                         \<
                         (
-                        bf'8
+                        as'8
                         )
                         [
                         b'8
@@ -764,7 +764,7 @@
                         \p
                         [
                         (
-                        bf'8
+                        as'8
                         ]
                         c''8
                         )
@@ -777,7 +777,7 @@
                         a8
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -816,7 +816,7 @@
                         \mf
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -862,7 +862,7 @@
                         c'8
                         -\tenuto
                         ]
-                        ef'8
+                        ds'8
                         -\tenuto
                         [
                         g'8
@@ -874,10 +874,10 @@
                         a'8
                         -\tenuto
                         ]
-                        ef'8
+                        ds'8
                         -\tenuto
                         [
-                        bf8
+                        as8
                         -\tenuto
                         ]
                         c'8
@@ -937,12 +937,12 @@
                         r2
                         r8
                         [
-                        bf8
+                        as8
                         \mf
                         ]
                         \<
                         (
-                        df'8
+                        cs'8
                         )
                         [
                         d'8
@@ -991,7 +991,7 @@
                         \p
                         [
                         (
-                        bf8
+                        as8
                         ]
                         c'8
                         )
@@ -1004,7 +1004,7 @@
                         a,8
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -1043,7 +1043,7 @@
                         \mf
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -1164,7 +1164,7 @@
                         r2
                         r8
                         [
-                        gf8
+                        fs8
                         \mf
                         ]
                         \<
@@ -1172,7 +1172,7 @@
                         f8
                         )
                         [
-                        gf8
+                        fs8
                         \f
                         -\tenuto
                         -\accent
@@ -1224,7 +1224,7 @@
                         a,8
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -1263,7 +1263,7 @@
                         \mf
                         [
                         (
-                        bf,8
+                        as,8
                         ]
                         c8
                         )
@@ -1335,7 +1335,7 @@
                             R1 * 3
                         }
                         r2
-                        gf,8
+                        fs,8
                         \mp
                         -\tenuto
                         [
@@ -1349,19 +1349,19 @@
                         b,8
                         -\tenuto
                         ]
-                        bf,8
+                        as,8
                         -\tenuto
                         [
                         d8
                         -\tenuto
                         ]
-                        df8
+                        cs8
                         -\tenuto
                         [
-                        df8
+                        cs8
                         -\tenuto
                         ]
-                        bf,8
+                        as,8
                         -\tenuto
                         [
                         a,8
@@ -1380,15 +1380,15 @@
                         r2
                         r8
                         [
-                        bf,8
+                        as,8
                         \mf
                         ]
                         \<
                         (
-                        df8
+                        cs8
                         )
                         [
-                        gf8
+                        fs8
                         \f
                         -\tenuto
                         -\accent
@@ -1801,7 +1801,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \set Staff.instrumentName = \markup { "Trumpet in C" }
+                        \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                         \set Staff.shortInstrumentName = \markup { Tpt. }
                         \set Staff.midiInstrument = #"trumpet" 
                         \mark #9
@@ -2373,132 +2373,384 @@
                         <g f'>16
                         e'16
                         ]
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (9) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (10) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (11) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (12) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (13) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (14) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            b
+                        >16
+                        \mf
+                        [
+                        b16
+                        b8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        f'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        e'8
+                        ]
+                        \tweak style #'cross
+                        e8
+                        [
+                        <g f'>16
+                        e'16
+                        ]
                     }
                 }
             >>
@@ -2542,93 +2794,55 @@
                         <b c' d' e'>4
                         \mp
                         ^ \markup { "improv, straight quarter notes on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (6) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (7) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (8) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (9) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (10) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         {
                             R1 * 5
                         }
@@ -2673,93 +2887,55 @@
                         <d e b c'>4
                         \mp
                         ^ \markup { "improv, straight quarter notes on these pitches" }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (6) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (7) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (8) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (9) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (10) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         {
                             R1 * 5
                         }
@@ -2920,48 +3096,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -3130,48 +3288,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -3384,48 +3524,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -3591,48 +3713,30 @@
                                     "straight quarter notes on these pitches"
                                 }
                             }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (2) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (3) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (4) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
+                        r4
                         ^ \markup { (5) }
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
-                        \tweak style #'slash
-                        b'4
+                        r4
+                        r4
+                        r4
                         r2
                         r8
                         [
@@ -6373,8 +6477,8 @@
                     \set Staff.midiInstrument = #"misc1" 
                     \mark #9
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -6400,8 +6504,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -6462,8 +6566,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e' g' b'>8
                     ^ \markup { c.10 }
                     [
@@ -6495,8 +6599,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     r8
                     ]
@@ -6516,8 +6620,8 @@
                     ^ \markup { c.15 }
                     ]
                     r8
-                    ^ \markup { p.8 }
                     ^ \markup { c.16 }
+                    ^ \markup { p.8 }
                     [
                     r8
                     ]
@@ -6568,8 +6672,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     r8
                     ]
@@ -6582,8 +6686,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { p.12 }
                     ^ \markup { c.24 }
+                    ^ \markup { p.12 }
                     ]
                     r2
                     r8
@@ -6592,8 +6696,8 @@
                     r8
                     ]
                     r8
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     [
                     r8
                     ]
@@ -6648,8 +6752,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { p.16 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.16 }
                     [
                     r8
                     ]
@@ -6684,8 +6788,8 @@
                     ]
                     )
                     r8
-                    ^ \markup { c.36 }
                     ^ \markup { p.18 }
+                    ^ \markup { c.36 }
                     [
                     r8
                     ]
@@ -6702,8 +6806,8 @@
                     ]
                     )
                     <f gs c'>8
-                    ^ \markup { p.19 }
                     ^ \markup { c.38 }
+                    ^ \markup { p.19 }
                     [
                     (
                     <fs a cs'>8
@@ -6725,8 +6829,8 @@
                     ]
                     )
                     <c' ef' g'>8
-                    ^ \markup { c.40 }
                     ^ \markup { p.20 }
+                    ^ \markup { c.40 }
                     [
                     (
                     <df' e' af'>8
@@ -6962,8 +7066,8 @@
                     \set Staff.midiInstrument = #"misc3" 
                     \mark #9
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -6989,8 +7093,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -7051,8 +7155,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e' g' b'>8
                     ^ \markup { c.10 }
                     [
@@ -7105,8 +7209,8 @@
                     \mark #9
                     \clef "bass"
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -7132,8 +7236,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -7194,8 +7298,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e, g, b,>8
                     ^ \markup { c.10 }
                     [
@@ -7247,8 +7351,8 @@
                     \set Staff.midiInstrument = #"electric guitar (clean)" 
                     \mark #9
                     a8
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     [
                     (
                     bf8
@@ -7274,8 +7378,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     [
                     (
                     c''8
@@ -7336,8 +7440,8 @@
                     )
                     r2
                     \fermata
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     <e' g' b'>8
                     ^ \markup { c.10 }
                     [
@@ -7369,8 +7473,8 @@
                     ]
                     )
                     b8
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     [
                     (
                     c'8
@@ -7407,8 +7511,8 @@
                     ^ \markup { c.15 }
                     ]
                     b8
-                    ^ \markup { p.8 }
                     ^ \markup { c.16 }
+                    ^ \markup { p.8 }
                     [
                     (
                     c'8
@@ -7476,8 +7580,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     [
                     (
                     a'8
@@ -7497,8 +7601,8 @@
                     )
                     [
                     fs'8
-                    ^ \markup { p.12 }
                     ^ \markup { c.24 }
+                    ^ \markup { p.12 }
                     ]
                     (
                     a'8
@@ -7518,8 +7622,8 @@
                     ]
                     )
                     fs'8
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     [
                     (
                     a'8
@@ -7591,8 +7695,8 @@
                     ]
                     )
                     gs'8
-                    ^ \markup { p.16 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.16 }
                     [
                     (
                     a'8
@@ -7637,8 +7741,8 @@
                     ]
                     )
                     bf8
-                    ^ \markup { c.36 }
                     ^ \markup { p.18 }
+                    ^ \markup { c.36 }
                     [
                     (
                     b8
@@ -7660,8 +7764,8 @@
                     ]
                     )
                     f'8
-                    ^ \markup { p.19 }
                     ^ \markup { c.38 }
+                    ^ \markup { p.19 }
                     [
                     (
                     gf'8
@@ -7683,8 +7787,8 @@
                     ]
                     )
                     c''8
-                    ^ \markup { c.40 }
                     ^ \markup { p.20 }
+                    ^ \markup { c.40 }
                     [
                     (
                     df''8
@@ -7721,8 +7825,8 @@
                     \set Staff.midiInstrument = #"french horn" 
                     \mark #9
                     r4
-                    ^ \markup { p.0 }
                     ^ \markup { c.0 }
+                    ^ \markup { p.0 }
                     r4
                     r4
                     ^ \markup { c.1 }
@@ -7732,8 +7836,8 @@
                     ^ \markup { c.2 }
                     r4
                     r4
-                    ^ \markup { c.3 }
                     ^ \markup { p.2 }
+                    ^ \markup { c.3 }
                     r4
                     r4
                     ^ \markup { p.3 }
@@ -7754,8 +7858,8 @@
                     ^ \markup { c.8 }
                     r2
                     r4
-                    ^ \markup { c.9 }
                     ^ \markup { p.5 }
+                    ^ \markup { c.9 }
                     r4
                     r4
                     ^ \markup { c.10 }
@@ -7765,8 +7869,8 @@
                     ^ \markup { c.11 }
                     r2
                     <b c' d' e' g' b'>4
-                    ^ \markup { c.12 }
                     ^ \markup { p.6 }
+                    ^ \markup { c.12 }
                     r4
                     r4
                     r8
@@ -7787,8 +7891,8 @@
                     ^ \markup { c.15 }
                     ]
                     <b c' d' e' g' b'>4
-                    ^ \markup { p.8 }
                     ^ \markup { c.16 }
+                    ^ \markup { p.8 }
                     r2
                     r8
                     ^ \markup { c.17 }
@@ -7816,8 +7920,8 @@
                     ^ \markup { c.21 }
                     r2
                     <fs' a' b' d'' fs''>4
-                    ^ \markup { c.22 }
                     ^ \markup { p.11 }
+                    ^ \markup { c.22 }
                     r4
                     r8
                     [
@@ -7827,8 +7931,8 @@
                     r8
                     [
                     r8
-                    ^ \markup { p.12 }
                     ^ \markup { c.24 }
+                    ^ \markup { p.12 }
                     ]
                     r8
                     [
@@ -7838,8 +7942,8 @@
                     r4
                     ^ \markup { c.25 }
                     r4
-                    ^ \markup { p.13 }
                     ^ \markup { c.26 }
+                    ^ \markup { p.13 }
                     r4
                     r8
                     [
@@ -7868,8 +7972,8 @@
                     ^ \markup { c.31 }
                     r2
                     <gs' a' cs'' e'' gs''>4
-                    ^ \markup { p.16 }
                     ^ \markup { c.32 }
+                    ^ \markup { p.16 }
                     r4
                     r8
                     [
@@ -7894,8 +7998,8 @@
                     r8
                     ]
                     <bf b ef' gf' bf'>4
-                    ^ \markup { c.36 }
                     ^ \markup { p.18 }
+                    ^ \markup { c.36 }
                     r4
                     r8
                     [
@@ -7907,8 +8011,8 @@
                     r8
                     ]
                     r4
-                    ^ \markup { p.19 }
                     ^ \markup { c.38 }
+                    ^ \markup { p.19 }
                     r4
                     r8
                     [
@@ -7920,8 +8024,8 @@
                     r8
                     ]
                     r4
-                    ^ \markup { c.40 }
                     ^ \markup { p.20 }
+                    ^ \markup { c.40 }
                     r4
                     r8
                     [

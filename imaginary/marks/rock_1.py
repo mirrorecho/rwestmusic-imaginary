@@ -148,11 +148,12 @@ def score1(lib):
     s.extend_from(
         lambda_segment.LambdaSegment(
             calliope.SegmentBlock(ImaginarySegment(
-                lib("rock_rhythm1"),
-                get_improv_line(
-                    rhythm=(1,)*8,
-                    times=6
-                    ),
+                lib("rock_rhythm1") * 7,
+                # lib("rock_rhythm1"),
+                # get_improv_line(
+                #     rhythm=(1,)*8,
+                #     times=6
+                #     ),
                 get_improv_line(
                     rhythm=(0.5,)*16,
                     times=1,

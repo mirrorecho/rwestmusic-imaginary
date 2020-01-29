@@ -683,12 +683,15 @@ def score4(lib):
             for next_seg in list(segs[1:-1]):
                 main_seg.extend(next_seg)
                 next_seg.parent.remove(next_seg)
-            main_seg.rehearsal_mark_number = 13
+            main_seg.rehearsal_mark_number = 15
             main_seg.compress_full_bar_rests = True
     s.midi_tempo = 96
 
     s.lines.apply(lambda x:x.auto_respell())
     s.phrases.apply(lambda x:x.auto_respell())
+    s.staves["ooa_alto_sax1", "ooa_alto_sax2", "ooa_tenor_sax", 
+        "ooa_bari_sax"].cells.setattrs(respell="flats")
+
 
 
     # s.extend_from(

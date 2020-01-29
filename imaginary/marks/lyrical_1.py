@@ -63,10 +63,11 @@ def score1(lib):
     drum_end_cell2.note_events.tag("note_head:1:cross")
     drum_offs = ImaginarySegment(
         ImaginaryCell(rhythm=(-8,)),
-        drum_off_cell,
-        get_improv_line(
-            rhythm=(1,)*8,
-            times=3),
+        drum_off_cell * 4,
+        # drum_off_cell,
+        # get_improv_line(
+        #     rhythm=(1,)*8,
+        #     times=3),
         drum_end_cell1,
         drum_end_cell2,
         )

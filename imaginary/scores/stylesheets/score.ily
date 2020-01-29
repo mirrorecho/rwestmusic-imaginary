@@ -140,8 +140,8 @@ normalStaff = {
     \context {        
         \Score
         
-        % \consists "Bar_number_engraver"
-        \override BarNumber #'break-visibility = #'#(#f #t #t)
+        % \consists "Bar_number_engraver" 
+        \override BarNumber #'break-visibility = #'#(#t #t #f)
         \override BarNumber #'font-size = #3
         \override BarNumber  #'stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
         \override BarNumber #'Y-offset = #6
@@ -158,6 +158,7 @@ normalStaff = {
     \context {
         \StaffGroup 
         % \consists "Bar_number_engraver"
+        \remove "Bar_number_engraver"
         % CONSIDER FOR FREE SECTIONS:
         % \remove "Span_bar_engraver"
     }

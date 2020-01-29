@@ -62,10 +62,11 @@ def score0(lib):
     drum_end_cell.note_events.tag("note_head:1:cross")
     drum_offs = ImaginarySegment(
         ImaginaryCell(rhythm=(-12,)),
-        drum_off_cell,
-        get_improv_line(
-            rhythm=(1,)*8,
-            times=3),
+        drum_off_cell * 4,
+        # drum_off_cell,
+        # get_improv_line(
+        #     rhythm=(1,)*8,
+        #     times=3),
         drum_end_cell,
         )
     s.staves["ooa_drum_set"].append(drum_offs)

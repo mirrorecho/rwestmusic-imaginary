@@ -32,7 +32,7 @@
                         \set Staff.instrumentName = \markup { Flute }
                         \set Staff.shortInstrumentName = \markup { Fl. }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #10
+                        \mark #11
                         b'1
                         :32
                         \p
@@ -56,7 +56,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         c'''2
                         \p
                         ~
@@ -201,9 +201,6 @@
                         c'''4
                         r4
                         \!
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -216,19 +213,83 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
-                            R1 * 16
+                            R1 * 12
                         }
+                        \once \hide Stem
+                        <g' af' c''>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <df'' ef''>4
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                     }
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        <af' df'' ef''>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (5) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (6) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (7) }
+                        r4
+                        r4
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf''2
@@ -261,8 +322,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af''4
                         \f
@@ -298,10 +360,7 @@
                         af''4
                         b''4
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                         r8
@@ -349,17 +408,17 @@
                         -\tenuto
                         ]
                         a''8
-                        \p
                         -\tenuto
                         [
                         gs''8
+                        \mf
                         -\tenuto
                         ]
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -368,8 +427,8 @@
                         \>
                         gs''1
                         \fermata
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
                         ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
@@ -418,7 +477,7 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Cl. }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #10
+                            \mark #11
                             R1 * 14
                         }
                     }
@@ -426,12 +485,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf'2
                         \mp
                         ~
@@ -444,13 +500,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 2
                         }
                         r4
@@ -513,15 +566,79 @@
                         \!
                         r2
                         {
-                            R1 * 8
+                            R1 * 4
                         }
+                        \once \hide Stem
+                        <c' g' af'>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <df' ef'>4
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                     }
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        <df' ef' af'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (5) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (6) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (7) }
+                        r4
+                        r4
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf'2
@@ -554,8 +671,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af'4
                         \f
@@ -592,28 +710,47 @@
                         b'4
                         )
                         {
-                            R1 * 8
+                            R1 * 6
                         }
+                        \once \hide Stem
+                        <e' fs' a'>4
+                        \mf
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        r4
+                        a'16
+                        \>
+                        (
+                        gs'1
+                        )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
                         r4
                         s4
                         s4
                         s4
-                        s4
+                        \pp
                         s4
                         s4
                         s4
@@ -636,7 +773,7 @@
                         \freeRestArrow
                         \freePad
                         r4
-                        s4
+                        s8.
                         \bar "|." 
                     }
                 }
@@ -653,7 +790,7 @@
                             \set Staff.instrumentName = \markup { "Alto Saxophone 1" }
                             \set Staff.shortInstrumentName = \markup { Asax.1 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #10
+                            \mark #11
                             R1 * 6
                         }
                         c'8
@@ -731,12 +868,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'1
                         \p
                         ~
@@ -751,13 +885,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r8
@@ -832,11 +963,50 @@
                         }
                     }
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        <af df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (5) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (6) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (7) }
+                        r4
+                        r4
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         bf'2
@@ -869,8 +1039,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af'4
                         \f
@@ -906,21 +1077,18 @@
                         af'4
                         b'4
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r2
                         e''8
                         \f
                         [
                         (
-                        ds''16
-                        gs'16
+                        ef''16
+                        af'16
                         ~
                         ]
-                        gs'4
+                        af'4
                         ~
-                        gs'4
+                        af'4
                         )
                         r4
                         ef''8
@@ -932,48 +1100,65 @@
                         ]
                         gf''4
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
-                        gs'4
+                        af'4
                         (
                         e''8
                         [
-                        ds''8
+                        ef''8
                         ]
                         b'8
                         [
-                        cs''8
+                        df''8
                         ~
                         ]
-                        cs''4
+                        df''4
                         )
-                        gs'4
+                        af'4
                         (
                         b'2
                         )
                         {
-                            R1 * 4
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <e gf a>4
+                        \mf
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        \>
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeating a simple figure 4X, slowing down" }
                         \once \hide Rest
                         r4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -1015,7 +1200,7 @@
                             \set Staff.instrumentName = \markup { "Alto Saxophone 2" }
                             \set Staff.shortInstrumentName = \markup { Asax.2 }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #10
+                            \mark #11
                             R1 * 14
                         }
                     }
@@ -1023,12 +1208,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'1
                         \p
                         ~
@@ -1043,13 +1225,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 1
                         }
                         r4
@@ -1126,11 +1305,50 @@
                         }
                     }
                     {
+                        \once \hide Stem
+                        \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                        \accidentalStyle neo-modern-cautionary
+                        \mark #14
+                        <af df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (5) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (6) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (7) }
+                        r4
+                        r4
+                        r4
                         {
-                            \compressFullBarRests
-                            \accidentalStyle neo-modern-cautionary
-                            \mark #14
-                            R1 * 8
+                            R1 * 1
                         }
                         r2
                         f'2
@@ -1163,8 +1381,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         ef'4
                         \f
@@ -1200,9 +1419,6 @@
                         ef'4
                         gf'4
                         )
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b'16
                         \f
                         [
@@ -1218,60 +1434,77 @@
                         e''16
                         [
                         (
-                        ds''8.
+                        ef''8.
                         ~
                         ]
-                        ds''4
+                        ef''4
                         ~
-                        ds''4
+                        ef''4
                         )
                         r4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
-                        cs''8
+                        df''8
                         ]
                         (
                         e''4
-                        cs''4
-                        gs''4
+                        df''4
+                        af''4
                         )
                         r8
                         [
-                        fs''8
+                        gf''8
                         ]
                         (
                         e''4
                         ~
                         e''4
-                        cs''8
+                        df''8
                         [
                         e''8
                         ]
                         )
                         {
-                            R1 * 4
+                            R1 * 2
                         }
+                        \once \hide Stem
+                        <e gf a>4
+                        \mf
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        \>
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeating a simple figure 3X, slowing down" }
                         \once \hide Rest
                         r4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -1312,7 +1545,7 @@
                         \set Staff.instrumentName = \markup { "Tenor Saxophone" }
                         \set Staff.shortInstrumentName = \markup { Tsax. }
                         \set Staff.midiInstrument = #"alto sax" 
-                        \mark #10
+                        \mark #11
                         r4
                         e'4
                         \p
@@ -1356,12 +1589,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'1
                         \p
                         ~
@@ -1376,7 +1606,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -1386,9 +1616,36 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 8
+                            R1 * 3
+                        }
+                        \once \hide Stem
+                        <bf df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf2
@@ -1421,8 +1678,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af4
                         \f
@@ -1459,31 +1717,59 @@
                         b4
                         )
                         {
-                            R1 * 8
+                            R1 * 4
                         }
+                        \once \hide Stem
+                        <df e a>4
+                        \mf
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
+                        \>
+                        gf'4
+                        a'8
+                        (
+                        b'1
+                        \fermata
+                        )
+                        gf'4
+                        a'1
                         \fermata
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
                         r4
                         s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
+                        \pp
                         s4
                         s4
                         s4
@@ -1503,7 +1789,7 @@
                         \freeRestArrow
                         \freePad
                         r4
-                        s4
+                        s8
                         \bar "|." 
                     }
                 }
@@ -1520,21 +1806,49 @@
                             \set Staff.instrumentName = \markup { "Baritone Saxophone" }
                             \set Staff.shortInstrumentName = \markup { Bsax. }
                             \set Staff.midiInstrument = #"alto sax" 
-                            \mark #10
+                            \mark #11
                             \clef "bass"
-                            R1 * 14
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <c d e>4
+                        \pp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (5) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 4
                         }
                     }
                     {
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         af1
                         \p
                         ~
@@ -1549,7 +1863,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -1559,9 +1873,36 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 8
+                            R1 * 3
+                        }
+                        \once \hide Stem
+                        <df f af>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf,2
@@ -1594,8 +1935,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af,4
                         \f
@@ -1632,22 +1974,48 @@
                         b,4
                         )
                         {
-                            R1 * 8
+                            R1 * 4
                         }
+                        \once \hide Stem
+                        <af, a, e>4
+                        \mf
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
+                        \>
+                        e1
                         \fermata
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat 3X, slowing down" }
                         \once \hide Rest
                         r4
                         s4
@@ -1655,6 +2023,7 @@
                         s4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -1692,7 +2061,7 @@
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \set Staff.midiInstrument = #"bassoon" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         e'4
                         \p
@@ -1753,9 +2122,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a4
                         -\tenuto
                         c'4
@@ -1807,7 +2173,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 1
                         }
                         r4
@@ -2023,9 +2389,6 @@
                         -\tenuto
                         ]
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         af2
                         \mp
                         ~
@@ -2038,7 +2401,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -2048,9 +2411,36 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 8
+                            R1 * 3
+                        }
+                        \once \hide Stem
+                        <ef bf df'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf,2
@@ -2083,8 +2473,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af,4
                         \f
@@ -2121,22 +2512,48 @@
                         b,4
                         )
                         {
-                            R1 * 8
+                            R1 * 4
                         }
+                        \once \hide Stem
+                        <cs e gs>4
+                        \mf
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (3) }
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (4) }
+                        r4
+                        r4
+                        r4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
+                        \>
+                        a,1
                         \fermata
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat 2X, slowing down" }
                         \once \hide Rest
                         r4
                         s4
@@ -2144,6 +2561,7 @@
                         s4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -2185,20 +2603,40 @@
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #10
-                            R1 * 14
+                            \mark #11
+                            R1 * 10
+                        }
+                        \once \hide Stem
+                        <c d a>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <bf, f a>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                     }
                     {
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf1
                         \p
                         ~
@@ -2213,7 +2651,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -2223,9 +2661,26 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 8
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <bf df' ef'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf2
@@ -2258,8 +2713,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af4
                         \f
@@ -2295,10 +2751,7 @@
                         af4
                         b4
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                         cs''4
@@ -2334,6 +2787,7 @@
                         )
                         fs'4
                         -\tenuto
+                        \>
                         gs'4
                         -\tenuto
                         a'4
@@ -2351,30 +2805,41 @@
                         b'4
                         -\tenuto
                         fs'4
+                        \mf
                         -\tenuto
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        r4
+                        \>
+                        gs4
+                        \!
+                        \>
+                        (
+                        a4
+                        )
+                        b2
+                        fs4
+                        (
+                        gs8
+                        a8
+                        )
+                        b2
+                        fs'2
+                        \pp
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat 3X, slowing down" }
                         \once \hide Rest
                         r4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
-                        s4
                         s4
                         s4
                         s4
@@ -2408,23 +2873,43 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Trumpet in C" }
+                            \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            \mark #10
-                            R1 * 14
+                            \mark #11
+                            R1 * 10
+                        }
+                        \once \hide Stem
+                        <c' d' a'>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <f' a' bf'>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                     }
                     {
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'1
                         \p
                         ~
@@ -2439,12 +2924,9 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         g'4
                         \mp
@@ -2520,9 +3002,26 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 8
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <ef' bf' df''>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                         r2
                         bf2
@@ -2555,8 +3054,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r4
                         af4
                         \f
@@ -2592,10 +3092,7 @@
                         af4
                         b4
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                         r8
@@ -2621,7 +3118,7 @@
                         ~
                         e''4
                         cs''8
-                        \p
+                        \mp
                         -\tenuto
                         [
                         e''8
@@ -2631,21 +3128,27 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
+                        \>
+                        cs''4
+                        e''2
                         \fermata
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         \freeContinue
                         s4
+                        ^ \markup { "repeat, 2X" }
                         \once \hide Rest
                         r4
                         s4
                         s4
                         s4
+                        s4
+                        \pp
                         s4
                         s4
                         s4
@@ -2686,21 +3189,41 @@
                             \set Staff.instrumentName = \markup { "Tenor Trombone" }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #10
+                            \mark #11
                             \clef "bass"
-                            R1 * 14
+                            R1 * 10
+                        }
+                        \once \hide Stem
+                        <c d a>4
+                        \p
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        \once \hide Stem
+                        <bf, f a>4
+                        ^ \markup { (1) }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                     }
                     {
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf1
                         \p
                         ~
@@ -2715,7 +3238,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -2725,9 +3248,26 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
-                            R1 * 8
+                            R1 * 5
+                        }
+                        \once \hide Stem
+                        <ef bf df'>4
+                        \mp
+                        ^ \markup { "improv on these pitches" }
+                        \once \override Accidental #'stencil = ##f 
+                        r4
+                        r4
+                        r4
+                        r4
+                        ^ \markup { (2) }
+                        r4
+                        r4
+                        r4
+                        {
+                            R1 * 1
                         }
                         r2
                         f2
@@ -2760,8 +3300,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r8
                         [
                         df8
@@ -2906,6 +3447,7 @@
                         ]
                         fs4
                         fs4
+                        \>
                         gs4
                         a4
                         b4
@@ -2916,26 +3458,33 @@
                         ]
                         b4
                         fs4
+                        \mf
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        \>
+                        a16
+                        (
+                        gs1
+                        )
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat 2X" }
                         \once \hide Rest
                         r4
                         s4
                         s4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -2958,7 +3507,7 @@
                         \freeRestArrow
                         \freePad
                         r4
-                        s4
+                        s8.
                         \bar "|." 
                     }
                 }
@@ -2978,7 +3527,7 @@
                             \set Staff.instrumentName = \markup { Vibraphone }
                             \set Staff.shortInstrumentName = \markup { Vib. }
                             \set Staff.midiInstrument = #"vibraphone" 
-                            \mark #10
+                            \mark #11
                             R1 * 4
                         }
                         e'''1
@@ -3007,7 +3556,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 1
                         }
                         d'16
@@ -3087,13 +3636,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                         ef'16
@@ -3177,6 +3723,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         af'16
@@ -3310,9 +3857,6 @@
                         af''16
                         ]
                         r4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df''1
                         :32
                         \mf
@@ -3335,8 +3879,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         cs''1
                         :32
                         cs''1
@@ -3373,7 +3918,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -3430,7 +3975,7 @@
                             \set Staff.instrumentName = \markup { "Drum Set" }
                             \set Staff.shortInstrumentName = \markup { Drum. }
                             \set Staff.midiInstrument = #"taiko drum" 
-                            \mark #10
+                            \mark #11
                             \clef "percussion"
                             R1 * 4
                         }
@@ -3459,110 +4004,206 @@
                         \tweak style #'cross
                         e8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (8) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        r8
+                        ]
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
                         <
                             \tweak style #'cross
                             e
@@ -3601,7 +4242,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         g8
                         [
                         <
@@ -3676,227 +4317,551 @@
                         >16
                         b16
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \<
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
+                        g8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        d'8
+                        [
+                        \tweak style #'cross
+                        e8
+                        ]
+                        r8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                        >16
+                        e'16
+                        ]
+                        d'8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                        >8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        e8
+                        ]
+                        <
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            e'
+                        >16
+                        b16
+                        ]
                         \tweak style #'slash
                         c'8
                         \mf
                         ^ \markup { "improv, solo" }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
                     }
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                         \tweak style #'cross
@@ -3920,100 +4885,157 @@
                         ]
                         \tweak style #'cross
                         e4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (7) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
+                        \tweak style #'cross
+                        a'16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'16
+                        \p
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        \tweak style #'cross
+                        a'16
+                        \tweak style #'cross
+                        a'16
+                        ]
+                        \tweak style #'cross
+                        e4
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         \tweak style #'cross
@@ -4041,84 +5063,156 @@
                         \tweak style #'cross
                         a'8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (6) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
+                        \tweak style #'cross
+                        a'16
+                        \mp
+                        [
+                        d'16
+                        d'8
+                        ]
+                        \tweak style #'cross
+                        e4
+                        \tweak style #'cross
+                        a'8
+                        [
+                        d'16
+                        d'16
+                        ]
+                        <
+                            \tweak style #'cross
+                            e
+                            g
+                            d'
+                        >8
+                        [
+                        \tweak style #'cross
+                        a'8
+                        ]
                         <
                             \tweak style #'cross
                             e
@@ -4208,683 +5302,622 @@
                             a'
                         >8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (4) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (5) }
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'4
-                        \once \hide Stem
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        \mf
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        d'16
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        \mf
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        d'16
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        \mf
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        d'16
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        \mf
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        d'16
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        \mf
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
+                        <
+                            g
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            e'
+                            \tweak style #'cross
+                            a'
+                        >16
+                        d'16
+                        ]
+                        <
+                            g
+                            d'
+                            \tweak style #'cross
+                            a'
+                        >8
+                        [
+                        <
+                            \tweak style #'cross
+                            e
+                            \tweak style #'cross
+                            a'
+                        >8
+                        ]
                         \tweak style #'slash
                         c'8
                         ^ \markup { improv }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (2) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
                     }
                     {
-                        \once \hide Stem
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         \tweak style #'slash
                         c'8
                         \f
                         ^ \markup { improv }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (2) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (3) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (4) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (5) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (6) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (7) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (8) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (9) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (10) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (11) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (12) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (13) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (14) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (15) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ^ \markup { (16) }
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         [
-                        \once \hide Stem
-                        \tweak style #'slash
-                        c'8
+                        r8
                         ]
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
+                        \>
+                        \tweak style #'slash
+                        c'1
+                        :32
                         \fermata
+                        ^ \markup { "improv, rolls" }
                         \freeContinue
                         s4
                         \once \hide Rest
@@ -4894,6 +5927,7 @@
                         s4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -4934,7 +5968,7 @@
                         \set Staff.instrumentName = \markup { Guitar }
                         \set Staff.shortInstrumentName = \markup { Gtr. }
                         \set Staff.midiInstrument = #"electric guitar (clean)" 
-                        \mark #10
+                        \mark #11
                         b'4
                         \mp
                         r4
@@ -4948,9 +5982,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         b4
                         ^ \markup { disorted }
                         b4
@@ -4996,7 +6027,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         a'4
                         a'4
                         a'4
@@ -5068,7 +6099,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -5078,6 +6109,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 1
@@ -5230,120 +6262,95 @@
                         ]
                         df'4
                         \mf
-                        -\staccato
-                        ^ \markup { arco }
                         gf'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         c'4
-                        -\staccato
                         df'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         df'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         df'4
-                        -\staccato
                         df'4
-                        -\staccato
                         gf'4
-                        -\staccato
                         f'4
-                        -\staccato
                         f'4
-                        -\staccato
                         f'4
-                        -\staccato
                         df'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         ef'4
-                        -\staccato
                         gf'4
-                        -\staccato
                         df''4
-                        -\staccato
                         ef''4
-                        -\staccato
                         gf''4
-                        -\staccato
                         ef''4
-                        -\staccato
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
-                        cs'4
+                        \mark #15
+                        <cs' gs'>4
                         \f
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        cs'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                        e'4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        cs'1
-                        cs'1
-                        cs'1
-                        cs'1
+                        ^ \markup { "fat fx" }
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <cs' gs'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <e' b'>4
+                        <cs' gs'>1
+                        ^ \markup { distorted }
+                        <cs' gs'>1
+                        <cs' gs'>1
+                        <cs' gs'>1
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -5351,7 +6358,8 @@
                         s8
                         ^ \markup { "distorted, ethereal" }
                         \>
-                        cs'1
+                        gs'1
+                        \fermata
                         \freeContinue
                         s4
                         \once \hide Rest
@@ -5399,7 +6407,7 @@
                         \set Staff.instrumentName = \markup { "Bass Guitar" }
                         \set Staff.shortInstrumentName = \markup { Bgtr. }
                         \set Staff.midiInstrument = #"electric bass (finger)" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         b4
                         \mp
@@ -5414,9 +6422,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         e4
                         ^ \markup { disorted }
                         e4
@@ -5462,7 +6467,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         a,4
                         a,4
                         a,4
@@ -5534,7 +6539,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -5544,6 +6549,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 1
@@ -5696,126 +6702,103 @@
                         ]
                         ef4
                         \mf
-                        -\staccato
-                        ^ \markup { arco }
                         bf,4
-                        -\staccato
                         df4
-                        -\staccato
                         bf,4
-                        -\staccato
                         af,4
-                        -\staccato
                         bf,4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         ef4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         ef4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                         df4
-                        -\staccato
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
-                        gs,4
+                        \mark #15
+                        <gs, ds>4
                         \f
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        gs,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                        a,4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        gs,1
-                        gs,1
-                        gs,1
-                        gs,1
+                        ^ \markup { "fat fx" }
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <gs, ds>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <a, e>4
+                        <gs, ds>1
+                        ^ \markup { distorted }
+                        <gs, ds>1
+                        <gs, ds>1
+                        <gs, ds>1
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
+                        ^ \markup { "distorted, ethereal" }
+                        \>
+                        a,1
                         \fermata
                         \freeContinue
                         s4
@@ -5826,6 +6809,7 @@
                         s4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -5866,7 +6850,7 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.1 }
                         \set Staff.midiInstrument = #"violin" 
-                        \mark #10
+                        \mark #11
                         b'4
                         \mf
                         ^ \markup { pizz }
@@ -5886,7 +6870,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 6
                         }
                         bf'1
@@ -6049,9 +7033,6 @@
                         ~
                         ]
                         f''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a''2
                         \mp
                         ~
@@ -6064,7 +7045,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -6074,6 +7055,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 5
@@ -6213,8 +7195,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         b''8
                         \f
                         [
@@ -6476,7 +7459,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -6484,13 +7467,13 @@
                         s8
                         \>
                         b''8
-                        b''4
-                        b''4
-                        b''4.
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        ds'''4
+                        cs'''4
+                        e''4.
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
-                        ^ \markup { "repeat, slowing, down" }
+                        ^ \markup { "repeat 3X, slowing down (not together with others)" }
                         \once \hide Rest
                         r4
                         s4
@@ -6536,7 +7519,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.2 }
                         \set Staff.midiInstrument = #"violin" 
-                        \mark #10
+                        \mark #11
                         e''4
                         \mf
                         ^ \markup { pizz }
@@ -6556,7 +7539,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 6
                         }
                         a'1
@@ -6719,9 +7702,6 @@
                         ~
                         ]
                         a''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a''2
                         \mp
                         ~
@@ -6734,7 +7714,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -6744,6 +7724,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 5
@@ -6883,8 +7864,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         b''8
                         \f
                         [
@@ -7126,27 +8108,46 @@
                         ~
                         ]
                         cs'''4
-                        {
-                            R1 * 1
-                        }
+                        b''8
+                        [
+                        ds'''8
+                        ~
+                        ]
+                        ds'''8
+                        [
+                        cs'''8
+                        ~
+                        ]
+                        cs'''8
+                        [
+                        e'''8
+                        ~
+                        ]
+                        e'''4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        \>
+                        b''8
+                        b''4
+                        b''4
+                        b''4.
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat 4X, slowing down (not together with others)" }
                         \once \hide Rest
                         r4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -7187,7 +8188,7 @@
                         \set Staff.instrumentName = \markup { "Cello 1" }
                         \set Staff.shortInstrumentName = \markup { Vc.1 }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         b4
                         \mf
@@ -7208,7 +8209,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 2
                         }
                         a,8
@@ -7443,9 +8444,6 @@
                         ~
                         ]
                         bf4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf2
                         \mp
                         ~
@@ -7458,7 +8456,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -7468,6 +8466,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 3
@@ -7639,8 +8638,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         af8
                         \f
                         [
@@ -7902,20 +8902,26 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        \>
+                        e'8
+                        fs'4
+                        a4
+                        b4.
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat 2X, slowing down (not together with others)" }
                         \once \hide Rest
                         r4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -7956,7 +8962,7 @@
                         \set Staff.instrumentName = \markup { "Cello 2" }
                         \set Staff.shortInstrumentName = \markup { Vc.2 }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         b4
                         \mf
@@ -7977,7 +8983,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 2
                         }
                         d8
@@ -8212,9 +9218,6 @@
                         ~
                         ]
                         af4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf2
                         \mp
                         ~
@@ -8227,7 +9230,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -8237,6 +9240,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 3
@@ -8408,8 +9412,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         af8
                         \f
                         [
@@ -8651,27 +9656,46 @@
                         ~
                         ]
                         a4
-                        {
-                            R1 * 1
-                        }
+                        e'8
+                        [
+                        fs'8
+                        ~
+                        ]
+                        fs'8
+                        [
+                        a'8
+                        ~
+                        ]
+                        a'8
+                        [
+                        b'8
+                        ~
+                        ]
+                        b'4
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        r1
-                        \fermata
+                        \>
+                        e'8
+                        e'4
+                        e'4
+                        e'4.
                         \freeContinue
+                        \once \override TextScript.extra-offset = #'( 1 . 0 )
                         s4
+                        ^ \markup { "repeat 5X, slowing down (not together with others)" }
                         \once \hide Rest
                         r4
                         s4
                         s4
+                        \pp
                         s4
                         s4
                         s4
@@ -8718,7 +9742,7 @@
                         \set Staff.instrumentName = \markup { "Flute 1" }
                         \set Staff.shortInstrumentName = \markup { Fl.1 }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #10
+                        \mark #11
                         e''1
                         :32
                         \p
@@ -8738,9 +9762,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         d''4
                         \pp
@@ -8815,7 +9836,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         r8
                         [
                         c'''8
@@ -8984,9 +10005,6 @@
                         r8
                         ]
                         \!
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -8999,13 +10017,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                         ef'16
@@ -9119,7 +10134,7 @@
                         af'8
                         -\tenuto
                         [
-                        df''8
+                        cs''8
                         -\staccato
                         ]
                         c''8
@@ -9131,6 +10146,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         af'8
@@ -9296,8 +10312,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -9326,10 +10343,7 @@
                         (
                         gf''1
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                         r8
@@ -9375,17 +10389,17 @@
                         -\tenuto
                         ]
                         a''8
-                        \p
                         -\tenuto
                         [
                         gs''8
+                        \p
                         -\tenuto
                         ]
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -9439,7 +10453,7 @@
                         \set Staff.instrumentName = \markup { "Flute 2" }
                         \set Staff.shortInstrumentName = \markup { Fl.2 }
                         \set Staff.midiInstrument = #"flute" 
-                        \mark #10
+                        \mark #11
                         e''1
                         :32
                         \p
@@ -9459,9 +10473,6 @@
                         {
                             R1 * 1
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         d''2
                         \pp
                         ~
@@ -9541,7 +10552,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         r4
                         c'''4
                         \p
@@ -9674,12 +10685,10 @@
                         \mf
                         ~
                         ]
+                        \>
                         c'''4
                         ~
                         c'''2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -9692,13 +10701,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                         ef'8
@@ -9803,7 +10809,7 @@
                         af'8
                         -\tenuto
                         ]
-                        df''8
+                        cs''8
                         -\tenuto
                         [
                         c''8
@@ -9812,6 +10818,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         af'16
@@ -9995,8 +11002,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -10025,10 +11033,7 @@
                         (
                         gf''1
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                         r8
@@ -10074,17 +11079,17 @@
                         -\tenuto
                         ]
                         a''8
-                        \p
                         -\tenuto
                         [
                         gs''8
+                        \p
                         -\tenuto
                         ]
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -10139,12 +11144,9 @@
                             \set Staff.instrumentName = \markup { "Oboe 1" }
                             \set Staff.shortInstrumentName = \markup { Ob.1 }
                             \set Staff.midiInstrument = #"oboe" 
-                            \mark #10
+                            \mark #11
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'2
                         \pp
                         ~
@@ -10225,12 +11227,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -10243,13 +11242,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 7
                         }
                         r2
@@ -10297,6 +11293,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         af'4
@@ -10337,9 +11334,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         bf'4
                         \mf
@@ -10410,8 +11404,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -10447,7 +11442,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -10502,12 +11497,9 @@
                             \set Staff.instrumentName = \markup { "Oboe 2" }
                             \set Staff.shortInstrumentName = \markup { Ob.2 }
                             \set Staff.midiInstrument = #"oboe" 
-                            \mark #10
+                            \mark #11
                             R1 * 5
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         d''8
@@ -10600,12 +11592,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -10618,13 +11607,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                         af'2
@@ -10672,6 +11658,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         r8
@@ -10721,9 +11708,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         ef''8
@@ -10783,8 +11767,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef''2
                         \f
@@ -10820,7 +11805,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -10875,12 +11860,9 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 1" }
                             \set Staff.shortInstrumentName = \markup { Cl.1 }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #10
+                            \mark #11
                             R1 * 8
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'4
                         \p
                         \<
@@ -10945,12 +11927,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf'2
                         \mp
                         ~
@@ -10963,13 +11942,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 10
                         }
                         r4
@@ -11011,6 +11987,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         af'4
@@ -11051,9 +12028,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         bf'4
                         \mf
@@ -11124,8 +12098,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef'2
                         \f
@@ -11161,7 +12136,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -11216,12 +12191,9 @@
                             \set Staff.instrumentName = \markup { "Clarinet in B♭ 2" }
                             \set Staff.shortInstrumentName = \markup { Cl.2 }
                             \set Staff.midiInstrument = #"clarinet" 
-                            \mark #10
+                            \mark #11
                             R1 * 8
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r4
                         c'4
                         \p
@@ -11263,12 +12235,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 16
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c''2
                         \mp
                         ~
@@ -11281,13 +12250,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 10
                         }
                         r2
@@ -11352,6 +12318,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         r8
@@ -11401,9 +12368,6 @@
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         ef''8
@@ -11463,8 +12427,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef'2
                         \f
@@ -11500,7 +12465,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -11554,7 +12519,7 @@
                         \set Staff.instrumentName = \markup { Bassoon }
                         \set Staff.shortInstrumentName = \markup { Bsn. }
                         \set Staff.midiInstrument = #"bassoon" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         r8
                         \mf
@@ -11685,7 +12650,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 1
                         }
                         r4
@@ -11901,9 +12866,6 @@
                         -\tenuto
                         ]
                         r2
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         af2
                         \mp
                         ~
@@ -11916,7 +12878,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -11926,13 +12888,11 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         df8
@@ -12045,8 +13005,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef,2
                         \f
@@ -12082,7 +13043,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -12140,7 +13101,7 @@
                             \set Staff.instrumentName = \markup { "Horn in F" }
                             \set Staff.shortInstrumentName = \markup { Hn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #10
+                            \mark #11
                             R1 * 14
                         }
                     }
@@ -12148,12 +13109,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         c'1
                         \p
                         ~
@@ -12168,13 +13126,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 14
                         }
                         r8
@@ -12204,7 +13159,7 @@
                         (
                         af8
                         [
-                        df'8
+                        cs'8
                         ]
                         )
                         c'8
@@ -12212,7 +13167,7 @@
                         (
                         af8
                         ]
-                        df'8
+                        cs'8
                         [
                         c'8
                         \mf
@@ -12221,6 +13176,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         r2
@@ -12252,32 +13208,29 @@
                         {
                             R1 * 2
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
-                        ef,8
+                        ef8
                         \mf
                         -\staccato
                         [
-                        ef,8
+                        ef8
                         -\staccato
                         ]
                         r4
                         r8
                         [
-                        df8
+                        df'8
                         -\staccato
                         ]
-                        bf,8
+                        bf8
                         -\staccato
                         [
-                        bf,8
+                        bf8
                         -\staccato
                         ]
-                        af,8
+                        af8
                         -\staccato
                         [
-                        df8
+                        df'8
                         -\staccato
                         ]
                         r4
@@ -12367,8 +13320,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef2
                         \f
@@ -12397,10 +13351,7 @@
                         (
                         gf1
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 4
                         }
                         cs'4
@@ -12436,6 +13387,7 @@
                         )
                         fs4
                         -\tenuto
+                        \>
                         gs4
                         -\tenuto
                         a4
@@ -12453,43 +13405,28 @@
                         b4
                         -\tenuto
                         fs4
+                        \p
                         -\tenuto
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        fs4
-                        -\tenuto
-                        \>
-                        gs4
-                        -\tenuto
-                        a4
-                        -\tenuto
-                        b4
-                        -\tenuto
-                        fs4
-                        -\tenuto
-                        gs8
-                        -\tenuto
-                        a8
-                        -\tenuto
-                        b4
-                        -\tenuto
-                        fs4
-                        \p
-                        -\tenuto
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        r1
+                        \fermata
                         \freeContinue
                         s4
-                        ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
                         r4
+                        s4
+                        s4
+                        s4
+                        s4
                         s4
                         s4
                         s4
@@ -12529,7 +13466,7 @@
                             \set Staff.instrumentName = \markup { "Trumpet in C" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
-                            \mark #10
+                            \mark #11
                             R1 * 14
                         }
                     }
@@ -12537,12 +13474,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a'1
                         \p
                         ~
@@ -12557,13 +13491,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                         ef'1
@@ -12635,13 +13566,11 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         r8
                         [
                         gf'8
@@ -12754,8 +13683,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r2
                         ef'2
                         \f
@@ -12784,10 +13714,7 @@
                         (
                         gf'1
                         )
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 6
                         }
                         r4
@@ -12818,7 +13745,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -12873,7 +13800,7 @@
                             \set Staff.instrumentName = \markup { Trombone }
                             \set Staff.shortInstrumentName = \markup { Tbn. }
                             \set Staff.midiInstrument = #"french horn" 
-                            \mark #10
+                            \mark #11
                             \clef "bass"
                             R1 * 14
                         }
@@ -12882,12 +13809,9 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 15
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf1
                         \p
                         ~
@@ -12902,7 +13826,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -12912,13 +13836,11 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df8
                         \mf
                         -\staccato
@@ -13031,8 +13953,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         r8
                         [
                         df8
@@ -13177,6 +14100,7 @@
                         ]
                         fs4
                         fs4
+                        \>
                         gs4
                         a4
                         b4
@@ -13187,11 +14111,12 @@
                         ]
                         b4
                         fs4
+                        \p
                     }
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -13247,7 +14172,7 @@
                     \set Staff.instrumentName = \markup { Percussion }
                     \set Staff.shortInstrumentName = \markup { Perc. }
                     \set Staff.midiInstrument = #"woodblock" 
-                    \mark #10
+                    \mark #11
                     r8
                     ^ \markup { timpani }
                     [
@@ -13311,7 +14236,7 @@
                     \timpStaff
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #11
+                    \mark #12
                     d8
                     \p
                     ^ \markup { timpani }
@@ -13426,7 +14351,7 @@
                 {
                     \compressFullBarRests
                     \accidentalStyle neo-modern-cautionary
-                    \mark #12
+                    \mark #13
                     r1
                     \fermata
                     {
@@ -13544,6 +14469,7 @@
                 {
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         R1 * 2
@@ -13610,8 +14536,9 @@
                 }
                 {
                     \compressFullBarRests
+                    \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                     \accidentalStyle neo-modern-cautionary
-                    \mark #13
+                    \mark #15
                     r8
                     [
                     df8
@@ -13706,15 +14633,20 @@
                     af,4
                     -\accent
                     r2
-                    r4
-                    af,4
-                    -\accent
-                    r2
+                    \percStaff
+                    c'2
+                    :32
+                    \mp
+                    ^ \markup { "sus. cym. (timp beaters)" }
+                    \<
+                    c'2
+                    :32
+                    \f
                 }
                 {
                     \numericTimeSignature
                     \freePad
-                    \tempo \markup \fontsize #1 {  freely   }
+                    \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                     \accidentalStyle neo-modern-cautionary
                     \time 8/1
                     s8
@@ -13722,6 +14654,7 @@
                     s8
                     r1
                     \fermata
+                    ^ \markup { l.v. }
                     \freeContinue
                     s4
                     \once \hide Rest
@@ -13770,7 +14703,7 @@
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
-                        \mark #10
+                        \mark #11
                         e'''4
                         \mf
                         r4
@@ -13782,13 +14715,7 @@
                         e''4
                         r2
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         c''8
                         \mf
@@ -13846,7 +14773,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 1
                         }
                         r8
@@ -14017,13 +14944,10 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
-                    }
-                    {
                         {
-                            \accidentalStyle neo-modern-cautionary
                             R1 * 8
                         }
                         ef'4
@@ -14061,45 +14985,43 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
-                        af'4
+                        <af af'>4
                         \mf
                         r4
-                        df''4
+                        <df' df''>4
                         r4
-                        df''4
+                        <df' df''>4
                         r4
-                        c''8
+                        <c' c''>8
                         [
-                        f''8
+                        <f' f''>8
                         ]
                         r4
                         r2
-                        f''4
+                        <f' f''>4
                         r4
                         r4
-                        af''4
+                        <af' af''>4
                         r2
-                        f''16
+                        <f' f''>16
                         [
-                        ef''8.
+                        <ef' ef''>8.
                         ]
                         r4
                         r2
-                        bf''4
+                        <bf' bf''>4
                         r4
-                        af''8
+                        <af' af''>8
                         [
-                        df'''8
+                        <df'' df'''>8
                         ]
                         r4
                         {
                             R1 * 4
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df'''8
                         \mf
                         -\accent
@@ -14248,8 +15170,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         fs''8
                         \f
                         -\accent
@@ -14546,7 +15469,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -14600,7 +15523,7 @@
                         \set Staff.instrumentName = \markup { Harp }
                         \set Staff.shortInstrumentName = \markup { Hp. }
                         \set Staff.midiInstrument = #"orchestral harp" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         e4
                         r4
@@ -14612,13 +15535,7 @@
                         e,4
                         r2
                         {
-                            R1 * 1
-                        }
-                    }
-                    {
-                        {
-                            \accidentalStyle neo-modern-cautionary
-                            R1 * 1
+                            R1 * 2
                         }
                         c8
                         [
@@ -14675,7 +15592,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 1
                         }
                         r8
@@ -14779,7 +15696,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -14787,45 +15704,13 @@
                         }
                     }
                     {
-                        \compressFullBarRests
-                        \accidentalStyle neo-modern-cautionary
-                        \mark #14
-                        af4
-                        r4
-                        df'4
-                        r4
-                        df'4
-                        r4
-                        c'8
-                        [
-                        f'8
-                        ]
-                        r4
-                        r2
-                        f'4
-                        r4
-                        r4
-                        af'4
-                        r2
-                        f'16
-                        [
-                        ef'8.
-                        ]
-                        r4
-                        r2
-                        bf'4
-                        r4
-                        af'8
-                        [
-                        df''8
-                        ]
-                        r4
                         {
-                            R1 * 4
+                            \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
+                            \accidentalStyle neo-modern-cautionary
+                            \mark #14
+                            R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         ef,8
                         -\accent
                         [
@@ -14973,8 +15858,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         gs,8
                         -\accent
                         [
@@ -15270,7 +16156,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -15328,7 +16214,7 @@
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             \set Staff.midiInstrument = #"acoustic grand" 
-                            \mark #10
+                            \mark #11
                             R1 * 14
                         }
                     }
@@ -15336,7 +16222,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 1
                         }
                         d''16
@@ -15426,7 +16312,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -15436,13 +16322,11 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         ef''8
                         \mf
                         -\accent
@@ -15591,8 +16475,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         cs''8
                         \f
                         -\accent
@@ -15889,7 +16774,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -15944,7 +16829,7 @@
                             \set Staff.instrumentName = \markup { Piano }
                             \set Staff.shortInstrumentName = \markup { Pf. }
                             \set Staff.midiInstrument = #"acoustic grand" 
-                            \mark #10
+                            \mark #11
                             \clef "bass"
                             R1 * 14
                         }
@@ -15953,7 +16838,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 1
                         }
                         r8
@@ -16064,7 +16949,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         r1
                         \fermata
                         {
@@ -16074,13 +16959,11 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 10
                         }
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         df'8
                         -\accent
                         [
@@ -16228,8 +17111,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         b8
                         -\accent
                         [
@@ -16525,7 +17409,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -16582,7 +17466,7 @@
                         \set Staff.instrumentName = \markup { "Violin 1" }
                         \set Staff.shortInstrumentName = \markup { Vln.I }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #10
+                        \mark #11
                         e''4
                         \mf
                         ^ \markup { pizz }
@@ -16602,7 +17486,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 4
                         }
                         c'8
@@ -16801,9 +17685,6 @@
                         ~
                         ]
                         c'''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a''2
                         \mp
                         ~
@@ -16816,7 +17697,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         d''1
                         \pp
                         \fermata
@@ -16842,6 +17723,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 2
@@ -17061,8 +17943,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         gf'''8
                         \f
                         [
@@ -17295,7 +18178,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -17349,7 +18232,7 @@
                         \set Staff.instrumentName = \markup { "Violin 2" }
                         \set Staff.shortInstrumentName = \markup { Vln.II }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #10
+                        \mark #11
                         e'''4
                         \mf
                         ^ \markup { pizz }
@@ -17369,7 +18252,7 @@
                         {
                             \compressFullBarRests
                             \accidentalStyle neo-modern-cautionary
-                            \mark #11
+                            \mark #12
                             R1 * 4
                         }
                         c'8
@@ -17568,9 +18451,6 @@
                         ~
                         ]
                         f''4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         a''2
                         \mp
                         ~
@@ -17583,7 +18463,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         d''1
                         \pp
                         \fermata
@@ -17609,6 +18489,7 @@
                     {
                         {
                             \compressFullBarRests
+                            \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                             \accidentalStyle neo-modern-cautionary
                             \mark #14
                             R1 * 4
@@ -17780,8 +18661,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         gf'''8
                         \f
                         [
@@ -18030,7 +18912,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -18084,7 +18966,7 @@
                         \set Staff.instrumentName = \markup { Viola }
                         \set Staff.shortInstrumentName = \markup { Vla. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #10
+                        \mark #11
                         \clef "alto"
                         b'4
                         \mf
@@ -18104,7 +18986,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         d'8
                         \p
                         ^ \markup { arco }
@@ -18373,9 +19255,6 @@
                         ~
                         ]
                         d'4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf2
                         \mp
                         ~
@@ -18388,7 +19267,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         d'1
                         \pp
                         \fermata
@@ -18425,6 +19304,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         af8
@@ -18599,6 +19479,7 @@
                         af'8
                         :16
                         [
+                        \<
                         c''8
                         :16
                         ]
@@ -18646,6 +19527,7 @@
                         ]
                         gf''8
                         :16
+                        \mf
                         [
                         f''8
                         :16
@@ -18815,8 +19697,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         df''8
                         \f
                         [
@@ -19078,20 +19961,16 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
                         \normalStaff
                         s8
-                        a16
-                        (
-                        gs1
-                        )
-                        \once \override TextScript.extra-offset = #'( 1 . 0 )
+                        r1
+                        \fermata
                         \freeContinue
                         s4
-                        ^ \markup { "repeat, slowing down" }
                         \once \hide Rest
                         r4
                         s4
@@ -19120,7 +19999,7 @@
                         \freeRestArrow
                         \freePad
                         r4
-                        s8.
+                        s4
                         \bar "|." 
                     }
                 }
@@ -19136,7 +20015,7 @@
                         \set Staff.instrumentName = \markup { Cello }
                         \set Staff.shortInstrumentName = \markup { Vc. }
                         \set Staff.midiInstrument = #"string ensemble 1" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         b4
                         \mf
@@ -19156,7 +20035,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         d8
                         \p
                         ^ \markup { arco }
@@ -19425,9 +20304,6 @@
                         ~
                         ]
                         bf4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         bf2
                         \mp
                         ~
@@ -19440,7 +20316,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         ef1
                         \pp
                         \fermata
@@ -19477,6 +20353,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         r2
@@ -19700,8 +20577,9 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
+                        \mark #15
                         df'8
                         \f
                         [
@@ -19950,7 +20828,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8
@@ -20004,7 +20882,7 @@
                         \set Staff.instrumentName = \markup { Bass }
                         \set Staff.shortInstrumentName = \markup { Cb. }
                         \set Staff.midiInstrument = #"cello" 
-                        \mark #10
+                        \mark #11
                         \clef "bass"
                         r8
                         [
@@ -20120,7 +20998,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #11
+                        \mark #12
                         d8
                         \p
                         ^ \markup { arco }
@@ -20389,9 +21267,6 @@
                         ~
                         ]
                         bf,4
-                    }
-                    {
-                        \accidentalStyle neo-modern-cautionary
                         af,2
                         \mp
                         ~
@@ -20404,7 +21279,7 @@
                     {
                         \compressFullBarRests
                         \accidentalStyle neo-modern-cautionary
-                        \mark #12
+                        \mark #13
                         ef1
                         \pp
                         \fermata
@@ -20441,6 +21316,7 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  Gradual Accel. ...  }
                         \accidentalStyle neo-modern-cautionary
                         \mark #14
                         ef4
@@ -20473,6 +21349,7 @@
                         df4
                         df4
                         df,4
+                        \<
                         df,4
                         df,4
                         df,4
@@ -20481,6 +21358,7 @@
                         ef,4
                         ef,4
                         ef,4
+                        \mf
                         ef,4
                         ef,4
                         ef,4
@@ -20511,41 +21389,42 @@
                     }
                     {
                         \compressFullBarRests
+                        \tempo \markup \fontsize #1 {  \note #"4" #UP "= 112 ca"  }
                         \accidentalStyle neo-modern-cautionary
-                        \mark #13
-                        ef'8
+                        \mark #15
+                        ef8
                         \f
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'4
-                        af'8
+                        af4
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'8
+                        af8
                         [
-                        af'8
+                        af8
                         ~
                         ]
-                        af'4
+                        af4
                         ef'8
                         [
                         af8
@@ -20774,7 +21653,7 @@
                     {
                         \numericTimeSignature
                         \freePad
-                        \tempo \markup \fontsize #1 {  freely   }
+                        \tempo \markup \fontsize #1 {  freely, aprox 30''   }
                         \accidentalStyle neo-modern-cautionary
                         \time 8/1
                         s8

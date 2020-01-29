@@ -261,7 +261,7 @@ def get_improv_line(
         my_line.append(my_cell)
     
     # FOR LISTENING ONLY:
-    # my_line.note_events[1:].setattrs(pitch="R")
+    my_line.note_events[1:].setattrs(pitch="R")
 
     return my_line
 

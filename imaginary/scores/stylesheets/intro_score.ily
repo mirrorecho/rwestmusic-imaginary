@@ -13,6 +13,7 @@
     \context {
         \StaffGroup 
         % CONSIDER FOR FREE SECTIONS:
+        % \consists "Bar_number_engraver"
         \remove "Span_bar_engraver"
     }
     \context {
@@ -21,7 +22,7 @@
         \override BarLine.extra-offset = #'( -1 . 0 )
         \consists "Timing_translator"
         \consists "Default_bar_line_engraver"
-        \consists "Bar_number_engraver"
+        % \consists "Bar_number_engraver"
     }
     \context {
         \RhythmicStaff 

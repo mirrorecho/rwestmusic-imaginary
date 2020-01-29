@@ -37,10 +37,12 @@ def score2(lib):
 
     drum_rhythm2 = lambda_segment.LambdaSegment(
             calliope.SegmentBlock(ImaginarySegment(
-                lib("rock_rhythm2"),
-                get_improv_line(times=8),
-                rim_shots,
-                get_improv_line(times=6),
+                lib("rock_rhythm2")*9,
+                rim_shots * 7,
+                # lib("rock_rhythm2"),
+                # get_improv_line(times=8),
+                # rim_shots,
+                # get_improv_line(times=6),
                 lib("drum_hits") * 3,
             )),
             fabric_staves = ("ooa_drum_set",),

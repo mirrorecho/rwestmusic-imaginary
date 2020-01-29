@@ -56,8 +56,8 @@ class ImaginaryScore(calliope.Score):
                 midi_instrument = "french horn"
 
             class OoaTrumpet(calliope.Staff):
-                instrument=abjad.Trumpet(
-                    name="Trumpet in C", short_name="tpt.")
+                # NOTE... this will NOT auto-transpose!
+                instrument=abjad.Instrument(name="Trumpet in B♭", short_name="tpt.")
                 midi_instrument = "trumpet"
 
             class OoaTrombone(calliope.Staff):

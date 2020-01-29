@@ -191,8 +191,8 @@
             ]
             )
             r8
-            ^ \markup { p.5 }
             ^ \markup { c.10 }
+            ^ \markup { p.5 }
             [
             f''8
             ]
@@ -330,8 +330,8 @@
             bf''4
             )
             r4
-            ^ \markup { p.5 }
             ^ \markup { c.10 }
+            ^ \markup { p.5 }
             f''4
             (
             cs'''8
@@ -404,8 +404,8 @@
             bf''4
             )
             r8
-            ^ \markup { c.6 }
             ^ \markup { p.2 }
+            ^ \markup { c.6 }
             [
             af''8
             ~
@@ -483,8 +483,8 @@
             g'''4
             )
             r8
-            ^ \markup { p.6 }
             ^ \markup { c.14 }
+            ^ \markup { p.6 }
             [
             f'''8
             ]
@@ -592,8 +592,8 @@
             <bf, bf>2
             )
             <f f'>4
-            ^ \markup { p.2 }
             ^ \markup { c.5 }
+            ^ \markup { p.2 }
             (
             <ef ef'>4
             r16
@@ -724,8 +724,8 @@
             <c''' c''''>4
             )
             <c''' c''''>8
-            ^ \markup { p.1 }
             ^ \markup { c.1 }
+            ^ \markup { p.1 }
             [
             (
             <c''' c''''>8
@@ -763,8 +763,8 @@
             <c''' c''''>4
             )
             <c''' c''''>8
-            ^ \markup { p.4 }
             ^ \markup { c.4 }
+            ^ \markup { p.4 }
             [
             (
             <c''' c''''>8
@@ -776,8 +776,8 @@
             <c''' c''''>4
             )
             <c''' c''''>8
-            ^ \markup { p.5 }
             ^ \markup { c.5 }
+            ^ \markup { p.5 }
             [
             (
             <c''' c''''>8
@@ -802,8 +802,8 @@
             <c''' c''''>4
             )
             <cs''' cs''''>4
-            ^ \markup { p.7 }
             ^ \markup { c.7 }
+            ^ \markup { p.7 }
             (
             <cs''' cs''''>4
             <cs''' cs''''>4
@@ -826,16 +826,16 @@
             <cs''' cs''''>4
             )
             <cs''' cs''''>4
-            ^ \markup { c.10 }
             ^ \markup { p.10 }
+            ^ \markup { c.10 }
             (
             <cs''' cs''''>4
             <cs''' cs''''>4
             <cs''' cs''''>4
             )
             <cs''' cs''''>4
-            ^ \markup { c.11 }
             ^ \markup { p.11 }
+            ^ \markup { c.11 }
             (
             <cs''' cs''''>4
             <cs''' cs''''>4
@@ -871,8 +871,8 @@
             <g,, g,>4
             )
             <g,, g,>2
-            ^ \markup { p.1 }
             ^ \markup { c.1 }
+            ^ \markup { p.1 }
             ~
             (
             <g,, g,>4
@@ -890,17 +890,17 @@
             ^ \markup { p.3 }
             ^ \markup { c.3 }
             <af,, af,>2
-            ^ \markup { p.4 }
             ^ \markup { c.4 }
+            ^ \markup { p.4 }
             <g,, g,>2
-            ^ \markup { p.5 }
             ^ \markup { c.5 }
+            ^ \markup { p.5 }
             <af,, af,>2
             ^ \markup { p.6 }
             ^ \markup { c.6 }
             <g,, g,>2
-            ^ \markup { p.7 }
             ^ \markup { c.7 }
+            ^ \markup { p.7 }
             <af,, af,>2
             ^ \markup { c.8 }
             ^ \markup { p.8 }
@@ -913,16 +913,16 @@
             <af,, af,>4
             )
             <af,, af,>2
-            ^ \markup { c.10 }
             ^ \markup { p.10 }
+            ^ \markup { c.10 }
             ~
             (
             <af,, af,>4
             <af,, af,>4
             )
             <af,, af,>2
-            ^ \markup { c.11 }
             ^ \markup { p.11 }
+            ^ \markup { c.11 }
             ~
             (
             <af,, af,>4
@@ -932,11 +932,11 @@
             ^ \markup { p.12 }
             ^ \markup { c.12 }
             <af,, af,>2
-            ^ \markup { p.13 }
             ^ \markup { c.13 }
+            ^ \markup { p.13 }
             <bf,, bf,>2
-            ^ \markup { p.14 }
             ^ \markup { c.14 }
+            ^ \markup { p.14 }
             <af,, af,>2
             ^ \markup { p.15 }
             ^ \markup { c.15 }
@@ -944,8 +944,8 @@
             ^ \markup { c.16 }
             ^ \markup { p.16 }
             <af,, af,>2
-            ^ \markup { c.17 }
             ^ \markup { p.17 }
+            ^ \markup { c.17 }
         }
     >>
     

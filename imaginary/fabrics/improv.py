@@ -22,10 +22,23 @@ class Improv(ImaginaryFabric):
     # WARNING... need to change for parts!
     def get_center_pitch(self, staff):
         if staff.name in ("ooa_bassoon", 
-            "ooa_bari_sax",
+            "cco_bassoon",
             "ooa_trombone",
-            "ooa_bass_guitar",):
-            return -10
+            "cco_trombone",
+            "ooa_bass_guitar",
+            "ooa_bari_sax", # ONLY FOR SCORE
+            ):
+            return -12
+        # if staff.name in ("ooa_clarinet", "cco_clarinet1", "cco_clarinet2"):
+        #     return 10
+        # if staff.name in ("ooa_horn", "cco_horn"):
+        #     return -7
+        # if staff.name in ("ooa_alto_sax1", "ooa_alto_sax2"):
+        #     return -9
+        # elif staff.name == "ooa_tenor_sax":
+        #     return -14
+        # elif staff.name == "ooa_bari_sax":
+        #     return -21
         else:
             return 11
 

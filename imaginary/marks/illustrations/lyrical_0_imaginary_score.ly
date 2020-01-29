@@ -345,7 +345,7 @@
                             \compressFullBarRests
                             \tempo \markup \fontsize #1 {  \note #"4" #UP "= 96 ca"  }
                             \accidentalStyle neo-modern-cautionary
-                            \set Staff.instrumentName = \markup { "Trumpet in C" }
+                            \set Staff.instrumentName = \markup { "Trumpet in B♭" }
                             \set Staff.shortInstrumentName = \markup { Tpt. }
                             \set Staff.midiInstrument = #"trumpet" 
                             \mark #2
@@ -475,57 +475,51 @@
                         r4
                         \tweak style #'cross
                         a'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { simile }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (2) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        ^ \markup { (3) }
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
-                        \tweak style #'slash
-                        c'4
+                        \tweak style #'cross
+                        e4
+                        \p
+                        \tweak style #'cross
+                        a'4
+                        ^ \markup { brushes }
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        \tweak style #'cross
+                        e4
+                        \p
+                        \tweak style #'cross
+                        a'4
+                        ^ \markup { brushes }
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        \tweak style #'cross
+                        e4
+                        \p
+                        \tweak style #'cross
+                        a'4
+                        ^ \markup { brushes }
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
+                        r4
+                        \tweak style #'cross
+                        a'4
                         r8
                         [
                         \tweak style #'cross
